@@ -721,8 +721,8 @@
 			<title>{{ title }}</title>
 		</path>
 		<path  
-      		id="MontagneMordor"
-			title="Montagne du Mordor"
+      		id="Ephel Dúath"
+			title="Ephel Dúath"
 			class="st opacity-0"
 			style="cursor: pointer;"
 			pointer-events="all"
@@ -856,12 +856,12 @@
 			<title>{{ title }}</title>
 		</path>
 		<path 
-      		id="Lointain Harad"
-			title="Lointain Harad"
-			aria-valuetext="Lointain_Harad"
+      		id="Khand"
+			title="Khand"
+			aria-valuetext="Khand"
 			class="st opacity-25"
 			style="cursor: pointer;"
-			:fill="map.Lointain_Harad ? map.Lointain_Harad.color : '#3300000'"
+			:fill="map.Khand ? map.Khand.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal" 
@@ -894,12 +894,12 @@
 			<title>{{ title }}</title>
 		</path>
 		<path 
-      		id="Proche Harad"
-			title="Proche Harad"
-			aria-valuetext="Proche_Harad"
+      		id="Lointain Harad"
+			title="Lointain Harad"
+			aria-valuetext="Lointain_Harad"
 			class="st opacity-25"
 			style="cursor: pointer;"
-			:fill="map.Proche_Harad ? map.Proche_Harad.color : '#3300000'"
+			:fill="map.Lointain_Harad ? map.Lointain_Harad.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal" 
@@ -974,12 +974,12 @@
 			<title>{{ title }}</title>
 		</path>
 		<path 
-      		id="Harad"
-			title="Harad"
-			aria-valuetext="Harad"
+      		id="Proche Harad"
+			title="Proche Harad"
+			aria-valuetext="Proche_Harad"
 			class="st opacity-25"
 			style="cursor: pointer;"
-			:fill="map.Harad ? map.Harad.color : '#3300000'"
+			:fill="map.Proche_Harad ? map.Proche_Harad.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal" 
@@ -1759,8 +1759,8 @@
 			<title>{{ title }}</title>
 		</path>
 		<path 
-      		id="Montagne"
-			title="Montagne"
+      		id="Mont Brumeux"
+			title="Mont Brumeux"
 			class="st opacity-25"
 			style="cursor: pointer;"
 			:fill="montagne"
@@ -1844,8 +1844,8 @@
 			<title>{{ title }}</title>
 		</path>
 		<path 
-      		id="Montagne"
-			title="Montagne"
+      		id="Mont Brumeux"
+			title="Mont Brumeux"
 			class="st opacity-25"
 			style="cursor: pointer;"
 			:fill="montagne"
@@ -1859,8 +1859,8 @@
 			<title>{{ title }}</title>
 		</path>
 		<path 
-      		id="Montagne"
-			title="Montagne"
+      		id="Mont Brumeux"
+			title="Mont Brumeux"
 			class="st opacity-25"
 			style="cursor: pointer;"
 			:fill="montagne"
@@ -2145,8 +2145,8 @@
 			<title>{{ title }}</title>
 		</path>
 		<path 
-      		id="Brèche du Rohan"
-			title="Brèche du Rohan"
+      		id="Trouée du Rohan"
+			title="Trouée du Rohan"
 			aria-valuetext="Breche_Rohan"
 			class="st opacity-25"
 			style="cursor: pointer;"
@@ -2241,8 +2241,8 @@
 			<title>{{ title }}</title>
 		</path>
 		<path
-      		id="Coteaux du Nord"
-			title="Coteaux du Nord"
+      		id="Hauts du Nord"
+			title="Hauts du Nord"
 			aria-valuetext="Coteaux_Nord"
 			class="st opacity-25"
 			style="cursor: pointer;"
@@ -2258,8 +2258,8 @@
 			<title>{{ title }}</title>
 		</path>
 		<path 
-      		id="C Rohan"
-			title="C Rohan"
+      		id="Rohan"
+			title="Rohan"
 			aria-valuetext="C_Rohan"
 			class="st opacity-25"
 			style="cursor: pointer;"
@@ -2321,8 +2321,8 @@
 			<title>{{ title }}</title>
 		</path>
 		<path 
-      		id="Months Of The Endwash"
-			title="Months Of The Endwash"
+      		id="Vallée de l'Entalluve"
+			title="Vallée de l'Entalluve"
 			aria-valuetext="Months_Endwash"
 			class="st opacity-25"
 			style="cursor: pointer;"
@@ -2338,8 +2338,8 @@
 			<title>{{ title }}</title>
 		</path>
 		<path 
-      		id="Montagne Mordor"
-			title="Montagne Mordor"
+      		id="Ered Lithui"
+			title="Ered Lithui"
 			class="st opacity-25"
 			style="cursor: pointer;"
 			:fill="montagne"
@@ -2369,8 +2369,8 @@
 			<title>{{ title }}</title>
 		</path>
 		<path 
-      		id="Montagne Mordor"
-			title="Montagne Mordor"
+      		id="Ephel Dúath"
+			title="Ephel Dúath"
 			class="st opacity-25"
 			style="cursor: pointer;"
 			:fill="montagne"

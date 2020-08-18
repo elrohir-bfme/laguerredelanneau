@@ -1993,8 +1993,8 @@
 			<title>{{ title }}</title>
 		</path>
 		<path 
-      		id="Montagne Bleu"
-			title="Montagne Bleu"
+      		id="Les Montagnes Bleus"
+			title="Les Montagnes Bleus"
 			class="st opacity-25"
 			style="cursor: pointer;"
 			:fill="montagne"
@@ -2977,7 +2977,45 @@
 	</g>
 </g>
 </svg>
+<div class="text-center py-4 px-4">
+  <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
+    <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">CARTE</span>
+    <span class="font-semibold mr-2 text-left flex-auto">{{title}}</span>
+    <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+  </div>
+</div>
 
+<div role="alert">
+  <div class="bg-green-500 text-white font-bold rounded-t px-4 py-2">
+    Règles de l'event :
+  </div>
+  <div class="border border-t-2 border-green-400 rounded-b bg-green-100 px-4 py-3 text-green-700">
+	<ul class="list-disc px-4 py-2">
+	<li class="font-semibold mr-2 text-left flex-auto">Les tours de déplacements auront lieu chaque dimanche.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Votre match doit être joué dans la semaine sans quoi vos coéquipiers devront se battre sans vous où si vous êtes seul le territoire sera donné à votre adversaire. </li>
+	<li class="font-semibold mr-2 text-left flex-auto">Les territoires vierges peuvent être pris au bout d'un tour. </li>
+	<li class="font-semibold mr-2 text-left flex-auto">Les batailles sont dérouleront constamment avec 1000 ressources de départ et des points de commandement x2 ainsi que l'anneau d'activé.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Le choix des chefs de factions se fera par un vote dans cette même faction.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Le chef de faction aura le dernier mots sur les déplacements que vous devez effectuer.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Si vous tomber seul contre trois joueurs, vous devrez jouer le match sans allié en 1vs3. </li>
+	<li class="font-semibold mr-2 text-left flex-auto">Quand vous mourrez, vous redémarrez à la capitale de votre faction d'handicape de 30 % qui sera retiré au bout de un tour.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Aucune triche n'est permise sur les héros crées ! Leur pouvoir et compétence doivent être normal !</li>
+	<br>
+	<li class="font-semibold mr-2 text-left flex-auto">Une fois votre faction choisis vous ne pouvez changer, si vous changer de rôles afin de voir les channels des autres factions vous serez sanctionné !</li>
+	</ul>
+  </div>
+</div>
+<br><br>
+<div role="alert">
+  <div class="bg-blue-500 text-white font-bold rounded-t px-4 py-2">
+    Diplomatie : 
+  </div>
+  <div class="border border-t-2 border-blue-400 rounded-b bg-blue-100 px-4 py-3 text-blue-700">
+	<ul class="list-disc px-4 py-2">
+	<li class="font-semibold mr-2 text-left flex-auto">Le Chef de faction à la possibilité de celer un pacte de non agression pendant 5 tours avec une autre factions rendant impossible les attaques entre ces deux factions</li>
+	</ul>
+  </div>
+</div>
 
 </div>
 </template>

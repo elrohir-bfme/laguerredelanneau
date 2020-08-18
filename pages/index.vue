@@ -1,12 +1,42 @@
 <template>
 <div class="container mx-auto">
-<div class="text-center py-4 px-4">
-  <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
-    <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">CARTE</span>
-    <span class="font-semibold mr-2 text-left flex-auto">{{title}}</span>
-    <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-  </div>
-</div>
+	<div class="inline-flex">
+		<div class="py-4 px-4" v-scroll-to="'#regle'">
+		<div class="p-2 bg-indigo-800 hover:bg-indigo-900 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
+			<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Règles de l'Evènement</span>
+			<svg viewBox="0 0 20 20" class="fill-current opacity-75 h-6 w-6"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+		</div>
+		</div>
+
+		<div class="py-4 px-4 btn" v-scroll-to="'#diplomatie'">
+			<div class="p-2 bg-indigo-800 hover:bg-indigo-900 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
+				<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Diplomatie</span>
+				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-6 h-6"><path fill-rule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clip-rule="evenodd"></path></svg>
+			</div>
+		</div>
+
+		<div class="py-4 px-4 btn" v-scroll-to="'#faction'">
+			<div class="p-2 bg-indigo-800 hover:bg-indigo-900 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
+				<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Factions</span>
+				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-6 h-6"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
+			</div>
+		</div>
+
+		<div class="py-4 px-4 btn" v-scroll-to="'#player'">
+			<div class="p-2 bg-indigo-800 hover:bg-indigo-900 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
+				<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Joueurs</span>
+				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-6 h-6"><path fill-rule="evenodd" d="M10 2a1 1 0 00-1 1v1a1 1 0 002 0V3a1 1 0 00-1-1zM4 4h3a3 3 0 006 0h3a2 2 0 012 2v9a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm2.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm2.45 4a2.5 2.5 0 10-4.9 0h4.9zM12 9a1 1 0 100 2h3a1 1 0 100-2h-3zm-1 4a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+			</div>
+		</div>
+
+		<div class="py-4 px-4 btn">
+		<div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
+			<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">CARTE</span>
+			<span class="font-semibold mr-2 text-left flex-auto">{{title}}</span>
+			<svg class="fill-current opacity-75 h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+		</div>
+		</div>
+	</div>
 <Modal v-if="isShowModal" @close="toggleModal" :region="region"/>
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1440 1060" style="enable-background:new 0 0 1440 1060;" xml:space="preserve">
@@ -17,7 +47,7 @@
       		id="Mer"
 			title="Mer"
 			class="opacity-0"
-			style="cursor: pointer;"
+			
 			pointer-events="all"
 			@mouseover="getInfo"
       		d="M843,1060c-281,0-562,0-843,0C0,706.7,0,353.3,0,0c154.3,0,308.7,0,463,0c-1.2,7.1-3.1,13.7-9.9,18.1
@@ -667,7 +697,7 @@
       id="Nord"
 			title="Nord"
 			class="st opacity-0"
-			style="cursor: pointer;"
+			
 			pointer-events="all"
 			@mouseover="getInfo"
 
@@ -690,7 +720,7 @@
       id="Est"
 			title="Est"
 			class="st opacity-0"
-			style="cursor: pointer;"
+			
 			pointer-events="all"
 			@mouseover="getInfo"
 
@@ -703,7 +733,7 @@
       id="Sud"
 			title="Sud"
 			class="st opacity-0"
-			style="cursor: pointer;"
+			
 			pointer-events="all"
 			@mouseover="getInfo"
 
@@ -724,7 +754,7 @@
       		id="Ephel Dúath"
 			title="Ephel Dúath"
 			class="st opacity-0"
-			style="cursor: pointer;"
+			
 			pointer-events="all"
 			@mouseover="getInfo"
 
@@ -753,7 +783,7 @@
 			title="Rhun"
 			aria-valuetext="Rhun"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Rhun ? map.Rhun.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -774,7 +804,7 @@
 			title="Nurn"
 			aria-valuetext="Nurn"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Nurn ? map.Nurn.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -796,7 +826,7 @@
 			title="Orocarni"
 			aria-valuetext="Orocarni"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Orocarni ? map.Orocarni.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -816,7 +846,7 @@
 			title="Harondor"
 			aria-valuetext="Harondor"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Harondor ? map.Harondor.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -838,7 +868,7 @@
 			title="Enedwaith"
 			aria-valuetext="Enedwaith"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Enedwaith ? map.Enedwaith.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -860,7 +890,7 @@
 			title="Khand"
 			aria-valuetext="Khand"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Khand ? map.Khand.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -878,7 +908,7 @@
 			title="Valée du Celduin"
 			aria-valuetext="Valee_Celduin"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Valee_Celduin ? map.Valee_Celduin.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -898,7 +928,7 @@
 			title="Lointain Harad"
 			aria-valuetext="Lointain_Harad"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Lointain_Harad ? map.Lointain_Harad.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -917,7 +947,7 @@
 			title="Dagorlad"
 			aria-valuetext="Dagorlad"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Dagorlad ? map.Dagorlad.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -938,7 +968,7 @@
 			title="Lithlad"
 			aria-valuetext="Lithlad"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Lithlad ? map.Lithlad.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -958,7 +988,7 @@
 			title="Nord de la Forêt Noire"
 			aria-valuetext="Nord_Foret_Noire"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Nord_Foret_Noire ? map.Nord_Foret_Noire.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -978,7 +1008,7 @@
 			title="Proche Harad"
 			aria-valuetext="Proche_Harad"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Proche_Harad ? map.Proche_Harad.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -998,7 +1028,7 @@
 			title="Minhiriath"
 			aria-valuetext="Minhiriath"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Minhiriath ? map.Minhiriath.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -1019,7 +1049,7 @@
 			title="Anfalas"
 			aria-valuetext="Minhiriath"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Minhiriath ? map.Minhiriath.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -1038,7 +1068,7 @@
       		id="Les Montagnes Blanches"
 			title="Les Montagnes Blanches"
 			class="st opacity-0"
-			style="cursor: pointer;"
+			
 			:fill="montagne"
 			pointer-events="all"
 			@mouseover="getInfo" 
@@ -1055,7 +1085,7 @@
 			title="Monts du Fer"
 			aria-valuetext="Monts_Fer"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Monts_Fer ? map.Monts_Fer.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -1074,7 +1104,7 @@
 			title="Collines des Tours"
 			aria-valuetext="Collines_Tours"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Collines_Tours ? map.Collines_Tours.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -1095,7 +1125,7 @@
 			title="Sud de la Forêt Noire"
 			aria-valuetext="Sud_Foret_Noire"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Sud_Foret_Noire ? map.Sud_Foret_Noire.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -1116,7 +1146,7 @@
 			title="Harlindon"
 			aria-valuetext="Harlindon"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Harlindon ? map.Harlindon.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -1139,7 +1169,7 @@
 			title="La Montagne du Destin"
 			aria-valuetext="Montagne_Destin"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Montagne_Destin ? map.Montagne_Destin.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -1157,7 +1187,7 @@
 			title="Lande desséchée"
 			aria-valuetext="Lande_Dessechee"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Lande_Dessechee ? map.Lande_Dessechee.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -1177,7 +1207,7 @@
 			title="Les Havres Gris"
 			aria-valuetext="Havres_Gris"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Havres_Gris ? map.Havres_Gris.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -1198,7 +1228,7 @@
 			title="Terres Brunes"
 			aria-valuetext="Terres_Brunes"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Terres_Brunes ? map.Terres_Brunes.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -1217,7 +1247,7 @@
 			title="Forlindon"
 			aria-valuetext="Forlindon"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Forlindon ? map.Forlindon.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1242,7 +1272,7 @@
 			title="Sud de l'Ithilien"
 			aria-valuetext="Sud_Ithilien"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Sud_Ithilien ? map.Sud_Ithilien.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1263,7 +1293,7 @@
 			title="Carnen"
 			aria-valuetext="Carnen"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Carnen ? map.Carnen.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1282,7 +1312,7 @@
 			title="Forodwaith"
 			aria-valuetext="Forodwaith"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Forodwaith ? map.Forodwaith.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1302,7 +1332,7 @@
       		id="Les Montagnes Grises"
 			title="Les Montagnes Grises"
 			class="st opacity-0"
-			style="cursor: pointer;"
+			
 			:fill="montagne"
 			
 			pointer-events="all"
@@ -1321,7 +1351,7 @@
 			title="Forochel"
 			aria-valuetext="Forochel"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Forochel ? map.Forochel.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -1339,7 +1369,7 @@
 			title="Dorwinion"
 			aria-valuetext="Dorwinion"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Dorwinion ? map.Dorwinion.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1357,7 +1387,7 @@
 			title="Andrast"
 			aria-valuetext="Andrast"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Andrast ? map.Andrast.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -1377,7 +1407,7 @@
 			title="inconnu"
 			aria-valuetext="inconnu"
 			class="st opacity-0"
-			style="cursor: pointer;"
+			
 			:fill="contour"
 			
 			pointer-events="all"
@@ -1394,7 +1424,7 @@
 			title="Lebennin"
 			aria-valuetext="Lebennin"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Lebennin ? map.Lebennin.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1412,7 +1442,7 @@
 			title="Terre désolée"
 			aria-valuetext="Terre_Desolee"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Terre_Desolee ? map.Terre_Desolee.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1431,7 +1461,7 @@
 			title="Cardolan"
 			aria-valuetext="Cardolan"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Cardolan ? map.Cardolan.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1449,7 +1479,7 @@
 			title="Gundabad"
 			aria-valuetext="Gundabad"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Gundabad ? map.Gundabad.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1466,7 +1496,7 @@
 			title="Gwathlo"
 			aria-valuetext="Gwathlo"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Gwathlo ? map.Gwathlo.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1484,7 +1514,7 @@
 			title="Le Marais des Morts"
 			aria-valuetext="Marais_Morts"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Marais_Morts ? map.Marais_Morts.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1502,7 +1532,7 @@
 			title="Les vieux gués d'Anduin"
 			aria-valuetext="Gue_Anduin"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Gue_Anduin ? map.Gue_Anduin.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1519,7 +1549,7 @@
 			title="La Valée de l'Anduin"
 			aria-valuetext="Valee_Anduin"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Valee_Anduin ? map.Valee_Anduin.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1537,7 +1567,7 @@
 			title="Pays de Dun"
 			aria-valuetext="Pays_Dun"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Pays_Dun ? map.Pays_Dun.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1553,7 +1583,7 @@
 			title="Evendim"
 			aria-valuetext="Evendim"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Evendim ? map.Evendim.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1572,7 +1602,7 @@
 			title="Belfalas"
 			aria-valuetext="Belfalas"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Belfalas ? map.Belfalas.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -1590,7 +1620,7 @@
 			title="Carn Dum"
 			aria-valuetext="Carn_Dum"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Carn_Dum ? map.Carn_Dum.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1607,7 +1637,7 @@
 			title="Baie de l'Est"
 			aria-valuetext="Baie_Est"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Baie_Est ? map.Baie_Est.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1624,7 +1654,7 @@
       		id="Les Montagnes Bleus"
 			title="Les Montagnes Bleus"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="montagne"
 			
 			pointer-events="all"
@@ -1641,7 +1671,7 @@
 			title="Fornost"
 			aria-valuetext="Fornost"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Fornost ? map.Fornost.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1659,7 +1689,7 @@
 			title="Landes d'Etten"
 			aria-valuetext="Landes_Etten"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Landes_Etten ? map.Landes_Etten.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1678,7 +1708,7 @@
 			title="Champs aux Iris"
 			aria-valuetext="Champs_Iris"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Champs_Iris ? map.Champs_Iris.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1695,7 +1725,7 @@
 			title="Caradhras"
 			aria-valuetext="Caradhras"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Caradhras ? map.Caradhras.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1713,7 +1743,7 @@
 			title="Lamedon"
 			aria-valuetext="Lamedon"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Lamedon ? map.Lamedon.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1731,7 +1761,7 @@
 			title="The Angle"
 			aria-valuetext="The_Angle"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.The_Angle ? map.The_Angle.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1746,7 +1776,7 @@
 			title="Angmar"
 			aria-valuetext="Angmar"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Angmar ? map.Angmar.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1762,7 +1792,7 @@
       		id="Mont Brumeux"
 			title="Mont Brumeux"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="montagne"
 			
 			pointer-events="all"
@@ -1778,7 +1808,7 @@
 			title="Hall de Thranduil"
 			aria-valuetext="Hall_Thranduil"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Hall_Thranduil ? map.Hall_Thranduil.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1796,7 +1826,7 @@
 			title="Celebrant"
 			aria-valuetext="Celebrant"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Celebrant ? map.Celebrant.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1813,7 +1843,7 @@
 			title="Emyn Arnen"
 			aria-valuetext="Emyn_Arnen"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Emyn_Arnen ? map.Emyn_Arnen.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1831,7 +1861,7 @@
 			title="Swanfleet"
 			aria-valuetext="Swanfleet"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Swanfleet ? map.Swanfleet.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1847,7 +1877,7 @@
       		id="Mont Brumeux"
 			title="Mont Brumeux"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="montagne"
 			
 			pointer-events="all"
@@ -1862,7 +1892,7 @@
       		id="Mont Brumeux"
 			title="Mont Brumeux"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="montagne"
 			
 			pointer-events="all"
@@ -1878,7 +1908,7 @@
 			title="Le Plateau"
 			aria-valuetext="Plateau"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Plateau ? map.Plateau.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1895,7 +1925,7 @@
 			title="Minas Tirith"
 			aria-valuetext="Minas_Tirith"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Minas_Tirith ? map.Minas_Tirith.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1912,7 +1942,7 @@
 			title="Dol Guldur"
 			aria-valuetext="Dol_Guldur"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Dol_Guldur ? map.Dol_Guldur.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1929,7 +1959,7 @@
 			title="La Porte Noire"
 			aria-valuetext="Porte_Noire"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Porte_Noire ? map.Porte_Noire.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1946,7 +1976,7 @@
 			title="Nord de l'Ithilien"
 			aria-valuetext="Nord_Ithilien"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Nord_Ithilien ? map.Nord_Ithilien.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1964,7 +1994,7 @@
 			title="Fangorn"
 			aria-valuetext="Fangorn"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Fangorn ? map.Fangorn.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1980,7 +2010,7 @@
 			title="Estemnet"
 			aria-valuetext="Estemnet"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Estemnet ? map.Estemnet.color : '#3300000'"
 			
 			pointer-events="all"
@@ -1996,7 +2026,7 @@
       		id="Les Montagnes Bleus"
 			title="Les Montagnes Bleus"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="montagne"
 			
 			pointer-events="all"
@@ -2015,7 +2045,7 @@
 			title="Lossarnach"
 			aria-valuetext="Lossarnach"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Lossarnach ? map.Lossarnach.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2031,7 +2061,7 @@
 			title="Pays de Bouc"
 			aria-valuetext="Pays_Bouc"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Pays_Bouc ? map.Pays_Bouc.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2049,7 +2079,7 @@
 			title="La Comté"
 			aria-valuetext="La_Comte"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.La_Comte ? map.La_Comte.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2066,7 +2096,7 @@
 			title="Est du Rohan"
 			aria-valuetext="Est_Rohan"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Est_Rohan ? map.Est_Rohan.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2084,7 +2114,7 @@
 			title="Las d'Evendim"
 			aria-valuetext="Lac_Evendim"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Lac_Evendim ? map.Lac_Evendim.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2100,7 +2130,7 @@
 			title="Haut Col"
 			aria-valuetext="Haut_Col"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Haut_Col ? map.Haut_Col.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2117,7 +2147,7 @@
 			title="Collines du Vent"
 			aria-valuetext="Collines_Vent"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Collines_Vent ? map.Collines_Vent.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2134,7 +2164,7 @@
 			title="Trouée des Trolls"
 			aria-valuetext="Trouee_Trolls"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Trouee_Trolls ? map.Trouee_Trolls.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -2149,7 +2179,7 @@
 			title="Trouée du Rohan"
 			aria-valuetext="Breche_Rohan"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Breche_Rohan ? map.Breche_Rohan.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2165,7 +2195,7 @@
 			title="Emyn Muil"
 			aria-valuetext="EmynMuil"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.EmynMuil ? map.EmynMuil.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2181,7 +2211,7 @@
 			title="Fontgrise"
 			aria-valuetext="Fontgrise"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Fontgrise ? map.Fontgrise.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2196,7 +2226,7 @@
 			title="Erebor"
 			aria-valuetext="Erebor"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Erebor ? map.Erebor.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2212,7 +2242,7 @@
 			title="Carrock"
 			aria-valuetext="Carrock"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Carrock ? map.Carrock.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2228,7 +2258,7 @@
 			title="Rhudaur"
 			aria-valuetext="Rhudaur"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Rhudaur ? map.Rhudaur.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2245,7 +2275,7 @@
 			title="Hauts du Nord"
 			aria-valuetext="Coteaux_Nord"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Coteaux_Nord ? map.Coteaux_Nord.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2262,7 +2292,7 @@
 			title="Rohan"
 			aria-valuetext="C_Rohan"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.C_Rohan ? map.C_Rohan.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2278,7 +2308,7 @@
 			title="Ouestemnet"
 			aria-valuetext="Ouestemnet"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Ouestemnet ? map.Ouestemnet.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2293,7 +2323,7 @@
 			title="Gouffre de Helm"
 			aria-valuetext="Gouffre_Helm"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Gouffre_Helm ? map.Gouffre_Helm.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2309,7 +2339,7 @@
 			title="Coteaux du Nord"
 			aria-valuetext="Coteaux_Nord"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Coteaux_Nord ? map.Coteaux_Nord.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2325,7 +2355,7 @@
 			title="Vallée de l'Entalluve"
 			aria-valuetext="Months_Endwash"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Months_Endwash ? map.Months_Endwash.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2341,7 +2371,7 @@
       		id="Ered Lithui"
 			title="Ered Lithui"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="montagne"
 			
 			pointer-events="all"
@@ -2356,7 +2386,7 @@
 			title="Minas Morgul"
 			aria-valuetext="Minas_Morgul"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Minas_Morgul ? map.Minas_Morgul.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2372,7 +2402,7 @@
       		id="Ephel Dúath"
 			title="Ephel Dúath"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="montagne"
 			
 			pointer-events="all"
@@ -2389,7 +2419,7 @@
 			title="Umbar"
 			aria-valuetext="Umbar"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Umbar ? map.Umbar.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2405,7 +2435,7 @@
 			title="Azanulbizar"
 			aria-valuetext="Azanulbizar"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Azanulbizar ? map.Azanulbizar.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2421,7 +2451,7 @@
 			title="Amon Sûl"
 			aria-valuetext="Amon_Sul"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Amon_Sul ? map.Amon_Sul.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2436,7 +2466,7 @@
 			title="Fondcombe"
 			aria-valuetext="Fondcombe"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Fondcombe ? map.Fondcombe.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2450,7 +2480,7 @@
 			title="Esgaroth"
 			aria-valuetext="Esgaroth"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Esgaroth ? map.Esgaroth.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2465,7 +2495,7 @@
 			title="Eregion"
 			aria-valuetext="Eregion"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Eregion ? map.Eregion.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2482,7 +2512,7 @@
 			title="Cirith Ungol"
 			aria-valuetext="Cirith_Ungol"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Cirith_Ungol ? map.Cirith_Ungol.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2498,7 +2528,7 @@
 			title="Anorien"
 			aria-valuetext="Anorien"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Anorien ? map.Anorien.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2514,7 +2544,7 @@
 			title="Tharbad"
 			aria-valuetext="Tharbad"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Tharbad ? map.Tharbad.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2530,7 +2560,7 @@
 			title="Pelargir"
 			aria-valuetext="Pelargir"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Pelargir ? map.Pelargir.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2546,7 +2576,7 @@
 			title="Isengard"
 			aria-valuetext="Isengard"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Isengard ? map.Isengard.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2562,7 +2592,7 @@
 			title="La Forêt de Drúadan"
 			aria-valuetext="Foret_Druadan"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Foret_Druadan ? map.Foret_Druadan.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2578,7 +2608,7 @@
 			title="Hauts de Rhudaur"
 			aria-valuetext="Hauts_Rhudaur"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Hauts_Rhudaur ? map.Hauts_Rhudaur.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2594,7 +2624,7 @@
 			title="Erech"
 			aria-valuetext="Erech"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Erech ? map.Erech.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2610,7 +2640,7 @@
 			title="Centre d'Ithilien"
 			aria-valuetext="Centre_Ithilien"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Centre_Ithilien ? map.Centre_Ithilien.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2627,7 +2657,7 @@
 			title="Estfolde"
 			aria-valuetext="Estfolde"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Estfolde ? map.Estfolde.color : '#3300000'"
 
 			pointer-events="all"
@@ -2642,7 +2672,7 @@
 			title="Avancée de Fangorn"
 			aria-valuetext="Avancee_Fangorn"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Avancee_Fangorn ? map.Avancee_Fangorn.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2658,7 +2688,7 @@
 			title="Gué de Bruinen"
 			aria-valuetext="Gue_Bruinen"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Gue_Bruinen ? map.Gue_Bruinen.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2674,7 +2704,7 @@
 			title="Gué de l'Isen"
 			aria-valuetext="Gue_Isen"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Gue_Isen ? map.Gue_Isen.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2690,7 +2720,7 @@
 			title="Ouestfold"
 			aria-valuetext="Ouestfold"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Ouestfold ? map.Ouestfold.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2706,7 +2736,7 @@
 			title="Hauts des Galgals"
 			aria-valuetext="Hauts_Galgals"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Hauts_Galgals ? map.Hauts_Galgals.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2722,7 +2752,7 @@
 			title="Cair Andros"
 			aria-valuetext="Cair_Andros"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Cair_Andros ? map.Cair_Andros.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2738,7 +2768,7 @@
 			title="Edoras"
 			aria-valuetext="Edoras"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Edoras ? map.Edoras.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2753,7 +2783,7 @@
 			title="Osgiliath"
 			aria-valuetext="Osgiliath"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Osgiliath ? map.Osgiliath.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2769,7 +2799,7 @@
 			title="Harlond"
 			aria-valuetext="Harlond"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Harlond ? map.Harlond.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2784,7 +2814,7 @@
 			id="Montagne"
 			title="Montagne"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="montagne"
 			
 			pointer-events="all"
@@ -2798,7 +2828,7 @@
 			id="Montagne"
 			title="Montagne"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="montagne"
 			
 			pointer-events="all"
@@ -2813,7 +2843,7 @@
 			title="Dol Amroth"
 			aria-valuetext="Dol_Amroth"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Dol_Amroth ? map.Dol_Amroth.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2829,7 +2859,7 @@
 			title="Lorien"
 			aria-valuetext="Lorien"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Lorien ? map.Lorien.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2844,7 +2874,7 @@
 			title="Dunharrow"
 			aria-valuetext="Dunharrow"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Dunharrow ? map.Dunharrow.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2858,7 +2888,7 @@
       		id="Montagne"
 			title="Montagne"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="montagne"
 			
 			pointer-events="all"
@@ -2873,7 +2903,7 @@
 			title="Moria"
 			aria-valuetext="Moria"
 			class="st opacity-50"
-			style="cursor: pointer;"
+			
 			:fill="map.Moria ? map.Moria.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2889,7 +2919,7 @@
 			title="Halifirien"
 			aria-valuetext="Halifirien"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Halifirien ? map.Halifirien.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2904,7 +2934,7 @@
 			title="Amon Hen"
 			aria-valuetext="Amon_Hen"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Amon_Hen ? map.Amon_Hen.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2919,7 +2949,7 @@
 			title="Bree"
 			aria-valuetext="Bree"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Bree ? map.Bree.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2934,7 +2964,7 @@
 			title="Porte de la Moria"
 			aria-valuetext="Porte_Moria"
 			class="st opacity-25"
-			style="cursor: pointer;"
+			
 			:fill="map.Porte_Moria ? map.Porte_Moria.color : '#3300000'"
 			
 			pointer-events="all"
@@ -2946,14 +2976,14 @@
 		</path>
 		<path 
 			class="st0 opacity-0"
-			style="cursor: pointer;"
+			
 			pointer-events="all"
       d="M619,778c1.8-1.4,3.5-3.4,5.5-4c3.1-0.9,6.5-0.6,9.7-1.3c8.3-1.7,12.6,1.5,12.5,9.9c0,2.7-0.8,5.4-1.9,8.3
 			C639.2,780.1,632.6,771.8,619,778C619,778,619,778,619,778z">
 		</path>
 		<path 
       		class="st0 opacity-0"
-			style="cursor: pointer;"
+			
 			pointer-events="all"
       		d="M229.2,280.3c-1,1.9-1.5,4.9-3,5.5c-3.4,1.2-5.6,6-10.6,4.1c4.4-3.7,8.4-7,12.3-10.4
 			C228.3,279.7,228.7,280,229.2,280.3z">
@@ -2963,7 +2993,7 @@
 			title="Tolfalas"
 			aria-valuetext="Tolfalas"
 			class="opacity-25 st"
-			style="cursor: pointer;"
+			
 			:fill="map.Tolfalas ? map.Rhun.Tolfalas : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -2985,7 +3015,7 @@
   </div>
 </div>
 
-<div role="alert">
+<div role="alert" id="regle">
   <div class="bg-green-500 text-white font-bold rounded-t px-4 py-2">
     Règles de l'event :
   </div>
@@ -3006,7 +3036,7 @@
   </div>
 </div>
 <br><br>
-<div role="alert">
+<div role="alert" id="diplomatie">
   <div class="bg-blue-500 text-white font-bold rounded-t px-4 py-2">
     Diplomatie : 
   </div>
@@ -3016,7 +3046,29 @@
 	</ul>
   </div>
 </div>
-
+<br><br>
+<div role="alert" id="faction">
+  <div class="bg-gray-500 text-white font-bold rounded-t px-4 py-2">
+    Choix de votre faction : 
+  </div>
+  <div class="border border-t-2 border-gray-400 rounded-b bg-gray-100 px-4 py-3 text-gray-700">
+	<ul class="list-disc px-4 py-2">
+	<li class="font-semibold mr-2 text-left flex-auto">Sur le Discord vous avez la possibilité de choisir entre le Rohan, Elfe, Gondor, Nain, Mordor, Isengard, Gobelin ou Angmar</li>
+	</ul>
+  </div>
+</div>
+<br><br>
+<img src="~assets/faction.png" alt="" srcset="">
+<br><br>
+<div class="text-center">
+	<a class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+	href="http://bit.ly/LaTerreduMilieu" target="_blank" rel="noopener noreferrer">Discord : voir channel événement 📅
+	</a>
+</div>
+<br><br>
+<Player id="player" :players="players"/>
+<br><br>
+<br><br>
 </div>
 </template>
 
@@ -3032,27 +3084,13 @@ export default {
 	  contour: '#fff',
 	  newStock: 'B7B8C4',
 	  map: [],
+	  players: [],
 	  information: '',
-	  players: [
-		  {
-			  "name": "Elrohir",
-			  "win": "1",
-			  "faction": "Elfe",
-			  "lose": "42"
-		  },
-		  {
-			  "name": "Toinou",
-			  "faction": "Mordor",
-			  "win": "42",
-			  "lise": "5"
-		  }
-	  ],
 	  isShowModal: false
 	}
   },
 	methods: {
 		getInfo(e) {
-			console.log(e);
 		this.title = e.target.id;
 		this.region = e.target.ariaValueText;
 		},
@@ -3061,19 +3099,14 @@ export default {
 		}
 	},
 	async fetch() {
-	  this.map = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c')
+	  this.map = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c');
+	  this.players = await this.$http.$get('https://api.npoint.io/d4889ace7e9f84e6e86b/players');
 	}
 }
 </script>
 <style scoped>
-
-/* #chart {
-	margin: -350px 0 0 0;
-} */
-
 path {
-  /* fill: transparent; */
-  cursor: pointer;
+  cursor: url("~assets/cursor2.png"),pointer;
   stroke-opacity: 1;
   stroke-width: 2;
   fill-opacity: 1;
@@ -3082,30 +3115,9 @@ path {
   -o-transition: all 150ms;
   transition: all 150ms;
 }
+
 .st:hover {
   	fill: white!important;
 	opacity: 0.2!important;
-}
-
-/* .st {
-  stroke: black;
-  stroke-width: 3;
-  stroke-linejoin: round;
-  transition: linear 0.3s;
-} */
-
-/* path #mer {
-  fill: hsl(202, 87%, 58%);
-} */
-
-#mer:hover {
-  fill: hsl(130, 67%, 45%);
-}
-
-
-p {
-  text-align: center;
-  font-size: 40px;
-  color: #fff;
 }
 </style>

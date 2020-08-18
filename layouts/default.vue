@@ -30,6 +30,7 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+  cursor: url("~assets/cursor1.png"),auto;
 }
 
 .tooltip .tooltip-text {

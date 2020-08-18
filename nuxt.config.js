@@ -52,7 +52,8 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxt/http'
+    '@nuxt/http',
+    'vue-scrollto/nuxt'
   ],
   /*
   ** Build configuration

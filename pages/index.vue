@@ -3094,9 +3094,20 @@
 	<li class="font-semibold mr-2 text-left flex-auto">Le chef de faction aura le dernier mots sur les déplacements que vous devez effectuer.</li>
 	<li class="font-semibold mr-2 text-left flex-auto">Si vous tomber seul contre trois joueurs, vous devrez jouer le match sans allié en 1vs3. </li>
 	<li class="font-semibold mr-2 text-left flex-auto">Quand vous mourrez, vous redémarrez à la capitale de votre faction d'handicape de 30 % qui sera retiré au bout de un tour.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Aucune triche n'est permise sur les héros crées ! Leur pouvoir et compétence doivent être normal !</li>
 	<br>
 	<li class="font-semibold mr-2 text-left flex-auto">Une fois votre faction choisis vous ne pouvez changer, si vous changer de rôles afin de voir les channels des autres factions vous serez sanctionné !</li>
+	</ul>
+  </div>
+</div>
+<br><br>
+<div role="alert" id="hero">
+  <div class="bg-pink-500 text-white font-bold rounded-t px-4 py-2">
+    Les Héros crées :
+  </div>
+  <div class="border border-t-2 border-pink-400 rounded-b bg-pink-100 px-4 py-3 text-pink-700">
+	<ul class="list-disc px-4 py-2">
+	<li class="font-semibold mr-2 text-left flex-auto">Aucune triche n'est permise sur les héros crées ! Leur pouvoir et compétence doivent être normal !</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Le prix des héros ne doit pas dépasser 2500 !</li>
 	</ul>
   </div>
 </div>

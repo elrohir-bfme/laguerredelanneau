@@ -3015,6 +3015,71 @@
   </div>
 </div>
 
+	<div class="inline-flex">
+		<div class="py-4 px-4">
+			<div class="p-2 bg-teal-800 hover:bg-teal-900 items-center text-teal-100 leading-none rounded-full inline-flex" role="alert">
+				<span class="flex rounded-full bg-teal-600 uppercase px-2 py-1 text-xs font-bold mr-3">Havres Gris (00bfff)</span>
+				<span class="font-semibold mr-2 text-left flex-auto">Capitale de la faction Elfique</span>
+				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
+			</div>
+		</div>
+
+		<div class="py-4 px-4 btn">
+			<div class="p-2 bg-green-800 hover:bg-green-900 items-center text-green-100 leading-none rounded-full inline-flex" role="alert">
+				<span class="flex rounded-full bg-green-700 uppercase px-2 py-1 text-xs font-bold mr-3">Gouffre de Helm (0bff00)</span>
+				<span class="font-semibold mr-2 text-left flex-auto">Capitale du Rohan</span>
+				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
+			</div>
+		</div>
+
+		<div class="py-4 px-4 btn">
+			<div class="p-2 bg-blue-500 hover:bg-blue-600 items-center text-blue-100 leading-none rounded-full inline-flex" role="alert">
+				<span class="flex rounded-full bg-blue-400 uppercase px-2 py-1 text-xs font-bold mr-3">Minas Tirith (1e90ff)</span>
+				<span class="font-semibold mr-2 text-left flex-auto">Capitale du Gondor</span>
+				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
+			</div>
+		</div>
+
+		<div class="py-4 px-4 btn">
+			<div class="p-2 bg-yellow-600 hover:bg-yellow-700 items-center text-yellow-100 leading-none rounded-full inline-flex" role="alert">
+				<span class="flex rounded-full bg-yellow-500 uppercase px-2 py-1 text-xs font-bold mr-3">Erebor (fffc00)</span>
+				<span class="font-semibold mr-2 text-left flex-auto">Capitale des Nains</span>
+				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
+			</div>
+		</div>
+	</div>
+	<div class="inline-flex">
+
+		<div class="py-4 px-4 btn">
+			<div class="p-2 bg-purple-800 hover:bg-purple-900 items-center text-purple-100 leading-none rounded-full inline-flex" role="alert">
+				<span class="flex rounded-full bg-purple-500 uppercase px-2 py-1 text-xs font-bold mr-3">Carn Dûm (c500ff)</span>
+				<span class="font-semibold mr-2 text-left flex-auto">Capitale de l'Angmar</span>
+				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
+			</div>
+		</div>
+		<div class="py-4 px-4 btn">
+			<div class="p-2 bg-gray-800 hover:bg-gray-900 items-center text-gray-100 leading-none rounded-full inline-flex" role="alert">
+				<span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-xs font-bold mr-3">Isengard (ffffff)</span>
+				<span class="font-semibold mr-2 text-left flex-auto">Capitale de l'Isengard</span>
+				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
+			</div>
+		</div>
+		<div class="py-4 px-4 btn">
+			<div class="p-2 bg-orange-800 hover:bg-orange-900 items-center text-orange-100 leading-none rounded-full inline-flex" role="alert">
+				<span class="flex rounded-full bg-orange-600 uppercase px-2 py-1 text-xs font-bold mr-3">Moria (ff6f00)</span>
+				<span class="font-semibold mr-2 text-left flex-auto">Capitale des Gobelins</span>
+				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
+			</div>
+		</div>
+		<div class="py-4 px-4 btn">
+			<div class="p-2 bg-red-800 hover:bg-red-900 items-center text-red-100 leading-none rounded-full inline-flex" role="alert">
+				<span class="flex rounded-full bg-red-600 uppercase px-2 py-1 text-xs font-bold mr-3">La Montagne du Destin (DB5461)</span>
+				<span class="font-semibold mr-2 text-left flex-auto">Capitale du Mordor</span>
+				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
+			</div>
+		</div>
+	</div>
+
 <div role="alert" id="regle">
   <div class="bg-green-500 text-white font-bold rounded-t px-4 py-2">
     Règles de l'event :

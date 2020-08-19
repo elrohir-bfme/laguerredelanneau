@@ -3134,6 +3134,20 @@
 <Player id="player" :players="players"/>
 <br><br>
 <br><br>
+<div role="alert" id="faction">
+  <div class="bg-teal-500 text-gray-800 font-bold rounded-t px-4 py-2">
+    Liste des joueurs avec leur emplacement et le nombre de victoire et de défaite 
+  </div>
+  <div class="border border-t-2 border-teal-400 rounded-b bg-teal-100 px-4 py-3 text-teal-700">
+	<ul class="list-disc px-4 py-2">
+	<li class="font-semibold mr-2 text-left flex-auto">Si votre nom ne figure pas veuillez m'envoyer un message sur Discord 🧙</li>
+	</ul>
+  </div>
+</div>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
 </div>
 </template>
 

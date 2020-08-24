@@ -3027,7 +3027,7 @@
   </div>
 </div>
 
-	<div class="inline-flex">
+	<div class="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col">
 		<div class="py-4 px-4">
 			<div class="p-2 bg-teal-800 hover:bg-teal-900 items-center text-teal-100 leading-none rounded-full inline-flex" role="alert">
 				<span class="flex rounded-full bg-teal-600 uppercase px-2 py-1 text-xs font-bold mr-3">Havres Gris (00bfff)</span>
@@ -3060,7 +3060,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="inline-flex">
+	<div class="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col">
 
 		<div class="py-4 px-4 btn">
 			<div class="p-2 bg-purple-800 hover:bg-purple-900 items-center text-purple-100 leading-none rounded-full inline-flex" role="alert">

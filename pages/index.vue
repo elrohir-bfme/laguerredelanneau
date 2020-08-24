@@ -1579,8 +1579,8 @@
 			<title>{{ title }}</title>
 		</path>
 		<path 
-      		id="Evendim"
-			title="Evendim"
+      		id="Les collines d'Evendim"
+			title="Les collines d'Evendim"
 			aria-valuetext="Evendim"
 			class="st opacity-25"
 			:class="map.Evendim ? map.Evendim.opacity : 'opacity-25'"
@@ -2271,12 +2271,12 @@
 			<title>{{ title }}</title>
 		</path>
 		<path
-      		id="Hauts du Nord"
-			title="Hauts du Nord"
-			aria-valuetext="Coteaux_Nord"
+      		id="Les Hauts du Sud"
+			title="Hauts du Sud"
+			aria-valuetext="Haut_Sud"
 			class="st opacity-25"
-			:class="map.Coteaux_Nord ? map.Coteaux_Nord.opacity : 'opacity-25'"
-			:fill="map.Coteaux_Nord ? map.Coteaux_Nord.color : '#3300000'"
+			:class="map.Haut_Sud ? map.Haut_Sud.opacity : 'opacity-25'"
+			:fill="map.Haut_Sud ? map.Haut_Sud.color : '#3300000'"
 			
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -2335,12 +2335,12 @@
 			<title>{{ title }}</title>
 		</path>
 		<path 
-      		id="Coteaux du Nord"
-			title="Coteaux du Nord"
-			aria-valuetext="Coteaux_Nord"
+      		id="Haut du Nord"
+			title="Haut du Nord"
+			aria-valuetext="Haut_Nord"
 			class="st opacity-25"
-			:class="map.Coteaux_Nord ? map.Coteaux_Nord.opacity : 'opacity-25'"
-			:fill="map.Coteaux_Nord ? map.Coteaux_Nord.color : '#3300000'"
+			:class="map.Haut_Nord ? map.Haut_Nord.opacity : 'opacity-25'"
+			:fill="map.Haut_Nord ? map.Haut_Nord.color : '#3300000'"
 			
 			pointer-events="all"
 			@mouseover="getInfo"
@@ -2902,16 +2902,28 @@
 			id="Moria"
 			title="Moria"
 			aria-valuetext="Moria"
-			class="st opacity-50"
+			class="st opacity-25"
 			:class="map.Moria ? map.Moria.opacity : 'opacity-25'"
 			:fill="map.Moria ? map.Moria.color : '#3300000'"
 			
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal" 
-      		d="M681.8,416.2c-16.5-5.4-32.6-10.8-48.8-15.8c-3.4-1.1-4-3.2-3-5.6c1.8-4.6,3.7-9.4,6.6-13.3
-			c3.1-4.2,8.1-2,12.1-1.1c2.7,0.7,4.9,3.3,7.3,5c3.7,2.6,7,6,11.1,7.8c6.6,2.9,12,5.8,13.6,13.9
-			C682.1,413.9,682.9,413.7,681.8,416.2z">
+      		d="M 681.8 416.2 c -16.5 -5.4 -32.6 -10.8 -48.8 -15.8 c -3.4 -1.1 -4 -3.2 -3 -5.6 c 1.8 -4.6 3.7 -9.4 6.6 -13.3 c 3.1 -4.2 8.1 -2 12.1 -1.1 c 2.7 0.7 4.9 3.3 7.3 5 c 3.7 2.6 7 6 11.1 7.8 c 6.6 2.9 12 5.8 13.6 13.9 C 682.1 413.9 682.9 413.7 681.8 416.2 z C 673.2 410.8 662 407 660 403 L 663 399 C 662 396 661 395 658 393 L 652 390 L 643 397 C 644.3333 398.3333 646 401 649 402 L 652 402 L 660 403">
+			<title>{{ title }}</title>
+		</path>
+		<path 
+			id="Coeur de la Moria"
+			title="Coeur de la Moria"
+			aria-valuetext="Coeur_Moria"
+			class="opacity-50 custom_map"
+			:class="map.Coeur_Moria ? map.Coeur_Moria.opacity : 'opacity-25'"
+			:fill="map.Coeur_Moria ? map.Coeur_Moria.color : '#3300000'"
+			
+			pointer-events="all"
+			@mouseover="getInfo"
+			@click="toggleModal" 
+      		d="m 662 401 z L 663 399 C 662 396 661 395 658 393 L 652 390 L 643 397 C 644.3333 398.3333 646 401 649 402 L 652 402 L 660 403 L 662 401">
 			<title>{{ title }}</title>
 		</path>
 		<path 
@@ -3230,6 +3242,14 @@ path {
   -moz-transition: all 150ms;
   -o-transition: all 150ms;
   transition: all 150ms;
+}
+
+.custom_map {
+	stroke: black;
+}
+
+.custom_map:hover {
+	opacity: 0.55!important;
 }
 
 .st:hover {

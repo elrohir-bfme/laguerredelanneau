@@ -3292,8 +3292,4 @@ path {
 	opacity: 0.2!important;
 }
 
-.forto {
-	background-color: red;
-}
-
 </style>

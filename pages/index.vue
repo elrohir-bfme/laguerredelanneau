@@ -25,13 +25,14 @@
 		<div class="py-4 px-4 btn" v-scroll-to="'#player'">
 			<div class="p-2 bg-indigo-800 hover:bg-indigo-900 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
 				<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Joueurs</span>
+				<!-- <span class="font-semibold mr-2 text-left flex-auto">{{nbPlayer}}</span> -->
 				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-6 h-6"><path fill-rule="evenodd" d="M10 2a1 1 0 00-1 1v1a1 1 0 002 0V3a1 1 0 00-1-1zM4 4h3a3 3 0 006 0h3a2 2 0 012 2v9a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm2.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm2.45 4a2.5 2.5 0 10-4.9 0h4.9zM12 9a1 1 0 100 2h3a1 1 0 100-2h-3zm-1 4a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
 			</div>
 		</div>
 
 		<div class="py-4 px-4 btn">
 		<div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
-			<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">CARTE</span>
+			<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">CARTE ({{Object.keys(this.map).length}} maps)</span>
 			<span class="font-semibold mr-2 text-left flex-auto">{{title}}</span>
 			<svg class="fill-current opacity-75 h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
 		</div>
@@ -2322,7 +2323,7 @@
       		id="Gouffre de Helm"
 			title="Gouffre de Helm"
 			aria-valuetext="Gouffre_Helm"
-			class="st opacity-25"
+			class="st opacity-25 forto"
 			:class="map.Gouffre_Helm ? map.Gouffre_Helm.opacity : 'opacity-25'"
 			:fill="map.Gouffre_Helm ? map.Gouffre_Helm.color : '#3300000'"
 			
@@ -3098,13 +3099,13 @@
   </div>
   <div class="border border-t-2 border-green-400 rounded-b bg-green-100 px-4 py-3 text-green-700">
 	<ul class="list-disc px-4 py-2">
-	<li class="font-semibold mr-2 text-left flex-auto">Votre match doit être joué dans la semaine sans quoi vos coéquipiers devront se battre sans vous où si vous êtes seul le territoire sera donné à votre adversaire.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Votre match doit être joué dans la semaine, sans quoi vos coéquipiers devront se battre sans vous, ou si vous êtes seul, le territoire sera donné à votre adversaire.</li>
 	<li class="font-semibold mr-2 text-left flex-auto">Les batailles se dérouleront constamment avec 1000 ressources de départ et des points de commandement x2 ainsi que l'anneau d'activé.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Le choix des chefs de factions se fera par un vote dans cette même faction.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Si vous tomber seul contre trois joueurs, vous devrez jouer le match sans allié en 1vs3.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Quand vous mourrez, vous redémarrez à la capitale de votre faction d'handicape de 30 % qui sera retiré au bout de un tour.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Le choix des chefs de faction se fera par un vote dans cette même faction.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Si vous tombez seul contre trois joueurs, vous devrez jouer le match sans allié en 1vs3.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Si vous mourez, vous redémarrez à votre capitale de faction, avec un handicap de 30% qui est retiré au bout d'un tour.</li>
 	<br>
-	<li class="font-semibold mr-2 text-left flex-auto">Une fois votre faction choisis vous ne pouvez changer, si vous changer de rôles afin de voir les channels des autres factions vous serez sanctionné !</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Une fois votre faction choisie, vous ne pouvez la changer. Si vous le faite dans le but de voir les channels des autres factions, vous serez sanctionné!</li>
 	</ul>
   </div>
 </div>
@@ -3115,10 +3116,10 @@
   </div>
   <div class="border border-t-2 border-pink-400 rounded-b bg-pink-100 px-4 py-3 text-pink-700">
 	<ul class="list-disc px-4 py-2">
-	<li class="font-semibold mr-2 text-left flex-auto">Aucune triche n'est permise sur les héros crées ! Leur pouvoir et compétence doivent être normal !</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Le prix des héros ne doit pas dépasser 2500 !</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Vous n'avez droit qu'à un seul héro crée.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Les chefs de factions ne peuvent avoir de héro crée !</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Aucune triche n'est permise sur les héros créés; leurs pouvoirs et compétences doivent être normaux.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Le prix des héros ne doit pas être supérieur à 2500 ressources.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Vous n'avez droit qu'à un seul héros créé..</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Les chefs de faction ne peuvent avoir de héros créé.</li>
 	</ul>
   </div>
 </div>
@@ -3129,8 +3130,8 @@
   </div>
   <div class="border border-t-2 border-blue-400 rounded-b bg-blue-100 px-4 py-3 text-blue-700">
 	<ul class="list-disc px-4 py-2">
-		<li class="font-semibold mr-2 text-left flex-auto">Le Chef de faction à la possibilité de celer un pacte de non agression pendant 5 tours avec une autre factions rendant impossible les attaques entre ces deux factions.</li>
-		<li class="font-semibold mr-2 text-left flex-auto">Les pactes de non-aggression ne sont pas cumulables il doit être espacé de 5 tours.</li>
+		<li class="font-semibold mr-2 text-left flex-auto">Le chef de faction a la possibilité de sceller un pacte de non-agression avec une autre faction, actif 5 tours, rendant impossible les attaques entre ces deux factions.</li>
+		<li class="font-semibold mr-2 text-left flex-auto">Les pactes de non-agression ne sont pas cumulables; ils doivent être espacés de 5 tours.</li>
 	</ul>
   </div>
 </div>
@@ -3142,10 +3143,10 @@
   <div class="border border-t-2 border-purple-400 rounded-b bg-purple-100 px-4 py-3 text-purple-700">
 	<ul class="list-disc px-4 py-2">
 	<li class="font-semibold mr-2 text-left flex-auto">Les tours de déplacements auront lieu chaque dimanche.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Le chef de faction aura le dernier mots sur les déplacements que vous devez effectuer. </li>
-	<li class="font-semibold mr-2 text-left flex-auto">Les chefs de factions devront donner les déplacements des joueurs de leur faction à un @Valar , @Morgoth ou @Elrohir en mp chaque week-end.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Les territoires vierges peuvent être pris au bout d'un tour.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Vous pouvez respawn sur les fortos appartenant à votre faction.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Le chef de votre faction aura le dernier mot sur les déplacements que vous devrez effectuer.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Les chefs de faction devront donner les déplacements des joueurs de leur faction à un Valar; Morgoth; ou Elrohir en MP chaque week-end.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Les territoires vierges sont pris au bout d'un tour.</li>
+	<li class="font-semibold mr-2 text-left flex-auto">Vous pouvez également respawn sur les forteresses conquises par votre faction.</li>
 	</ul>
   </div>
 </div>
@@ -3180,12 +3181,12 @@
 	</a>
 </div>
 <br><br>
-<Player id="player" :players="players"/>
+<!-- <Player id="player" :players="players"/> -->
 <br><br>
 <br><br>
 <div role="alert" id="faction">
   <div class="bg-teal-500 text-gray-800 font-bold rounded-t px-4 py-2">
-    Liste des joueurs avec leur emplacement et le nombre de victoire et de défaite 
+    Liste des joueurs avec leur emplacement et le nombre de victoire et de défaite {{ map.lenght }}
   </div>
   <div class="border border-t-2 border-teal-400 rounded-b bg-teal-100 px-4 py-3 text-teal-700">
 	<ul class="list-disc px-4 py-2">
@@ -3197,6 +3198,41 @@
 <br><br>
 <br><br>
 <br><br>
+	<div v-for="item in map" :key="item.name">
+		<div v-if="item.players && item.players.length > 0" class="px-6 py-4 flex flex-wrap">
+			<div class="flex flex-wrap">
+				<div v-for="(player) in item.players" :key="player.name" class="mx-auto rounded overflow-hidden shadow-2xl m-2 bg-white">
+					<div class="px-6 py-4">
+						<div class="font-bold text-xl mb-2 text-gray-800">
+							{{ player.name}} 
+						<span v-if="player.faction == 1" class="rounded-full bg-green-400 uppercase px-2 py-1 text-xs font-bold mr-3 text-white hover:bg-green-500">Rohan</span>
+						<span v-else-if="player.faction == 2" class="rounded-full bg-green-800 uppercase px-2 py-1 text-xs font-bold mr-3 text-white hover:bg-green-900">Elfe</span>
+						<span v-else-if="player.faction == 3" class="rounded-full bg-blue-500 uppercase px-2 py-1 text-xs font-bold mr-3 text-white hover:bg-blue-600">Gondor</span>
+						<span v-else-if="player.faction == 4" class="rounded-full bg-yellow-600 uppercase px-2 py-1 text-xs font-bold mr-3 text-white hover:bg-yellow-700">Nain</span>
+						<span v-else-if="player.faction == 5" class="rounded-full bg-red-700 uppercase px-2 py-1 text-xs font-bold mr-3 text-white hover:bg-red-800">Mordor</span>
+						<span v-else-if="player.faction == 6" class="rounded-full bg-gray-800 uppercase px-2 py-1 text-xs font-bold mr-3 text-white hover:bg-gray-900">Isengard</span>
+						<span v-else-if="player.faction == 7" class="rounded-full bg-orange-800 uppercase px-2 py-1 text-xs font-bold mr-3 text-white hover:bg-orange-900">Gobelin</span>
+						<span v-else class="rounded-full bg-purple-800 uppercase px-2 py-1 text-xs font-bold mr-3 text-white hover:bg-purple-900">Angmar</span>
+						</div>
+						<p class="text-gray-700 text-sx text-center">
+							<svg viewBox="0 0 20 20" class="inline-block fill-current text-blue-500 w-6 h-6"><path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd"></path></svg>
+							{{item.name}}
+						</p>
+					</div>
+					<div class="inline-flex">
+						<div class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-10 rounded-l">
+							<svg viewBox="0 0 20 20" class="fill-current text-green-500 w-6 h-6"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+							{{ player.win }}
+						</div>
+						<div class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-10 rounded-r">
+							<svg viewBox="0 0 20 20" class="fill-current text-red-500 w-6 h-6"><path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+							 {{player.lose }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 </template>
 
@@ -3204,31 +3240,30 @@
 <script>
 export default {
   data() {
-    return {  
-	  title: '',
-	  region: '',
-      bleu: 'hsl(202, 87%, 58%)',
-	  montagne: '#565656',
-	  contour: '#fff',
-	  newStock: 'B7B8C4',
-	  map: [],
-	  players: [],
-	  information: '',
-	  isShowModal: false
+    return {
+		nbMap: 0,
+		title: '',
+		region: '',
+		bleu: 'hsl(202, 87%, 58%)',
+		montagne: '#565656',
+		contour: '#fff',
+		newStock: 'B7B8C4',
+		map: [],
+		information: '',
+		isShowModal: false
 	}
   },
 	methods: {
 		getInfo(e) {
-		this.title = e.target.id;
-		this.region = e.target.ariaValueText;
+			this.title = e.target.id;
+			this.region = e.target.ariaValueText;
 		},
 		toggleModal() {
-		this.isShowModal = !this.isShowModal;
+			this.isShowModal = !this.isShowModal;
 		}
 	},
 	async fetch() {
 	  this.map = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c');
-	  this.players = await this.$http.$get('https://api.npoint.io/d4889ace7e9f84e6e86b/players');
 	}
 }
 </script>
@@ -3255,6 +3290,10 @@ path {
 .st:hover {
   	fill: white!important;
 	opacity: 0.2!important;
+}
+
+.forto {
+	background-color: red;
 }
 
 </style>

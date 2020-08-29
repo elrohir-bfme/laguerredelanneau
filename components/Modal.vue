@@ -14,7 +14,12 @@
     aria-labelledby="modal-headline"
   >
     <div class="max-w-sm rounded overflow-hidden shadow-lg">
-      <img class="w-full" :src="data.img">
+      <div class="relative">
+        <img class="w-full" :src="data.img">
+        <div v-if="data.map" style="top: 0.45em; left: 0.45em" class="absolute bg-gray-700 hover:bg-gray-800 text-white font-bold py-1 px-2 rounded-full">
+          Map {{data.map}} Joueurs
+        </div>
+      </div>
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">{{data.name}}</div>
         <p class="text-gray-700 text-base">

@@ -1048,10 +1048,10 @@
 		<path 
       		id="Anfalas"
 			title="Anfalas"
-			aria-valuetext="Minhiriath"
+			aria-valuetext="Anfalas"
 			class="st opacity-25"
-			:class="map.Minhiriath ? map.Minhiriath.opacity : 'opacity-25'"
-			:fill="map.Minhiriath ? map.Minhiriath.color : '#3300000'"
+			:class="map.Anfalas ? map.Anfalas.opacity : 'opacity-25'"
+			:fill="map.Anfalas ? map.Anfalas.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal" 

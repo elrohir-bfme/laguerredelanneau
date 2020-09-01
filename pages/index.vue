@@ -3309,7 +3309,7 @@ export default {
 	methods: {
 		getInfo(e) {
 			this.title = e.target.id;
-			this.region = e.target.ariaValueText;
+			this.region = e.target.getAttribute("aria-valuetext");
 		},
 		toggleModal() {
 			this.isShowModal = !this.isShowModal;

@@ -3,7 +3,7 @@
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-20">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Voici les fiches des héros crées</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Si votre héro de la Terre du Milieu n'apparait pas ici, il faut demander sur le discord pour l'avoir ici :)</p>
+      <h2 class="lg:w-2/3 mx-auto leading-relaxed text-base">Si votre héros de la Terre du Milieu n'apparaît pas ici, il faut demander sur le discord pour l'avoir ici :)</h2>
     </div>
     <div class="flex flex-wrap -m-4">
       <div v-for="hero in heros" :key="hero.name" class="lg:w-1/3 sm:w-1/2 p-4">

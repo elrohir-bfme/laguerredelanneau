@@ -21,7 +21,8 @@
                   <img v-else-if="match.win == 7" alt="Gobelin" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4" src="~assets/factions/gobelin.png">
                   <img v-else alt="Angmar" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4" src="~assets/factions/angmar.png">
                   
-                  <div class="flex-grow">
+
+                  <div v-if="match.finish" class="flex-grow">
                     <p class="text-white title-font font-medium text-center">{{match.map}}</p>
                     <p v-if="match.win == 1" class="text-gray-600 text-center">Gagnant: Rohan</p>
                     <p v-else-if="match.win == 2" class="text-gray-600 text-center">Gagnant: Elfe</p>
@@ -32,15 +33,21 @@
                     <p v-else-if="match.win == 7" class="text-gray-600 text-center">Gagnant: Gobelin</p>
                     <p v-else class="text-gray-600 text-center">Gagnant: Angmar</p>
 
-                    <p v-if="match.lose == 1" class="text-gray-600 text-center">Gagnant: Rohan</p>
-                    <p v-else-if="match.lose == 2" class="text-gray-600 text-center">Gagnant: Elfe</p>
-                    <p v-else-if="match.lose == 3" class="text-gray-600 text-center">Gagnant: Gondor</p>
-                    <p v-else-if="match.lose == 4" class="text-gray-600 text-center">Gagnant: Nain</p>
-                    <p v-else-if="match.lose == 5" class="text-gray-600 text-center">Gagnant: Mordor</p>
-                    <p v-else-if="match.lose == 6" class="text-gray-600 text-center">Gagnant: Isengard</p>
-                    <p v-else-if="match.lose == 7" class="text-gray-600 text-center">Gagnant: Gobelin</p>
-                    <p v-else class="text-gray-600 text-center">Gagnant: Angmar</p>
+                    <p v-if="match.lose == 1" class="text-gray-600 text-center">Perdant: Rohan</p>
+                    <p v-else-if="match.lose == 2" class="text-gray-600 text-center">Perdant: Elfe</p>
+                    <p v-else-if="match.lose == 3" class="text-gray-600 text-center">Perdant: Gondor</p>
+                    <p v-else-if="match.lose == 4" class="text-gray-600 text-center">Perdant: Nain</p>
+                    <p v-else-if="match.lose == 5" class="text-gray-600 text-center">Perdant: Mordor</p>
+                    <p v-else-if="match.lose == 6" class="text-gray-600 text-center">Perdant: Isengard</p>
+                    <p v-else-if="match.lose == 7" class="text-gray-600 text-center">Perdant: Gobelin</p>
+                    <p v-else class="text-gray-600 text-center">Perdant: Angmar</p>
                   </div>
+
+                  <div v-else class="flex-grow">
+                    <p class="text-white title-font font-medium text-center">{{match.map}}</p>
+                    <p class="text-gray-600 text-center">CONTRE</p>
+                  </div>
+
                   <img v-if="match.lose == 1" alt="Rohan" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4" src="~assets/factions/rohan.png">
                   <img v-else-if="match.lose == 2" alt="Elfe" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4" src="~assets/factions/elfe.png">
                   <img v-else-if="match.lose == 3" alt="Homme" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4" src="~assets/factions/gondor.png">

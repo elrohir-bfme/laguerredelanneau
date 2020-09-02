@@ -9,8 +9,8 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxt/http": "^0.5.10",
-    "nuxt": "^2.14.0",
+    "@nuxt/http": "^0.5.12",
+    "nuxt": "^2.14.4",
     "vue-scrollto": "^2.18.2"
   },
   "devDependencies": {

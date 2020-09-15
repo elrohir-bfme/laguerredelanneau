@@ -1,43 +1,5 @@
 <template>
 <div class="container mx-auto">
-	<div class="inline-flex">
-		<div class="py-4 px-4" v-scroll-to="'#regle'">
-		<div class="p-2 bg-indigo-800 hover:bg-indigo-900 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
-			<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Règles de l'Evènement</span>
-			<svg viewBox="0 0 20 20" class="fill-current opacity-75 h-6 w-6"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-		</div>
-		</div>
-
-		<div class="py-4 px-4 btn" v-scroll-to="'#diplomatie'">
-			<div class="p-2 bg-indigo-800 hover:bg-indigo-900 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
-				<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Diplomatie</span>
-				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-6 h-6"><path fill-rule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clip-rule="evenodd"></path></svg>
-			</div>
-		</div>
-
-		<div class="py-4 px-4 btn" v-scroll-to="'#faction'">
-			<div class="p-2 bg-indigo-800 hover:bg-indigo-900 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
-				<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Factions</span>
-				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-6 h-6"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
-			</div>
-		</div>
-
-		<div class="py-4 px-4 btn" v-scroll-to="'#player'">
-			<div class="p-2 bg-indigo-800 hover:bg-indigo-900 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
-				<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Joueurs</span>
-				<!-- <span class="font-semibold mr-2 text-left flex-auto">{{nbPlayer}}</span> -->
-				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-6 h-6"><path fill-rule="evenodd" d="M10 2a1 1 0 00-1 1v1a1 1 0 002 0V3a1 1 0 00-1-1zM4 4h3a3 3 0 006 0h3a2 2 0 012 2v9a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm2.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm2.45 4a2.5 2.5 0 10-4.9 0h4.9zM12 9a1 1 0 100 2h3a1 1 0 100-2h-3zm-1 4a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-			</div>
-		</div>
-
-		<div class="py-4 px-4 btn">
-		<div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
-			<span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">CARTE ({{Object.keys(this.map).length}} maps)</span>
-			<span class="font-semibold mr-2 text-left flex-auto">{{title}}</span>
-			<svg class="fill-current opacity-75 h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-		</div>
-		</div>
-	</div>
 <Modal v-if="isShowModal" @close="toggleModal" :region="region"/>
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1440 1060" style="enable-background:new 0 0 1440 1060;" xml:space="preserve">
@@ -3109,7 +3071,50 @@
   <div class="p-2 bg-gray-800 items-center text-gray-100 leading-none rounded-full inline-flex" role="alert">
     <span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-xs font-bold mr-3">FORTERESSES</span>
     <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.96 14.28"><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path d="M5.65,0H5.42a.14.14,0,0,0-.14.14V1.67H4V.14A.14.14,0,0,0,3.9,0H2.78a.14.14,0,0,0-.14.14V1.67H1.41V.14A.14.14,0,0,0,1.27,0H.15A.14.14,0,0,0,0,.14v4a.63.63,0,0,0,.63.63h.93L0,13.53a.66.66,0,0,0,.14.52.65.65,0,0,0,.49.23H11.32a.65.65,0,0,0,.49-.23.66.66,0,0,0,.14-.52L10.38,4.75h.93A.63.63,0,0,0,12,4.12v-4A.14.14,0,0,0,11.81,0H10.69a.14.14,0,0,0-.14.14V1.67H9.32V.14A.15.15,0,0,0,9.17,0H8.06a.14.14,0,0,0-.14.14V1.67H6.68V.14A.14.14,0,0,0,6.54,0H6.31M7.5,7.94V10.7h-3V7.94a1.52,1.52,0,1,1,3,0Z"/></g></g></svg>
-  </div>  
+  </div>
+    <div class="p-2 bg-gray-800 items-center text-gray-100 leading-none rounded-full inline-flex" role="alert">
+    <span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-xs font-bold mr-3">Bateaux</span>
+    <svg class="fill-current opacity-75 h-4 w-4" id="Capa_1" enable-background="new 0 0 511.506 511.506" height="512" viewBox="0 0 511.506 511.506" width="512" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m259.474 410.966c-8.284 0-15-6.716-15-10.322v-86.416c0-12.962 6.716-19.678 15-19.678s15 6.716 15 19.678v86.416c0 3.606-6.715 10.322-15 10.322z" fill="#004175"/><path d="m267.221 308.262-7.746 47.123v43.139l7.5 5.423 7.5-5.582v-84.137z" fill="#001a38"/><path d="m259.475 62.891v277.494" fill="#fff"/><path d="m480.879 331.349-232.997-308.158 1.592 322.193 10.001 10h209.431c5.689 0 10.89-3.219 13.427-8.313 2.536-5.092 1.973-11.181-1.454-15.722z" fill="#ffb500"/><path d="m244.342 0c-27.153.046-53.914 14.169-79.542 41.98-20.972 22.759-40.703 54.017-58.644 92.904-31.239 67.71-53.052 152.262-53.031 205.575.003 8.256 6.744 14.925 15 14.925h191.349v-340.384c.001-8.323-6.809-15.014-15.132-15z" fill="#fed100"/></g><path d="m272.95 408.365-13.475-10h-216.875c-5.833 0-11.138 3.382-13.599 8.671s-1.634 11.524 2.123 15.988l69.972 83.14c2.85 3.387 7.05 5.342 11.477 5.342h146.903l13.475-10v-93.141z" fill="#00bcd1"/><path d="m468.793 398.365h-209.318v113.141h139.345c4.426 0 8.626-1.955 11.477-5.341l69.973-83.141c3.756-4.464 4.584-10.699 2.123-15.988-2.463-5.289-7.766-8.671-13.6-8.671z" fill="#0082ca"/></g></svg>
+  </div>
+	<div class="p-2 bg-gray-800 items-center text-gray-100 leading-none rounded-full inline-flex" role="alert">
+    	<span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-xs font-bold mr-3">Combats</span>
+		<svg class="fill-current opacity-75 h-4 w-4" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path style="fill:#6C4127;" d="M448.238,448.252c-7.053,7.053-11.061,15.916-12.332,25.097L329.975,367.417l37.429-37.429
+l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
+<circle style="fill:#EBBA16;" cx="467.862" cy="467.875" r="44.111"/>
+<rect x="372.78" y="381.636" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -165.3974 399.2591)" style="fill:#8E5F46;" width="52.939" height="35.292"/>
+<path style="fill:#FFFFFF;" d="M461.647,482.97c2.26,0,4.52-0.865,6.241-2.586l12.473-12.482c3.443-3.452,3.443-9.031,0-12.482
+	c-3.452-3.46-9.039-3.443-12.482,0l-12.473,12.482c-3.443,3.452-3.443,9.031,0,12.482
+	C457.128,482.105,459.388,482.97,461.647,482.97z"/>
+<g>
+	<polygon style="fill:#AFB6BB;" points="273.655,211.284 74.858,12.487 0,0.013 12.482,74.871 211.271,273.668 	"/>
+	
+		<rect x="260.289" y="260.939" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 734.9041 304.4402)" style="fill:#AFB6BB;" width="88.222" height="86.969"/>
+</g>
+<path style="fill:#839594;" d="M224.812,233.653c-2.26,0-4.52-0.865-6.241-2.586L99.69,112.185c-3.452-3.452-3.452-9.031,0-12.482
+	c3.443-3.452,9.031-3.452,12.482,0l118.881,118.881c3.452,3.452,3.452,9.031,0,12.482
+	C229.332,232.788,227.063,233.653,224.812,233.653z"/>
+<path style="fill:#6C4127;" d="M63.762,448.252c7.053,7.053,11.061,15.916,12.332,25.097l105.931-105.931l-37.429-37.429
+	L38.665,435.919C47.837,437.199,56.708,441.198,63.762,448.252z"/>
+<circle style="fill:#EBBA16;" cx="44.111" cy="467.875" r="44.111"/>
+<polygon style="fill:#E7ECED;" points="203.335,371.072 140.941,308.679 437.142,12.487 512,0.013 499.527,74.871 "/>
+<g>
+	<path style="fill:#AFB6BB;" d="M187.595,333.246c-2.26,0-4.52-0.865-6.241-2.586c-3.452-3.452-3.452-9.031,0-12.482L399.828,99.703
+		c3.443-3.452,9.031-3.452,12.482,0c3.452,3.452,3.452,9.031,0,12.482L193.836,330.659
+		C192.115,332.381,189.855,333.246,187.595,333.246z"/>
+	<path style="fill:#AFB6BB;" d="M432.552,88.289c-2.26,0-4.52-0.865-6.241-2.586c-3.452-3.452-3.452-9.031,0-12.482l26.483-26.483
+		c3.443-3.452,9.039-3.452,12.482,0c3.452,3.452,3.452,9.031,0,12.482l-26.483,26.483C437.071,87.424,434.812,88.289,432.552,88.289
+		z"/>
+</g>
+<rect x="86.271" y="381.631" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -89.873 761.3284)" style="fill:#8E5F46;" width="52.939" height="35.292"/>
+<path style="fill:#FFFFFF;" d="M50.353,482.97c-2.26,0-4.52-0.865-6.241-2.586l-12.473-12.482c-3.443-3.452-3.443-9.031,0-12.482
+	c3.452-3.46,9.039-3.443,12.482,0l12.473,12.482c3.443,3.452,3.443,9.031,0,12.482C54.872,482.105,52.612,482.97,50.353,482.97z"/>
+<polygon style="fill:#EBBA16;" points="318.164,405.517 405.504,318.177 405.504,280.748 368.075,280.748 280.735,368.088 
+	280.735,405.517 "/>
+<path style="fill:#839594;" d="M79.448,88.289c-2.26,0-4.52-0.865-6.241-2.586L46.724,59.22c-3.452-3.452-3.452-9.031,0-12.482
+	c3.443-3.452,9.039-3.452,12.482,0L85.689,73.22c3.452,3.452,3.452,9.031,0,12.482C83.968,87.424,81.708,88.289,79.448,88.289z"/>
+<polygon style="fill:#EBBA16;" points="193.836,405.517 106.496,318.177 106.496,280.748 143.925,280.748 231.265,368.088 
+	231.265,405.517 "/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+  	</div>    
 </div>
 
 <br><br><br><br><br>
@@ -3184,93 +3189,7 @@
 
 <br><br><br><br>
 
-<div role="alert" id="regle">
-  <div class="bg-green-500 text-white font-bold rounded-t px-4 py-2">
-    Règles de l'event :
-  </div>
-  <div class="border border-t-2 border-green-400 rounded-b bg-green-100 px-4 py-3 text-green-700">
-	<ul class="list-disc px-4 py-2">
-	<li class="font-semibold mr-2 text-left flex-auto">Votre match doit être joué dans la semaine, sans quoi vos coéquipiers devront se battre sans vous, ou si vous êtes seul, le territoire sera donné à votre adversaire.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Les batailles se dérouleront constamment avec 1000 ressources de départ et des points de commandement x2 ainsi que l'anneau d'activé.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Le choix des chefs de faction se fera par un vote dans cette même faction.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Si vous tombez seul contre trois joueurs, vous devrez jouer le match sans allié en 1vs3.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Si vous mourez, vous redémarrez à votre capitale de faction, avec un handicap de 30% qui est retiré au bout d'un tour.</li>
-	<br>
-	<li class="font-semibold mr-2 text-left flex-auto">Une fois votre faction choisie, vous ne pouvez la changer. Si vous le faite dans le but de voir les channels des autres factions, vous serez sanctionné!</li>
-	</ul>
-  </div>
-</div>
-<br><br>
-<div role="alert" id="hero">
-  <div class="bg-pink-500 text-white font-bold rounded-t px-4 py-2">
-    Les Héros crées :
-  </div>
-  <div class="border border-t-2 border-pink-400 rounded-b bg-pink-100 px-4 py-3 text-pink-700">
-	<ul class="list-disc px-4 py-2">
-	<li class="font-semibold mr-2 text-left flex-auto">Aucune triche n'est permise sur les héros créés; leurs pouvoirs et compétences doivent être normaux.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Le prix des héros ne doit pas être supérieur à 2500 ressources.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Vous n'avez droit qu'à un seul héros créé..</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Les chefs de faction ne peuvent avoir de héros créé.</li>
-	</ul>
-  </div>
-</div>
-<br><br>
-<div role="alert" id="diplomatie">
-  <div class="bg-blue-500 text-white font-bold rounded-t px-4 py-2">
-    Diplomatie : 
-  </div>
-  <div class="border border-t-2 border-blue-400 rounded-b bg-blue-100 px-4 py-3 text-blue-700">
-	<ul class="list-disc px-4 py-2">
-		<li class="font-semibold mr-2 text-left flex-auto">Le chef de faction a la possibilité de sceller un pacte de non-agression avec une autre faction, actif 5 tours, rendant impossible les attaques entre ces deux factions.</li>
-		<li class="font-semibold mr-2 text-left flex-auto">Les pactes de non-agression ne sont pas cumulables; ils doivent être espacés de 5 tours.</li>
-	</ul>
-  </div>
-</div>
-<br><br>
-<div role="alert" id="diplomatie">
-  <div class="bg-purple-500 text-white font-bold rounded-t px-4 py-2">
-    Déplacement : 
-  </div>
-  <div class="border border-t-2 border-purple-400 rounded-b bg-purple-100 px-4 py-3 text-purple-700">
-	<ul class="list-disc px-4 py-2">
-	<li class="font-semibold mr-2 text-left flex-auto">Les tours de déplacements auront lieu chaque dimanche.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Le chef de votre faction aura le dernier mot sur les déplacements que vous devrez effectuer.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Les chefs de faction devront donner les déplacements des joueurs de leur faction à un Valar; Morgoth; ou Elrohir en MP chaque week-end.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Les territoires vierges sont pris au bout d'un tour.</li>
-	<li class="font-semibold mr-2 text-left flex-auto">Vous pouvez également respawn sur les forteresses conquises par votre faction.</li>
-	</ul>
-  </div>
-</div>
-<br><br>
-<div role="alert" id="diplomatie">
-  <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
-    Maps de forteresse : 
-  </div>
-  <div class="border border-t-2 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
-	<ul class="list-disc px-4 py-2">
-	<li class="font-semibold mr-2 text-left flex-auto">Il n'y a qu'une seule personne qui gère les portes et les catapultes des fortos, veiller à choisir le bon joueur pour cela.</li>
-	</ul>
-  </div>
-</div>
-<br><br>
-<div role="alert" id="faction">
-  <div class="bg-gray-500 text-white font-bold rounded-t px-4 py-2">
-    Choix de votre faction : 
-  </div>
-  <div class="border border-t-2 border-gray-400 rounded-b bg-gray-100 px-4 py-3 text-gray-700">
-	<ul class="list-disc px-4 py-2">
-	<li class="font-semibold mr-2 text-left flex-auto">Sur le Discord vous avez la possibilité de choisir entre le Rohan, Elfe, Gondor, Nain, Mordor, Isengard, Gobelin ou Angmar</li>
-	</ul>
-  </div>
-</div>
-<br><br>
-<img src="~assets/faction.png" alt="" srcset="">
-<br><br>
-<div class="text-center">
-	<a class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 border-b-4 border-blue-700 hover:border-blue-500 rounded"
-	href="http://bit.ly/LaTerreduMilieu" target="_blank" rel="noopener noreferrer">Discord : voir channel événement 📅
-	</a>
-</div>
+
 <br><br>
 <!-- <Player id="player" :players="players"/> -->
 <br><br>

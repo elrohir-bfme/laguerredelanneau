@@ -3060,25 +3060,30 @@
 </svg>
 <div class="text-center py-4 px-4">
   <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
-    <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">CARTE</span>
+    <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-sm font-bold mr-3">CARTE</span>
     <span class="font-semibold mr-2 text-left flex-auto">{{title}}</span>
-    <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+    <svg class="fill-current opacity-75 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+  </div>
+<div class="p-2 bg-gray-800 items-center text-gray-100 leading-none rounded-full inline-flex" role="alert">
+    <span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-sm font-bold mr-3">JOUEURS</span>
+    <span class="font-semibold mr-2 text-left flex-auto">{{nbPlayers}}</span>
+    <svg class="stroke-current opacity-75 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></span>
   </div>
   <div class="p-2 bg-blue-800 items-center text-blue-100 leading-none rounded-full inline-flex" role="alert">
-    <span class="flex rounded-full bg-blue-500 uppercase px-2 py-1 text-xs font-bold mr-3">PORTS</span>
-    <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M4.34 15.66A7.97 7.97 0 0 0 9 17.94V10H5V8h4V5.83a3 3 0 1 1 2 0V8h4v2h-4v7.94a7.97 7.97 0 0 0 4.66-2.28l-1.42-1.42h5.66l-2.83 2.83a10 10 0 0 1-14.14 0L.1 14.24h5.66l-1.42 1.42zM10 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
+    <span class="flex rounded-full bg-blue-500 uppercase px-2 py-1 text-sm font-bold mr-3">PORTS</span>
+    <svg class="fill-current opacity-75 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M4.34 15.66A7.97 7.97 0 0 0 9 17.94V10H5V8h4V5.83a3 3 0 1 1 2 0V8h4v2h-4v7.94a7.97 7.97 0 0 0 4.66-2.28l-1.42-1.42h5.66l-2.83 2.83a10 10 0 0 1-14.14 0L.1 14.24h5.66l-1.42 1.42zM10 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
   </div>
   <div class="p-2 bg-gray-800 items-center text-gray-100 leading-none rounded-full inline-flex" role="alert">
-    <span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-xs font-bold mr-3">FORTERESSES</span>
-    <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.96 14.28"><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path d="M5.65,0H5.42a.14.14,0,0,0-.14.14V1.67H4V.14A.14.14,0,0,0,3.9,0H2.78a.14.14,0,0,0-.14.14V1.67H1.41V.14A.14.14,0,0,0,1.27,0H.15A.14.14,0,0,0,0,.14v4a.63.63,0,0,0,.63.63h.93L0,13.53a.66.66,0,0,0,.14.52.65.65,0,0,0,.49.23H11.32a.65.65,0,0,0,.49-.23.66.66,0,0,0,.14-.52L10.38,4.75h.93A.63.63,0,0,0,12,4.12v-4A.14.14,0,0,0,11.81,0H10.69a.14.14,0,0,0-.14.14V1.67H9.32V.14A.15.15,0,0,0,9.17,0H8.06a.14.14,0,0,0-.14.14V1.67H6.68V.14A.14.14,0,0,0,6.54,0H6.31M7.5,7.94V10.7h-3V7.94a1.52,1.52,0,1,1,3,0Z"/></g></g></svg>
+    <span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-sm font-bold mr-3">FORTERESSES</span>
+    <svg class="fill-current opacity-75 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.96 14.28"><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path d="M5.65,0H5.42a.14.14,0,0,0-.14.14V1.67H4V.14A.14.14,0,0,0,3.9,0H2.78a.14.14,0,0,0-.14.14V1.67H1.41V.14A.14.14,0,0,0,1.27,0H.15A.14.14,0,0,0,0,.14v4a.63.63,0,0,0,.63.63h.93L0,13.53a.66.66,0,0,0,.14.52.65.65,0,0,0,.49.23H11.32a.65.65,0,0,0,.49-.23.66.66,0,0,0,.14-.52L10.38,4.75h.93A.63.63,0,0,0,12,4.12v-4A.14.14,0,0,0,11.81,0H10.69a.14.14,0,0,0-.14.14V1.67H9.32V.14A.15.15,0,0,0,9.17,0H8.06a.14.14,0,0,0-.14.14V1.67H6.68V.14A.14.14,0,0,0,6.54,0H6.31M7.5,7.94V10.7h-3V7.94a1.52,1.52,0,1,1,3,0Z"/></g></g></svg>
   </div>
     <div class="p-2 bg-gray-800 items-center text-gray-100 leading-none rounded-full inline-flex" role="alert">
-    <span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-xs font-bold mr-3">Bateaux</span>
-    <svg class="fill-current opacity-75 h-4 w-4" id="Capa_1" enable-background="new 0 0 511.506 511.506" height="512" viewBox="0 0 511.506 511.506" width="512" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m259.474 410.966c-8.284 0-15-6.716-15-10.322v-86.416c0-12.962 6.716-19.678 15-19.678s15 6.716 15 19.678v86.416c0 3.606-6.715 10.322-15 10.322z" fill="#004175"/><path d="m267.221 308.262-7.746 47.123v43.139l7.5 5.423 7.5-5.582v-84.137z" fill="#001a38"/><path d="m259.475 62.891v277.494" fill="#fff"/><path d="m480.879 331.349-232.997-308.158 1.592 322.193 10.001 10h209.431c5.689 0 10.89-3.219 13.427-8.313 2.536-5.092 1.973-11.181-1.454-15.722z" fill="#ffb500"/><path d="m244.342 0c-27.153.046-53.914 14.169-79.542 41.98-20.972 22.759-40.703 54.017-58.644 92.904-31.239 67.71-53.052 152.262-53.031 205.575.003 8.256 6.744 14.925 15 14.925h191.349v-340.384c.001-8.323-6.809-15.014-15.132-15z" fill="#fed100"/></g><path d="m272.95 408.365-13.475-10h-216.875c-5.833 0-11.138 3.382-13.599 8.671s-1.634 11.524 2.123 15.988l69.972 83.14c2.85 3.387 7.05 5.342 11.477 5.342h146.903l13.475-10v-93.141z" fill="#00bcd1"/><path d="m468.793 398.365h-209.318v113.141h139.345c4.426 0 8.626-1.955 11.477-5.341l69.973-83.141c3.756-4.464 4.584-10.699 2.123-15.988-2.463-5.289-7.766-8.671-13.6-8.671z" fill="#0082ca"/></g></svg>
+    <span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-sm font-bold mr-3">Bateaux</span>
+    <svg class="fill-current opacity-75 h-5 w-5" id="Capa_1" enable-background="new 0 0 511.506 511.506" height="512" viewBox="0 0 511.506 511.506" width="512" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m259.474 410.966c-8.284 0-15-6.716-15-10.322v-86.416c0-12.962 6.716-19.678 15-19.678s15 6.716 15 19.678v86.416c0 3.606-6.715 10.322-15 10.322z" fill="#004175"/><path d="m267.221 308.262-7.746 47.123v43.139l7.5 5.423 7.5-5.582v-84.137z" fill="#001a38"/><path d="m259.475 62.891v277.494" fill="#fff"/><path d="m480.879 331.349-232.997-308.158 1.592 322.193 10.001 10h209.431c5.689 0 10.89-3.219 13.427-8.313 2.536-5.092 1.973-11.181-1.454-15.722z" fill="#ffb500"/><path d="m244.342 0c-27.153.046-53.914 14.169-79.542 41.98-20.972 22.759-40.703 54.017-58.644 92.904-31.239 67.71-53.052 152.262-53.031 205.575.003 8.256 6.744 14.925 15 14.925h191.349v-340.384c.001-8.323-6.809-15.014-15.132-15z" fill="#fed100"/></g><path d="m272.95 408.365-13.475-10h-216.875c-5.833 0-11.138 3.382-13.599 8.671s-1.634 11.524 2.123 15.988l69.972 83.14c2.85 3.387 7.05 5.342 11.477 5.342h146.903l13.475-10v-93.141z" fill="#00bcd1"/><path d="m468.793 398.365h-209.318v113.141h139.345c4.426 0 8.626-1.955 11.477-5.341l69.973-83.141c3.756-4.464 4.584-10.699 2.123-15.988-2.463-5.289-7.766-8.671-13.6-8.671z" fill="#0082ca"/></g></svg>
   </div>
 	<div class="p-2 bg-gray-800 items-center text-gray-100 leading-none rounded-full inline-flex" role="alert">
-    	<span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-xs font-bold mr-3">Combats</span>
-		<svg class="fill-current opacity-75 h-4 w-4" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path style="fill:#6C4127;" d="M448.238,448.252c-7.053,7.053-11.061,15.916-12.332,25.097L329.975,367.417l37.429-37.429
+    	<span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-sm font-bold mr-3">Combats</span>
+		<svg class="fill-current opacity-75 h-5 w-5" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path style="fill:#6C4127;" d="M448.238,448.252c-7.053,7.053-11.061,15.916-12.332,25.097L329.975,367.417l37.429-37.429
 l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 <circle style="fill:#EBBA16;" cx="467.862" cy="467.875" r="44.111"/>
 <rect x="372.78" y="381.636" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -165.3974 399.2591)" style="fill:#8E5F46;" width="52.939" height="35.292"/>
@@ -3117,76 +3122,216 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
   	</div>    
 </div>
 
-<br><br><br><br><br>
-
-	<div class="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col">
+<br><br>	
 
 
-		<div class="py-4 px-4 btn">
-			<div class="p-2 bg-green-800 hover:bg-green-900 items-center text-green-100 leading-none rounded-full inline-flex" role="alert">
-				<span class="flex rounded-full bg-green-700 uppercase px-2 py-1 text-xs font-bold mr-3">Edoras (0bff00)</span>
-				<span class="font-semibold mr-2 text-left flex-auto">Capitale du Rohan</span>
-				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+
+			<div class="flex flex-col items-center justify-center bg-green-800 hover:bg-green-900 text-green-100 p-4 shadow rounded-lg">
+				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
+					<img src="~assets/factions/rohan.png"
+						 alt=""
+						 class="h-full w-full">
+				</div>
+
+				<h2 class="mt-4 font-bold text-xl text-green-300">Chef de la Faction du Rohan</h2>
+				<h6 class="mt-2 text-xl font-black underline">Hasgardien</h6>
+
+				<span class="flex rounded-full mt-4 bg-green-700 uppercase px-2 py-1 text-sm font-bold mr-3">Edoras (0BFF00)</span>
+
+				<ul class="flex flex-row mt-4 space-x-1">
+					<li>
+						<span class="flex rounded-full bg-green-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbTerritoireRohan}} Territoires
+							<svg class="ml-2 stroke-current text-green-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd" /></svg>
+						</span>
+					</li>
+					<li>
+						<span class="flex rounded-full bg-green-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbPlayerRohan}} Joueurs
+						<svg class="ml-2 stroke-current text-green-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></span>
+					</li>
+				</ul>
 			</div>
-		</div>
 
-		<div class="py-4 px-4">
-			<div class="p-2 bg-teal-800 hover:bg-teal-900 items-center text-teal-100 leading-none rounded-full inline-flex" role="alert">
-				<span class="flex rounded-full bg-teal-600 uppercase px-2 py-1 text-xs font-bold mr-3">Havres Gris (00bfff)</span>
-				<span class="font-semibold mr-2 text-left flex-auto">Capitale de la faction Elfique</span>
-				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
-			</div>
-		</div>
+			<div class="flex flex-col items-center justify-center bg-teal-800 hover:bg-teal-900 text-teal-100 p-4 shadow rounded-lg">
+				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
+					<img src="~assets/factions/elfe.png"
+						 alt=""
+						 class="h-full w-full">
+				</div>
 
-		<div class="py-4 px-4 btn">
-			<div class="p-2 bg-blue-500 hover:bg-blue-600 items-center text-blue-100 leading-none rounded-full inline-flex" role="alert">
-				<span class="flex rounded-full bg-blue-400 uppercase px-2 py-1 text-xs font-bold mr-3">Minas Tirith (1e90ff)</span>
-				<span class="font-semibold mr-2 text-left flex-auto">Capitale du Gondor</span>
-				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
-			</div>
-		</div>
+				<h2 class="mt-4 font-bold text-xl text-teal-300">Chef de la Faction du Elfe</h2>
+				<h6 class="mt-2 text-xl font-black underline">Eönwë Roi des elfes</h6>
 
-		<div class="py-4 px-4 btn">
-			<div class="p-2 bg-yellow-600 hover:bg-yellow-700 items-center text-yellow-100 leading-none rounded-full inline-flex" role="alert">
-				<span class="flex rounded-full bg-yellow-500 uppercase px-2 py-1 text-xs font-bold mr-3">Erebor (fffc00)</span>
-				<span class="font-semibold mr-2 text-left flex-auto">Capitale des Nains</span>
-				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
-			</div>
-		</div>
-	</div>
-	<div class="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col">
+				<span class="flex rounded-full mt-4 bg-teal-700 uppercase px-2 py-1 text-sm font-bold mr-3">Havres gris (00BFFF)</span>
 
+				<ul class="flex flex-row mt-4 space-x-1">
+					<li>
+						<span class="flex rounded-full bg-teal-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbTerritoireElfe}} Territoires
+							<svg class="ml-2 stroke-current text-teal-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd" /></svg>
+						</span>
+					</li>
+					<li>
+						<span class="flex rounded-full bg-teal-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbPlayerElfe}} Joueurs
+						<svg class="ml-2 stroke-current text-teal-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></span>
+					</li>
+				</ul>
+			</div>
 
-		<div class="py-4 px-4 btn">
-			<div class="p-2 bg-red-800 hover:bg-red-900 items-center text-red-100 leading-none rounded-full inline-flex" role="alert">
-				<span class="flex rounded-full bg-red-600 uppercase px-2 py-1 text-xs font-bold mr-3">Barad-Dûr (DB5461)</span>
-				<span class="font-semibold mr-2 text-left flex-auto">Capitale du Mordor</span>
-				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
-			</div>
-		</div>
-		<div class="py-4 px-4 btn">
-			<div class="p-2 bg-gray-800 hover:bg-gray-900 items-center text-gray-100 leading-none rounded-full inline-flex" role="alert">
-				<span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-xs font-bold mr-3">Isengard (333533)</span>
-				<span class="font-semibold mr-2 text-left flex-auto">Capitale de l'Isengard</span>
-				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
-			</div>
-		</div>
-		<div class="py-4 px-4 btn">
-			<div class="p-2 bg-orange-800 hover:bg-orange-900 items-center text-orange-100 leading-none rounded-full inline-flex" role="alert">
-				<span class="flex rounded-full bg-orange-600 uppercase px-2 py-1 text-xs font-bold mr-3">Le Coeur de la Moria (ff6f00)</span>
-				<span class="font-semibold mr-2 text-left flex-auto">Capitale des Gobelins</span>
-				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
-			</div>
-		</div>
-		<div class="py-4 px-4 btn">
-			<div class="p-2 bg-purple-800 hover:bg-purple-900 items-center text-purple-100 leading-none rounded-full inline-flex" role="alert">
-				<span class="flex rounded-full bg-purple-500 uppercase px-2 py-1 text-xs font-bold mr-3">Carn Dûm (c500ff)</span>
-				<span class="font-semibold mr-2 text-left flex-auto">Capitale de l'Angmar</span>
-				<svg viewBox="0 0 20 20" class="fill-current opacity-75 w-10 h-10"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
-			</div>
-		</div>
-	</div>
+			<div class="flex flex-col items-center justify-center bg-blue-600 hover:bg-blue-700 text-blue-100 p-4 shadow rounded-lg">
+				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
+					<img src="~assets/factions/gondor.png"
+						 alt=""
+						 class="h-full w-full">
+				</div>
 
+				<h2 class="mt-4 font-bold text-xl text-blue-300">Chef de la Faction du Gondor</h2>
+				<h6 class="mt-2 text-xl font-black underline">Loken</h6>
+
+				<span class="flex rounded-full mt-4 bg-blue-700 uppercase px-2 py-1 text-sm font-bold mr-3">Minas Tirith (1E90FF)</span>
+
+				<ul class="flex flex-row mt-4 space-x-1">
+					<li>
+						<span class="flex rounded-full bg-blue-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbTerritoireGondor}} Territoires
+							<svg class="ml-2 stroke-current text-blue-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd" /></svg>
+						</span>
+					</li>
+					<li>
+						<span class="flex rounded-full bg-blue-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbPlayerGondor}} Joueurs
+						<svg class="ml-2 stroke-current text-blue-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="flex flex-col items-center justify-center bg-yellow-700 hover:bg-yellow-800 text-yellow-100 p-4 shadow rounded-lg">
+				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
+					<img src="~assets/factions/nain.png"
+						 alt=""
+						 class="h-full w-full">
+				</div>
+
+				<h2 class="mt-4 font-bold text-xl text-yellow-300">Chef de la Faction du Nain</h2>
+				<h6 class="mt-2 text-xl font-black underline">Roi Daïn Pied D'Acier</h6>
+
+				<span class="flex rounded-full mt-4 bg-yellow-800 uppercase px-2 py-1 text-sm font-bold mr-3">Erebor (FFFC00)</span>
+
+				<ul class="flex flex-row mt-4 space-x-1">
+					<li>
+						<span class="flex rounded-full bg-yellow-800 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbTerritoireNain}} Territoires
+							<svg class="ml-2 stroke-current text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd" /></svg>
+						</span>
+					</li>
+					<li>
+						<span class="flex rounded-full bg-yellow-800 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbPlayerNain}} Joueurs
+						<svg class="ml-2 stroke-current text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></span>
+					</li>
+				</ul>
+			</div>
+</div>
+
+<br>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+
+			<div class="flex flex-col items-center justify-center bg-red-800 hover:bg-red-900 text-red-100 p-4 shadow rounded-lg">
+				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
+					<img src="~assets/factions/mordor.png"
+						 alt=""
+						 class="h-full w-full">
+				</div>
+
+				<h2 class="mt-4 font-bold text-xl text-red-300">Chef de la Faction du Mordor</h2>
+				<h6 class="mt-2 text-xl font-black underline">Gorthaur</h6>
+
+				<span class="flex rounded-full mt-4 bg-red-700 uppercase px-2 py-1 text-sm font-bold mr-3">Barad Dûr (DB5461)</span>
+
+				<ul class="flex flex-row mt-4 space-x-1">
+					<li>
+						<span class="flex rounded-full bg-red-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbTerritoireMordor}} Territoires
+							<svg class="ml-2 stroke-current text-red-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd" /></svg>
+						</span>
+					</li>
+					<li>
+						<span class="flex rounded-full bg-red-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbPlayerMordor}} Joueurs
+						<svg class="ml-2 stroke-current text-red-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="flex flex-col items-center justify-center bg-gray-800 hover:bg-gray-900 text-gray-100 p-4 shadow rounded-lg">
+				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
+					<img src="~assets/factions/isengard.png"
+						 alt=""
+						 class="h-full w-full">
+				</div>
+
+				<h2 class="mt-4 font-bold text-xl text-gray-300">Chef de la Faction d'Isengard</h2>
+				<h6 class="mt-2 text-xl font-black underline">Styg</h6>
+
+				<span class="flex rounded-full mt-4 bg-gray-700 uppercase px-2 py-1 text-sm font-bold mr-3">Orthanc (FFFFFF)</span>
+
+				<ul class="flex flex-row mt-4 space-x-1">
+					<li>
+						<span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbTerritoireIsengard}} Territoires
+							<svg class="ml-2 stroke-current text-gray-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd" /></svg>
+						</span>
+					</li>
+					<li>
+						<span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbPlayerIsengard}} Joueurs
+						<svg class="ml-2 stroke-current text-gray-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="flex flex-col items-center justify-center bg-orange-800 hover:bg-orange-900 text-orange-100 p-4 shadow rounded-lg">
+				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
+					<img src="~assets/factions/gobelin.png"
+						 alt=""
+						 class="h-full w-full">
+				</div>
+
+				<h2 class="mt-4 font-bold text-xl text-orange-300">Chef de la Faction Gobelin</h2>
+				<h6 class="mt-2 text-xl font-black underline">Bolgar Roi de la Moria</h6>
+
+				<span class="flex rounded-full mt-4 bg-orange-700 uppercase px-2 py-1 text-sm font-bold mr-3">Coeur de la Moria (FF6F00)</span>
+
+				<ul class="flex flex-row mt-4 space-x-1">
+					<li>
+						<span class="flex rounded-full bg-orange-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbTerritoireGobelin}} Territoires
+							<svg class="ml-2 stroke-current text-orange-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd" /></svg>
+						</span>
+					</li>
+					<li>
+						<span class="flex rounded-full bg-orange-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbPlayerGobelin}} Joueurs
+						<svg class="ml-2 stroke-current text-orange-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="flex flex-col items-center justify-center bg-purple-700 hover:bg-purple-800 text-purple-100 p-4 shadow rounded-lg">
+				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
+					<img src="~assets/factions/angmar.png"
+						 alt=""
+						 class="h-full w-full">
+				</div>
+
+				<h2 class="mt-4 font-bold text-xl text-purple-300">Chef de la Faction d'Angmar</h2>
+				<h6 class="mt-2 text-xl font-black underline">Roi Sorcier D'Angmar</h6>
+
+				<span class="flex rounded-full mt-4 bg-purple-800 uppercase px-2 py-1 text-sm font-bold mr-3">Carn Dûrm (C500FF)</span>
+
+				<ul class="flex flex-row mt-4 space-x-1">
+					<li>
+						<span class="flex rounded-full bg-purple-800 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbTerritoireAngmar}} Territoires
+							<svg class="ml-2 stroke-current text-purple-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd" /></svg>
+						</span>
+					</li>
+					<li>
+						<span class="flex rounded-full bg-purple-800 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbPlayerAngmar}} Joueurs
+						<svg class="ml-2 stroke-current text-purple-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></span>
+					</li>
+				</ul>
+			</div>
+</div>
 <br><br><br><br>
 
 
@@ -3215,7 +3360,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 					<div class="px-6 py-4">
 						<div class="font-bold text-xl mb-2 text-gray-800">
 							{{ player.name}} 
-						<span v-if="player.faction == 1" class="rounded-full bg-green-400 uppercase px-2 py-1 text-xs font-bold mr-3 text-white hover:bg-green-500">Rohan</span>
+						<span v-if="player.faction == 1"  class="rounded-full bg-green-400 uppercase px-2 py-1 text-xs font-bold mr-3 text-white hover:bg-green-500">Rohan</span>
 						<span v-else-if="player.faction == 2" class="rounded-full bg-green-800 uppercase px-2 py-1 text-xs font-bold mr-3 text-white hover:bg-green-900">Elfe</span>
 						<span v-else-if="player.faction == 3" class="rounded-full bg-blue-500 uppercase px-2 py-1 text-xs font-bold mr-3 text-white hover:bg-blue-600">Gondor</span>
 						<span v-else-if="player.faction == 4" class="rounded-full bg-yellow-600 uppercase px-2 py-1 text-xs font-bold mr-3 text-white hover:bg-yellow-700">Nain</span>
@@ -3260,7 +3405,27 @@ export default {
 		newStock: 'B7B8C4',
 		map: [],
 		information: '',
-		isShowModal: false
+		isShowModal: false,
+		nbTerritoireRohan: 0,
+		nbTerritoireElfe: 0,
+		nbTerritoireGondor: 0,
+		nbTerritoireNain: 0,
+		nbTerritoireMordor: 0,
+		nbTerritoireIsengard: 0,
+		nbTerritoireGobelin: 0,
+		nbTerritoireAngmar: 0,
+
+		nbPlayerRohan: 0,
+		nbPlayerElfe: 0,
+		nbPlayerGondor: 0,
+		nbPlayerNain: 0,
+		nbPlayerMordor: 0,
+		nbPlayerIsengard: 0,
+		nbPlayerGobelin: 0,
+		nbPlayerAngmar: 0,
+
+		nbPlayers: 0
+
 	}
   },
 	methods: {
@@ -3275,6 +3440,103 @@ export default {
 	},
 	async fetch() {
 	  this.map = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c');
+
+		for (var key in this.map) {
+			if (!this.map.hasOwnProperty(key)) continue;
+
+			var obj = this.map[key];
+
+
+			for (var prop in obj) {
+				if (!obj.hasOwnProperty(prop)) continue;
+
+				switch (obj[prop]) {
+					case '#0bff00': 
+					case '#0BFF00':
+						this.nbTerritoireRohan += 1;
+						break;
+
+					case '#00bfff':
+					case '#00BFFF':
+						this.nbTerritoireElfe += 1;
+						break;
+
+					case '#1e90ff':
+					case '#1E90FF':
+						this.nbTerritoireGondor += 1;
+						break;
+
+					case '#fffc00':
+					case '#FFFC00':
+						this.nbTerritoireNain += 1;
+						break;
+
+					case '#db5461': 
+					case '#DB5461':
+						this.nbTerritoireMordor += 1;
+						break;
+
+					case '#ffffff':
+					case '#FFFFFF':
+						this.nbTerritoireIsengard += 1;
+						break;
+
+					case '#ff6f00':
+					case '#FF6F00':
+						this.nbTerritoireGobelin += 1;
+						break;
+
+					case '#c500ff':
+					case '#C500FF':
+						this.nbTerritoireAngmar += 1;
+						break;
+					default:
+						break;
+				}
+			}
+
+			if(!obj['players'].length > 0) continue;
+			let obj2 = JSON.parse(JSON.stringify(obj['players']))
+			for (var player in obj2) {
+				
+				switch (obj2[player]['faction']) {
+					case 1:
+						this.nbPlayerRohan += 1;
+						this.nbPlayers += 1;
+						break;
+					case 2:
+						this.nbPlayerElfe += 1
+						this.nbPlayers += 1;
+						break;
+					case 3:
+						this.nbPlayerGondor += 1
+						this.nbPlayers += 1;
+						break;
+					case 4:
+						this.nbPlayerNain += 1
+						this.nbPlayers += 1;
+						break;
+					case 5:
+						this.nbPlayerMordor += 1
+						this.nbPlayers += 1;
+						break;
+					case 6:
+						this.nbPlayerIsengard += 1
+						this.nbPlayers += 1;
+						break;
+					case 7:
+						this.nbPlayerGobelin += 1
+						this.nbPlayers += 1;
+						break;
+					case 8:
+						this.nbPlayerAngmar += 1
+						this.nbPlayers += 1;
+						break;
+					default:
+						break;
+				}
+			}
+		}
 	}
 }
 </script>

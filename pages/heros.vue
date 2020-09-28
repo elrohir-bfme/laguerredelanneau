@@ -9,7 +9,7 @@
       <div v-for="hero in heros" :key="hero.name" class="lg:w-1/3 sm:w-1/2 p-4">
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" :src="hero.img">
-          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+          <div class="px-10 py-10 relative w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
             <p class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">{{hero.name}}</p>
             <p class="title-font text-lg font-medium text-white mb-3">{{hero.race}}</p>
             <p class="leading-relaxed">{{hero.description}}</p>

@@ -3344,14 +3344,6 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
     </div>
     <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
       <div class="p-2 sm:w-1/2 w-full">
-        <div class="bg-gray-900 rounded flex p-4 h-full items-center">
-		  <svg stroke-width="3" class="text-red-700 w-6 h-6 fill-current mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-			</svg>
-          <span class="title-font text-gray-200 font-bold">Rohan - Nain ( TOUR 1 au TOUR 5)</span>
-        </div>
-      </div>
-      <div class="p-2 sm:w-1/2 w-full">
 		<div class="bg-gray-900 rounded flex p-4 h-full items-center">
 		  <svg stroke-width="3" class="text-red-700 w-6 h-6 fill-current mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />

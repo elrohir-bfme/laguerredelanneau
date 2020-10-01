@@ -3062,6 +3062,26 @@
 	<g id="Lebennin" data-name="010---Swords"><path id="Shape-163" data-name="Shape" d="M785.42,766.23a1.62,1.62,0,0,0-1.12-.56l-7.09-.38a1.57,1.57,0,0,0-1.21.46,1.63,1.63,0,0,0-.47,1.22l.38,7.08a1.6,1.6,0,0,0,.56,1.12l16,13.36,4.2-1.54.46-.55,1.1-4.82Z" class="cls-4"></path><path id="Shape-164" data-name="Shape" d="M804,788.53c-4.87,2.13-4,1.68-4.75,2.28l-1,2.52,5.15,4.29,2.69-1,1.78-3.47Z" class="cls-4"></path><path id="Shape-165" data-name="Shape" d="M814.81,806.82l-7.5-6.42,1-2.12,2.38-1.21,6.42,7.5Z" class="cls-5"></path><path id="Shape-166" data-name="Shape" d="M815.15,792.56l-11.8,11.8a3.13,3.13,0,0,1-4.42,0,5.14,5.14,0,0,1-.68-.71.77.77,0,0,0,0-.8c.08-.13-1,.92,15.24-15.28a.8.8,0,0,1,1.11,0l.55.56a3.13,3.13,0,0,1,0,4.43Z" class="cls-6"></path><path id="Shape-167" data-name="Shape" d="M820.06,809.82a3.14,3.14,0,1,1,0-4.44A3.14,3.14,0,0,1,820.06,809.82Z" class="cls-6"></path><path id="Shape-168" data-name="Shape" d="M798.25,781.62l-2.9,3.49L776,765.76a1.53,1.53,0,0,1,1.21-.47l7.09.38a1.62,1.62,0,0,1,1.12.56Z" class="cls-7"></path><path id="Shape-169" data-name="Shape" d="M807.87,793.16l-2.24,2.23-4.47-4.47,2.85-2.39Z" class="cls-7"></path><path id="Shape-170" data-name="Shape" d="M805.65,795.41l0,0" class="cls-4"></path><path id="Shape-171" data-name="Shape" d="M819.74,807.92a1.57,1.57,0,1,1,0-2.21A1.56,1.56,0,0,1,819.74,807.92Z" class="cls-8"></path><path id="Shape-172" data-name="Shape" d="M800.6,791.37c.55-.44,3.88-3.23,19.44-16.2a1.55,1.55,0,0,0,.55-1.12L821,767a1.61,1.61,0,0,0-1.69-1.69l-7.07.38a1.59,1.59,0,0,0-1.13.56c-21.5,25.78-14.84,17.82-16.2,19.43Z" class="cls-9"></path><path id="Shape-173" data-name="Shape" d="M821,767l-.39,7.07a1.55,1.55,0,0,1-.55,1.12c-15.45,12.89-18.89,15.76-19.44,16.2v-5.71l19.91-19.9A1.62,1.62,0,0,1,821,767Z" class="cls-4"></path><path id="Shape-174" data-name="Shape" d="M779.45,804.57l6.41-7.5,2.09,1.3,1.24,2-7.49,6.42Z" class="cls-5"></path><path id="Shape-175" data-name="Shape" d="M780.88,809.82a3.14,3.14,0,1,1,0-4.44A3.14,3.14,0,0,1,780.88,809.82Z" class="cls-6"></path><path id="Shape-176" data-name="Shape" d="M780.56,807.92a1.57,1.57,0,1,1,0-2.21A1.56,1.56,0,0,1,780.56,807.92Z" class="cls-8"></path><path id="Shape-177" data-name="Shape" d="M800.6,785.66v5.71l-7.5,6.25-3.47-1-1-3.47,6.25-7.5Z" class="cls-6"></path><path id="Shape-178" data-name="Shape" d="M790.85,796.19a.78.78,0,0,1-.55-1.33l5-5a.78.78,0,0,1,0-1.11c.94-.94,2.29,1,1.1,2.22l-5,5a.79.79,0,0,1-.56.23Z" class="cls-10"></path><path id="Shape-179" data-name="Shape" d="M797,791.21a.79.79,0,0,1-.56-.23.77.77,0,0,1-.76.22.78.78,0,0,1-.34-1.33,1.6,1.6,0,0,1,2.21,0,.79.79,0,0,1-.55,1.34Z" class="cls-10"></path><path id="Shape-180" data-name="Shape" d="M798.25,803.65c-.06.1-.08.12-.67.71a3.14,3.14,0,0,1-4.43,0l-11.79-11.8a3.14,3.14,0,0,1,0-4.43l.56-.55a.75.75,0,0,1,1.1,0l15.12,15.11a.79.79,0,0,1,.11,1Z" class="cls-8"></path></g>
 	<g id="Pelargir" data-name="010---Swords"><path id="Shape-181" data-name="Shape" d="M878.46,807.7a.76.76,0,0,0-.56-.28l-3.55-.19a.76.76,0,0,0-.6.23.81.81,0,0,0-.24.61l.19,3.54a.84.84,0,0,0,.28.56l8,6.69,2.1-.77.23-.28.55-2.41Z" class="cls-4"></path><path id="Shape-182" data-name="Shape" d="M887.76,818.86c-2.43,1.06-2,.84-2.37,1.14l-.51,1.26,2.58,2.15,1.34-.5.89-1.74Z" class="cls-4"></path><path id="Shape-183" data-name="Shape" d="M893.16,828l-3.75-3.21.48-1.06,1.19-.6,3.21,3.75Z" class="cls-5"></path><path id="Shape-184" data-name="Shape" d="M893.33,820.87l-5.9,5.9a1.56,1.56,0,0,1-2.21,0c-.32-.32-.31-.3-.34-.35a.36.36,0,0,0,0-.4c0-.06-.48.46,7.62-7.64a.39.39,0,0,1,.56,0l.27.27a1.58,1.58,0,0,1,.47,1.11,1.54,1.54,0,0,1-.47,1.11Z" class="cls-6"></path><path id="Shape-185" data-name="Shape" d="M895.79,829.51a1.57,1.57,0,1,1,0-2.22A1.58,1.58,0,0,1,895.79,829.51Z" class="cls-6"></path><path id="Shape-186" data-name="Shape" d="M884.88,815.4l-1.45,1.75-9.68-9.69a.75.75,0,0,1,.6-.23l3.55.19a.76.76,0,0,1,.56.28Z" class="cls-7"></path><path id="Shape-187" data-name="Shape" d="M889.69,821.17l-1.12,1.12-2.23-2.24,1.42-1.19Z" class="cls-7"></path><path id="Shape-188" data-name="Shape" d="M888.58,822.3h0" class="cls-4"></path><path id="Shape-189" data-name="Shape" d="M895.63,828.56a.78.78,0,1,1,0-1.11A.78.78,0,0,1,895.63,828.56Z" class="cls-8"></path><path id="Shape-190" data-name="Shape" d="M886.06,820.28l9.72-8.11a.8.8,0,0,0,.28-.56l.19-3.54a.79.79,0,0,0-.84-.84l-3.54.19a.79.79,0,0,0-.57.28l-8.1,9.72Z" class="cls-9"></path><path id="Shape-191" data-name="Shape" d="M896.25,808.07l-.19,3.54a.8.8,0,0,1-.28.56l-9.72,8.11v-2.86l10-10A.82.82,0,0,1,896.25,808.07Z" class="cls-4"></path><path id="Shape-192" data-name="Shape" d="M875.47,826.88l3.21-3.75,1.05.65.62,1L876.6,828Z" class="cls-5"></path><path id="Shape-193" data-name="Shape" d="M876.19,829.51a1.57,1.57,0,1,1,0-2.22A1.58,1.58,0,0,1,876.19,829.51Z" class="cls-6"></path><path id="Shape-194" data-name="Shape" d="M876,828.56a.78.78,0,1,1,0-1.11A.8.8,0,0,1,876,828.56Z" class="cls-8"></path><path id="Shape-195" data-name="Shape" d="M886.06,817.42v2.86c-1.49,1.23-.69.57-3.75,3.13l-1.74-.5-.5-1.74,3.13-3.75Z" class="cls-6"></path><path id="Shape-196" data-name="Shape" d="M881.18,822.69a.38.38,0,0,1-.36-.24.4.4,0,0,1,.08-.43l2.5-2.49a.39.39,0,0,1,0-.56c.47-.47,1.15.52.55,1.11l-2.49,2.5a.43.43,0,0,1-.28.11Z" class="cls-10"></path><path id="Shape-197" data-name="Shape" d="M884.23,820.2a.4.4,0,0,1-.28-.12.39.39,0,0,1-.66-.17.36.36,0,0,1,.11-.38.8.8,0,0,1,1.11,0,.4.4,0,0,1-.28.67Z" class="cls-10"></path><path id="Shape-198" data-name="Shape" d="M884.88,826.42c0,.05,0,.06-.34.35a1.56,1.56,0,0,1-2.21,0l-5.9-5.9a1.58,1.58,0,0,1,0-2.22l.28-.27a.4.4,0,0,1,.27-.12.4.4,0,0,1,.28.12l7.56,7.56a.39.39,0,0,1,.06.48Z" class="cls-8"></path></g>
 
+
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M571,826.52a.35.35,0,0,1,.39-.06l1.29,1.4c.19.21.19.42.05.54s-.34.12-.53-.09l-1.29-1.4a.32.32,0,0,1,.09-.39Z" class="cls-18"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M572.39,828.3l-.57-.88-.65-.7-.2,0,0,.2,1.26,1.36Z" class="cls-19"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M576.18,832.15,572,827.66" class="cls-2"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M568.6,831.11l8.36,1.5-4.83-5.18h-.31l-3.39,3.12a.33.33,0,0,0-.09.34A.31.31,0,0,0,568.6,831.11Z" class="cls-20"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M577.36,832.94a2.45,2.45,0,0,0,.66-1.87,7.84,7.84,0,0,0-.44-2.37,12.28,12.28,0,0,0-2.21-4.12.33.33,0,0,0-.46,0l-3.09,2.86,5.07,5.5a.34.34,0,0,0,.47,0Z" class="cls-21"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M570.81,826.76l.36,0,3.51-3.23a.33.33,0,0,0-.18-.57l-2.37-.3a.36.36,0,0,0-.27.08l-2.37,2.2-.07.36,1.39,1.5Z" class="cls-22"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M567.79,829.85l3.38-3.13-1.68-1.82L567.24,827a.3.3,0,0,0-.11.26l.11,2.39a.31.31,0,0,0,.2.29.34.34,0,0,0,.35-.06Z" class="cls-23"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M567.57,837.63a7.75,7.75,0,0,1-7.6-7.9,7.88,7.88,0,0,1,5.15-7.48.21.21,0,0,0-.06-.41h-.67a10.53,10.53,0,0,0,.25,21.06c5.82,0,6.72-5.27,2.93-5.27Z" class="cls-24"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M567.57,837.63a7.75,7.75,0,0,1-7.6-7.9,7.88,7.88,0,0,1,5.15-7.48.23.23,0,0,0,.11-.08,10.54,10.54,0,0,0,1,20.59c4.4-.84,4.81-5.13,1.38-5.13Z" class="cls-25"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M565.6,819.2a11.76,11.76,0,0,0-17.53,7.42A5.25,5.25,0,0,1,545.6,830a5.28,5.28,0,0,0-2.61,4.56V841s17.16,0,17.46,0a9.82,9.82,0,0,1,4.15-18.71h.12a1.67,1.67,0,0,0,.88-3.09Z" class="cls-26"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M561.78,820.11a12.45,12.45,0,0,0-9.15,20.9h7.82a9.82,9.82,0,0,1,4.15-18.71h.12a1.62,1.62,0,0,0,1.64-1.31,12.44,12.44,0,0,0-4.58-.87Z" class="cls-27"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M571.81,834.18a16.89,16.89,0,0,1-8.13-5.12.91.91,0,0,0-1.36-.06c-1.9,1.83-6.93,6.43-17.61,6.69a1.08,1.08,0,0,0-1,1.13v5.12a1.07,1.07,0,0,0,1,1.12h26.84a1.06,1.06,0,0,0,1-1.12v-6.67A1.1,1.1,0,0,0,571.81,834.18Z" class="cls-28"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M543,835.43a17.31,17.31,0,0,0,8.89-4.7,1,1,0,0,1,1.37-.06c2,1.68,8,6,19.32,6v5.53a1,1,0,0,1-1,1H544a1,1,0,0,1-1-1Z" class="cls-29"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M543,835.43a17.31,17.31,0,0,0,8.89-4.7,1,1,0,0,1,1.37-.06c2,1.68,8,6,19.32,6v5.53a1,1,0,0,1-1,1H544a1,1,0,0,1-1-1Z" class="cls-29"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M572.57,842.15v-5.53c-11.3,0-17.37-4.27-19.32-6a1,1,0,0,0-.66-.24h0s0,1.79,2.37,3.59-2,1.55-3.43.57-5.78,2.24,6,8.55h14.06A1,1,0,0,0,572.57,842.15Z" class="cls-30"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M571.81,834.18a16.89,16.89,0,0,1-8.13-5.12,1,1,0,0,0-.82-.33c-.25.36-1.11,1.87.74,3.5,2.11,1.87,5.88,2.61,4.62,2.76s-.11,1.63,4.35,1.63v-1.35a1.1,1.1,0,0,0-.76-1.09Z" class="cls-31"></path>
+	<path aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" d="M543,839.75v2.4a1,1,0,0,0,1,1h27.59a1,1,0,0,0,1-1v-2.4Z" class="cls-32"></path>
+	<circle aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" cx="568.41" cy="822.62" r="1.41" class="cls-33"></circle>
+	<circle aria-valuetext="Bateau" @mouseover="getInfo" @click="toggleModal" cx="565.52" cy="824.05" r="0.92" class="cls-34"></circle>
 </svg>
 <div class="text-center py-4 px-4">
   <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none rounded-full inline-flex" role="alert">
@@ -3348,7 +3368,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 		  <svg stroke-width="3" class="text-red-700 w-6 h-6 fill-current mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
 			</svg>
-          <span class="title-font text-gray-200 font-bold">Rohan - Gobelin ( TOUR 6 au TOUR 11)</span>
+          <span class="title-font text-gray-200 font-bold">Rohan - Gobelin ( TOUR 6 au TOUR 9)</span>
         </div>
       </div>
     </div>
@@ -3611,6 +3631,50 @@ path {
 
 .cls-18 {
     fill: #004175;
+}
+
+.cls-24 {
+    fill: #3687d8;
+}
+
+.cls-25 {
+    fill: #ffffff;
+}
+
+.cls-26 {
+    fill: #ffffff;
+}
+
+.cls-27 {
+    fill: #ffffff;
+}
+
+.cls-28 {
+    fill: #e5eff0;
+}
+
+.cls-29 {
+    fill: #389fcf;
+}
+
+.cls-30 {
+    fill: #00bcd1;
+}
+
+.cls-31 {
+    fill: #00bcd1;
+}
+
+.cls-32 {
+    fill: #007dd1;
+}
+
+.cls-33 {
+    fill: #23c3d4;
+}
+
+.cls-34 {
+    fill: #3877ec;
 }
 
 .embedresize {

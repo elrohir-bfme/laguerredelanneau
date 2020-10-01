@@ -3185,7 +3185,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 				</div>
 
 				<h2 class="mt-4 font-bold text-xl text-teal-300">Chef de la Faction du Elfe</h2>
-				<h6 class="mt-2 text-xl font-black underline">Eönwë Roi des elfes</h6>
+				<h6 class="mt-2 text-xl font-black underline">Dargar Le Haut Roi De La Comté</h6>
 
 				<span class="flex rounded-full mt-4 bg-teal-700 uppercase px-2 py-1 text-sm font-bold mr-3">Havres gris (00BFFF)</span>
 

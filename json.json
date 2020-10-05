@@ -1,11 +1,13 @@
 {
   "Rhun": {
-    "color": "#3300000",
+    "color": "#FFFC00",
     "name": "Rhun",
     "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu.",
     "img": "http://media.moddb.com/images/mods/1/12/11617/rhun_halls.jpg",
     "map": 6,
-    "players": []
+    "players": [
+      
+    ]
   },
   "Nurn": {
     "color": "#DB5461",
@@ -14,24 +16,6 @@
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745255652162666496/265_rt_r1.png",
     "map": 8,
     "players": [
-      {
-        "name": "Remy313",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      },  
-      {
-        "name": "Floki",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      },  
-      {
-        "name": "Darkgang8",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      }
     ]
   },
   "Orocarni": {
@@ -43,87 +27,215 @@
     "players": []
   },
   "Harondor": {
-    "color": "#3300000",
+    "opacity": "opacity-50",
+    "color": "#DB5461",
     "name": "Harondor",
     "description": "Le Harondor était une terre pratiquement déserte, intégrée au Gondor en 830 3A par le roi Tarannon Falastur. Mais depuis la chute d'Osgiliath la région  subit les convoitises des haradrims le territoire est donc en conflit permanent.",
     "img": "http://rjrotwk.the3rdage.net/1_06/Locations/screens/harondor.jpg",
-    "players": []
+    "map": 8,
+    "players": [
+    ]
   },
   "Enedwaith": {
-    "color": "#3300000",
+    "color": "#FFFFFF",
     "name": "Enedwaith",
     "description": "L'Enedwaith était situé entre le Gwathló, le Glanduin, les Montagnes de Brume et l'Isen.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745258149170118796/251_rt_r1.png",
     "map": 4,
-    "players": []
+    "players": [
+      
+      
+      
+    {
+      "name": "Fifou_67",
+      "faction": 6,
+      "win": 0,
+      "lose": 0
+    },
+    
+      {
+        "name": "Tothor",
+        "faction": 6,
+        "win": 1,
+        "lose": 2
+    },
+    {
+        "name": "Gostamo",
+        "faction": 6,
+        "win": 1,
+        "lose": 2
+    },
+      
+
+      {
+        "name": "MR-GIOVANNI",
+        "faction": 6,
+        "win": 0,
+        "lose": 0
+    },
+      {
+        "name": "Théoden",
+        "faction": 6,
+        "win": 0,
+        "lose": 2,
+        "handicap": true
+      },
+      {
+        "name": "l'Uruk déchu",
+        "faction": 6,
+        "win": 0,
+        "lose": 0
+    },
+    {
+      "name": "reborntag",
+      "faction": 6,
+      "win": 0,
+      "lose": 1,
+      "handicap": true
+    },
+    {
+      "name": "Saruman",
+      "faction": 6,
+      "win": 0,
+      "lose": 2,
+      "handicap": true
+    },
+      
+    {
+      "name": "Kastagneur",
+      "faction": 7,
+      "win": 0,
+      "lose": 1
+  },
+  {
+      "name": "Berethor",
+      "faction": 7,
+      "win": 0,
+      "lose": 1
+  }
+    ]
   },
   "Lointain_Harad": {
-    "color": "#3300000",
+    "opacity": "opacity-50",
+    "color": "#DB5461",
     "name": "Lointain Harad",
     "description": "Territoire le plus au Sud de la terre du Milieu. Au Nord Est se trouve le port d’Umbar. A l’Est, la mer. A l’Ouest, le Kand. Et au Nord, le Proche Harad et l’Harondor. Se territoire fut si reculé qu’il ne subit pas les guerres, tout en participant à ces dernières. En effet, sa position lui permet de rester à l’abris des invasions toute en envoyant continuellement des Soldats sur les ligne de Front. Cette méthode fut certainement utilisé par Sauron ou les Haradrim. Le Lointain Harad fut vaincu lorsque les Haradrim se soumirent à Elessar.",
     "img": "http://th00.deviantart.net/fs70/PRE/f/2014/086/3/d/establishingshotfinished_by_direimpulse-d7bvsmo.jpg",
-    "players": []
+    "map": 8,
+    "players": [  
+    ]
   },
   "Khand": {
-    "color": "#3300000",
+    "opacity": "opacity-50",
+    "color": "#DB5461",
     "name": "Khand",
     "description": "Le Khand était une région, probablement aride, située au pied de l'Ephel Dúath, au sud-est du Mordor.",
     "img": "https://media.moddb.com/images/mods/1/32/31062/game_2018-07-03_18-14-04-30.jpg",
-    "players": []
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20HARAD/khand%20wotr.zip",
+    "map": 8,
+    "players": [
+    ]
   },
   "Valee_Celduin": {
-    "color": "#3300000",
-    "name": "Valée du Celduin",
+    "color": "#FFFC00",
+    "name": "Vallée du Celduin",
     "description": "La Celduin était un fleuve qui prenait sa source au pied d'Erebor, traversait le Long Lac et coulait vers le sud, puis vers l'est.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
     "map": 8,
-    "players": []
+    "players": [ 
+    ]
   },
   "Proche_Harad": {
-    "color": "#3300000",
+    "color": "#DB5461",
     "name": "Proche Harad",
     "description": "Le proche Harad est le royaume des haradrim loyaux à Sauron, c'est une zone chaude et exotique.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745258127502606476/238_wp_01.png",
-    "players": []
+    "map": 8,
+    "players": [
+    ]
   },
   "Dagorlad": {
-    "color": "#3300000",
+    "color": "#DB5461",
     "name": "Dagorlad",
     "description": "La plaine de Dagorlad s'étendait au nord-est du Mordor, devant la Morannon et à l'est de l'Emyn Muil.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/d/d9/Battle_of_Dagorlad.png/revision/latest?cb=20121030055507",
     "map": 6,
-    "players": []
+    "players": [
+      
+     
+    {
+      "name": "Kado",
+      "faction": 5,
+      "win": 1,
+      "lose": 1
+    },
+    {
+      "name": "Wyrdan",
+      "faction": 5,
+      "win": 3,
+      "lose": 1
+    },
+    {
+      "name": "Northloic",
+      "faction": 5,
+      "win": 0,
+      "lose": 0
+    },
+    {
+      "name": "Joshua_",
+      "faction": 5,
+      "win": 1,
+      "lose": 0
+    },
+
+    {
+      "name": "Torvin",
+      "faction": 4,
+      "win": 0,
+      "lose": 0
+  },
+  
+{
+  "name": "Raugorn",
+  "faction": 4,
+  "win": 0,
+  "lose": 0
+},
+
+      
+{
+  "name": "Wulfrun",
+  "faction": 4,
+  "win": 0,
+  "lose": 0
+}
+    ]
   },
   "Lithlad": {
     "color": "#DB5461",
     "name": "Lithlad",
     "description": "Le Lithlad était une région de plaines du Mordor. La position exacte de cette région reste cependant vague.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745255664951230494/270_rt_r1.png",
-    "map": 5,
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20MORDOR/lithlad%20wotr.zip",
+    "map": 4,
     "players": [
+      
+      
+      
+      
       {
-        "name": "Terak",
+        "name": "Darkgang8",
         "faction": 5,
         "win": 0,
-        "lose": 0
+        "lose": 1,
+        "handicap": true
       },
       {
-        "name": "La Bouche de Sauron",
+        "name": "Floki",
         "faction": 5,
         "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Joshua_",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      }, 
-      {
-        "name": "Mu-Hyul",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
+        "lose": 1,
+        "handicap": true
       }
     ]
   },
@@ -141,95 +253,89 @@
     "img": "https://i.pinimg.com/564x/a2/1a/ac/a21aac4d435f436293886280a042d335.jpg",
     "map": 8,
     "players": [
+    ]
+  },
+  "Minhiriath": {
+    "color": "#00bfff",
+    "name": "Minhiriath",
+    "description": "Le Minhiriath était le nom que donnèrent les Númenóréens à la région située entre le Baranduin et la Gwathló.",
+    "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
+    "map": 4,
+    "players": [ 
+      
+    {
+      "name": "Crassus",
+      "faction": 2,
+      "win": 0,
+      "lose": 0
+    }
+    ]
+  },
+  "Anfalas": {
+    "color": "#1E90FF",
+    "name": "Anfalas",
+    "description": "Anfalas était le nom donné à la côte du Gondor entre les embouchures du Lefnui et du Morthond.",
+    "img": "https://cdn.discordapp.com/attachments/703202332086763542/745258219924095066/257_rt_r1.png",
+    "map": 6,
+    "players": [
+      
+      
       {
-        "name": "Thorin écu de chêne (Clément)",
-        "faction": 4,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Leitdorf",
-        "faction": 4,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Racoon",
-        "faction": 4,
+        "name": "Alkyra",
+        "faction": 3,
         "win": 0,
         "lose": 0
       }
     ]
   },
-  "Minhiriath": {
-    "color": "#3300000",
-    "name": "Minhiriath",
-    "description": "Le Minhiriath était le nom que donnèrent les Númenóréens à la région située entre le Baranduin et la Gwathló.",
-    "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
-    "map": 4,
-    "players": []
-  },
-  "Anfalas": {
-    "color": "#3300000",
-    "name": "Anfalas",
-    "description": "Anfalas était le nom donné à la côte du Gondor entre les embouchures du Lefnui et du Morthond.",
-    "img": "https://cdn.discordapp.com/attachments/703202332086763542/745258219924095066/257_rt_r1.png",
-    "map": 6,
-    "players": []
-  },
   "Monts_Fer": {
-    "color": "#3300000",
+    "color": "#fffc00",
     "name": "Mont du Fer",
     "description": "Ces montagnes se situent à l'Est du Rhovanion et au Nord de la mer de Rhûn. Elles sont ainsi nommées pour leur abondance en minerais de fer. La rivière Carnen prend sa source dans ces montagnes.",
     "img": "http://cdn.obsidianportal.com/assets/47083/Iron_Hills.jpg",
     "map": 8,
-    "players": []
+    "players": [ 
+    ]
   },
   "Collines_Tours": {
     "color": "#00bfff",
     "name": "Collines de la Tour",
     "description": "Les Collines des Tours, ou Emyn Beraid en sindarin, sont trois collines vertes situées dans l'ouest de l'Eriador, entre les Coteaux du Lointain et les Havres Gris. Elles doivent leur nom aux Tours Blanches qui les surmontaient, construites à la fin du Deuxième âge par Gil-Galad pour le roi d'Arnor : Elendil.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
+    "map": 4,
     "players": [
-      {
-        "name": "TK",
-        "faction": 2,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Bibi new Eldar",
-        "faction": 2,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Seoxys",
-        "faction": 2,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Bulrog",
-        "faction": 2,
-        "win": 0,
-        "lose": 0
-      }
     ]
   },
   "Sud_Foret_Noire": {
-    "color": "#3300000",
+    "color": "#FFFC00",
     "name": "Sud de la Forêt Noire",
     "description": "Morceau mystérieux de la foret de vert bois, de nombreux enchantements et sortilèges protègent ces vieux sentiers, quiconque le quitte ne le retrouvera pas ! depuis le milieu du troisième âge Sauron corromps les bois, des araignées y pullule les elfes toutefois se battent pour protéger leurs terres ancestrales.",
     "img": "https://i.pinimg.com/564x/2c/0c/5c/2c0c5c0cb888b8434a4e8e6cf61d25a3.jpg",
     "map": 6,
-    "players": []
+    "players": [
+      
+    {
+      "name": "Korift",
+      "faction": 4,
+      "win": 0,
+      "lose": 0
+  },
+  
+
+{
+  "name": "Bloods atul gûl burz",
+  "faction": 4,
+  "win": 0,
+  "lose": 0
+}
+    ]
   },
   "Harlindon": {
     "color": "#3300000",
     "name": "Harlindon",
     "description": "Le Harlindon était la partie du Lindon située au sud du Golfe du Lhûn dirigé par Cirdan, entre les Montagnes Bleues et la mer.",
     "img": "https://www.gamereplays.org/community/uploads/post-1499-1145472316.jpg",
+    "map": 4,
     "players": []
   },
   "Montagne_Destin": {
@@ -246,64 +352,203 @@
     "description": "Vers l'an 1000 du Deuxième Âge, Sauron, soucieux de la puissance croissante de Númenor, se retrancha en Mordor et commença la construction de Barad-dûr, achevée six cents ans plus tard.",
     "img": "http://tolkiengateway.net/w/images/2/22/Barad-dur_BFMEI.jpg",
     "map": 8,
-    "players": []
+    "players": [
+    ]
   },
   "Lande_Dessechee": {
     "color": "#fffc00",
     "name": "Les Lande Dessechee",
     "description": "La Lande Desséchée était la bande de terre située entre les deux bras orientaux des Montagnes Grises.",
     "img": "https://i.pinimg.com/564x/ed/85/98/ed85988a0fb02e04de7ac9e86aec9bcc.jpg",
-    "players": [
-      {
-        "name": "Gimli fils de Gloin",
-        "faction": 4,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Galénis",
-        "faction": 4,
-        "win": 0,
-        "lose": 0
-      }
-    ]
+    "players": []
   },
   "Havres_Gris": {
     "color": "#00bfff",
     "name": "Les Havres Gris",
     "description": "Les Havres Gris ont été fondés par Círdan en l'an 1 du Deuxième Âge. Ils étaient situés sur l'estuaire de la Lune, en Lindon, à l'ouest du Comté. Nommés Mithlond en sindarin, les Havres Gris étaient le lieu où se rendaient les Elfes qui voulaient faire voile vers l'Ouest, en Aman.",
     "img": "http://i81.servimg.com/u/f81/14/31/27/35/lindon10.jpg",
-    "players": []
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20LINDON/havres%20gris%20wotr.zip",
+    "map": 8,
+    "players": [
+      
+    {
+      "name": "Than",
+      "faction": 2,
+      "win": 1,
+      "lose": 1,
+      "handicap": true
+  },
+  
+      
+      {
+        "name": "Elrohir",
+        "faction": 2,
+        "win": 1,
+        "lose": 2,
+        "handicap": true
+    },
+      
+
+    {
+      "name": "Dargar",
+      "faction": 2,
+      "win": 0,
+      "lose": 1,
+      "handicap": true
+    },
+      
+    {
+      "name": "Haldir",
+      "faction": 2,
+      "win": 0,
+      "lose": 0
+    },
+
+      
+    {
+      "name": "Dudu",
+      "faction": 2,
+      "win": 0,
+      "lose": 1,
+      "handicap": true
+    },
+
+    {
+      "name": "Elenríë",
+      "faction": 2,
+      "win": 0,
+      "lose": 1,
+      "handicap": true
+    },
+    {
+      "name": "Lolicorne",
+      "faction": 2,
+      "win": 0,
+      "lose": 0
+    }
+      ]
   },
   "Forlindon": {
     "color": "#00bfff",
     "name": "Forlindon",
     "description": "Le Forlindon était la partie du Lindon située au nord du Golfe du Loune, entre les Montagnes Bleues et la mer.",
     "img": "http://media.moddb.com/cache/images/mods/1/13/12445/thumb_620x2000/004_2.png",
+    "map": 2,
     "players": [
-      {
-        "name": "Ouistiti",
-        "faction": 2,
-        "win": 0,
-        "lose": 0
-      }
     ]
   },
   "Terres_Brunes": {
-    "color": "#3300000",
+    "color": "#DB5461",
     "name": "Terres Brunes",
     "description": "Les Terres Brunes étaient une région désolée sur les rives de l'Anduin, à hauteur des deux grands méandres que dessinait celui-ci à la latitude de la forêt de Fangorn.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
     "map": 8,
-    "players": []
+    "players": [
+      
+      
+      {
+        "name": "Patate",
+        "faction": 5,
+        "win": 0,
+        "lose": 0
+      },
+            
+      {
+        "name": "Rénhartse",
+        "faction": 5,
+        "win": 0,
+        "lose": 0
+      },
+      {
+          "name": "Thork",
+          "faction": 5,
+          "win": 0,
+          "lose": 0
+      },
+      
+      
+      {
+        "name": "Arnaud",
+        "faction": 5,
+        "win": 1,
+        "lose": 0
+      },
+      
+      {
+        "name": "Mr.Froton",
+        "faction": 5,
+        "win": 0,
+        "lose": 1
+      },
+      
+      
+      
+      {
+        "name": "Telchar",
+        "faction": 4,
+        "win": 0,
+        "lose": 1
+    },
+    
+    {
+      "name": "Tulkas",
+      "faction": 4,
+      "win": 0,
+      "lose": 1
+    },
+    {
+      "name": "Buulia",
+      "faction": 4,
+      "win": 0,
+      "lose": 0
+    },
+    {
+      "name": "Méchant  Dobby",
+      "faction": 4,
+      "win": 0,
+      "lose": 0
+    }
+    ]
   },
   "Sud_Ithilien": {
-    "color": "#3300000",
+    "color": "#1E90FF",
     "name": "Sud de l'Ithilien",
     "description": "L'Ithilien, bande de terre située entre l'Anduin à l'ouest, l'Ephel Dúath à l'est, le Poros au sud et le Nindalf au nord, était l'une des provinces orientales du Gondor.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745258004395327508/204_wp_01.png",
-    "map": 6,
-    "players": []
+    "map": 2,
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20GONDOR/southern%20ithilien%20wotr.zip",
+    "players": [
+      
+      
+      {
+        "name": "Remy313",
+        "faction": 5,
+        "win": 0,
+        "lose": 0
+      },
+      
+      {
+        "name": "Ink bendy",
+        "faction": 5,
+        "win": 0,
+        "lose": 0
+      },
+      
+      
+      {
+        "name": "Captain Cook",
+        "faction": 3,
+        "win": 0,
+        "lose": 0
+      },
+      
+      {
+        "name": "Galethorne",
+        "faction": 3,
+        "win": 1,
+        "lose": 1
+      }
+    ]
   },
   "Carnen": {
     "color": "#3300000",
@@ -321,97 +566,93 @@
     "map": 8,
     "players": [
       {
-        "name": "Toinou",
-        "faction": 8,
-        "win": 0,
-        "lose": 0
+          "name": "Orgash",
+          "faction": 8,
+          "win": 0,
+          "lose": 0
       },
-      {
-        "name": "Frollo",
-        "faction": 8,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Eternal",
-        "faction": 8,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Miraak",
-        "faction": 8,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Orgash",
-        "faction": 8,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Wulfrun",
-        "faction": 8,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Lahkdar",
-        "faction": 8,
-        "win": 0,
-        "lose": 0
-      },
-      {
+    {
         "name": "Sauron",
         "faction": 8,
         "win": 0,
-        "lose": 0
-      }
+        "lose": 1
+    },
+          
+    {
+      "name": "Poulpie",
+      "faction": 8,
+      "win": 0,
+      "lose": 1
+  },
+  {
+    "name": "Alexis",
+    "faction": 8,
+    "win": 0,
+    "lose": 1
+  }
     ]
   },
   "Arthedain": {
-    "color": "#3300000",
+    "color": "#C500FF",
     "name": "Arthedain",
     "description": "L’Arthedain naquit de la division de l'Arnor, en l'an 861 du Troisième âge, suite aux dissensions entre les trois fils d'Eärendur. Le royaume était le plus puissant des trois, du fait de sa population importante et de la présence, sur son territoire, de toutes les Palantíri d'Arnor.",
     "img": "https://i.ytimg.com/vi/FEP6f3YDsGQ/maxresdefault.jpg",
-    
-    "players": []
+    "map": 4,
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ARNOR/arthedain%20wotr.zip",
+    "players": [
+
+
+
+      
+      {
+        "name": "Maedhros",
+        "faction": 8,
+        "win": 0,
+        "lose": 1
+    },
+      
+      
+      
+      {
+        "name": "ThOrOndOr",
+        "faction": 8,
+        "win": 0,
+        "lose": 0
+    },
+    {
+        "name": "Thibaut.D",
+        "faction": 8,
+        "win": 0,
+        "lose": 0
+    }
+    ]
   },
   "Forochel": {
-    "color": "#00bfff",
+    "color": "#00BFFF",
     "name": "Forochel",
     "description": "La vaste baie glaciale de Forochel s'étendait dans l'extrême nord de la Terre du Milieu. De forme circulaire, elle était limitée au sud par les côtes de l'Eriador, à l'est par le désert du Forodwaith et au nord et à l'ouest par le long cap Forochel.",
     "img": "https://media.moddb.com/images/members/1/365/364637/profiledspells/Rhudaur02.1.jpg",
     "map": 8,
-    "players": [
-      {
-        "name": "Elenríë",
-        "faction": 2,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Dargar",
-        "faction": 2,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Arnor Leaderlight",
-        "faction": 2,
-        "win": 0,
-        "lose": 0
-      }
+    "players": [  
     ]
   },
   "Andrast": {
-    "color": "#3300000",
+    "color": "#FFFFFF",
     "name": "Andrast",
     "description": "L’Andrast était un long cap montagneux, prolongement occidental des Montagnes Blanches qui délimitait la partie nord-ouest de la Baie de Belfalas.",
     "img": "http://vignette3.wikia.nocookie.net/lotr/images/6/60/Andrastjtm.jpg/revision/latest?cb=20160309140646",
-    "map": 8,
-    "players": []
+    "map": 2,
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20GONDOR/andrast%20wotr.zip",
+    "players": [
+      
+      
+      {
+        "name": "LeSuisse",
+        "faction": 6,
+        "win": 0,
+        "lose": 2
+      }
+    ]
   },
   "Dorwinion": {
     "color": "#3300000",
@@ -422,50 +663,61 @@
     "players": []
   },
   "Lebennin": {
-    "color": "#3300000",
+    "color": "#DB5461",
     "name": "Lebennin",
     "description": "Province du sud-ouest du Gondor, le Lebennin était délimité par les Montagnes Blanches au nord, le Gilrain à l'ouest et l'Anduin à l'est.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745258182439600168/254_rt_r1.png",
     "map": 6,
-    "players": []
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20GONDOR/lebennin%20wotr.zip",
+    "players": [
+    ]
   },
   "Terre_Desolee": {
     "color": "#fffc00",
     "name": "Terre déchu de l'est",
     "description": "Les Régions les plus à l'est du Rhovanion sont dépeuplées et désolées.",
     "img": "https://middleearthsbgfrance.files.wordpress.com/2018/10/images-2.jpeg",
-    "players": [
-      {
-        "name": "Raugorn",
-        "faction": 4,
-        "win": 0,
-        "lose": 0
-      }
-    ]
+    "players": []
   },
   "Cardolan": {
-    "color": "#3300000",
+    "color": "#00bfff",
     "name": "Cardolan",
     "description": "Le Cardolan fut créé en l'an 861 du Troisième Âge. Plus méridional des trois royaumes issus de la partition de l'Arnor, ses frontières étaient le Baranduin, le Gwathló et la Grande Route de l’Est, mais les rois du Cardolan convoitaient aussi la colline d'Amon Sûl, où se trouvait l'un des Palantíri.",
     "img": "http://img4.wikia.nocookie.net/__cb20090917154715/lotr/images/4/42/Barrow-downs,_Cardolan%27s_capital.JPG",
     "map": 4,
-    "players": []
+    "players": [ 
+
+    ]
   },
   "Gundabad": {
-    "color": "#3300000",
+    "color": "#FFFC00",
     "name": "Gundabad",
     "description": "Ce sommet septentrional réalisait la jonction entre les Montagnes d’Angmar à l'ouest, les Montagnes Grises à l'est et enfin les Montagnes de Brume au sud.",
     "img": "https://media.moddb.com/images/articles/1/187/186483/Gundabad-1.jpg",
     "map": 4,
-    "players": []
+    "players": [
+      {
+          "name": "Gimli fils de Gloin",
+          "faction": 4,
+          "win": 1,
+          "lose": 0
+      },
+      {
+          "name": "Galénis",
+          "faction": 4,
+          "win": 1,
+          "lose": 0
+      }
+    ]
   },
   "Montagnes_Grises": {
-    "color": "#3300000",
+    "color": "#fffc00",
     "name": "Ered Mithrin",
     "description": "les Montagnes Grises formaient une chaîne de montagnes située à l'extrême nord du Rhovanion, séparant l'hostile Forodwaith de la Grand’Peur, au sud. Elle rejoignait les Montagnes de Brume à l'ouest, au Mont Gundabad, et était délimité à l'est par la Lande desséchée.",
     "img": "http://fc02.deviantart.net/fs71/f/2010/174/2/e/Mountain_Arena_by_eWKn.jpg",
     "map": 8,
-    "players": []
+    "players": [
+    ]
   },
   "Gwathlo": {
     "color": "#3300000",
@@ -476,96 +728,145 @@
     "players": []
   },
   "Marais_Morts": {
-    "color": "#3300000",
-    "name": "Marais_Morts",
+    "color": "#DB5461",
+    "name": "Marais des Morts",
     "description": "Les Marais Morts étaient une vaste région marécageuse située au nord-ouest du Mordor, entre l'Emyn Muil et la Morannon.",
     "img": "https://stephencwinter.files.wordpress.com/2015/04/frodo-in-dead-marshes.jpg?w=1200",
     "map": 6,
-    "players": []
+    "players": [
+    ]
   },
   "Valee_Anduin": {
-    "color": "#3300000",
+    "color": "#fffc00",
     "name": "Valée de l'Anduin",
     "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu.",
     "img": "https://lotro-wiki.com/images/thumb/d/d6/Woodsedge.jpg/300px-Woodsedge.jpg",
     "map": 8,
-    "players": []
+    "players": [
+    ]
   },
   "Gue_Anduin": {
-    "color": "#3300000",
+    "color": "#fffc00",
     "name": "Gué de l'Anduin",
     "description": "Il était issu du confluent de deux rivières : sa source principale, la Lanquevelle, qui naissait dans les Montagnes de Brume et le Rugris, qui prenait sa source dans l'Ered Mithrin.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
     "map": 8,
-    "players": []
+    "players": [
+    ]
   },
   "Evendim": {
-    "color": "#00bfff",
+    "color": "#C500FF",
     "name": "Les collines d'Evendim",
     "description": "Les Collines du Crépuscule se trouvaient au nord de l'Eriador et bordaient le Lac du Crépuscule, formant un L partant du nord-ouest jusqu'au sud du lac.",
     "img": "https://lotro-wiki.com/images/thumb/d/d1/Tinnudir.jpg/300px-Tinnudir.jpg",
     "map": 8,
     "players": [
-      {
-        "name": "Elrohir",
-        "faction": 2,
-        "win": 0,
-        "lose": 0,
-        "chef": true
-      },
-      {
-        "name": "Eönwë",
-        "faction": 2,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Gbg08",
-        "faction": 2,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Enderwite",
-        "faction": 2,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Muranoir",
-        "faction": 2,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Than",
-        "faction": 2,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Fingolfin Haut Roi des Noldors",
-        "faction": 2,
-        "win": 0,
-        "lose": 0
-      }
+      
+      
+
+{
+  "name": "Eternal",
+  "faction": 8,
+  "win": 2,
+  "lose": 0,
+  "chef": true
+},
+     
+      
+{
+  "name": "Glorfundel",
+  "faction": 8,
+  "win": 0,
+  "lose": 0
+},
+
+
+{
+  "name": "Frollo",
+  "faction": 8,
+  "win": 0,
+  "lose": 1
+}, 
+
+{
+  "name": "Grieven of Angmar",
+  "faction": 8,
+  "win": 0,
+  "lose": 0
+}
     ]
   },
   "Pays_Dun": {
-    "color": "#3300000",
+    "color": "#FF6F00",
     "name": "Pays de Dun",
     "description": "La Dunlande était le pays des Dunlandais, un peuple d'Hommes venu des vallées des Montagnes Blanches.",
     "img": "https://i.skyrock.net/9911/9929911/pics/234742762_small.jpg",
     "map": 4,
-    "players": []
+    "players": [
+    ]
   },
   "Belfalas": {
-    "color": "#3300000",
+    "color": "#1E90FF",
     "name": "Belfalas",
     "description": "Le Belfalas était une région côtière du Gondor située entre le Morthond à l'ouest, les Montagnes Blanches au nord et le Gilrain à l'est. Son climat était doux, et Dol Amroth était sa principale cité.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745265156455399475/272_rt_r1.png",
-    "map": 5,
-    "players": []
+    "map": 4,
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20GONDOR/belfalas%20wotr.zip",
+    "players": [
+        {
+    "name": "Sindarry",
+    "faction": 3,
+    "win": 0,
+    "lose": 2
+  },
+      
+  {
+    "name": "Denethen",
+    "faction": 3,
+    "win": 1,
+    "lose": 1
+  },
+  {
+    "name": "Loken",
+    "faction": 3,
+    "win": 1,
+    "lose": 1
+  },
+      
+      
+
+
+
+
+      
+      
+      
+  {
+    "name": "Moonvaly",
+    "faction": 5,
+    "win": 2,
+    "lose": 0
+  },
+  {
+    "name": "Loempia",
+    "faction": 5,
+    "win": 2,
+    "lose": 0
+  },
+  
+  {
+    "name": "Terak",
+    "faction": 5,
+    "win": 0,
+    "lose": 1
+  },
+  {
+    "name": "La Bouche de Sauron",
+    "faction": 5,
+    "win": 0,
+    "lose": 1
+  }
+    ]
   },
   "Carn_Dum": {
     "color": "#c500ff",
@@ -573,7 +874,8 @@
     "description": "Carn Dûm était le sommet montagneux à l'extrémité nord de l'Hithaeglir, qui portait au nord le nom de Montagnes d’Angmar.",
     "img": "http://img1.wikia.nocookie.net/__cb20140418104642/lotrfanon/images/8/87/Carn_dum.jpg",
     "map": 8,
-    "players": []
+    "players": [
+    ]
   },
   "Baie_Est": {
     "color": "#3300000",
@@ -584,28 +886,117 @@
     "players": []
   },
   "Landes_Etten": {
-    "color": "#3300000",
+    "color": "#00BFFF",
     "name": "Landes d'Etten",
     "description": "Les Landes d'Etten étaient une région montagneuse sur les contreforts des Montagnes de Brume, située au nord de Fendeval, dans l'est de l'Eriador. La rivière Fongrège les traversait.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
     "map": 2,
-    "players": []
+    "players": [
+      
+
+      
+
+{
+  "name": "Elessar",
+  "faction": 8,
+  "win": 2,
+  "lose": 0
+},
+      
+    
+    {
+      "name": "Muranoir",
+      "faction": 2,
+      "win": 0,
+      "lose": 1
+  },
+  
+      
+  { 
+    "name": "Annatar",
+    "faction": 2,
+    "win": 1,
+    "lose": 0
+  },
+    ]
   },
   "Fornost": {
-    "color": "#3300000",
+    "color": "#C500FF",
     "name": "Fornost",
     "description": "Fornost était la cité la plus importante de l'Arnor. Elle fut construite en 3320 du Deuxième Âge par Elendil et les Númenóréens, lorsqu'ils fondèrent les Royaumes en Exil.",
     "img": "http://img1.wikia.nocookie.net/__cb20090921074923/lotr/images/4/41/Men_Soldiers_defending_Fornost.JPG",
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ARNOR/fornost%20wotr.zip",
     "map": 6,
-    "players": []
+    "players": [
+
+    
+{
+  "name": "TutorLaTortue",
+  "faction": 8,
+  "win": 3,
+  "lose": 0
+},
+{
+  "name": "NZO | Zayin",
+  "faction": 8,
+  "win": 1,
+  "lose": 0
+},
+{
+  "name": "Mac Flash",
+  "faction": 8,
+  "win": 1,
+  "lose": 0
+},
+
+      
+
+
+{
+  "name": "lijert",
+  "faction": 2,
+  "win": 0,
+  "lose": 0
+},
+  
+{ 
+"name": "Viper",
+"faction": 2,
+"win": 1,
+"lose": 0
+},
+{
+  "name": "Gbg08",
+  "faction": 2,
+  "win": 0,
+  "lose": 0
+} , 
+    ]
   },
   "Champs_Iris": {
-    "color": "#3300000",
+    "color": "#ff6f00",
     "name": "Champs aux Iris",
     "description": "C'est ici qu'eu lieu le massacre des Champs d'Iris qui vit la perte de l'Anneau Unique dans les eaux de l’Anduin ainsi que la mort du grand roi des Hommes : Isildur ainsi que ses fils au début du troisième âge.",
     "img": "http://lotro-wiki.fr/images/thumb/8/83/Champs_d%27Iris.jpg/800px-Champs_d%27Iris.jpg",
     "map": 6,
-    "players": []
+    "players": [
+      
+      
+      
+    {
+      "name": "Bax le Champignon retroactif",
+      "faction": 7,
+      "win": 0,
+      "lose": 0
+    },
+      {
+        "name": "Morko",
+        "faction": 7,
+        "win": 0,
+        "lose": 0,
+        "chef": true
+    }
+    ]
   },
   "Caradhras": {
     "color": "#ff6f00",
@@ -614,27 +1005,30 @@
     "img": "http://orig14.deviantart.net/7fec/f/2013/288/e/b/caradhras_by_grivetart-d6qlx0c.jpg",
     "map": 4,
     "players": [
-      {
-        "name": "Morko",
-        "faction": 7,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Asphodel",
-        "faction": 7,
-        "win": 0,
-        "lose": 0
-      }
     ]
   },
   "Lamedon": {
-    "color": "#3300000",
+    "color": "#1E90FF",
     "name": "Lamedon",
     "description": "Le col de Tarlang était une arête rocheuse, empruntée par la route d'Erech à Pelargir, qui reliait les Montagnes Blanches au massif, composé de trois collines, qui séparait la plaine d'Erech du Lamedon.",
     "img": "https://i.pinimg.com/564x/bd/9b/e9/bd9be9e1ff39dbb7017c333caa7a8271.jpg",
     "map": 8,
-    "players": []
+    "players": [    
+      {
+          "name": "Flo",
+          "faction": 3,
+          "win": 0,
+          "lose": 2
+      },
+      
+      {
+        "name": "DesDalles",
+        "faction": 3,
+        "win": 0,
+        "lose": 3,
+        "handicap": true
+    }
+    ]
   },
   "Angmar": {
     "color": "#c500ff",
@@ -643,54 +1037,16 @@
     "map": 8,
     "img": "https://i.ytimg.com/vi/rXQjDeMZjAo/maxresdefault.jpg",
     "players": [
+
+  
       {
-        "name": "Solken",
+        "name": "Toinou",
         "faction": 8,
         "win": 0,
-        "lose": 0
+        "lose": 1
       },
-      {
-        "name": "Elessar",
-        "faction": 8,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Khal",
-        "faction": 8,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "TutorLaTortue",
-        "faction": 8,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Subow",
-        "faction": 8,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Alexis685",
-        "faction": 8,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Poulpie",
-        "faction": 8,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Seigneur d'Angmar",
-        "faction": 8,
-        "win": 0,
-        "lose": 0
-      },
+      
+          
       {
         "name": "Damien",
         "faction": 8,
@@ -698,17 +1054,17 @@
         "lose": 0
       },
       {
-        "name": "Amon",
+        "name": "Lahkdar",
         "faction": 8,
-        "win": 0,
-        "lose": 0
+        "win": 1,
+        "lose": 1
       },
       {
-        "name": "Maedhros",
+        "name": "Solken",
         "faction": 8,
         "win": 0,
-        "lose": 0
-      }
+        "lose": 1
+    }
     ]
   },
   "Hall_Thranduil": {
@@ -717,209 +1073,250 @@
     "description": "Dans ces halls inspirés de ceux de Menegroth en Doriath règne le grand roi sylvestre Thranduil . Ils sont traversé par une rivière souterraine par laquelle s'échapperont la compagnie de Thorin Écu de chêne .",
     "img": "http://img4.wikia.nocookie.net/__cb20140405112903/lotr/images/0/08/Halls_of_Thranduil_-_Entrance.jpg",
     "map": 6,
+    "players": []
+  },
+  "Emyn_Arnen": {
+    "color": "#DB5461",
+    "name": "Emyn Arnen",
+    "description": "Les collines d'Emyn Arnen se dressaient en Ithilien du sud, non loin de Minas Tirith. Après la Guerre de l’Anneau, le roi Elessar donna l'Ithilien en principauté à Faramir, qui s'établit dans ces collines.",
+    "img": "https://vignette.wikia.nocookie.net/lotr/images/2/27/Emyn_Arnen.jpg/revision/latest?cb=20141224101657&path-prefix=pl",
+    "map": 8,
     "players": [
+      
+      
       {
-        "name": "Daïn Pied d'Acier (Antonin)",
-        "faction": 4,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Korift",
-        "faction": 4,
+        "name": "Zeste",
+        "faction": 5,
         "win": 0,
         "lose": 0
       }
     ]
   },
-  "Emyn_Arnen": {
-    "color": "#3300000",
-    "name": "Emyn Arnen",
-    "description": "Les collines d'Emyn Arnen se dressaient en Ithilien du sud, non loin de Minas Tirith. Après la Guerre de l’Anneau, le roi Elessar donna l'Ithilien en principauté à Faramir, qui s'établit dans ces collines.",
-    "img": "https://vignette.wikia.nocookie.net/lotr/images/2/27/Emyn_Arnen.jpg/revision/latest?cb=20141224101657&path-prefix=pl",
-    "map": 8,
-    "players": []
-  },
   "Celebrant": {
-    "color": "#3300000",
+    "color": "#ff6f00",
     "name": "Celebrant",
     "description": "La Celebrant était une rivière très froide qui prenait sa source dans les Montagnes de Brume, elle était l'effluent du Kheled-zâram1).",
     "img": "https://lotro-wiki.com/images/thumb/b/b8/Nan_Celebrant.jpg/400px-Nan_Celebrant.jpg",
-    "players": []
+    "map": 8,
+    "players": [
+      
+      
+      
+    {
+      "name": "Darkii",
+      "faction": 7,
+      "win": 0,
+      "lose": 0
+  }
+    ]
   },
   "Swanfleet": {
     "color": "#3300000",
     "name": "Swanfleet",
     "description": "Vallée très mystérieuse",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
+    "map": 4,
     "players": []
   },
   "Plateau": {
-    "color": "#3300000",
+    "color": "#FF6F00",
     "name": "Le Plateau",
     "description": "The Wold était un plateau du Rohan, qui s'étirait entre la forêt de Fangorn et l’Anduin. Elle était bordée par la Limeclaire au nord et par l’Estemnet au sud.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
     "map": 8,
-    "players": []
+    "players": [
+      {
+        "name": "Rui",
+        "faction": 7,
+        "win": 0,
+        "lose": 0
+      },
+      {
+        "name": "Lolo la rafale de l'Ouest",
+        "faction": 7,
+        "win": 0,
+        "lose": 0
+      },
+      {
+        "name": "Kamikaz900",
+        "faction": 7,
+        "win": 0,
+        "lose": 0
+      }
+    ]
   },
   "Minas_Tirith": {
-    "color": "#1e90ff",
+    "color": "#DB5461",
     "name": "Minas Tirith",
     "description": "Minas Tirith la cité des rois fut construite par Isildur et sont frère Anarion au second Age elle s'appelait alors Minas Anor et faisait face a Minas Ithil : (tour du soleil et tour de la lune) . Lorsque minas Ithil devient Minas Morgul et que Osgiliath fut abandonné elle fut renommé Minas Tirith (la tour de Garde) et devint capitale du Gondor de plus elle contient un palentir !",
     "img": "http://media.moddb.com/images/downloads/1/94/93281/116474_4.jpg",
     "map": 8,
-    "players": []
+    "players": [
+      ]
   },
   "Nord_Ithilien": {
-    "color": "#3300000",
+    "color": "#DB5461",
     "name": "Nord de l'Ithilien",
     "description": "Régions où de perpétuelles affrontements entre gondoriens et haradrims se déroullent. La région fut reprise par Boromir durant un temps avant de sombrer à nouveau dans le chaos ! C'est ici au cœur des bois que se cache le lac interdit : un repaire de rôdeurs mené par Faramir.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745258219924095066/257_rt_r1.png",
     "map": 8,
-    "players": []
+    "players": [
+      
+      {
+        "name": "[RECON] Xelenos",
+        "faction": 5,
+        "win": 1,
+        "lose": 0
+      },
+
+    
+      {
+        "name": "Khal",
+        "faction": 5,
+        "win": 2,
+        "lose": 0
+    }, 
+    {
+      "name": "Mu-Hyul",
+      "faction": 5,
+      "win": 1,
+      "lose": 0
+    },
+      
+      
+      
+    {
+      "name": "Metalcrock",
+      "faction": 5,
+      "win": 0,
+      "lose": 0
+    }
+    ]
   },
   "Dol_Guldur": {
-    "color": "#3300000",
+    "color": "#FFFC00",
     "name": "Dol Guldur",
     "description": "Au sud de Vert-bois-le-Grand, en face de la Lórien, se trouvait la sombre tour du Nécromancien, Dol Guldur, qui fut construite vers 1050 3A sur le site d'Amon Lanc, lieu de l'ancienne capitale du royaume d'Oropher.",
     "img": "http://media.moddb.com/images/downloads/1/95/94760/11bacya9has.jpg",
     "map": 8,
-    "players": []
+    "players": [
+      
+            
+      {
+        "name": "Hoplite",
+        "faction": 4,
+        "win": 0,
+        "lose": 0
+      },
+      
+      {
+        "name": "Leitdorf",
+        "faction": 4,
+        "win": 0,
+        "lose": 0
+      }, 
+      {
+        "name": "Daïn Pied d'Acier (Antonin)",
+        "faction": 4,
+        "win": 0,
+        "lose": 0,
+        "chef": true
+      },
+      
+    
+      {
+        "name": "Keowen",
+        "faction": 4,
+        "win": 0,
+        "lose": 0
+      }
+    ]
   },
   "Porte_Noire": {
     "color": "#DB5461",
     "name": "Porte Noire",
     "description": "Grande muraille sombre probablement construite par les numénoriens pour contrôler l’accès au Mordor. Donnant  sur le plateau de Moranon son autre nom en sindarin, Sauron s'en empara à ses propres fins pour dominier l'accès par le nord du Mordor",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/747752972246581248/232_ad_01_r1.png",
-    "map": 8,
+    "map": 4,
     "players": [
-      {
-        "name": "Wyrdan",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Groldur",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Moltak",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Katsen",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      }
     ]
   },
   "Fangorn": {
-    "opacity": "opacity-75",
-    "color": "#333533",
+    "color": "#FF6F00",
     "name": "Fangorn",
     "description": "Fangorn était le nom de l'Ent plus communément appelé Barbebois. Il donna son nom à la forêt de Fangorn où il avait fait sa résidence.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745258039132553226/214_wp_01.png",
     "map": 6,
     "players": [
-      {
-        "name": "LeSuisse",
-        "faction": 6,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Théoden",
-        "faction": 6,
-        "win": 0,
-        "lose": 0
-      } 
     ]
   },
   "Estemnet": {
-    "color": "#3300000",
+    "color": "#0BFF00",
     "name": "Estemnet",
     "description": "L’Estemnet était la région la plus à l’est du Rohan. ",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
     "map": 8,
-    "players": []
+    "players": [
+    ]
   },
   "Pays_Bouc": {
-    "color": "#3300000",
+    "color": "#00BFFF",
     "name": "Pays de Bouc",
     "description": "Sept cent quarante ans après la fondation du Comté, Gorhendad Vieilbouc traversa le Brandivin, fonda Castel Brandy et s'y installa pour vivre avec sa famille, qui prit le nom de Brandibouc.",
     "img": "http://lotro-wiki.fr/images/thumb/f/fc/Chateau-Brande.jpg/800px-Chateau-Brande.jpg",
-    "map": 8,
-    "players": []
+    "map": 4,
+    "players": [
+        {
+          "name": "Grèhelfe",
+          "faction": 2,
+          "win": 0,
+          "lose": 0
+      }
+    ]
   },
   "Lossarnach": {
-    "color": "#1e90ff",
+    "color": "#1E90FF",
     "name": "Lossarnach",
     "description": "Le Lossarnach était une vallée boisée et fertile située sur le versant sud des Montagnes Blanches, au sud-ouest de Minas Tirith.",
     "img": "http://lotro-wiki.com/images/thumb/b/b4/Lossarnach.jpeg/400px-Lossarnach.jpeg",
     "map": 6,
     "players": [
+      
+      
       {
-        "name": "Wazakatt",
+        "name": "Mordicus",
         "faction": 3,
-        "win": 0,
+        "win": 1,
         "lose": 0
       },
+      
       {
-        "name": "Beregond le garde de la tour",
+        "name": "Trebuil ",
         "faction": 3,
         "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Captain Cook",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Alkyra",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Thieuthieu",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Sirena",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "fauxlyne",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Lachèvredumatin",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      }
+        "lose": 1
+      },    {
+      "name": "Mablon",
+      "faction": 3,
+      "win": 0,
+      "lose": 2
+  }
     ]
   },
   "Est_Rohan": {
-    "color": "#3300000",
+    "color": "#0BFF00",
     "name": "Est du Rohan",
     "description": "La frontière Est du Rohan est une région fertile et verdoyante où sont implantés des fermes prospèrent.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
-    "players": []
+    "map": 2,
+    "players": [
+    {
+      "name": "El Roberto",
+      "faction": 1,
+      "win": 0,
+      "lose": 1
+    }
+    ]
   },
   "La_Comte": {
     "color": "#3300000",
@@ -930,58 +1327,154 @@
     "players": []
   },
   "Eregion": {
-    "color": "#3300000",
+    "color": "#ff6f00",
     "name": "Eregion",
     "description": "Région de plaine ayant en son centre l'ancienne cité d'Ost en Dehil place forte de Célébrimbor, elle fut rasé au second age par Sauron c'est la que les anneaux de pouvoirs furent forgé hormis l'unique . la région est limitée au nord-ouest par la Bruinen et à l'est par les Monts Brumeux et au sud par le Glanduin .",
     "img": "http://vignette2.wikia.nocookie.net/lotr/images/0/0c/Eregion.jpg/revision/latest?cb=20110811065048",
     "map": 4,
-    "players": []
+    "players": [
+    ]
   },
   "Lac_Evendim": {
-    "color": "#3300000",
+    "color": "#00bfff",
     "name": "Lac d'Evendim",
     "description": "Le lac du Crépuscule était niché au cœur des collines du même nom et le Baranduin prenait sa source dans ses eaux. Sur sa rive sud était bâtie Annúminas, capitale de l'Arnor.",
     "img": "https://pre00.deviantart.net/c975/th/pre/f/2017/211/a/1/across_middle_earth___lake_evendim_by_ralphdamiani-dae16wo.png",
     "map": 8,
-    "players": []
+    "players": [ 
+    ]
   },
   "The_Angle": {
-    "color": "#3300000",
+    "color": "#00BFFF",
     "name": "The Angle",
     "description": "Bordant le pays de Dun et l’Eregion, l’angle a été le pays d’accueil du groupe de Hobbit Fortauds entre les année 1150 et 1356. Il est dit que l’Angle appartenait au pays de Dun autrefois. On ignore toutefois si l’Angle fut connu par un autre fait historique. Il est fort probable que des homme sauvage habite cette région, alors attention à qui y pénètre.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
-    "players": []
+    "map": 8,
+    "players": [
+      
+]
   },
   "Collines_Vent": {
-    "color": "#3300000",
+    "color": "#00BFFF",
     "name": "Collines du Vent",
     "description": "Les Collines du Vent se trouvaient au centre de l'Eriador, à mi-chemin entre Brie et le Dernier Pont.",
     "img": "http://lotro-wiki.fr/images/thumb/b/b4/TroueeDesTrollsSud.jpg/800px-TroueeDesTrollsSud.jpg",
-    "players": []
+    "map": 4,
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ERIADOR/collines%20vent%20wotr.zip",
+    "players": [
+      
+      
+
+{
+  "name": "Alk-nico",
+  "faction": 8,
+  "win": 0,
+  "lose": 0
+},    
+    {
+      "name": "Maximus",
+      "faction": 2,
+      "win": 0,
+      "lose": 0
+    }
+    ]
   },
   "Trouee_Trolls": {
-    "color": "#3300000",
+    "color": "#00BFFF",
     "name": "Trouee Trolls",
     "description": "La petit histoire de Bilbon.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
     "map": 6,
-    "players": []
+    "players": [
+      
+
+
+  
+
+{
+  "name": "Jalae",
+  "faction": 2,
+  "win": 0,
+  "lose": 0
+},
+{
+  "name": "Collegue",
+  "faction": 2,
+  "win": 0,
+  "lose": 0
+}
+]
   },
   "Haut_Col": {
-    "color": "#3300000",
+    "color": "#fffc00",
     "name": "Haut Col",
     "description": "Le haut col est un passage permettant de traverser les Montagnes Brumeuses. Il fut notamment emprunté par la compagnie de Thorin Écu de Chêne",
     "img": "https://vignette.wikia.nocookie.net/bfme/images/9/93/Good2.png/revision/latest/scale-to-width-down/340?cb=20130707210341",
     "map": 4,
-    "players": []
+    "players": [
+    ]
   },
   "Breche_Rohan": {
-    "color": "#3300000",
+    "color": "#FF6F00",
     "name": "Trouée du Rohan",
     "description": "Terre plate située entre 2 chaines de montagne : Les monts Brumeux et l’Isengard au Nord, Les Montagne Blanche au Sud. Boromir utilise la troué du Rohan pour se rendre à Foncombe. La communauté de l’anneau refuse de passer par là à cause de sa proximité avec l’Isengard, qui agit désormais pour le Mordor. Pour rentrer chez eux, les Hobbit passe par la troué du Rohan.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745258263217701004/261_rt_r1.png",
     "map": 4,
-    "players": []
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ROHAN/gap%20of%20rohan%20wotr.zip",
+    "players": [
+      
+      
+      
+      
+      
+    
+      {
+        "name": "Asphodel",
+        "faction": 7,
+        "win": 0,
+        "lose": 0
+    },
+    {
+        "name": "Weeral Syo",
+        "faction": 7,
+        "win": 0,
+        "lose": 0
+    },
+      
+      
+      {
+        "name": "Stalinou",
+        "faction": 7,
+        "win": 0,
+        "lose": 0
+    },
+    {
+      "name": "RolisteDeQualité",
+      "faction": 7,
+      "win": 0,
+      "lose": 0
+    },
+      
+      {
+        "name": "Arthas",
+        "faction": 7,
+        "win": 0,
+        "lose": 0
+    },
+    
+    {
+      "name": "liv55 ",
+      "faction": 7,
+      "win": 0,
+      "lose": 0
+    },
+  {
+      "name": "JeezPer",
+      "faction": 7,
+      "win": 0,
+      "lose": 1
+  }
+      ]
   },
   "Fontgrise": {
     "color": "#3300000",
@@ -997,29 +1490,27 @@
     "img": "https://vignette.wikia.nocookie.net/lotr/images/b/b6/Erebor_gate.jpg/revision/latest?cb=20130318193218",
     "map": 6,
     "players": [
-      {
-        "name": "Herr_Flibustzer",
-        "faction": 4,
-        "win": 0,
-        "lose": 0
-      }
+
     ]
   },
   "Carrock": {
-    "color": "#3300000",
+    "color": "#fffc00",
     "name": "Carrock",
     "description": "Le Carroc était un immense rocher, sur l'Anduin, avec un grand escalier qui menait à l'espace plat au sommet et descendait jusqu'au fleuve où un gué permettait de le traverser du côté est.",
     "img": "https://vignette2.wikia.nocookie.net/lotr/images/4/48/1Carrock.JPG/revision/latest?cb=20141229134558",
     "map": 4,
-    "players": []
+    "players": [
+    ]
   },
   "Rhudaur": {
-    "color": "#3300000",
+    "color": "#FFFC00",
     "name": "Rhudaur",
     "description": "Le Rhudaur fut créé en l'an 861 du Troisième Âge de la partition de l'Arnor, dont il occupait le nord-est.",
     "img": "https://i0.wp.com/img2.wikia.nocookie.net/__cb20090917154708/lotr/images/d/d7/Rhudaur.JPG",
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ARNOR/rhudaur%20wotr.zip",
     "map": 4,
-    "players": []
+    "players": [
+    ]
   },
   "C_Rohan": {
     "color": "#0bff00",
@@ -1028,12 +1519,6 @@
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
     "map": 8,
     "players": [
-      {
-        "name": "Barj4",
-        "faction": 1,
-        "win": 0,
-        "lose": 0
-      }
     ]
   },
   "Haut_Nord": {
@@ -1041,54 +1526,139 @@
     "name": "Les Hauts du Nord",
     "description": "Région vallonnée d'Arnor se trouvant au nord de Bree et d'Amon Sûl.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
+    "map": 4,
     "players": []
   },
   "Haut_Sud": {
-    "color": "#3300000",
+    "color": "#00BFFF",
     "name": "Hauts du Sud",
     "description": "Les Coteaux du Sud étaient des collines positionnées au sud des Collines du Vent, sous la Grande Route de l’Est. Dans leur prolongement occidental, uniquement séparés par la portion sud du Chemin Vert, se trouvaient les Coteaux des Tertres.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2b/Nurn-0.png/revision/latest?cb=20170213095310",
     "map": 8,
-    "players": []
+    "players": [
+    ]
   },
   "Ouestemnet": {
-    "color": "#3300000",
+    "color": "#0BFF00",
     "name": "Ouestemnet",
     "description": "L’Ouestemnet était la région située au nord-ouest du Rohan. Elle s’étendait entre l’Adorn et l’Isen à l’ouest, les Montagnes de Brume et Fangorn au nord, l’Entévière à l’est, et la Snawburna et l’Ouestfolde au sud.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745264665449463938/273_rt_r1.png",
     "map": 4,
-    "players": []
+    "players": [
+    ]
   },
   "Months_Endwash": {
-    "color": "#3300000",
+    "color": "#0BFF00",
     "name": "Vallée de l'Entalluve",
     "description": "La vallée de l'Entalluve possède le paysage le plus varié des plaines orientales, de buttes rocheuses dans le nord à des marécages couverts de roseaux dans le sud. Elle est traversée par l'Entalluve, appelée Onodló par les Elfes, qui prenait sa source dans la forêt de Fangorn.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745258252106989648/260_rt_r1.png",
-    "players": []
+    "map": 4,
+    "players": [
+      
+    {
+      "name": "Leonidas",
+      "faction": 1,
+      "win": 0,
+      "lose": 0
+    },
+    {
+      "name": "Bladead",
+      "faction": 1,
+      "win": 0,
+      "lose": 0
+    }
+    ]
   },
   "Gouffre_Helm": {
-    "color": "#3300000",
+    "color": "#ffffff",
     "name": "Gouffre de Helm",
     "description": "La Gorge de Helm désignait la passe qui s'ouvrait au nord des Montagnes Blanches sous le mont Thrihyrne ; elle était située dans l'Ouestfolde à proximité de la Brèche du Rohan.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745258076055142460/227_ad_01_r1.png",
     "map": 8,
-    "players": []
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ROHAN/gouffre%20de%20helm%20wotr.zip",
+    "players": [
+        {
+          "name": "Styg",
+          "faction": 6,
+          "win": 2,
+          "lose": 1,
+          "chef": true
+        },
+        {
+          "name": "Langshor",
+          "faction": 6,
+          "win": 2,
+          "lose": 1
+        },
+        
+      {
+          "name": "Starond",
+          "faction": 6,
+          "win": 2,
+          "lose": 1
+      },
+        
+      {
+          "name": "MK",
+          "faction": 6,
+          "win": 2,
+          "lose": 1
+      },
+      
+
+      {
+          "name": "Orval",
+          "faction": 6,
+          "win": 0,
+          "lose": 2
+      },
+  
+    {
+      "name": "Utharlok",
+      "faction": 7,
+      "win": 4,
+      "lose": 0
+    },
+    {
+      "name": "Sodythaek",
+      "faction": 7,
+      "win": 4,
+      "lose": 0
+    },
+    {
+      "name": "Chmout",
+      "faction": 7,
+      "win": 3,
+      "lose": 0
+    },
+    {
+      "name": "Ernerko",
+      "faction": 7,
+      "win": 2,
+      "lose": 0
+    }
+    ]
   },
   "Minas_Morgul": {
-    "color": "#3300000",
+    "color": "#DB5461",
     "name": "Minas Morgul",
     "description": "A la frontière du sombre pays de Mordor, dans la vallée plus tard surnommée Imlad Morgul, face à Minas Anor (la future Minas Tirith) perchée sur les pentes ouest de l'Ephel Dúath se trouvait Minas Morgul, la Tour de la Magie Noire, qui fut autrefois la brillante Tour de la Lune, Minas Ithil.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/0/02/MinasMorgul.jpg/revision/latest?cb=20141228211206",
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20MORDOR/minas%20morgul%20wotr.zip",
     "map": 8,
-    "players": []
+    "players": [
+
+    ]
   },
   "Umbar": {
-    "color": "#3300000",
+    "opacity": "opacity-50",
+    "color": "#DB5461",
     "name": "Umbar",
     "description": "Umbar était un petit royaume du nord de la région du Harad. Peuplé essentiellement par les Suderons et les Númenóréens Noirs, il était le plus proche royaume des Haradrim des frontières méridionales du Gondor lors de son apogée.",
     "img": "http://4.bp.blogspot.com/-6rYQg7JqWxA/VZDbWUEAQSI/AAAAAAAADvE/-VyIQsc-IIQ/s1600/thecityofumbar.jpg0",
     "map": 8,
-    "players": []
+    "players": [
+    ]
   },
   "Azanulbizar": {
     "color": "#ff6f00",
@@ -1096,46 +1666,51 @@
     "description": "Située aux abords de la Porte Est de Moria et de l'Escalier de Ruisselombre qui descendait du chemin de la Porte de Cornerouge, la vallée d'Azanulbizar allait des racines des Montagnes de Brume aux rives du lac Kheled-zâram.",
     "img": "https://i.kinja-img.com/gawker-media/image/upload/t_original/pyxps4lmty05beicj1kc.jpg",
     "players": [
-      {
-        "name": "Utharlok",
-        "faction": 7,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Sodythaek",
-        "faction": 7,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Chmout",
-        "faction": 7,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Enerko",
-        "faction": 7,
-        "win": 0,
-        "lose": 0
-      }
     ]
   },
   "Amon_Sul": {
-    "color": "#3300000",
+    "color": "#00BFFF",
     "name": "Amon Sul",
     "description": "Amon Sûl est le nom d'une colline d'Eriador. Au temps du royaume d'Arnor, la tour abritait un palantír. Les royaumes d'Arthedain, Cardolan et de Rhudaur, issus de l'ancien royaume d'Arnor, se battirent souvent pour la possession de cette tour qui était a la jnction des trois royaumes de plus elle abritait le seul palantír à leur portée. C’est en haut de cette tour que Elendil et Gil-Galad se rencontrèrent pour former la Dernière Alliance des Elfes et des Hommes au second age.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/3/33/The_Ancient_Fortress_of_Amon_Sul_later_known_as_WeatherTop.JPG/revision/latest?cb=20090917154725",
-    "players": []
+    "map": 4,
+    "players": [
+      
+      
+      {
+        "name": "Eönwë",
+        "faction": 2,
+        "win": 0,
+        "lose": 1
+      }
+    ]
   },
   "Fondcombe": {
-    "color": "#3300000",
+    "color": "#00BFFF",
     "name": "Fondcombe",
     "description": "Fondcombe, aussi connue sous le nom d'Imladris, est une vallée des Monts Brumeux fondée par Elrond en l'an 1697 du Deuxième Âge qui en fut sa demeure, comme refuge et place forte face à Sauron en Eriador à la suite de la chute de l'Eregion.Elle est la dernière maison simple a l'est de la mer .",
     "img": "http://vignette2.wikia.nocookie.net/seigneur-des-anneaux/images/d/d0/Fondcombe_2.jpg/revision/latest?cb=20140123123749&path-prefix=fr",
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ERIADOR/fondcombe%20wotr.zip",
     "map": 8,
-    "players": []
+    "players": [ 
+      
+      
+      
+      {
+        "name": "Bibi new Eldar",
+        "faction": 2,
+        "win": 1,
+        "lose": 0
+    },
+
+    
+{
+  "name": "Enderwite",
+  "faction": 2,
+  "win": 0,
+  "lose": 0
+}
+    ]
   },
   "Esgaroth": {
     "color": "#fffc00",
@@ -1144,18 +1719,6 @@
     "img": "https://vignette.wikia.nocookie.net/lotr/images/a/ac/LakeTown.jpg/revision/latest?cb=20150308165514",
     "map": 8,
     "players": [
-      {
-        "name": "Tulkas",
-        "faction": 4,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Telchar",
-        "faction": 4,
-        "win": 0,
-        "lose": 0
-      }
     ]
   },
   "Cirith_Ungol": {
@@ -1165,69 +1728,16 @@
     "img": "http://img04.deviantart.net/3a40/i/2015/018/9/2/the_tower_of_cirith_ungol_by_enthing-d8ef63a.jpg",
     "map": 8,
     "players": [
-      {
-        "name": "Aragornanus",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      }, 
-      {
-        "name": "Moonvaly",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      }, 
-      {
-        "name": "Kado",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      }, 
-      {
-        "name": "Mr.Froton",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      }, 
-      {
-        "name": "[RECON] Xelenos",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "KameoCroft",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Zeste",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Loempia",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Thork",
-        "faction": 5,
-        "win": 0,
-        "lose": 0
-      }
     ]
   },
   "Anorien": {
-    "color": "#3300000",
+    "color": "#0BFF00",
     "name": "Anorien",
     "description": "L'Anórien était l'une des provinces du Gondor, à l'origine le fief d'Anárion, délimitée à l'ouest par le Glanhír, au nord par l'Entévière, à l'est par l'Anduin, et au sud par les Montagnes Blanches.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745255660253479052/268_rt_r1.png",
     "map": 4,
-    "players": []
+    "players": [
+    ]
   },
   "Tharbad": {
     "color": "#3300000",
@@ -1238,43 +1748,93 @@
     "players": []
   },
   "Pelargir": {
-    "color": "#3300000",
+    "color": "#1E90FF",
     "name": "Pelargir",
     "description": "Le port gondorien de Pelargir-sur-Anduin, sis légèrement en amont de l'endroit où le Sirith se jette dans le Grand Fleuve, fut fondé en 2350 2A par les Númenóréens.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/7/72/Pelargir.jpg/revision/latest?cb=20171125100001",
     "map": 4,
-    "players": []
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20GONDOR/pelargir%20wotr.zip",
+    "players": [
+    ]
   },
   "Hauts_Rhudaur": {
-    "color": "#3300000",
+    "color": "#FFFC00",
     "name": "Hauts du Rhudaur",
     "description": "Dans ces montagne situé au frontière du royaume d’Angmar et du Rudhaur fut enterré les 9 spectre de l’anneau, comme le dit si bien Gandalf dans le Hobbit la désolation de Smaug, envoyer là-bas sur ordre de Galadriel afin de connaitre l’identité du nécromancien de Dol Guldur (Gandalf pensant qu’il s’agissait du Roi Sorcier d’Agmar).",
     "img": "https://cdn.discordapp.com/attachments/651869996233916428/748179707257946122/unknown_2.png",
-    "players": []
+    "players": [ 
+      {
+        "name": "Thorin écu de chêne (Clément)",
+        "faction": 4,
+        "win": 1,
+        "lose": 0
+      },
+      {
+          "name": "Racoon",
+          "faction": 4,
+          "win": 1,
+          "lose": 0
+      }
+    ]
   },
   "Erech": {
-    "color": "#3300000",
+    "color": "#0BFF00",
     "name": "Erech",
     "description": "La pierre noire d'Erech se dressait noire au sommet d'une colline, non loin du lieu où la rivière Morthond prenait sa source. ",
     "img": "http://1.bp.blogspot.com/-WOyRxTzlgIg/TZ5xKVDoWRI/AAAAAAAAACg/SW_FmkHV8xw/s1600/Stone+of+Erech.jpg",
-    "players": []
+    "players": [
+      
+      
+      
+    {
+      "name": "Hanko76",
+      "faction": 1,
+      "win": 0,
+      "lose": 0
+    }
+    ]
   },
   "Isengard": {
-    "opacity": "opacity-75",
-    "color": "#333533",
+    "color": "#ff6f00",
     "name": "Isengard",
     "description": "Isengard, appelé Angrenost en sindarin, était constituée du Cercle d’Isengard, de puissantes fortifications qui ne possédaient qu'une porte, et d'Orthanc, la haute tour des Númenóréens, qui abritait un palantír.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745258066261573642/223_ad_01_r1.png",
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ROHAN/Isengard%20wotr.zip",
     "map": 8,
-    "players": []
+    "players": [
+      ]
   },
   "Foret_Druadan": {
-    "color": "#3300000",
+    "color": "#1E90FF",
     "name": "Foret des Druadan",
     "description": "La Forêt de Drúadan se situait au pied des Montagnes Blanches  et au nord de Minas Tirith. C’est ici que l’un des Feux d’alarme fût installé, ce qui permis aux Gondor d'appeler l’aide de leurs alliés rohirrims. Elle était l'une des dernières demeures des Drúedain, dont l'un des chefs, Ghân-buri-Ghân, fit traverser la forêt à l'armée des Rohirrim, par la Vallée des Fardiers, lors de la Guerre de l’Anneau.",
     "img": "https://lotro-wiki.com/images/thumb/4/4e/Dr%C3%BB_Bh%C3%BBta-1.jpg/600px-Dr%C3%BB_Bh%C3%BBta-1.jpg",
     "map": 4,
-    "players": []
+    "players": [
+      
+      
+      
+      {
+        "name": "Sirena",
+        "faction": 3,
+        "win": 1,
+        "lose": 0
+      },
+      {
+          "name": "Lachèvredumatin",
+          "faction": 3,
+          "win": 1,
+          "lose": 0
+      },
+      
+
+      {
+        "name": "TiTi13015",
+        "faction": 3,
+        "win": 0,
+        "lose": 1
+      }
+    ]
   },
   "Centre_Ithilien": {
     "color": "#3300000",
@@ -1285,98 +1845,85 @@
     "players": []
   },
   "Avancee_Fangorn": {
-    "opacity": "opacity-75",
-    "color": "#333533",
+    "color": "#0BFF00",
     "name": "Avancée deFangorn",
     "description": "Avancée de Fangorn",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745255646643093574/285_rt_r1.png",
     "map": 4,
     "players": [
-      {
-        "name": "Saruman",
-        "faction": 6,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Yawaio",
-        "faction": 6,
-        "win": 0,
-        "lose": 0
-      }
     ]
   },
   "Estfolde": {
-    "color": "#3300000",
+    "color": "#0BFF00",
     "name": "Estfolde",
     "description": "L’Estfolde, ou Vaux de l’Est1), était une région du Rohan située entre le Folde à l’ouest2), l’Entévière au nord, la Fenmark à l’est et les Montagnes Blanches au sud.",
     "img": "https://i1.wp.com/dcodumilieu.fr/wp-content/uploads/2017/11/ScreenShot00262.jpg?ssl=1",
-    "players": []
+    "players": [
+      
+    {
+      "name": "Midnight glow",
+      "faction": 1,
+      "win": 0,
+      "lose": 0
+    }
+    ]
   },
   "Gue_Bruinen": {
-    "color": "#3300000",
+    "color": "#00BFFF",
     "name": "Gue Bruinen",
     "description": "La Bruinen prenait sa source dans les Montagnes de Brume, au nord de Fondcombe.",
     "img": "http://ragnagna.fr/wp-content/uploads/2014/08/NZ_QUEENSTOWN-LORD-OF-THE-TOUR_25.jpg",
     "map": 4,
-    "players": []
+    "players": [
+      {
+        "name": "Fingolfin Haut Roi des Noldors",
+        "faction": 2,
+        "win": 1,
+        "lose": 1,
+        "handicap": 1
+      },    
+      
+      {
+        "name": "TK",
+        "faction": 2,
+        "win": 1,
+        "lose": 0
+    }
+    ]
   },
   "Gue_Isen": {
-    "opacity": "opacity-75",
-    "color": "#333533",
+    "color": "#0BFF00",
     "name": "Gue Isen",
     "description": "Le fleuve Isen prenait sa source au sud des Montagnes de Brume, au niveau du Methedras.",
     "img": "http://rjrotwk.the3rdage.net/1_06/Locations/screens/ford_isens.jpg",
     "map": 4,
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ROHAN/fords%20of%20isen%20wotr.zip",
     "players": [
-      {
-        "name": "Tothor",
-        "faction": 6,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Styg",
-        "faction": 6,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Langshor",
-        "faction": 6,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Starond",
-        "faction": 6,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "l'Uruk déchu",
-        "faction": 6,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Gostamo",
-        "faction": 6,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Orval",
-        "faction": 6,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "MK",
-        "faction": 6,
-        "win": 0,
-        "lose": 0
-      }
+    
+    {
+      "name": "Thogrey",
+      "faction": 1,
+      "win": 0,
+      "lose": 0
+  },
+  {
+    "name": "Cleme",
+    "faction": 1,
+    "win": 1,
+    "lose": 0
+  },
+  {
+    "name": "Demonsdark",
+    "faction": 1,
+    "win": 0,
+    "lose": 1
+  },
+  {
+    "name": "Braj",
+    "faction": 1,
+    "win": 1,
+    "lose": 1
+  }
     ]
   },
   "Ouestfold": {
@@ -1384,37 +1931,22 @@
     "name": "Ouestfold",
     "description": "L’Ouestfolde était une région du Rohan, traversée par la Grande Route de l’Ouest, qui s'étirait entre les Gués de l’Isen et le Folde.",
     "img": "https://acooksbooks.files.wordpress.com/2014/04/amandasmap.jpg",
+    "map": 4,
     "players": [
-      {
-        "name": "Nitneuq",
-        "faction": 1,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Demonsdark",
-        "faction": 1,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Tequitous",
-        "faction": 1,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Thogrey",
-        "faction": 1,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "ThOrOndOr",
-        "faction": 1,
-        "win": 0,
-        "lose": 0
-      }
+      
+    {
+      "name": "Tequitous",
+      "faction": 1,
+      "win": 0,
+      "lose": 1
+    },
+    
+    {
+      "name": "Hasgardien",
+      "faction": 1,
+      "win": 0,
+      "lose": 1
+  }
     ]
   },
   "Hauts_Galgals": {
@@ -1426,42 +1958,48 @@
     "players": []
   },
   "Cair_Andros": {
-    "color": "#1e90ff",
+    "color": "#DB5461",
     "name": "Cair Andros",
     "description": "Cair Andros était une île gondorienne fortifiée d'une dizaine de miles de long située au milieu de l'Anduin, entre l'Anórien à l'ouest et l'Ithilien à l'est.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745255663432630382/269_rt_r1.png",
     "map": 8,
     "players": [
-      {
-        "name": "Sindarry",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Jean Yves",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Ulfhagen",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Gagzull",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "TiTi13015",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      }
+      
+    
+    {
+      "name": "Aragornanus",
+      "faction": 5,
+      "win": 2,
+      "lose": 1,
+      "chef": true
+    },
+    {
+      "name": "Marcel",
+      "faction": 5,
+      "win": 1,
+      "lose": 0
+    },
+    
+        
+
+    {
+      "name": "Groldur",
+      "faction": 5,
+      "win": 2,
+      "lose": 0
+    },
+    {
+      "name": "Moltak",
+      "faction": 5,
+      "win": 2,
+      "lose": 0
+    },
+    {
+      "name": "Katsen",
+      "faction": 5,
+      "win": 2,
+      "lose": 0
+    }
     ]
   },
   "Edoras": {
@@ -1471,74 +2009,65 @@
     "map": 8,
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745258016588431480/208_ad_01_r1.png",
     "players": [
-      {
-        "name": "El Risitas",
-        "faction": 1,
-        "win": 0,
-        "lose": 0
-      }
-    ]
+      ]
   },
   "Osgiliath": {
-    "color": "#1e90ff",
+    "color": "#DB5461",
     "name": "Osgiliath",
     "description": "Osgiliath était la capitale de l'ancien Gondor, bâtie autour d'un grand pont de pierre traversant l'Anduin.",
     "img": "http://rjrotwk.the3rdage.net/1_06/Locations/screens/osgiliath.jpg",
+    "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20GONDOR/osgiliath%20wotr.zip",
     "map": 4,
     "players": [
-      {
-        "name": "Galethorne ",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Gaëtan ",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Loken Capitaine du Gondor",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Denethen",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Thebuil",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Werbo45",
-        "faction": 3,
-        "win": 0,
-        "lose": 0
-      }
     ]
   },
   "Harlond": {
-    "color": "#3300000",
+    "color": "#DB5461",
     "name": "Harlond",
     "description": "Le port de Harlond se trouvait en Harlindon et donnait sur le Golfe du Loune.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745265168316891256/274_rt_r1.png",
     "map": 6,
-    "players": []
+    "players": [
+    ]
   },
   "Dol_Amroth": {
-    "color": "#3300000",
+    "color": "#1E90FF",
     "name": "Dol Amroth",
     "description": "Deux légendes racontent la fondation de cette citadelle. La première veut que Dol Amroth ait été fondé avant la Submersion de Númenor par une famille de Fidèles parente d'Elendil. Une autre veut que le premier Prince de Dol Amroth ait été le fils d'Imrazôr, un Númenóréen, et de Mithrellas, une Elfe de la suite de Nimrodel.",
     "img": "https://media.moddb.com/images/mods/1/10/9030/dol_amroth06.jpg",
     "map": 8,
-    "players": []
+    "players": [
+
+      {
+        "name": "Waxfax",
+        "faction": 3,
+        "win": 0,
+        "lose": 0
+      },
+
+      {
+        "name": "Le_ptit_dam",
+        "faction": 3,
+        "win": 0,
+        "lose": 0
+      },
+      
+      {
+        "name": "Badavoi",
+        "faction": 3,
+        "win": 1,
+        "lose": 1,
+        "handicap": 1
+      },
+      
+      {
+        "name": "Costario LeNoob",
+        "faction": 3,
+        "win": 1,
+        "lose": 1,
+        "handicap": 1
+    }
+    ]
   },
   "Lorien": {
     "color": "#3300000",
@@ -1549,35 +2078,53 @@
     "players": []
   },
   "Dunharrow": {
-    "color": "#0bff00",
+    "color": "#0BFF00",
     "name": "Dunharrow",
     "description": "Dunharrow était une place forte du Rohan située sur le plateau du Firienfeld, dans les Montagnes Blanches au sud d'Edoras.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/2/2d/Bfme_he09_01.jpg/revision/latest?cb=20110211172715",
+    "map": 8,
     "players": [
-      {
-        "name": "Hasgardien",
+  
+
+    {
+        "name": "Nitneuq",
         "faction": 1,
-        "win": 0,
+        "win": 1,
         "lose": 0
-      },
-      {
-        "name": "El Roberto",
-        "faction": 1,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Strider Emiya",
-        "faction": 1,
-        "win": 0,
-        "lose": 0
-      },
-      {
-        "name": "Thorken",
-        "faction": 1,
-        "win": 0,
-        "lose": 0
-      }
+    },
+      
+    
+    {
+      "name": "El Risitas",
+      "faction": 1,
+      "win": 0,
+      "lose": 1,
+      "handicap": true
+  },
+  
+  {
+    "name": "Strider Emiya",
+    "faction": 1,
+    "win": 1,
+      "lose": 1,
+      "handicap": true
+},
+{
+    "name": "Thorken",
+    "faction": 1,
+    "win": 1,
+    "lose": 1,
+    "handicap": true,
+    "chef": true
+},
+
+{
+  "name": "Zuros",
+  "faction": 1,
+  "win": 1,
+  "lose": 1,
+  "handicap": true
+}
     ]
   },
   "Halifirien": {
@@ -1587,12 +2134,6 @@
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745249339005337650/282_rt_r1.png",
     "map": 4,
     "players": [
-      {
-        "name": "Darj",
-        "faction": 1,
-        "win": 0,
-        "lose": 0
-      }
     ]
   },
   "Moria": {
@@ -1610,15 +2151,17 @@
     "description": "Le Coeur de la Moria est la forteresse des Gobelins !",
     "img": "https://i.pinimg.com/originals/4f/99/30/4f99300102b2d967efa02ca3008f9f48.jpg",
     "map": 8,
-    "players": []
+    "players": [
+      ]
   },
   "Amon_Hen": {
-    "color": "#3300000",
+    "color": "#0BFF00",
     "name": "Amon Hen",
     "description": "La colline d'Amon Hen se situe sur la rive droite du fleuve Anduin, à hauteur des chutes du Rauros et est opposée à Amon Lhaw sur la rive gauche.",
     "img": "https://cdn.discordapp.com/attachments/703202332086763542/745258056354496530/218_ad_01_r1.png",
     "map": 8,
-    "players": []
+    "players": [
+    ]
   },
   "Bree": {
     "color": "#3300000",
@@ -1629,20 +2172,83 @@
     "players": []
   },
   "Tolfalas": {
-    "color": "#3300000",
+    "color": "#1E90FF",
     "name": "Tolfalas",
     "description": "Tolfalas était une grande île, qui se trouvait au-delà de l'Ethir Anduin dans la baie de Belfalas.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/3/39/Tolfalasjtm.jpg/revision/latest?cb=20160309134606",
     "map": 6,
-    "players": []
+    "players": [
+      {
+        "name": "Radagast",
+        "faction": 3,
+        "win": 0,
+        "lose": 0
+      },
+      {
+        "name": "Barat de saint-naz",
+        "faction": 3,
+        "win": 0,
+        "lose": 0
+      },
+      
+
+      
+      
+      {
+        "name": "Werbo45",
+        "faction": 3,
+        "win": 0,
+        "lose": 1
+      },
+      {
+        "name": "Jean Yves",
+        "faction": 3,
+        "win": 0,
+        "lose": 1
+      },
+      {
+        "name": "Valentin",
+        "faction": 3,
+        "win": 0,
+        "lose": 0
+      },
+      {
+        "name": "Masterkiller",
+        "faction": 3,
+        "win": 0,
+        "lose": 0
+      },
+      {
+        "name": "2emeDivision",
+        "faction": 3,
+        "win": 0,
+        "lose": 0
+      },
+      {
+        "name": "Briseroc",
+        "faction": 3,
+        "win": 0,
+        "lose": 0
+      }
+    ]
   },
   "EmynMuil": {
-    "color": "#3300000",
+    "color": "#0BFF00",
     "name": "Emyn Muil",
     "description": "L'Emyn Muil est une masse montagneuse couvrant un territoire de presque 80 par 120 km, située entre le fleuve Anduin et le Marais des Morts.",
     "img": "https://vignette.wikia.nocookie.net/lotr/images/3/3a/Naamloos1.png/revision/latest?cb=20130714171628",
     "map": 4,
-    "players": []
+    "players": [
+      
+      
+      
+      {
+        "name": "Wolfsilver",
+        "faction": 1,
+        "win": 0,
+        "lose": 0
+      }
+    ]
   },
   "Porte_Moria": {
     "color": "#ff6f00",
@@ -1651,11 +2257,25 @@
     "img": "https://i.ytimg.com/vi/faH5CypTltk/maxresdefault.jpg",
     "map": 4,
     "players": [
+    ]
+  },
+  "Bateau": {
+    "name": "Bateau de Transport Elfique",
+    "description": "Malheureusement le bateau a coulé, nos 2 elfes sont portés disparu",
+    "img": "http://www.pirates-privateers.com/img/pirate-shipwreck.jpg",
+    "players": [
+            
+        {
+          "name": "Seoxys",
+          "faction": 2,
+          "win": 0,
+          "lose": 0
+      },
       {
-        "name": "Stalinou",
-        "faction": 7,
-        "win": 0,
-        "lose": 0
+          "name": "Bulrog",
+          "faction": 2,
+          "win": 0,
+          "lose": 0
       }
     ]
   }

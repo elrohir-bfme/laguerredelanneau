@@ -15,7 +15,8 @@
   >
     <div class="max-w-sm rounded overflow-hidden shadow-lg">
       <div class="relative">
-        <img class="w-full" :src="data.img">
+        <img @click="changeImage" v-if="mapimg" class="w-full" :src="data.img">
+        <img @click="changeImage" v-else class="w-full" :src="data.imgmap">
         <div v-if="data.map" style="top: 0.45em; left: 0.45em" class="absolute bg-gray-700 hover:bg-gray-800 text-white font-bold py-1 px-2 rounded-full">
           Map {{data.map}} Joueurs
         </div>
@@ -140,12 +141,18 @@
 export default {
   data() {
     return {
-      data: []
+      data: [],
+      mapimg: true
     }
   },
   methods: {
       handleClose() {
         this.$emit("close");
+      },
+      changeImage() {
+        if(this.data.imgmap) {
+          this.mapimg = !this.mapimg;
+        }
       }
   },
   props: {

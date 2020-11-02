@@ -8,6 +8,7 @@
         </a>
         <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
           <nuxt-link style="font-family: 'LOTR'" class="mr-10 hover:text-white underline" to="/">Carte</nuxt-link>
+          <nuxt-link style="font-family: 'LOTR'" class="mr-10 hover:text-white underline" to="/chronologie">chronologie</nuxt-link>
           <nuxt-link style="font-family: 'LOTR'" class="mr-10 hover:text-white underline" to="/regles">Régles</nuxt-link>
           <nuxt-link style="font-family: 'LOTR'" class="mr-10 hover:text-white underline" to="/tours">Phase de Combat</nuxt-link>
           <nuxt-link style="font-family: 'LOTR'" class="mr-10 hover:text-white underline" to="/heros">Héros</nuxt-link>

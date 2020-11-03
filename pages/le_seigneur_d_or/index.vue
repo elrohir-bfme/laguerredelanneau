@@ -2590,30 +2590,6 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
 
-			<div class="flex flex-col items-center justify-center bg-green-800 hover:bg-green-900 text-green-100 p-4 shadow rounded-lg">
-				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-					<img src="~assets/factions/rohan.png"
-						 alt=""
-						 class="h-full w-full">
-				</div>
-
-				<h2 class="mt-4 font-bold text-xl text-green-300">Chef de la Faction du Rohan</h2>
-				<h6 class="mt-2 text-xl font-black underline">Thorken</h6>
-
-				<span class="flex rounded-full mt-4 bg-green-700 uppercase px-2 py-1 text-sm font-bold mr-3">Edoras (0BFF00)</span>
-
-				<ul class="flex flex-row mt-4 space-x-1">
-					<li>
-						<span class="flex rounded-full bg-green-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbTerritoireRohan}} Territoires
-							<svg class="ml-2 stroke-current text-green-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd" /></svg>
-						</span>
-					</li>
-					<li>
-						<span class="flex rounded-full bg-green-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbPlayerRohan}} Joueurs
-						<svg class="ml-2 stroke-current text-green-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></span>
-					</li>
-				</ul>
-			</div>
 
 			<div class="flex flex-col items-center justify-center bg-teal-800 hover:bg-teal-900 text-teal-100 p-4 shadow rounded-lg">
 				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
@@ -2622,7 +2598,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 						 class="h-full w-full">
 				</div>
 
-				<h2 class="mt-4 font-bold text-xl text-teal-300">Chef de la Faction du Elfe</h2>
+				<h2 class="mt-4 font-bold text-xl text-teal-300">Chef de la Faction des Elfes</h2>
 				<h6 class="mt-2 text-xl font-black underline">Muranoir</h6>
 
 				<span class="flex rounded-full mt-4 bg-teal-700 uppercase px-2 py-1 text-sm font-bold mr-3">Havres gris (00BFFF)</span>
@@ -2647,7 +2623,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 						 class="h-full w-full">
 				</div>
 
-				<h2 class="mt-4 font-bold text-xl text-blue-300">Chef de la Faction du Gondor</h2>
+				<h2 class="mt-4 font-bold text-xl text-blue-300">Chef de la Faction des Hommes</h2>
 				<h6 class="mt-2 text-xl font-black underline">Loken</h6>
 
 				<span class="flex rounded-full mt-4 bg-blue-700 uppercase px-2 py-1 text-sm font-bold mr-3">Minas Tirith (1E90FF)</span>
@@ -2672,7 +2648,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 						 class="h-full w-full">
 				</div>
 
-				<h2 class="mt-4 font-bold text-xl text-yellow-300">Chef de la Faction du Nain</h2>
+				<h2 class="mt-4 font-bold text-xl text-yellow-300">Chef de la Faction des Nains</h2>
 				<h6 class="mt-2 text-xl font-black underline">Roi Daïn Pied D'Acier</h6>
 
 				<span class="flex rounded-full mt-4 bg-yellow-800 uppercase px-2 py-1 text-sm font-bold mr-3">Erebor (FFFC00)</span>
@@ -2752,7 +2728,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 						 class="h-full w-full">
 				</div>
 
-				<h2 class="mt-4 font-bold text-xl text-orange-300">Chef de la Faction Gobelin</h2>
+				<h2 class="mt-4 font-bold text-xl text-orange-300">Chef de la Faction des Gobelins</h2>
 				<h6 class="mt-2 text-xl font-black underline">Bolgar Roi de la Moria</h6>
 
 				<span class="flex rounded-full mt-4 bg-orange-700 uppercase px-2 py-1 text-sm font-bold mr-3">Coeur de la Moria (FF6F00)</span>
@@ -2822,18 +2798,16 @@ export default {
 		map: [],
 		information: '',
 		isShowModal: false,
-		nbTerritoireRohan: 0,
 		nbTerritoireElfe: 0,
-		nbTerritoireGondor: 0,
+		nbTerritoireHomme: 0,
 		nbTerritoireNain: 0,
 		nbTerritoireMordor: 0,
 		nbTerritoireIsengard: 0,
 		nbTerritoireGobelin: 0,
 		nbTerritoireAngmar: 0,
 
-		nbPlayerRohan: 0,
 		nbPlayerElfe: 0,
-		nbPlayerGondor: 0,
+		nbPlayerHomme: 0,
 		nbPlayerNain: 0,
 		nbPlayerMordor: 0,
 		nbPlayerIsengard: 0,
@@ -2867,10 +2841,6 @@ export default {
 				if (!obj.hasOwnProperty(prop)) continue;
 
 				switch (obj[prop]) {
-					case '#0bff00': 
-					case '#0BFF00':
-						this.nbTerritoireRohan += 1;
-						break;
 
 					case '#00bfff':
 					case '#00BFFF':
@@ -2879,7 +2849,7 @@ export default {
 
 					case '#1e90ff':
 					case '#1E90FF':
-						this.nbTerritoireGondor += 1;
+						this.nbTerritoireHomme += 1;
 						break;
 
 					case '#fffc00':
@@ -2916,16 +2886,12 @@ export default {
 			for (var player in obj2) {
 				
 				switch (obj2[player]['faction']) {
-					case 1:
-						this.nbPlayerRohan += 1;
-						this.nbPlayers += 1;
-						break;
 					case 2:
 						this.nbPlayerElfe += 1
 						this.nbPlayers += 1;
 						break;
 					case 3:
-						this.nbPlayerGondor += 1
+						this.nbPlayerHomme += 1
 						this.nbPlayers += 1;
 						break;
 					case 4:

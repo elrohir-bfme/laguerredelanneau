@@ -36,7 +36,7 @@
       </div>
       <div v-if="data.players && data.players.length > 0" class="px-6 py-4 flex flex-wrap">
         <div class="mx-auto m-2" v-for="player in data.players" :key="player.name"> 
-          <div v-if="player.faction == 1" class="rounded-lg bg-green-400 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-green-500">{{player.name}} 
+          <div v-if="player.faction == 1" class="rounded-lg bg-green-800 uppercase px-2 py-1 text-sm font-bold mr-3 text-white text-center hover:bg-green-900">{{player.name}}
             <img v-if="player.chef == true" alt="Chef de Faction" class="w-4 h-4 inline-block" src="~assets/crown.svg">
             <span class="block text-center text-xs font-normal">
               {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/trophy.svg">
@@ -48,7 +48,7 @@
             </span>
           </div>
 
-          <div v-else-if="player.faction == 2" class="rounded-lg bg-green-800 uppercase px-2 py-1 text-sm font-bold mr-3 text-white text-center hover:bg-green-900">{{player.name}}
+          <div v-else-if="player.faction == 2" class="rounded-lg bg-blue-500 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-blue-600">{{player.name}}
             <img v-if="player.chef == true" alt="Chef de Faction" class="w-4 h-4 inline-block" src="~assets/crown.svg">
             <span class="block text-center text-xs font-normal">
               {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/trophy.svg">
@@ -59,8 +59,7 @@
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
             </span>
           </div>
-
-          <div v-else-if="player.faction == 3" class="rounded-lg bg-blue-500 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-blue-600">{{player.name}}
+          <div v-else-if="player.faction == 3" class="rounded-lg bg-yellow-600 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-yellow-700">{{player.name}}
             <img v-if="player.chef == true" alt="Chef de Faction" class="w-4 h-4 inline-block" src="~assets/crown.svg">
             <span class="block text-center text-xs font-normal">
               {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/trophy.svg">
@@ -71,7 +70,7 @@
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
             </span>
           </div>
-          <div v-else-if="player.faction == 4" class="rounded-lg bg-yellow-600 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-yellow-700">{{player.name}}
+          <div v-else-if="player.faction == 4" class="rounded-lg bg-red-700 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-red-800">{{player.name}}
             <img v-if="player.chef == true" alt="Chef de Faction" class="w-4 h-4 inline-block" src="~assets/crown.svg">
             <span class="block text-center text-xs font-normal">
               {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/trophy.svg">
@@ -82,7 +81,7 @@
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
             </span>
           </div>
-          <div v-else-if="player.faction == 5" class="rounded-lg bg-red-700 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-red-800">{{player.name}}
+          <div v-else-if="player.faction == 5" class="rounded-lg bg-gray-800 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-gray-900">{{player.name}}
             <img v-if="player.chef == true" alt="Chef de Faction" class="w-4 h-4 inline-block" src="~assets/crown.svg">
             <span class="block text-center text-xs font-normal">
               {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/trophy.svg">
@@ -93,7 +92,7 @@
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
             </span>
           </div>
-          <div v-else-if="player.faction == 6" class="rounded-lg bg-gray-800 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-gray-900">{{player.name}}
+          <div v-else-if="player.faction == 6" class="rounded-lg bg-orange-800 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-orange-900">{{player.name}}
             <img v-if="player.chef == true" alt="Chef de Faction" class="w-4 h-4 inline-block" src="~assets/crown.svg">
             <span class="block text-center text-xs font-normal">
               {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/trophy.svg">
@@ -104,18 +103,7 @@
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
             </span>
           </div>
-          <div v-else-if="player.faction == 7" class="rounded-lg bg-orange-800 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-orange-900">{{player.name}}
-            <img v-if="player.chef == true" alt="Chef de Faction" class="w-4 h-4 inline-block" src="~assets/crown.svg">
-            <span class="block text-center text-xs font-normal">
-              {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/trophy.svg">
-              
-              {{player.lose}} <img alt="Défaite" class="w-4 h-4 inline-block" src="~assets/skull.svg">
-              
-              <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
-              <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
-            </span>
-          </div>
-          <div v-else-if="player.faction == 8" class="rounded-lg bg-purple-800 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-purple-900">{{player.name}}
+          <div v-else-if="player.faction == 7" class="rounded-lg bg-purple-800 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-purple-900">{{player.name}}
             <img v-if="player.chef == true" alt="Chef de Faction" class="w-4 h-4 inline-block" src="~assets/crown.svg">
             <span class="block text-center text-xs font-normal">
               {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/trophy.svg">

@@ -2698,15 +2698,15 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 
 			<div class="flex flex-col items-center justify-center bg-gray-800 hover:bg-gray-900 text-gray-100 p-4 shadow rounded-lg">
 				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-					<img src="~assets/factions/isengarddead.png"
+					<img src="~assets/factions/isengard.png"
 						 alt=""
 						 class="h-full w-full">
 				</div>
 
 				<h2 class="mt-4 font-bold text-xl text-gray-300">Faction d'Isengard</h2>
-				<h6 class="mt-2 text-xl font-black underline">VAINCU</h6>
+				<h6 class="mt-2 text-xl font-black underline">Michel</h6>
 
-				<span class="flex rounded-full mt-4 bg-gray-700 uppercase px-2 py-1 text-sm font-bold mr-3">LE 11 OCTOBRE 2020</span>
+				<span class="flex rounded-full mt-4 bg-gray-700 uppercase px-2 py-1 text-sm font-bold mr-3">Isengard (FFFFFF)</span>
 
 				<ul class="flex flex-row mt-4 space-x-1">
 					<li>

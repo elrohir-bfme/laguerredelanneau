@@ -2886,31 +2886,31 @@ export default {
 			for (var player in obj2) {
 				
 				switch (obj2[player]['faction']) {
-					case 2:
+					case 1:
 						this.nbPlayerElfe += 1
 						this.nbPlayers += 1;
 						break;
-					case 3:
+					case 2:
 						this.nbPlayerHomme += 1
 						this.nbPlayers += 1;
 						break;
-					case 4:
+					case 3:
 						this.nbPlayerNain += 1
 						this.nbPlayers += 1;
 						break;
-					case 5:
+					case 4:
 						this.nbPlayerMordor += 1
 						this.nbPlayers += 1;
 						break;
-					case 6:
+					case 5:
 						this.nbPlayerIsengard += 1
 						this.nbPlayers += 1;
 						break;
-					case 7:
+					case 6:
 						this.nbPlayerGobelin += 1
 						this.nbPlayers += 1;
 						break;
-					case 8:
+					case 7:
 						this.nbPlayerAngmar += 1
 						this.nbPlayers += 1;
 						break;

@@ -2699,6 +2699,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 				</div>
 
 				<h2 class="mt-4 font-bold text-xl text-red-300">Chef de la Faction du Mordor</h2>
+				<h6 class="mt-2 text-xl font-black underline">Proxane</h6>
 				<h6 class="mt-2 text-xl font-black underline">Vodka Hern</h6>
 
 				<span class="flex rounded-full mt-4 bg-red-700 uppercase px-2 py-1 text-sm font-bold mr-3">Barad Dûr (DB5461)</span>
@@ -2724,6 +2725,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 				</div>
 
 				<h2 class="mt-4 font-bold text-xl text-gray-300">Faction d'Isengard</h2>
+				<h6 class="mt-2 text-xl font-black underline">Mélanie</h6>
 				<h6 class="mt-2 text-xl font-black underline">WartenMatrisse</h6>
 
 				<span class="flex rounded-full mt-4 bg-gray-700 uppercase px-2 py-1 text-sm font-bold mr-3">Isengard (FFFFFF)</span>
@@ -2775,6 +2777,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 
 				<h2 class="mt-4 font-bold text-xl text-purple-300">Chef de la Faction d'Angmar</h2>
 				<h6 class="mt-2 text-xl font-black underline">Milkina</h6>
+				<h6 class="mt-2 text-xl font-black underline">EterDiablo</h6>
 
 				<span class="flex rounded-full mt-4 bg-purple-800 uppercase px-2 py-1 text-sm font-bold mr-3">Carn Dûrm (C500FF)</span>
 
@@ -2794,6 +2797,10 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 <br><br>
 
 
+
+<p class="text-center">Alliés</p>
+
+<br><br>
 </div>
 </template>
 

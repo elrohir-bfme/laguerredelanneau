@@ -2669,7 +2669,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 				</div>
 
 				<h2 class="mt-4 font-bold text-xl text-yellow-300">Chef de la Faction des Nains</h2>
-				<h6 class="mt-2 text-xl font-black underline"></h6>
+				<h6 class="mt-2 text-xl font-black underline">PavelGroque</h6>
 
 				<span class="flex rounded-full mt-4 bg-yellow-800 uppercase px-2 py-1 text-sm font-bold mr-3">Erebor (FFFC00)</span>
 
@@ -2751,7 +2751,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 				</div>
 
 				<h2 class="mt-4 font-bold text-xl  text-center text-orange-300">Chef de la Faction des Gobelins</h2>
-				<h6 class="mt-2 text-xl font-black underline"></h6>
+				<h6 class="mt-2 text-xl font-black underline">NakaRivata</h6>
 
 				<span class="flex rounded-full mt-4 bg-orange-700 uppercase px-2 py-1 text-sm font-bold mr-3">Coeur de la Moria (FF6F00)</span>
 

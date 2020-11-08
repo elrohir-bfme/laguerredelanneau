@@ -2650,12 +2650,12 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 
 				<ul class="flex flex-row mt-4 space-x-1">
 					<li>
-						<span class="flex rounded-full bg-blue-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbTerritoireGondor}} Territoires
+						<span class="flex rounded-full bg-blue-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbTerritoireHomme}} Territoires
 							<svg class="ml-2 stroke-current text-blue-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd" /></svg>
 						</span>
 					</li>
 					<li>
-						<span class="flex rounded-full bg-blue-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbPlayerGondor}} Joueurs
+						<span class="flex rounded-full bg-blue-700 uppercase px-2 py-1 text-sm font-bold mr-1">{{nbPlayerHomme}} Joueurs
 						<svg class="ml-2 stroke-current text-blue-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></span>
 					</li>
 				</ul>

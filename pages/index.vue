@@ -1,6 +1,11 @@
 <template>
 <div class="container mx-auto">
 <Modal v-if="isShowModal" @close="toggleModal" :region="region"/>
+<div class="text-center mt-5 mb-5">
+	<h3 class="sm:text-3xl text-2xl font-medium text-center title-font text-white bg-gray-900  rounded-full px-2 py-1 inline-block">
+		L'Event est terminé, nous allons en relancer un début janvier avec pleins de nouveautés
+	</h3>
+</div>
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1440 1060" style="enable-background:new 0 0 1440 1060;" xml:space="preserve">
    <image style="overflow:visible;" width="1440" height="1060" xlink:href="~assets/laguerredelanneau.png" transform="matrix(1 0 0 1 0 0)"></image>
@@ -2828,7 +2833,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 	<div class="text-center mb-5">
       <h3 class="sm:text-3xl text-2xl font-medium text-center title-font text-white bg-gray-900  rounded-full px-2 py-1 inline-block">Liste des pactes de non agression</h3>
     </div>
-    <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+    <!-- <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2"> -->
 
 	  <!-- <div class="p-2 sm:w-1/2 w-full">
 		<div class="bg-gray-900 rounded flex p-4 h-full items-center">
@@ -2838,7 +2843,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
           <span class="title-font text-gray-200 font-bold">Elfe - Nain ( TOUR 8 | FIN DU Tour 10)</span>
         </div>
       </div> -->
-	  <div class="p-2 sm:w-1/2 w-full">
+	  <!-- <div class="p-2 sm:w-1/2 w-full">
 		<div class="bg-gray-900 rounded flex p-4 h-full items-center">
 		  <svg stroke-width="3" class="text-red-700 w-6 h-6 fill-current mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -2854,7 +2859,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
           <span class="title-font text-gray-200 font-bold">Gondor - Gobelin ( TOUR 12 | FIN DU Tour 14)</span>
         </div>
       </div>
-    </div>
+    </div> -->
 
 	<!-- <div class="p-2 sm:w-1/2 w-full">
 		<div class="bg-gray-900 rounded flex p-4 h-full items-center">

@@ -2618,8 +2618,8 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 				</div>
 
 				<h2 class="mt-4 font-bold text-xl text-teal-300">Chef de la Faction des Elfes</h2>
-				<h6 class="mt-2 text-xl font-black underline">Fastédia</h6>
-				<h6 class="mt-2 text-xl font-black underline">Erethor</h6>
+				<h6 class="mt-2 text-xl font-black underline">Moprisne</h6>
+				<h6 class="mt-2 text-xl font-black underline">Ladonia</h6>
 
 				<span class="flex rounded-full mt-4 bg-teal-700 uppercase px-2 py-1 text-sm font-bold mr-3">Havres gris (00BFFF)</span>
 
@@ -2669,7 +2669,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 				</div>
 
 				<h2 class="mt-4 font-bold text-xl text-yellow-300">Chef de la Faction des Nains</h2>
-				<h6 class="mt-2 text-xl font-black underline">PavelGroque</h6>
+				<!-- <h6 class="mt-2 text-xl font-black underline">PavelGroque</h6> -->
 
 				<span class="flex rounded-full mt-4 bg-yellow-800 uppercase px-2 py-1 text-sm font-bold mr-3">Erebor (FFFC00)</span>
 
@@ -2699,8 +2699,8 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 				</div>
 
 				<h2 class="mt-4 font-bold text-xl text-red-300">Chef de la Faction du Mordor</h2>
-				<h6 class="mt-2 text-xl font-black underline">Proxane</h6>
-				<h6 class="mt-2 text-xl font-black underline">Vodka Hern</h6>
+				<!-- <h6 class="mt-2 text-xl font-black underline">Proxane</h6>
+				<h6 class="mt-2 text-xl font-black underline">Vodka Hern</h6> -->
 
 				<span class="flex rounded-full mt-4 bg-red-700 uppercase px-2 py-1 text-sm font-bold mr-3">Barad Dûr (DB5461)</span>
 
@@ -2725,8 +2725,8 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 				</div>
 
 				<h2 class="mt-4 font-bold text-xl text-gray-300">Faction d'Isengard</h2>
-				<h6 class="mt-2 text-xl font-black underline">Mélanie</h6>
-				<h6 class="mt-2 text-xl font-black underline">WartenMatrisse</h6>
+				<!-- <h6 class="mt-2 text-xl font-black underline">Mélanie</h6>
+				<h6 class="mt-2 text-xl font-black underline">WartenMatrisse</h6> -->
 
 				<span class="flex rounded-full mt-4 bg-gray-700 uppercase px-2 py-1 text-sm font-bold mr-3">Isengard (FFFFFF)</span>
 
@@ -2751,7 +2751,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 				</div>
 
 				<h2 class="mt-4 font-bold text-xl  text-center text-orange-300">Chef de la Faction des Gobelins</h2>
-				<h6 class="mt-2 text-xl font-black underline">NakaRivata</h6>
+				<!-- <h6 class="mt-2 text-xl font-black underline">NakaRivata</h6> -->
 
 				<span class="flex rounded-full mt-4 bg-orange-700 uppercase px-2 py-1 text-sm font-bold mr-3">Coeur de la Moria (FF6F00)</span>
 
@@ -2776,8 +2776,8 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 				</div>
 
 				<h2 class="mt-4 font-bold text-xl text-purple-300">Chef de la Faction d'Angmar</h2>
-				<h6 class="mt-2 text-xl font-black underline">Milkina</h6>
-				<h6 class="mt-2 text-xl font-black underline">EterDiablo</h6>
+				<!-- <h6 class="mt-2 text-xl font-black underline">Milkina</h6>
+				<h6 class="mt-2 text-xl font-black underline">EterDiablo</h6> -->
 
 				<span class="flex rounded-full mt-4 bg-purple-800 uppercase px-2 py-1 text-sm font-bold mr-3">Carn Dûrm (C500FF)</span>
 

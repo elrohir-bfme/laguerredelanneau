@@ -81,6 +81,6 @@ export default {
   },
 
   sitemap: {
-    // options
+    hostname: 'https://laguerredelanneau.vercel.app/',
   },
 }

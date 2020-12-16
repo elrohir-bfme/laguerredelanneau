@@ -4,7 +4,7 @@
 >
   <div class="fixed inset-0 transition-opacity" @click="handleClose" >
     <div
-      class="absolute inset-0 bg-gray-500 opacity-75"
+      class="absolute inset-0 bg-black opacity-25"
     ></div>
   </div>
   <div

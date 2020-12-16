@@ -17,4 +17,7 @@ $ npm run start
 $ npm run generate
 ```
 
+
+mettre `fight` en `inline` pour afficher l'épée sur la carte
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

@@ -6,12 +6,16 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "gda": "node gda.js"
   },
   "dependencies": {
-    "@nuxt/http": "^0.5.12",
-    "nuxt": "^2.14.4",
-    "vue-scrollto": "^2.18.2"
+    "@nuxt/http": "^0.5.13",
+    "@nuxtjs/robots": "^2.4.2",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "nuxt": "^2.14.11",
+    "nuxt-social-meta": "0.0.5",
+    "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^2.1.0"

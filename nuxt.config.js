@@ -64,7 +64,7 @@ export default {
         url: "https://laguerredelanneau.vercel.app/",
         title: "La Guerre de l'Anneau",
         site_name: "La Guerre de l'Anneau",
-        description: "La Guerre de l'Anneau est un évènement se déroulant sur le jeux : La Bataille pour la Terre du Milieu 2.",
+        description: "Evènement se déroulant sur le jeux : La Bataille pour la Terre du Milieu 2. Vous pouvez rejoindre une faction et combattre au fur est à mesure des tours pour devenir le maitre de la Terre du Milieu",
         img: "/GDA.png",
         locale: "fr",
         twitter: "@Elrohir_bfme",
@@ -72,6 +72,7 @@ export default {
         themeColor: "#3E7A4A",
       },
     ],
+    'nuxt-highcharts'
   ],
   /*
   ** Build configuration

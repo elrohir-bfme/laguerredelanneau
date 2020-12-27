@@ -1,5 +1,6 @@
 <template>
   <div class="container mx-auto">
+	  <iframe src="https://docs.google.com/gview?url=https://path.com/to/your/pdf.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
       <div role="alert" id="regle">
   <div class="bg-green-500 text-white font-bold rounded-t px-4 py-2">
     Règles de l'event :

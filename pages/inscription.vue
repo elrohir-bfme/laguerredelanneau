@@ -41,18 +41,6 @@
 </template>
 
 <script>
-export default {
-    data() {
-      return {
-        discord: []
-        }
-    },
-
-    async fetch() {
-      this.discord = await this.$http.$get('https://discordapp.com/api/guilds/646686225737973770/widget.json'); //API
-      console.log(this.discord);
-    }
-}
 
 </script>
 

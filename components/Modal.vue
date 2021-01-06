@@ -29,8 +29,8 @@
       </div>
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">
-            <p class="inline-block">{{data.name}}</p>
-            <a v-if="data.mapdl" target="_blank" :href="data.mapdl" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded inline-flex items-center text-base">
+            <p class="inline-block bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded" @click="copyId()">{{data.name}}</p>
+            <a v-if="data.mapdl" target="_blank" :href="data.mapdl" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded inline-flex items-center text-sm">
               <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
               <span>Télécharger la carte</span>
             </a>
@@ -160,7 +160,10 @@ export default {
         if(this.data.imgmap) {
           this.mapimg = !this.mapimg;
         }
-      }
+      },
+      copyId() {
+        navigator.clipboard.writeText(this.region)
+    },
   },
   props: {
     region: {

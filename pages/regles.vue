@@ -1,6 +1,10 @@
 <template>
-  <div class="container mx-auto">
-<div role="alert" id="regle">
+  <div class="mt-8 w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
+	
+	<div class="videoWrapper">
+		<iframe src="https://drive.google.com/file/d/13aWx5efa-jhOTERVu2cREKwlWtuGZMHX/preview"></iframe>
+	</div>
+	<!-- <div role="alert" id="regle">
 	<h1 style="font-family: 'Albertus'" class="text-center text-4xl text-white">Objectif de l’évènement : Être la dernière faction en vie. </h1>
   <div class="bg-gray-800 text-white font-bold rounded-t px-4 py-2">
     Règles générales :
@@ -224,7 +228,7 @@ Chaque faction peut construire des bâtiments aux endroits possibles, et chaque 
 	</ul>
   </div>
 </div>
-<br><br>
+<br><br> -->
   </div>
 </template>
 
@@ -234,6 +238,19 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 </style>

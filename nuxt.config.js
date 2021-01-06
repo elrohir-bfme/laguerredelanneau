@@ -38,6 +38,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    { src: '~/plugins/vue-good-table', ssr: false }
   ],
   /*
   ** Auto import components
@@ -72,7 +73,6 @@ export default {
         themeColor: "#3E7A4A",
       },
     ],
-    'nuxt-highcharts'
   ],
   /*
   ** Build configuration

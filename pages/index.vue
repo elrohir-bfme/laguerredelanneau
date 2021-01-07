@@ -6774,6 +6774,14 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
     components: {
       SvgPanZoom
     },
+    head: {
+    title: "La Guerre de l'Anneau",
+    meta: [
+      {
+        hid: 'description', name: 'description', content: "Carte de la Guerre de l'Anneau"
+      }
+    ],
+  },
     data() {
       return {
         nbMap: 0,

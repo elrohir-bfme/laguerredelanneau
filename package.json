@@ -22,6 +22,7 @@
     "vue-svg-pan-zoom": "^1.1.0"
   },
   "devDependencies": {
+    "@nuxtjs/pwa": "^3.3.3",
     "@nuxtjs/tailwindcss": "^2.1.0"
   }
 }

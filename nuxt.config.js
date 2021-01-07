@@ -73,6 +73,7 @@ export default {
         themeColor: "#3E7A4A",
       },
     ],
+    '@nuxtjs/pwa'
   ],
   /*
   ** Build configuration
@@ -84,4 +85,21 @@ export default {
   sitemap: {
     hostname: 'https://laguerredelanneau.vercel.app/',
   },
+
+  pwa: {
+    meta: {
+      /* meta options */
+      lang: 'fr',
+      ogHost: 'https://laguerredelanneau.vercel.app/',
+      twitterCard: "La Guerre de l'Anneau",
+      twitterCreator: "@Elrohir_bfme",
+      theme_color: '#3E7A4A'
+    },
+    manifest: {
+      name: "La Guerre de l'Anneau",
+      description : "Evènement se déroulant sur le jeux : La Bataille pour la Terre du Milieu 2. Vous pouvez rejoindre une faction et combattre au fur est à mesure des tours pour devenir le maitre de la Terre du Milieu",
+      lang: 'fr',
+      useWebmanifestExtension: false,
+    }
+  }
 }

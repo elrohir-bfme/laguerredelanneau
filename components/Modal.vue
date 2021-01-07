@@ -42,7 +42,7 @@
       </div>
       <div v-if="data.players && data.players.length > 0" class="px-6 py-4 flex flex-wrap">
         <div class="mx-auto m-2" v-for="player in data.players" :key="player.name"> 
-          <div v-if="player.faction == 1" class="rounded-lg bg-green-400 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-green-500">{{player.name}} 
+          <div v-if="player.faction == 1" class="rounded-lg bg-teal-600 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-teal-700">{{player.name}} 
             <img v-if="player.chef == true" alt="Chef de Faction" class="w-4 h-4 inline-block" src="~assets/crown.svg">
             <span class="block text-center text-xs font-normal">
               {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/trophy.svg">

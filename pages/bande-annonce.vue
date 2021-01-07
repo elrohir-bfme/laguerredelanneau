@@ -1,10 +1,23 @@
 <template>
-    <div class="mt-8 w-full bg-lotr max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto rounded-3xl text-white">
+    <div class="mt-8 bg-lotr container mx-auto rounded-3xl text-white">
     <h1 class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Bande Annonce 💙</h1>
-    <h1 class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">En préparation par notre incroyable Eternal</h1>
+    <h2 class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">En préparation par notre incroyable Eternal</h2>
     <!-- <div class="videoWrapper m-8 z-0">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/7e5LxENe88w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div> -->
+
+    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">BANDE ANNONCE DES NAINS</h3>
+    <div class="videoWrapper m-8 z-0">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LzVyI4V4R8c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">BANDE ANNONCE DES NAINS</h3>
+    <div class="videoWrapper m-8 z-0">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7iQpc1kQfw8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    
+    
     </div>
 </template>
 

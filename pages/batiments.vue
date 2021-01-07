@@ -28,9 +28,8 @@ partant de l’écurie.</p>
                 </div>
                 <div class="bg-gray-900 mt-4 px-4 pb-4 pt-1 rounded-lg">
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">Comptoir Commercial</h2>
-                <p class="text-base leading-relaxed mt-2">Permet le recrutement de joueur
-mercenaire. Vous trouverez les spécificités de ces joueurs dans la Section
-Répartition des factions et la section IV. Rôle des joueurs.</p>
+                <p class="text-base leading-relaxed mt-2">Permet l’envoi de ressource à une autre factions, même si elle ne possède pas ce bâtiment. 
+                    Le transfert d’argent sera effectif à partir du prochain tour.</p>
                 <p class="text-indigo-500 inline-flex items-center mt-3">Prix : 1000</p>
                  </div>
             </div>

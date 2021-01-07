@@ -6656,7 +6656,7 @@
           </svg>
         </div>
         <div class="p-2 bg-gray-800 items-center text-gray-100 leading-none rounded-full inline-flex" role="alert">
-          <span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-sm mr-3">AVANT-POSTES</span>
+          <span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-sm mr-3">EMPLACEMENT DE CONSTRUCTION</span>
           <svg class="fill-current opacity-75 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path fill-rule="evenodd"
               d="M6 7.75C6 6.784 6.784 6 7.75 6h8.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0116.25 18h-8.5A1.75 1.75 0 016 16.25v-8.5zm1.75-.25a.25.25 0 00-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25v-8.5a.25.25 0 00-.25-.25h-8.5z">

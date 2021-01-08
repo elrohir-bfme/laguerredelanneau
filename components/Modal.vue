@@ -4,16 +4,16 @@
 >
   <div class="fixed inset-0 transition-opacity" @click="handleClose" >
     <div
-      class="absolute inset-0 bg-gray-500 opacity-75"
+      class="absolute inset-0 bg-gray-500 opacity-25"
     ></div>
   </div>
   <div
-    class="z-10 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all"
+    class="z-40 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all"
     role="dialog"
     aria-modal="true"
     aria-labelledby="modal-headline"
   >
-    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+    <div class="max-w-lg rounded overflow-hidden shadow-lg">
       <div class="relative">
         <img @click="changeImage" v-if="mapimg" class="w-full" :src="data.img">
         <img @click="changeImage" v-else class="w-full" :src="data.imgmap">
@@ -28,18 +28,47 @@
         </div> -->
       </div>
       <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">
-            <p class="inline-block bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded" @click="copyId()">{{data.name}}</p>
+        <div class="flex justify-between font-bold text-xl mb-2">
+          <div>
+            <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded" @click="copyId()">{{data.name}}</p>
+          </div>
+          <div v-if="data.citadel">
+            <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded text-base">Forteresse</p>
+          </div>
+          <div v-if="data.outpost">
+            <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded text-base">Avant-Postes</p> 
+          </div>
+          <div v-if="data.foundation">
+            <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded text-base">Fondation</p>
+          </div>
+          <div class="">
             <a v-if="data.mapdl" target="_blank" :href="data.mapdl" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded inline-flex items-center text-sm">
               <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
               <span>Télécharger la carte</span>
             </a>
+          </div>
 
         </div>
         <p class="text-gray-700 text-base">
           {{data.description}}
         </p>
       </div>
+
+      <!-- LISTES DES BATIMENTS -->
+
+      <div v-if="data.structures && data.structures.length > 0" class="flex flex-row flex-wrap">
+          <div>
+            <p class="text-gray-800 text-lg ml-6 underline">Liste des bâtiments :</p>
+          </div>
+          <div v-for="structure in data.structures" :key="structure">
+            <p class="text-gray-700 ml-2">
+                {{structure}}
+            </p>
+          </div>
+      </div>
+
+      <!-- LISTES DES JOUEURS -->
+
       <div v-if="data.players && data.players.length > 0" class="px-6 py-4 flex flex-wrap">
         <div class="mx-auto m-2" v-for="player in data.players" :key="player.name"> 
           <div v-if="player.faction == 1" class="rounded-lg bg-teal-600 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-teal-700">{{player.name}} 

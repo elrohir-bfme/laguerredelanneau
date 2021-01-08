@@ -10,31 +10,23 @@
             </a>
         </div>
         <div class="text-center py-4">
+            <h3 style="font-family: 'Albertus'" class="text-center text-2xl text-green-400 p-4">Prendre le rôle GDA et</h3>
             <h3 style="font-family: 'Albertus'" class="text-center text-2xl text-green-400 p-4">Prendre une des factions disponible sur le Discord</h3>
-            <img class="mx-auto" src="https://cdn.discordapp.com/attachments/647478928427974679/789173663151947816/unknown.png" alt="">
+            <img class="mx-auto" src="~assets/msg.png" alt="Inscriptions Discord">
         </div>
         <div class="text-center py-4">
             <h4 style="font-family: 'Albertus'" class="text-center text-2xl text-indigo-300 p-4">
-                Vous allez débloquer un channel correspondant à votre faction.
-                Une fois débloquer présentez-vous et votre chef de faction vous donneras le Discord de la faction correspondant.
-
-                Ce Discord de Faction permettra de débattre des stratégies, demander des conseils auprès des membres mais surtout dire vos déplacements.
+                Vous allez débloquer un channel correspondant à votre faction. Une fois débloquer présentez-vous et votre chef de faction vous donnerez le Discord de la faction correspondante. Ce Discord de faction permettra de débattre des stratégies, demander des conseils auprès des membres mais surtout dire vos déplacements.
             </h4>
         </div>
         <div class="text-center py-4">
             <h5 style="font-family: 'Albertus'" class="text-center text-2xl text-teal-500 p-4">
-                Un Tour correspond à 1 semaine (Lundi au Dimanche).
-
-                Si vous rencontrez des adversaires vous allez devoir combattres lors de cette semaine.
-                Il va falloir s'organiser avec les joueurs concercés pour programmer et jouer votre match dans la semaine imposé.
+                Un Tour correspond à 1 semaine (Lundi au Dimanche). Si vous rencontrez des adversaires vous allez devoir combattres lors de cette semaine. Il va falloir s'organiser avec les joueurs concertés pour programmer et jouer votre match dans la semaine imposée.
             </h5>
         </div>
         <div class="text-center py-4">
             <h6 style="font-family: 'Albertus'" class="text-center text-2xl text-blue-500 p-4">
-                Une fois votre match joué, vous avez soit gagner donc vous remportez une victoire
-                Soit vous perdez est donc vous allez avoir une défaite et retourner à la forteresse de votre choix
-
-                Il faudra dire ou demander à votre chef de faction ou il est mieux de réapparaitre.
+                Une fois votre match joué, vous avez soit gagné donc vous remportez une victoire Soit vous perdez et donc vous allez avoir une défaite et retourner à la forteresse de votre choix Il faudra dire ou demander à votre chef de faction où il est mieux de réapparaitre.
             </h6>
         </div>
 </div>

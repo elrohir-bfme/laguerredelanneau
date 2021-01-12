@@ -61,8 +61,12 @@
             <p class="text-gray-800 text-lg ml-6 underline">Liste des bâtiments :</p>
           </div>
           <div v-for="structure in data.structures" :key="structure">
-            <p class="text-gray-700 ml-2">
-                {{structure}}
+            <p class="text-gray-700 ml-4">
+                
+                <button class="relative inline-block h-8 px-2 text-teal-100 transition-colors duration-150 bg-teal-700 rounded-lg focus:shadow-outline hover:bg-teal-800">
+                  <span class="ml-1 mr-2">{{structure.name}}</span>
+                  <span v-if="structure.level" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">{{structure.level}}</span>
+                </button>
             </p>
           </div>
       </div>

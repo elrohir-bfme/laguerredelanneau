@@ -38,7 +38,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { src: '~/plugins/vue-good-table', ssr: false }
+    { src: '~/plugins/vue-good-table', ssr: false },
+    { src: '~/plugins/vuejs-countdown-timer', ssr: false}
   ],
   /*
   ** Auto import components

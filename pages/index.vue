@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Timer class="text-center text-white text-2xl p-4"/>
     <div class="map">
       <Modal v-if="isShowModal" @close="toggleModal" :region="region" />
       <!-- <SvgPanZoom :minZoom=1 :maxZoom=5 :contain=true :panEbnable=false :fit=false> -->

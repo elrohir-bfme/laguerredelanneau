@@ -36,7 +36,7 @@
 
 </script>
 
-<style scope>
+<style scoped>
 
 .bg-gray-900 {
     background-color: #18191c;

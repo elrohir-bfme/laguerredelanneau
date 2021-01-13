@@ -304,17 +304,18 @@ export default {
   methods : {
     generateText() {
         let data = "";
+        let faction = "";
         let playerArray = [];
 
         switch (this.selectedFaction){
-            case 1 : playerArray = this.playerElfe; break;
-            case 2 : playerArray = this.playerRohan; break;
-            case 3 : playerArray = this.playerGondor; break;
-            case 4 : playerArray = this.playerNain; break;
-            case 5 : playerArray = this.playerMordor; break;
-            case 6 : playerArray = this.playerIsengard; break;
-            case 7 : playerArray = this.playerGobelin; break;
-            case 8 : playerArray = this.playerAngmar; break;
+            case 1 : playerArray = this.playerElfe; faction = "elfe"; break;
+            case 2 : playerArray = this.playerRohan; faction = "rohan"; break;
+            case 3 : playerArray = this.playerGondor; faction = "gondor"; break;
+            case 4 : playerArray = this.playerNain; faction = "nain" ;break;
+            case 5 : playerArray = this.playerMordor; faction = "mordor"; break;
+            case 6 : playerArray = this.playerIsengard; faction = "isengard"; break;
+            case 7 : playerArray = this.playerGobelin; faction = "gobelin"; break;
+            case 8 : playerArray = this.playerAngmar; faction = "angmar"; break;
             default : console.log("No faction selected");
         }
         //Get data
@@ -327,7 +328,7 @@ export default {
         //convert the text to BLOB
         
         const textToBLOB = new Blob([data], { type: 'text/plain' });
-        const sFileName = 'orders.txt';	   // The file to save the data.
+        const sFileName = 'orders'+faction+'.txt';	   // The file to save the data.
 
         let newLink = document.createElement("a");
         newLink.download = sFileName;

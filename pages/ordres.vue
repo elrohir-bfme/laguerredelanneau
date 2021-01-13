@@ -262,14 +262,10 @@
             </div>
         </div>
 
-        <button class="inline-flex items-center h-10 px-5 text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800">
+        <button @click="generateText" class="inline-flex items-center h-10 px-5 text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800">
             <svg class="w-4 h-4 mr-3 fill-current" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
             <span>Génération</span>
         </button>
-
-        <label class="text-reader">
-            <input type="file" @change="loadTextFromFile">
-        </label>
 
         
   </div>
@@ -306,13 +302,9 @@ export default {
     }
   },
   methods : {
-        loadTextFromFile(ev) {
-            const file = ev.target.files[0];
-            const reader = new FileReader();
-
-            reader.onload = e => this.$emit("load", e.target.result);
-            reader.readAsText(file);
+    generateText() {
     }
+
   },
   async fetch() {
 	  this.players = await this.$http.$get(`https://api.npoint.io/38a2899b98818d89418c`)

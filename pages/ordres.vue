@@ -37,7 +37,7 @@
         
         </div> -->
 
-
+    
         <div v-if="selectedFaction === 1">
             <div class="grid grid-cols-5 gap-4 mb-4" v-for="player in playerElfe">
                 <div class="col-span-1">
@@ -47,8 +47,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions" >{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -56,8 +56,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions">{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -75,8 +75,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions" >{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -84,8 +84,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions">{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -103,8 +103,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions" >{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
+                        <option v-for="region in regions" :value="region.code" >{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -112,8 +112,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions">{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -131,8 +131,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions" >{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -140,8 +140,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions">{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -159,8 +159,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions" >{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -168,8 +168,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions">{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -187,8 +187,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions" >{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -196,8 +196,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions">{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -215,8 +215,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions" >{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -224,8 +224,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions">{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -243,8 +243,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions" >{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -252,8 +252,8 @@
                 </div>
 
                 <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">    
-                        <option v-for="region in regions">{{region.name}}</option>
+                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
+                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -262,7 +262,7 @@
             </div>
         </div>
 
-        <button @click="generateText" class="inline-flex items-center h-10 px-5 text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800">
+        <button @click="generateText" class="inline-flex items-center h-10 px-5 text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800" id="btncreateFile" v-if="selectedFaction != null">
             <svg class="w-4 h-4 mr-3 fill-current" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
             <span>Génération</span>
         </button>
@@ -303,6 +303,46 @@ export default {
   },
   methods : {
     generateText() {
+        let data = "";
+        let playerArray = [];
+
+        switch (this.selectedFaction){
+            case 1 : playerArray = this.playerElfe; break;
+            case 2 : playerArray = this.playerRohan; break;
+            case 3 : playerArray = this.playerGondor; break;
+            case 4 : playerArray = this.playerNain; break;
+            case 5 : playerArray = this.playerMordor; break;
+            case 6 : playerArray = this.playerIsengard; break;
+            case 7 : playerArray = this.playerGobelin; break;
+            case 8 : playerArray = this.playerAngmar; break;
+            default : console.log("No faction selected");
+        }
+        //Get data
+        playerArray.forEach
+        (element => {
+         data = data + element +" "+(document.getElementById(element+"depart").value)
+         +" "+(document.getElementById(element+"arrive").value)+ '\n'
+        }); 
+            
+        //convert the text to BLOB
+        
+        const textToBLOB = new Blob([data], { type: 'text/plain' });
+        const sFileName = 'orders.txt';	   // The file to save the data.
+
+        let newLink = document.createElement("a");
+        newLink.download = sFileName;
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(textToBLOB);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click(); 
+        
     }
 
   },
@@ -361,6 +401,6 @@ export default {
             
         }
       }
-	}
+    },
 }
 </script>

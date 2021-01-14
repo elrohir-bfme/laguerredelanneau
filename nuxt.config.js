@@ -1,3 +1,4 @@
+import webpack from 'webpack'
 
 export default {
   /*
@@ -80,7 +81,12 @@ export default {
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
   */
-  build: {
+ build: {
+    plugins: [
+      new webpack.ProvidePlugin({
+        _: 'lodash'
+      })
+    ]
   },
 
   sitemap: {

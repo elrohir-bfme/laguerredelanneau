@@ -1,273 +1,84 @@
 <template>
   <div class="container mx-auto">
 
+        <h1 class="text-3xl text-gray-200 text-center tracking-wide my-5">Génération de vos déplacements :</h1>
+        <h2 class="text-2xl text-gray-200 text-left tracking-wide underline my-5">Choix de votre faction :</h2>
        <div class="relative inline-block w-full text-gray-700 mb-10">
-            <select v-model="selectedFaction"  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">
-                
-
+            <select v-model="selectedFaction"  class="w-full h-10 pl-3 text-base border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                 <option v-for="option in options" v-bind:value="option.value" :key="option.faction">{{option.faction}}</option>
-
             </select>
-            <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-            </div>
         </div>
-<!-- 
-        <div v-if="players">
-            <div v-for="value in players" :key="value" class="relative inline-block w-full text-gray-700">
-            <div v-if="Array.isArray(value.players) && value.players.length">
-            <select v-model="selected" class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input">
-        
-                    <option v-for="player in value.players" :key="player">
-                        <span v-if="player.faction === selectedFaction">{{player.name}}</span>
-                    </option>
-            </select>
-            <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-            </div>
-        </div>
-        </div>
-        </div>         -->
-        
-        <!-- <div class="p-8 text-white">
-            <span> VOICI LA SELECTIONNE {{selected}}</span>
-            <br><br><br><br><br>
-            <span> VOICI LA SELECTIONNE {{selectedFaction}}</span>
 
-        
-        </div> -->
+        <div v-if="selectedFaction" class="grid grid-cols-9 grid-flow-col gap-4 mb-4">
+        <div class="col-span-2 md:col-span-2">
+            <h3 class="text-xl text-gray-400">Joueur</h3>
+        </div>
 
-    
+        <div class="col-span-3 md:col-span-2">
+            <h3 class="text-xl text-gray-400">Lieu actuel</h3>
+        </div>
+
+        <div class="col-span-1"></div>
+
+        <div class="flex items-center justify-center col-span-2 md:col-span-4">
+             <h3 class="text-xl text-gray-400">Destination</h3>
+        </div>
+    </div>
+
         <div v-if="selectedFaction === 1">
-            <div class="grid grid-cols-5 gap-4 mb-4" v-for="player in playerElfe">
-                <div class="col-span-1">
-                    <span class="h-10 px-5 text-gray-700 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-500 hover:text-gray-100" placeholder="Regular input">    
-                        {{player}}
-                    </span>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
+            <div v-for="player in playerElfe">
+                <Order :player="player" :region="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 2">
-            <div class="grid grid-cols-5 gap-4 mb-4" v-for="player in playerRohan">
-                <div class="col-span-1">
-                    <span   class="h-10 px-5 text-gray-700 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-500 hover:text-gray-100" placeholder="Regular input">    
-                        {{player}}
-                    </span>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
+            <div v-for="player in playerRohan">
+                <Order :player="player" :region="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 3">
-            <div class="grid grid-cols-5 gap-4 mb-4" v-for="player in playerGondor">
-                <div class="col-span-1">
-                    <span   class="h-10 px-5 text-gray-700 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-500 hover:text-gray-100" placeholder="Regular input">    
-                        {{player}}
-                    </span>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
-                        <option v-for="region in regions" :value="region.code" >{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
+            <div v-for="player in playerGondor">
+                <Order :player="player" :region="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 4">
-            <div class="grid grid-cols-5 gap-4 mb-4" v-for="player in playerNain">
-                <div class="col-span-1">
-                    <span   class="h-10 px-5 text-gray-700 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-500 hover:text-gray-100" placeholder="Regular input">    
-                        {{player}}
-                    </span>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
+            <div v-for="player in playerNain">
+                <Order :player="player" :region="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 5">
-            <div class="grid grid-cols-5 gap-4 mb-4" v-for="player in playerMordor">
-                <div class="col-span-1">
-                    <span   class="h-10 px-5 text-gray-700 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-500 hover:text-gray-100" placeholder="Regular input">    
-                        {{player}}
-                    </span>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
+            <div v-for="player in playerMordor">
+                <Order :player="player" :region="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 6">
-            <div class="grid grid-cols-5 gap-4 mb-4" v-for="player in playerIsengard">
-                <div class="col-span-1">
-                    <span   class="h-10 px-5 text-gray-700 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-500 hover:text-gray-100" placeholder="Regular input">    
-                        {{player}}
-                    </span>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
+            <div v-for="player in playerIsengard">
+                <Order :player="player" :region="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 7">
-            <div class="grid grid-cols-5 gap-4 mb-4" v-for="player in playerGobelin">
-                <div class="col-span-1">
-                    <span   class="h-10 px-5 text-gray-700 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-500 hover:text-gray-100" placeholder="Regular input">    
-                        {{player}}
-                    </span>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
+            <div v-for="player in playerGobelin">
+                <Order :player="player" :region="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 8">
-            <div class="grid grid-cols-5 gap-4 mb-4" v-for="player in playerAngmar">
-                <div class="col-span-1">
-                    <span   class="h-10 px-5 text-gray-700 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-500 hover:text-gray-100" placeholder="Regular input">    
-                        {{player}}
-                    </span>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'depart'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
-
-                <div class="relative inline-block w-full text-gray-700 col-span-2">
-                    <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player+'arrive'">    
-                        <option v-for="region in regions" :value="region.code">{{region.name}}</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </div>
-                </div>
+            <div v-for="player in playerAngmar">
+                <Order :player="player" :region="regions"/>
             </div>
         </div>
 
-        <button @click="generateText" class="inline-flex items-center h-10 px-5 text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800" id="btncreateFile" v-if="selectedFaction != null">
-            <svg class="w-4 h-4 mr-3 fill-current" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+        <div class="text-center mb-40 mt-20">
+        <button @click="generateText" class="inline-flex text-base md:text-3xl items-center h-10 px-40 text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:outline-none  focus:shadow-outline hover:bg-indigo-800 " id="btncreateFile" v-if="selectedFaction != null">
+            <svg class="w-10 h-10 mr-3 fill-current" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
             <span>Génération</span>
         </button>
-
-        
+        </div>
   </div>
 </template>
 
@@ -285,10 +96,7 @@ export default {
       playerIsengard: [],
       playerGobelin: [],
       playerAngmar: [],
-      selected: null,
       selectedFaction: null,
-      selectedRegion_1: null,
-      selectedRegion_2: null,
       options: [
       { faction: 'Elfe', 'value': 1 },
       { faction: 'Rohan', 'value': 2 },
@@ -321,8 +129,8 @@ export default {
         //Get data
         playerArray.forEach
         (element => {
-         data = data + element +" "+(document.getElementById(element+"depart").value)
-         +" "+(document.getElementById(element+"arrive").value)+ '\n'
+         data = data + element.name +" "+ element.code
+         +" "+(document.getElementById(element.name+"arrive").value)+ '\n'
         }); 
             
         //convert the text to BLOB
@@ -349,12 +157,10 @@ export default {
   },
   async fetch() {
 	  this.players = await this.$http.$get(`https://api.npoint.io/38a2899b98818d89418c`)
-      // this.data = await this.$http.$get(`https://api.npoint.io/a982d740a3c6fa4e6847/${this.region}`) // API TEST
         for (let key in this.players) {
 
         var obj = this.players[key];
-
-        console.log(key);
+        
         if(key!== "riviere" && key!== "BateauK" && key!== "BateauJ" && key!== "BateauJ" && key!== "BateauI" && key!== "BateauH" && key!== "time" &&
         key!== "BateauG" && key!== "BateauF" && key!== "BateauE" && key!== "BateauD" && key!== "BateauC" && key!== "BateauB" && key!== "BateauA" && key!== "Tol_Fuin" && key!== "factions" ) {
             let newRegion = {
@@ -370,28 +176,68 @@ export default {
             for (let player in obj2) {
                 switch (obj2[player]['faction']) {
                     case 1:
-                        this.playerElfe.push(obj2[player]['name'])
+                        let newPlayerElfe = {
+                            "name": obj2[player]['name'],
+                            "region": obj.name,
+                            "code": key
+                        }
+                        this.playerElfe.push(newPlayerElfe)
                     break;
                     case 2:
-                        this.playerRohan.push(obj2[player]['name'])
+                        let newPlayerRohan = {
+                            "name": obj2[player]['name'],
+                            "region": obj.name,
+                            "code": key
+                        }
+                        this.playerRohan.push(newPlayerRohan)
                     break;
                     case 3:
-                        this.playerGondor.push(obj2[player]['name'])
+                        let newPlayerGondor = {
+                            "name": obj2[player]['name'],
+                            "region": obj.name,
+                            "code": key
+                        }
+                        this.playerGondor.push(newPlayerGondor)
                     break;
                     case 4:
-                        this.playerNain.push(obj2[player]['name'])
+                        let newPlayerNain = {
+                            "name": obj2[player]['name'],
+                            "region": obj.name,
+                            "code": key
+                        }
+                        this.playerNain.push(newPlayerNain)
                     break;
                     case 5:
-                        this.playerMordor.push(obj2[player]['name'])
+                        let newPlayerMordor = {
+                            "name": obj2[player]['name'],
+                            "region": obj.name,
+                            "code": key
+                        }
+                        this.playerMordor.push(newPlayerMordor)
                     break;
                     case 6:
-                        this.playerIsengard.push(obj2[player]['name'])
+                        let newPlayerIsengard = {
+                            "name": obj2[player]['name'],
+                            "region": obj.name,
+                            "code": key
+                        }
+                        this.playerIsengard.push(newPlayerIsengard)
                     break;
                     case 7:
-                        this.playerGobelin.push(obj2[player]['name'])
+                        let newPlayerGobelin = {
+                            "name": obj2[player]['name'],
+                            "region": obj.name,
+                            "code": key
+                        }
+                        this.playerGobelin.push(newPlayerGobelin)
                     break;
                     case 8:
-                        this.playerAngmar.push(obj2[player]['name'])
+                        let newPlayerAngmar = {
+                            "name": obj2[player]['name'],
+                            "region": obj.name,
+                            "code": key
+                        }
+                        this.playerAngmar.push(newPlayerAngmar)
                     break;
                     default:
                         console.log("ERROR")
@@ -402,6 +248,6 @@ export default {
             
         }
       }
-    },
+    }
 }
 </script>

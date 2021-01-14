@@ -27,49 +27,49 @@
 
         <div v-if="selectedFaction === 1">
             <div v-for="player in playerElfe">
-                <Order :player="player" :region="regions"/>
+                <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 2">
             <div v-for="player in playerRohan">
-                <Order :player="player" :region="regions"/>
+                <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 3">
             <div v-for="player in playerGondor">
-                <Order :player="player" :region="regions"/>
+                <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 4">
             <div v-for="player in playerNain">
-                <Order :player="player" :region="regions"/>
+                <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 5">
             <div v-for="player in playerMordor">
-                <Order :player="player" :region="regions"/>
+                <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 6">
             <div v-for="player in playerIsengard">
-                <Order :player="player" :region="regions"/>
+                <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 7">
             <div v-for="player in playerGobelin">
-                <Order :player="player" :region="regions"/>
+                <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 8">
             <div v-for="player in playerAngmar">
-                <Order :player="player" :region="regions"/>
+                <Order :player="player" :regions="regions"/>
             </div>
         </div>
 

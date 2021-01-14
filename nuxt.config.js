@@ -1,5 +1,3 @@
-import webpack from 'webpack'
-
 export default {
   /*
   ** Nuxt rendering mode
@@ -81,13 +79,7 @@ export default {
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
   */
- build: {
-    plugins: [
-      new webpack.ProvidePlugin({
-        _: 'lodash'
-      })
-    ]
-  },
+ build: {},
 
   sitemap: {
     hostname: 'https://laguerredelanneau.vercel.app/',

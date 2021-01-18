@@ -80,14 +80,23 @@
         "map": 6,
         "name": "Angmar",
         "color": "#3300000",
-        "fight": "hidden",
+        "fight": "inline",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ANGMAR/angmar%20wotr.zip",
         "players": [
             {
-                "name": "TK",
-                "faction": 4,
+                "win": 0,
+                "chef": true,
+                "lose": 0,
+                "name": "Emiya",
+                "faction": 2,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
                 "win": 0,
                 "lose": 0,
+                "name": "TK",
+                "faction": 4,
                 "handicap": 0,
                 "prisonnier": false
             }
@@ -114,14 +123,6 @@
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ROHAN/edoras%20wotr.zip",
         "citadel": "true",
         "players": [
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Emiya",
-                "faction": 2,
-                "handicap": 0,
-                "prisonnier": false
-            },
             {
                 "win": 0,
                 "lose": 0,
@@ -189,7 +190,7 @@
             {
                 "win": 0,
                 "lose": 0,
-                "name": "Raddagast",
+                "name": "Viper132",
                 "faction": 2,
                 "handicap": 0,
                 "prisonnier": false
@@ -262,6 +263,14 @@
                 "win": 0,
                 "lose": 0,
                 "name": "Kyukitsune",
+                "faction": 2,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Storm",
                 "faction": 2,
                 "handicap": 0,
                 "prisonnier": false
@@ -419,6 +428,14 @@
                 "win": 0,
                 "lose": 0,
                 "name": "Durdekovitch",
+                "faction": 4,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Bugmanous",
                 "faction": 4,
                 "handicap": 0,
                 "prisonnier": false
@@ -879,6 +896,30 @@
                 "faction": 8,
                 "handicap": 0,
                 "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Frollo",
+                "faction": 8,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Lahkdar",
+                "faction": 8,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Oxibou",
+                "faction": 8,
+                "handicap": 0,
+                "prisonnier": false
             }
         ],
         "description": "Carn Dûm était le sommet montagneux à l'extrémité nord de l'Hithaeglir, qui portait au nord le nom de Montagnes d’Angmar."
@@ -1063,7 +1104,7 @@
             {
                 "win": 0,
                 "lose": 0,
-                "name": "KetKet",
+                "name": "MuHyul",
                 "faction": 6,
                 "handicap": 0,
                 "prisonnier": false
@@ -1072,14 +1113,6 @@
                 "win": 0,
                 "lose": 0,
                 "name": "Wyrdan",
-                "faction": 6,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Orval",
                 "faction": 6,
                 "handicap": 0,
                 "prisonnier": false
@@ -1128,6 +1161,30 @@
                 "win": 0,
                 "lose": 0,
                 "name": "Valou",
+                "faction": 6,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Riyak",
+                "faction": 6,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Uŕu-Bàën",
+                "faction": 6,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Alkyra",
                 "faction": 6,
                 "handicap": 0,
                 "prisonnier": false
@@ -1235,42 +1292,66 @@
     },
     "factions": {
         "elfe": {
+            "id": 1,
             "chef": "Surprise",
+            "name": "elfe",
+            "color": "#00bfff",
             "money": 1000,
             "capital": "Havres Gris"
         },
         "nain": {
+            "id": 4,
             "chef": "ROI DAÏN",
+            "name": "nain",
+            "color": "#fffc00",
             "money": 1000,
             "capital": "Erebor"
         },
         "rohan": {
-            "chef": "Surprise",
+            "id": 2,
+            "chef": "Emiya",
+            "name": "rohan",
+            "color": "#0bff00",
             "money": 1000,
             "capital": "Edoras"
         },
         "angmar": {
+            "id": 8,
             "chef": "Surprise",
+            "name": "angmar",
+            "color": "#c500ff",
             "money": 1000,
             "capital": "Carn Dûm"
         },
         "gondor": {
-            "chef": "Surprise",
+            "id": 3,
+            "chef": "Loken",
+            "name": "gondor",
+            "color": "#1e90ff",
             "money": 1000,
             "capital": "Minas Tirith"
         },
         "mordor": {
-            "chef": "Surprise",
+            "id": 5,
+            "chef": "Malodius",
+            "name": "mordor",
+            "color": "#db5461",
             "money": 1000,
             "capital": "Barad Dûr"
         },
         "gobelin": {
+            "id": 7,
             "chef": "Surprise",
+            "name": "gobelin",
+            "color": "#ff6f00",
             "money": 1000,
             "capital": "Coeur de la Moria"
         },
         "isengard": {
+            "id": 6,
             "chef": "Grieven le blanc",
+            "name": "isengard",
+            "color": "#ffffff",
             "money": 1000,
             "capital": "Isengard"
         }
@@ -1304,6 +1385,7 @@
             },
             {
                 "win": 0,
+                "chef": true,
                 "lose": 0,
                 "name": "Malodius",
                 "faction": 5,
@@ -1393,7 +1475,7 @@
             {
                 "win": 0,
                 "lose": 0,
-                "name": "ʖ๏sիuλ",
+                "name": "Joshua",
                 "faction": 5,
                 "handicap": 0,
                 "prisonnier": false
@@ -1940,6 +2022,14 @@
                 "faction": 7,
                 "handicap": 0,
                 "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Sim",
+                "faction": 7,
+                "handicap": 0,
+                "prisonnier": false
             }
         ],
         "description": "Le Coeur de la Moria est la forteresse des Gobelins !"
@@ -2075,14 +2165,6 @@
             {
                 "win": 0,
                 "lose": 0,
-                "name": "Viper123",
-                "faction": 1,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
                 "name": "platanus",
                 "faction": 1,
                 "handicap": 0,
@@ -2136,6 +2218,20 @@
                 "handicap": 0,
                 "prisonnier": false
             }
+        ],
+        "adjacents": [
+            "BateauA",
+            "BateauB",
+            "BateauC",
+            "Forlindon",
+            "Lindon",
+            "Ered_Luin",
+            "Evendim",
+            "La_Comte",
+            "Minhiriath",
+            "Harlindon",
+            "Cardolan",
+            "Collines_Tours"
         ],
         "description": "Les Havres Gris ont été fondés par Círdan en l'an 1 du Deuxième Âge. Ils étaient situés sur l'estuaire de la Lune, en Lindon, à l'ouest du Comté. Nommés Mithlond en sindarin, les Havres Gris étaient le lieu où se rendaient les Elfes qui voulaient faire voile vers l'Ouest, en Aman."
     },
@@ -2279,6 +2375,7 @@
             },
             {
                 "win": 0,
+                "chef": true,
                 "lose": 0,
                 "name": "Loken",
                 "faction": 3,

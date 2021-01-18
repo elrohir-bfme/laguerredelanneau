@@ -56,7 +56,7 @@ function updateMoves(data: Data, changes: string[]): T {
     data = changes.reduce((data: Data, change: string): Data => {
         
         // @ts-ignore
-        const [player, from, to]: [string, keyof Data, keyof Data] = change.split(" ");
+        const [player, from, to]: [string, keyof Data, keyof Data] = change.trim().split(" ");
         const players: Player[] = (data[from] as Territory).players;       //Prendre les joueurs dans tout le territoire
         const backupPlayer: Player = players.find((element: Player) => element.name === player)!; // ! retirer undefined 
 

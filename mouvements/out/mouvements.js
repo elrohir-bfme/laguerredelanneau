@@ -64,14 +64,9 @@ node_fetch_1.default('https://api.npoint.io/38a2899b98818d89418c')
 function updateMoves(data, changes) {
     data = changes.reduce((data, change) => {
         // @ts-ignore
-        const [player, from, to] = change.split(" ");
-        console.log("PLAYERS : "+player);
-        console.log("FROM : "+from);
-        console.log("TO : "+to);
+        const [player, from, to] = change.trim().split(" ");
         const players = data[from].players; //Prendre les joueurs dans tout le territoire
         const backupPlayer = players.find((element) => element.name === player); // ! retirer undefined 
-        console.log("BACKUP : "+backupPlayer)
-        console.log(data[to]);
         data[from].players.splice(players.indexOf(backupPlayer), 1); //Supprimer le joueur
         data[to].players.push(backupPlayer); //Ajouter un joueur
         return data;

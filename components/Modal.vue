@@ -33,13 +33,24 @@
             <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded" @click="copyId()">{{data.name}}</p>
           </div>
           <div v-if="data.citadel">
-            <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded text-base">Forteresse</p>
+            <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded text-base tooltip">Capital
+              <span class='tooltip-text bg-blue-200 p-3 -mt-16 -ml-48 rounded'>Rapportent 150 points de ressources par tour ! <br>Possède 3 emplacements de constructions</span> 
+            </p>
+          </div>
+          <div v-if="data.fortress">
+            <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded text-base tooltip">Forteresse
+              <span class='tooltip-text bg-blue-200 p-3 -mt-16 -ml-48 rounded'>Rapportent 150 points de ressources par tour ! <br>Possède 3 emplacements de constructions</span> 
+            </p>
           </div>
           <div v-if="data.outpost">
-            <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded text-base">Avant-Postes</p> 
+            <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded text-base tooltip">Avant-Postes
+              <span class='tooltip-text bg-blue-200 p-3 -mt-16 -ml-48 rounded'>Rapportent 250 points de ressources par tour ! <br>Débloque un emplacement de construction</span>  
+            </p> 
           </div>
           <div v-if="data.foundation">
-            <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded text-base">Fondation</p>
+            <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded text-base tooltip">Fondation
+              <span class='tooltip-text bg-blue-200 p-3 -mt-16 -ml-48 rounded'>Débloque 2 emplacements de constructions</span>  
+            </p> 
           </div>
           <div class="">
             <a v-if="data.mapdl" target="_blank" :href="data.mapdl" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded inline-flex items-center text-sm">
@@ -82,7 +93,7 @@
               
               {{player.lose}} <img alt="Défaite" class="w-4 h-4 inline-block" src="~assets/skull.svg">
               
-              <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
+              <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">  
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
             </span>
           </div>
@@ -169,7 +180,7 @@
         
       </div>
       <div v-else class="px-6 py-4">
-        <span v-if="data.name == 'passage infranchissable'" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"></span>
+        <span v-if="data.name == 'passage infranchissable' || data.name == 'Tol Fuin'"></span>
         <span v-else class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">Aucun joueur est dans la région !</span>
       </div>
     </div>
@@ -210,3 +221,18 @@ export default {
 	}
 }
 </script>
+
+<style scoped>
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  text-align: center;
+  padding: 2px 6px;
+  position: absolute;
+  z-index: 100;
+}
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+</style>

@@ -1,7 +1,11 @@
 <template>
     <div class="mt-8 bg-lotr container mx-auto rounded-3xl text-white">
     <h1 class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Bande Annonce 💙</h1>
-    <h2 class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">En préparation par notre incroyable Eternal</h2>
+    <h2 class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Incroyable réalisation d'Eternal !</h2>
+
+    <div class="videoWrapper m-8 z-0">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/XCe84pFT_SI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <!-- <div class="videoWrapper m-8 z-0">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/7e5LxENe88w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div> -->

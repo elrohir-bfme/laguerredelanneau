@@ -12,6 +12,10 @@
         <p class="text-2xl text-center text-gray-200">Tour de Préparation (10 janvier - 24 janvier)</p>
         </div>
         <img class="mx-auto border-orange-500 border-2" src="https://cdn.discordapp.com/attachments/766584396429262869/802652389802639426/unknown.png">
+        <div class="mx-auto mt-8 mb-4">
+        <p class="text-2xl text-center text-gray-200">Tour 1 (25 janvier)</p>
+        </div>
+        <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/803035626018045982/unknown.png" alt="">
     </div>
 
     

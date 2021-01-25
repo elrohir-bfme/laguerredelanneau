@@ -180,7 +180,10 @@
         
       </div>
       <div v-else class="px-6 py-4">
-        <span v-if="data.name == 'passage infranchissable' || data.name == 'Tol Fuin'"></span>
+        <span v-if="data.name == 'passage infranchissable' || data.name == 'Tol Fuin' || data.name == 'La Mer de Forochel' 
+        || data.name == 'Mer Himling' || data.name == 'La Mer des Havres Gris' || data.name == 'La Mer de Minhiriath' 
+        || data.name == 'Belegaer' || data.name == 'Mer Enedwaith' || data.name == 'Mer Andrast' || data.name == 'Mer de Dol Amroth' 
+        || data.name == 'Mer de Tolfalas' || data.name == 'Mer Umbar' || data.name == 'Mer de Pelargir'"></span>
         <span v-else class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">Aucun joueur est dans la région !</span>
       </div>
     </div>

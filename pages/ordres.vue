@@ -163,12 +163,106 @@ export default {
         
         if(key!== "riviere" && key!== "BateauK" && key!== "BateauJ" && key!== "BateauJ" && key!== "BateauI" && key!== "BateauH" && key!== "time" &&
         key!== "BateauG" && key!== "BateauF" && key!== "BateauE" && key!== "BateauD" && key!== "BateauB" && key!== "BateauA" && key!== "Tol_Fuin" && key!== "factions" ) {
-            let newRegion = {
-                "name": obj.name,
-                "code": key
+            
+            switch (key) {
+                case "Mer_Forochel":
+                    let newRegionA = {
+                        "name": obj.name,
+                        "code": "BateauA"
+                    }
+                    this.regions.push(newRegionA);
+                    break;
+
+                case "Mer_Himling":
+                    let newRegionB = {
+                        "name": obj.name,
+                        "code": "BateauB"
+                    }
+                    this.regions.push(newRegionB);
+                    break;
+
+                case "Mer_Havres_Gris":
+                    let newRegionC = {
+                        "name": obj.name,
+                        "code": "BateauC"
+                    }
+                    this.regions.push(newRegionC);
+                    break;
+
+                case "Mer_Minhiriath":
+                    let newRegionD = {
+                        "name": obj.name,
+                        "code": "BateauD"
+                    }
+                    this.regions.push(newRegionD);
+                    break;
+
+                case "Mer_Enedwaith":
+                    let newRegionE = {
+                        "name": obj.name,
+                        "code": "BateauE"
+                    }
+                    this.regions.push(newRegionE);
+                    break;
+
+                case "Belegear":
+                    let newRegionF = {
+                        "name": obj.name,
+                        "code": "BateauF"
+                    }
+                    this.regions.push(newRegionF);
+                    break;
+
+                case "Mer_Andrast":
+                    let newRegionG = {
+                        "name": obj.name,
+                        "code": "BateauG"
+                    }
+                    this.regions.push(newRegionG);
+                break;
+                    
+                case "Mer_Dol_Amroth":
+                    let newRegionH = {
+                        "name": obj.name,
+                        "code": "BateauH"
+                    }
+                    this.regions.push(newRegionH);
+                    break;
+
+                case "Mer_Tolfalas":
+                    let newRegionI = {
+                        "name": obj.name,
+                        "code": "BateauI"
+                    }
+                    this.regions.push(newRegionI);
+                    break;
+
+                case "Mer_Umbar":
+                    let newRegionJ = {
+                        "name": obj.name,
+                        "code": "BateauJ"
+                    }
+                    this.regions.push(newRegionJ);
+                    break;
+
+                case "Mer_Pelargir":
+                    let newRegionK = {
+                        "name": obj.name,
+                        "code": "BateauK"
+                    }
+                    this.regions.push(newRegionK);
+                    break;
+                default:
+                    let newRegion = {
+                    "name": obj.name,
+                    "code": key
+                    }
+                    this.regions.push(newRegion);
+                    break;
             }
-            this.regions.push(newRegion);
         }
+
+        
 
         if(obj.hasOwnProperty("players") && obj.players.length > 0) {
             let obj2 = JSON.parse(JSON.stringify(obj['players']))

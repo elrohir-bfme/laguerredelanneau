@@ -1,19 +1,22 @@
-import { Bar, mixins } from "vue-chartjs";
+import { HorizontalBar, mixins } from "vue-chartjs";
 const { reactiveProp } = mixins;
 
 export default {
-  extends: Bar,
+  extends: HorizontalBar,
   mixins: [reactiveProp],
   props: ["chartDataBar"],
   data() {
     return {
       options: {
         scales: {
+          xAxes: [
+            {
+              stacked: true
+            }
+          ],
           yAxes: [
             {
-              ticks: {
-                beginAtZero: true
-              }
+              stacked: true
             }
           ]
         },

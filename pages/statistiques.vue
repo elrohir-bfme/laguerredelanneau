@@ -1,15 +1,21 @@
 <template>
-    <div class="container mx-auto">
-        <h1 class="text-white text-center text-3xl">Voici la page Statistiques</h1>
+    <div class="container mx-auto bg-lotr rounded-lg">
+        <h1 class="text-white text-center text-3xl pt-4">Voici la page Statistiques</h1>
         
+
+        <h2 class="text-white text-center text-2xl pt-4">Répartitions des joueurs de l'évènement</h2>
 
         <div v-if="this.nbFactionElfe" class="w-3/6 mx-auto p-4">
           <ChartDoughnutBase :chart-data="chartData" />
         </div>
 
-        <!-- <div class="w-3/6 mx-auto p-4 bg-gray-900">
+        <h3 class="text-white text-center text-2xl pt-4">Répartition du nombre de territoire par faction</h3>
+
+        <div class="w-3/6 mx-auto p-4 bg-gray-900">
           <ChartBarBase :chart-data="chartDataBar" />
-        </div> -->
+        </div>
+
+        <h4 class="text-white text-center text-2xl pt-4">Tableau statistique des joueurs</h4>
 
         
         <!-- <Chart/> -->
@@ -53,6 +59,14 @@ export default {
       nbFactionGobelin: 0,
       nbFactionAngmar: 0,
       nbFactionMercenaire: 0,
+      nbTerritoireRohan: 0,
+      nbTerritoireElfe: 0,
+      nbTerritoireGondor: 0,
+      nbTerritoireNain: 0,
+      nbTerritoireMordor: 0,
+      nbTerritoireIsengard: 0,
+      nbTerritoireGobelin: 0,
+      nbTerritoireAngmar: 0,
       columns: [
         {
           label: 'Nom',
@@ -102,26 +116,31 @@ export default {
               this.nbFactionIsengard, 
               this.nbFactionGobelin, 
               this.nbFactionAngmar, 
-              this.nbFactionMercenaire]
+              this.nbFactionMercenaire
+              ]
           }
         ]
       };
     },
     fillDataBar() {
       this.chartDataBar = {
-        labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+        labels: ["Elfe", "Rohan", "Gondor", "Nain", "Mordor", "Isengard", "Gobelin", "Angmar"],
         datasets: [
           {
-            backgroundColor: "#de98ab",
-            borderColor: "#0c0306",
-            data: [1, 3, 5, 7, 2, 4, 6],
-            label: "Bar"
-          },
-          {
-            backgroundColor: "#98ddde",
-            borderColor: "#030c0c",
-            data: [1, 5, 2, 6, 3, 7, 4],
-            label: "Baz"
+            backgroundColor: ["#0bff00", "#00bfff", "#1e90ff", "#fffc00", "#db5461", "#ffffff", "#ff6f00" , "#c500ff"],
+            borderColor: ["#636564", "#636564", "#636564", "#636564", "#636564", "#636564", "#636564", "#636564"],
+            data: [
+              this.nbTerritoireElfe, 
+              this.nbTerritoireRohan, 
+              this.nbTerritoireGondor, 
+              this.nbTerritoireNain, 
+              this.nbTerritoireMordor, 
+              this.nbTerritoireIsengard, 
+              this.nbTerritoireGobelin, 
+              this.nbTerritoireAngmar,
+              this.nbTerritoireAngmar,
+            ],
+            label: "Nombre de Territoires"
           }
         ]
       };
@@ -135,6 +154,54 @@ export default {
 
         var obj = this.players[key];
 
+        for (let prop in obj) {
+          if (!obj.hasOwnProperty(prop)) continue;
+
+          switch (obj[prop]) {
+            case '#0bff00':
+            case '#0BFF00':
+              this.nbTerritoireRohan += 1;
+              break;
+
+            case '#00bfff':
+            case '#00BFFF':
+              this.nbTerritoireElfe += 1;
+              break;
+
+            case '#1e90ff':
+            case '#1E90FF':
+              this.nbTerritoireGondor += 1;
+              break;
+
+            case '#fffc00':
+            case '#FFFC00':
+              this.nbTerritoireNain += 1;
+              break;
+
+            case '#db5461':
+            case '#DB5461':
+              this.nbTerritoireMordor += 1;
+              break;
+
+            case '#ffffff':
+            case '#FFFFFF':
+              this.nbTerritoireIsengard += 1;
+              break;
+
+            case '#ff6f00':
+            case '#FF6F00':
+              this.nbTerritoireGobelin += 1;
+              break;
+
+            case '#c500ff':
+            case '#C500FF':
+              this.nbTerritoireAngmar += 1;
+              break;
+            default:
+              break;
+          }
+        }
+        
         if(obj.hasOwnProperty("players") && obj.players.length > 0) {
             let obj2 = JSON.parse(JSON.stringify(obj['players']))
 
@@ -208,3 +275,11 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+
+.bg-lotr {
+  background-color: #18191c;
+}
+
+</style>

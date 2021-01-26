@@ -563,8 +563,8 @@
               :fill="map.Trouee_Trolls ? map.Trouee_Trolls.color : '#DB5461'" @mouseover="getInfo" @click="toggleModal"
               d="M2313.28,1592.36c12.29,4.52,21.55,9.41,29.84,16.21,8.94,7.34,19,11.19,30.77,12.71a390.94,390.94,0,0,1,52.71,10.57c17.37,4.74,32.74,3.77,46.45-8.75.87-.79,2.4-.84,3.88-1.32,3.86,2,2.17,5.6,1.87,8.39-.7,6.6-1.38,13.3-3.17,19.65-4,14.09-5.84,28.34-7.07,42.93-.85,10,.44,18.36,5.65,26.48,1.44,2.24,2.9,4.45,4.57,7-3.24,6.85-11.19,11.29-10,20.73,1,7.76.2,15.74.2,25.14-3.72-1-6.68-1.61-9.47-2.67-4.35-1.64-8.65-3.45-12.85-5.47-22.12-10.63-45.4-14.47-69.82-12.55-25.54,2-50.14-2.85-74.8-10.37.48-19.48,3.9-37.28,15.61-52.79,6.75-9,8.46-19.31,7.57-30.26-1.19-14.62-3.24-29-9.12-42.66a35.11,35.11,0,0,1-2.72-9.52C2312.93,1601.93,2313.28,1597.94,2313.28,1592.36Z" />
             <path id="Amon Sul" title="Amon Sul" aria-valuetext="Amon_Sul" class="st opacity-25"
-              :class="map.Cair_Andros ? map.Cair_Andros.opacity : 'opacity-25'"
-              :fill="map.Cair_Andros ? map.Cair_Andros.color : '#DB5461'" @mouseover="getInfo" @click="toggleModal"
+              :class="map.Amon_Sul ? map.Amon_Sul.opacity : 'opacity-25'"
+              :fill="map.Amon_Sul ? map.Amon_Sul.color : '#DB5461'" @mouseover="getInfo" @click="toggleModal"
               d="M2293.47,1738.58c-13.14,3.84-24.25-.79-35.24-5.35-6.13-2.55-11.71-6.53-17.94-8.71a294.8,294.8,0,0,0-30.56-8.86c-13.26-3.06-24.94-8.29-35-18-8.22-7.94-10.94-16.39-7.09-26.94,1.36-3.72,2.74-7.61,5-10.76a72.49,72.49,0,0,0,11.2-23.18c4.61-16.25,15.17-26.88,30.09-35.25,19.63-11,39.92-17.1,62.21-16.21,9.25.36,18.45,2,28.45,3.22.93,4.77,2.18,9.17,2.55,13.65.57,6.67,2.28,12.86,4.27,19.28,3.7,12,5.83,24.51,8,36.91a29.77,29.77,0,0,1-5.26,22.85c-10.5,14.41-16,30.41-17.81,48C2296.08,1732.42,2294.49,1735.45,2293.47,1738.58Z" />
             <!-- <path id="Cair Andros" title="Cair Andros" aria-valuetext="Cair_Andros" class="st opacity-25"
               :class="map.Cair_Andros ? map.Cair_Andros.opacity : 'opacity-25'"
@@ -7250,44 +7250,26 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         </div>
       </div> -->
 
-      <!-- <div class="p-2 sm:w-1/2 w-full">
-		<div class="bg-gray-900 rounded flex p-4 h-full items-center">
-		  <svg stroke-width="3" class="text-red-700 w-6 h-6 fill-current mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-			</svg>
-          <span class="title-font text-gray-200 font-bold">Gondor - Gobelin ( TOUR 12 | FIN DU Tour 14)</span>
+      <div class="grid grid-cols-3 gap-4 bg-gray-900 w-full lg:w-6/12 rounded-bfme shadow-2xl mx-auto">
+        <div class="col-span-3 text-center title-font text-indigo-600 font-bold mt-8 text-3xl animate-bounce">ALLIANCE</div>
+        <div class="text-center title-font text-gray-200 font-bold text-2xl">Rohan</div>
+        <div class="col-span-1"></div>
+        <div class="text-center title-font text-gray-200 font-bold text-2xl">Isengard</div>
+        <div class="flex justify-center items-center px-4 py-2">
+            <img src="~assets/factions/rohan.png" alt="" class="h-full w-auto animate-bounce">
         </div>
+        <div class="flex justify-center items-center px-4 py-2">
+          <svg class="animate-pulse stroke-current text-gray-500 inline-block h-24 w-24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+          </svg>
+        </div>
+        <div class="flex justify-center items-center px-4 py-2">
+            <img src="~assets/factions/isengard.png" alt="" class="h-full w-auto animate-bounce">
+        </div>
+        <div class="col-span-3 text-center title-font text-indigo-500 text-2xl font-bold mb-8">TOUR 2 à la fin du TOUR 4</div>
       </div>
-    </div> -->
 
       <br><br>
-
-      <!-- <div class="embedresize">
-        <div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/byFQ0Q9Ys0g" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-        <br><br>
-        <div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Wn3FK4_f9No" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-        <br><br>
-        <div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/08jagT__o00" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-        <br><br>
-        <div>
-          <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/videoseries?list=PLwTBeZ6vfNc8Ijgc5KByCu4DtYs-k1CLa" frameborder="0"
-            allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-        </div>
-      </div> -->
       <br><br>
       <br><br>
     </div>
@@ -7640,5 +7622,9 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
   .build-23 {
     fill: #8e8b86;
   }
+
+  .rounded-bfme {
+    border-radius: 3.5rem;
+}
 
 </style>

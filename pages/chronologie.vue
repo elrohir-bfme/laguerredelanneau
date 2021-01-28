@@ -22,6 +22,12 @@
         <div class="mx-auto mt-8 mb-4">
          <blockquote class="twitter-tweet" data-lang="fr" data-theme="dark"><p lang="fr" dir="ltr">Si vous n&#39;avez pas suivi l&#39;annonce !<br><br>Information importante pour la Guerre de l&#39;anneau ! <a href="https://t.co/TGurXNT4MM">pic.twitter.com/TGurXNT4MM</a></p>&mdash; Elrohir (@Elrohir_BFME) <a href="https://twitter.com/Elrohir_BFME/status/1354102280883154947?ref_src=twsrc%5Etfw">26 janvier 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
+        <br>
+        <div class="mx-auto mt-8 mb-4 w-full">
+        <p class="text-2xl text-center text-gray-200">Tour 2 (28 janvier)</p>
+        </div>
+        <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/804385986124709898/unknown.png" alt="">
+        
     </div>
 
     

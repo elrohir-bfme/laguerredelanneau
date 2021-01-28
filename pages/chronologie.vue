@@ -26,7 +26,7 @@
         <div class="mx-auto mt-8 mb-4 w-full">
         <p class="text-2xl text-center text-gray-200">Tour 2 (28 janvier)</p>
         </div>
-        <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/804385986124709898/unknown.png" alt="">
+        <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/796757391529213983/804466522051444766/unknown.png" alt="">
         
     </div>
 

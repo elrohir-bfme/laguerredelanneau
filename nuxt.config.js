@@ -73,7 +73,8 @@ export default {
         themeColor: "#3E7A4A",
       },
     ],
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    ['@nuxtjs/firebase']
   ],
   /*
   ** Build configuration
@@ -100,5 +101,21 @@ export default {
       lang: 'fr',
       useWebmanifestExtension: false,
     }
-  }
+  },
+
+  firebase: {
+    config: {
+      apiKey: "AIzaSyAjREqt_g1m3PCn38kYmeIyVragY9YhCMo",
+      authDomain: "la-guerre-de-l-anneau.firebaseapp.com",
+      databaseURL: "https://la-guerre-de-l-anneau-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "la-guerre-de-l-anneau",
+      storageBucket: "la-guerre-de-l-anneau.appspot.com",
+      messagingSenderId: "15164242189",
+      appId: "1:15164242189:web:398afcbecd0eb39a7a1844",
+      measurementId: "G-F8WRY2P4L8"
+    },
+    services: {
+      firestore: true // this is the realtime database service
+    }
+ }
 }

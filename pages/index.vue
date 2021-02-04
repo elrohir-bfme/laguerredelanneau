@@ -7310,6 +7310,54 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
       <br><br>
       <br><br>
       <br><br>
+
+      <div class="grid grid-cols-3 gap-4 bg-gray-900 w-full lg:w-6/12 rounded-bfme shadow-2xl mx-auto">
+        <div class="col-span-3 text-center title-font text-indigo-600 font-bold mt-8 text-3xl animate-bounce">PACTE DE NON AGGRESION</div>
+        <div class="text-center title-font text-gray-200 font-bold text-2xl">Elfe</div>
+        <div class="col-span-1"></div>
+        <div class="text-center title-font text-gray-200 font-bold text-2xl">Isengard</div>
+        <div class="flex justify-center items-center px-4 py-2">
+            <img src="~assets/factions/elfe.png" alt="" class="h-full w-auto animate-bounce">
+        </div>
+        <div class="flex justify-center items-center px-4 py-2">
+          <svg class="animate-pulse stroke-current text-gray-500 inline-block h-24 w-24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
+          </svg>
+        </div>
+        <div class="flex justify-center items-center px-4 py-2">
+            <img src="~assets/factions/isengard.png" alt="" class="h-full w-auto animate-bounce">
+        </div>
+        <div class="col-span-3 text-center title-font text-indigo-500 text-2xl font-bold mb-8">TOUR 4 à la fin du TOUR 6</div>
+      </div>
+
+            <br><br>
+      <br><br>
+      <br><br>
+
+      <div class="grid grid-cols-3 gap-4 bg-gray-900 w-full lg:w-6/12 rounded-bfme shadow-2xl mx-auto">
+        <div class="col-span-3 text-center title-font text-indigo-600 font-bold mt-8 text-3xl animate-bounce">PACTE DE NON AGGRESION</div>
+        <div class="text-center title-font text-gray-200 font-bold text-2xl">Elfe</div>
+        <div class="col-span-1"></div>
+        <div class="text-center title-font text-gray-200 font-bold text-2xl">Rohan</div>
+        <div class="flex justify-center items-center px-4 py-2">
+            <img src="~assets/factions/elfe.png" alt="" class="h-full w-auto animate-bounce">
+        </div>
+        <div class="flex justify-center items-center px-4 py-2">
+          <svg class="animate-pulse stroke-current text-gray-500 inline-block h-24 w-24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
+          </svg>
+        </div>
+        <div class="flex justify-center items-center px-4 py-2">
+            <img src="~assets/factions/rohan.png" alt="" class="h-full w-auto animate-bounce">
+        </div>
+        <div class="col-span-3 text-center title-font text-indigo-500 text-2xl font-bold mb-8">TOUR 4 à la fin du TOUR 6</div>
+      </div>
+
+      <br><br>
+      <br><br>
+      <br><br>
+
+
     </div>
   </div>
 </template>

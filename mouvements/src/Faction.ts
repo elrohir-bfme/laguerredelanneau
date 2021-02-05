@@ -5,4 +5,7 @@ export interface Faction {
 	money: number,
 	capital: string,
 	name: string,
+	alliance: Number[],
+	pna : Number[],
+	war : Number[],
 }

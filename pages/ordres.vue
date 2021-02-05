@@ -255,7 +255,8 @@ export default {
                 default:
                     let newRegion = {
                     "name": obj.name,
-                    "code": key
+                    "code": key,
+                    "adjacents": obj.adjacents
                     }
                     this.regions.push(newRegion);
                     break;
@@ -273,7 +274,9 @@ export default {
                         let newPlayerElfe = {
                             "name": obj2[player]['name'],
                             "region": obj.name,
-                            "code": key
+                            "code": key,
+                            "adjacents":obj.adjacents,
+                            "faction":obj2[player]['faction']
                         }
                         this.playerElfe.push(newPlayerElfe)
                     break;
@@ -281,7 +284,9 @@ export default {
                         let newPlayerRohan = {
                             "name": obj2[player]['name'],
                             "region": obj.name,
-                            "code": key
+                            "code": key,
+                            "adjacents":obj.adjacents,
+                            "faction":obj2[player]['faction']
                         }
                         this.playerRohan.push(newPlayerRohan)
                     break;
@@ -289,7 +294,9 @@ export default {
                         let newPlayerGondor = {
                             "name": obj2[player]['name'],
                             "region": obj.name,
-                            "code": key
+                            "code": key,
+                            "adjacents":obj.adjacents,
+                            "faction":obj2[player]['faction']
                         }
                         this.playerGondor.push(newPlayerGondor)
                     break;
@@ -297,7 +304,9 @@ export default {
                         let newPlayerNain = {
                             "name": obj2[player]['name'],
                             "region": obj.name,
-                            "code": key
+                            "code": key,
+                            "adjacents":obj.adjacents,
+                            "faction":obj2[player]['faction']
                         }
                         this.playerNain.push(newPlayerNain)
                     break;
@@ -305,7 +314,9 @@ export default {
                         let newPlayerMordor = {
                             "name": obj2[player]['name'],
                             "region": obj.name,
-                            "code": key
+                            "code": key,
+                            "adjacents":obj.adjacents,
+                            "faction":obj2[player]['faction']
                         }
                         this.playerMordor.push(newPlayerMordor)
                     break;
@@ -313,7 +324,9 @@ export default {
                         let newPlayerIsengard = {
                             "name": obj2[player]['name'],
                             "region": obj.name,
-                            "code": key
+                            "code": key,
+                            "adjacents":obj.adjacents,
+                            "faction":obj2[player]['faction']
                         }
                         this.playerIsengard.push(newPlayerIsengard)
                     break;
@@ -321,7 +334,9 @@ export default {
                         let newPlayerGobelin = {
                             "name": obj2[player]['name'],
                             "region": obj.name,
-                            "code": key
+                            "code": key,
+                            "adjacents":obj.adjacents,
+                            "faction":obj2[player]['faction']
                         }
                         this.playerGobelin.push(newPlayerGobelin)
                     break;
@@ -329,7 +344,9 @@ export default {
                         let newPlayerAngmar = {
                             "name": obj2[player]['name'],
                             "region": obj.name,
-                            "code": key
+                            "code": key,
+                            "adjacents":obj.adjacents,
+                            "faction":obj2[player]['faction']
                         }
                         this.playerAngmar.push(newPlayerAngmar)
                     break;

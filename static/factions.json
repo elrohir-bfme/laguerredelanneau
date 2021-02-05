@@ -1,0 +1,66 @@
+{
+    "elfe": {
+        "id": 1,
+        "chef": "Grèhelfe",
+        "name": "elfe",
+        "color": "#00bfff",
+        "money": 1150,
+        "capital": "Havres Gris"
+    },
+    "nain": {
+        "id": 4,
+        "chef": "ROI_DAÏN",
+        "name": "nain",
+        "color": "#fffc00",
+        "money": 1150,
+        "capital": "Erebor"
+    },
+    "rohan": {
+        "id": 2,
+        "chef": "Emiya",
+        "name": "rohan",
+        "color": "#0bff00",
+        "money": 1400,
+        "capital": "Edoras"
+    },
+    "angmar": {
+        "id": 8,
+        "chef": "Toinou",
+        "name": "angmar",
+        "color": "#c500ff",
+        "money": 1150,
+        "capital": "Carn Dûm"
+    },
+    "gondor": {
+        "id": 3,
+        "chef": "Loken",
+        "name": "gondor",
+        "color": "#1e90ff",
+        "money": 1150,
+        "capital": "Minas Tirith"
+    },
+    "mordor": {
+        "id": 5,
+        "chef": "Malodius",
+        "name": "mordor",
+        "color": "#db5461",
+        "money": 1150,
+        "capital": "Barad Dûr"
+    },
+    "gobelin": {
+        "id": 7,
+        "chef": "Morkoving",
+        "name": "gobelin",
+        "color": "#ff6f00",
+        "money": 1150,
+        "capital": "Coeur de la Moria"
+    },
+    "isengard": {
+        "id": 6,
+        "chef": "Grieven le blanc",
+        "name": "isengard",
+        "color": "#ffffff",
+        "money": 1150,
+        "capital": "Isengard"
+    }
+}

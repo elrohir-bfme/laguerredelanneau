@@ -36,7 +36,11 @@ fetch('https://api.npoint.io/38a2899b98818d89418c')
     ];
 
     const changes = await Promise.all(      //Await pour attendre le résultat 
-        files.map((file) => fs.promises.readFile(file, {encoding: "utf-8"}).then((content: string) => content.split("\n").filter((line: string) => line !== "")))
+        files.map((file) => fs.promises
+        .readFile(file, {encoding: "utf-8"})
+        .then((content: string) => content.split("\n")
+            .map((line)=> line.trim())
+            .filter((line: string) => line !== "")))
     )
     .then((changes: string[][]) => changes.flat()); //Rassembler les changements dans un fichier
 
@@ -72,6 +76,7 @@ function updateMoves(data: Data, changes: string[]): T {
  * modify Players
  */
 function updatePlayers(data: Data , changes: string[]): Data {
+
     return data;
 }
 
@@ -111,6 +116,11 @@ function updateFight(data: Data): Data {
     return data;
 }
 
+function retreat(data:Data,changes: string[]): Data{ 
+    
+    return data;
+}
+
 
 /**
  * Function to delete all player in the JSON 
@@ -137,65 +147,6 @@ function updateFight(data: Data): Data {
 
 // }
 
-/**
- * Function that remove handicap on a player 
- * @param {*} playerName The player name
- * @param {*} value The value of the handicap
- */
-// function removeHandicap(playerName, value) {
-
-// }
-
-/**
- * Function that move the player with the file "order.txt"
- * @param {string} departure The departure
- * @param {string} destination The destination
- * @param {string} playerName The player name
- * @param {string} handicap The value of handicap
- */
-// function editingMove(departure, destination, playerName, handicap) {
-
-//     console.log("C EST BIEN MWA" + playerName)
-//     var win = 0;
-//     var lose = 0;
-//     var faction = 0;
-//     var prisonnier = false;
-
-//     for (var item of data) {
-//         if (item == departure) {
-//             if (departure == "Spawn") arrayPlayer.push(playerName);
-//             for (var index of data[item]["players"]) {
-//                 if (data[item]["players"][index]["name"] == playerName) {
-//                     win = data[item]["players"][index]["win"];
-//                     lose = data[item]["players"][index]["lose"];
-//                     faction = data[item]["players"][index]["faction"];
-//                     prisonnier = data[item]["players"][index]["prisonnier"];
-//                     data[item]["players"].splice(index, 1);
-//                 }
-//             }
-//         }
-//     }
-
-
-//     var jsonPlayer = {
-//         "name": playerName,
-//         "faction": faction,
-//         "win": win,
-//         "lose": lose,
-//         "handicap": 0,
-//         "prisonnier": prisonnier
-//     }
-
-
-//     for (var item in data) {
-//         if (item == destination) {
-//             data[item]["players"].push(jsonPlayer);
-//             console.log("OUI")
-//         }
-//     }
-
-// }
-
 
 /** ====== IDEA ===== */
     // Handicap
@@ -209,26 +160,4 @@ function updateFight(data: Data): Data {
 
     //COMMENTER AVEC LES TYPES
 
-// }
-
-
-
-/**
- * Function to display all existing territories 
- */
-// function viewTerritories(data) {
-//     for (var item in data) {
-//         console.log(item);
-//     }
-// }
-
-/**
- * Function to display all existing player 
- */
-// function viewPlayers() {
-//     for (var item in data) {
-//         for (var index in data[item]["players"]) {
-//             console.log(data[item]["players"][index]["name"]);
-//         }
-//     }
 // }

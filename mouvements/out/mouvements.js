@@ -7,6 +7,7 @@
  * Pour compiler : npx tsc
  * Pour executer : npm run-script runMoves
  */
+
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -48,7 +49,11 @@ node_fetch_1.default('https://api.npoint.io/38a2899b98818d89418c')
         "./mouvements/mouvements/ordersangmar.txt",
     ];
     const changes = await Promise.all(//Await pour attendre le résultat 
-    files.map((file) => fs.promises.readFile(file, { encoding: "utf-8" }).then((content) => content.split("\n").filter((line) => line !== ""))))
+    files.map((file) => fs.promises
+        .readFile(file, { encoding: "utf-8" })
+        .then((content) => content.split("\n")
+        .map((line) => line.trim())
+        .filter((line) => line !== ""))))
         .then((changes) => changes.flat()); //Rassembler les changements dans un fichier
     return Promise.resolve({ data, changes });
 })
@@ -83,6 +88,7 @@ function updatePlayers(data, changes) {
  *
  */
 function updateColors(data) {
+    try {
     Object.keys(data) // valeur d'un attribut
         .map((key) => key)
         .filter((key) => data[key].hasOwnProperty("players"))
@@ -97,6 +103,12 @@ function updateColors(data) {
         territory.color = factions.find((faction) => faction.id === territory.players[0].faction).color;
     });
     return data;
+
+    }
+    catch(e) {
+        console.log("Voici l'erreur : "+e);
+        console.log("Voici les ordres : ");
+    }
 }
 function updateFight(data) {
     Object.keys(data) // valeur d'un attribut
@@ -133,55 +145,6 @@ function updateFight(data) {
  */
 // function putHandicap(playerName, value) {
 // }
-/**
- * Function that remove handicap on a player
- * @param {*} playerName The player name
- * @param {*} value The value of the handicap
- */
-// function removeHandicap(playerName, value) {
-// }
-/**
- * Function that move the player with the file "order.txt"
- * @param {string} departure The departure
- * @param {string} destination The destination
- * @param {string} playerName The player name
- * @param {string} handicap The value of handicap
- */
-// function editingMove(departure, destination, playerName, handicap) {
-//     console.log("C EST BIEN MWA" + playerName)
-//     var win = 0;
-//     var lose = 0;
-//     var faction = 0;
-//     var prisonnier = false;
-//     for (var item of data) {
-//         if (item == departure) {
-//             if (departure == "Spawn") arrayPlayer.push(playerName);
-//             for (var index of data[item]["players"]) {
-//                 if (data[item]["players"][index]["name"] == playerName) {
-//                     win = data[item]["players"][index]["win"];
-//                     lose = data[item]["players"][index]["lose"];
-//                     faction = data[item]["players"][index]["faction"];
-//                     prisonnier = data[item]["players"][index]["prisonnier"];
-//                     data[item]["players"].splice(index, 1);
-//                 }
-//             }
-//         }
-//     }
-//     var jsonPlayer = {
-//         "name": playerName,
-//         "faction": faction,
-//         "win": win,
-//         "lose": lose,
-//         "handicap": 0,
-//         "prisonnier": prisonnier
-//     }
-//     for (var item in data) {
-//         if (item == destination) {
-//             data[item]["players"].push(jsonPlayer);
-//             console.log("OUI")
-//         }
-//     }
-// }
 /** ====== IDEA ===== */
 // Handicap
 // win / lose
@@ -191,22 +154,4 @@ function updateFight(data) {
 // Ajouter
 /** =========== TO DO =========== */
 //COMMENTER AVEC LES TYPES
-// }
-/**
- * Function to display all existing territories
- */
-// function viewTerritories(data) {
-//     for (var item in data) {
-//         console.log(item);
-//     }
-// }
-/**
- * Function to display all existing player
- */
-// function viewPlayers() {
-//     for (var item in data) {
-//         for (var index in data[item]["players"]) {
-//             console.log(data[item]["players"][index]["name"]);
-//         }
-//     }
 // }

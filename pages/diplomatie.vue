@@ -54,7 +54,9 @@
             </td>
             
             <td class="border border-gray-800 hover:border-gray-800 hover:bg-gray-900"/>
-            <td class="border border-gray-800 hover:border-gray-800 hover:bg-gray-900"/>
+            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
+                EN GUERRE
+            </td>
             <td class="border border-gray-800 hover:border-gray-800 hover:bg-gray-900"/>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
                 ALLIANCE<br>
@@ -112,8 +114,13 @@
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
             </td>
-            <td class="border border-gray-800 hover:border-gray-800 hover:bg-gray-900"/>
-            <td class="border border-gray-800 hover:border-gray-800 hover:bg-gray-900"/>
+            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
+                EN GUERRE
+            </td>
+            <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
+                ALLIANCE<br>
+                <span class="text-gray-500">TOUR 4 à la fin du TOUR 6</span>
+            </td>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
             </td>

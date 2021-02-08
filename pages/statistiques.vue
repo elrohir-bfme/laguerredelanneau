@@ -31,7 +31,7 @@
         }"
         :sort-options="{
             enabled: true,
-            initialSortBy: {field: 'nom', type: 'asc'}
+            initialSortBy: {field: 'nom', type: 'asc', field: 'win', type: 'desc'}
         }"
         >
         <template slot="table-row" slot-scope="props">
@@ -87,14 +87,14 @@ export default {
           field: 'lose',
           type: 'number'
         },
+        // {
+        //   label: 'Ratio de victoire',
+        //   field: 'ratio',
+        //   type: 'number'
+        // }
+        
       ],
       rows: [
-        // { nom:"John", faction: "Elfe", win: 42, lose: 3 },
-        // { nom:"Jane", faction: "Nain", win: 4, lose: 4 },
-        // { nom:"Susan", faction: "Mordor", win: 6, lose: 2 },
-        // { nom:"Chris", faction: "Gobelin", win: 8, lose: 9 },
-        // { nom:"Dan", faction: "Nain", win: 2, lose: 1 },
-        // { nom:"John", faction: "Isengard", win: 9, lose: 0 },
       ],
     };
   },
@@ -261,7 +261,8 @@ export default {
                     "faction": faction,
                     "win": obj2[player]['win'],
                     "lose": obj2[player]['lose'],
-                    "color": color
+                    "color": color,
+                    "ratio": obj2[player]['win']/ (obj2[player]['lose']+ obj2[player]['win']) * 100
                 }
                 this.rows.push(newPlayer);
             }

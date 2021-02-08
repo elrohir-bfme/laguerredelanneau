@@ -7334,7 +7334,6 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         nbTerritoireIsengard: 0,
         nbTerritoireGobelin: 0,
         nbTerritoireAngmar: 0,
-
         nbPlayerRohan: 0,
         nbPlayerElfe: 0,
         nbPlayerGondor: 0,

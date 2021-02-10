@@ -166,4 +166,5 @@ export interface Data {
 	Valee_Anduin: Territory,
 	Valee_Celduin: Territory,
 	Vieille_Foret: Territory,
+
 }

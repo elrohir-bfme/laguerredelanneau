@@ -55,7 +55,7 @@ node_fetch_1.default('https://api.npoint.io/38a2899b98818d89418c')
     .then(({ data, changes }) => updateMoves(data, changes)) //changes : TK territoire1 territoire2 || data
     .then(({ data, changes }) => updatePlayers(data, changes))
     .then((data) => updateColors(data)) // Param, type param , type de retour
-    .then((data) => updateFight(data))
+    //.then((data :Data): Data => updateFight(data))    
     .then((data) => fs.promises.writeFile("./mouvements/data.json", JSON.stringify(data)))
     .catch((error) => console.error(error));
 /**
@@ -63,12 +63,29 @@ node_fetch_1.default('https://api.npoint.io/38a2899b98818d89418c')
  */
 function updateMoves(data, changes) {
     data = changes.reduce((data, change) => {
-        // @ts-ignore
-        const [player, from, to] = change.trim().split(" ");
-        const players = data[from].players; //Prendre les joueurs dans tout le territoire
-        const backupPlayer = players.find((element) => element.name === player); // ! retirer undefined 
-        data[from].players.splice(players.indexOf(backupPlayer), 1); //Supprimer le joueur
-        data[to].players.push(backupPlayer); //Ajouter un joueur
+        console.log(change);
+        const check = /(?<player>.*) spawn (?<faction_id>\d+) (?<to>.*)/;
+        if (check.test(change)) {
+            const res = check.exec(change);
+            const [player, faction_id, to] = [res.groups.player, Number.parseInt(res.groups.faction_id), res.groups.to];
+            const backupPlayer = {
+                name: player,
+                faction: faction_id,
+                win: 0,
+                lose: 0,
+                handicap: 0,
+                prisonnier: false,
+            };
+            data[to].players.push(backupPlayer); //Ajouter un joueur
+        }
+        else {
+            //@ts-ignore
+            const [player, from, to] = change.trim().split(" ");
+            const players = data[from].players; //Prendre les joueurs dans tout le territoire
+            const backupPlayer = players.find((element) => element.name === player); // ! retirer undefined 
+            data[from].players.splice(players.indexOf(backupPlayer), 1); //Supprimer le joueur
+            data[to].players.push(backupPlayer); //Ajouter un joueur
+        }
         return data;
     }, data);
     return { data, changes };

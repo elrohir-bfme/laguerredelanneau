@@ -198,7 +198,7 @@ export default {
     addPlayerMethod() {
         let newPlayer = {
             name: this.newPlayerName,
-            region: "Nouveau joueur",
+            region: "Nouveau_joueur",
             handicap: 0
         }
         this.addPlayer.push(newPlayer)

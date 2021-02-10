@@ -18,7 +18,7 @@
 
         <div class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
             <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player.name+'arrive'">    
-                <option v-for="region in orderedRegions" :value="region.code">{{region.name}}</option>
+                <option v-for="region in orderedRegions" :value="region.code">{{region}}</option>
             </select>
             <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -73,39 +73,44 @@ export default {
             let regionsAdjacentsDetail=[];
             let result =[];
 
-            /** TROUVER LES REGIONS  */
-            for (let index = 0; index < (this.player.adjacents).length; index++) {
-                regionsAdjacents.push(this.findRegion(this.player.adjacents[index]))
-            }
+            if(!(this.player.region === "Nouveau_joueur")){
 
-            /** TROUVER LES REGIONS DES REGIONS ADJACENTES */
-            for (let index = 0; index < (regionsAdjacents).length; index++) {
-                for (let index2 = 0; index2 < regionsAdjacents[index].adjacents.length; index2++) {
-                    regionsAdjacentsDetail.push(this.findRegion(regionsAdjacents[index].adjacents[index2]))
+                /** TROUVER LES REGIONS  */
+                for (let index = 0; index < (this.player.adjacents).length; index++) {
+                    regionsAdjacents.push(this.findRegion(this.player.adjacents[index]))
                 }
-            }
 
-            /** TROUVER LES DEPLACEMENTS DE DEUX */
-            for (let index = 0; index < regionsAdjacentsDetail.length; index++) {
-                const element = regionsAdjacentsDetail[index]
-                if(element.conquete === this.player.faction){
-                    result.push(element.code);
+                /** TROUVER LES REGIONS DES REGIONS ADJACENTES */
+                for (let index = 0; index < (regionsAdjacents).length; index++) {
+                    for (let index2 = 0; index2 < regionsAdjacents[index].adjacents.length; index2++) {
+                        regionsAdjacentsDetail.push(this.findRegion(regionsAdjacents[index].adjacents[index2]))
+                    }
                 }
+
+                /** TROUVER LES DEPLACEMENTS DE DEUX */
+                for (let index = 0; index < regionsAdjacentsDetail.length; index++) {
+                    const element = regionsAdjacentsDetail[index]
+                    if(element.conquete === this.player.faction){
+                        result.push(element.code);
+                    }
+                }
+
+                /** AJOUTER LES ADJACENTS */
+                (this.player.adjacents).forEach(element => {
+                    result.push(element)
+                });
+
+                /** SUPPRIMER LES DOUBLONS */
+                var finalResult = result.filter(function(elem, index, self) {
+                return index === self.indexOf(elem);
+                })
+
+            }else{
+                finalResult = [];
             }
-
-            /** AJOUTER LES ADJACENTS */
-           (this.player.adjacents).forEach(element => {
-                result.push(element)
-            });
-
-            /** SUPPRIMER LES DOUBLONS */
-            var finalResult = result.filter(function(elem, index, self) {
-            return index === self.indexOf(elem);
-})
-
-            return finalResult.slice().sort(function(a, b){
-                return (a.name > b.name) ? 1 : -1;
-            });
+        return finalResult.slice().sort(function(a, b){
+            return (a.name > b.name) ? 1 : -1;
+        });
         }
     }
 }

@@ -32,7 +32,30 @@ export default {
     methods: {
         handleClose() {
             this.$emit("close");
-        }
+        },
+        findRegion(regionname){
+                switch(regionname){
+                case "Mer_Forochel": regionname = "BateauA"; break; 
+                case "Mer_Himling": regionname = "BateauB"; break; 
+                case "Mer_Havres_Gris": regionname = "BateauC"; break; 
+                case "Mer_Minhiriath": regionname = "BateauD"; break; 
+                case "Mer_Enedwaith": regionname = "BateauE"; break; 
+                case "Belegear": regionname = "BateauF"; break; 
+                case "Mer_Andrast": regionname = "BateauG"; break; 
+                case "Mer_Dol_Amroth": regionname = "BateauH"; break; 
+                case "Mer_Tolfalas": regionname = "BateauI"; break; 
+                case "Mer_Umbar": regionname = "BateauJ"; break; 
+                case "Mer_Pelargir": regionname = "BateauK"; break;
+                default : break;
+            }
+
+            for (let index = 0; index < this.regions.length; index++) {
+                const element = this.regions[index];
+                if(element.code === regionname){
+                    return element
+                }
+            }
+        },
     },
     props: {
         player: {
@@ -46,15 +69,41 @@ export default {
     },
     computed: {
         orderedRegions: function () {
-            let regionsAdjacents = this.player.adjacents //ERED LUIN 
-            let region
-            this.player.adjacents.forEach(element => {
-                region = this.regions.find(regionelement=> regionelement === element )
-                console.log(region)
-                //Regarder ses adjacents 
-                //Verifier qu'il est dans la même faction 
+            let regionsAdjacents=[]; 
+            let regionsAdjacentsDetail=[];
+            let result =[];
+
+            /** TROUVER LES REGIONS  */
+            for (let index = 0; index < (this.player.adjacents).length; index++) {
+                regionsAdjacents.push(this.findRegion(this.player.adjacents[index]))
+            }
+
+            /** TROUVER LES REGIONS DES REGIONS ADJACENTES */
+            for (let index = 0; index < (regionsAdjacents).length; index++) {
+                for (let index2 = 0; index2 < regionsAdjacents[index].adjacents.length; index2++) {
+                    regionsAdjacentsDetail.push(this.findRegion(regionsAdjacents[index].adjacents[index2]))
+                }
+            }
+
+            /** TROUVER LES DEPLACEMENTS DE DEUX */
+            for (let index = 0; index < regionsAdjacentsDetail.length; index++) {
+                const element = regionsAdjacentsDetail[index]
+                if(element.conquete === this.player.faction){
+                    result.push(element.code);
+                }
+            }
+
+            /** AJOUTER LES ADJACENTS */
+           (this.player.adjacents).forEach(element => {
+                result.push(element)
             });
-            return regionsAdjacents.slice().sort(function(a, b){
+
+            /** SUPPRIMER LES DOUBLONS */
+            var finalResult = result.filter(function(elem, index, self) {
+            return index === self.indexOf(elem);
+})
+
+            return finalResult.slice().sort(function(a, b){
                 return (a.name > b.name) ? 1 : -1;
             });
         }

@@ -152,7 +152,22 @@ export default {
 
         newLink.click(); 
         
-    }
+    },
+    findFaction(color){
+        let number;
+        switch(color){
+            case"#00bfff": number = 1; break;
+            case"#fffc00": number = 4; break;
+            case"#0bff00": number = 2; break;
+            case"#c500ff": number = 8; break;
+            case"#1e90ff": number = 3; break;
+            case"#db5461": number = 5; break;
+            case"#ff6f00": number = 7; break;
+            case"#ffffff": number = 6; break;
+            default: number = 0 ;
+        }
+        return number
+    },
 
   },
   async fetch() {
@@ -160,6 +175,7 @@ export default {
         for (let key in this.players) {
 
         var obj = this.players[key];
+
         
         if(key!== "riviere" && key!== "BateauK" && key!== "BateauJ" && key!== "BateauJ" && key!== "BateauI" && key!== "BateauH" && key!== "time" &&
         key!== "BateauG" && key!== "BateauF" && key!== "BateauE" && key!== "BateauD" && key!== "BateauB" && key!== "BateauA" && key!== "Tol_Fuin" && key!== "factions" ) {
@@ -168,7 +184,9 @@ export default {
                 case "Mer_Forochel":
                     let newRegionA = {
                         "name": obj.name,
-                        "code": "BateauA"
+                        "code": "BateauA",
+                        "adjacents": obj.adjacents,
+                        "conquete": 0
                     }
                     this.regions.push(newRegionA);
                     break;
@@ -176,7 +194,9 @@ export default {
                 case "Mer_Himling":
                     let newRegionB = {
                         "name": obj.name,
-                        "code": "BateauB"
+                        "code": "BateauB",
+                        "adjacents": obj.adjacents,
+                        "conquete": 0
                     }
                     this.regions.push(newRegionB);
                     break;
@@ -184,7 +204,9 @@ export default {
                 case "Mer_Havres_Gris":
                     let newRegionC = {
                         "name": obj.name,
-                        "code": "BateauC"
+                        "code": "BateauC",
+                        "adjacents": obj.adjacents,
+                        "conquete": 0
                     }
                     this.regions.push(newRegionC);
                     break;
@@ -192,7 +214,9 @@ export default {
                 case "Mer_Minhiriath":
                     let newRegionD = {
                         "name": obj.name,
-                        "code": "BateauD"
+                        "code": "BateauD",
+                        "adjacents": obj.adjacents,
+                        "conquete": 0
                     }
                     this.regions.push(newRegionD);
                     break;
@@ -200,7 +224,9 @@ export default {
                 case "Mer_Enedwaith":
                     let newRegionE = {
                         "name": obj.name,
-                        "code": "BateauE"
+                        "code": "BateauE",
+                        "adjacents": obj.adjacents,
+                        "conquete": 0
                     }
                     this.regions.push(newRegionE);
                     break;
@@ -208,7 +234,9 @@ export default {
                 case "Belegear":
                     let newRegionF = {
                         "name": obj.name,
-                        "code": "BateauF"
+                        "code": "BateauF",
+                        "adjacents": obj.adjacents,
+                        "conquete": 0
                     }
                     this.regions.push(newRegionF);
                     break;
@@ -216,7 +244,9 @@ export default {
                 case "Mer_Andrast":
                     let newRegionG = {
                         "name": obj.name,
-                        "code": "BateauG"
+                        "code": "BateauG",
+                        "adjacents": obj.adjacents,
+                        "conquete": 0
                     }
                     this.regions.push(newRegionG);
                 break;
@@ -224,7 +254,9 @@ export default {
                 case "Mer_Dol_Amroth":
                     let newRegionH = {
                         "name": obj.name,
-                        "code": "BateauH"
+                        "code": "BateauH",
+                        "adjacents": obj.adjacents,
+                        "conquete": 0
                     }
                     this.regions.push(newRegionH);
                     break;
@@ -232,7 +264,9 @@ export default {
                 case "Mer_Tolfalas":
                     let newRegionI = {
                         "name": obj.name,
-                        "code": "BateauI"
+                        "code": "BateauI",
+                        "adjacents": obj.adjacents,
+                        "conquete": 0
                     }
                     this.regions.push(newRegionI);
                     break;
@@ -240,7 +274,9 @@ export default {
                 case "Mer_Umbar":
                     let newRegionJ = {
                         "name": obj.name,
-                        "code": "BateauJ"
+                        "code": "BateauJ",
+                        "adjacents": obj.adjacents,
+                        "conquete": 0
                     }
                     this.regions.push(newRegionJ);
                     break;
@@ -248,7 +284,9 @@ export default {
                 case "Mer_Pelargir":
                     let newRegionK = {
                         "name": obj.name,
-                        "code": "BateauK"
+                        "code": "BateauK",
+                        "adjacents": obj.adjacents,
+                        "conquete": 0
                     }
                     this.regions.push(newRegionK);
                     break;
@@ -256,7 +294,8 @@ export default {
                     let newRegion = {
                     "name": obj.name,
                     "code": key,
-                    "adjacents": obj.adjacents
+                    "adjacents": obj.adjacents,
+                    "conquete": this.findFaction(obj.color) 
                     }
                     this.regions.push(newRegion);
                     break;

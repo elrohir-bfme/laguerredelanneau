@@ -6876,7 +6876,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           </ul>
           <ul v-if="faction.rohan.win && action.rohan.loose" class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-green-700 uppercase px-4 py-1 text-xs mr-1">
-                {{faction.rohan.win}}/{{faction.rohan.loose}} ({{faction.rohan.win/(faction.rohan.win+faction.rohan.loose)*100}} % de Victoires)
+                {{faction.rohan.win}}/{{faction.rohan.loose}} ({{Math.round(faction.rohan.win/(faction.rohan.win+faction.rohan.loose)*100)}} % de Victoires)
               </span>
           </ul>
         </div>
@@ -6933,7 +6933,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           </ul>
           <ul class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-teal-700 uppercase px-4 py-1 text-xs mr-1">
-                {{faction.elfe.win}}/{{faction.elfe.loose}} ({{faction.elfe.win/(faction.elfe.win+faction.elfe.loose)*100}} % de Victoires)
+                {{faction.elfe.win}}/{{faction.elfe.loose}} ({{Math.round(faction.elfe.win/(faction.elfe.win+faction.elfe.loose)*100)}} % de Victoires)
               </span>
           </ul>
         </div>
@@ -6990,7 +6990,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           </ul>
           <ul class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-blue-700 uppercase px-4 py-1 text-xs mr-1">
-                {{faction.gondor.win}}/{{faction.gondor.loose}} ({{faction.gondor.win/(faction.gondor.win+faction.gondor.loose)*100}} % de Victoires)
+                {{faction.gondor.win}}/{{faction.gondor.loose}} ({{Math.round(faction.gondor.win/(faction.gondor.win+faction.gondor.loose)*100)}} % de Victoires)
               </span>
           </ul>
         </div>
@@ -7047,7 +7047,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           </ul>
           <ul class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-yellow-800 uppercase px-4 py-1 text-xs mr-1">
-                {{faction.nain.win}}/{{faction.nain.loose}} ({{faction.nain.win/(faction.nain.win+faction.nain.loose)*100}} % de Victoires)
+                {{faction.nain.win}}/{{faction.nain.loose}} ({{Math.round(faction.nain.win/(faction.nain.win+faction.nain.loose)*100)}} % de Victoires)
               </span>
           </ul>
         </div>
@@ -7110,7 +7110,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           </ul>
           <ul class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-red-700 uppercase px-4 py-1 text-xs mr-1">
-                {{faction.mordor.win}}/{{faction.mordor.loose}} ({{faction.mordor.win/(faction.mordor.win+faction.mordor.loose)*100}} % de Victoires)
+                {{faction.mordor.win}}/{{faction.mordor.loose}} ({{Math.round(faction.mordor.win/(faction.mordor.win+faction.mordor.loose)*100)}} % de Victoires)
               </span>
           </ul>
         </div>
@@ -7168,7 +7168,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           </ul>
           <ul class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-gray-700 uppercase px-4 py-1 text-xs mr-1">
-                {{faction.isengard.win}}/{{faction.isengard.loose}} ({{faction.isengard.win/(faction.isengard.win+faction.isengard.loose)*100}} % de Victoires)
+                {{faction.isengard.win}}/{{faction.isengard.loose}} ({{Math.round(faction.isengard.win/(faction.isengard.win+faction.isengard.loose)*100)}} % de Victoires)
               </span>
           </ul>
         </div>
@@ -7226,7 +7226,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           </ul>
           <ul class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-orange-700 uppercase px-4 py-1 text-xs mr-1">
-                {{faction.gobelin.win}}/{{faction.gobelin.loose}} ({{faction.gobelin.win/(faction.gobelin.win+faction.gobelin.loose)*100}} % de Victoires)
+                {{faction.gobelin.win}}/{{faction.gobelin.loose}} ({{Math.round(faction.gobelin.win/(faction.gobelin.win+faction.gobelin.loose)*100)}} % de Victoires)
               </span>
           </ul>
         </div>
@@ -7284,7 +7284,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           </ul>
           <ul class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-purple-800 uppercase px-4 py-1 text-xs mr-1">
-                {{faction.angmar.win}}/{{faction.angmar.loose}} ({{faction.angmar.win/(faction.angmar.win+faction.angmar.loose)*100}} % de Victoires)
+                {{faction.angmar.win}}/{{faction.angmar.loose}} ({{Math.round(faction.angmar.win/(faction.angmar.win+faction.angmar.loose)*100)}} % de Victoires)
               </span>
           </ul>
         </div>
@@ -7301,11 +7301,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
 
 
 <script>
-  import SvgPanZoom from 'vue-svg-pan-zoom';
   export default {
-    components: {
-      SvgPanZoom
-    },
     head: {
       title: "La Guerre de l'Anneau",
       meta: [{

@@ -36,7 +36,13 @@
         >
         <template slot="table-row" slot-scope="props">
             <span v-if="props.column.field == 'faction'">
-            <span :class="props.row.color">{{props.row.faction}}</span> 
+              <span :class="props.row.color">{{props.row.faction}}</span> 
+            </span>
+            <span v-else-if="props.column.field == 'ratio'">
+              <span class="float-right">{{props.row.ratio}}</span>
+            </span>
+            <span v-else>
+              {{props.formattedRow[props.column.field]}}
             </span>
         </template>
         </vue-good-table>
@@ -87,11 +93,11 @@ export default {
           field: 'lose',
           type: 'number'
         },
-        // {
-        //   label: 'Ratio de victoire',
-        //   field: 'ratio',
-        //   type: 'number'
-        // }
+        {
+          label: 'Ratio de victoire',
+          field: 'ratio',
+          type: 'string'
+        }
         
       ],
       rows: [
@@ -256,14 +262,31 @@ export default {
                     break;
                 }
 
-                let newPlayer = {
-                    "nom": obj2[player]['name'],
-                    "faction": faction,
-                    "win": obj2[player]['win'],
-                    "lose": obj2[player]['lose'],
-                    "color": color,
-                    "ratio": obj2[player]['win']/ (obj2[player]['lose']+ obj2[player]['win']) * 100
+                let newPlayer = {}
+                if(obj2[player]['lose'] > 0 || obj2[player]['win'] > 0)
+                  {
+                    console.log(Math.round(obj2[player]['win']/ (obj2[player]['lose']+ obj2[player]['win']) * 100))
+                    newPlayer = {
+                        "nom": obj2[player]['name'],
+                        "faction": faction,
+                        "win": obj2[player]['win'],
+                        "lose": obj2[player]['lose'],
+                        "color": color,
+                        "ratio": Math.round(obj2[player]['win']/ (obj2[player]['lose']+ obj2[player]['win']) * 100) + "%"
+                    }
+                  }
+                else {
+                  newPlayer = {
+                      "nom": obj2[player]['name'],
+                      "faction": faction,
+                      "win": obj2[player]['win'],
+                      "lose": obj2[player]['lose'],
+                      "color": color,
+                      "ratio": "Aucune partie joué"
+                  }
                 }
+
+
                 this.rows.push(newPlayer);
             }
 

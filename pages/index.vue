@@ -838,48 +838,48 @@
         <g :class="map.Mer_Rhun ? map.Mer_Rhun.fight : 'hidden'" id="_010---Swords-5" data-name="010---Swords">
           <path id="Shape-73" data-name="Shape"
             d="M4668.48,1934.75a4.21,4.21,0,0,0-2.93-1.45l-18.48-1a4.18,4.18,0,0,0-4.39,4.4l1,18.48a4.15,4.15,0,0,0,1.45,2.92l41.81,34.86,10.94-4,1.2-1.43,2.88-12.57Z"
-            class="epee-1"></path>
-          <path id="Shape-74" data-name="Shape"
-            d="M4717,1993c-12.7,5.53-10.45,4.37-12.39,6l-2.64,6.56,13.44,11.2,7-2.59,4.64-9.06Z" class="epee-1"></path>
-          <path id="Shape-75" data-name="Shape" d="M4745.16,2040.65l-19.56-16.74,2.47-5.54,6.22-3.15,16.74,19.57Z"
             class="epee-2"></path>
+          <path id="Shape-74" data-name="Shape"
+            d="M4717,1993c-12.7,5.53-10.45,4.37-12.39,6l-2.64,6.56,13.44,11.2,7-2.59,4.64-9.06Z" class="epee-2"></path>
+          <path id="Shape-75" data-name="Shape" d="M4745.16,2040.65l-19.56-16.74,2.47-5.54,6.22-3.15,16.74,19.57Z"
+            class="epee-3"></path>
           <path id="Shape-76" data-name="Shape"
             d="M4746,2003.47l-30.77,30.76a8.17,8.17,0,0,1-11.55,0c-1.67-1.67-1.62-1.59-1.76-1.84a2,2,0,0,0,0-2.08c.21-.34-2.52,2.4,39.75-39.87a2.07,2.07,0,0,1,2.9,0l1.43,1.45a8.16,8.16,0,0,1,0,11.58Z"
-            class="epee-3"></path>
+            class="epee-5"></path>
           <path id="Shape-77" data-name="Shape"
-            d="M4758.86,2048.48a8.17,8.17,0,1,1,0-11.57A8.17,8.17,0,0,1,4758.86,2048.48Z" class="epee-3"></path>
+            d="M4758.86,2048.48a8.17,8.17,0,1,1,0-11.57A8.17,8.17,0,0,1,4758.86,2048.48Z" class="epee-5"></path>
           <path id="Shape-78" data-name="Shape"
             d="M4702,1974.93l-7.56,9.09-50.5-50.49a4,4,0,0,1,3.17-1.23l18.48,1a4.21,4.21,0,0,1,2.93,1.45Z"
-            class="epee-4"></path>
-          <path id="Shape-79" data-name="Shape" d="M4727.05,2005l-5.83,5.83-11.67-11.68L4717,1993Z" class="epee-4">
-          </path>
-          <path id="Shape-80" data-name="Shape" d="M4721.26,2010.89l0,0" class="epee-1"></path>
-          <path id="Shape-81" data-name="Shape" d="M4758,2043.55a4.09,4.09,0,1,1,0-5.79A4.09,4.09,0,0,1,4758,2043.55Z"
             class="epee-5"></path>
+          <path id="Shape-79" data-name="Shape" d="M4727.05,2005l-5.83,5.83-11.67-11.68L4717,1993Z" class="epee-5">
+          </path>
+          <path id="Shape-80" data-name="Shape" d="M4721.26,2010.89l0,0" class="epee-2"></path>
+          <path id="Shape-81" data-name="Shape" d="M4758,2043.55a4.09,4.09,0,1,1,0-5.79A4.09,4.09,0,0,1,4758,2043.55Z"
+            class="epee-6"></path>
           <path id="Shape-82" data-name="Shape"
             d="M4708.1,2000.36c1.43-1.16,10.12-8.43,50.7-42.26a4.19,4.19,0,0,0,1.45-2.92l1-18.46a4.14,4.14,0,0,0-1.21-3.18,4.2,4.2,0,0,0-3.18-1.22l-18.46,1a4.2,4.2,0,0,0-2.95,1.47c-56.09,67.27-38.71,46.48-42.26,50.68Z"
-            class="epee-6"></path>
+            class="epee-7"></path>
           <path id="Shape-83" data-name="Shape"
             d="M4761.25,1936.72l-1,18.46a4.19,4.19,0,0,1-1.45,2.92c-40.31,33.61-49.29,41.1-50.7,42.26v-14.91l51.93-51.92A4.12,4.12,0,0,1,4761.25,1936.72Z"
-            class="epee-1"></path>
-          <path id="Shape-84" data-name="Shape" d="M4652.9,2034.79l16.74-19.57,5.46,3.41,3.23,5.28-19.56,16.74Z"
             class="epee-2"></path>
+          <path id="Shape-84" data-name="Shape" d="M4652.9,2034.79l16.74-19.57,5.46,3.41,3.23,5.28-19.56,16.74Z"
+            class="epee-3"></path>
           <path id="Shape-85" data-name="Shape"
-            d="M4656.64,2048.48a8.17,8.17,0,1,1,0-11.57A8.17,8.17,0,0,1,4656.64,2048.48Z" class="epee-3"></path>
+            d="M4656.64,2048.48a8.17,8.17,0,1,1,0-11.57A8.17,8.17,0,0,1,4656.64,2048.48Z" class="epee-4"></path>
           <path id="Shape-86" data-name="Shape"
-            d="M4655.79,2043.55a4.09,4.09,0,1,1,0-5.79A4.09,4.09,0,0,1,4655.79,2043.55Z" class="epee-5"></path>
+            d="M4655.79,2043.55a4.09,4.09,0,1,1,0-5.79A4.09,4.09,0,0,1,4655.79,2043.55Z" class="epee-6"></path>
           <path id="Shape-87" data-name="Shape"
-            d="M4708.1,1985.45v14.91c-7.73,6.44-3.6,3-19.57,16.31l-9.05-2.59-2.6-9.06,16.31-19.57Z" class="epee-3">
+            d="M4708.1,1985.45v14.91c-7.73,6.44-3.6,3-19.57,16.31l-9.05-2.59-2.6-9.06,16.31-19.57Z" class="epee-4">
           </path>
           <path id="Shape-88" data-name="Shape"
             d="M4682.66,2012.94a2,2,0,0,1-1.44-3.49l13-13a2,2,0,0,1,0-2.89c2.45-2.45,6,2.69,2.89,5.78l-13,13a2,2,0,0,1-1.45.6Z"
-            class="epee-7"></path>
+            class="epee-8"></path>
           <path id="Shape-89" data-name="Shape"
             d="M4698.56,1999.93a2,2,0,0,1-1.44-.6,2.05,2.05,0,0,1-3.48-.89,2.05,2.05,0,0,1,.59-2,4.19,4.19,0,0,1,5.78,0,2,2,0,0,1-1.45,3.49Z"
-            class="epee-7"></path>
+            class="epee-8"></path>
           <path id="Shape-90" data-name="Shape"
             d="M4702,2032.39c-.15.27-.22.31-1.75,1.84a8.17,8.17,0,0,1-11.55,0l-30.77-30.76a8.2,8.2,0,0,1,0-11.58l1.45-1.43a2,2,0,0,1,2.88,0l39.44,39.44a2,2,0,0,1,.3,2.49Z"
-            class="epee-5"></path>
+            class="epee-6"></path>
         </g>
 
         <g :class="map.Dorwinion ? map.Dorwinion.fight : 'hidden'" id="_010---Swords-5" data-name="010---Swords">
@@ -5353,42 +5353,44 @@
           <path id="Shape-2106" data-name="Shape" class="epee-6"
             d="M2472.81,1461.86c-.12.21-.18.24-1.42,1.49a6.63,6.63,0,0,1-9.36,0l-24.93-24.93a6.63,6.63,0,0,1,0-9.38l1.17-1.16a1.62,1.62,0,0,1,2.34,0l32,32a1.66,1.66,0,0,1,.24,2Z" />
         </g>
+
         <g :class="map.Haut_Col ? map.Haut_Col.fight : 'hidden'" id="_010---Swords-118" data-name="010---Swords">
           <path id="Shape-2107" data-name="Shape" class="epee-2"
-            d="M2680.83,1413.72a1.9,1.9,0,0,0-1.33-.66l-8.38-.46a2,2,0,0,0-1.45.56,1.88,1.88,0,0,0-.55,1.44l.45,8.39a1.92,1.92,0,0,0,.66,1.32l19,15.82,5-1.83.55-.64L2696,1432Z" />
+            d="M2666.4,1447.1a1.54,1.54,0,0,0-1.07-.53l-6.76-.36a1.51,1.51,0,0,0-1.16.44,1.54,1.54,0,0,0-.45,1.16l.37,6.77a1.5,1.5,0,0,0,.53,1.07l15.3,12.76,4-1.48.44-.52,1-4.6Z" />
           <path id="Shape-2108" data-name="Shape" class="epee-2"
-            d="M2702.85,1440.13c-5.77,2.51-4.75,2-5.63,2.7l-1.19,3,6.09,5.09,3.19-1.18,2.1-4.11Z" />
+            d="M2684.16,1468.41c-4.65,2-3.82,1.6-4.53,2.18l-1,2.4,4.92,4.1,2.57-.95,1.69-3.32Z" />
           <path id="Shape-2109" data-name="Shape" class="epee-3"
-            d="M2715.63,1461.78l-8.88-7.6,1.12-2.51,2.83-1.43,7.59,8.88Z" />
+            d="M2694.47,1485.87l-7.16-6.13.91-2,2.27-1.15,6.13,7.16Z" />
           <path id="Shape-2110" data-name="Shape" class="epee-4"
-            d="M2716,1444.9l-14,14a3.71,3.71,0,0,1-5.25,0c-.76-.75-.73-.72-.79-.83a1,1,0,0,0,0-1c.09-.15-1.15,1.09,18-18.09a.94.94,0,0,1,1.32,0l.65.66a3.71,3.71,0,0,1,0,5.25Z" />
+            d="M2694.8,1472.25l-11.27,11.27a3,3,0,0,1-4.22,0c-.62-.62-.6-.59-.65-.68a.74.74,0,0,0,0-.76c.08-.13-.92.88,14.55-14.59a.75.75,0,0,1,1.06,0l.53.53a3,3,0,0,1,0,4.23Z" />
           <path id="Shape-2111" data-name="Shape" class="epee-4"
-            d="M2721.85,1465.33a3.71,3.71,0,1,1,0-5.25A3.71,3.71,0,0,1,2721.85,1465.33Z" />
+            d="M2699.49,1488.73a3,3,0,1,1,0-4.23A3,3,0,0,1,2699.49,1488.73Z" />
           <path id="Shape-2112" data-name="Shape" class="epee-5"
-            d="M2696,1432l-3.44,4.13-22.91-22.92a1.84,1.84,0,0,1,1.44-.56l8.38.46a1.9,1.9,0,0,1,1.33.66Z" />
-          <path id="Shape-2113" data-name="Shape" class="epee-5" d="M2707.41,1445.61l-2.64,2.64-5.3-5.3,3.38-2.82Z" />
-          <path id="Shape-2114" data-name="Shape" class="epee-2" d="M2704.79,1448.27l0,0" />
+            d="M2678.66,1461.81l-2.77,3.33-18.48-18.49a1.48,1.48,0,0,1,1.16-.44l6.76.36a1.54,1.54,0,0,1,1.07.53Z" />
+          <path id="Shape-2113" data-name="Shape" class="epee-5" d="M2687.84,1472.82l-2.13,2.14-4.27-4.28,2.72-2.27Z" />
+          <path id="Shape-2114" data-name="Shape" class="epee-2" d="M2685.73,1475h0" />
           <path id="Shape-2115" data-name="Shape" class="epee-6"
-            d="M2721.46,1463.09a1.85,1.85,0,1,1,0-2.63A1.86,1.86,0,0,1,2721.46,1463.09Z" />
+            d="M2699.18,1486.92a1.5,1.5,0,1,1,0-2.11A1.49,1.49,0,0,1,2699.18,1486.92Z" />
           <path id="Shape-2116" data-name="Shape" class="epee-7"
-            d="M2698.81,1443.49c.65-.53,4.59-3.82,23-19.18a1.88,1.88,0,0,0,.66-1.32l.45-8.38a1.9,1.9,0,0,0-2-2l-8.38.45a1.9,1.9,0,0,0-1.34.67c-25.45,30.52-17.56,21.09-19.17,23Z" />
+            d="M2680.91,1471.12l18.55-15.47a1.55,1.55,0,0,0,.54-1.07l.36-6.76a1.53,1.53,0,0,0-.44-1.16,1.54,1.54,0,0,0-1.17-.45l-6.75.36a1.55,1.55,0,0,0-1.08.54c-20.53,24.62-14.17,17-15.47,18.55Z" />
           <path id="Shape-2117" data-name="Shape" class="epee-2"
-            d="M2722.93,1414.61l-.45,8.38a1.88,1.88,0,0,1-.66,1.32c-18.29,15.26-22.37,18.66-23,19.18v-6.76l23.57-23.57A1.87,1.87,0,0,1,2722.93,1414.61Z" />
+            d="M2700.36,1447.82l-.36,6.76a1.55,1.55,0,0,1-.54,1.07l-18.55,15.47v-5.46l19-19A1.49,1.49,0,0,1,2700.36,1447.82Z" />
           <path id="Shape-2118" data-name="Shape" class="epee-3"
-            d="M2673.76,1459.12l7.6-8.88,2.47,1.54,1.47,2.4-8.88,7.6Z" />
+            d="M2660.7,1483.72l6.13-7.16,2,1.24,1.18,1.94-7.16,6.13Z" />
           <path id="Shape-2119" data-name="Shape" class="epee-4"
-            d="M2675.46,1465.33a3.71,3.71,0,1,1,0-5.25A3.71,3.71,0,0,1,2675.46,1465.33Z" />
+            d="M2662.07,1488.73a3,3,0,1,1,0-4.23A3,3,0,0,1,2662.07,1488.73Z" />
           <path id="Shape-2120" data-name="Shape" class="epee-6"
-            d="M2675.07,1463.09a1.85,1.85,0,1,1,0-2.63A1.86,1.86,0,0,1,2675.07,1463.09Z" />
+            d="M2661.76,1486.92a1.49,1.49,0,1,1,0-2.11A1.48,1.48,0,0,1,2661.76,1486.92Z" />
           <path id="Shape-2121" data-name="Shape" class="epee-4"
-            d="M2698.81,1436.73v6.76l-8.88,7.41-4.11-1.18-1.18-4.11,7.41-8.88Z" />
+            d="M2680.91,1465.66v5.46c-2.83,2.36-1.32,1.09-7.16,6l-3.32-.95-.95-3.32,6-7.16Z" />
           <path id="Shape-2122" data-name="Shape" class="epee-8"
-            d="M2687.27,1449.2a.92.92,0,0,1-.86-.57.94.94,0,0,1,.2-1l5.91-5.91a.91.91,0,0,1,0-1.31c1.11-1.11,2.71,1.22,1.31,2.63l-5.91,5.9a.93.93,0,0,1-.65.27Z" />
+            d="M2671.6,1475.72a.73.73,0,0,1-.69-.46.72.72,0,0,1,.16-.81l4.76-4.77a.75.75,0,0,1,0-1.06c.9-.89,2.19,1,1.06,2.12l-4.76,4.76a.75.75,0,0,1-.53.22Z" />
           <path id="Shape-2123" data-name="Shape" class="epee-8"
-            d="M2694.48,1443.3a.93.93,0,0,1-.65-.27,1,1,0,0,1-.91.26,1,1,0,0,1-.67-.67.94.94,0,0,1,.27-.91,1.9,1.9,0,0,1,2.62,0,.93.93,0,0,1-.66,1.59Z" />
+            d="M2677.42,1471a1,1,0,0,0-1.26,0,.71.71,0,0,1-.54-.54.74.74,0,0,1,.21-.73,1.55,1.55,0,0,1,2.12,0,.78.78,0,0,1,.16.82A.75.75,0,0,1,2677.42,1471Z" />
           <path id="Shape-2124" data-name="Shape" class="epee-6"
-            d="M2696,1458c-.07.12-.1.14-.8.83a3.7,3.7,0,0,1-5.24,0l-14-14a3.73,3.73,0,0,1,0-5.25l.66-.65a.91.91,0,0,1,1.31,0l17.9,17.9a.92.92,0,0,1,.14,1.13Z" />
+            d="M2678.66,1482.84c0,.1-.08.11-.64.68a3,3,0,0,1-4.23,0l-11.26-11.27a3,3,0,0,1,0-4.23l.53-.53a.75.75,0,0,1,1.06,0l14.43,14.44a.74.74,0,0,1,.11.91Z" />
         </g>
+
         <g :class="map.Eregion ? map.Eregion.fight : 'hidden'" id="_010---Swords-119" data-name="010---Swords">
           <path id="Shape-2125" data-name="Shape" class="epee-2"
             d="M2466.71,1880.18a2.35,2.35,0,0,0-1.64-.82l-10.35-.56a2.37,2.37,0,0,0-1.78.69,2.34,2.34,0,0,0-.68,1.77l.56,10.35a2.34,2.34,0,0,0,.81,1.64l23.41,19.52,6.13-2.26.67-.8,1.62-7Z" />
@@ -5738,93 +5740,93 @@
         <g :class="map.Gue_Isen ? map.Gue_Isen.fight : 'hidden'" id="_010---Swords-124" data-name="010---Swords">
           <path id="Shape-2215" data-name="Shape"
             d="M2461,2484.79a1.36,1.36,0,0,0-1-.47L2454,2484a1.37,1.37,0,0,0-1.45,1.44l.33,6.07a1.4,1.4,0,0,0,.48,1l13.72,11.43,3.59-1.32.39-.47.95-4.12Z"
-            class="cls-1"></path>
+            class="epee-2"></path>
           <path id="Shape-2216" data-name="Shape"
-            d="M2476.89,2503.89c-4.17,1.82-3.43,1.44-4.06,2L2472,2508l4.41,3.68,2.3-.85,1.52-3Z" class="cls-1"></path>
-          <path id="Shape-2217" data-name="Shape" d="M2486.14,2519.55l-6.42-5.5.81-1.81,2-1,5.49,6.42Z" class="cls-2">
+            d="M2476.89,2503.89c-4.17,1.82-3.43,1.44-4.06,2L2472,2508l4.41,3.68,2.3-.85,1.52-3Z" class="epee-2"></path>
+          <path id="Shape-2217" data-name="Shape" d="M2486.14,2519.55l-6.42-5.5.81-1.81,2-1,5.49,6.42Z" class="epee-3">
           </path>
           <path id="Shape-2218" data-name="Shape"
             d="M2486.43,2507.34l-10.1,10.1a2.67,2.67,0,0,1-3.79,0c-.55-.55-.53-.52-.58-.6a.66.66,0,0,0,0-.69c.07-.11-.83.79,13-13.08a.69.69,0,0,1,1,0l.47.48a2.67,2.67,0,0,1,0,3.79Z"
-            class="cls-3"></path>
+            class="epee-4"></path>
           <path id="Shape-2219" data-name="Shape"
-            d="M2490.63,2522.12a2.68,2.68,0,1,1,0-3.8A2.69,2.69,0,0,1,2490.63,2522.12Z" class="cls-3"></path>
+            d="M2490.63,2522.12a2.68,2.68,0,1,1,0-3.8A2.69,2.69,0,0,1,2490.63,2522.12Z" class="epee-4"></path>
           <path id="Shape-2220" data-name="Shape"
-            d="M2472,2498l-2.48,3-16.57-16.57a1.31,1.31,0,0,1,1-.4l6.06.33a1.36,1.36,0,0,1,1,.47Z" class="cls-4"></path>
-          <path id="Shape-2221" data-name="Shape" d="M2480.19,2507.85l-1.91,1.92-3.83-3.84,2.44-2Z" class="cls-4">
+            d="M2472,2498l-2.48,3-16.57-16.57a1.31,1.31,0,0,1,1-.4l6.06.33a1.36,1.36,0,0,1,1,.47Z" class="epee-5"></path>
+          <path id="Shape-2221" data-name="Shape" d="M2480.19,2507.85l-1.91,1.92-3.83-3.84,2.44-2Z" class="epee-5">
           </path>
-          <path id="Shape-2222" data-name="Shape" d="M2478.29,2509.78h0" class="cls-1"></path>
+          <path id="Shape-2222" data-name="Shape" d="M2478.29,2509.78h0" class="epee-2"></path>
           <path id="Shape-2223" data-name="Shape" d="M2490.35,2520.5a1.34,1.34,0,1,1-1.89-1.9,1.34,1.34,0,0,1,1.89,1.9Z"
-            class="cls-5"></path>
+            class="epee-6"></path>
           <path id="Shape-2224" data-name="Shape"
             d="M2474,2506.32c.47-.38,3.33-2.76,16.64-13.86a1.4,1.4,0,0,0,.48-1l.33-6.06a1.41,1.41,0,0,0-.4-1.05,1.36,1.36,0,0,0-1-.39l-6.06.32a1.34,1.34,0,0,0-1,.48c-18.41,22.07-12.7,15.25-13.87,16.63Z"
-            class="cls-6"></path>
+            class="epee-7"></path>
           <path id="Shape-2225" data-name="Shape"
             d="M2491.42,2485.44l-.33,6.06a1.4,1.4,0,0,1-.48,1c-13.23,11-16.17,13.48-16.64,13.86v-4.89l17-17A1.39,1.39,0,0,1,2491.42,2485.44Z"
-            class="cls-1"></path>
+            class="epee-2"></path>
           <path id="Shape-2226" data-name="Shape" d="M2455.86,2517.62l5.49-6.42,1.79,1.12,1.06,1.73-6.42,5.5Z"
-            class="cls-2"></path>
+            class="epee-3"></path>
           <path id="Shape-2227" data-name="Shape"
-            d="M2457.09,2522.12a2.69,2.69,0,1,1,0-3.8A2.7,2.7,0,0,1,2457.09,2522.12Z" class="cls-3"></path>
+            d="M2457.09,2522.12a2.69,2.69,0,1,1,0-3.8A2.7,2.7,0,0,1,2457.09,2522.12Z" class="epee-4"></path>
           <path id="Shape-2228" data-name="Shape"
             d="M2456.81,2520.5a1.34,1.34,0,1,1-1.9-1.9,1.33,1.33,0,0,1,1.9,0A1.35,1.35,0,0,1,2456.81,2520.5Z"
-            class="cls-5"></path>
+            class="epee-6"></path>
           <path id="Shape-2229" data-name="Shape" d="M2474,2501.43v4.89l-6.42,5.36-3-.85-.85-3,5.35-6.42Z"
-            class="cls-3"></path>
+            class="epee-4"></path>
           <path id="Shape-2230" data-name="Shape"
             d="M2465.63,2510.45a.67.67,0,0,1-.48-1.14l4.27-4.27a.68.68,0,0,1,0-.95c.81-.81,2,.88.95,1.9l-4.27,4.27a.68.68,0,0,1-.47.19Z"
-            class="cls-7"></path>
+            class="epee-8"></path>
           <path id="Shape-2231" data-name="Shape"
             d="M2470.84,2506.18a.7.7,0,0,1-.47-.19.67.67,0,0,1-1.14-.3.66.66,0,0,1,.19-.65,1.37,1.37,0,0,1,1.9,0,.67.67,0,0,1-.48,1.14Z"
-            class="cls-7"></path>
+            class="epee-8"></path>
           <path id="Shape-2232" data-name="Shape"
             d="M2472,2516.84a4.13,4.13,0,0,1-.58.6,2.67,2.67,0,0,1-3.79,0l-10.09-10.1a2.67,2.67,0,0,1,0-3.79l.47-.47a.64.64,0,0,1,1,0l12.94,12.94a.67.67,0,0,1,.1.82Z"
-            class="cls-5"></path>
+            class="epee-6"></path>
         </g>
 
         <g :class="map.Marche_Ouest ? map.Marche_Ouest.fight : 'hidden'" id="_010---Swords-134"
           data-name="010---Swords">
           <path id="Shape-2395" data-name="Shape"
             d="M2381.62,2542.64a1.72,1.72,0,0,0-1.18-.58l-7.42-.4a1.66,1.66,0,0,0-1.28.49,1.71,1.71,0,0,0-.49,1.27l.4,7.43a1.67,1.67,0,0,0,.59,1.17l16.8,14,4.39-1.62.49-.57,1.15-5.06Z"
-            class="cls-1"></path>
+            class="epee-2"></path>
           <path id="Shape-2396" data-name="Shape"
-            d="M2401.11,2566c-5.1,2.22-4.2,1.75-5,2.39l-1.06,2.64,5.4,4.5,2.82-1,1.86-3.63Z" class="cls-1"></path>
+            d="M2401.11,2566c-5.1,2.22-4.2,1.75-5,2.39l-1.06,2.64,5.4,4.5,2.82-1,1.86-3.63Z" class="epee-2"></path>
           <path id="Shape-2397" data-name="Shape" d="M2412.43,2585.19l-7.86-6.72,1-2.23,2.5-1.27,6.73,7.87Z"
-            class="cls-2"></path>
+            class="epee-3"></path>
           <path id="Shape-2398" data-name="Shape"
             d="M2412.78,2570.25l-12.36,12.36a3.28,3.28,0,0,1-4.64,0c-.67-.67-.65-.64-.71-.74a.78.78,0,0,0,0-.83c.09-.14-1,1,16-16a.83.83,0,0,1,1.17,0l.57.58a3.27,3.27,0,0,1,0,4.65Z"
-            class="cls-3"></path>
+            class="epee-4"></path>
           <path id="Shape-2399" data-name="Shape"
-            d="M2417.93,2588.34a3.28,3.28,0,1,1,0-4.65A3.28,3.28,0,0,1,2417.93,2588.34Z" class="cls-3"></path>
+            d="M2417.93,2588.34a3.28,3.28,0,1,1,0-4.65A3.28,3.28,0,0,1,2417.93,2588.34Z" class="epee-4"></path>
           <path id="Shape-2400" data-name="Shape"
             d="M2395.07,2558.78l-3,3.66-20.29-20.29a1.66,1.66,0,0,1,1.28-.49l7.42.4a1.72,1.72,0,0,1,1.18.58Z"
-            class="cls-4"></path>
-          <path id="Shape-2401" data-name="Shape" d="M2405.15,2570.88l-2.34,2.34-4.69-4.69,3-2.5Z" class="cls-4"></path>
-          <path id="Shape-2402" data-name="Shape" d="M2402.83,2573.23h0" class="cls-1"></path>
+            class="epee-5"></path>
+          <path id="Shape-2401" data-name="Shape" d="M2405.15,2570.88l-2.34,2.34-4.69-4.69,3-2.5Z" class="epee-5"></path>
+          <path id="Shape-2402" data-name="Shape" d="M2402.83,2573.23h0" class="epee-2"></path>
           <path id="Shape-2403" data-name="Shape"
-            d="M2417.59,2586.36a1.64,1.64,0,1,1,0-2.33A1.65,1.65,0,0,1,2417.59,2586.36Z" class="cls-5"></path>
+            d="M2417.59,2586.36a1.64,1.64,0,1,1,0-2.33A1.65,1.65,0,0,1,2417.59,2586.36Z" class="epee-6"></path>
           <path id="Shape-2404" data-name="Shape"
             d="M2397.54,2569c.57-.46,4.06-3.38,20.37-17a1.62,1.62,0,0,0,.58-1.17l.41-7.42a1.75,1.75,0,0,0-.49-1.28,1.7,1.7,0,0,0-1.28-.48l-7.42.39a1.67,1.67,0,0,0-1.18.59c-22.54,27-15.56,18.67-17,20.36Z"
-            class="cls-6"></path>
+            class="epee-7"></path>
           <path id="Shape-2405" data-name="Shape"
             d="M2418.9,2543.43l-.41,7.42a1.62,1.62,0,0,1-.58,1.17c-16.2,13.51-19.8,16.52-20.37,17v-6l20.86-20.86A1.7,1.7,0,0,1,2418.9,2543.43Z"
-            class="cls-1"></path>
+            class="epee-2"></path>
           <path id="Shape-2406" data-name="Shape" d="M2375.36,2582.84l6.73-7.87,2.19,1.37,1.3,2.13-7.86,6.72Z"
-            class="cls-2"></path>
+            class="epee-3"></path>
           <path id="Shape-2407" data-name="Shape"
-            d="M2376.86,2588.34a3.28,3.28,0,1,1,0-4.65A3.28,3.28,0,0,1,2376.86,2588.34Z" class="cls-3"></path>
+            d="M2376.86,2588.34a3.28,3.28,0,1,1,0-4.65A3.28,3.28,0,0,1,2376.86,2588.34Z" class="epee-4"></path>
           <path id="Shape-2408" data-name="Shape"
-            d="M2376.52,2586.36a1.64,1.64,0,1,1,0-2.33A1.65,1.65,0,0,1,2376.52,2586.36Z" class="cls-5"></path>
+            d="M2376.52,2586.36a1.64,1.64,0,1,1,0-2.33A1.65,1.65,0,0,1,2376.52,2586.36Z" class="epee-6"></path>
           <path id="Shape-2409" data-name="Shape" d="M2397.54,2563v6l-7.86,6.56-3.64-1-1.05-3.63,6.56-7.87Z"
-            class="cls-3"></path>
+            class="epee-4"></path>
           <path id="Shape-2410" data-name="Shape"
             d="M2387.32,2574.06a.83.83,0,0,1-.76-.51.8.8,0,0,1,.18-.89l5.22-5.23a.82.82,0,0,1,0-1.16c1-1,2.41,1.08,1.17,2.32l-5.23,5.23a.84.84,0,0,1-.58.24Z"
-            class="cls-7"></path>
+            class="epee-8"></path>
           <path id="Shape-2411" data-name="Shape"
             d="M2393.71,2568.83a.87.87,0,0,1-.59-.24.8.8,0,0,1-.8.23.8.8,0,0,1-.59-.59.84.84,0,0,1,.23-.8,1.69,1.69,0,0,1,2.33,0,.84.84,0,0,1,.18.89A.83.83,0,0,1,2393.71,2568.83Z"
-            class="cls-7"></path>
+            class="epee-8"></path>
           <path id="Shape-2412" data-name="Shape"
             d="M2395.07,2581.87c-.06.11-.09.13-.7.74a3.28,3.28,0,0,1-4.64,0l-12.37-12.36a3.3,3.3,0,0,1,0-4.65l.59-.57a.79.79,0,0,1,1.15,0l15.85,15.84a.8.8,0,0,1,.12,1Z"
-            class="cls-5"></path>
+            class="epee-6"></path>
         </g>
 
         <g :class="map.Angmar ? map.Angmar.fight : 'hidden'" id="_010---Swords-125" data-name="010---Swords">
@@ -6180,12 +6182,13 @@
         <g id="Calque_2-16" data-name="Calque 2">
           <g id="Capa_1-7" data-name="Capa 1">
             <path class="cls-20"
-              d="M2692.05,1398.53l-3.1,35.81,3.1,43.55h0a48.21,48.21,0,0,0,35-46.37v-23A66.8,66.8,0,0,1,2692.05,1398.53Z" />
-            <path class="cls-21" d="M2657,1408.5v23a48.2,48.2,0,0,0,35,46.37h0v-79.36A66.84,66.84,0,0,1,2657,1408.5Z" />
+              d="M2713.42,1392.89l-1.94,22.35,1.94,27.18h0a30.07,30.07,0,0,0,21.85-28.94v-14.37A41.72,41.72,0,0,1,2713.42,1392.89Z" />
+            <path class="cls-21"
+              d="M2691.56,1399.11v14.37a30.08,30.08,0,0,0,21.86,28.94h0v-49.53A41.73,41.73,0,0,1,2691.56,1399.11Z" />
             <path class="cls-22"
-              d="M2692.05,1410l-3.1,25.24,3.1,32.21a38.26,38.26,0,0,0,25-35.91v-13.74A79.39,79.39,0,0,1,2692.05,1410Z" />
+              d="M2713.42,1400l-1.94,15.76,1.94,20.1a23.87,23.87,0,0,0,15.64-22.41v-8.58A49.44,49.44,0,0,1,2713.42,1400Z" />
             <path class="cls-23"
-              d="M2667,1417.78v13.74a38.27,38.27,0,0,0,25.06,35.91V1410A79.71,79.71,0,0,1,2667,1417.78Z" />
+              d="M2697.78,1404.9v8.58a23.87,23.87,0,0,0,15.64,22.41V1400A49.44,49.44,0,0,1,2697.78,1404.9Z" />
           </g>
         </g>
         <g id="Calque_2-17" data-name="Calque 2">
@@ -6871,6 +6874,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                 </svg></span>
             </li>
           </ul>
+          <ul v-if="faction.rohan.win && action.rohan.loose" class="flex flex-row mt-4 space-x-1">
+              <span class="flex rounded-full bg-green-700 uppercase px-4 py-1 text-xs mr-1">
+                {{faction.rohan.win}}/{{faction.rohan.loose}} ({{Math.round(faction.rohan.win/(faction.rohan.win+faction.rohan.loose)*100)}} % de Victoires)
+              </span>
+          </ul>
         </div>
 
         <div
@@ -6922,6 +6930,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                     d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg></span>
             </li>
+          </ul>
+          <ul class="flex flex-row mt-4 space-x-1">
+              <span class="flex rounded-full bg-teal-700 uppercase px-4 py-1 text-xs mr-1">
+                {{faction.elfe.win}}/{{faction.elfe.loose}} ({{Math.round(faction.elfe.win/(faction.elfe.win+faction.elfe.loose)*100)}} % de Victoires)
+              </span>
           </ul>
         </div>
 
@@ -6975,6 +6988,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                 </svg></span>
             </li>
           </ul>
+          <ul class="flex flex-row mt-4 space-x-1">
+              <span class="flex rounded-full bg-blue-700 uppercase px-4 py-1 text-xs mr-1">
+                {{faction.gondor.win}}/{{faction.gondor.loose}} ({{Math.round(faction.gondor.win/(faction.gondor.win+faction.gondor.loose)*100)}} % de Victoires)
+              </span>
+          </ul>
         </div>
 
         <div
@@ -7026,6 +7044,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                     d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg></span>
             </li>
+          </ul>
+          <ul class="flex flex-row mt-4 space-x-1">
+              <span class="flex rounded-full bg-yellow-800 uppercase px-4 py-1 text-xs mr-1">
+                {{faction.nain.win}}/{{faction.nain.loose}} ({{Math.round(faction.nain.win/(faction.nain.win+faction.nain.loose)*100)}} % de Victoires)
+              </span>
           </ul>
         </div>
       </div>
@@ -7085,6 +7108,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                 </svg></span>
             </li>
           </ul>
+          <ul class="flex flex-row mt-4 space-x-1">
+              <span class="flex rounded-full bg-red-700 uppercase px-4 py-1 text-xs mr-1">
+                {{faction.mordor.win}}/{{faction.mordor.loose}} ({{Math.round(faction.mordor.win/(faction.mordor.win+faction.mordor.loose)*100)}} % de Victoires)
+              </span>
+          </ul>
         </div>
 
         <div
@@ -7137,6 +7165,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                     d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg></span>
             </li>
+          </ul>
+          <ul class="flex flex-row mt-4 space-x-1">
+              <span class="flex rounded-full bg-gray-700 uppercase px-4 py-1 text-xs mr-1">
+                {{faction.isengard.win}}/{{faction.isengard.loose}} ({{Math.round(faction.isengard.win/(faction.isengard.win+faction.isengard.loose)*100)}} % de Victoires)
+              </span>
           </ul>
         </div>
 
@@ -7191,9 +7224,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                 </svg></span>
             </li>
           </ul>
-          <!-- <div class="shadow w-full bg-orange-700 mt-2 rounded-full">
-            <div class="bg-orange-600 rounded-l-lg text-xs leading-none py-1 text-center text-white"  :style="{width: (nbPlayerGobelin/nbPlayers*100) + '%'}">{{(nbPlayerGobelin/nbPlayers*100) | pourcentage }}</div>
-          </div> -->
+          <ul class="flex flex-row mt-4 space-x-1">
+              <span class="flex rounded-full bg-orange-700 uppercase px-4 py-1 text-xs mr-1">
+                {{faction.gobelin.win}}/{{faction.gobelin.loose}} ({{Math.round(faction.gobelin.win/(faction.gobelin.win+faction.gobelin.loose)*100)}} % de Victoires)
+              </span>
+          </ul>
         </div>
 
         <div
@@ -7247,6 +7282,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                 </svg></span>
             </li>
           </ul>
+          <ul class="flex flex-row mt-4 space-x-1">
+              <span class="flex rounded-full bg-purple-800 uppercase px-4 py-1 text-xs mr-1">
+                {{faction.angmar.win}}/{{faction.angmar.loose}} ({{Math.round(faction.angmar.win/(faction.angmar.win+faction.angmar.loose)*100)}} % de Victoires)
+              </span>
+          </ul>
         </div>
       </div>
 
@@ -7261,11 +7301,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
 
 
 <script>
-  import SvgPanZoom from 'vue-svg-pan-zoom';
   export default {
-    components: {
-      SvgPanZoom
-    },
     head: {
       title: "La Guerre de l'Anneau",
       meta: [{
@@ -7294,7 +7330,6 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         nbTerritoireIsengard: 0,
         nbTerritoireGobelin: 0,
         nbTerritoireAngmar: 0,
-
         nbPlayerRohan: 0,
         nbPlayerElfe: 0,
         nbPlayerGondor: 0,

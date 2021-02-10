@@ -73,6 +73,25 @@
             </div>
         </div>
 
+        <div v-if="selectedFaction">
+            <!-- <button  v-on:click="addPlayerMethod" class="bg-gray-900 text-gray-600">ADD PLAYER</button> -->
+            <div class="text-gray-700">
+                <input v-model="newPlayerName" placeholder="Pseudo Discord" 
+                class="rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white"/>
+                <button :disabled="!isDisable" v-on:click="addPlayerMethod" 
+                class="px-8 rounded-r-lg bg-yellow-400  text-gray-800 font-bold p-4 uppercase border-yellow-500 border-t border-b border-r">Ajouter un joueur</button>
+            </div>
+            <div class="mt-4" v-for="(player, index) in addPlayer" :key="index">
+                <Order :player="player" :regions="regions"/>
+                <button v-on:click="removePlayerMethod(player)" 
+                class="mb-4 px-4 rounded-lg bg-red-600  text-gray-800 font-bold p-2 uppercase border-red-500">
+                    <svg class="fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
         <div class="text-center mb-40 mt-20">
         <button @click="generateText" class="inline-flex text-base md:text-3xl items-center h-10 px-40 text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:outline-none  focus:shadow-outline hover:bg-indigo-800 " id="btncreateFile" v-if="selectedFaction != null">
             <svg class="w-10 h-10 mr-3 fill-current" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -83,30 +102,33 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {
-      players: null,
-      regions: [],
-      playerElfe: [],
-      playerRohan: [],
-      playerGondor: [],
-      playerNain: [],
-      playerMordor: [],
-      playerIsengard: [],
-      playerGobelin: [],
-      playerAngmar: [],
-      selectedFaction: null,
-      options: [
-      { faction: 'Elfe', 'value': 1 },
-      { faction: 'Rohan', 'value': 2 },
-      { faction: 'Gondor', 'value': 3 },
-      { faction: 'Nain', 'value': 4 },
-      { faction: 'Mordor', 'value': 5 },
-      { faction: 'Isengard', 'value': 6 },
-      { faction: 'Gobelin', 'value': 7 },
-      { faction: 'Angmar', 'value': 8 }
-    ]
+        newPlayerName: "",
+        addPlayer: [],
+        players: null,
+        regions: [],
+        playerElfe: [],
+        playerRohan: [],
+        playerGondor: [],
+        playerNain: [],
+        playerMordor: [],
+        playerIsengard: [],
+        playerGobelin: [],
+        playerAngmar: [],
+        selectedFaction: null,
+        options: [
+        { faction: 'Elfe', 'value': 1 },
+        { faction: 'Rohan', 'value': 2 },
+        { faction: 'Gondor', 'value': 3 },
+        { faction: 'Nain', 'value': 4 },
+        { faction: 'Mordor', 'value': 5 },
+        { faction: 'Isengard', 'value': 6 },
+        { faction: 'Gobelin', 'value': 7 },
+        { faction: 'Angmar', 'value': 8 }
+        ]
     }
   },
   methods : {
@@ -130,7 +152,12 @@ export default {
         playerArray.forEach
         (element => {
          data = data + element.name +" "+ element.code
-         +" "+(document.getElementById(element.name+"arrive").value)+ '\n'
+         +" "+(document.getElementById(element.name+"arrive").value)+ " " + element.handicap + '\n'
+        }); 
+
+        this.addPlayer.forEach
+        (element => {
+         data = data + element.name +" spawn "+ (document.getElementById(element.name+"arrive").value) + " " + element.handicap + '\n'
         }); 
             
         //convert the text to BLOB
@@ -152,8 +179,24 @@ export default {
 
         newLink.click(); 
         
+    },
+    addPlayerMethod() {
+        let newPlayer = {
+            name: this.newPlayerName,
+            region: "Nouveau joueur",
+            handicap: 0
+        }
+        this.addPlayer.push(newPlayer)
+    },
+    removePlayerMethod(RemovePlayer) {
+        this.addPlayer= this.addPlayer.filter(item => item !== RemovePlayer)
     }
 
+  },
+  computed: {
+    isDisable() {
+        return this.newPlayerName.length > 0;
+    }
   },
   async fetch() {
 	  this.players = await this.$http.$get(`https://api.npoint.io/38a2899b98818d89418c`)
@@ -276,7 +319,8 @@ export default {
                             "region": obj.name,
                             "code": key,
                             "adjacents":obj.adjacents,
-                            "faction":obj2[player]['faction']
+                            "faction":obj2[player]['faction'],
+                            "handicap":obj2[player]['handicap']
                         }
                         this.playerElfe.push(newPlayerElfe)
                     break;
@@ -286,7 +330,8 @@ export default {
                             "region": obj.name,
                             "code": key,
                             "adjacents":obj.adjacents,
-                            "faction":obj2[player]['faction']
+                            "faction":obj2[player]['faction'],
+                            "handicap":obj2[player]['handicap']
                         }
                         this.playerRohan.push(newPlayerRohan)
                     break;
@@ -296,7 +341,8 @@ export default {
                             "region": obj.name,
                             "code": key,
                             "adjacents":obj.adjacents,
-                            "faction":obj2[player]['faction']
+                            "faction":obj2[player]['faction'],
+                            "handicap":obj2[player]['handicap']
                         }
                         this.playerGondor.push(newPlayerGondor)
                     break;
@@ -306,7 +352,8 @@ export default {
                             "region": obj.name,
                             "code": key,
                             "adjacents":obj.adjacents,
-                            "faction":obj2[player]['faction']
+                            "faction":obj2[player]['faction'],
+                            "handicap":obj2[player]['handicap']
                         }
                         this.playerNain.push(newPlayerNain)
                     break;
@@ -316,7 +363,8 @@ export default {
                             "region": obj.name,
                             "code": key,
                             "adjacents":obj.adjacents,
-                            "faction":obj2[player]['faction']
+                            "faction":obj2[player]['faction'],
+                            "handicap":obj2[player]['handicap']
                         }
                         this.playerMordor.push(newPlayerMordor)
                     break;
@@ -326,7 +374,8 @@ export default {
                             "region": obj.name,
                             "code": key,
                             "adjacents":obj.adjacents,
-                            "faction":obj2[player]['faction']
+                            "faction":obj2[player]['faction'],
+                            "handicap":obj2[player]['handicap']
                         }
                         this.playerIsengard.push(newPlayerIsengard)
                     break;
@@ -336,7 +385,8 @@ export default {
                             "region": obj.name,
                             "code": key,
                             "adjacents":obj.adjacents,
-                            "faction":obj2[player]['faction']
+                            "faction":obj2[player]['faction'],
+                            "handicap":obj2[player]['handicap']
                         }
                         this.playerGobelin.push(newPlayerGobelin)
                     break;
@@ -346,7 +396,8 @@ export default {
                             "region": obj.name,
                             "code": key,
                             "adjacents":obj.adjacents,
-                            "faction":obj2[player]['faction']
+                            "faction":obj2[player]['faction'],
+                            "handicap":obj2[player]['handicap']
                         }
                         this.playerAngmar.push(newPlayerAngmar)
                     break;

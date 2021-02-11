@@ -95,6 +95,7 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">  
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
+              <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
 
@@ -107,6 +108,7 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
+              <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
 
@@ -119,6 +121,7 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
+              <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
           <div v-else-if="player.faction == 4" class="rounded-lg bg-yellow-600 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-yellow-700">{{updatePlayer(player.name)}}
@@ -130,6 +133,7 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
+              <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
           <div v-else-if="player.faction == 5" class="rounded-lg bg-red-700 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-red-800">{{updatePlayer(player.name)}}
@@ -141,6 +145,7 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
+              <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
           <div v-else-if="player.faction == 6" class="rounded-lg bg-gray-800 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-gray-900">{{updatePlayer(player.name)}}
@@ -152,6 +157,7 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
+              <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
           <div v-else-if="player.faction == 7" class="rounded-lg bg-orange-800 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-orange-900">{{updatePlayer(player.name)}}
@@ -163,6 +169,7 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
+              <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
           <div v-else-if="player.faction == 8" class="rounded-lg bg-purple-800 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-purple-900">{{updatePlayer(player.name)}}
@@ -174,6 +181,7 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
+              <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
           </div>

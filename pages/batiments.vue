@@ -30,7 +30,7 @@ partant de l’écurie.</p>
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">Comptoir Commercial</h2>
                 <p class="text-base leading-relaxed mt-2">Permet l’envoi de ressource à une autre factions, même si elle ne possède pas ce bâtiment. 
                     Le transfert d’argent sera effectif à partir du prochain tour.</p>
-                <p class="text-indigo-500 inline-flex items-center mt-3">Prix : 1000</p>
+                <p class="text-indigo-500 inline-flex items-center mt-3">Prix : 500</p>
                  </div>
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
@@ -55,8 +55,11 @@ puis, lvl 2, puis lvl 3)</p>
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">Camp de Mercenaire</h2>
                 <p class="text-base leading-relaxed mt-2">permet le recrutement de joueur
 mercenaire. Vous trouverez les spécificités de ces joueurs dans la Section
-Répartition des factions et la section IV. Rôle des joueurs.</p>
-                <p class="text-indigo-500 inline-flex items-center mt-3">Prix : 1000</p>
+Répartition des factions et la section IV. Rôle des joueurs.
+Le prix du mercenaire est fixé par la modération selon le niveau des joueurs. 4 tranches de niveau seront faites, 
+et les joueurs se verront octroyer un niveau lorsque le moment se présentera. Voici les niveaux : 
+A : 1500, B : 1000, C : 650 et D : 300</p>
+                <p class="text-indigo-500 inline-flex items-center mt-3">Prix : 800</p>
                 </div>
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
@@ -69,15 +72,14 @@ Répartition des factions et la section IV. Rôle des joueurs.</p>
 bataille que vous remportez, en dépensant 300 points de ressources. Le ou les
 prisonniers seront sous le contrôle d’un ou plusieurs joueurs de sa faction
 ennemie. Un ou deux prisonniers peuvent être fait par bataille, et à chaque
-tour, il aura la possibilité de s’échapper à l’aide d’un tirage au sort. Si l'armée
-qui détient le prisonnier ne possède qu'un seul joueur, le prisonnier peut
+tour. Si l'armée qui détient le prisonnier ne possède qu'un seul joueur, le prisonnier peut
 profiter du manque d'effectif pour tenter une évasion au cours d'un 1v1, s’il
 le perd, il augmente sa durée d'emprisonnement de deux tours. Le joueur
 peut aussi être libéré par le biais d'une rançon, elle doit soit être transférée
-par le comptoir commercial, soit être apportée à l'armée ennemie par un
-joueurs (sans livrer bataille). Si le joueur est libéré grâce une demande de
+par le comptoir commercial. Si le joueur est libéré grâce une demande de
 rançon, il regagnera directement une forteresse de son empire sans avoir de
-malus. De plus, une prison déverrouille un maximum de deux prisonniers ;</p>
+malus. De plus, une prison déverrouille un maximum de deux prisonniers. 
+Points sur les prisonniers, emprisonnement pour une durée de 2 tours, et le tour suivant, les joueurs libérés peuvent se déployer avec 30% de handicap qui se dissiperont au tour suivant. </p>
                 <p class="text-indigo-500 inline-flex items-center mt-3">Prix : 2000</p>
                 </div>
             </div>

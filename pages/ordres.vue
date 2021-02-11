@@ -154,7 +154,7 @@ export default {
         });
 
         this.addPlayer.forEach(element => {
-            data += `${element.name} spawn ${element.faction} ${document.getElementById(element.name + "arrive").value} ${element.handicap}\n`;
+            data += `${element.name.replace(/ /g, '_')} spawn ${document.getElementById(element.name + "arrive").value} ${element.faction}\n`;
         });
             
         //convert the text to BLOB

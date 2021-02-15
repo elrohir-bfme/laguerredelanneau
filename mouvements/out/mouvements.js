@@ -63,9 +63,8 @@ node_fetch_1.default('https://api.npoint.io/38a2899b98818d89418c')
  */
 function updateMoves(data, changes) {
     data = changes.reduce((data, change) => {
-        console.log(change);
         const check = /(?<player>.*) spawn (?<faction_id>\d+) (?<to>.*)/;
-        if (check.test(change)) {
+        if (check.test(change)){
             const res = check.exec(change);
             const [player, faction_id, to] = [res.groups.player, Number.parseInt(res.groups.faction_id), res.groups.to];
             const backupPlayer = {
@@ -77,8 +76,7 @@ function updateMoves(data, changes) {
                 prisonnier: false,
             };
             data[to].players.push(backupPlayer); //Ajouter un joueur
-        }
-        else {
+        }else{
             //@ts-ignore
             const [player, from, to] = change.trim().split(" ");
             const players = data[from].players; //Prendre les joueurs dans tout le territoire

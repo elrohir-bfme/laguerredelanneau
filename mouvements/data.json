@@ -3,7 +3,7 @@
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Bree.jpg",
         "map": 4,
         "name": "Bree",
-        "color": "#3300000",
+        "color": "#fffc00",
         "fight": "hidden",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ARNOR/bree%20wotr.zip",
         "players": [
@@ -82,9 +82,9 @@
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
     },
     "time": {
-        "end": "2021-02-15 00:00:00",
-        "tour": 4,
-        "start": "2021-02-16 17:00:00"
+        "end": "2021-02-23 00:00:00",
+        "tour": 5,
+        "start": "2021-02-15 17:00:00"
     },
     "Erech": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Erech.jpg",
@@ -121,7 +121,7 @@
         "name": "Moria",
         "color": "#ff6f00",
         "fight": "hidden",
-        "mapdl": "https://www.github.com/elrohir-bfme/ROTWK_MAP_EVENT/tree/master/pack%20de%20map%20r%C3%A9gion%20MONTS%20BRUMEUX%2Fmur%20moria%20wotr.zip",
+        "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20MONTS%20BRUMEUX/moria%20wotr.zip",
         "players": [
             {
                 "win": 0,
@@ -145,6 +145,14 @@
                 "name": "Utharlok",
                 "faction": 7,
                 "handicap": 2,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Snow",
+                "faction": 7,
+                "handicap": 0,
                 "prisonnier": false
             }
         ],
@@ -211,9 +219,7 @@
         "fight": "hidden",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ROHAN/edoras%20wotr.zip",
         "citadel": "true",
-        "players": [
-            null
-        ],
+        "players": [],
         "adjacents": [
             "Halifirien",
             "Dunharrow",
@@ -263,7 +269,7 @@
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Lorien.png",
         "map": 8,
         "name": "Lorien",
-        "color": "#ff6f00",
+        "color": "#ffffff",
         "fight": "inline",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ROVANION/lorien%20wotr.zip",
         "outpost": true,
@@ -299,30 +305,6 @@
                 "faction": 6,
                 "handicap": 0,
                 "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Tsoutzi",
-                "faction": 7,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Fota1994",
-                "faction": 7,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Bax",
-                "faction": 7,
-                "handicap": 0,
-                "prisonnier": false
             }
         ],
         "adjacents": [
@@ -337,7 +319,7 @@
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Nurnen.png",
         "map": 8,
         "name": "Mer de Núrnen",
-        "color": "#db5461",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20MORDOR/nurnen%20wotr.zip",
         "players": [],
@@ -432,6 +414,15 @@
                 "lose": 0,
                 "name": "Gagzull",
                 "faction": 6,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            null,
+            {
+                "name": "Nombril",
+                "faction": 2,
+                "win": 0,
+                "lose": 0,
                 "handicap": 0,
                 "prisonnier": false
             }
@@ -626,7 +617,7 @@
     "BateauK": {
         "img": "https://ahobbitsjourney.files.wordpress.com/2015/02/numenor-ship.jpg",
         "name": "Bateau Gondorien",
-        "color": "#3300000",
+        "color": "#1e90ff",
         "fight": "inline",
         "players": [
             {
@@ -701,7 +692,7 @@
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Eregion.jpg",
         "map": 4,
         "name": "Eregion",
-        "color": "#ff6f00",
+        "color": "#ffffff",
         "fight": "inline",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ERIADOR/eregion%20wotr.zip",
         "players": [
@@ -722,7 +713,7 @@
                 "prisonnier": false
             },
             {
-                "win": 0,
+                "win": 1,
                 "chef": true,
                 "lose": 0,
                 "name": "Grieven",
@@ -747,7 +738,7 @@
                 "prisonnier": false
             },
             {
-                "win": 0,
+                "win": 1,
                 "lose": 0,
                 "name": "Wyrdan",
                 "faction": 6,
@@ -756,36 +747,11 @@
             },
             {
                 "win": 0,
-                "chef": true,
-                "lose": 0,
-                "name": "Morkoving",
-                "faction": 7,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Rui",
-                "faction": 7,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "hugues",
-                "faction": 7,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
+                "lose": 1,
                 "name": "Sodythaek",
                 "faction": 7,
                 "handicap": 0,
-                "prisonnier": false
+                "prisonnier": true
             }
         ],
         "adjacents": [
@@ -807,7 +773,7 @@
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ARNOR/evendim%20hills%20wotr.zip",
         "players": [
             {
-                "win": 0,
+                "win": 1,
                 "lose": 0,
                 "name": "Colleguos",
                 "faction": 1,
@@ -815,7 +781,7 @@
                 "prisonnier": false
             },
             {
-                "win": 0,
+                "win": 1,
                 "lose": 0,
                 "name": "Elrohir",
                 "faction": 1,
@@ -857,56 +823,16 @@
             {
                 "win": 1,
                 "lose": 0,
-                "name": "Gammaction",
-                "faction": 8,
+                "name": "oknar",
+                "faction": 1,
                 "handicap": 0,
                 "prisonnier": false
             },
             {
                 "win": 0,
                 "lose": 0,
-                "name": "Ilyas",
-                "faction": 8,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Centurioncaius",
-                "faction": 8,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Blaysters",
-                "faction": 8,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Melkor",
-                "faction": 8,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Sauron",
-                "faction": 8,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Madac",
-                "faction": 8,
+                "name": "Giax",
+                "faction": 1,
                 "handicap": 0,
                 "prisonnier": false
             }
@@ -1093,14 +1019,6 @@
         "players": [
             {
                 "win": 1,
-                "lose": 0,
-                "name": "netavoise",
-                "faction": 4,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
                 "lose": 0,
                 "name": "Kado",
                 "faction": 5,
@@ -1338,6 +1256,30 @@
                 "faction": 8,
                 "handicap": 0,
                 "prisonnier": false
+            },
+            {
+                "win": 1,
+                "lose": 1,
+                "name": "Gammaction",
+                "faction": 8,
+                "handicap": 2,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 1,
+                "name": "Ilyas",
+                "faction": 8,
+                "handicap": 2,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 1,
+                "name": "Solken",
+                "faction": 8,
+                "handicap": 2,
+                "prisonnier": false
             }
         ],
         "adjacents": [
@@ -1482,7 +1424,32 @@
         "color": "#fffc00",
         "fight": "hidden",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ANGMAR/gundabad%20wotr.zip",
-        "players": [],
+        "players": [
+            {
+                "win": 1,
+                "lose": 1,
+                "name": "netavoise",
+                "faction": 4,
+                "handicap": 2,
+                "prisonnier": false
+            },
+            {
+                "win": 1,
+                "lose": 1,
+                "name": "Raugorn",
+                "faction": 4,
+                "handicap": 2,
+                "prisonnier": false
+            },
+            {
+                "win": 1,
+                "lose": 1,
+                "name": "Gimli",
+                "faction": 4,
+                "handicap": 2,
+                "prisonnier": false
+            }
+        ],
         "fortress": true,
         "adjacents": [
             "Desert_Nord",
@@ -1549,18 +1516,10 @@
                 "prisonnier": false
             },
             {
-                "win": 0,
+                "win": 1,
                 "lose": 0,
                 "name": "Amarrow",
                 "faction": 4,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Solken",
-                "faction": 8,
                 "handicap": 0,
                 "prisonnier": false
             }
@@ -1630,7 +1589,24 @@
         "fight": "hidden",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ROHAN/Isengard%20wotr.zip",
         "citadel": "true",
-        "players": [],
+        "players": [
+            {
+                "win": 0,
+                "lose": 1,
+                "name": "reborntag",
+                "faction": 6,
+                "handicap": 2,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 1,
+                "name": "Maedhros",
+                "faction": 6,
+                "handicap": 2,
+                "prisonnier": false
+            }
+        ],
         "adjacents": [
             "Pays_Dun",
             "Avancee_Fangorn",
@@ -1689,33 +1665,17 @@
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Rhun.jpg",
         "map": 2,
         "name": "Mer de Rhûn",
-        "color": "#3300000",
+        "color": "#fffc00",
         "fight": "inline",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20RHUN/mer%20de%20rhun%20wotr.zip",
         "outpost": true,
         "players": [
             {
-                "win": 0,
+                "win": 1,
                 "chef": true,
                 "lose": 0,
                 "name": "ROI_DAÏN",
                 "faction": 4,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Floki",
-                "faction": 5,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Joshua",
-                "faction": 5,
                 "handicap": 0,
                 "prisonnier": false
             }
@@ -1958,38 +1918,6 @@
         "players": [
             {
                 "win": 0,
-                "lose": 0,
-                "name": "lijert",
-                "faction": 1,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 1,
-                "lose": 0,
-                "name": "oknar",
-                "faction": 1,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Giax",
-                "faction": 1,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Ragzus",
-                "faction": 1,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
                 "lose": 1,
                 "name": "Starond",
                 "faction": 8,
@@ -1997,7 +1925,7 @@
                 "prisonnier": false
             },
             {
-                "win": 0,
+                "win": 1,
                 "chef": true,
                 "lose": 1,
                 "name": "Toinou",
@@ -2006,7 +1934,7 @@
                 "prisonnier": false
             },
             {
-                "win": 1,
+                "win": 2,
                 "lose": 0,
                 "name": "Sirena",
                 "faction": 8,
@@ -2044,6 +1972,46 @@
                 "faction": 8,
                 "handicap": 0,
                 "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Centurioncaius",
+                "faction": 8,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Blaysters",
+                "faction": 8,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Melkor",
+                "faction": 8,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Sauron",
+                "faction": 8,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Madac",
+                "faction": 8,
+                "handicap": 0,
+                "prisonnier": false
             }
         ],
         "adjacents": [
@@ -2064,7 +2032,24 @@
         "fight": "hidden",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20MORDOR/barad%20dur%20wotr.zip",
         "citadel": "true",
-        "players": [],
+        "players": [
+            {
+                "win": 0,
+                "lose": 1,
+                "name": "Floki",
+                "faction": 5,
+                "handicap": 2,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Joshua",
+                "faction": 5,
+                "handicap": 2,
+                "prisonnier": false
+            }
+        ],
         "adjacents": [
             "Montagne_Destin"
         ],
@@ -2090,58 +2075,10 @@
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Carrefour.png",
         "map": 4,
         "name": "Carrefour",
-        "color": "#1e90ff",
+        "color": "#db5461",
         "fight": "inline",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20GONDOR/carrefour%20wotr.zip",
         "players": [
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Eternal",
-                "faction": 3,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Colbern",
-                "faction": 3,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "JLS",
-                "faction": 3,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Babavoi",
-                "faction": 3,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Florleseige",
-                "faction": 3,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Radagast",
-                "faction": 3,
-                "handicap": 0,
-                "prisonnier": false
-            },
             {
                 "win": 0,
                 "lose": 1,
@@ -2175,7 +2112,7 @@
                 "prisonnier": false
             },
             {
-                "win": 0,
+                "win": 1,
                 "lose": 0,
                 "name": "Kampi",
                 "faction": 5,
@@ -2191,7 +2128,7 @@
                 "prisonnier": false
             },
             {
-                "win": 0,
+                "win": 1,
                 "lose": 0,
                 "name": "Fairy",
                 "faction": 5,
@@ -2227,7 +2164,8 @@
             "Emyn_Arnen",
             "Centre_Ithilien",
             "Nord_Ithilien",
-            "Minas_Morgul"
+            "Minas_Morgul",
+            "Osgiliath"
         ],
         "description": "Le Carrefour réunissait les principales routes du Gondor. Ces chemins n'amènent plus que des ennemis aux portes du royaume."
     },
@@ -2527,7 +2465,16 @@
         "color": "#1e90ff",
         "fight": "hidden",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20GONDOR/osgiliath%20wotr.zip",
-        "players": [],
+        "players": [
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Colbern",
+                "faction": 3,
+                "handicap": 0,
+                "prisonnier": false
+            }
+        ],
         "adjacents": [
             "Pelennor",
             "Carrefour"
@@ -2647,6 +2594,23 @@
         "players": [
             {
                 "win": 0,
+                "chef": true,
+                "lose": 0,
+                "name": "Morkoving",
+                "faction": 7,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "hugues",
+                "faction": 7,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
                 "lose": 0,
                 "name": "Erneko",
                 "faction": 7,
@@ -2748,6 +2712,30 @@
                 "win": 0,
                 "lose": 0,
                 "name": "Jean_Yves",
+                "faction": 3,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Babavoi",
+                "faction": 3,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Florleseige",
+                "faction": 3,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Radagast",
                 "faction": 3,
                 "handicap": 0,
                 "prisonnier": false
@@ -2890,29 +2878,13 @@
             {
                 "win": 0,
                 "lose": 0,
-                "name": "reborntag",
-                "faction": 6,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Maedhros",
-                "faction": 6,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
                 "name": "Rodigiz",
                 "faction": 7,
                 "handicap": 0,
                 "prisonnier": false
             },
             {
-                "win": 0,
+                "win": 1,
                 "lose": 0,
                 "name": "JeezPer",
                 "faction": 7,
@@ -2920,7 +2892,7 @@
                 "prisonnier": false
             },
             {
-                "win": 0,
+                "win": 1,
                 "lose": 0,
                 "name": "Berethor",
                 "faction": 7,
@@ -2974,6 +2946,14 @@
                 "faction": 3,
                 "handicap": 0,
                 "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Chabacks",
+                "faction": 3,
+                "handicap": 0,
+                "prisonnier": false
             }
         ],
         "adjacents": [
@@ -3008,7 +2988,32 @@
         "fight": "hidden",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20MONTS%20BRUMEUX/coeur%20moria%20wotr.zip",
         "citadel": "true",
-        "players": [],
+        "players": [
+            {
+                "win": 0,
+                "lose": 1,
+                "name": "Rui",
+                "faction": 7,
+                "handicap": 2,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Bax",
+                "faction": 7,
+                "handicap": 2,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Famassito",
+                "faction": 7,
+                "handicap": 2,
+                "prisonnier": false
+            }
+        ],
         "adjacents": [
             "Moria"
         ],
@@ -3029,54 +3034,6 @@
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ANGMAR/deserts%20du%20nord%20wotr.zip",
         "outpost": true,
         "players": [
-            {
-                "win": 1,
-                "lose": 0,
-                "name": "Raugorn",
-                "faction": 4,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 1,
-                "lose": 0,
-                "name": "Gimli",
-                "faction": 4,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 1,
-                "name": "Hoplite",
-                "faction": 4,
-                "handicap": 2,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 1,
-                "name": "TK",
-                "faction": 4,
-                "handicap": 2,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Lazarus",
-                "faction": 4,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Leitdorf",
-                "faction": 4,
-                "handicap": 0,
-                "prisonnier": false
-            },
             {
                 "win": 0,
                 "lose": 0,
@@ -3102,7 +3059,7 @@
                 "prisonnier": false
             },
             {
-                "win": 1,
+                "win": 2,
                 "lose": 0,
                 "name": "Lahkdar",
                 "faction": 8,
@@ -3110,7 +3067,7 @@
                 "prisonnier": false
             },
             {
-                "win": 1,
+                "win": 2,
                 "lose": 0,
                 "name": "Nasser_du_Nord",
                 "faction": 8,
@@ -3181,6 +3138,22 @@
                 "faction": 1,
                 "handicap": 0,
                 "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 1,
+                "name": "lijert",
+                "faction": 1,
+                "handicap": 2,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 1,
+                "name": "Ragzus",
+                "faction": 1,
+                "handicap": 2,
+                "prisonnier": false
             }
         ],
         "adjacents": [
@@ -3239,7 +3212,7 @@
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Porte_Moria.jpg",
         "map": 4,
         "name": "Porte Ouest de la Moria",
-        "color": "#ff6f00",
+        "color": "#ffffff",
         "fight": "inline",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20MONTS%20BRUMEUX/mur%20moria%20wotr.zip",
         "players": [
@@ -3256,22 +3229,6 @@
                 "lose": 0,
                 "name": "Orval",
                 "faction": 6,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Famassito",
-                "faction": 7,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Snow",
-                "faction": 7,
                 "handicap": 0,
                 "prisonnier": false
             }
@@ -3597,7 +3554,32 @@
         "fight": "hidden",
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20GONDOR/Minas%20Tirith%20Version%20Mordor%20wotr.zip",
         "citadel": "true",
-        "players": [],
+        "players": [
+            {
+                "win": 0,
+                "lose": 1,
+                "name": "Thieuthieu",
+                "faction": 3,
+                "handicap": 2,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 1,
+                "name": "Eternal",
+                "faction": 3,
+                "handicap": 2,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 1,
+                "name": "JLS",
+                "faction": 3,
+                "handicap": 2,
+                "prisonnier": false
+            }
+        ],
         "adjacents": [
             "Harlond",
             "Pelennor",
@@ -3772,23 +3754,7 @@
         "mapdl": "https://github.com/elrohir-bfme/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20GONDOR/nord%20ithilien%20wotr.zip",
         "players": [
             {
-                "win": 0,
-                "lose": 0,
-                "name": "Chabacks",
-                "faction": 3,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Thieuthieu",
-                "faction": 3,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 1,
+                "win": 2,
                 "lose": 0,
                 "name": "VeQzLétranger",
                 "faction": 5,
@@ -3835,6 +3801,22 @@
                 "win": 0,
                 "lose": 0,
                 "name": "Kastagneur",
+                "faction": 7,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Tsoutzi",
+                "faction": 7,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Fota1994",
                 "faction": 7,
                 "handicap": 0,
                 "prisonnier": false
@@ -4219,6 +4201,38 @@
                 "win": 0,
                 "lose": 0,
                 "name": "Comcombre",
+                "faction": 4,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 1,
+                "name": "Hoplite",
+                "faction": 4,
+                "handicap": 2,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 1,
+                "name": "TK",
+                "faction": 4,
+                "handicap": 2,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Lazarus",
+                "faction": 4,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Leitdorf",
                 "faction": 4,
                 "handicap": 0,
                 "prisonnier": false

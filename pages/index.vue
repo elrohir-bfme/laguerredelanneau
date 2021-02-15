@@ -7348,7 +7348,6 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
     },
     methods: {
       getInfo(e) {
-        console.log(e.target.id);
         this.title = e.target.id;
         this.region = e.target.getAttribute("aria-valuetext");
       },

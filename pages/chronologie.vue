@@ -35,6 +35,10 @@
         <p class="text-2xl text-center text-gray-200">Tour 4 (8 Février)</p>
         </div>
         <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/808424435261767700/unknown.png" alt="">
+        <div class="mx-auto mt-8 mb-4 w-full">
+        <p class="text-2xl text-center text-gray-200">Tour 5 (15 Février)</p>
+        </div>
+        <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/810891479161372712/unknown.png" alt="">
         
         
     </div>

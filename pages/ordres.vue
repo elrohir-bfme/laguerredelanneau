@@ -150,7 +150,7 @@ export default {
         }
         //Get data
         playerArray.forEach(element => {
-            data += `${element.name} ${element.code} ${document.getElementById(element.name + "arrive").value} ${element.handicap}\n`;
+            data += `${element.name} ${element.code} ${document.getElementById(element.name + "arrive").value}\n`;
         });
 
         this.addPlayer.forEach(element => {
@@ -184,7 +184,6 @@ export default {
         this.addPlayer.push({
             name: this.newPlayerName,
             region: "Nouveau_joueur",
-            handicap: 0,
             faction: this.selectedFaction,
         });
     },
@@ -377,8 +376,7 @@ export default {
                         "region": obj.name,
                         "code": key,
                         "adjacents":obj.adjacents,
-                        "faction":obj2[player]['faction'],
-                        "handicap":obj2[player]['handicap'],
+                        "faction":obj2[player]['faction']
                     };
                     switch (obj2[player]['faction']) {
                         case 1:

@@ -44,7 +44,7 @@
 		</div>
 		<div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 			<div class="h-full flex items-center bg-gray-900 hover:bg-gray-800  border-gray-800 hover:border-gray-700 border p-4 rounded-lg">
-			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/avatars/766002664747565086/99d4d985b2250042eecb8283a5c6db74.webp?size=1024">
+			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://tse3.mm.bing.net/th?id=OIP.GHUAZm1N56r4yniHgjLydwHaLb&pid=Api">
 			<div class="flex-grow">
 				<h2 class="text-white title-font font-medium">Saint Frollo Le Juste</h2>
 				<p class="text-gray-600">Morgoth qui veille sur GDA</p>
@@ -71,7 +71,7 @@
 		</div>
 		<div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 			<div class="h-full flex items-center bg-gray-900 hover:bg-gray-800 border-gray-800 hover:border-gray-700 border p-4 rounded-lg">
-			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/avatars/350948661045362688/b6ef4dd9d7043c7d8ded760a20e10d31.webp?size=1024">
+			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/attachments/646433288596226078/809014913754202132/dogaile.png">
 			<div class="flex-grow">
 				<h2 class="text-white title-font font-medium">Tothor</h2>
 				<p class="text-gray-600">La mascotte de la GDA</p>
@@ -82,7 +82,7 @@
 	</div>
 	<h3 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white text-center">Les règles de la Guerre de l'Anneau</h3>
 	<div class="videoWrapper">
-		<iframe src="https://drive.google.com/file/d/13aWx5efa-jhOTERVu2cREKwlWtuGZMHX/preview"></iframe>
+		<iframe src="https://drive.google.com/file/d/1wF5UgAA9WF8Xz_yZuiyntXJCX0XJEIuE/preview"></iframe>
 	</div>
   </div>
 </template>

@@ -42,7 +42,7 @@
 			</div>
 			</div>
 		</div>
-		<div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+		<!-- <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 			<div class="h-full flex items-center bg-gray-900 hover:bg-gray-800  border-gray-800 hover:border-gray-700 border p-4 rounded-lg">
 			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://tse3.mm.bing.net/th?id=OIP.GHUAZm1N56r4yniHgjLydwHaLb&pid=Api">
 			<div class="flex-grow">
@@ -50,7 +50,7 @@
 				<p class="text-gray-600">Morgoth qui veille sur GDA</p>
 			</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 			<div class="h-full flex items-center bg-gray-900 hover:bg-gray-800 border-gray-800 hover:border-gray-700 border p-4 rounded-lg">
 			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/avatars/178955618483175425/6bf773d864a3b5de5678d21e601a5674.webp?size=1024">
@@ -71,10 +71,19 @@
 		</div>
 		<div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 			<div class="h-full flex items-center bg-gray-900 hover:bg-gray-800 border-gray-800 hover:border-gray-700 border p-4 rounded-lg">
-			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/attachments/646433288596226078/809014913754202132/dogaile.png">
+			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/attachments/646433288596226078/813389259008376842/tothororomeavecuncor.jpg">
 			<div class="flex-grow">
 				<h2 class="text-white title-font font-medium">Tothor</h2>
 				<p class="text-gray-600">La mascotte de la GDA</p>
+			</div>
+			</div>
+		</div>
+		<div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+			<div class="h-full flex items-center bg-gray-900 hover:bg-gray-800 border-gray-800 hover:border-gray-700 border p-4 rounded-lg">
+			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/attachments/646838305702281236/813478162037473310/telechargement_2.jpg">
+			<div class="flex-grow">
+				<h2 class="text-white title-font font-medium">Toinou</h2>
+				<p class="text-gray-600">Notre incroyable mappeur</p>
 			</div>
 			</div>
 		</div>

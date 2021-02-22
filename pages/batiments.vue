@@ -18,7 +18,7 @@
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">Ecurie</h2>
                 <p class="text-base leading-relaxed mt-2">permet un déplacement rapide coûtant 300 points de
 ressources par joueur, et permettant le déplacement jusqu’à 3 territoires en
-partant de l’écurie.</p>
+partant de l’écurie qui leur appartient bien.</p>
                 <p class="text-indigo-500 inline-flex items-center mt-3">Prix : 1800</p>
                 </div>
             </div>
@@ -68,8 +68,9 @@ A : 1500, B : 1000, C : 650 et D : 300</p>
                 </div>
                 <div class="bg-gray-900 mt-4 px-4 pb-4 pt-1 rounded-lg">
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">La Prison</h2>
-                <p class="text-base leading-relaxed mt-2">permet d’emprisonner un joueur adverse à la suite d’une
-bataille que vous remportez, en dépensant 300 points de ressources. Le ou les
+                <p class="text-base leading-relaxed mt-2">Les joueurs qui ont combattu et perdu peuvent être fait prisonniers, 
+les joueurs avec un handicap, se trouvant sur la même map, peuvent aussi être capturés.
+Cela coutera 300 points de ressources. Le ou les
 prisonniers seront sous le contrôle d’un ou plusieurs joueurs de sa faction
 ennemie. Un ou deux prisonniers peuvent être fait par bataille, et à chaque
 tour. Si l'armée qui détient le prisonnier ne possède qu'un seul joueur, le prisonnier peut

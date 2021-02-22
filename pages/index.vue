@@ -4003,7 +4003,7 @@
           <path id="Shape-1548" data-name="Shape" class="epee-6"
             d="M3069.27,1028.72c-.09.15-.12.17-1,1a4.47,4.47,0,0,1-6.31,0l-16.79-16.79a4.48,4.48,0,0,1,0-6.32l.8-.78a1.09,1.09,0,0,1,.78-.33,1.11,1.11,0,0,1,.79.33l21.52,21.52a1.12,1.12,0,0,1,.17,1.36Z" />
         </g>
-        <g :class="map.Landes_Etten ? map.Landes_Etten.fight : 'hidden'" id="_010---Swords-87" data-name="010---Swords">
+        <g :class="map.Desert_Nord ? map.Desert_Nord.fight : 'hidden'" id="_010---Swords-87" data-name="010---Swords">
           <path id="Shape-1549" data-name="Shape" class="epee-2"
             d="M2662.34,867.56a3.24,3.24,0,0,0-2.28-1.13l-14.42-.79a3.27,3.27,0,0,0-3.43,3.43l.78,14.43a3.26,3.26,0,0,0,1.13,2.28l32.63,27.2,8.53-3.14.94-1.12,2.25-9.81Z" />
           <path id="Shape-1550" data-name="Shape" class="epee-2"
@@ -4040,7 +4040,7 @@
             d="M2688.47,943.75c-.11.21-.17.24-1.37,1.44a6.39,6.39,0,0,1-9,0l-24-24a6.39,6.39,0,0,1,0-9l1.13-1.12a1.56,1.56,0,0,1,2.25,0l30.77,30.78a1.57,1.57,0,0,1,.24,1.94Z" />
         </g>
 
-        <g :class="map.Desert_Nord ? map.Desert_Nord.fight : 'hidden'" id="_010---Swords-88" data-name="010---Swords">
+        <!-- <g :class="map.Desert_Nord ? map.Desert_Nord.fight : 'hidden'" id="_010---Swords-88" data-name="010---Swords">
           <path id="Shape-1567" data-name="Shape" class="epee-2"
             d="M2641.75,928.73a1.41,1.41,0,0,0-1-.49l-6.23-.34a1.43,1.43,0,0,0-1.07.41,1.42,1.42,0,0,0-.41,1.07l.34,6.23a1.39,1.39,0,0,0,.49,1l14.09,11.75,3.68-1.36.41-.48,1-4.24Z" />
           <path id="Shape-1568" data-name="Shape" class="epee-2"
@@ -4075,7 +4075,7 @@
             d="M2651.88,950.69a.71.71,0,0,1-.49-.21.68.68,0,0,1-.67.2.69.69,0,0,1-.3-1.17,1.41,1.41,0,0,1,1.95,0,.68.68,0,0,1,.15.75A.7.7,0,0,1,2651.88,950.69Z" />
           <path id="Shape-1584" data-name="Shape" class="epee-6"
             d="M2653,961.62c-.05.09-.08.11-.59.62a2.75,2.75,0,0,1-3.9,0l-10.36-10.36a2.75,2.75,0,0,1,0-3.9l.49-.48a.63.63,0,0,1,.48-.21.67.67,0,0,1,.49.21l13.28,13.28a.68.68,0,0,1,.11.84Z" />
-        </g>
+        </g> -->
         
         <g :class="map.Gundabad ? map.Gundabad.fight : 'hidden'" id="_010---Swords-88" data-name="010---Swords">
           <path id="Shape-1567" data-name="Shape" class="epee-2"

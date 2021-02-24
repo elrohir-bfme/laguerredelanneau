@@ -1,23 +1,14 @@
 # laguerredelanneau
 
-## Build Setup
+## Map intective based on the middle earth && battle for middle earth 2 & rotwk : War Of The Ring
 
-```bash
-# install dependencies
-$ npm install
+[Site Website] (https://laguerredelanneau.vercel.app/)
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+Site use : 
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-
-mettre `fight` en `inline` pour afficher l'épée sur la carte
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+[NuxtJS](https://nuxtjs.org/)
+[Tailwindcss](https://tailwindcss.com/)
+[Npoint](https://www.npoint.io/) : JSON storage bins
+that won't break your app
+[Discord](https://laterredumilieu.fr/Discord)
+[SVG](https://fr.wikipedia.org/wiki/Scalable_Vector_Graphics)

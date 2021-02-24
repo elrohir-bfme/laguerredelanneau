@@ -6,9 +6,11 @@
 
 Site use : 
 
-[NuxtJS](https://nuxtjs.org/)
-[Tailwindcss](https://tailwindcss.com/)
-[Npoint](https://www.npoint.io/) : JSON storage bins
+- [NuxtJS](https://nuxtjs.org/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Npoint](https://www.npoint.io/) : JSON storage bins
 that won't break your app
-[Discord](https://laterredumilieu.fr/Discord)
-[SVG](https://fr.wikipedia.org/wiki/Scalable_Vector_Graphics)
+- [Discord](https://laterredumilieu.fr/Discord)
+- [SVG](https://fr.wikipedia.org/wiki/Scalable_Vector_Graphics)
+
+**Elrohir at your service**

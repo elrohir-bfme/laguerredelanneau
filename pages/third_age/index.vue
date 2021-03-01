@@ -307,11 +307,35 @@
     },
     data() {
       return {
+        nbMap: 0,
         title: '',
         region: '',
+        bleu: 'hsl(202, 87%, 58%)',
         montagne: '#565656',
         contour: '#fff',
+        newStock: 'B7B8C4',
         map: [],
+        information: '',
+        isShowModal: false,
+        nbTerritoireRohan: 0,
+        nbTerritoireElfe: 0,
+        nbTerritoireGondor: 0,
+        nbTerritoireNain: 0,
+        nbTerritoireMordor: 0,
+        nbTerritoireIsengard: 0,
+        nbTerritoireGobelin: 0,
+        nbTerritoireAngmar: 0,
+
+        nbPlayerRohan: 0,
+        nbPlayerElfe: 0,
+        nbPlayerGondor: 0,
+        nbPlayerNain: 0,
+        nbPlayerMordor: 0,
+        nbPlayerIsengard: 0,
+        nbPlayerGobelin: 0,
+        nbPlayerAngmar: 0,
+
+        nbPlayers: 0,
 
         faction: null,
         loading: false
@@ -367,4 +391,118 @@
     fill-opacity: 0.2;
     fill: rgb(44, 44, 219);
   }
+
+
+
+  .epee-1 {
+    fill: #fff;
+  }
+
+  .epee-2 {
+    fill: #a5a5a4;
+  }
+
+  .epee-3 {
+    fill: #a56a43;
+  }
+
+  .epee-4 {
+    fill: #f0c419;
+  }
+
+  .epee-5 {
+    fill: #7f8284;
+  }
+
+  .epee-6 {
+    fill: #f3d55b;
+  }
+
+  .epee-7 {
+    fill: #d1d4d1;
+  }
+
+  .epee-8 {
+    fill: #f29c1f;
+  }
+
+  .regiontext {
+    bottom: 1.6em;
+    /* left: 2em; */
+    /* padding-left: 80px; */
+    /* padding-right: 80px; */
+    margin-left: 18%;
+    margin-right: 100;
+    text-align: center;
+  }
+
+  .regionimg {
+    left: 3em;
+    top: 26px;
+  }
+
+  .st opacity-05 {
+    fill: #fff031;
+  }
+
+  .st opacity-06 {
+    fill: #dbdbdb;
+  }
+
+  .st opacity-07 {
+    fill: #f2f2f2;
+  }
+
+  .st opacity-08 {
+    fill: #883f2e;
+  }
+
+  .st opacity-09 {
+    fill: #6d3326;
+  }
+
+  .cls-20 {
+    fill: #4c4c4c;
+  }
+
+  .cls-21 {
+    fill: #474747;
+  }
+
+  .cls-22 {
+    fill: #2097ef;
+  }
+
+  .cls-23 {
+    fill: #5eb8ef;
+  }
+
+
+  .build-19 {
+    fill: #78a9bd;
+  }
+
+  .build-20 {
+    fill: #2e2213;
+  }
+
+  .build-21 {
+    fill: #b5aead;
+    stroke: #2e2213;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+  }
+
+  .build-22 {
+    fill: #2e1313;
+  }
+
+  .build-23 {
+    fill: #8e8b86;
+  }
+
+  .rounded-bfme {
+    border-radius: 3.5rem;
+  }
+
 </style>

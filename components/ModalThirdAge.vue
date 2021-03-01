@@ -222,7 +222,7 @@ export default {
     },
   },
   async fetch() {
-	  this.data = await this.$http.$get(`https://api.npoint.io/80919cb818df3a72e26c/${this.region}`)
+	  this.data = await this.$http.$get(`https://api.npoint.io/c89259a87a65703e995f/${this.region}`)
 	}
 }
 </script>

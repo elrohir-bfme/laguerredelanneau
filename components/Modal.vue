@@ -250,8 +250,8 @@ export default {
     },
   },
   async fetch() {
-	  // this.data = await this.$http.$get(`https://api.npoint.io/38a2899b98818d89418c/${this.region}`)
-	  this.data = await this.$http.$get(`https://api.npoint.io/a982d740a3c6fa4e6847/${this.region}`) // API TEST
+	  this.data = await this.$http.$get(`https://api.npoint.io/38a2899b98818d89418c/${this.region}`)
+	  // this.data = await this.$http.$get(`https://api.npoint.io/a982d740a3c6fa4e6847/${this.region}`) // API TEST
 	}
 }
 </script>

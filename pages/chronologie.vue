@@ -47,6 +47,10 @@
         <p class="text-2xl text-center text-gray-200">Tour 7 (1 Mars)</p>
         </div>
         <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/815942210960228352/unknown.png" alt="">
+        <div class="mx-auto mt-8 mb-4 w-full">
+        <p class="text-2xl text-center text-gray-200">Tour 8 (8 Mars)</p>
+        </div>
+        <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/818468549344624681/unknown.png" alt="">
         
         
         

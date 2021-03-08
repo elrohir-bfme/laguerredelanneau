@@ -7,7 +7,7 @@
         :start-label="`Le Tour ${data.tour} commence  dans `"
         :end-label="`Le Tour ${data.tour} finit  dans `"
         label-position="begin"
-        :end-text="'Prochain tour en préparation'"
+        :end-text="`Tour ${data.tour + 1} en préparation`"
         :day-txt="'jours'"
         :hour-txt="'heures'"
         :minutes-txt="'minutes'"

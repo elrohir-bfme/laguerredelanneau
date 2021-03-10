@@ -1,18 +1,10 @@
 <template>
-    <!-- <div class="bottom-0 left-0 relative" >
-        <img class="relative z-50 transform scale-125 w-40 h-40 right-10" :src="map[region] ? map[region].img : 'https://wallup.net/wp-content/uploads/2018/09/28/960672-art-artwork-fantasy-artistic-original-lord-rings-lotr.jpg'">
-        <div class="relative regiontext">
-            <p class="text-center text-yellow-500">KOK</p>
-        </div>
-        <img class="absolute top-0 left-0 z-40" src="~assets/palantir.png">
-    </div> -->
     <div class="fixed left-0 bottom-0 text-white text-center">
         <div class="pngcontainer1">
             <img id="region_img" :src="map[region] ? map[region].img : 'https://wallup.net/wp-content/uploads/2018/09/28/960672-art-artwork-fantasy-artistic-original-lord-rings-lotr.jpg'" />
             <img id="region_bg" src="~assets/bg.jpg" />
             <img id="region_faction" :src="map[region] ? `https://laguerredelanneau.vercel.app/factions/${factions(map[region].color)}` : '~assets/factions/isengard.png'" />  
             <img src="~assets/palantir.png" />
-            <!-- <p id="region_name">{{map[region] ? map[region].name : "Région inconnu"}}</p> -->
             <p id="region_player"> {{map[region] ? map[region].map ? `Map ${map[region].map} Joueurs` : "" : ""}}</p>
             <div id="region_txt">
                     <p id="region_name">{{map[region] ? map[region].name : "Région inconnu"}}</p>
@@ -151,5 +143,10 @@ export default {
     z-index: 117;
     word-break: break-word;
     text-align: center;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
 }
 </style>

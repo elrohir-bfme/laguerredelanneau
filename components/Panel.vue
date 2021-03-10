@@ -30,10 +30,20 @@
         <!-- </div> -->
 
 
-        <div v-if="map[region].players && map[region].players.length > 0" class="px-6 py-4 flex flex-wrap pngcontainer1">
+        <!-- <div v-if="map[region].players && map[region].players.length > 0" class="px-6 py-4 flex flex-wrap pngcontainer1">
             <div class="mx-auto m-2" v-for="player in map[region].players" :key="player.name">
                 <p>{{player.name}}</p> 
                 <img class="w-4 h-4 inline-block" src="~assets/panel/player.png">
+            </div>
+        </div> -->
+        <div class="grid-container">
+            <div class="Territoire">Territoire</div>
+            <div class="Armée"><button @click="addRow">Add row</button></div>
+            <div class="Structure">Structure</div>
+            <div class="Players"> 
+                <div class="flex-container">
+                        <button v-for="(input, index) in inputs" :key="index" @click="deleteRow(index)">{{input}}</button>
+                </div> 
             </div>
         </div>
     </div>
@@ -52,6 +62,20 @@ export default {
             required: true
         },
     },
+    data() {
+        return {
+            inputs: []
+        }
+    },
+    methods: {
+        addRow() {
+            console.log(this.inputs)
+            this.inputs.push("ELEMENT")
+        },
+        deleteRow(index) {
+            this.inputs.splice(index,1)
+        }
+    }
 };
 </script>
 
@@ -61,8 +85,7 @@ export default {
     position: fixed;
     left: 21%;
     bottom: 0%;
-    width: 50px;
-    background-color: aquamarine;
+    /* width: 50px; */
 }
 
 .pngcontainer1, .pngcontainer1 img {
@@ -100,5 +123,32 @@ export default {
   grid-row-start: 3;
   grid-row-end: 5;
 }
+
+.grid-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.8fr 1.2fr;
+    gap: 12px 20px;
+    grid-template-areas:
+        "Territoire Armée Structure"
+        "Players Players Players"
+        "Players Players Players";
+}
+.Territoire { grid-area: Territoire; background-color: rgb(45, 75, 65); }
+.Armée { grid-area: Armée; background-color: blue; }
+.Structure { grid-area: Structure; background-color: burlywood; }
+.Players { grid-area: Players; background-color: blueviolet; }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+
 
 </style>

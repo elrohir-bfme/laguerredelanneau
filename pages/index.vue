@@ -6819,6 +6819,9 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         </div>
       </div>
 
+      <Hud v-if="!loading" :map="map" :region="region" />
+      <!-- <Panel v-if="!loading" :map="map" :region="region" /> -->
+
       <br><br>
 
 

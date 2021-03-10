@@ -26,15 +26,6 @@
 		</div>
 		<div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 			<div class="h-full flex items-center bg-gray-900 hover:bg-gray-800 border-gray-800 hover:border-gray-700 border p-4 rounded-lg">
-			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/avatars/306911845913198594/a1a43b20574be1f1216dd284d73e5034.webp?size=1024">
-			<div class="flex-grow">
-				<h2 class="text-white title-font font-medium">Kado</h2>
-				<p class="text-gray-600">Vala de la GDA (Rédacteur des règles)</p>
-			</div>
-			</div>
-		</div>
-		<div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-			<div class="h-full flex items-center bg-gray-900 hover:bg-gray-800 border-gray-800 hover:border-gray-700 border p-4 rounded-lg">
 			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/avatars/535135573757657101/89402e4256ce366f091c4d74860eec03.webp?size=1024">
 			<div class="flex-grow">
 				<h2 class="text-white title-font font-medium">Aragornanus</h2>

@@ -41,9 +41,9 @@
             <div class="Armée"><button @click="addRow">Add row</button></div>
             <div class="Structure">Structure</div>
             <div class="Players"> 
-                <div class="flex-container">
-                        <button v-for="(input, index) in inputs" :key="index" @click="deleteRow(index)">{{input}}</button>
-                </div> 
+                <!-- <div class="flex-container">
+                        <button class="test" v-for="(input, index) in inputs" :key="index" @click="deleteRow(index)">{{input}}</button>
+                </div>  -->
             </div>
         </div>
     </div>
@@ -127,18 +127,41 @@ export default {
 .grid-container {
     text-align: center;
     display: grid;
+    
+    background: url('~assets/panel/test.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.8fr 1.2fr;
     gap: 12px 20px;
+    padding: 40px 0px 40px 0px;
+    color: aqua;
     grid-template-areas:
         "Territoire Armée Structure"
         "Players Players Players"
         "Players Players Players";
 }
-.Territoire { grid-area: Territoire; background-color: rgb(45, 75, 65); }
-.Armée { grid-area: Armée; background-color: blue; }
-.Structure { grid-area: Structure; background-color: burlywood; }
-.Players { grid-area: Players; background-color: blueviolet; }
+
+.Territoire { 
+    grid-area: Territoire; 
+    /* background-color: rgb(45, 75, 65);  */
+}
+
+.Armée { 
+    grid-area: Armée; 
+    /* background-color: blue;  */
+    
+}
+
+.Structure { 
+    grid-area: Structure; 
+    /* background-color: burlywood;  */
+}
+
+.Players { 
+    grid-area: Players; 
+    /* background-color: blueviolet;  */
+}
 
 .flex-container {
   display: flex;
@@ -149,6 +172,11 @@ export default {
   align-content: flex-start;
 }
 
+.test {
+    background: url('~assets/panel/player.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 </style>

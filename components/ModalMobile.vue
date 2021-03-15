@@ -1,12 +1,7 @@
 <template>
-<div
-  class="fixed bottom-0 inset-x-0 px-4 pb-4 sm:inset-0  sm:items-center sm:justify-center"
+<div v-if="map[region]"
+  class="items-center justify-center"
 >
-  <div class="fixed inset-0 transition-opacity" @click="handleClose" >
-    <div
-      class="absolute inset-0 bg-gray-500 opacity-25"
-    ></div>
-  </div>
   <div
     class="z-40 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all"
     role="dialog"
@@ -15,8 +10,8 @@
   >
     <div class="max-w-lg rounded overflow-hidden shadow-lg">
       <div class="relative">
-        <img v-if="map[region]" class="w-full" :src="map[region].img">
-        <div v-if="map[region] && map[region]" style="top: 0.45em; left: 0.45em" class="absolute bg-gray-700 hover:bg-gray-800 text-white font-bold py-1 px-2 rounded-full">
+        <img class="w-full" :src="map[region] ? map[region].img : ''">
+        <div v-if="map[region]" style="top: 0.45em; left: 0.45em" class="absolute bg-gray-700 hover:bg-gray-800 text-white font-bold py-1 px-2 rounded-full">
           Map {{map[region].map}} Joueurs
         </div>
         <!-- <div v-if="data.map" style="top: 0.45em; right: 0.45em" class="absolute bg-gray-700 hover:bg-gray-800 text-yellow-600 font-bold py-1 px-2 rounded-full">
@@ -28,31 +23,31 @@
       </div>
       <div class="px-6 py-4">
         <div class="flex justify-between font-bold text-xl mb-2">
-          <div v-if="map[region]">
-            <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded" @click="copyId()">{{map[region].name}}</p>
+          <div>
+            <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded" @click="copyId()">{{map[region] ? map[region].name : ''}}</p>
           </div>
-          <div v-if="map[region] && map[region].citadel">
+          <div v-if="map[region] ? map[region].citadel : ''">
             <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded text-base tooltip">Capital
               <span class='tooltip-text bg-blue-200 p-3 -mt-16 -ml-48 rounded'>Rapportent 150 points de ressources par tour ! <br>Possède 3 emplacements de constructions</span> 
             </p>
           </div>
-          <div v-if="map[region] && map[region].fortress">
+          <div v-if="map[region] ? map[region].fortress : ''">
             <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded text-base tooltip">Forteresse
               <span class='tooltip-text bg-blue-200 p-3 -mt-16 -ml-48 rounded'>Rapportent 150 points de ressources par tour ! <br>Possède 3 emplacements de constructions</span> 
             </p>
           </div>
-          <div v-if="map[region] && map[region].outpost">
+          <div v-if="map[region] ? map[region].outpost : ''">
             <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded text-base tooltip">Avant-Postes
               <span class='tooltip-text bg-blue-200 p-3 -mt-16 -ml-48 rounded'>Rapportent 250 points de ressources par tour ! <br>Débloque un emplacement de construction</span>  
             </p> 
           </div>
-          <div v-if="map[region] && map[region].foundation">
+          <div v-if="map[region] ? map[region].foundation : ''">
             <p class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded text-base tooltip">Fondation
               <span class='tooltip-text bg-blue-200 p-3 -mt-16 -ml-48 rounded'>Débloque 2 emplacements de constructions</span>  
             </p> 
           </div>
-          <div>
-            <a v-if="map[region] && map[region].mapdl" target="_blank" :href="map[region].mapdl" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded inline-flex items-center text-sm">
+          <div class="">
+            <a v-if="map[region] ? map[region].mapdl : ''" target="_blank" :href="map[region].mapdl" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 ml-2 px-4 rounded inline-flex items-center text-sm">
               <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
               <span>Télécharger la carte</span>
             </a>
@@ -206,11 +201,11 @@
           </div>
         
       </div>
-      <div v-else class="px-6 py-4">
-        <span v-if="data.name == 'passage infranchissable' || data.name == 'Tol Fuin' || data.name == 'La Mer de Forochel' 
-        || data.name == 'Mer Himling' || data.name == 'La Mer des Havres Gris' || data.name == 'La Mer de Minhiriath' 
-        || data.name == 'Belegaer' || data.name == 'Mer Enedwaith' || data.name == 'Mer Andrast' || data.name == 'Mer de Dol Amroth' 
-        || data.name == 'Mer de Tolfalas' || data.name == 'Mer Umbar' || data.name == 'Mer de Pelargir' || data.name == 'Mur'"></span>
+      <div v-if="map[region]" class="px-6 py-4">
+        <span v-if="map[region].name == 'passage infranchissable' || map[region].name == 'Tol Fuin' || map[region].name == 'La Mer de Forochel' 
+        || map[region].name == 'Mer Himling' || map[region].name == 'La Mer des Havres Gris' || map[region].name == 'La Mer de Minhiriath' 
+        || map[region].name == 'Belegaer' || map[region].name == 'Mer Enedwaith' || map[region].name == 'Mer Andrast' || map[region].name == 'Mer de Dol Amroth' 
+        || map[region].name == 'Mer de Tolfalas' || map[region].name == 'Mer Umbar' || map[region].name == 'Mer de Pelargir' || data.name == 'Mur'"></span>
         <span v-else class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">Aucun joueur est dans la région !</span>
       </div>
     </div>
@@ -227,12 +222,6 @@ export default {
     }
   },
   methods: {
-      handleClose() {
-        this.$emit("close");
-      },
-      copyId() {
-        navigator.clipboard.writeText(this.region)
-      },
       updatePlayer(name){
         return name.replace(/_/g, " ");
       }

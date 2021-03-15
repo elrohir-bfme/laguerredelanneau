@@ -8,7 +8,7 @@
 		<div class="flex flex-wrap -m-2">
 		<div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 			<div class="h-full flex items-center bg-gray-900 hover:bg-gray-800 border-gray-800 hover:border-gray-700 border p-4 rounded-lg">
-			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/avatars/112686100199305216/b86088a5f07553298530d92bfd2e13f5.webp?size=1024">
+			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://i.pinimg.com/736x/f3/be/f8/f3bef8292b9159e55e18383f13b94e10.jpg">
 			<div class="flex-grow">
 				<h2 class="text-white title-font font-medium">Orval</h2>
 				<p class="text-gray-600">Notre Manwë de la GDA</p>
@@ -17,7 +17,7 @@
 		</div>
 		<div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 			<div class="h-full flex items-center bg-gray-900 hover:bg-gray-800 border-gray-800 hover:border-gray-700 border p-4 rounded-lg">
-			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/avatars/443043711639748608/7f87848a57618e51b51d9f8ab2687ca4.webp?size=1024">
+			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://em.wattpad.com/ff9ecbd90b9ddad801e4494d0171da715eac9d65/687474703a2f2f7374617469632e636f6d696376696e652e636f6d2f75706c6f6164732f6f726967696e616c2f31313131382f3131313138343037382f343737343130392d393836353038313338352d74686f722e2e6a7067?s=fit&h=360&w=360&q=80">
 			<div class="flex-grow">
 				<h2 class="text-white title-font font-medium">Hasgardien</h2>
 				<p class="text-gray-600">Vala de la GDA (Rédacteur des règles)</p>
@@ -33,15 +33,15 @@
 			</div>
 			</div>
 		</div>
-		<!-- <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+		<div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 			<div class="h-full flex items-center bg-gray-900 hover:bg-gray-800  border-gray-800 hover:border-gray-700 border p-4 rounded-lg">
-			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://tse3.mm.bing.net/th?id=OIP.GHUAZm1N56r4yniHgjLydwHaLb&pid=Api">
+			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/avatars/219909217996374017/f2c9544e4e030669e9eabab315728b2d.png?size=128">
 			<div class="flex-grow">
-				<h2 class="text-white title-font font-medium">Saint Frollo Le Juste</h2>
-				<p class="text-gray-600">Morgoth qui veille sur GDA</p>
+				<h2 class="text-white title-font font-medium">Dudu</h2>
+				<p class="text-gray-600">Mappeur de la GDA</p>
 			</div>
 			</div>
-		</div> -->
+		</div>
 		<div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 			<div class="h-full flex items-center bg-gray-900 hover:bg-gray-800 border-gray-800 hover:border-gray-700 border p-4 rounded-lg">
 			<img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://cdn.discordapp.com/avatars/178955618483175425/6bf773d864a3b5de5678d21e601a5674.webp?size=1024">

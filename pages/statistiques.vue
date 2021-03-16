@@ -265,7 +265,6 @@ export default {
                 let newPlayer = {}
                 if(obj2[player]['lose'] > 0 || obj2[player]['win'] > 0)
                   {
-                    console.log(Math.round(obj2[player]['win']/ (obj2[player]['lose']+ obj2[player]['win']) * 100))
                     newPlayer = {
                         "nom": obj2[player]['name'],
                         "faction": faction,

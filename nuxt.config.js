@@ -48,10 +48,7 @@ export default {
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
-  ],
+  buildModules: ['@nuxtjs/tailwindcss', '@nuxt/postcss8'],
   /*
   ** Nuxt.js modules
   */
@@ -100,5 +97,10 @@ export default {
       lang: 'fr',
       useWebmanifestExtension: false,
     }
+  },
+
+  tailwindcss: {
+    jit: true,
+    viewer: true
   }
 }

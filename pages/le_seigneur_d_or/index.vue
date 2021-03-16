@@ -2847,7 +2847,6 @@ export default {
   },
 	methods: {
 		getInfo(e) {
-			console.log(e.target.id);
 			this.title = e.target.id;
 			this.region = e.target.getAttribute("aria-valuetext");
 		},

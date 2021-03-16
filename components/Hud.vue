@@ -3,7 +3,7 @@
         <div class="pngcontainer1">
             <img id="region_img" :src="map[region] ? map[region].img : 'https://wallup.net/wp-content/uploads/2018/09/28/960672-art-artwork-fantasy-artistic-original-lord-rings-lotr.jpg'" />
             <img id="region_bg" src="~assets/bg.jpg" />
-            <img id="region_faction" :src="map[region] ? `https://laguerredelanneau.vercel.app/factions/${factions(map[region].color)}` : '~assets/factions/isengard.png'" />  
+            <img v-if="map[region]" id="region_faction" :src="`https://laguerredelanneau.vercel.app/factions/${factions(map[region].color)}`"/>  
             <img src="~assets/palantir.png" />
             <p id="region_player"> {{map[region] ? map[region].map ? `Map ${map[region].map} Joueurs` : "" : ""}}</p>
             <div id="region_txt">
@@ -23,12 +23,12 @@ export default {
         },
         region: {
             type: String,
-            required: true
+            required: true,
+            default: "montagne"
         },
     },
     methods: {
         factions(color) {
-            console.log(color)
             let faction = "";
             switch (color) {
                 case '#0bff00':
@@ -74,7 +74,6 @@ export default {
                     faction = "bg.jpg"
                 break;
           }
-          console.log(faction)
           return faction;
         }
     }

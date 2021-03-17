@@ -2640,42 +2640,6 @@
             d="M3500.6,2814.83c-.06.11-.09.13-.75.79a3.52,3.52,0,0,1-5,0l-13.22-13.23a3.5,3.5,0,0,1,0-5l.62-.62a.87.87,0,0,1,1.24,0l16.95,16.95a.88.88,0,0,1,.13,1.08Z"
             class="epee-6"></path>
         </g>
-        <!-- <g :class="map.Cair_Andros ? map.Cair_Andros.fight : 'hidden'" id="_010---Swords-50" data-name="010---Swords">
-          <path id="Shape-883" data-name="Shape" class="epee-2"
-            d="M3504.94,2792.5a2.39,2.39,0,0,0-1.65-.82l-10.46-.56a2.34,2.34,0,0,0-1.8.69,2.38,2.38,0,0,0-.69,1.79l.57,10.46a2.38,2.38,0,0,0,.82,1.66l23.66,19.72,6.19-2.28.68-.81,1.63-7.11Z" />
-          <path id="Shape-884" data-name="Shape" class="epee-2"
-            d="M3532.4,2825.44c-7.19,3.13-5.92,2.48-7,3.37l-1.49,3.71,7.6,6.34,4-1.47,2.63-5.12Z" />
-          <path id="Shape-885" data-name="Shape" class="epee-3"
-            d="M3548.34,2852.43l-11.07-9.47,1.39-3.13,3.52-1.79,9.48,11.07Z" />
-          <path id="Shape-886" data-name="Shape" class="epee-4"
-            d="M3548.84,2831.39l-17.42,17.41a4.62,4.62,0,0,1-6.53,0c-.95-1-.92-.9-1-1a1.14,1.14,0,0,0,0-1.18c.12-.19-1.43,1.36,22.49-22.56a1.18,1.18,0,0,1,1.65,0l.81.82a4.62,4.62,0,0,1,0,6.55Z" />
-          <path id="Shape-887" data-name="Shape" class="epee-4"
-            d="M3556.09,2856.87a4.63,4.63,0,1,1,0-6.55A4.63,4.63,0,0,1,3556.09,2856.87Z" />
-          <path id="Shape-888" data-name="Shape" class="epee-5"
-            d="M3523.89,2815.24l-4.28,5.15L3491,2791.81a2.29,2.29,0,0,1,1.8-.69l10.46.56a2.39,2.39,0,0,1,1.65.82Z" />
-          <path id="Shape-889" data-name="Shape" class="epee-5" d="M3538.09,2832.27l-3.3,3.3-6.61-6.61,4.22-3.52Z" />
-          <path id="Shape-890" data-name="Shape" class="epee-2" d="M3534.81,2835.59l0,0" />
-          <path id="Shape-891" data-name="Shape" class="epee-6"
-            d="M3555.61,2854.07a2.31,2.31,0,1,1,0-3.27A2.32,2.32,0,0,1,3555.61,2854.07Z" />
-          <path id="Shape-892" data-name="Shape" class="epee-7"
-            d="M3527.36,2829.63c.81-.66,5.73-4.77,28.69-23.91a2.39,2.39,0,0,0,.83-1.66l.56-10.44a2.37,2.37,0,0,0-2.48-2.49l-10.45.55a2.36,2.36,0,0,0-1.67.84c-31.74,38.06-21.91,26.3-23.91,28.68Z" />
-          <path id="Shape-893" data-name="Shape" class="epee-2"
-            d="M3557.44,2793.62l-.56,10.44a2.39,2.39,0,0,1-.83,1.66c-22.81,19-27.89,23.26-28.69,23.91v-8.43l29.39-29.39A2.34,2.34,0,0,1,3557.44,2793.62Z" />
-          <path id="Shape-894" data-name="Shape" class="epee-3"
-            d="M3496.13,2849.11l9.47-11.07,3.09,1.93,1.83,3-11.07,9.47Z" />
-          <path id="Shape-895" data-name="Shape" class="epee-4"
-            d="M3498.24,2856.87a4.63,4.63,0,1,1,0-6.55A4.63,4.63,0,0,1,3498.24,2856.87Z" />
-          <path id="Shape-896" data-name="Shape" class="epee-6"
-            d="M3497.76,2854.07a2.31,2.31,0,1,1,0-3.27A2.32,2.32,0,0,1,3497.76,2854.07Z" />
-          <path id="Shape-897" data-name="Shape" class="epee-4"
-            d="M3527.36,2821.2v8.43l-11.07,9.23-5.12-1.47-1.47-5.12,9.23-11.07Z" />
-          <path id="Shape-898" data-name="Shape" class="epee-8"
-            d="M3513,2836.75a1.15,1.15,0,0,1-.82-2l7.36-7.37a1.15,1.15,0,0,1,0-1.63c1.39-1.39,3.39,1.52,1.64,3.27l-7.36,7.36a1.15,1.15,0,0,1-.82.34Z" />
-          <path id="Shape-899" data-name="Shape" class="epee-8"
-            d="M3522,2829.39a1.13,1.13,0,0,1-.82-.34,1.17,1.17,0,0,1-1.13.33,1.19,1.19,0,0,1-.84-.83,1.18,1.18,0,0,1,.33-1.14,2.39,2.39,0,0,1,3.28,0,1.16,1.16,0,0,1-.82,2Z" />
-          <path id="Shape-900" data-name="Shape" class="epee-6"
-            d="M3523.89,2847.76c-.08.15-.12.17-1,1a4.64,4.64,0,0,1-6.54,0L3499,2831.39a4.63,4.63,0,0,1,0-6.55l.82-.81a1.12,1.12,0,0,1,1.63,0l22.32,22.32a1.16,1.16,0,0,1,.17,1.41Z" />
-        </g> -->
         <g :class="map.Foret_Druadan ? map.Foret_Druadan.fight : 'hidden'" id="_010---Swords-51"
           data-name="010---Swords">
           <path id="Shape-901" data-name="Shape" class="epee-2"
@@ -4042,43 +4006,6 @@
           <path id="Shape-1566" data-name="Shape" class="epee-6"
             d="M2688.47,943.75c-.11.21-.17.24-1.37,1.44a6.39,6.39,0,0,1-9,0l-24-24a6.39,6.39,0,0,1,0-9l1.13-1.12a1.56,1.56,0,0,1,2.25,0l30.77,30.78a1.57,1.57,0,0,1,.24,1.94Z" />
         </g>
-
-        <!-- <g :class="map.Desert_Nord ? map.Desert_Nord.fight : 'hidden'" id="_010---Swords-88" data-name="010---Swords">
-          <path id="Shape-1567" data-name="Shape" class="epee-2"
-            d="M2641.75,928.73a1.41,1.41,0,0,0-1-.49l-6.23-.34a1.43,1.43,0,0,0-1.07.41,1.42,1.42,0,0,0-.41,1.07l.34,6.23a1.39,1.39,0,0,0,.49,1l14.09,11.75,3.68-1.36.41-.48,1-4.24Z" />
-          <path id="Shape-1568" data-name="Shape" class="epee-2"
-            d="M2658.09,948.34c-4.28,1.86-3.52,1.47-4.17,2l-.89,2.21,4.52,3.78,2.37-.88,1.56-3Z" />
-          <path id="Shape-1569" data-name="Shape" class="epee-3"
-            d="M2667.58,964.41l-6.59-5.64.83-1.87,2.1-1.06,5.64,6.59Z" />
-          <path id="Shape-1570" data-name="Shape" class="epee-4"
-            d="M2667.88,951.88l-10.37,10.36a2.74,2.74,0,0,1-3.89,0c-.56-.56-.54-.53-.59-.62a.68.68,0,0,0,0-.7c.07-.11-.85.81,13.39-13.43a.69.69,0,0,1,1,0l.48.49a2.75,2.75,0,0,1,0,3.9Z" />
-          <path id="Shape-1571" data-name="Shape" class="epee-4"
-            d="M2672.2,967.05a2.76,2.76,0,1,1,0-3.9A2.76,2.76,0,0,1,2672.2,967.05Z" />
-          <path id="Shape-1572" data-name="Shape" class="epee-5"
-            d="M2653,942.26l-2.55,3.07-17-17a1.31,1.31,0,0,1,1.06-.41l6.23.34a1.41,1.41,0,0,1,1,.49Z" />
-          <path id="Shape-1573" data-name="Shape" class="epee-5" d="M2661.48,952.4l-2,2-3.94-3.93,2.51-2.09Z" />
-          <path id="Shape-1574" data-name="Shape" class="epee-2" d="M2659.53,954.38v0" />
-          <path id="Shape-1575" data-name="Shape" class="epee-6"
-            d="M2671.91,965.38a1.38,1.38,0,1,1-1.94-2,1.38,1.38,0,0,1,1.94,2Z" />
-          <path id="Shape-1576" data-name="Shape" class="epee-7"
-            d="M2655.09,950.83c.49-.39,3.42-2.84,17.09-14.24a1.43,1.43,0,0,0,.49-1l.33-6.22a1.41,1.41,0,0,0-1.48-1.48l-6.22.33a1.41,1.41,0,0,0-1,.49c-18.9,22.67-13,15.66-14.24,17.08Z" />
-          <path id="Shape-1577" data-name="Shape" class="epee-2"
-            d="M2673,929.39l-.33,6.22a1.43,1.43,0,0,1-.49,1c-13.58,11.33-16.61,13.85-17.09,14.24v-5l17.5-17.5A1.37,1.37,0,0,1,2673,929.39Z" />
-          <path id="Shape-1578" data-name="Shape" class="epee-3"
-            d="M2636.5,962.43l5.64-6.59L2644,957l1.1,1.78-6.6,5.64Z" />
-          <path id="Shape-1579" data-name="Shape" class="epee-4"
-            d="M2637.76,967.05a2.76,2.76,0,1,1,0-3.9A2.76,2.76,0,0,1,2637.76,967.05Z" />
-          <path id="Shape-1580" data-name="Shape" class="epee-6"
-            d="M2637.47,965.38a1.38,1.38,0,0,1-1.95,0,1.38,1.38,0,0,1,1.95-2A1.38,1.38,0,0,1,2637.47,965.38Z" />
-          <path id="Shape-1581" data-name="Shape" class="epee-4"
-            d="M2655.09,945.81v5l-6.59,5.5-3.05-.88-.87-3,5.49-6.59Z" />
-          <path id="Shape-1582" data-name="Shape" class="epee-8"
-            d="M2646.52,955.07a.69.69,0,0,1-.48-1.18l4.38-4.38a.68.68,0,0,1,0-1c.83-.83,2,.9,1,2l-4.38,4.38a.68.68,0,0,1-.49.2Z" />
-          <path id="Shape-1583" data-name="Shape" class="epee-8"
-            d="M2651.88,950.69a.71.71,0,0,1-.49-.21.68.68,0,0,1-.67.2.69.69,0,0,1-.3-1.17,1.41,1.41,0,0,1,1.95,0,.68.68,0,0,1,.15.75A.7.7,0,0,1,2651.88,950.69Z" />
-          <path id="Shape-1584" data-name="Shape" class="epee-6"
-            d="M2653,961.62c-.05.09-.08.11-.59.62a2.75,2.75,0,0,1-3.9,0l-10.36-10.36a2.75,2.75,0,0,1,0-3.9l.49-.48a.63.63,0,0,1,.48-.21.67.67,0,0,1,.49.21l13.28,13.28a.68.68,0,0,1,.11.84Z" />
-        </g> -->
         
         <g :class="map.Gundabad ? map.Gundabad.fight : 'hidden'" id="_010---Swords-88" data-name="010---Swords">
           <path id="Shape-1567" data-name="Shape" class="epee-2"
@@ -6890,11 +6817,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                 </svg></span>
             </li>
           </ul>
-          <ul v-if="faction.rohan.win && action.rohan.loose" class="flex flex-row mt-4 space-x-1">
+          <!-- <ul v-if="faction.rohan.win && action.rohan.loose" class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-green-700 uppercase px-4 py-1 text-xs mr-1">
                 {{faction.rohan.win}}/{{faction.rohan.loose}} ({{Math.round(faction.rohan.win/(faction.rohan.win+faction.rohan.loose)*100)}} % de Victoires)
               </span>
-          </ul>
+          </ul> -->
         </div>
 
         <div
@@ -6947,11 +6874,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                 </svg></span>
             </li>
           </ul>
-          <ul class="flex flex-row mt-4 space-x-1">
+          <!-- <ul class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-teal-700 uppercase px-4 py-1 text-xs mr-1">
                 {{faction.elfe.win}}/{{faction.elfe.loose}} ({{Math.round(faction.elfe.win/(faction.elfe.win+faction.elfe.loose)*100)}} % de Victoires)
               </span>
-          </ul>
+          </ul> -->
         </div>
 
         <div
@@ -7004,11 +6931,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                 </svg></span>
             </li>
           </ul>
-          <ul class="flex flex-row mt-4 space-x-1">
+          <!-- <ul class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-blue-700 uppercase px-4 py-1 text-xs mr-1">
                 {{faction.gondor.win}}/{{faction.gondor.loose}} ({{Math.round(faction.gondor.win/(faction.gondor.win+faction.gondor.loose)*100)}} % de Victoires)
               </span>
-          </ul>
+          </ul> -->
         </div>
 
         <div
@@ -7061,11 +6988,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                 </svg></span>
             </li>
           </ul>
-          <ul class="flex flex-row mt-4 space-x-1">
+          <!-- <ul class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-yellow-800 uppercase px-4 py-1 text-xs mr-1">
                 {{faction.nain.win}}/{{faction.nain.loose}} ({{Math.round(faction.nain.win/(faction.nain.win+faction.nain.loose)*100)}} % de Victoires)
               </span>
-          </ul>
+          </ul> -->
         </div>
       </div>
 
@@ -7124,11 +7051,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                 </svg></span>
             </li>
           </ul>
-          <ul class="flex flex-row mt-4 space-x-1">
+          <!-- <ul class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-red-700 uppercase px-4 py-1 text-xs mr-1">
                 {{faction.mordor.win}}/{{faction.mordor.loose}} ({{Math.round(faction.mordor.win/(faction.mordor.win+faction.mordor.loose)*100)}} % de Victoires)
               </span>
-          </ul>
+          </ul> -->
         </div>
 
         <div
@@ -7182,11 +7109,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                 </svg></span>
             </li>
           </ul>
-          <ul class="flex flex-row mt-4 space-x-1">
+          <!-- <ul class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-gray-700 uppercase px-4 py-1 text-xs mr-1">
                 {{faction.isengard.win}}/{{faction.isengard.loose}} ({{Math.round(faction.isengard.win/(faction.isengard.win+faction.isengard.loose)*100)}} % de Victoires)
               </span>
-          </ul>
+          </ul> -->
         </div>
 
         <div
@@ -7240,11 +7167,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                 </svg></span>
             </li>
           </ul>
-          <ul class="flex flex-row mt-4 space-x-1">
+          <!-- <ul class="flex flex-row mt-4 space-x-1">
               <span class="flex rounded-full bg-orange-700 uppercase px-4 py-1 text-xs mr-1">
                 {{faction.gobelin.win}}/{{faction.gobelin.loose}} ({{Math.round(faction.gobelin.win/(faction.gobelin.win+faction.gobelin.loose)*100)}} % de Victoires)
               </span>
-          </ul>
+          </ul> -->
         </div>
 
         <div
@@ -7398,8 +7325,6 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
       this.loading = false;
 
       for (var key in this.map) {
-        // if (!this.map.hasOwnProperty(key)) continue;
-
         var obj = this.map[key];
 
 
@@ -7451,8 +7376,6 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           }
         }
 
-        // if (!obj['players'].length > 0) continue;
-        // let obj2 = JSON.parse(JSON.stringify(obj['players']))
         if (obj.hasOwnProperty("players") && obj.players.length > 0) {
           let obj2 = JSON.parse(JSON.stringify(obj['players']))
           for (var player in obj2) {

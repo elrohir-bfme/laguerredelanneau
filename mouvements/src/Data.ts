@@ -74,6 +74,7 @@ export interface Data {
 		gobelin: Faction,
 		isengard: Faction,
 	},
+	Alliance: String[],
 	Fangorn: Territory,
 	Fondcombe: Territory,
 	Fontgrise: Territory,

@@ -10,6 +10,22 @@
                     <p id="region_name">{{map[region] ? map[region].name : "Région inconnu"}}</p>
             </div>
         </div>
+            <div class="descriptionContainer">
+                <img id="descprition" src="~assets/Interface_Description.png">
+                <div id="territoryText"> <p id="territorytitle">Territoire</p></div>
+                <div id="structureText"><p id="structuretitle">Structure</p></div>
+                <div id="armyText"><p id="armytitle">Armée</p></div>
+            </div>
+
+            <!-- ici il faut qu on sache appuyer sur les mots plus hauts et qu il hidden ou pas les bons contenaires -->
+            <div class="territoryContainer">
+                <img id="minimap" src="~static/minimap_img/carn_dum_minimap.jpg"/>
+            </div>
+            <div class="structureContainer">
+              
+            </div>
+            <div class="territoryContainer">
+            </div>
     </div>
 </template>
 
@@ -81,10 +97,10 @@ export default {
 </script>
 
 <style scoped>
-.pngcontainer1, .pngcontainer1 img {
+.pngcontainer1, .pngcontainer1 img , .descriptionContainer{
     position: relative;
 }
-.pngcontainer1 img {
+.pngcontainer1 img , .descriptionContainer {
     z-index: 101;
 }
 .pngcontainer1 #region_img {
@@ -147,5 +163,39 @@ export default {
 .responsive {
   width: 100%;
   height: auto;
+}
+
+.descriptionContainer{
+    position : absolute;
+    width : 170%;
+    top: 50px;
+    left: 330px;
+    z-index: 98;
+}
+
+.descriptionContainer #territoryText{
+    position : absolute;
+    top:12px;
+    left:153px;
+}
+
+.descriptionContainer #structureText{
+    position : absolute;
+    top:12px;
+    left:420px;
+}
+
+.descriptionContainer #armyText{
+    position : absolute;
+    top:12px;
+    left:687px;
+}
+
+.territoryContainer{
+    position : absolute;
+    width : 15%;
+    top: 105px;
+    left: 445px;
+    z-index: 102;
 }
 </style>

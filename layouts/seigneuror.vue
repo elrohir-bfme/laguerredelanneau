@@ -38,13 +38,13 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
-  cursor: url("~assets/cursor1.png"),auto;
+  cursor: url("/img/cursors/cursor1.png"),auto;
 }
 
 @font-face {
   font-family: 'LOTR';
   font-display: swap;
-  src: url('~assets/font/LOTR.TTF') format('truetype');
+  src: url('/font/LOTR.TTF') format('truetype');
 }
 
 .tooltip .tooltip-text {

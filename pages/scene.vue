@@ -34,7 +34,7 @@ export default {
         },
         getInfo(e) {
                 this.video = e.target.id;
-                console.log(this.data);
+                // console.log(this.data);
             },
         },
     async fetch() {

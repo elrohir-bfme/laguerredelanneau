@@ -7,35 +7,35 @@
             <tr>
             <th class="border border-gray-800 bg-gray-900 rounded-2xl"></th>
             <th class="border border-gray-800 text-center p-1">
-                <img src="~assets/factions/rohan.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/rohan.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Rohan</span>
             </th>
             <th class="border border-gray-800">
-                <img src="~assets/factions/elfe.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/elfe.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Elfe</span>
             </th>
             <th class="border border-gray-800">
-                <img src="~assets/factions/gondor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/gondor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Gondor</span>
             </th>
             <th class="border border-gray-800">
-                <img src="~assets/factions/nain.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/nain.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Nain</span>
             </th>
             <th class="border border-gray-800">
-                <img src="~assets/factions/mordor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/mordor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Mordor</span>
             </th>
             <th class="border border-gray-800">
-                <img src="~assets/factions/isengard.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/isengard.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Isengard</span>
             </th>
             <th class="border border-gray-800">
-                <img src="~assets/factions/gobelin.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/gobelin.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Gobelin</span>
             </th>
             <th class="border border-gray-800">
-                <img src="~assets/factions/angmar.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/angmar.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Angmar</span>
             </th>
 
@@ -44,7 +44,7 @@
         <tbody>
             <tr>
             <td>
-                <img src="~assets/factions/rohan.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/rohan.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Rohan</span>
             </td>
             <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
@@ -75,7 +75,7 @@
             </td>
             <tr>
             <td>
-                <img src="~assets/factions/elfe.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/elfe.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Elfe</span>
             </td>
             <td/>
@@ -104,7 +104,7 @@
             </tr>
             <tr>
             <td>
-                <img src="~assets/factions/gondor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/gondor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Gondor</span>
             </td>
             <td/>
@@ -130,7 +130,7 @@
             </tr>
             <tr>
             <td>
-                <img src="~assets/factions/nain.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/nain.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Nain</span>
             </td>
             <td/>
@@ -153,7 +153,7 @@
             </tr>
             <tr>
             <td>
-                <img src="~assets/factions/mordor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/mordor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Mordor</span>
             </td>
             <td/>
@@ -175,7 +175,7 @@
             </tr>
             <tr>
             <td>
-                <img src="~assets/factions/isengard.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/isengard.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Isengard</span>
             </td>
             <td/>
@@ -194,7 +194,7 @@
             </tr>
             <tr>
             <td>
-                <img src="~assets/factions/gobelin.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/gobelin.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Gobelin</span>
             </td>
             <td/>
@@ -210,7 +210,7 @@
             </tr>
             <tr>
             <td>
-                <img src="~assets/factions/angmar.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="/img/factions/angmar.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Angmar</span>
             </td>
             <td/>

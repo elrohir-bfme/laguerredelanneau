@@ -31,19 +31,19 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
-  cursor: url("~assets/cursor1.png"),auto;
+  cursor: url("/img/cursors/cursor1.png"),auto;
 }
 
 @font-face {
   font-family: 'LOTR';
   font-display: swap;
-  src: url('~assets/font/LOTR.TTF') format('truetype');
+  src: url('/font/LOTR.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'Albertus';
   font-display: swap;
-  src: url('~assets/font/Albertus.otf') format('truetype');
+  src: url('/font/Albertus.otf') format('truetype');
 }
 
 .tooltip .tooltip-text {

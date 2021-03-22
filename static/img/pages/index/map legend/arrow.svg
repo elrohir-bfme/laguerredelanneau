@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns="http://www.w3.org/2000/svg"
+	version="1.1"
+	viewBox="0 0 512 512"
+	preserveAspectRatio="xMidYMid meet"
+	id="arrow">
+	<g>
+		<path id="path2" fill="#C4C9CF" d="M 328.4096,274.0992 346.5088,256 201.6896,111.1808 165.4912,147.3792 274.0864,256 165.4912,364.6208 l 36.1984,36.1984 z"/>
+	</g>
+</svg>

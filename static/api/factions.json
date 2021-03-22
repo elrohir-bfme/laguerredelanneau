@@ -1,0 +1,90 @@
+[
+    {
+        "capital": "Havres Gris",
+        "chief": "Grèhelfe",
+        "color": "#00bfff",
+        "id": 1,
+        "losses": 2,
+        "money": 5200,
+        "name": "Faction des Elfes",
+        "wins": 5,
+		"death": null
+    },
+    {
+        "capital": "Erebor",
+        "chief": "Gimli fils de Gloin",
+        "color": "#fffc00",
+        "id": 4,
+        "losses": 4,
+        "money": 650,
+        "name": "Faction des Nains",
+        "wins": 6,
+		"death": null
+    },
+    {
+        "capital": "Edoras",
+        "chief": "Zuros",
+        "color": "#0bff00",
+        "id": 2,
+        "losses": 0,
+        "money": 2500,
+        "name": "Faction du Rohan",
+        "wins": 0,
+		"death": null
+    },
+    {
+        "capital": "Carn Dûm",
+        "chief": "Sirena",
+        "color": "#c500ff",
+        "id": 8,
+        "losses": 8,
+        "money": 850,
+        "name": "Faction d'Angmar",
+        "wins": 5,
+		"death": "15/03/2021"
+    },
+    {
+        "capital": "Minas Tirith",
+        "chief": "Chabacks",
+        "color": "#1e90ff",
+        "id": 3,
+        "losses": 9,
+        "money": 1850,
+        "name": "Faction du Gondor",
+        "wins": 1,
+		"death": null
+    },
+    {
+        "capital": "Barad Dûr",
+        "chief": "qDR",
+        "color": "#db5461",
+        "id": 5,
+        "losses": 3,
+        "money": 2350,
+        "name": "Faction du Mordor",
+        "wins": 11,
+		"death": null
+    },
+    {
+        "capital": "Coeur de la Moria",
+        "chief": "Morkoving",
+        "color": "#ff6f00",
+        "id": 7,
+        "losses": 6,
+        "money": 1200,
+        "name": "Faction des Gobelins",
+        "wins": 2,
+		"death": null
+    },
+    {
+        "capital": "Isengard",
+        "chief": "Boreal",
+        "color": "#ffffff",
+        "id": 6,
+        "losses": 2,
+        "money": 1075,
+        "name": "Factrion d'Isengard",
+        "wins": 5,
+		"death": null
+    }
+]

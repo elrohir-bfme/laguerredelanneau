@@ -34,11 +34,6 @@
                 <img src="~assets/factions/gobelin.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Gobelin</span>
             </th>
-            <th class="border border-gray-800">
-                <img src="~assets/factions/angmar.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
-                <span class="block md:hidden text-xs lg:text-base">Angmar</span>
-            </th>
-
             </tr>
         </thead>
         <tbody>
@@ -48,17 +43,16 @@
                 <span class="block md:hidden text-xs lg:text-base">Rohan</span>
             </td>
             <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
-            <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 7 à la fin du TOUR 9</span>
+            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
+                EN GUERRE
             </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
                 ALLIANCE<br>
-                <span class="text-gray-500">TOUR 7 à la fin du TOUR 9</span>
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
             </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
                 ALLIANCE<br>
-                <span class="text-gray-500">TOUR 7 à la fin du TOUR 9</span>
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
             </td>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
@@ -68,10 +62,7 @@
             </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
                 ALLIANCE<br>
-                <span class="text-gray-500">TOUR 7 à la fin du TOUR 9</span>
-            </td>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
             </td>
             <tr>
             <td>
@@ -80,14 +71,6 @@
             </td>
             <td/>
             <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
-            <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 7 à la fin du TOUR 9</span>
-            </td>
-            <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 7 à la fin du TOUR 9</span>
-            </td>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
             </td>
@@ -96,7 +79,11 @@
             </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
                 ALLIANCE<br>
-                <span class="text-gray-500">TOUR 7 à la fin du TOUR 9</span>
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
+            </td>
+            <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
+                ALLIANCE<br>
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
             </td>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
@@ -112,7 +99,7 @@
             <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
                 ALLIANCE<br>
-                <span class="text-gray-500">TOUR 7 à la fin du TOUR 9</span>
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
             </td>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
@@ -122,10 +109,7 @@
             </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
                 ALLIANCE<br>
-                <span class="text-gray-500">TOUR 7 à la fin du TOUR 9</span>
-            </td>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
             </td>
             </tr>
             <tr>
@@ -145,10 +129,7 @@
             </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
                 ALLIANCE<br>
-                <span class="text-gray-500">TOUR 4 à la fin du TOUR 6</span>
-            </td>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
             </td>
             </tr>
             <tr>
@@ -163,14 +144,10 @@
             <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
                 ALLIANCE<br>
-                <span class="text-gray-500">TOUR 7 à la fin du TOUR 9</span>
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
             </td>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
-            </td>
-            <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 7 à la fin du TOUR 9</span>
             </td>
             </tr>
             <tr>
@@ -187,33 +164,12 @@
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
             </td>
-            <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 7 à la fin du TOUR 9</span>
-            </td>
             </tr>
             <tr>
             <td>
                 <img src="~assets/factions/gobelin.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Gobelin</span>
             </td>
-            <td/>
-            <td/>
-            <td/>
-            <td/>
-            <td/>
-            <td/>
-            <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
-            </td>
-            </tr>
-            <tr>
-            <td>
-                <img src="~assets/factions/angmar.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
-                <span class="block md:hidden text-xs lg:text-base">Angmar</span>
-            </td>
-            <td/>
             <td/>
             <td/>
             <td/>

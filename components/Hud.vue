@@ -10,22 +10,22 @@
                     <p id="region_name">{{map[region] ? map[region].name : "Région inconnu"}}</p>
             </div>
         </div>
-            <div class="descriptionContainer">
+            <!-- <div class="descriptionContainer">
                 <img id="descprition" src="~assets/Interface_Description.png">
                 <div id="territoryText"> <p id="territorytitle">Territoire</p></div>
                 <div id="structureText"><p id="structuretitle">Structure</p></div>
                 <div id="armyText"><p id="armytitle">Armée</p></div>
-            </div>
+            </div> -->
 
             <!-- ici il faut qu on sache appuyer sur les mots plus hauts et qu il hidden ou pas les bons contenaires -->
-            <div class="territoryContainer">
+            <!-- <div class="territoryContainer">
                 <img id="minimap" src="~static/minimap_img/carn_dum_minimap.jpg"/>
             </div>
             <div class="structureContainer">
               
             </div>
             <div class="territoryContainer">
-            </div>
+            </div> -->
     </div>
 </template>
 

@@ -33,29 +33,27 @@ fetch('https://api.npoint.io/38a2899b98818d89418c')
 function updateMoves(data : Data,changes : string[]) : Data {
     data = changes.reduce((data: Data, change: string): Data => {
 
-        const checkSpawn = /(?<player>.*) spawn (?<faction_id>\d+) (?<to>.*)/;
-        const checkFight = /fight (?<territory>.*)/; 
-
-        if(checkSpawn.test(change)){
-            const res = checkSpawn.exec(change);
-            const [player, faction_id, to]: [string, number, keyof Data] = [res!.groups!.player, Number.parseInt(res!.groups!.faction_id), res!.groups!.to as keyof Data];
+        const args = change.split(' ');
+        if(args[0] === "spawn"){
+            //@ts-ignore
+            const [spawn, player, region, faction]: [string, string, keyof Data, string] = change.trim().split(" ");
             const backupPlayer = {
                 name: player,
-                faction: faction_id,
+                faction: parseInt(faction),
                 win: 0,
                 lose: 0,
                 handicap: 0,
                 prisonnier: false,
             };
-            (data[to] as Territory).players.push(backupPlayer); //Ajouter un joueur
-        }else if(checkFight.test(change)){
-            console.log(change);
+            (data[region] as Territory).players.push(backupPlayer); //Ajouter un joueur
         }else{
             //@ts-ignore
-            const [player, from, to, hand]: [string, keyof Data, keyof Data, string] = change.trim().split(" ");
+            const [player, from, to]: [string, keyof Data, keyof Data] = change.trim().split(" ");
             const players: Player[] = (data[from] as Territory).players; //Prendre les joueurs dans tout le territoire
             const backupPlayer: Player = players.find((element: Player) => element.name === player)!; // ! retirer undefined 
-            backupPlayer.handicap = parseInt(hand);
+            if (backupPlayer.handicap > 0) {
+                backupPlayer.handicap = backupPlayer.handicap-1
+            }
             (data[from] as Territory).players.splice(players.indexOf(backupPlayer), 1); //Supprimer le joueur
             (data[to] as Territory).players.push(backupPlayer); //Ajouter un joueur
         }
@@ -67,13 +65,13 @@ function updateMoves(data : Data,changes : string[]) : Data {
 function factionColor(color: String): Number {
     let value = 1;
     switch (color) {
-        case '#0bff00':
-        case '#0BFF00':
-            value = 1;
-          break;
-
         case '#00bfff':
         case '#00BFFF':
+            value = 1;
+            break;
+
+        case '#0bff00':
+        case '#0BFF00':
             value = 2;
           break;
 
@@ -113,27 +111,11 @@ function factionColor(color: String): Number {
     return value;
 }
 
-function updateColors(data: Data): Data {
-    Object.keys(data) 
-    .map((key) => key as keyof Data)
-    .filter((key): boolean => data[key].hasOwnProperty("players"))
-    .filter((territoryKey) => {
-        const territory: Territory = (data[territoryKey] as Territory);
-        const players: Player[] = territory.players;
-        return players.length >= 1 
-        && players.every((player: Player) => player.faction === players[0].faction) 
-        !== players.every(() => checkAlliance(data["Alliance"], factionColor(territory.color), players[0].faction)); // Ou en alliance
-    })
-    .forEach((territoryKey: keyof Data) => {
-        const territory: Territory = (data[territoryKey] as Territory);
-        const factions: Faction[] = Object.values(data.factions);
-        territory.color = factions.find((faction) => faction.id === territory.players[0].faction)!.color;
-    });
-    return data;
-}
-
 function checkAlliance(alliance: String[], factionA: Number, factionB: Number): Boolean {
     let res = false;
+
+    // console.log(alliance)
+    // console.log(factionA, factionName(factionA), factionName(factionB), factionB)
 
     alliance.forEach(e => {
         if(e.includes(factionName(factionA)) && e.includes(factionName(factionB))) {
@@ -141,6 +123,30 @@ function checkAlliance(alliance: String[], factionA: Number, factionB: Number): 
         }
     });
     return res
+}
+
+function updateColors(data: Data): Data {
+    Object.keys(data) 
+    .map((key) => key as keyof Data)
+    .filter((key): boolean => data[key].hasOwnProperty("players"))
+    .filter((territoryKey) => {
+        const territory: Territory = (data[territoryKey] as Territory);
+        const players: Player[] = territory.players;
+        console.log(players);
+
+        return players.length > 0 
+        && players.every((player: Player) => player.faction === players[0].faction) 
+        !== players.every(() => {
+            checkAlliance(data["Alliance"], factionColor(territory.color), players[0].faction);
+        }); 
+    })
+    .forEach((territoryKey: keyof Data) => {
+        const territory: Territory = (data[territoryKey] as Territory);
+        // console.log(territory)
+        const factions: Faction[] = Object.values(data.factions);
+        territory.color = factions.find((faction) => faction.id === territory.players[0].faction)!.color;
+    });
+    return data;
 }
 
 function factionName(faction: Number): string {

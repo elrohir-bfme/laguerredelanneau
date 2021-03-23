@@ -7,7 +7,7 @@
             <img src="~assets/palantir.png" />
             <p id="region_player"> {{map[region] ? map[region].map ? `Map ${map[region].map} Joueurs` : "" : ""}}</p>
             <div id="region_txt">
-                    <p id="region_name">{{map[region] ? map[region].name : "Région inconnu"}}</p>
+                    <p id="region_name">{{map[region] ? map[region].name : "Région inconnue"}}</p>
             </div>
         </div>
             <!-- <div class="descriptionContainer">

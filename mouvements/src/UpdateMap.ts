@@ -136,9 +136,7 @@ function updateColors(data: Data): Data {
 
         return players.length > 0 
         && players.every((player: Player) => player.faction === players[0].faction) 
-        !== players.every(() => {
-            checkAlliance(data["Alliance"], factionColor(territory.color), players[0].faction);
-        }); 
+        !== players.every(() => checkAlliance(data["Alliance"], factionColor(territory.color), players[0].faction)); 
     })
     .forEach((territoryKey: keyof Data) => {
         const territory: Territory = (data[territoryKey] as Territory);

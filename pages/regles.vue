@@ -82,9 +82,7 @@
 	</div>
 	<h3 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white text-center">Les règles de la Guerre de l'Anneau</h3>
 	<div class="videoWrapper">
-		<!-- <iframe src="https://drive.google.com/file/d/1wF5UgAA9WF8Xz_yZuiyntXJCX0XJEIuE/preview"></iframe> -->
 		<iframe src="https://drive.google.com/file/d/13tU3yWSxy_z9bDkyaIDw2nU8SmlZCa4V/preview"></iframe>
-		<!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vTQB111gt94RvvJM3vkBT7IekjSXTdCkInSMhdE0inIMzBjDNTNFc5hECo24im6ig-opAsjEbOthtpO/pub?embedded=true"></iframe> -->
 	</div>
   </div>
 </template>

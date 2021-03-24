@@ -30,7 +30,7 @@ node_fetch_1.default('https://api.npoint.io/38a2899b98818d89418c')
     const files = [
         "./mouvements/mouvements/ordersall.txt",
     ];
-    const changes = await Promise.all(//Await pour attendre le résultat 
+    const changes = await Promise.all(//Await pour attendre le résultat
     files.map((file) => fs.promises.readFile(file, { encoding: "utf-8" }).then((content) => content.split("\n").filter((line) => line !== ""))))
         .then((changes) => changes.flat()); //Rassembler les changements dans un fichier
     return Promise.resolve({ data, changes });
@@ -63,7 +63,7 @@ function updateMoves(data, changes) {
             //@ts-ignore
             const [player, from, to, hand] = change.trim().split(" ");
             const players = data[from].players; //Prendre les joueurs dans tout le territoire
-            const backupPlayer = players.find((element) => element.name === player); // ! retirer undefined 
+            const backupPlayer = players.find((element) => element.name === player); // ! retirer undefined
             backupPlayer.handicap = parseInt(hand);
             data[from].players.splice(players.indexOf(backupPlayer), 1); //Supprimer le joueur
             data[to].players.push(backupPlayer); //Ajouter un joueur

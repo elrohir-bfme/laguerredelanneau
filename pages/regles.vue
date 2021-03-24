@@ -89,7 +89,9 @@
 
 <script>
 export default {
-
+	head: {
+		title: "Règles - La Guerre de l'Anneau",
+  	},
 }
 </script>
 

@@ -1,13 +1,13 @@
 <template>
     <div class="grid grid-cols-9 grid-flow-col gap-4 mb-4">
         <div class="col-span-2 md:col-span-2">
-            <span class="h-10 px-5 text-base sm:text-xl text-gray-500 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-900 hover:text-gray-300">    
+            <span class="h-10 px-5 text-base sm:text-xl text-gray-500 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-900 hover:text-gray-300">
                 {{player.name}}
             </span>
         </div>
 
         <div class="relative inline-block w-full text-gray-700 col-span-3 md:col-span-2">
-            <span class="bg-white hover:bg-gray-800 h-10 pl-3 pr-6 text-base text-gray-700 hover:text-gray-200 md:text-xl border-gray-200 hover:border-gray-500 border rounded-lg appearance-none focus:shadow-outline">    
+            <span class="bg-white hover:bg-gray-800 h-10 pl-3 pr-6 text-base text-gray-700 hover:text-gray-200 md:text-xl border-gray-200 hover:border-gray-500 border rounded-lg appearance-none focus:shadow-outline">
                 {{player.region}}
             </span>
         </div>
@@ -17,7 +17,7 @@
         </div>
 
         <div class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
-            <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player.name+'arrive'">    
+            <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player.name+'arrive'">
                 <option v-for="region in orderedRegions" :value="region.code">{{region.name}}</option>
             </select>
             <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
@@ -35,16 +35,16 @@ export default {
         },
         findRegion(regionname){
                 switch(regionname){
-                case "Mer_Forochel": regionname = "BateauA"; break; 
-                case "Mer_Himling": regionname = "BateauB"; break; 
-                case "Mer_Havres_Gris": regionname = "BateauC"; break; 
-                case "Mer_Minhiriath": regionname = "BateauD"; break; 
-                case "Mer_Enedwaith": regionname = "BateauE"; break; 
-                case "Belegear": regionname = "BateauF"; break; 
-                case "Mer_Andrast": regionname = "BateauG"; break; 
-                case "Mer_Dol_Amroth": regionname = "BateauH"; break; 
-                case "Mer_Tolfalas": regionname = "BateauI"; break; 
-                case "Mer_Umbar": regionname = "BateauJ"; break; 
+                case "Mer_Forochel": regionname = "BateauA"; break;
+                case "Mer_Himling": regionname = "BateauB"; break;
+                case "Mer_Havres_Gris": regionname = "BateauC"; break;
+                case "Mer_Minhiriath": regionname = "BateauD"; break;
+                case "Mer_Enedwaith": regionname = "BateauE"; break;
+                case "Belegear": regionname = "BateauF"; break;
+                case "Mer_Andrast": regionname = "BateauG"; break;
+                case "Mer_Dol_Amroth": regionname = "BateauH"; break;
+                case "Mer_Tolfalas": regionname = "BateauI"; break;
+                case "Mer_Umbar": regionname = "BateauJ"; break;
                 case "Mer_Pelargir": regionname = "BateauK"; break;
                 default : break;
             }
@@ -85,7 +85,7 @@ export default {
                     .filter(region => region.conquete === this.player.faction);
 
                 regionsAdjacents = [... adj, ... adj2];
-                    
+
             } else {
 
                 const citForto = this.regions

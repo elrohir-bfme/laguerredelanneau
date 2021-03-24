@@ -14,7 +14,7 @@
 			v-if="showHud"
 			:region="this.regionHovered"
 		/>
-		
+
 	</div>
 </template>
 
@@ -79,9 +79,27 @@ export default {
 
 		this.svgmap = document.getElementById("map").contentDocument.getElementById("svgmap");
 
-		this.loading = false;
+		const style = this.svgmap.ownerDocument.createElementNS("http://www.w3.org/2000/svg", "style");
+		style.innerHTML = this.factions.reduce((style, faction) => {
+			return `${style}.faction-${ faction.id } { fill: ${ faction.color }; }\n`;
+		}, "");
+		this.svgmap.appendChild(style);
 
-		this.regionHovered = this.regions[0];
+
+		this.regions.forEach(region => {
+			const path = this.svgmap.getElementById(region.id);
+			if(!path) {
+				return;
+			}
+
+			path.addEventListener("mouseenter", (event) => this.regionHovered = this.regions.find(r => r.id == event.target.id));
+			path.addEventListener("click", (event) => this.regionSelected = this.regions.find(r => r.id == event.target.id));
+			path.classList.add(`faction-${ region.faction }`);
+		});
+
+		this.regionHovered = this.regions[1];
+
+		this.loading = false;
 	}
 }
 </script>

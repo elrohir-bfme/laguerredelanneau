@@ -15,7 +15,7 @@
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -23,7 +23,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-image: url('~assets/rematch.webp');
+  background-image: url("~assets/background.webp");
 }
 
 *,
@@ -35,15 +35,15 @@ html {
 }
 
 @font-face {
-  font-family: 'LOTR';
+  font-family: "LOTR";
   font-display: swap;
-  src: url('/font/LOTR.TTF') format('truetype');
+  src: url("/font/LOTR.TTF") format("truetype");
 }
 
 @font-face {
-  font-family: 'Albertus';
+  font-family: "Albertus";
   font-display: swap;
-  src: url('/font/Albertus.otf') format('truetype');
+  src: url("/font/Albertus.otf") format("truetype");
 }
 
 .tooltip .tooltip-text {

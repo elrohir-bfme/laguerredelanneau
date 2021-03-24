@@ -24,7 +24,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/valuTOJq6zo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    
+
 
     <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">BANDE ANNONCE DU GONDOR</h3>
     <div class="videoWrapper m-8 z-0">
@@ -48,7 +48,7 @@
     <div class="videoWrapper m-8 z-0">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/_YywU1QGHOo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    
+
     <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">BANDE ANNONCE DES GOBELINS</h3>
     <div class="videoWrapper m-8 z-0">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/08jagT__o00" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -58,13 +58,15 @@
     <div class="videoWrapper m-8 z-0">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/7iQpc1kQfw8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    
+
     </div>
 </template>
 
 <script>
 export default {
-
+	head: {
+		title: "Vidéos - La Guerre de l'Anneau",
+  	},
 }
 </script>
 

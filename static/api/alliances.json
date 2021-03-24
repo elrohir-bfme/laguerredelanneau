@@ -1,20 +1,25 @@
 [
     {
         "factions": [
-            8,
+            5,
             6,
-            5
+            8
         ],
-        "id": 0
+        "id": 0,
+		"startTourId": 7,
+		"endTourId": 9
+
     },
     {
         "factions": [
-            1,
-            7,
+			1,
+            2,
             3,
             4,
-            2
+            7
         ],
-        "id": 1
+        "id": 1,
+		"startTourId": 7,
+		"endTourId": 10
     }
 ]

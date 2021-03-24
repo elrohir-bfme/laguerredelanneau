@@ -229,7 +229,9 @@
 
 <script >
 export default {
-    name: 'Diplomatie',
+	head: {
+		title: "Diplomatie - La Guerre de l'Anneau",
+  	},
     data() {
         return {
             data: []

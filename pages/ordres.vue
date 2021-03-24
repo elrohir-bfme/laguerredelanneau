@@ -76,14 +76,14 @@
         <div v-if="selectedFaction">
             <!-- <button  v-on:click="addPlayerMethod" class="bg-gray-900 text-gray-600">ADD PLAYER</button> -->
             <div class="text-gray-700">
-                <input v-model="newPlayerName" placeholder="Pseudo Discord" 
+                <input v-model="newPlayerName" placeholder="Pseudo Discord"
                 class="rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white"/>
-                <button :disabled="!isDisable" v-on:click="addPlayerMethod" 
+                <button :disabled="!isDisable" v-on:click="addPlayerMethod"
                 class="px-8 rounded-r-lg bg-yellow-400  text-gray-800 font-bold p-4 uppercase border-yellow-500 border-t border-b border-r">Ajouter un joueur</button>
             </div>
             <div class="mt-4" v-for="(player, index) in addPlayer" :key="index">
                 <Order :player="player" :regions="regions"/>
-                <button v-on:click="removePlayerMethod(player)" 
+                <button v-on:click="removePlayerMethod(player)"
                 class="mb-4 px-4 rounded-lg bg-red-600  text-gray-800 font-bold p-2 uppercase border-red-500">
                     <svg class="fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -120,14 +120,14 @@ export default {
         playerAngmar: [],
         selectedFaction: null,
         options: [
-            { faction: 'Elfe', 'value': 1 },
-            { faction: 'Rohan', 'value': 2 },
-            { faction: 'Gondor', 'value': 3 },
-            { faction: 'Nain', 'value': 4 },
-            { faction: 'Mordor', 'value': 5 },
-            { faction: 'Isengard', 'value': 6 },
-            { faction: 'Gobelin', 'value': 7 },
-            { faction: 'Angmar', 'value': 8 }
+            { faction: "Elfe", "value": 1 },
+            { faction: "Rohan", "value": 2 },
+            { faction: "Gondor", "value": 3 },
+            { faction: "Nain", "value": 4 },
+            { faction: "Mordor", "value": 5 },
+            { faction: "Isengard", "value": 6 },
+            { faction: "Gobelin", "value": 7 },
+            { faction: "Angmar", "value": 8 }
         ]
     }
   },
@@ -154,11 +154,11 @@ export default {
         });
 
         this.addPlayer.forEach(element => {
-            data += `spawn ${element.name.replace(/ /g, '_')} ${document.getElementById(element.name + "arrive").value} ${element.faction}\n`;
+            data += `spawn ${element.name.replace(/ /g, "_")} ${document.getElementById(element.name + "arrive").value} ${element.faction}\n`;
         });
-            
+
         //convert the text to BLOB
-        
+
         const textToBLOB = new Blob([data], { type: "text/plain" });
         const sFileName = `orders${faction}.txt`;	   // The file to save the data.
 
@@ -172,8 +172,8 @@ export default {
             newLink.style.display = "none";
             document.body.appendChild(newLink);
         }
-        newLink.click(); 
-        
+        newLink.click();
+
     },
 
     findFaction(color) {
@@ -203,7 +203,7 @@ export default {
         for (const key in this.players) {
 
             const obj = this.players[key];
-        
+
             if (true
             && key!== "BateauA"
             && key!== "BateauB"
@@ -219,7 +219,7 @@ export default {
             && key!== "time"
             && key!== "Tol_Fuin"
             && key!== "factions") {
-            
+
                 switch (key) {
                     case "Mer_Forochel":
                         let newRegionA = {
@@ -303,7 +303,7 @@ export default {
                         }
                         this.regions.push(newRegionG);
                     break;
-                        
+
                     case "Mer_Dol_Amroth":
                         let newRegionH = {
                             "name": "Mer Dol Amroth",
@@ -365,20 +365,20 @@ export default {
                 }
             }
 
-        
+
 
             if(obj.hasOwnProperty("players") && obj.players.length > 0) {
-                let obj2 = JSON.parse(JSON.stringify(obj['players']))
+                let obj2 = JSON.parse(JSON.stringify(obj["players"]))
 
                 for (let player in obj2) {
                     let _player = {
-                        "name": obj2[player]['name'],
+                        "name": obj2[player]["name"],
                         "region": obj.name,
                         "code": key,
                         "adjacents":obj.adjacents,
-                        "faction":obj2[player]['faction']
+                        "faction":obj2[player]["faction"]
                     };
-                    switch (obj2[player]['faction']) {
+                    switch (obj2[player]["faction"]) {
                         case 1:
                             this.playerElfe.push(_player);
                             break;

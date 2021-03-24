@@ -15,12 +15,12 @@
 <style>
 html {
   font-family:
-    'Source Sans Pro',
+    "Source Sans Pro",
     -apple-system,
     BlinkMacSystemFont,
-    'Segoe UI',
+    "Segoe UI",
     Roboto,
-    'Helvetica Neue',
+    "Helvetica Neue",
     Arial,
     sans-serif;
   font-size: 16px;
@@ -30,7 +30,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-image: url('~assets/rematch.webp');
+  background-image: url("~assets/background.webp");
 }
 
 *,
@@ -42,9 +42,9 @@ html {
 }
 
 @font-face {
-  font-family: 'LOTR';
+  font-family: "LOTR";
   font-display: swap;
-  src: url('/font/LOTR.TTF') format('truetype');
+  src: url("/font/LOTR.TTF") format("truetype");
 }
 
 .tooltip .tooltip-text {

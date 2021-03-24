@@ -15,13 +15,13 @@
 
     <img class="w-3/6 border-solid border-2 border-gray-600 mx-auto mt-4" :src="data.surprise" alt="" srcset="">
     <p class="text-white text-center pt-4 text-4xl">PROCHAIN DUEL DEMAIN</p>
-    
+
   </section>
 </template>
 
 <script>
 export default {
-    layout: 'movie',
+    layout: "movie",
     data() {
         return {
             data: [],
@@ -38,7 +38,7 @@ export default {
             },
         },
     async fetch() {
-      this.data = await this.$http.$get('https://api.npoint.io/808e2e1884f749e97f0d');
+      this.data = await this.$http.$get("https://api.npoint.io/808e2e1884f749e97f0d");
     }
 }
 </script>
@@ -48,14 +48,14 @@ export default {
 .container {
   margin: 15px auto !important;
   max-width: 1280px !important;
-  font-family: 'kenyan coffee rg' !important;
+  font-family: "kenyan coffee rg" !important;
 }
 
 .flex-container {
   padding: 0;
   margin: 0;
   list-style: none;
-  
+
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -71,7 +71,7 @@ export default {
   width: 200px;
   height: 150px;
   margin-top: 10px;
-  
+
   line-height: 150px;
   color: white;
   font-weight: bold;

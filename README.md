@@ -4,7 +4,7 @@
 
 [Site Website] (https://laguerredelanneau.vercel.app/)
 
-Site use : 
+Site use :
 
 - [NuxtJS](https://nuxtjs.org/)
 - [Tailwindcss](https://tailwindcss.com/)

@@ -33,7 +33,11 @@
 </template>
 
 <script>
-
+export default {
+	head: {
+		title: "Inscription - La Guerre de l'Anneau",
+  	},
+}
 </script>
 
 <style scoped>

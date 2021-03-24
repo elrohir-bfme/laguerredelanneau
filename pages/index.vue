@@ -6,7 +6,7 @@
 				:mapFolder="'/img/pages/index/'"
 				:apiPath="'/api/'"
 				:showLegend="true"
-				:showHud="true"
+				:showHud="false"
 			/>
 
 			<!--
@@ -87,7 +87,7 @@ export default {
 				this.factions.find(faction => faction.id === player.faction)?.players.push(player); // add players to factions
 				return player;
 			});
-		
+
 
 		this.regions = (await this.$http.$get("/api/regions.json"))
 			.map(region => {

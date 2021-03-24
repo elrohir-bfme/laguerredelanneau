@@ -1,7 +1,7 @@
 <template>
     <div class="container mx-auto bg-lotr rounded-lg">
         <h1 class="text-white text-center text-3xl pt-4">Voici la page Statistiques</h1>
-        
+
 
         <h2 class="text-white text-center text-2xl pt-4">Répartitions des joueurs de l'évènement</h2>
 
@@ -17,7 +17,7 @@
 
         <h4 class="text-white text-center text-2xl pt-4">Tableau statistique des joueurs</h4>
 
-        
+
         <!-- <Chart/> -->
         <vue-good-table
         class="m-4"
@@ -36,7 +36,7 @@
         >
         <template slot="table-row" slot-scope="props">
             <span v-if="props.column.field == 'faction'">
-              <span :class="props.row.color">{{props.row.faction}}</span> 
+              <span :class="props.row.color">{{props.row.faction}}</span>
             </span>
             <span v-else-if="props.column.field == 'ratio'">
               <span class="float-right">{{props.row.ratio}}</span>
@@ -51,7 +51,9 @@
 
 <script>
 export default {
-  name: 'Statistiques',
+	head: {
+		title: "Statistiques - La Guerre de l'Anneau",
+  	},
   data(){
     return {
       chartData: null,
@@ -75,30 +77,30 @@ export default {
       nbTerritoireAngmar: 0,
       columns: [
         {
-          label: 'Nom',
-          field: 'nom',
+          label: "Nom",
+          field: "nom",
         },
         {
-          label: 'Faction',
-          field: 'faction',
-          type: 'string',
+          label: "Faction",
+          field: "faction",
+          type: "string",
         },
         {
-          label: 'Victoire',
-          field: 'win',
-          type: 'number'
+          label: "Victoire",
+          field: "win",
+          type: "number"
         },
         {
-          label: 'Défaite',
-          field: 'lose',
-          type: 'number'
+          label: "Défaite",
+          field: "lose",
+          type: "number"
         },
         {
-          label: 'Ratio de victoire',
-          field: 'ratio',
-          type: 'string'
+          label: "Ratio de victoire",
+          field: "ratio",
+          type: "string"
         }
-        
+
       ],
       rows: [
       ],
@@ -114,14 +116,14 @@ export default {
             borderColor: ["#636564", "#636564", "#636564", "#636564", "#636564", "#636564", "#636564", "#636564", "#636564"],
             // hoverBackgroundColor: ["#fbd2cd", "#fef5c9", "#d1e3f7"],
             data: [
-              this.nbFactionElfe, 
-              this.nbFactionRohan, 
-              this.nbFactionGondor, 
-              this.nbFactionNain, 
-              this.nbFactionMordor, 
-              this.nbFactionIsengard, 
-              this.nbFactionGobelin, 
-              this.nbFactionAngmar, 
+              this.nbFactionElfe,
+              this.nbFactionRohan,
+              this.nbFactionGondor,
+              this.nbFactionNain,
+              this.nbFactionMordor,
+              this.nbFactionIsengard,
+              this.nbFactionGobelin,
+              this.nbFactionAngmar,
               this.nbFactionMercenaire
               ]
           }
@@ -136,13 +138,13 @@ export default {
             backgroundColor: ["#0bff00", "#00bfff", "#1e90ff", "#fffc00", "#db5461", "#ffffff", "#ff6f00" , "#c500ff"],
             borderColor: ["#636564", "#636564", "#636564", "#636564", "#636564", "#636564", "#636564", "#636564"],
             data: [
-              this.nbTerritoireElfe, 
-              this.nbTerritoireRohan, 
-              this.nbTerritoireGondor, 
-              this.nbTerritoireNain, 
-              this.nbTerritoireMordor, 
-              this.nbTerritoireIsengard, 
-              this.nbTerritoireGobelin, 
+              this.nbTerritoireElfe,
+              this.nbTerritoireRohan,
+              this.nbTerritoireGondor,
+              this.nbTerritoireNain,
+              this.nbTerritoireMordor,
+              this.nbTerritoireIsengard,
+              this.nbTerritoireGobelin,
               this.nbTerritoireAngmar,
               this.nbTerritoireAngmar,
             ],
@@ -154,7 +156,7 @@ export default {
   },
   async fetch() {
       this.loaded = false
-      this.players = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c');
+      this.players = await this.$http.$get("https://api.npoint.io/38a2899b98818d89418c");
 
       for (let key in this.players) {
 
@@ -164,57 +166,57 @@ export default {
           if (!obj.hasOwnProperty(prop)) continue;
 
           switch (obj[prop]) {
-            case '#0bff00':
-            case '#0BFF00':
+            case "#0bff00":
+            case "#0BFF00":
               this.nbTerritoireRohan += 1;
               break;
 
-            case '#00bfff':
-            case '#00BFFF':
+            case "#00bfff":
+            case "#00BFFF":
               this.nbTerritoireElfe += 1;
               break;
 
-            case '#1e90ff':
-            case '#1E90FF':
+            case "#1e90ff":
+            case "#1E90FF":
               this.nbTerritoireGondor += 1;
               break;
 
-            case '#fffc00':
-            case '#FFFC00':
+            case "#fffc00":
+            case "#FFFC00":
               this.nbTerritoireNain += 1;
               break;
 
-            case '#db5461':
-            case '#DB5461':
+            case "#db5461":
+            case "#DB5461":
               this.nbTerritoireMordor += 1;
               break;
 
-            case '#ffffff':
-            case '#FFFFFF':
+            case "#ffffff":
+            case "#FFFFFF":
               this.nbTerritoireIsengard += 1;
               break;
 
-            case '#ff6f00':
-            case '#FF6F00':
+            case "#ff6f00":
+            case "#FF6F00":
               this.nbTerritoireGobelin += 1;
               break;
 
-            case '#c500ff':
-            case '#C500FF':
+            case "#c500ff":
+            case "#C500FF":
               this.nbTerritoireAngmar += 1;
               break;
             default:
               break;
           }
         }
-        
+
         if(obj.hasOwnProperty("players") && obj.players.length > 0) {
-            let obj2 = JSON.parse(JSON.stringify(obj['players']))
+            let obj2 = JSON.parse(JSON.stringify(obj["players"]))
 
             for (let player in obj2) {
                 let faction = "Mercenaire";
                 let color = "text-white";
-                switch (obj2[player]['faction']) {
+                switch (obj2[player]["faction"]) {
                     case 1:
                         faction = "Elfe",
                         color = "text-teal-500",
@@ -263,23 +265,23 @@ export default {
                 }
 
                 let newPlayer = {}
-                if(obj2[player]['lose'] > 0 || obj2[player]['win'] > 0)
+                if(obj2[player]["lose"] > 0 || obj2[player]["win"] > 0)
                   {
                     newPlayer = {
-                        "nom": obj2[player]['name'],
+                        "nom": obj2[player]["name"],
                         "faction": faction,
-                        "win": obj2[player]['win'],
-                        "lose": obj2[player]['lose'],
+                        "win": obj2[player]["win"],
+                        "lose": obj2[player]["lose"],
                         "color": color,
-                        "ratio": Math.round(obj2[player]['win']/ (obj2[player]['lose']+ obj2[player]['win']) * 100) + "%"
+                        "ratio": Math.round(obj2[player]["win"]/ (obj2[player]["lose"]+ obj2[player]["win"]) * 100) + "%"
                     }
                   }
                 else {
                   newPlayer = {
-                      "nom": obj2[player]['name'],
+                      "nom": obj2[player]["name"],
                       "faction": faction,
-                      "win": obj2[player]['win'],
-                      "lose": obj2[player]['lose'],
+                      "win": obj2[player]["win"],
+                      "lose": obj2[player]["lose"],
                       "color": color,
                       "ratio": "Aucune partie joué"
                   }
@@ -289,10 +291,10 @@ export default {
                 this.rows.push(newPlayer);
             }
 
-            
+
         }
       }
-      
+
       this.fillData();
       this.fillDataBar();
     },

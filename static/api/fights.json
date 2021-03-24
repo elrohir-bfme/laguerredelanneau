@@ -1,0 +1,658 @@
+[
+	{
+		"tour_id": 3,
+		"region_id": 53,
+		"winning_faction_id": 2,
+		"losing_faction_id": 8,
+		"youtube_link": "https://www.youtube.com/watch?v=1ljrCHH4f6A",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/807713833832808468/ered_luin_starond_vs_oknar.BfME2Replay"
+	},
+	{
+		"tour_id": 3,
+		"region_id": 7,
+		"winning_faction_id": 8,
+		"losing_faction_id": 2,
+		"youtube_link": "https://www.youtube.com/watch?v=QmV4WYyNE0M",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/807697276247736360/ArthedainGDA.BfME2Replay"
+	},
+	{
+		"tour_id": 3,
+		"region_id": 41,
+		"winning_faction_id": 8,
+		"losing_faction_id": 4,
+		"youtube_link": "https://www.youtube.com/watch?v=99dYOpYxD1g",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/808072785191764018/desert_du_nord_angmar_vs_nains.BfME2Replay"
+	},
+	{
+		"tour_id": 3,
+		"region_id": 71,
+		"winning_faction_id": 4,
+		"losing_faction_id": 8,
+		"youtube_link": "https://www.youtube.com/watch?v=K9imXnFvPH4",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/807707476862304306/Gundabad_nains_angmar.BfME2Replay"
+	},
+	{
+		"tour_id": 3,
+		"region_id": 33,
+		"winning_faction_id": 6,
+		"losing_faction_id": 7,
+		"youtube_link": "https://www.youtube.com/watch?v=qnyEm5EdL14",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/807348465226088489/Isen_vs_Gob_GDA_Celebrant_tour_3.BfME2Replay"
+	},
+	{
+		"tour_id": 3,
+		"region_id": 40,
+		"winning_faction_id": 4,
+		"losing_faction_id": 5,
+		"youtube_link": "https://www.youtube.com/watch?v=MwS4uw6OsbA",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/807319720796618782/GDA_Dagorlad_wtf.BfME2Replay"
+	},
+	{
+		"tour_id": 3,
+		"region_id": null,
+		"winning_faction_id": 5,
+		"losing_faction_id": 3,
+		"youtube_link": "https://www.youtube.com/watch?v=VEMPEvQqoHg",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/806620799909625886/GDA_Nord_Ithilien_Loken_vs_Veqz.BfME2Replay"
+	},
+	{
+		"tour_id": 4,
+		"region_id": null,
+		"winning_faction_id": 2,
+		"losing_faction_id": 8,
+		"youtube_link": "https://www.youtube.com/watch?v=WSk7HRU6iRA",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/809522903959863376/Colline_Evendim_Elfe_vs_Angmar.BfME2Replay"
+	},
+	{
+		"tour_id": 4,
+		"region_id": 7,
+		"winning_faction_id": 8,
+		"losing_faction_id": 2,
+		"youtube_link": "https://youtu.be/LRlACwC2q8U",
+		"replay_link": null
+	},
+	{
+		"tour_id": 4,
+		"region_id": 79,
+		"winning_faction_id": 4,
+		"losing_faction_id": 8,
+		"youtube_link": "https://www.youtube.com/watch?v=7BhMxgTNy7A",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/809876783167569950/solken_vs_amarrow.BfME2Replay"
+	},
+	{
+		"tour_id": 4,
+		"region_id": 41,
+		"winning_faction_id": 8,
+		"losing_faction_id": 4,
+		"youtube_link": "https://youtu.be/LRlACwC2q8U",
+		"replay_link": null
+	},
+	{
+		"tour_id": 4,
+		"region_id": 55,
+		"winning_faction_id": 6,
+		"losing_faction_id": 7,
+		"youtube_link": "https://www.youtube.com/watch?v=ubP0CMgR4zs",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/809156777882550312/2V2_Eregion_isengard_gobelins.BfME2Replay"
+	},
+	{
+		"tour_id": 4,
+		"region_id": 138,
+		"winning_faction_id": 7,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 4,
+		"region_id": null,
+		"winning_faction_id": 6,
+		"losing_faction_id": 7,
+		"youtube_link": "https://youtu.be/LRlACwC2q8U",
+		"replay_link": null
+	},
+	{
+		"tour_id": 4,
+		"region_id": null,
+		"winning_faction_id": 6,
+		"losing_faction_id": 7,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 4,
+		"region_id": null,
+		"winning_faction_id": 5,
+		"losing_faction_id": 3,
+		"youtube_link": "https://www.youtube.com/watch?v=lH_yZTi8uYw",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/809173799642595428/1v1_Ithilien_mordor_vs_gondor.BfME2Replay"
+	},
+	{
+		"tour_id": 4,
+		"region_id": null,
+		"winning_faction_id": 5,
+		"losing_faction_id": 3,
+		"youtube_link": "https://www.youtube.com/watch?v=7BhMxgTNy7A",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/809877171052478544/GDA_Carrefour_Mordor_vs_Gondor.BfME2Replay"
+	},
+	{
+		"tour_id": 4,
+		"region_id": null,
+		"winning_faction_id": 4,
+		"losing_faction_id": 5,
+		"youtube_link": "https://www.youtube.com/watch?v=W-G12uaPfPo",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/809464501782708224/DAIN_vs_Floki_Mer_de_Rhun_tour_4.BfME2Replay"
+	},
+	{
+		"tour_id": 4,
+		"region_id": 104,
+		"winning_faction_id": 5,
+		"losing_faction_id": 4,
+		"youtube_link": "https://www.youtube.com/watch?v=eCigewxhCTY",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/809819192157012025/1v1_Lithlad_mordor_vs_nain.BfME2Replay"
+	},
+	{
+		"tour_id": 5,
+		"region_id": 53,
+		"winning_faction_id": 2,
+		"losing_faction_id": 8,
+		"youtube_link": "https://www.youtube.com/watch?v=Nv8JsOu_yR8",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/813091121944068126/ered_lui_tour_5.BfME2Replay"
+	},
+	{
+		"tour_id": 5,
+		"region_id": null,
+		"winning_faction_id": 2,
+		"losing_faction_id": 8,
+		"youtube_link": null,
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/812963329889927188/Tour_5.Collines_devendim_angmarvselfes.BfME2Replay"
+	},
+	{
+		"tour_id": 5,
+		"region_id": 62,
+		"winning_faction_id": 7,
+		"losing_faction_id": 6,
+		"youtube_link": "https://www.youtube.com/watch?v=AFRpfRbyYwU",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/812060217642319912/GDA_Isengard_vs_Goblin_Font_Grise.BfME2Replay"
+	},
+	{
+		"tour_id": 5,
+		"region_id": 61,
+		"winning_faction_id": 6,
+		"losing_faction_id": 7,
+		"youtube_link": "https://www.youtube.com/watch?v=Nv8JsOu_yR8",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/812779958643720202/isengard_vs_goblin_3vs3_gda_tour_5.BfME2Replay"
+	},
+	{
+		"tour_id": 5,
+		"region_id": 71,
+		"winning_faction_id": 4,
+		"losing_faction_id": 8,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 5,
+		"region_id": null,
+		"winning_faction_id": 8,
+		"losing_faction_id": 4,
+		"youtube_link": "https://www.youtube.com/watch?v=OEGhDe2WPi8",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/812066976393592972/desert_du_nord_tour_5.BfME2Replay"
+	},
+	{
+		"tour_id": 5,
+		"region_id": null,
+		"winning_faction_id": 6,
+		"losing_faction_id": 7,
+		"youtube_link": null,
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/812782132010680350/tour_5_Moria.BfME2Replay"
+	},
+	{
+		"tour_id": 5,
+		"region_id": null,
+		"winning_faction_id": 6,
+		"losing_faction_id": 7,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 5,
+		"region_id": 40,
+		"winning_faction_id": 5,
+		"losing_faction_id": 3,
+		"youtube_link": null,
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/813174283303911424/Dagorlad_tour_5.BfME2Replay"
+	},
+	{
+		"tour_id": 5,
+		"region_id": null,
+		"winning_faction_id": 5,
+		"losing_faction_id": 3,
+		"youtube_link": null,
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/812782119796342844/tour_5_porte_noire.BfME2Replay"
+	},
+	{
+		"tour_id": 5,
+		"region_id": null,
+		"winning_faction_id": 5,
+		"losing_faction_id": 3,
+		"youtube_link": null,
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/811697539006070844/Veqz_vs_Chabbacks_Nord_de_lIthilien.BfME2Replay"
+	},
+	{
+		"tour_id": 5,
+		"region_id": 104,
+		"winning_faction_id": 4,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/812704849111023636/Lithlad_tour_5.BfME2Replay"
+	},
+	{
+		"tour_id": 5,
+		"region_id": 34,
+		"winning_faction_id": 5,
+		"losing_faction_id": 3,
+		"youtube_link": "https://www.youtube.com/watch?v=OEGhDe2WPi8",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/812420530404720670/Centre_de_lIthilien_Mordor_vs_Gondor_T5.BfME2Replay"
+	},
+	{
+		"tour_id": 5,
+		"region_id": 144,
+		"winning_faction_id": 5,
+		"losing_faction_id": 3,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 5,
+		"region_id": 128,
+		"winning_faction_id": 5,
+		"losing_faction_id": 3,
+		"youtube_link": "https://www.youtube.com/watch?v=AFRpfRbyYwU",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/811685406558519296/eternal_jls_vs_kampi_fairy_osgiliath.BfME2Replay"
+	},
+	{
+		"tour_id": 5,
+		"region_id": 47,
+		"winning_faction_id": 5,
+		"losing_faction_id": 3,
+		"youtube_link": null,
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/812798507802820669/Emyn_Arnen_Gondor_contre_Mordor_TOUR5.BfME2Replay"
+	},
+	{
+		"tour_id": 5,
+		"region_id": null,
+		"winning_faction_id": 2,
+		"losing_faction_id": 8,
+		"youtube_link": "https://www.youtube.com/watch?v=AFRpfRbyYwU",
+		"replay_link": "https://cdn.discordapp.com/attachments/655867449794756608/811705824065355856/bataille_navale_INSANE.BfME2Replay"
+	},
+	{
+		"tour_id": 6,
+		"region_id": 7,
+		"winning_faction_id": 2,
+		"losing_faction_id": 8,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 6,
+		"region_id": null,
+		"winning_faction_id": 6,
+		"losing_faction_id": 7,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 6,
+		"region_id": null,
+		"winning_faction_id": 6,
+		"losing_faction_id": 7,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 6,
+		"region_id": null,
+		"winning_faction_id": 2,
+		"losing_faction_id": 7,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 6,
+		"region_id": null,
+		"winning_faction_id": 4,
+		"losing_faction_id": 8,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 6,
+		"region_id": 71,
+		"winning_faction_id": 4,
+		"losing_faction_id": 8,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 6,
+		"region_id": null,
+		"winning_faction_id": 6,
+		"losing_faction_id": 4,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 6,
+		"region_id": 122,
+		"winning_faction_id": 7,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 6,
+		"region_id": 43,
+		"winning_faction_id": 6,
+		"losing_faction_id": 4,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 6,
+		"region_id": null,
+		"winning_faction_id": 3,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 6,
+		"region_id": 104,
+		"winning_faction_id": 4,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 6,
+		"region_id": 135,
+		"winning_faction_id": 5,
+		"losing_faction_id": 3,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 6,
+		"region_id": 83,
+		"winning_faction_id": 1,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 6,
+		"region_id": 2,
+		"winning_faction_id": 1,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 7,
+		"region_id": 7,
+		"winning_faction_id": 2,
+		"losing_faction_id": 8,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 7,
+		"region_id": 29,
+		"winning_faction_id": 2,
+		"losing_faction_id": 8,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 7,
+		"region_id": 93,
+		"winning_faction_id": 2,
+		"losing_faction_id": 8,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 7,
+		"region_id": 140,
+		"winning_faction_id": 2,
+		"losing_faction_id": 8,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 7,
+		"region_id": null,
+		"winning_faction_id": 2,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 7,
+		"region_id": null,
+		"winning_faction_id": 2,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 7,
+		"region_id": 27,
+		"winning_faction_id": 2,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 7,
+		"region_id": 55,
+		"winning_faction_id": 6,
+		"losing_faction_id": 7,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 7,
+		"region_id": null,
+		"winning_faction_id": 1,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 7,
+		"region_id": 143,
+		"winning_faction_id": 1,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 7,
+		"region_id": 32,
+		"winning_faction_id": 4,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 7,
+		"region_id": 56,
+		"winning_faction_id": 4,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 7,
+		"region_id": null,
+		"winning_faction_id": 4,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 7,
+		"region_id": null,
+		"winning_faction_id": 3,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": 1,
+		"winning_faction_id": 2,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": null,
+		"winning_faction_id": 2,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": null,
+		"winning_faction_id": 2,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": 27,
+		"winning_faction_id": 1,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": 134,
+		"winning_faction_id": 1,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": 143,
+		"winning_faction_id": 1,
+		"losing_faction_id": 6,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": 35,
+		"winning_faction_id": 6,
+		"losing_faction_id": 7,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": 56,
+		"winning_faction_id": 4,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": 50,
+		"winning_faction_id": 4,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": 145,
+		"winning_faction_id": 4,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": 148,
+		"winning_faction_id": 6,
+		"losing_faction_id": 7,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": 40,
+		"winning_faction_id": 4,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": null,
+		"winning_faction_id": 4,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": 48,
+		"winning_faction_id": 1,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": null,
+		"winning_faction_id": 3,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": 119,
+		"winning_faction_id": 3,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": 42,
+		"winning_faction_id": 3,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	},
+	{
+		"tour_id": 8,
+		"region_id": 153,
+		"winning_faction_id": 3,
+		"losing_faction_id": 5,
+		"youtube_link": null,
+		"replay_link": null
+	}
+]

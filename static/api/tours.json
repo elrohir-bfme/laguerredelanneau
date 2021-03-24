@@ -1,55 +1,90 @@
-{
-	"current": 9,
-	"tours": [
-		{
-			"end": "2021-01-25 00:00:00",
-			"id": 1,
-			"start": "2021-01-18 13:20:00"
-		},
-		{
-			"end": "2021-02-01 00:00:00",
-			"id": 2,
-			"start": "2021-01-25 13:20:00"
-		},
-		{
-			"end": "2021-02-08 00:00:00",
-			"id": 3,
-			"start": "2021-02-01 13:20:00"
-		},
-		{
-			"end": "2021-02-15 00:00:00",
-			"id": 4,
-			"start": "2021-02-08 13:20:00"
-		},
-		{
-			"end": "2021-02-22 00:00:00",
-			"id": 5,
-			"start": "2021-02-15 13:20:00"
-		},
-		{
-			"end": "2021-03-01 00:00:00",
-			"id": 6,
-			"start": "2021-02-22 13:20:00"
-		},
-		{
-			"end": "2021-03-08 00:00:00",
-			"id": 7,
-			"start": "2021-03-01 13:20:00"
-		},
-		{
-			"end": "2021-03-15 00:00:00",
-			"id": 8,
-			"start": "2021-03-08 13:20:00"
-		},
-		{
-			"end": "2021-03-22 00:00:00",
-			"id": 9,
-			"start": "2021-03-15 13:20:00"
-		},
-		{
-			"end": "2021-03-29 00:00:00",
-			"id": 10,
-			"start": "2021-03-22 13:20:00"
-		}
-	]
-}
+[
+	{
+		"end": "2021-01-24 00:00:00",
+		"id": 0,
+		"img": "/img/pages/chronologie/0.png",
+		"name": "Tour de Préparation",
+		"preparation": true,
+		"start": "2021-01-10 13:20:00"
+	},
+	{
+		"end": "2021-01-28 00:00:00",
+		"id": 1,
+		"img": "/img/pages/chronologie/1.png",
+		"name": "Tour 1",
+		"preparation": false,
+		"start": "2021-01-25 13:20:00"
+	},
+	{
+		"end": "2021-02-01 00:00:00",
+		"id": 2,
+		"img": "/img/pages/chronologie/2.png",
+		"name": "Tour 2",
+		"preparation": false,
+		"start": "2021-01-28 13:20:00"
+	},
+	{
+		"end": "2021-02-08 00:00:00",
+		"id": 3,
+		"img": "/img/pages/chronologie/3.png",
+		"name": "Tour 3",
+		"preparation": false,
+		"start": "2021-02-01 13:20:00"
+	},
+	{
+		"end": "2021-02-15 00:00:00",
+		"id": 4,
+		"img": "/img/pages/chronologie/4.png",
+		"name": "Tour 4",
+		"preparation": false,
+		"start": "2021-02-08 13:20:00"
+	},
+	{
+		"end": "2021-02-22 00:00:00",
+		"id": 5,
+		"img": "/img/pages/chronologie/5.png",
+		"name": "Tour 5",
+		"preparation": false,
+		"start": "2021-02-15 13:20:00"
+	},
+	{
+		"end": "2021-03-01 00:00:00",
+		"id": 6,
+		"img": "/img/pages/chronologie/6.png",
+		"name": "Tour 6",
+		"preparation": false,
+		"start": "2021-02-22 13:20:00"
+	},
+	{
+		"end": "2021-03-08 00:00:00",
+		"id": 7,
+		"img": "/img/pages/chronologie/7.png",
+		"name": "Tour 7",
+		"preparation": false,
+		"start": "2021-03-01 13:20:00"
+	},
+	{
+		"end": "2021-03-15 00:00:00",
+		"id": 8,
+		"img": "/img/pages/chronologie/8.png",
+		"name": "Tour 8",
+		"preparation": false,
+		"start": "2021-03-08 13:20:00"
+	},
+	{
+		"end": "2021-03-22 00:00:00",
+		"id": 9,
+		"img": "/img/pages/chronologie/9.png",
+		"name": "Tour 9",
+		"preparation": false,
+		"start": "2021-03-15 13:20:00"
+	},
+	{
+		"end": "2021-03-29 00:00:00",
+		"id": 10,
+		"img": null,
+		"name": "Tour 10",
+		"preparation": false,
+		"start": "2021-03-22 13:20:00"
+	}
+]

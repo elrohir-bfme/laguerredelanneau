@@ -6,11 +6,11 @@
    <image style="overflow:visible;" width="1440" height="1060" xlink:href="~assets/laguerredelanneau.png" transform="matrix(1 0 0 1 0 0)"></image>
 <g>
 	<g>
-		<path 
+		<path
       		id="Mer"
 			title="Mer"
 			class="opacity-0"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
       		d="M843,1060c-281,0-562,0-843,0C0,706.7,0,353.3,0,0c154.3,0,308.7,0,463,0c-1.2,7.1-3.1,13.7-9.9,18.1
@@ -65,7 +65,7 @@
       id="Nord"
 			title="Nord"
 			class="st opacity-0"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 
@@ -84,11 +84,11 @@
 			c324.3,0,648.7,0,973,0C1440,39.7,1440,79.3,1440,119z">
 			<title>{{ title }}</title>
 		</path>
-		<path  
+		<path
       id="Est"
 			title="Est"
 			class="st opacity-0"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 
@@ -101,7 +101,7 @@
       id="Sud"
 			title="Sud"
 			class="st opacity-0"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 
@@ -118,11 +118,11 @@
 			c7.9-2,10.2-4.8,11.6-12.7c0.4-2.4,1.5-5.2,3.3-6.9C723.3,922.7,726.2,916.4,725.5,909.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path  
+		<path
       		id="Ephel Dúath"
 			title="Ephel Dúath"
 			class="st opacity-0"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 
@@ -146,7 +146,7 @@
 			c5.8,0,11.7-0.1,17.3-1.1C1054.3,724.1,1056.8,721.7,1058.6,720.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Rhun"
 			title="Rhun"
 			aria-valuetext="Rhun"
@@ -155,8 +155,8 @@
 			:fill="map.Rhun ? map.Rhun.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
-			
+			@click="toggleModal"
+
 			d="M1416.8,528.8c-9.3-2.6-18.2-2.4-27.3,0.3c-8,2.3-15,5.9-20.8,12.1c-1,1.1-3.3,1.5-4.9,1.4
 			c-8-0.5-15.8-1-23.4,2.8c-2.5,1.2-5.9,0.1-8.9,0.6c-3.6,0.6-7,1.7-10.5,2.6c-3.6,0.9-7.1,2.5-10.7,2.7
 			c-10.6,0.5-21.2,0.5-31.8,0.7c-1.3,0-2.6-0.1-4.8-0.3c0-4.2-0.1-8.3,0-12.4c0.4-10.7-3-20.5-8.6-29.3c-2.5-4-6.9-7.1-10.9-10
@@ -167,7 +167,7 @@
 			c1.4,0.6,2.6,3.3,2.6,5c0,52.8-0.2,105.6-0.3,158.5c0,14.8-0.2,29.7-0.3,44.5C1417.1,526.1,1417,527.2,1416.8,528.8z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Nurn"
 			title="Nurn"
 			aria-valuetext="Nurn"
@@ -176,7 +176,7 @@
 			:fill="map.Nurn ? map.Nurn.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M1076.3,712.1c4.6,3.8,8.7,7.8,13.5,11c10,6.6,20.2,8.8,32.9,5.9c11.9-2.7,22.3-8.4,33.8-11.4
 			c3.4-0.9,6.4-4,9-6.5c2.8-2.7,5.4-4.7,9.6-4.2c4.1,0.5,8.3,0.9,12.4,0.6c3.1-0.2,6.2-1.6,9.2-2.5c3.8-1.2,7.4-2.9,11.2-3.7
 			c13.2-2.7,26.3-5.8,39.6-7.4c11-1.3,22.2-1,33.3-1.1c14.5-0.1,29,0.1,43.4,0.3c7.2,0.1,14.3,0.2,21.5,0.6
@@ -189,7 +189,7 @@
 			c-3.8-4.6-7.3-9.4-10.3-14.5c-5.9-9.9-4.6-10.3,4-18.7C1072.9,714.7,1074.6,713.5,1076.3,712.1z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Orocarni"
 			title="Orocarni"
 			aria-valuetext="Orocarni"
@@ -198,7 +198,7 @@
 			:fill="map.Orocarni ? map.Orocarni.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M1330.6,336.2c-7.7-9.7-15.1-19.5-22.8-28.9c-8.9-10.9-19.9-16-34.5-14.6c-13.1,1.3-26.3,0.5-39.4,1.3
 			c-4.6,0.3-9.1,2.6-13.6,4c-8,2.4-15.9,4.9-23.9,7.3c-0.3-0.6-0.6-1.2-0.9-1.8c2.2-1.8,4.5-3.5,6.6-5.5
 			c7.1-6.9,14.2-13.8,21.2-20.9c2.1-2.1,3.6-4.8,5.3-7.2c4.9-7,8.3-14.3,7.4-23.2c-0.8-8.3-1.3-16.5-1.6-24.8
@@ -209,7 +209,7 @@
 			c-2.9,4.3-8.2,7.5-13.3,7.4c-2,0-4.1,2-6.1,3.2C1332,335.3,1331.3,335.7,1330.6,336.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Harondor"
 			title="Harondor"
 			aria-valuetext="Harondor"
@@ -218,7 +218,7 @@
 			:fill="map.Harondor ? map.Harondor.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
      		d="M1069.8,973.3c-4.8,0-10.1,0.2-15.3-0.1c-5.2-0.3-9.2,1.1-11,6.4c-1,2.9-2.6,2.5-5.1,1.5
 			c-5.5-2.2-11.1-5-16.7-5.3c-4.1-0.2-9,2.2-12.4,5c-4.5,3.7-8.9,5.1-14.2,3.4c-9-3-17.7-2.1-26.4,0.9c-2,0.7-4.2,0.9-6.4,1.3
 			c-8.5,1.7-15.4-0.5-21.5-7c-5.9-6.3-13.7-10-21.2-14.3c-9-5.1-18.7-7.5-28.1-11c-6.7-2.5-14.3-3.3-21.5-3.7
@@ -231,7 +231,7 @@
 			c-0.2,2.5,1.3,5.8,3.1,7.6c3.5,3.6,4.6,7.6,4.6,12.2C1069.8,946.4,1069.8,959,1069.8,973.3z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Enedwaith"
 			title="Enedwaith"
 			aria-valuetext="Enedwaith"
@@ -240,7 +240,7 @@
 			:fill="map.Enedwaith ? map.Enedwaith.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
 			d="M429.5,726.7c-4.4-2-7.7-3.1-10.7-4.8c-7.3-4.3-15.2-5.5-23.5-5c-3,0.2-3.7-0.6-4.3-4
 			c-1.5-8.1-0.7-14.9,2.6-22.8c3-7.1,1.9-16,2.5-24.1c0.7-8.5,2.7-10.6,10.8-13.3c4.3-1.4,9.2-2.6,11.9-8.9
 			c-4.8,0.3-8.5,0.5-12.2,0.8c-6.5,0.4-7.6-1-5.4-7.1c1.8-5.1,3.7-10.2,5.8-15.3c2.2-5.4-0.8-9.5-3.3-13.4
@@ -253,7 +253,7 @@
 			C435.6,710.4,428.2,715,429.5,726.7z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Khand"
 			title="Khand"
 			aria-valuetext="Khand"
@@ -262,7 +262,7 @@
 			:fill="map.Khand ? map.Khand.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M1418.1,1041.3c-52.9,0-105.3,0-158.2,0c0-8.9,0.2-17.8-0.1-26.8c-0.3-9.5,1.6-18.3,5.5-27
 			c1.5-3.3,1.7-7.4,1.9-11.2c0.5-9.1,4.2-16.8,9.2-24.3c3.3-4.8,5.5-10.5,7.3-16.1c2.9-8.7,4.9-17.6,7.7-26.3
 			c0.6-1.9,2.6-3.4,4.1-4.9c8.7-7.9,17.4-15.8,26.1-23.7c3.5-3.2,6.1-2.7,8.1,1.5c3.1,7,10.1,9.1,16.5,4.7
@@ -271,7 +271,7 @@
 			C1418.1,903.7,1418.1,972.1,1418.1,1041.3z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Valée du Celduin"
 			title="Valée du Celduin"
 			aria-valuetext="Valee_Celduin"
@@ -280,7 +280,7 @@
 			:fill="map.Valee_Celduin ? map.Valee_Celduin.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M998.3,278.1c7.4-4.1,14.5-8,22.5-12.3c15.5,21.6,39.1,21.7,62.6,21c-0.6,4.7-1.4,8.8-1.4,12.8
 			c0,1.8,1.3,4.1,2.8,5.2c3.4,2.5,7.5,4,10.7,6.7c3.5,2.9,6.8,3,9.8,0.3c9.6-8.5,21.1-9.2,32.5-6.7c6.6,1.5,12.4,6.5,18.5,10.2
 			c0.6,0.4,0.5,2.2,0.6,3.3c0,0.4-0.5,0.9-0.6,1.3c-3.4,9.7-5.8,15.2,7.7,19.5c-0.2,1.2-0.3,2.5-0.6,3.8c-3.2,13.8,1.5,24.4,13,32.7
@@ -291,7 +291,7 @@
 			c-1.6-1.7-1.6-5.6-1.2-8.4c0.6-4,2.2-7.9,3.5-11.8C1003.3,291.8,1002.6,284.8,998.3,278.1z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Lointain Harad"
 			title="Lointain Harad"
 			aria-valuetext="Lointain_Harad"
@@ -300,7 +300,7 @@
 			:fill="map.Lointain_Harad ? map.Lointain_Harad.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M1254.8,1041.9c-9.5,0-18.4,0-27.4,0c-62.6,0-125.2,0.1-187.8,0.1c-54.4,0-108.7,0.1-163.1,0.1
 			c-7.6,0-15.3,0.1-22.9-0.1c-1.7-0.1-4.2-0.9-4.9-2.2c-5.8-11.2-8.1-23.2-6.3-35.7c0.8-5.7,9.3-11.7,15.9-12.1
 			c9.6-0.6,19.3-0.7,28.7-2.1c5.8-0.8,11.3-3.4,16.8-5.7c1.7-0.7,3.1-2.6,4-4.2c5.5-10.3,12.1-11.8,21.3-4.5c3,2.4,6.3,4.5,8.6,7.5
@@ -310,7 +310,7 @@
 			c12.2,0.7,24.4,2.6,36.6,3.4c14.3,0.9,28.6,1.1,42.9,1.5c6.3,0.2,12.6,0,19.1,0C1254.8,1014.6,1254.8,1027.9,1254.8,1041.9z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Dagorlad"
 			title="Dagorlad"
 			aria-valuetext="Dagorlad"
@@ -319,7 +319,7 @@
 			:fill="map.Dagorlad ? map.Dagorlad.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M1156.6,561.7c-4.3-8.2-11.7-10.8-19.9-6.4c-5.5,3-10.6,3-16.2,0.8c-1.6-0.7-3.8-1.3-5.3-0.9
 			c-9.7,2.9-18.6-1-26.4-5.1c-6.6-3.4-11.5-10-16.9-15.6c-5.1-5.3-8.7-5.9-15.3-2.5c-7.7,4-15.4,7.6-24.5,7.6c-10,0-18,4-22.9,13.2
 			c-0.2,0.4-0.7,0.6-1.6,1.2c-0.5-1.3-1.4-2.5-1.3-3.5c0.4-6.3-3.3-10-7.6-13.7c-6.6-5.8-6.6-8.4,0.3-13.6c3-2.3,4.4-5,4.4-8.9
@@ -331,7 +331,7 @@
 			c-8.4-0.2-16.9,0.1-25.3-0.6C1163.3,558.7,1159.6,558.1,1156.6,561.7z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Lithlad"
 			title="Lithlad"
 			aria-valuetext="Lithlad"
@@ -340,7 +340,7 @@
 			:fill="map.Lithlad ? map.Lithlad.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M1182.6,598.2c10.6-6.2,15.2-16.3,20-26.2c1.7-3.4,3.4-5.3,7.5-4.8c2.1,0.2,4.5,0,6.3-0.9
 			c8.3-4.1,17.1-3.2,25.9-3.7c4.8-0.2,9.6-2.1,14.4-3c5.8-1.1,11.7-2.3,17.6-2.8c7.8-0.8,15.6-1.1,23.4-1.3
 			c5.6-0.1,11.3,0.6,16.9,0.6c1.9,0,4.2-0.3,5.6-1.4c4.6-3.4,9.5-4.1,15-4.1c4.2,0,8.3-1.3,13.5-2.2c0.5,4.5,0.9,9.6,1.6,14.6
@@ -351,7 +351,7 @@
 			c-1.1-7.9-2.6-15.7-4-23.6C1194.5,607.5,1188.7,603.2,1182.6,598.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Nord de la Forêt Noire"
 			title="Nord de la Forêt Noire"
 			aria-valuetext="Nord_Foret_Noire"
@@ -360,7 +360,7 @@
 			:fill="map.Nord_Foret_Noire ? map.Nord_Foret_Noire.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M916,106.1c5.5,4.6,10.9,9.3,16.4,13.8c6.4,5.2,11.9,10.7,14.7,19c2.4,7,5.7,14,14.6,16.4
 			c-1.8,2.8-3.3,4.8-4.4,6.9c-2.2,4.5-4.2,9.2-6.3,13.8c-0.6,1.3-0.8,3.2-1.8,4c-5.8,4.5-5.6,10.1-2.8,16.7
 			c-5.3,1.3-10.3,2.3-15.2,3.8c-3.4,1.1-6.7,2.9-9.9,4.6c-6.9,3.6-14.1,5.7-22,4.8c-4.4-0.5-6.6,1-7.2,5.9
@@ -371,7 +371,7 @@
 			C907.7,117.3,911.2,114.6,916,106.1z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Proche Harad"
 			title="Proche Harad"
 			aria-valuetext="Proche_Harad"
@@ -380,7 +380,7 @@
 			:fill="map.Proche_Harad ? map.Proche_Harad.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M1315.2,880.9c-2.5,2.7-3.9,4.3-5.5,5.7c-5.5,4.8-11.1,9.5-16.7,14.1c-4,3.3-6.2,7.2-7.4,12.4
 			c-2.3,10.2-5.4,20.2-8.8,30.1c-1.2,3.5-4.1,6.3-6.3,9.5c-5.1,7.4-8.1,15.6-8.1,24.7c0,1.5-0.1,3-0.3,4.5
 			c-2.5,13.3-4.1,14.7-17.4,14.4c-18.5-0.5-36.9-1.2-55.3-2.1c-11.1-0.6-22.2-1.7-33.2-3c-3.2-0.4-7-1.5-9.2-3.7
@@ -391,7 +391,7 @@
 			C1290.2,876.1,1302,879.9,1315.2,880.9z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Minhiriath"
 			title="Minhiriath"
 			aria-valuetext="Minhiriath"
@@ -400,7 +400,7 @@
 			:fill="map.Minhiriath ? map.Minhiriath.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal"  
+			@click="toggleModal"
       d="M261.9,510.5c-0.9-8.5-1.8-17-2.6-25.5c-0.1-1-0.1-2,0.1-3c1.2-7.5,2.7-15,3.7-22.5
 			c1.3-9.2,7.5-15.8,11.9-23.3c2.3-4,4.6-7.9,7.2-11.6c3-4.3,7.6-5.4,12.4-4.7c6.9,1,13.6,2.8,20.5,3.9c6.1,1,12.3,0.8,18.3,2.3
 			c5.2,1.3,10.4,3.4,14.8,6.3c8.2,5.6,17.3,8,26.9,9.3c2.8,0.4,5.7,0.2,8.5,0.4c4.5,0.3,8.3,1.5,11.9,5.1c5,4.9,11.5,8.3,16.8,13
@@ -412,7 +412,7 @@
 			c-1.2-3.5-1.6-7.4-2.4-11.1C260.7,510.7,261.3,510.6,261.9,510.5z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Anfalas"
 			title="Anfalas"
 			aria-valuetext="Anfalas"
@@ -421,7 +421,7 @@
 			:fill="map.Anfalas ? map.Anfalas.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M641.6,692c-0.6,4.3-1.6,8-1.5,11.7c0.1,6.5-2.7,11.6-6.5,16.3c-6,7.6-3,20.8,5.7,24.7
 			c1.1,0.5,2.4,1.4,2.9,2.5c3,5.3,5.8,10.8,8.7,16.2c-2.9,3.9-6.3,4.4-11.4,4.6c-8.3,0.4-17.1-0.6-25.2,5.9
 			c-5.1,4.1-14.1,4.4-21.4,4.5c-7.5,0.2-14.8,0.1-22.1,2.5c-4.2,1.4-8.9,1.7-13.3,1.4c-5.5-0.4-10.2-7-16.5-2.2
@@ -432,14 +432,14 @@
 			c7.5,6.8,16.8,6.3,26,6.6C625.2,692.2,633.5,692,641.6,692z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Les Montagnes Blanches"
 			title="Les Montagnes Blanches"
 			class="st opacity-0"
-			
+
 			:fill="montagne"
 			pointer-events="all"
-			@mouseover="getInfo" 
+			@mouseover="getInfo"
       d="M861.9,659.3c-4.2,5.9-8.5,11.4-12,17.3c-1.6,2.8-2.2,6.5-2.4,9.9c-0.7,12.3,2.1,23.7,9.6,33.8
 			c3.1,4.2,1.9,6.1-3.2,6.5c-9.2,0.6-18.7,0-27.4,4.2c-1.6,0.8-4-0.2-5.9,0.1c-4.6,0.9-9.1,2.5-13.8,3.1c-6.7,1-13.5,2.1-20.2,1.8
 			c-14.8-0.5-29.7-0.7-44.2-3.3c-11.9-2.1-24.5-3.1-35-10.6c-0.7-0.5-1.5-0.7-2.1-1.3c-13.7-12.7-30.3-21.3-45.7-31.6
@@ -448,7 +448,7 @@
 			c4.8,2.4,9.4,3.6,14.3,1.8C853.3,656.1,857.5,656.6,861.9,659.3z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Monts du Fer"
 			title="Monts du Fer"
 			aria-valuetext="Monts_Fer"
@@ -457,7 +457,7 @@
 			:fill="map.Monts_Fer ? map.Monts_Fer.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M1294.3,125c-7.2,5.3-14.3,9.9-20.6,15.3c-2.4,2-3.7,5.8-4.4,9.1c-1.5,6.4-3.6,12.1-8.2,17.2
 			c-5.8,6.4-10.3,13.9-16.2,20.1c-9.4,9.7-20.7,16.8-34.7,17.3c-10.1,0.3-18.8,3.9-26.7,9.6c-5.6,4-11.6,5.4-18.3,4.8
 			c-9.2-0.9-17.8,1-26.6,4.3c-6.1,2.3-13.6,1.2-20.4,0.8c-1.5-0.1-3.6-3.3-4.2-5.4c-2.7-8.9-4.8-17.9-7.4-26.9
@@ -467,7 +467,7 @@
 			C1283.4,119.7,1288.8,120.8,1294.3,125z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Collines de la Tour"
 			title="Collines de la Tour"
 			aria-valuetext="Collines_Tours"
@@ -476,7 +476,7 @@
 			:fill="map.Collines_Tours ? map.Collines_Tours.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M222.3,337.6c0-4,0-7.6,0-11.6c0.7,0,2.4-0.4,3.9-0.1c3,0.7,5.9,0.1,6.5-2.8c0.4-2.1-1-4.8-2.1-7
 			c-0.5-1-2.1-2-3.2-2.1c-5.7-0.4-6.6-3.9-6.1-8.7c0.2-2,0.2-4,0-6c-0.4-3.9,1.3-6.1,4.8-7.8c7.5-3.7,8.7-7,6.4-15.2
 			c-2.3-8.4,2.5-19.3,9.8-24.2c3.8-2.5,6.8-6.3,9.8-9.7c3.3-3.7,6.1-7.9,9.4-11.5c3.4-3.6,7.2-6.8,11.7-11
@@ -488,7 +488,7 @@
 			c0.4-3.9,1.9-8-4.2-9.9C237.7,340,230.7,336.5,222.3,337.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Sud de la Forêt Noire"
 			title="Sud de la Forêt Noire"
 			aria-valuetext="Sud_Foret_Noire"
@@ -497,7 +497,7 @@
 			:fill="map.Sud_Foret_Noire ? map.Sud_Foret_Noire.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M990.8,317.2c-1.4,0.1-3.2,0.4-5,0.2c-10.9-1-18.3,5.3-23.7,13.1c-4.1,6-9.9,9-15.4,12.8
 			c-2.3,1.6-5.1,2.4-7.3,4c-5.4,4-10.9,7.5-18,7.3c-1.5-0.1-3.7,0.6-4.6,1.7c-1.9,2.5-4.3,5.3-4.6,8.2c-0.4,3.8,3.4,5.1,6.6,5.3
 			c6.3,0.4,12.4,0.8,18.4-2.6c10-5.7,20.2-2.3,27.8,7.7c5.7,7.5,9,15.7,10,25.1c0.5,4.6,2.1,9,3.3,14.1c-8.5,4.4-16.1,11.3-27.6,9.5
@@ -509,7 +509,7 @@
 			C994.4,303.7,992.8,310.1,990.8,317.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Harlindon"
 			title="Harlindon"
 			aria-valuetext="Harlindon"
@@ -532,7 +532,7 @@
 			c4.1-1.9,5.3-1.1,5.4,3.5c0,1.5,0,3,0,4.5C216.2,304.1,216,304.6,215.9,305z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
      		id="La Montagne du Destin"
 			title="La Montagne du Destin"
 			aria-valuetext="Montagne_Destin"
@@ -541,7 +541,7 @@
 			:fill="map.Montagne_Destin ? map.Montagne_Destin.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M1080.5,710.1c3.5-2.8,6.3-4.7,8.6-7.1c5.7-6,5.8-10.1-0.1-15.8c-5.7-5.5-11.9-10.7-18-15.8
 			c-3.9-3.3-8.2-6.2-12.1-9.5c-1.3-1.1-2.1-2.9-2.7-4.5c-1.7-4.9-0.3-11.1-6.1-14.4c-0.7-0.4-0.9-2.2-0.7-3.3
 			c0.8-4.9,1.1-10.1,2.9-14.6c2-5.2,2.9-11.2,10.6-12.9c4.1-0.9,7.1-6,11.1-8.2c4.1-2.3,8.8-3.3,13.2-5.1c4.5-1.8,9.2-3.3,13.2-5.9
@@ -550,7 +550,7 @@
 			c-8.8,10.8-22,13.5-33.9,17.7c-11.5,4.1-24.3,8.5-36.5,0.9C1091.5,718.4,1086.2,714.2,1080.5,710.1z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Lande desséchée"
 			title="Lande desséchée"
 			aria-valuetext="Lande_Dessechee"
@@ -559,7 +559,7 @@
 			:fill="map.Lande_Dessechee ? map.Lande_Dessechee.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M897.2,74.7c4.6-3.3,8.7-3.3,13.6-1.7c3.2,1,7.2-0.7,10.9-0.8c6.4-0.1,12.9-0.7,19,0.6
 			c4.1,0.8,7.2,0.3,11-0.8c5.1-1.4,10.5-1.9,15.8-2.7c1.6-0.2,3.7,0.4,4.8-0.4c3.5-2.7,6.6-1.5,9.5,0.7c9.6,7.5,19.6,4.3,28.7,0
 			c6.4-3,11-0.3,16.1,1.7c2.8,1.1,5.1,3.6,7.6,5.6c4.3,3.4,9.2,4.7,14.7,5.3c3.5,0.4,6.9,2.8,10.3,4.2c1.8,0.7,4.3,2.2,5.4,1.5
@@ -570,7 +570,7 @@
 			c-0.7-8.9-7.2-13.8-14.4-17.8C901.8,76.7,899.6,75.8,897.2,74.7z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Les Havres Gris"
 			title="Les Havres Gris"
 			aria-valuetext="Havres_Gris"
@@ -579,7 +579,7 @@
 			:fill="map.Havres_Gris ? map.Havres_Gris.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M94.1,284.4c-1.6-7.3-4.9-12.5-10.1-16.9c-1.6-1.3-1.7-4.5-2.1-6.9c-0.2-1.2,1-2.6,0.8-3.8
 			c-0.8-6.9,2.9-11,8.3-14c6.2-3.5,8.2-8.7,7-15.5c-0.8-4.6,0.2-8.6,3.2-12.6c2.1-2.7,2.1-6.9,3.6-10.1c1.2-2.6,2.8-6.5,5-7
 			c4.1-1,8.7-0.2,13,0.2c0.6,0.1,1.4,2.2,1.4,3.4c0.1,5.3-0.4,10.7,0.1,15.9c0.3,3.4,0.9,7.7,3.1,10c5.7,6,6.6,13.6,9,20.8
@@ -591,7 +591,7 @@
 			c-2.6-0.3-5.4,0.1-8,0.5C98.4,282.9,96.5,283.7,94.1,284.4z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Terres Brunes"
 			title="Terres Brunes"
 			aria-valuetext="Terres_Brunes"
@@ -600,7 +600,7 @@
 			:fill="map.Terres_Brunes ? map.Terres_Brunes.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M849.8,493.8c-1.7-1.9-3.6-4.2-5.5-6.4c-4.6-5.5-3.4-18.5,2.2-23.1c3.6-3,4.9-6.4,3.9-11.4
 			c-1-5-0.5-10.3-0.2-15.4c0.1-1.2,1.8-2.4,3-3.4c5.9-4.7,11.6-9.8,18-13.9c2.5-1.6,6.6-1.9,9.6-1.2c6.4,1.5,12.8,3.7,18.9,6.3
 			c13.7,5.7,27.8,5.6,42.2,3.5c2.3-0.3,4.7-0.9,6.9-0.5c10.3,2,19-1.8,27.1-7.4c4.6-3.1,9.3-4.4,14.6-3.5c13,2.4,26.1,4.6,39,7.5
@@ -610,17 +610,17 @@
 			C870.4,491.3,860.4,493.9,849.8,493.8z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Forlindon"
 			title="Forlindon"
 			aria-valuetext="Forlindon"
 			class="st opacity-25"
 			:class="map.Forlindon ? map.Forlindon.opacity : 'opacity-25'"
 			:fill="map.Forlindon ? map.Forlindon.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M87.6,283.6c-1.2,1.9-2.6,3.6-3.5,5.7c-1.1,2.6-1.1,5.8-2.8,7.9c-1.9,2.4-4.9,5-7.6,5.3
 			c-4,0.5-7.5-1.7-9.6-5.8c-2.1-4.3-4.9-8.3-7.4-12.4c-1.7-2.8-3.7-3.1-5.9-0.4c-1,1.3-2.2,2.5-3.3,3.7c-2.6,2.6-6,5.1-9.2,3.1
 			c-2.5-1.6-3.8-5.4-5-8.5c-0.8-1.9-0.5-4.3-0.5-6.4c-0.1-5.7-2.4-8-8.1-8.3c-8.3-0.4-9.6-3.5-6.6-11.2c1.6-4.1,1.9-9.1,1.2-13.5
@@ -635,17 +635,17 @@
 			c-0.3,2.3,3.1,5.1,4.9,7.5c2.7,3.6,5.4,7.1,8.2,10.7C89.1,283.2,88.3,283.4,87.6,283.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Sud de l'Ithilien"
 			title="Sud de l'Ithilien"
 			aria-valuetext="Sud_Ithilien"
 			class="st opacity-25"
 			:class="map.Sud_Ithilien ? map.Sud_Ithilien.opacity : 'opacity-25'"
 			:fill="map.Sud_Ithilien ? map.Sud_Ithilien.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M1078.8,895c-7,0.2-11.8,4-14.7,8.7c-5.7-1.2-10.7-2.2-15.6-3.5c-2.3-0.6-5.1-1.5-6.5-3.2
 			c-7.2-8.7-16.7-14.5-25.7-21c-2.3-1.6-4.4-4.2-5.5-6.7c-3.7-8.2-11.1-11.1-18.8-12.9c-3.3-0.8-5.8-1.5-7.9-4.2
 			c-8.4-11.1-23.6-12.9-34.5-4.4c-3.4,2.6-7.1,4.9-10.9,7c-4.6,2.5-9,2.8-14-0.5c-3.5-2.3-8.2-3.2-12.4-3.9c-4.2-0.7-8-0.8-9.8-5.9
@@ -656,17 +656,17 @@
 			C1079.8,893.5,1079.3,894.3,1078.8,895z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Carnen"
 			title="Carnen"
 			aria-valuetext="Carnen"
 			class="st opacity-25"
 			:class="map.Carnen ? map.Carnen.opacity : 'opacity-25'"
 			:fill="map.Carnen ? map.Carnen.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M1229.6,205.2c0.1,0.9,0.5,2.5,0.6,4.1c0.3,10.7-0.3,21.6,0.9,32.2c1.8,15.5-5.8,26.5-15.4,36.6
 			c-5.9,6.2-12.6,11.6-18.9,17.5c-2.1,1.9-4,4-5.7,6.3c-6.5,9-12.7,18.1-19.1,27.1c-1.1,1.6-2.5,3.7-4.2,4.1
 			c-2.3,0.6-5.1,0.2-7.3-0.7c-1-0.4-1.4-3-1.4-4.6c-0.1-1.6,0.5-3.3,1.1-4.8c3.1-8.7,2.4-9.5-5.2-15.2c-11.2-8.6-23.8-10-36.9-7.7
@@ -675,14 +675,14 @@
 			c12.7,1.3,23.3-2.6,33.7-9.4c4.2-2.7,9.8-3.6,14.9-4.8C1214.6,207.6,1221.7,206.6,1229.6,205.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Forodwaith"
 			title="Forodwaith"
 			aria-valuetext="Forodwaith"
 			class="st opacity-25"
 			:class="map.Forodwaith ? map.Forodwaith.opacity : 'opacity-25'"
 			:fill="map.Forodwaith ? map.Forodwaith.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -696,14 +696,14 @@
 			c-2.6,10-4.8,20.1-3.7,30.5C471.6,83.9,472.4,88,473,92.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Les Montagnes Grises"
 			title="Les Montagnes Grises"
 			aria-valuetext="Montagnes_Grises"
 			class="st opacity-25"
 			:class="map.Montagnes_Grises ? map.Montagnes_Grises.opacity : 'opacity-25'"
 			:fill="map.Montagnes_Grises ? map.Montagnes_Grises.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -716,7 +716,7 @@
 			C670.5,109.1,666.4,103.6,661.2,96.8z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Arthedain"
 			title="Arthedain"
 			aria-valuetext="Arthedain"
@@ -725,7 +725,7 @@
 			:fill="map.Arthedain ? map.Arthedain.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M279.1,135.1c4.6-12.8,9-23.3,16.1-32.5c0.8-1,2.7-2,3.8-1.7c6.6,1.6,11.3-2.2,15.8-5.7
 			c7.3-5.6,15.5-7.8,24.5-8.4c11.5-0.8,22.9-1.9,34.4-2.9c1-0.1,2.2-0.1,2.9,0.4c4.6,3.8,10.1,2.8,15.3,2.7
 			c8.3-0.2,16.2,0.7,23.8,4.3c9.7,4.7,20.1,6.8,31.1,5.7c0.2,4,0.7,7.3,0.4,10.6c-0.6,7.5,3.2,12,8.9,16.1c2,1.4,4,4.3,4.2,6.6
@@ -734,17 +734,17 @@
 			C302.9,134.4,291.6,134.3,279.1,135.1z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Dorwinion"
 			title="Dorwinion"
 			aria-valuetext="Dorwinion"
 			class="st opacity-25"
 			:class="map.Dorwinion ? map.Dorwinion.opacity : 'opacity-25'"
 			:fill="map.Dorwinion ? map.Dorwinion.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M1216.2,404.6c-0.6-8.4-6.8-12.3-12.6-15.1c-11-5.3-19.5-13.7-28.6-21.3c-8.6-7.1-10.4-19.3-5.8-29.3
 			c0.7-1.5,2.5-2.6,3.7-3.9c5.9-7.2,11.7-14.5,17.8-21.4c1.7-1.9,4.3-3.7,6.8-4.2c10-2.2,20.2-3.9,29.1-9.5c1.4-0.9,3.5-0.9,5.3-1
 			c15.5-0.6,30.9-1.2,46.4-1.7c10.7-0.3,18.8,4.8,25.3,12.7c7,8.6,13.8,17.4,20.6,26.1c0.4,0.5,0.5,1.2,1.2,3
@@ -761,7 +761,7 @@
 			:fill="map.Andrast ? map.Andrast.color : '#3300000'"
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M398.9,720.4c5.9,1.9,11.9,3.5,17.5,5.9c8.5,3.7,17.1,7.3,24.8,12.3c5.4,3.5,9.1,9.4,13.9,13.9
 			c2.9,2.7,6.1,6,9.6,6.7c9.9,2,16.4,8.9,24.1,14.2c5.1,3.5,10.8,6.3,16.5,8.8c2.9,1.2,4.6,2.7,3.2,5.4c-2.4,4.4-5.1,9-8.6,12.5
 			c-5.6,5.6-12.7,4.5-19.7,2.4c-4.3-1.3-8.6-2.5-13-3.3c-3.7-0.7-6.7,0.4-7.1,4.8c0,0.2-0.1,0.3-0.1,0.5
@@ -779,9 +779,9 @@
 			class="st opacity-25"
 			:class="map.Forochel ? map.Forochel.opacity : 'opacity-25'"
 			:fill="map.Forochel ? map.Forochel.color : '#3300000'"
-			
+
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M194.5,166.6c-4.9-6.3-8.4-12.7-7.4-20.5c0.5-3.7,1.6-7.5,3.3-10.7c5.4-10.5,4.2-21,0.3-31.3
 			c-1.2-3.1-4.2-5.5-7.2-9.2c2.5-6,7-13.7,8.6-21.9c1.5-8.2,6.3-6.6,11.2-6.3c4.3,0.3,7.2-0.6,9.4-4.8c2.9-5.7,8-7.8,14.3-6.7
 			c6.3,1.1,11.7-0.2,17.8-2.6c10.4-4,21.4-7.3,34.3-6.4c-0.3,3.8,0,7.6-0.9,11c-1.3,4.8-1.3,9,1.1,13.4c1.9,3.4,2.8,7.4,4.6,11
@@ -789,14 +789,14 @@
 			c-4.3,7.9-10.4,6.6-17.6,5.6c-10.6-1.5-21.5-1.8-32.3-1.9c-2.8,0-5.7,2.6-8.5,4.1C199.8,163.4,197.3,165,194.5,166.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Lebennin"
 			title="Lebennin"
 			aria-valuetext="Lebennin"
 			class="st opacity-25"
 			:class="map.Lebennin ? map.Lebennin.opacity : 'opacity-25'"
 			:fill="map.Lebennin ? map.Lebennin.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -807,17 +807,17 @@
 			c3.1,9,4.8,18.4,7,27.7c0.8,3.1-0.2,5.3-2.8,7.7c-8.3,7.7-15.9,16.2-18.4,27.8C827.3,831.3,826.2,832.6,825,834.8z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Terre désolée"
 			title="Terre désolée"
 			aria-valuetext="Terre_Desolee"
 			class="st opacity-25"
 			:class="map.Terre_Desolee ? map.Terre_Desolee.opacity : 'opacity-25'"
 			:fill="map.Terre_Desolee ? map.Terre_Desolee.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M1092.4,170.6c2.8,6.5,5,11.1,6.8,15.8c2.2,5.9,4.1,11.9,6,17.9c2.2,6.7,4.3,13.4,6.4,20.2
 			c0.2,0.7,0.3,1.7,0.1,2.4c-2.6,7.5-4.8,15.1-8,22.4c-3,6.9-7.1,13.3-10.6,20c-1.7,3.2-2.8,6.6-4.8,9.6c-0.9,1.4-3.2,2.9-4.8,2.8
 			c-11.1-0.4-22.4-0.3-33.3-1.9c-11.6-1.7-19.5-9.9-26.6-18.7c-1.2-1.5-2.5-3.6-4-4c-9-2.2-10.2-9.3-9.4-17.2
@@ -826,17 +826,17 @@
 			C1080.5,172.6,1087,171.7,1092.4,170.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Cardolan"
 			title="Cardolan"
 			aria-valuetext="Cardolan"
 			class="st opacity-25"
 			:class="map.Cardolan ? map.Cardolan.opacity : 'opacity-25'"
 			:fill="map.Cardolan ? map.Cardolan.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M346,402.3c-0.1-0.4-0.5-0.8-0.5-1.2c1.4-9.2-3.7-15.5-9.3-21.8c-8.4-9.5-16.5-19.3-24.8-28.9
 			c-2-2.3-1.8-3.8,0.9-4.9c6.9-2.6,13.9-5.2,20.9-7.6c2.9-1,6.1-1.7,9.2-1.8c11.5-0.3,22.9,0.5,34.2-3c8.3-2.5,13.7-7.9,17.4-15.2
 			c2.4-4.7,5.6-7.1,10.9-7c10.5,0,21,0,31.5-0.2c3.4-0.1,5.2,1.3,4.7,4.7c-1.3,9.2,3.9,16.1,8,23.5c3,5.4,5.2,11.3,7.3,17.1
@@ -844,17 +844,17 @@
 			c-7.8,4.1-14.8,9.6-24.3,10.7C360.2,397.1,353.2,400.2,346,402.3z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Gundabad"
 			title="Gundabad"
 			aria-valuetext="Gundabad"
 			class="st opacity-25"
 			:class="map.Gundabad ? map.Gundabad.opacity : 'opacity-25'"
 			:fill="map.Gundabad ? map.Gundabad.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M769.7,59.3c-4.5,5.6-8.3,10.3-12.2,15c-3.7,4.4-8.2,6.8-14.2,6.6c-15.6-0.5-31.3-0.6-46.9-0.9
 			c-6-0.1-11.1,2.2-14.8,7c-2.7,3.5-6,4.6-10.3,4.9c-9.6,0.7-19,0-28.3-2.9c-6.1-1.9-10.1-5.5-13-10.7c-2.3-4.2-4.5-8.4-7-12.5
 			c-4-6.5-3.1-13.2,1.7-19.1c4.9-5.9,8.9-12.5,13.3-18.8c0.5-0.8,1-2,0.8-2.8c-1.1-6.2,3.1-6.7,7.2-6.3c5.8,0.5,11.5,1.8,17.2,2.6
@@ -868,10 +868,10 @@
 			class="st opacity-25"
 			:class="map.Gwathlo ? map.Gwathlo.opacity : 'opacity-25'"
 			:fill="map.Gwathlo ? map.Gwathlo.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M482.9,432.5c-10.5,4.7-19.8,10.8-26,20.2c-4.3,6.5-8,12.4-15.9,15c-2.7,0.9-4.4,4.7-7.6,8.4
 			c-6.3-6.8-12-13.7-18.4-19.8c-5.9-5.6-12.2-11.1-19.2-15.2c-4.6-2.7-10.6-3.7-16-4.1c-11.3-0.7-21.8-3.1-30.9-10.4
 			c-3.1-2.5-7.2-3.8-11.1-5.8c2-7.6,6.8-13,14.7-15.1c7.8-2.1,15.8-3.4,23.4-6.2c6.1-2.3,11.6-6.2,17.4-9.3c1.8-0.9,3.9-1.9,5.9-1.9
@@ -879,14 +879,14 @@
 			C483.1,420.6,482.4,426.8,482.9,432.5z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Le Marais des Morts"
 			title="Le Marais des Morts"
 			aria-valuetext="Marais_Morts"
 			class="st opacity-25"
 			:class="map.Marais_Morts ? map.Marais_Morts.opacity : 'opacity-25'"
 			:fill="map.Marais_Morts ? map.Marais_Morts.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -897,17 +897,17 @@
 			C916.2,523,916,514.9,915.6,505.9z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Les vieux gués d'Anduin"
 			title="Les vieux gués d'Anduin"
 			aria-valuetext="Gue_Anduin"
 			class="st opacity-25"
 			:class="map.Gue_Anduin ? map.Gue_Anduin.opacity : 'opacity-25'"
 			:fill="map.Gue_Anduin ? map.Gue_Anduin.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M729.2,270.8c1.8-0.4,4.3-1.6,6.8-1.5c12.8,0.6,25.5,1.6,38.2,2.4c3.5,0.2,7,0.5,10.4,0.5
 			c13.3-0.1,26.6-0.4,39.9-0.4c1.8,0,3.6,1.5,5.2,2.6c4.7,3,9.2,6.3,13.9,9.3c3.4,2.2,7.5,3.8,10.4,6.6c7.8,7.6,7.4,17.3,4.5,26.5
 			c-2.8,8.7-7.2,16.9-11.3,26.2c-13.6,0.2-28.2,2.3-40.9-7.9c-4-3.2-8.7-5.5-13.2-7.9c-6-3.1-12.2-4.7-19.2-4.7
@@ -921,7 +921,7 @@
 			class="st opacity-25"
 			:class="map.Valee_Anduin ? map.Valee_Anduin.opacity : 'opacity-25'"
 			:fill="map.Valee_Anduin ? map.Valee_Anduin.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -932,33 +932,33 @@
 			c0.1,7.3,2.6,13.5,7.3,19.1C776,209.7,782.7,218,789,225.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Pays de Dun"
 			title="Pays de Dun"
 			aria-valuetext="Pays_Dun"
 			class="st opacity-25"
 			:class="map.Pays_Dun ? map.Pays_Dun.opacity : 'opacity-25'"
 			:fill="map.Pays_Dun ? map.Pays_Dun.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M601.8,426.1c-4.1,22.6-8.2,45.5-12.5,68.9c-6.4,0.6-12.8,0.9-19.2,1.9c-3.5,0.5-7.2,1.6-10.3,3.4
 			c-7.4,4.4-15.2,5.4-22.9,4.6c-6.4-10.3-6.8-21.2-7.4-32.7c-0.4-7.7-1.2-17.3-9.5-22.9c-3.3-2.2-5.9-5.4-8.5-8.3
 			c-5.2-5.8-10.9-10.6-19.5-10.8c9-10.9,19.3-19,32.2-23.2c3.7-1.2,7.9-1.5,11.7-1C558.7,408.5,580.4,415.3,601.8,426.1z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Les collines d'Evendim"
 			title="Les collines d'Evendim"
 			aria-valuetext="Evendim"
 			class="st opacity-25"
 			:class="map.Evendim ? map.Evendim.opacity : 'opacity-25'"
 			:fill="map.Evendim ? map.Evendim.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M410.9,181.6c-1.7-1.1-2.9-1.5-3.5-2.3c-4.7-5.8-11.1-5.5-17.6-5.4c-13.1,0.2-26.3,0.5-39.4,0.4
 			c-15.1-0.1-24.1,6.1-28.4,20.6c-1.7,6-3,12.1-3.6,18.3c-0.4,3.3,1.1,6.7,1.5,10.1c0.4,2.8,0.5,5.6,0.7,9
 			c-11.4-0.7-22.2,0.5-31.6-5.2c-5-3-9.4-7.2-14-11c-0.7-0.6-1-2.1-1.1-3.2c-0.4-4.5-1.2-9-0.7-13.4c0.6-5.9-1.9-10.2-5.3-14.4
@@ -967,7 +967,7 @@
 			c1,0.6,1.7,2.4,1.8,3.7C411.7,175.4,411.2,178,410.9,181.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Belfalas"
 			title="Belfalas"
 			aria-valuetext="Belfalas"
@@ -985,34 +985,34 @@
 			c-1.7,5.8-4.4,11.2-10,15C668.4,866.4,666,870.3,663.4,873.4z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Carn Dum"
 			title="Carn Dum"
 			aria-valuetext="Carn_Dum"
 			class="st opacity-25"
 			:class="map.Carn_Dum ? map.Carn_Dum.opacity : 'opacity-25'"
 			:fill="map.Carn_Dum ? map.Carn_Dum.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M579.3,114.2c-16.6-1-32.4-1.9-48.3-3c-2.2-0.2-4.8-1-6.3-2.4c-5.8-5.6-13-7.7-20.5-7.8
 			c-8.1-0.1-15.6-2.4-22.2-6.4c-3-1.9-5.1-6.9-5.7-10.9c-1.9-11.5-0.1-22.9,3.6-33.9c0.6-1.9,3.1-4.2,5.1-4.6
 			c6.5-1.2,13.1-2,19.7-2.2c14-0.3,28,0.4,41.9-0.2c12.5-0.6,21.4,4.8,28.1,14.6c1.8,2.7,3.2,6.5,3,9.7c-0.7,9.1-2.7,18.2-3.4,27.3
 			c-0.3,3.9,1.1,8,2.1,12C577.1,109.1,578.3,111.6,579.3,114.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Baie de l'Est"
 			title="Baie de l'Est"
 			aria-valuetext="Baie_Est"
 			class="st opacity-25"
 			:class="map.Baie_Est ? map.Baie_Est.opacity : 'opacity-25'"
 			:fill="map.Baie_Est ? map.Baie_Est.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M915.4,362.9c3.4-1.7,5.7-3.9,7.9-3.8c6.9,0.3,11.9-3.2,17.2-6.8c5.2-3.5,11.3-5.8,16.1-9.6
 			c5.7-4.6,10.4-10.4,15.6-15.6c7.3-7.2,20.1-6.6,27.3,0.5c7.7,7.7,16.2,14.6,23.8,22.4c2.5,2.6,4.6,6.8,4.7,10.3
 			c0.3,6.5,2.9,11.4,6.9,16c2.5,2.9,5.2,5.6,7.8,8.5c0.9,1,2.1,2,2.3,3.2c2.2,10.3,5.3,20.6,0.8,31.1c-1,2.3-1.5,4.7-2.3,7.3
@@ -1020,13 +1020,13 @@
 			c-1.7-13.7-9-24.1-19.1-32.8c-6-5.1-17.4-5-25.5-0.4C930.4,365.4,921.8,365.8,915.4,362.9z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Les Montagnes Bleus"
 			title="Les Montagnes Bleus"
 			class="st opacity-25"
-			
+
 			:fill="montagne"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
       		d="M130.8,163.4c9.5-5.3,13.6-15,18.7-23.8c4.6-7.8,9.2-15.6,13.4-23.7c3.2-6.1,8.8-8.8,14.5-11.5
@@ -1036,17 +1036,17 @@
 			c-0.1-7.6,0.9-15-2.1-22.5c-1-2.4,1.3-6.2,2.2-9.3c0.1-0.4,0.7-0.7,1-1.1C138.8,174,138.8,174,130.8,163.4z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Fornost"
 			title="Fornost"
 			aria-valuetext="Fornost"
 			class="st opacity-25"
 			:class="map.Fornost ? map.Fornost.opacity : 'opacity-25'"
 			:fill="map.Fornost ? map.Fornost.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
 			d="M424.3,215.3c0.2-1.4,1-4.3,0.6-7c-0.3-2.8-1-6.3-2.9-8.1c-5.7-5.3-7.3-11.5-6.3-18.9
 			c0.5-3.6,0.5-7.3,0.8-10.9c0.5-4.7,3.5-7.3,7.8-8.7c9.3-3,18.8-2.1,28.1-0.5c5.7,1,11.4,2.6,16.9,4.2c2,0.6,3.6,2.1,5.4,3.3
 			c5.6,3.8,11.1,7.8,17,11.2c6.3,3.6,6.9,9.3,5.8,15.1c-1.7,8.2,1.1,14.1,7.3,19.3c1.9,1.6,4.3,4.9,3.7,6.7
@@ -1054,14 +1054,14 @@
 			c-3.7,0.2-6.2-1.2-8.5-4.7C434.7,228.1,429.6,222.2,424.3,215.3z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Landes d'Etten"
 			title="Landes d'Etten"
 			aria-valuetext="Landes_Etten"
 			class="st opacity-25"
 			:class="map.Landes_Etten ? map.Landes_Etten.opacity : 'opacity-25'"
 			:fill="map.Landes_Etten ? map.Landes_Etten.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1073,34 +1073,34 @@
 			C451.9,102.2,451.9,100,451.9,97.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Champs aux Iris"
 			title="Champs aux Iris"
 			aria-valuetext="Champs_Iris"
 			class="st opacity-25"
 			:class="map.Champs_Iris ? map.Champs_Iris.opacity : 'opacity-25'"
 			:fill="map.Champs_Iris ? map.Champs_Iris.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M736.7,386.3c-3.7-5.6-7.2-10.6-10.5-15.8c-0.8-1.3-1.3-3.1-1-4.5c1.6-7.8,3.4-15.5,5.2-23.3
 			c0.4-1.8,0.9-3.6,1-5.4c0.5-5.8,5-11,10.8-10.9c13,0.2,26.1,0,38.8,1.9c7.2,1.1,14,5.8,20.5,9.7c7.5,4.5,14.4,10.3,22.8,9.4
 			c-1.1,10.6-2.1,20.7-3.1,30.8c-0.1,0.8-0.1,1.7-0.2,2.5c-1.2,9.3-1.8,9.6-11,9.7c-9.9,0.1-20-0.5-29.4,3.9c-1,0.5-2.8-0.3-4-1
 			C763.9,385.1,750.4,381.4,736.7,386.3z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Caradhras"
 			title="Caradhras"
 			aria-valuetext="Caradhras"
 			class="st opacity-25"
 			:class="map.Caradhras ? map.Caradhras.opacity : 'opacity-25'"
 			:fill="map.Caradhras ? map.Caradhras.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M687.3,410.2c-1-1.9-2.6-3.6-2.7-5.3c-0.3-7.1-4.9-10.8-10.5-13.2c-6.9-2.9-13-6.5-18.2-12
 			c-5.3-5.6-12.4-5.3-19.7-4.3c-1.3-5.5-6.6-10.1-4-16.6c0.6-1.5,1.3-3,2.3-4.2c3.8-4.5,7.6-9,11.7-13.2
 			c5.4-5.5,10.7-10.7,19.8-10.3c4,0.2,8.5-3.6,12.3-6.4c5.6-4.1,11-4.5,16.8-0.6c3.9,2.6,8.1,4.2,13.1,3.3c3.9-0.7,8.1-1.2,10.5,3.4
@@ -1108,17 +1108,17 @@
 			c-4.7,5.4-7.5,11.4-8.6,18.7c-0.8,5.2-3.9,9.2-9.5,10.8C693.6,407,690.7,408.7,687.3,410.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Lamedon"
 			title="Lamedon"
 			aria-valuetext="Lamedon"
 			class="st opacity-25"
 			:class="map.Lamedon ? map.Lamedon.opacity : 'opacity-25'"
 			:fill="map.Lamedon ? map.Lamedon.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M770.6,741.4c-8.8,12.7-17.2,24.6-25.4,36.5c-0.8-0.3-1.3-0.4-1.3-0.6c-2.6-7.7-8.5-11.7-15.7-14.8
 			c-6.5-2.8-12.6-6.6-19-9.8c-8.8-4.4-17.1-1-25.4,2.1c-4.1,1.6-8.4,3.1-12.7,4c-4.8,1.1-9.8,1.4-15.6,2.3
 			c-2.5-4.4-5.3-9.7-8.5-14.7c-1.4-2.3-3.2-4.8-5.5-6c-5.6-3-8.4-11.6-4.5-16.7c5.1-6.7,8.4-13.7,8.1-22.4c-0.1-2.8,0.9-6,2.3-8.5
@@ -1126,14 +1126,14 @@
 			c2.5,0.8,5,1.9,7.6,2.3c10.7,1.7,21.4,3.1,32,4.7C767.1,740.9,768.5,741.1,770.6,741.4z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="The Angle"
 			title="The Angle"
 			aria-valuetext="The_Angle"
 			class="st opacity-25"
 			:class="map.The_Angle ? map.The_Angle.opacity : 'opacity-25'"
 			:fill="map.The_Angle ? map.The_Angle.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1141,30 +1141,30 @@
 			c3.1,7.3,5.6,13.1,8.4,19.7c-12.8,13.2-15.3,32.7-23.2,49.6c-2.7,5.6-4.7,11.6-6.9,17.1C563.8,406.4,549.2,403.1,534.4,399.9z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Angmar"
 			title="Angmar"
 			aria-valuetext="Angmar"
 			class="st opacity-25"
 			:class="map.Angmar ? map.Angmar.opacity : 'opacity-25'"
 			:fill="map.Angmar ? map.Angmar.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M615.2,162.4c-4.2,0.7-7.7,1.4-11.3,1.9c-14.1,1.9-28.2,3.8-42.3,5.3c-2.5,0.3-5.2-1.3-7.8-2.1
 			c-3.6-1.2-7.2-2.3-10.5-3.9c-3.4-1.7-7.4-3.2-9.7-6c-9.1-11.1-19.6-20.5-32.3-27.2c-10.8-5.7-19.4-13.9-26-24.1
 			c-1.3-2-1.2-5-2-9.1c5.1,1.8,8.9,3.4,12.9,4.6c5.5,1.6,11.1,3.2,16.8,4c7,1,13.4,2.4,19.2,7.2c3.2,2.7,8.5,3.4,13,3.8
 			c8.6,0.8,17.3,0.8,25.9,1.1c8.7,0.2,16.4,1.6,23.3,8.5c10.1,10.1,20,20.2,28.5,31.7C613.7,159,614.1,160.3,615.2,162.4z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Mont Brumeux"
 			title="Mont Brumeux"
 			class="st opacity-25"
-			
+
 			:fill="montagne"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
      		d="M675.2,162.4c-15.7-3.1-31.5-4.1-47.4-1.9c-4.5,0.6-7.3,0.3-10.7-4.2c-8.3-10.9-18.1-20.6-27.1-31
@@ -1173,17 +1173,17 @@
 			c3.9,7.5,5,15.6,4.2,24.2C674.7,149.5,675.2,156,675.2,162.4z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Hall de Thranduil"
 			title="Hall de Thranduil"
 			aria-valuetext="Hall_Thranduil"
 			class="st opacity-25"
 			:class="map.Hall_Thranduil ? map.Hall_Thranduil.opacity : 'opacity-25'"
 			:fill="map.Hall_Thranduil ? map.Hall_Thranduil.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M972.5,221.9c-5.5,4.7-9.7,8.4-14,12c-8.1,6.7-14.9,13.9-11.9,24.3c-9.9,1.2-19.2,3.2-28.4,3.2
 			c-12.4,0-24.9-0.8-37.2-2.4c-12.8-1.7-25-1.6-36.8,4.7c-3.8,2.1-9,1.7-13.6,2.2c-0.6,0.1-2.1-1.6-2-2.3c0.5-2.6,0.7-6.4,2.3-7.4
 			c7.6-4.3,15.7-7.8,23.6-11.4c5.3-2.4,10.6-4.6,15.9-7c1.7-0.7,3.2-2.3,4.9-2.3c13.3-0.3,17.9-10,22.7-20.6c0.7-0.1,2-0.5,3.3-0.3
@@ -1191,14 +1191,14 @@
 			C965.9,213.3,969.1,217.8,972.5,221.9z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Celebrant"
 			title="Celebrant"
 			aria-valuetext="Celebrant"
 			class="st opacity-25"
 			:class="map.Celebrant ? map.Celebrant.opacity : 'opacity-25'"
 			:fill="map.Celebrant ? map.Celebrant.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1208,14 +1208,14 @@
 			c-7.6,2.5-16.4,1.9-24.6,2.2c-1.1,0-3.2-3.3-3.2-5c0.1-5.2-1.5-9.3-4.8-13.1C740.2,434.8,740.2,430.1,741.7,424.7z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Emyn Arnen"
 			title="Emyn Arnen"
 			aria-valuetext="Emyn_Arnen"
 			class="st opacity-25"
 			:class="map.Emyn_Arnen ? map.Emyn_Arnen.opacity : 'opacity-25'"
 			:fill="map.Emyn_Arnen ? map.Emyn_Arnen.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1226,14 +1226,14 @@
 			c0.8,0.5,1.2,2.7,0.8,3.6C1022.7,727.8,1020.7,730.8,1018.8,734.1z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Swanfleet"
 			title="Swanfleet"
 			aria-valuetext="Swanfleet"
 			class="st opacity-25"
 			:class="map.Swanfleet ? map.Swanfleet.opacity : 'opacity-25'"
 			:fill="map.Swanfleet ? map.Swanfleet.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1243,13 +1243,13 @@
 			C530.2,500.9,530.6,503,531.4,505.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Mont Brumeux"
 			title="Mont Brumeux"
 			class="st opacity-25"
-			
+
 			:fill="montagne"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
       		d="M597.8,474.5c1-5.2,1.1-10.7,3-15.5c3.3-8.3,3.1-16.9,3.9-25.4c0.4-4.7,2.7-7.4,6.4-10.4
@@ -1258,13 +1258,13 @@
 			c-8.5-4.4-17.3-7.7-27.1-7.3C604.8,473.4,601.7,474,597.8,474.5z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Mont Brumeux"
 			title="Mont Brumeux"
 			class="st opacity-25"
-			
+
 			:fill="montagne"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
       		d="M648,332c-1.8-9.2,2.7-16.9,7.1-24.1c5.9-9.7,10.8-19.2,9.9-31.1c-0.3-4.4,1.8-9,3.1-13.4
@@ -1273,14 +1273,14 @@
 			c-3.9,3.3-7.5,6-13.6,5.4C657.5,326.3,653,330,648,332z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Le Plateau"
 			title="Le Plateau"
 			aria-valuetext="Plateau"
 			class="st opacity-25"
 			:class="map.Plateau ? map.Plateau.opacity : 'opacity-25'"
 			:fill="map.Plateau ? map.Plateau.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1290,14 +1290,14 @@
 			c3.3-2.1,7.8-2.6,11.9-3c10.5-1,20.9-1.2,31.4-4.5c7.5-2.3,16.6-1.5,24.6-0.1C818.6,459.1,828.3,462.8,838,465.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Minas Tirith"
 			title="Minas Tirith"
 			aria-valuetext="Minas_Tirith"
 			class="st opacity-25"
 			:class="map.Minas_Tirith ? map.Minas_Tirith.opacity : 'opacity-25'"
 			:fill="map.Minas_Tirith ? map.Minas_Tirith.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1307,14 +1307,14 @@
 			C883.8,726.9,873.9,727.2,864.6,726.5z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Dol Guldur"
 			title="Dol Guldur"
 			aria-valuetext="Dol_Guldur"
 			class="st opacity-25"
 			:class="map.Dol_Guldur ? map.Dol_Guldur.opacity : 'opacity-25'"
 			:fill="map.Dol_Guldur ? map.Dol_Guldur.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1324,31 +1324,31 @@
 			c0.3,3.1-0.9,6.2-1,9.4C886.8,404.7,886.9,410,886.9,415.9z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="La Porte Noire"
 			title="La Porte Noire"
 			aria-valuetext="Porte_Noire"
 			class="st opacity-25"
 			:class="map.Porte_Noire ? map.Porte_Noire.opacity : 'opacity-25'"
 			:fill="map.Porte_Noire ? map.Porte_Noire.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M1090.1,558c-7.9,10.7-15.9,22.1-13.1,37.4c-6.1,4.7-12.2,9.3-18.4,14c-2-3.3-3.5-6-5.2-8.6
 			c-3.9-6.1-9.7-7.5-16.7-7.6c-8.6-0.1-17.1-1.6-25.6-2.4c-2.8-0.3-4.1-1.7-5.2-4.4c-3.9-9.5-2.7-19.2,2.8-26.6
 			c5.6-7.5,12-16.3,23.9-15.4c9.7,0.7,18.1-4,26.3-8.2c3.9-2,6.5-1.7,9.1,1.4c2.1,2.5,4.1,5.3,6.5,7.5
 			C1079.5,549.5,1084.8,553.7,1090.1,558z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Nord de l'Ithilien"
 			title="Nord de l'Ithilien"
 			aria-valuetext="Nord_Ithilien"
 			class="st opacity-25"
 			:class="map.Nord_Ithilien ? map.Nord_Ithilien.opacity : 'opacity-25'"
 			:fill="map.Nord_Ithilien ? map.Nord_Ithilien.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1359,46 +1359,46 @@
 			C989.5,571.9,994.9,567.7,999.9,564.5z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Fangorn"
 			title="Fangorn"
 			aria-valuetext="Fangorn"
 			class="st opacity-25"
 			:class="map.Fangorn ? map.Fangorn.opacity : 'opacity-25'"
 			:fill="map.Fangorn ? map.Fangorn.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M719.7,496.4c-6,2-11.1,3.7-16.2,5.3c-1.3,0.4-2.5,1-3.8,1c-18.4,0.4-36.9,0.7-55.3,1c-0.3,0-0.6-0.2-1.3-0.4
 			c-0.4-5.4-0.8-11-1-16.6c0-0.8,0.7-1.9,1.3-2.4c8.1-6,14.9-13.7,24.4-17.8c2.4-1,4.1-4.6,5.4-7.3c7.2-14.6,7.1-14.5,23-12.7
 			c12.4,1.4,24.8,2.7,37.1,4c4.8,0.5,8.6,2.4,11.3,7.1c-9,2.2-14.4,9-20.1,15.3C718,480.2,720.7,489.2,719.7,496.4z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Estemnet"
 			title="Estemnet"
 			aria-valuetext="Estemnet"
 			class="st opacity-25"
 			:class="map.Estemnet ? map.Estemnet.opacity : 'opacity-25'"
 			:fill="map.Estemnet ? map.Estemnet.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M835.2,505.5c-5.4,14.6-6.4,27.8,1.7,40.6c1.1,1.7,2.2,3.3,3.2,5c3.6,6.2,2.3,10.2-4.9,11.6
 			c-7,1.3-14.2,1.5-21.3,1.8c-10.8,0.4-21.6,0.4-32.4,0.8c-3.3,0.1-4.7-1.5-5.2-4.1c-1.2-5.7-3-11.5-2.7-17.1
 			c0.6-10.9,2.5-21.7,3.8-32.6c0.4-3.3,2.8-4.7,5-6.7c11.5-10.2,24.5-6.8,37.4-4.8c3.6,0.6,7.1,1.7,10.5,2.9
 			C832.2,503.6,833.9,504.8,835.2,505.5z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Les Montagnes Bleus"
 			title="Les Montagnes Bleus"
 			class="st opacity-25"
-			
+
 			:fill="montagne"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
       d="M243.7,351.5c-2.4-0.5-4.9-0.7-7.2-1.6c-3.8-1.6-6.8-0.4-9.6,2c-2.8,2.3-5.4,4.9-8,7.3
@@ -1410,30 +1410,30 @@
 			c0.9,0.2,1.4,2.1,2.1,3.3C244.6,350.6,244.2,351,243.7,351.5z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Lossarnach"
 			title="Lossarnach"
 			aria-valuetext="Lossarnach"
 			class="st opacity-25"
 			:class="map.Lossarnach ? map.Lossarnach.opacity : 'opacity-25'"
 			:fill="map.Lossarnach ? map.Lossarnach.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M900.7,803.2c-14-10.4-29.9-5-44.8-6.9c-2.2-10.6-3.4-22-7.2-32.5c-3.8-10.4-10.1-19.9-15.9-30.8
 			c8.8-0.5,16.5-0.9,24.2-1.4c8.6-0.5,17.2-1.2,25.8-1.7c0.9-0.1,2.2,0.6,2.8,1.3c6.3,8.3,12.7,16.5,18.5,25.1
 			c4.8,7.1,4.8,15.5,4.7,23.7c-0.1,4.4,0.1,8.9-0.1,13.3c-0.1,1.3-0.7,2.8-1.6,3.8C905.1,799.3,903,801.1,900.7,803.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Pays de Bouc"
 			title="Pays de Bouc"
 			aria-valuetext="Pays_Bouc"
 			class="st opacity-25"
 			:class="map.Pays_Bouc ? map.Pays_Bouc.opacity : 'opacity-25'"
 			:fill="map.Pays_Bouc ? map.Pays_Bouc.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1444,31 +1444,31 @@
 			C357.7,234.5,357.2,232.5,356.5,230.3z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="La Comté"
 			title="La Comté"
 			aria-valuetext="La_Comte"
 			class="st opacity-25"
 			:class="map.La_Comte ? map.La_Comte.opacity : 'opacity-25'"
 			:fill="map.La_Comte ? map.La_Comte.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal"  
+			@click="toggleModal"
       		d="M356.2,246.5c-6.6,1.8-6.4,7.4-6.9,12.4c-0.1,1.5,1.3,3.5,2.6,4.8c2.5,2.5,5.5,4.6,8.7,7.4
 			c-14.9,18.3-17.3,38.2-8.1,60.7c-15.2-3.1-26.4,3.5-38.8,9.6c0.5-5.7,0.6-10,1.3-14.2c1.5-9.3,1.8-18.4-1.8-27.5
 			c-2.3-5.9-3.4-12.4-4.8-18.7c-0.3-1.4,0.2-3.4,0.9-4.7c2.9-5,6.7-9.5,9.1-14.7c3.1-6.7,5.7-13.7,7.6-20.9
 			c1.9-6.9,3.2-8.8,10.6-9.5c3.3-0.3,6.9-0.8,9.9,0.1c2.6,0.8,5.2,3.1,6.7,5.4C354.8,239.3,355.1,242.7,356.2,246.5z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Est du Rohan"
 			title="Est du Rohan"
 			aria-valuetext="Est_Rohan"
 			class="st opacity-25"
 			:class="map.Est_Rohan ? map.Est_Rohan.opacity : 'opacity-25'"
 			:fill="map.Est_Rohan ? map.Est_Rohan.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1479,17 +1479,17 @@
 			z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Lac d'Evendim"
 			title="Las d'Evendim"
 			aria-valuetext="Lac_Evendim"
 			class="st opacity-25"
 			:class="map.Lac_Evendim ? map.Lac_Evendim.opacity : 'opacity-25'"
 			:fill="map.Lac_Evendim ? map.Lac_Evendim.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M420.6,214.4c-7.5-2-12.4-0.3-17.8,2.1c-5.3,2.4-11.9,2.3-18,2.6c-7.3,0.4-14.4,1.1-21.3,4.1
 			c-4.9,2.1-10.7,2.2-16.1,2.8c-6.9,0.8-13.8,1.1-20.9,1.7c-1.1-7.9-2.8-16.4-0.5-25.5c3.1-12.5,10.9-21.1,23.6-21.6
 			c15.8-0.7,31.6-0.5,47.4-0.3c2.3,0,4.4,2.7,6.8,3.8c8.2,4,8.6,13.8,14.7,19.5C420.3,205.5,419.8,209.9,420.6,214.4z">
@@ -1502,7 +1502,7 @@
 			class="st opacity-25"
 			:class="map.Haut_Col ? map.Haut_Col.opacity : 'opacity-25'"
 			:fill="map.Haut_Col ? map.Haut_Col.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1512,24 +1512,24 @@
 			C717.4,235.6,717.3,243.6,717.3,253z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Collines du Vent"
 			title="Collines du Vent"
 			aria-valuetext="Collines_Vent"
 			class="st opacity-25"
 			:class="map.Collines_Vent ? map.Collines_Vent.opacity : 'opacity-25'"
 			:fill="map.Collines_Vent ? map.Collines_Vent.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M574.5,231.6c-2.8,7.1-4.9,13.1-7.5,18.9c-0.6,1.2-3,1.7-4.7,2.3c-12.8,4.4-15.3,9-12.6,22.9
 			c0.6,3.1,0.1,6.4,0.1,10.9c-8-4.8-16.7-6.3-20.7-14.8c-0.6-1.4-2.7-2.5-4.3-2.9c-9-2.1-17.9-3.1-27,0c-5.2,1.8-11,2-17.7,3.1
 			c1.1-5.8,1.8-10.3,3-14.7c1.6-5.9,3.6-11.7,5.5-17.5c0.3-0.8,0.9-1.7,1.6-2.1c2.9-1.6,5.8-3.6,9-4.3c5.6-1.2,10.3-3.3,13.5-8.3
 			c0.4-0.6,1.6-1.1,2.5-1.1c10.9-0.1,21.8-0.8,32,5.1c3.5,2,8.3,2.1,12.6,2.5C563.8,232,568.2,231.6,574.5,231.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Trouée des Trolls"
 			title="Trouée des Trolls"
 			aria-valuetext="Trouee_Trolls"
@@ -1544,46 +1544,46 @@
 			C604.9,245.2,611.7,244.9,618.3,243.8z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Trouée du Rohan"
 			title="Trouée du Rohan"
 			aria-valuetext="Breche_Rohan"
 			class="st opacity-25"
 			:class="map.Breche_Rohan ? map.Breche_Rohan.opacity : 'opacity-25'"
 			:fill="map.Breche_Rohan ? map.Breche_Rohan.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M589.8,500.7c1.3,4.7,1.7,9.3-1.9,13.5c-3.4,4.1-3.3,9.1-1.9,13.8c2.4,8.2,5.2,16.4,8.3,24.3
 			c1.9,4.7,4.8,9,7.1,13.5c0.9,1.9,1.4,4,2.3,6.6c-14.6,0.8-28.6-1-40.8,8.9c-15.2-21.3-19.1-46.4-24.8-71.1
 			c0.8-0.1,1.9-0.5,2.9-0.4c7.3,0.7,13.7-1.8,20-5C567.8,501.5,582.1,499.3,589.8,500.7z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Emyn Muil"
 			title="Emyn Muil"
 			aria-valuetext="EmynMuil"
 			class="st opacity-25"
 			:class="map.EmynMuil ? map.EmynMuil.opacity : 'opacity-25'"
 			:fill="map.EmynMuil ? map.EmynMuil.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M900,578.6c-9.5-7.3-19.7-6.2-29.6-6.8c-8.9-0.6-15.4-5.6-21.3-12.4c12.1-18.3,17.5-38.5,13.7-62.1
 			c5.8,1.3,10.3,1.4,13.9,3.3c8.9,4.7,18.5,4.8,28.1,5.3c1.8,0.1,3.6,0,6.4,0c0,5.6,0,10.9,0,16.2c0,0.2,0,0.3,0,0.5
 			c-0.2,4.7-3.8,16.8-7.1,20.1c-6.3,6.5-6.5,14.2-5.6,22.3C898.9,569,899.4,573.1,900,578.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Fontgrise"
 			title="Fontgrise"
 			aria-valuetext="Fontgrise"
 			class="st opacity-25"
 			:class="map.Fontgrise ? map.Fontgrise.opacity : 'opacity-25'"
 			:fill="map.Fontgrise ? map.Fontgrise.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal" d="M487.2,426.2c0.3-17.1-7.8-30.9-15.9-44.6c-5.9-10-9.3-20.7-11.2-33.6c22.3,11.1,45,6.6,68.8,6.2
@@ -1591,14 +1591,14 @@
 			C488.3,426,487.9,426,487.2,426.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Erebor"
 			title="Erebor"
 			aria-valuetext="Erebor"
 			class="st opacity-25"
 			:class="map.Erebor ? map.Erebor.opacity : 'opacity-25'"
 			:fill="map.Erebor ? map.Erebor.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal" d="M1015.3,225.8c-9.6,0-19.3,0.1-28.9,0c-4.9-0.1-8.6-1.8-11-6.8c-3.5-7.3-8.1-13.7-16.7-16.4
@@ -1607,14 +1607,14 @@
 			c9.2,1.2,13.4,8.8,17.2,15.5C1026.3,223.3,1023,226.8,1015.3,225.8z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Carrock"
 			title="Carrock"
 			aria-valuetext="Carrock"
 			class="st opacity-25"
 			:class="map.Carrock ? map.Carrock.opacity : 'opacity-25'"
 			:fill="map.Carrock ? map.Carrock.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1623,14 +1623,14 @@
 			c9.8,2.8,18,15.1,18.1,25.5C823.5,263.4,823.5,264.8,823.5,266.8z">
 			<title>{{ title }}</title>
 		</path>
-		<path   
+		<path
       		id="Rhudaur"
 			title="Rhudaur"
 			aria-valuetext="Rhudaur"
 			class="st opacity-25"
 			:class="map.Rhudaur ? map.Rhudaur.opacity : 'opacity-25'"
 			:fill="map.Rhudaur ? map.Rhudaur.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1644,24 +1644,24 @@
 			class="st opacity-25"
 			:class="map.Haut_Sud ? map.Haut_Sud.opacity : 'opacity-25'"
 			:fill="map.Haut_Sud ? map.Haut_Sud.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal"  
+			@click="toggleModal"
       		d="M445.5,313.2c5.3-0.4,9.4-1.2,13.5-1.1c6.7,0.2,12.8-1.3,18.7-4.3c0.9-0.5,2.5,0,3.6,0.5
 			c13.5,6.7,27.5,12.3,42.6,13.2c6.9,0.4,14-1.9,21.1-2.9c0.5-0.1,1-0.1,1.8-0.2c1.4,5.3-0.2,10.1-2.3,14.8c-0.9,2-2.1,3.8-3.1,5.7
 			c-3.7,7.2-9.4,10.5-17.6,10.5c-11-0.1-22,0.4-32.9,0.9c-8.4,0.4-16.1-1.7-23.7-4.8c-0.2-0.1-0.3-0.2-0.5-0.2
 			c-12.5-0.7-15-11.6-19.5-20C445.4,322,446,317.5,445.5,313.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Rohan"
 			title="Rohan"
 			aria-valuetext="C_Rohan"
 			class="st opacity-25"
 			:class="map.C_Rohan ? map.C_Rohan.opacity : 'opacity-25'"
 			:fill="map.C_Rohan ? map.C_Rohan.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1670,61 +1670,61 @@
 			C683.7,532.1,701,532.1,718.7,532.1z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Ouestemnet"
 			title="Ouestemnet"
 			aria-valuetext="Ouestemnet"
 			class="st opacity-25"
 			:class="map.Ouestemnet ? map.Ouestemnet.opacity : 'opacity-25'"
 			:fill="map.Ouestemnet ? map.Ouestemnet.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M773.1,507.3c-4.3,20.6-7.7,39.8-0.2,59.3c-15,11.3-31.9,6.6-48.8,6.5c0-14.3-0.4-28.2,0.2-42.1
 			c0.2-4,3.6-7.7,5-11.7c3.5-9.9,6.6-12.2,17.6-12C755.4,507.4,763.9,507.3,773.1,507.3z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Gouffre de Helm"
 			title="Gouffre de Helm"
 			aria-valuetext="Gouffre_Helm"
 			class="st opacity-25 forto"
 			:class="map.Gouffre_Helm ? map.Gouffre_Helm.opacity : 'opacity-25'"
 			:fill="map.Gouffre_Helm ? map.Gouffre_Helm.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M598.1,577.5c4.5,0,9,0,13.5,0c11.2,0,14.7,9,15.5,17.8c0.6,6.6-0.7,13.5-1.5,20.2c-0.2,1.3-1.8,2.8-3.1,3.6
 			c-4.7,2.7-10,4.5-14.2,7.8c-3.7,3-7.2,3.4-11.4,2.8c-6.2-0.9-12.5-1.9-18.7-2.4c-5.6-0.4-9.8-2.3-11-8.1
 			c-1.6-7.4-3.5-14.9-4.1-22.4c-0.7-8.7,3.8-14.8,12.4-16.8c7.4-1.7,15.1-2.1,22.6-3.1C598,577.1,598,577.3,598.1,577.5z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Haut du Nord"
 			title="Haut du Nord"
 			aria-valuetext="Haut_Nord"
 			class="st opacity-25"
 			:class="map.Haut_Nord ? map.Haut_Nord.opacity : 'opacity-25'"
 			:fill="map.Haut_Nord ? map.Haut_Nord.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M392.3,263.6c-3-7.5-0.4-15.6,5.7-18.7c9.9-5.1,13-14.1,8.2-23.9c5.4-6,14.2-2.1,19.5,3.7
 			c3.5,3.9,6.8,8.2,9.3,12.9c2.7,5.1,6.6,6.8,11.8,6.6c11.9-0.4,23.9-1,35.9-1.5c-2.6,9.1-5.4,18.8-8.3,28.9
 			c-5.7,1-12.3,1.5-18.6,3.3c-8.7,2.4-8.4,2.2-17.1,0.1c-7.7-1.8-14-5.8-20.3-10C410.9,259.9,401.1,258.3,392.3,263.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Vallée de l'Entalluve"
 			title="Vallée de l'Entalluve"
 			aria-valuetext="Months_Endwash"
 			class="st opacity-25"
 			:class="map.Months_Endwash ? map.Months_Endwash.opacity : 'opacity-25'"
 			:fill="map.Months_Endwash ? map.Months_Endwash.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1734,13 +1734,13 @@
 			C845.5,575.2,845.8,569.2,845.8,562.8z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Ered Lithui"
 			title="Ered Lithui"
 			class="st opacity-25"
-			
+
 			:fill="montagne"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
       		d="M1043.6,637.1c-4.3-0.7-9.4-1.6-14.6-2.5c-5.5-0.9-9.7,0.4-13.6,5c-6.3,7.4-12.1,15.5-22.6,20.1
@@ -1748,14 +1748,14 @@
 			c6.9,0.8,12.2,9.5,9.9,15.9C1049,621.6,1046.5,629.1,1043.6,637.1z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Minas Morgul"
 			title="Minas Morgul"
 			aria-valuetext="Minas_Morgul"
 			class="st opacity-25"
 			:class="map.Minas_Morgul ? map.Minas_Morgul.opacity : 'opacity-25'"
 			:fill="map.Minas_Morgul ? map.Minas_Morgul.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1765,13 +1765,13 @@
 			C1043.2,708.4,1047.8,713.5,1052.4,718.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Ephel Dúath"
 			title="Ephel Dúath"
 			class="st opacity-25"
-			
+
 			:fill="montagne"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
       d="M1081.2,594.1c0.3-4.1-0.6-8.4,0.9-11.7c3.5-7.6,7.8-14.9,12.4-22c2.4-3.7,6-1.1,9.1-0.3
@@ -1781,49 +1781,49 @@
 			C1095.4,592.6,1089.6,594.4,1081.2,594.1z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Umbar"
 			title="Umbar"
 			aria-valuetext="Umbar"
 			class="st opacity-25"
 			:class="map.Umbar ? map.Umbar.opacity : 'opacity-25'"
 			:fill="map.Umbar ? map.Umbar.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
      		d="M912,966.5c-3.2,4-6,7.8-9,11.4c-0.8,1-1.8,2.2-3,2.5c-6.3,1.8-12.6,3.9-19,4.9c-8,1.2-16.3,0.8-24.2,2.2
 			c-5.4,1-10.3,4-14.3,5.6c-5.3-6.3-10.3-13.3-16.3-19.3c-5.9-5.9-12.8-10.8-19.3-16.2c0.1-0.6,0.1-1.2,0.2-1.8
 			c4.7-0.8,9.5-2.1,14.2-2.3c21.6-0.6,43.3-0.6,64.6,3.9c8.1,1.7,15.9,4.9,23.7,7.5C910.8,965.3,911.8,966.3,912,966.5z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Azanulbizar"
 			title="Azanulbizar"
 			aria-valuetext="Azanulbizar"
 			class="st opacity-25"
 			:class="map.Azanulbizar ? map.Azanulbizar.opacity : 'opacity-25'"
 			:fill="map.Azanulbizar ? map.Azanulbizar.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M743.3,447.6c-19.5-2.3-38.2-4.6-57.2-6.9c0-7.4-0.4-14.3,0.1-21.2c0.5-6,6.2-7.1,10.6-8.4
 			c5.4-1.6,9-4.7,11.9-9.2c0.7-1.1,1.6-2.4,1.7-3.6c0.4-9.8,6.1-17,12.2-24.1c4.8,3.9,7.7,8.9,7.6,15.5c-0.1,7.3-0.7,14.9,1,21.8
 			c2,8.3,5.6,16.2,5.9,25c0.1,2.3,2.6,4.5,4,6.8C741.9,444.8,742.6,446.3,743.3,447.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Amon Sûl"
 			title="Amon Sûl"
 			aria-valuetext="Amon_Sul"
 			class="st opacity-25"
 			:class="map.Amon_Sul ? map.Amon_Sul.opacity : 'opacity-25'"
 			:fill="map.Amon_Sul ? map.Amon_Sul.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       d="M481.8,276.7c9.6-1.6,19.3-3.3,29.1-4.7c2.9-0.4,5.9,0.5,8.9,0.7c3.1,0.2,4.6,1.9,6.5,4.3
 			c2.6,3.4,6.4,6.7,10.4,8c10.6,3.3,13.1,10.4,11.6,20.2c-0.3,2.1-0.3,4.3-0.4,6.4c-16.2,4.6-31.9,5.3-47.5-1.6
 			c-4.4-2-8.7-4.3-13.2-5.8c-3.3-1.1-4.2-2.6-4.2-6C483,291.2,482.3,284.1,481.8,276.7z">
@@ -1835,7 +1835,7 @@
 			class="st opacity-25"
 			:class="map.Fondcombe ? map.Fondcombe.opacity : 'opacity-25'"
 			:fill="map.Fondcombe ? map.Fondcombe.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal" d="M662,265.6c-0.8,6.4-1.9,11.8-1.9,17.1c0,7.4-3.7,13.2-6.9,19.3c-3.5,6.7-6.2,13.8-9.4,20.7
@@ -1849,7 +1849,7 @@
 			class="st opacity-25"
 			:class="map.Esgaroth ? map.Esgaroth.opacity : 'opacity-25'"
 			:fill="map.Esgaroth ? map.Esgaroth.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal" d="M1007.2,230.7c-2.6,12.3-4.8,24,10.2,31.3c-9.7,4.6-16.4,12.6-27.9,11c-11-1.6-22.2-2-33.3-2.8
@@ -1857,63 +1857,63 @@
 			C1002.2,230.8,1004.5,230.7,1007.2,230.7z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Eregion"
 			title="Eregion"
 			aria-valuetext="Eregion"
 			class="st opacity-25"
 			:class="map.Eregion ? map.Eregion.opacity : 'opacity-25'"
 			:fill="map.Eregion ? map.Eregion.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal"  
+			@click="toggleModal"
       		d="M581.9,412.1c3.3-8,6.6-15.9,9.8-23.8c4.1-10.2,7.8-20.7,12.4-30.7c2.2-4.8,5.9-9,9-13.4
 			c0.3-0.5,1.2-1,1.7-0.9c7.7,1.6,11.3-5.2,16.8-8c3.4-1.7,6.9-3.4,10.6-5.2c1.7,6.5-1.9,15.3-7.7,18.8c-6.3,3.7-7.1,9.4-7.5,15.7
 			c-0.1,1.6-1,3.5-2.2,4.7c-7.9,8.4-12.5,18-10.5,29.6c0.5,2.9,2.9,5.5,5,9.1c-0.9,1.2-2.5,3.6-4.5,5.8c-7,8-8.7,8.3-18.5,4.4
 			c-2.3-0.9-4.7-1.6-7-2.6C587.1,414.7,585.1,413.6,581.9,412.1z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Cirith Ungol"
 			title="Cirith Ungol"
 			aria-valuetext="Cirith_Ungol"
 			class="st opacity-25"
 			:class="map.Cirith_Ungol ? map.Cirith_Ungol.opacity : 'opacity-25'"
 			:fill="map.Cirith_Ungol ? map.Cirith_Ungol.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M1034.5,640.6c11.1,1.7,15.3,5.7,16.6,15.7c0.6,4.9,2.9,7.9,6.7,10.9c9.4,7.4,18.2,15.4,27.2,23.3
 			c3.3,2.9,3.5,6-0.2,9c-5.8,4.6-11.3,9.7-17.4,13.9c-3.7,2.6-8.6,3.4-12.3-0.4c-5.9-6-12-12-16.7-18.9c-2.6-3.7-3.4-9.1-3.6-13.7
 			C1034.2,667.3,1034.5,654,1034.5,640.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Anorien"
 			title="Anorien"
 			aria-valuetext="Anorien"
 			class="st opacity-25"
 			:class="map.Anorien ? map.Anorien.opacity : 'opacity-25'"
 			:fill="map.Anorien ? map.Anorien.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M851.8,651.7c-6.5,3.1-11.9,2-17.9-1.1c-5.1-2.6-11.3-3.3-17.1-4.5c-3.3-0.7-6.8-0.7-11.3-1.2
 			c9.4-10.6,8.7-22.4,7.3-34.8c10.1-2.9,20.1-4.8,30.5-3.9c0.8,0.1,1.7,0.4,2.3,0.9c7.6,6.2,16.4,9.8,27.7,11.6
 			c-3.1,3.7-5.2,6.7-7.9,9.1C854.3,638.1,853.9,638.6,851.8,651.7z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Tharbad"
 			title="Tharbad"
 			aria-valuetext="Tharbad"
 			class="st opacity-25"
 			:class="map.Tharbad ? map.Tharbad.opacity : 'opacity-25'"
 			:fill="map.Tharbad ? map.Tharbad.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1922,30 +1922,30 @@
 			c-8.7,3.3-17.4,7.3-23.6,15C410.3,533.6,409.5,534.2,408.4,535.1z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Pelargir"
 			title="Pelargir"
 			aria-valuetext="Pelargir"
 			class="st opacity-25"
 			:class="map.Pelargir ? map.Pelargir.opacity : 'opacity-25'"
 			:fill="map.Pelargir ? map.Pelargir.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M832,832.3c2.3-11.6,9.8-20.8,19.5-28.1c3.2-2.4,8.4-2.4,12.8-2.7c6-0.3,12-0.1,17.9,0.4
 			c3.6,0.3,7.3,0.9,10.6,2.2c7.9,3.3,12.1,9,10,18.1c-1,4.4-1.6,8.9-2.9,13.2c-0.6,1.8-2.3,2.4-4.8,1.4c-9.3-3.7-18.9-5.2-29.1-4.6
 			C854.8,832.8,843.5,832.3,832,832.3z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Isengard"
 			title="Isengard"
 			aria-valuetext="Isengard"
 			class="st opacity-25"
 			:class="map.Isengard ? map.Isengard.opacity : 'opacity-25'"
 			:fill="map.Isengard ? map.Isengard.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1954,30 +1954,30 @@
 			c1.1,0.6,1.8,2.7,1.9,4.1c0.2,5.1,0.1,10.3,0.1,15.4C637.6,505.8,637.7,505.8,637.9,505.8z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="La Forêt de Drúadan"
 			title="La Forêt de Drúadan"
 			aria-valuetext="Foret_Druadan"
 			class="st opacity-25"
 			:class="map.Foret_Druadan ? map.Foret_Druadan.opacity : 'opacity-25'"
 			:fill="map.Foret_Druadan ? map.Foret_Druadan.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M912.9,661.2c-7,1.9-13.3,3.7-19.7,5.3c-1.3,0.3-2.9,0-4.2-0.6c-10.6-4.7-21.1-9.6-31.8-14.5
 			c-0.7-7.8,3.5-13.6,9.4-18.3c4.4-3.5,8-7.3,10.1-12.6c1-2.7,7.3-3.4,11-1c6.1,3.9,12,8.2,18,12.4c0.6,0.5,1.1,1.3,1.5,1.9
 			C911.1,639.7,914,654.5,912.9,661.2z">
 			<title>{{ title }}</title>
 		</path>
-		<!-- <path 
+		<!-- <path
       		id="Hauts de Rhudaur"
 			title="Hauts de Rhudaur"
 			aria-valuetext="Hauts_Rhudaur"
 			class="st opacity-25"
 			:class="map.Hauts_Rhudaur ? map.Hauts_Rhudaur.opacity : 'opacity-25'"
 			:fill="map.Hauts_Rhudaur ? map.Hauts_Rhudaur.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -1986,14 +1986,14 @@
 			c-8.7-4.6-14-11.6-15.6-22.7c3.3,0.8,6.5,0.6,8.4,2.1c8.3,6.6,17.6,4.8,26.7,3.5C588.6,171.6,602.5,169.3,616.6,167.2z">
 			<title>{{ title }}</title>
 		</path> -->
-		<path 
+		<path
       		id="Erech"
 			title="Erech"
 			aria-valuetext="Erech"
 			class="st opacity-25"
 			:class="map.Erech ? map.Erech.opacity : 'opacity-25'"
 			:fill="map.Erech ? map.Erech.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -2002,14 +2002,14 @@
 			c-10.1-0.5-20.2-0.7-30.3-1.3C600.8,685.9,598.6,684.7,595.4,683.7z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Centre d'Ithilien"
 			title="Centre d'Ithilien"
 			aria-valuetext="Centre_Ithilien"
 			class="st opacity-25"
 			:class="map.Centre_Ithilien ? map.Centre_Ithilien.opacity : 'opacity-25'"
 			:fill="map.Centre_Ithilien ? map.Centre_Ithilien.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -2019,7 +2019,7 @@
 			C1029.8,783,1029.4,783.1,1029,783.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Estfolde"
 			title="Estfolde"
 			aria-valuetext="Estfolde"
@@ -2034,14 +2034,14 @@
 			C804.5,611.5,805.9,611.5,808,611.5z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Avancée de Fangorn"
 			title="Avancée de Fangorn"
 			aria-valuetext="Avancee_Fangorn"
 			class="st opacity-25"
 			:class="map.Avancee_Fangorn ? map.Avancee_Fangorn.opacity : 'opacity-25'"
 			:fill="map.Avancee_Fangorn ? map.Avancee_Fangorn.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -2050,17 +2050,17 @@
 			C644.3,523.2,641.9,519.8,643.1,508.7z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Gué de Bruinen"
 			title="Gué de Bruinen"
 			aria-valuetext="Gue_Bruinen"
 			class="st opacity-25"
 			:class="map.Gue_Bruinen ? map.Gue_Bruinen.opacity : 'opacity-25'"
 			:fill="map.Gue_Bruinen ? map.Gue_Bruinen.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M607.2,310.8c0-8.6-2.3-18,0.5-25.5c4.9-12.8,6.4-27.3,16.1-38.2c1-1.1,1.9-2.7,3.1-3.1
 			c7.7-2.1,14.7-6.9,23.2-6.5c3.7,0.2,6.2,1.3,7.6,5.1c1.5,4,4.2,7.5,5.7,11.4c1.4,3.6,0.5,6.4-4.1,7.2c-6.5,1.1-13,3.1-19.5,3.7
 			c-11.5,1.1-15.5,9.9-19.5,18.4c-4.3,9.1-7.9,18.5-11.8,27.7C608.1,311.1,607.7,310.9,607.2,310.8z">
@@ -2073,117 +2073,117 @@
 			class="st opacity-25"
 			:class="map.Gue_Isen ? map.Gue_Isen.opacity : 'opacity-25'"
 			:fill="map.Gue_Isen ? map.Gue_Isen.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M626.4,577.6c-6-2.1-11.9-4.2-17.5-6.2c-3.5-7.2-7.6-14.5-10.7-22.2c-3.1-7.8-5.3-15.9-7.6-23.2
 			c4.1,1.9,8.6,4.4,13.3,6c6.4,2.2,12-0.5,17.4-3.9c1.9-1.2,4.1-1.7,6.2-2.4c2.8-0.9,5.6-1.7,8.5-2.4c1.6-0.4,3.2-0.5,4.8-0.7
 			c-0.2,1.8,0.1,3.9-0.6,5.5c-3.2,7.6-7.6,14.9-9.7,22.7C628,559.8,627.6,569.3,626.4,577.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Ouestfold"
 			title="Ouestfold"
 			aria-valuetext="Ouestfold"
 			class="st opacity-25"
 			:class="map.Ouestfold ? map.Ouestfold.opacity : 'opacity-25'"
 			:fill="map.Ouestfold ? map.Ouestfold.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M672.1,579.8c-14,0-26.9,0-40.9,0c0.4-5.4,0.3-9.9,1.1-14.1c1.5-7.5,3.1-15,5.4-22.3
 			c1.5-4.7,4.4-8.9,6.9-13.2c0.4-0.8,1.8-1.1,2.8-1.4c0.6-0.2,1.3,0.1,2,0.3c3.6,0.8,8.1,0.6,10.4,2.7c1.9,1.8,1.5,6.4,1.7,9.8
 			c0.4,11.5,3.3,22.2,9.1,32.2C671.5,575.7,671.6,578.1,672.1,579.8z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Hauts des Galgals"
 			title="Hauts des Galgals"
 			aria-valuetext="Hauts_Galgals"
 			class="st opacity-25"
 			:class="map.Hauts_Galgals ? map.Hauts_Galgals.opacity : 'opacity-25'"
 			:fill="map.Hauts_Galgals ? map.Hauts_Galgals.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M394.3,268.6c5.4-5.5,16.1-3.4,21.7,0.3c1.2,0.8,2.4,1.8,3.6,2.6c5.1,3.7,10.5,6.4,16.8,7.8
 			c7.5,1.7,8.5,4.3,7.1,12c-0.6,3.6-1.2,7.2-1.7,10.7c-0.4,3-1.7,4.4-4.9,4.1c-3.8-0.3-7.7-0.2-11.5-0.2c-4.6,0-9.3,1.2-12.9-3.8
 			c-1.4-2-5.3-2.6-8.2-3.1c-5.5-0.9-7.6-3.1-7.1-8.6C398,282.9,397.8,275.6,394.3,268.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Cair Andros"
 			title="Cair Andros"
 			aria-valuetext="Cair_Andros"
 			class="st opacity-25"
 			:class="map.Cair_Andros ? map.Cair_Andros.opacity : 'opacity-25'"
 			:fill="map.Cair_Andros ? map.Cair_Andros.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M919.7,662c-2.6-11.1-5-21.4-7.7-33.2c5-3.6,11.4-8.3,16.7-12.1c3.4,3.4,6,5.9,8.5,8.4
 			c4.7,4.5,10.4,7.9,12.2,15.2c0.8,3.5,4.6,6.2,7.1,9.3c2.3,2.9,2.6,5.2-1.2,7c-0.6,0.3-1.1,0.8-1.5,1.3
 			c-6.5,6.2-13.1,10.2-22.6,5.5C927.7,661.6,923,662.3,919.7,662z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Edoras"
 			title="Edoras"
 			aria-valuetext="Edoras"
 			class="st opacity-25"
 			:class="map.Edoras ? map.Edoras.opacity : 'opacity-25'"
 			:fill="map.Edoras ? map.Edoras.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M658.4,623.7c6.2-12.8,6.2-25.4,4.9-38.2c7.8-0.8,13.5,3,19.1,6.8c7.9,5.4,15.8,10.7,24.1,16.3
 			c-2.4,6.9-5.1,14.6-7.8,22.3C685.3,628.5,672.3,626.2,658.4,623.7z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
      		id="Osgiliath"
 			title="Osgiliath"
 			aria-valuetext="Osgiliath"
 			class="st opacity-25"
 			:class="map.Osgiliath ? map.Osgiliath.opacity : 'opacity-25'"
 			:fill="map.Osgiliath ? map.Osgiliath.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M945.9,701.4c3.7-10.2,2.9-20.1,1.8-30c0-0.2-0.2-0.3-0.2-0.4c1.2-6.7,8.1-7.5,11.9-11.5
 			c0.8-0.8,4.1-0.5,5,0.5c5.1,5.2,10.1,10.5,14.4,16.3c1.6,2.2,1,5.9,1.6,8.9c0.4,2.1,1.4,4,1.6,6.1c0.5,4.7,0.7,9.5,1,15.3
 			c-9.8,0-18.9,0.4-28-0.2C952,706.1,949.1,703.2,945.9,701.4z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Harlond"
 			title="Harlond"
 			aria-valuetext="Harlond"
 			class="st opacity-25"
 			:class="map.Harlond ? map.Harlond.opacity : 'opacity-25'"
 			:fill="map.Harlond ? map.Harlond.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M901.3,744.3c-4.5-6-8.8-11.8-12.3-16.5c2.7-3.3,4.6-6.9,7.5-8.8c3.7-2.4,8.2-4,12.6-4.9
 			c4.8-1,9.9-0.7,14.9-1.2c7.1-0.6,13.7-2.4,18.7-7.8c1.5,0.8,2.7,1.4,3.8,2.1c5.2,3.3,6.9,8.9,2.9,13.7c-2.9,3.5-7,6.7-11.2,8.2
 			C925.9,733.5,912.8,735.6,901.3,744.3z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
 			id="Montagne"
 			title="Montagne"
 			class="st opacity-25"
-			
+
 			:fill="montagne"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			d="M689.7,178.4c-11.1-1.9-15.7,4.2-20.4,11.4c-5.8,8.8-17,9.5-24.8,2.2c-6.8-6.3-13.1-13.1-19.4-19.9
@@ -2191,13 +2191,13 @@
 			C687,175,687.7,176.3,689.7,178.4z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
 			id="Montagne"
 			title="Montagne"
 			class="st opacity-25"
-			
+
 			:fill="montagne"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			d="M573.1,664.9c6.1-8,13.1-14.1,21.4-18.9c3.6-2.1,6.4-5.7,9.3-8.8c5.7-5.9,11.4-11.6,19.8-13.5
@@ -2205,14 +2205,14 @@
 			C578.2,672.7,575.8,668.9,573.1,664.9z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Dol Amroth"
 			title="Dol Amroth"
 			aria-valuetext="Dol_Amroth"
 			class="st opacity-25"
 			:class="map.Dol_Amroth ? map.Dol_Amroth.opacity : 'opacity-25'"
 			:fill="map.Dol_Amroth ? map.Dol_Amroth.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -2221,43 +2221,43 @@
 			c-1.9,0.9-3.7,2.5-5.6,2.8c-1.7,0.2-4.6-0.5-5.3-1.7C614.9,814.9,612.6,809.4,610.1,803.9z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Lorien"
 			title="Lorien"
 			aria-valuetext="Lorien"
 			class="st opacity-25"
 			:class="map.Lorien ? map.Lorien.opacity : 'opacity-25'"
 			:fill="map.Lorien ? map.Lorien.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
 			d="M775.5,398.2c-4.1,8.6-7.9,16.9-12,25.6c-6.9-1.2-14.9-1.9-22.4-4.3c-2.7-0.9-5-5.6-5.8-8.9
 			c-1-4.4-0.1-9.3-0.6-13.9c-0.4-3.9,1.4-5.3,4.7-6.2C753,386.8,764.8,390.9,775.5,398.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Dunharrow"
 			title="Dunharrow"
 			aria-valuetext="Dunharrow"
 			class="st opacity-25"
 			:class="map.Dunharrow ? map.Dunharrow.opacity : 'opacity-25'"
 			:fill="map.Dunharrow ? map.Dunharrow.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M657.9,584.6c3.2,20.7-0.4,37.1-8.6,42.6c-6.4-3.3-12.3-6.4-19-9.9c0.5-6.5,1.3-14,1.5-21.5
 			c0.1-3.5-1-7-1.7-11.3C638.9,584.6,648.4,584.6,657.9,584.6z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Montagne"
 			title="Montagne"
 			class="st opacity-25"
-			
+
 			:fill="montagne"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
       		d="M660.7,106.2c-7.7-0.3-15.6,0.1-23.1-1.3c-4.4-0.8-8.7-4.1-12.2-7.1c-12.3-10.8-26.1-18.2-42.7-18.8
@@ -2265,42 +2265,42 @@
 			c2.5,1.1,4.3,3.9,6.5,5.9C661.3,105.2,661,105.7,660.7,106.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
 			id="Moria"
 			title="Moria"
 			aria-valuetext="Moria"
 			class="st opacity-25"
 			:class="map.Moria ? map.Moria.opacity : 'opacity-25'"
 			:fill="map.Moria ? map.Moria.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M 681.8 416.2 c -16.5 -5.4 -32.6 -10.8 -48.8 -15.8 c -3.4 -1.1 -4 -3.2 -3 -5.6 c 1.8 -4.6 3.7 -9.4 6.6 -13.3 c 3.1 -4.2 8.1 -2 12.1 -1.1 c 2.7 0.7 4.9 3.3 7.3 5 c 3.7 2.6 7 6 11.1 7.8 c 6.6 2.9 12 5.8 13.6 13.9 C 682.1 413.9 682.9 413.7 681.8 416.2 z C 673.2 410.8 662 407 660 403 L 663 399 C 662 396 661 395 658 393 L 652 390 L 643 397 C 644.3333 398.3333 646 401 649 402 L 652 402 L 660 403">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
 			id="Coeur de la Moria"
 			title="Coeur de la Moria"
 			aria-valuetext="Coeur_Moria"
 			class="opacity-50 custom_map"
 			:class="map.Coeur_Moria ? map.Coeur_Moria.opacity : 'opacity-25'"
 			:fill="map.Coeur_Moria ? map.Coeur_Moria.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="m 662 401 z L 663 399 C 662 396 661 395 658 393 L 652 390 L 643 397 C 644.3333 398.3333 646 401 649 402 L 652 402 L 660 403 L 662 401">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Halifirien"
 			title="Halifirien"
 			aria-valuetext="Halifirien"
 			class="st opacity-25"
 			:class="map.Halifirien ? map.Halifirien.opacity : 'opacity-25'"
 			:fill="map.Halifirien ? map.Halifirien.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -2308,14 +2308,14 @@
 			c6.9,0.6,13.8,2.3,20.7,2.6c7.1,0.2,14.7,2,20.7-4.2c1-1,3.4-0.7,5.6-0.5C755.8,614.1,743.3,618.8,746,632.7z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Amon Hen"
 			title="Amon Hen"
 			aria-valuetext="Amon_Hen"
 			class="st opacity-25"
 			:class="map.Amon_Hen ? map.Amon_Hen.opacity : 'opacity-25'"
 			:fill="map.Amon_Hen ? map.Amon_Hen.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -2323,14 +2323,14 @@
 			C861.3,517.8,858,535.9,847.1,553.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
       		id="Bree"
 			title="Bree"
 			aria-valuetext="Bree"
 			class="st opacity-25"
 			:class="map.Bree ? map.Bree.opacity : 'opacity-25'"
 			:fill="map.Bree ? map.Bree.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
 			@click="toggleModal"
@@ -2338,36 +2338,36 @@
 			c0.8-8.1,1.4-15.1,2.3-22.1c0.1-1.2,1.2-2.6,2.2-3.3C457.5,277.5,465.6,277.4,475.5,277.1z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
 			id="Porte de la Moria"
 			title="Porte de la Moria"
 			aria-valuetext="Porte_Moria"
 			class="st opacity-25"
 			:class="map.Porte_Moria ? map.Porte_Moria.opacity : 'opacity-25'"
 			:fill="map.Porte_Moria ? map.Porte_Moria.color : '#3300000'"
-			
+
 			pointer-events="all"
 			@mouseover="getInfo"
-			@click="toggleModal" 
+			@click="toggleModal"
       		d="M629.9,372c1.8,3.5,2.9,6.9,0.5,10.7c-3,5-6,9.9-5.5,16.2c0.1,1.6-1.2,3.3-2,5.1
 			C614.5,394.6,618,378.9,629.9,372z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
 			class="st0 opacity-0"
-			
+
 			pointer-events="all"
       d="M619,778c1.8-1.4,3.5-3.4,5.5-4c3.1-0.9,6.5-0.6,9.7-1.3c8.3-1.7,12.6,1.5,12.5,9.9c0,2.7-0.8,5.4-1.9,8.3
 			C639.2,780.1,632.6,771.8,619,778C619,778,619,778,619,778z">
 		</path>
-		<path 
+		<path
       		class="st0 opacity-0"
-			
+
 			pointer-events="all"
       		d="M229.2,280.3c-1,1.9-1.5,4.9-3,5.5c-3.4,1.2-5.6,6-10.6,4.1c4.4-3.7,8.4-7,12.3-10.4
 			C228.3,279.7,228.7,280,229.2,280.3z">
 		</path>
-		<path 
+		<path
 			id="Tolfalas"
 			title="Tolfalas"
 			aria-valuetext="Tolfalas"
@@ -2383,7 +2383,7 @@
 			c1.5-6.4,7.3-9,12.5-5.2C720.1,894.2,727.2,898.8,725.5,909.2z">
 			<title>{{ title }}</title>
 		</path>
-		<path 
+		<path
 			id="Barad-dûr"
 			title="Barad-dûr"
 			aria-valuetext="Barad_Dur"
@@ -2424,13 +2424,13 @@
 	<path class="fill-current text-white" d="M599.3,609h-.23a.14.14,0,0,0-.14.14v1.53H597.7v-1.53a.14.14,0,0,0-.14-.14h-1.12a.14.14,0,0,0-.14.14v1.53h-1.24v-1.53a.14.14,0,0,0-.14-.14H593.8a.14.14,0,0,0-.14.14v4a.64.64,0,0,0,.64.63h.93l-1.57,8.78a.66.66,0,0,0,.14.52.65.65,0,0,0,.49.23H605a.65.65,0,0,0,.48-.23.59.59,0,0,0,.14-.52L604,613.78H605a.64.64,0,0,0,.64-.63v-4a.15.15,0,0,0-.15-.14h-1.11a.15.15,0,0,0-.15.14v1.53H603v-1.53a.14.14,0,0,0-.14-.14h-1.12a.14.14,0,0,0-.14.14v1.53h-1.24v-1.53a.14.14,0,0,0-.14-.14H600m1.19,7.94v2.76h-3V617a1.52,1.52,0,1,1,3,0Z"></path>
 	<circle cx="466.76" cy="180.36" r="12.23" class="fill-current text-gray-900"></circle>
 	<path class="fill-current text-white" d="M466.43,173.23h-.23a.14.14,0,0,0-.14.14v1.52h-1.23v-1.52a.15.15,0,0,0-.15-.14h-1.11a.14.14,0,0,0-.14.14v1.52h-1.24v-1.52a.14.14,0,0,0-.14-.14h-1.12a.14.14,0,0,0-.14.14v4a.64.64,0,0,0,.64.64h.93l-1.57,8.77a.67.67,0,0,0,.14.53.64.64,0,0,0,.49.22H472.1a.64.64,0,0,0,.49-.22.67.67,0,0,0,.14-.53L471.17,178h.93a.64.64,0,0,0,.63-.64v-4a.14.14,0,0,0-.14-.14h-1.12a.14.14,0,0,0-.14.14v1.52H470.1v-1.52a.14.14,0,0,0-.14-.14h-1.12a.14.14,0,0,0-.14.14v1.52h-1.24v-1.52a.14.14,0,0,0-.14-.14h-.23m1.19,7.94v2.75h-3v-2.75a1.52,1.52,0,1,1,3,0Z"></path>
-	
+
 	<circle class="fill-current text-gray-900" cx="1018.27" cy="664" r="12.23"></circle>
 	<path class="fill-current text-white" d="M1017.94,656.87h-.23a.14.14,0,0,0-.14.14v1.52h-1.24V657a.14.14,0,0,0-.14-.14h-1.12a.14.14,0,0,0-.14.14v1.52h-1.24V657a.14.14,0,0,0-.14-.14h-1.11a.15.15,0,0,0-.15.14v4a.64.64,0,0,0,.64.64h.93l-1.56,8.77a.61.61,0,0,0,.14.53.62.62,0,0,0,.48.22h10.69a.64.64,0,0,0,.49-.22.67.67,0,0,0,.14-.53l-1.57-8.77h.93a.64.64,0,0,0,.64-.64v-4a.14.14,0,0,0-.14-.14H1023a.14.14,0,0,0-.14.14v1.52h-1.24V657a.14.14,0,0,0-.14-.14h-1.12a.14.14,0,0,0-.14.14v1.52H1019V657a.14.14,0,0,0-.14-.14h-.23m1.18,7.94v2.75h-3v-2.75a1.52,1.52,0,1,1,3,0Z"></path>
-	
+
 	<circle cx="874.07" cy="691.81" r="14.38" class="fill-current text-gray-900"></circle>
 	<path class="fill-current text-white" d="M873.68,683.41h-.27a.17.17,0,0,0-.16.17v1.79h-1.46v-1.79a.17.17,0,0,0-.16-.17h-1.32a.17.17,0,0,0-.16.17v1.79H868.7v-1.79a.18.18,0,0,0-.17-.17h-1.32a.17.17,0,0,0-.16.17v4.67a.74.74,0,0,0,.75.75h1.09l-1.84,10.32a.74.74,0,0,0,.16.61.78.78,0,0,0,.58.27h12.56a.75.75,0,0,0,.74-.88L879.25,689h1.09a.74.74,0,0,0,.75-.75v-4.67a.17.17,0,0,0-.16-.17h-1.32a.17.17,0,0,0-.16.17v1.79H878v-1.79a.17.17,0,0,0-.16-.17h-1.32a.17.17,0,0,0-.16.17v1.79h-1.46v-1.79a.17.17,0,0,0-.16-.17h-.27m1.4,9.34V696h-3.57v-3.24a1.79,1.79,0,1,1,3.57,0Z" ></path>
-	
+
 	<circle class="fill-current text-gray-900" cx="617.56" cy="490.31" r="10.69"></circle>
 	<path class="fill-current text-white" d="M617.27,484.08h-.2a.12.12,0,0,0-.13.12v1.33h-1.08V484.2a.12.12,0,0,0-.12-.12h-1a.12.12,0,0,0-.12.12v1.33h-1.08V484.2a.12.12,0,0,0-.12-.12h-1a.12.12,0,0,0-.12.12v3.47a.56.56,0,0,0,.55.56h.82l-1.37,7.67a.52.52,0,0,0,.12.45.55.55,0,0,0,.43.2h9.34a.53.53,0,0,0,.42-.2.52.52,0,0,0,.12-.45l-1.36-7.67h.81a.56.56,0,0,0,.56-.56V484.2a.12.12,0,0,0-.13-.12h-1a.12.12,0,0,0-.12.12v1.33h-1.08V484.2a.12.12,0,0,0-.12-.12h-1a.12.12,0,0,0-.12.12v1.33h-1.08V484.2a.12.12,0,0,0-.13-.12h-.2m1,6.93v2.42h-2.65V491a1.33,1.33,0,0,1,2.65,0Z"></path>
 
@@ -2476,7 +2476,7 @@
 	<!-- <g id="ForochelCombat" data-name="010---Swords"><path id="Shape" d="M228.35,91.51a1.2,1.2,0,0,0-.85-.42l-5.35-.29a1.23,1.23,0,0,0-.92.35,1.21,1.21,0,0,0-.35.92l.29,5.35a1.22,1.22,0,0,0,.42.85l12.1,10.09,3.17-1.17.35-.41.83-3.64Z" class="cls-4"></path><path id="Shape-2" data-name="Shape" d="M242.4,108.36c-3.68,1.6-3,1.26-3.59,1.72L238,112l3.89,3.25,2-.76,1.35-2.62Z" class="cls-4"></path><path id="Shape-3" data-name="Shape" d="M250.55,122.17l-5.66-4.85.71-1.6,1.8-.92,4.85,5.67Z" class="cls-5"></path><path id="Shape-4" data-name="Shape" d="M250.81,111.4l-8.91,8.91a2.38,2.38,0,0,1-3.35,0,6.06,6.06,0,0,1-.51-.53.56.56,0,0,0,0-.61c.06-.1-.73.7,11.51-11.54a.6.6,0,0,1,.84,0l.42.42a2.38,2.38,0,0,1,0,3.35Z" class="cls-6"></path><path id="Shape-5" data-name="Shape" d="M254.52,124.43a2.37,2.37,0,1,1,0-3.35A2.36,2.36,0,0,1,254.52,124.43Z" class="cls-6"></path><path id="Shape-6" data-name="Shape" d="M238,103.14l-2.19,2.63L221.24,91.15a1.18,1.18,0,0,1,.91-.35l5.35.29a1.2,1.2,0,0,1,.85.42Z" class="cls-7"></path><path id="Shape-7" data-name="Shape" d="M245.31,111.85l-1.69,1.69-3.38-3.38,2.16-1.8Z" class="cls-7"></path><path id="Shape-8" data-name="Shape" d="M243.63,113.55h0" class="cls-4"></path><path id="Shape-9" data-name="Shape" d="M254.27,123a1.18,1.18,0,1,1,0-1.68A1.2,1.2,0,0,1,254.27,123Z" class="cls-8"></path><path id="Shape-10" data-name="Shape" d="M239.82,110.5c.41-.33,2.93-2.44,14.68-12.23a1.22,1.22,0,0,0,.42-.85l.29-5.34a1.2,1.2,0,0,0-.35-.92,1.23,1.23,0,0,0-.92-.36l-5.35.29a1.18,1.18,0,0,0-.85.43C231.5,111,236.53,105,235.51,106.19Z" class="cls-9"></path><path id="Shape-11" data-name="Shape" d="M255.21,92.08l-.29,5.34a1.22,1.22,0,0,1-.42.85c-11.67,9.73-14.27,11.9-14.68,12.23v-4.31l15-15A1.21,1.21,0,0,1,255.21,92.08Z" class="cls-4"></path><path id="Shape-12" data-name="Shape" d="M223.84,120.47l4.85-5.67,1.58,1,.93,1.53-5.66,4.85Z" class="cls-5"></path><path id="Shape-13" data-name="Shape" d="M224.92,124.43a2.36,2.36,0,1,1,0-3.35A2.35,2.35,0,0,1,224.92,124.43Z" class="cls-6"></path><path id="Shape-14" data-name="Shape" d="M224.68,123a1.19,1.19,0,1,1,0-1.68A1.19,1.19,0,0,1,224.68,123Z" class="cls-8"></path><path id="Shape-15" data-name="Shape" d="M239.82,106.19v4.31l-5.66,4.73-2.63-.76-.75-2.62,4.73-5.66Z" class="cls-6"></path><path id="Shape-16" data-name="Shape" d="M232.46,114.14a.59.59,0,0,1-.55-.36.6.6,0,0,1,.13-.65l3.76-3.76a.6.6,0,0,1,0-.84c.71-.71,1.74.78.84,1.68L232.88,114a.63.63,0,0,1-.42.17Z" class="cls-10"></path><path id="Shape-17" data-name="Shape" d="M237.06,110.38a.56.56,0,0,1-.42-.18.58.58,0,0,1-.58.17.56.56,0,0,1-.42-.42.59.59,0,0,1,.16-.58,1.21,1.21,0,0,1,1.68,0,.59.59,0,0,1,.13.64A.6.6,0,0,1,237.06,110.38Z" class="cls-10"></path><path id="Shape-18" data-name="Shape" d="M238,119.78a4,4,0,0,1-.5.53,2.38,2.38,0,0,1-3.35,0l-8.91-8.91a2.38,2.38,0,0,1,0-3.35l.42-.41a.58.58,0,0,1,.84,0L238,119.05a.6.6,0,0,1,.08.73Z" class="cls-8"></path></g> -->
 	<!-- <g id="EdorasCombat" data-name="010---Swords"><path id="Shape-19" data-name="Shape" d="M673.16,600.68a.87.87,0,0,0-.63-.31l-4-.22a.91.91,0,0,0-.68.26.88.88,0,0,0-.26.69l.21,4a.9.9,0,0,0,.32.63l9,7.5,2.35-.87.26-.31.62-2.7Z" class="cls-4"></path><path id="Shape-20" data-name="Shape" d="M683.59,613.2c-2.73,1.19-2.24.94-2.66,1.28l-.57,1.41,2.89,2.41,1.51-.56,1-2Z" class="cls-4"></path><path id="Shape-21" data-name="Shape" d="M689.65,623.46l-4.2-3.6.53-1.19,1.33-.68,3.61,4.21Z" class="cls-5"></path><path id="Shape-22" data-name="Shape" d="M689.84,615.46l-6.62,6.62a1.76,1.76,0,0,1-2.48,0c-.36-.36-.35-.35-.38-.4a.41.41,0,0,0,0-.45c0-.07-.54.52,8.55-8.57a.45.45,0,0,1,.63,0l.3.31a1.75,1.75,0,0,1,0,2.49Z" class="cls-6"></path><path id="Shape-23" data-name="Shape" d="M692.6,625.14a1.76,1.76,0,1,1,0-2.49A1.76,1.76,0,0,1,692.6,625.14Z" class="cls-6"></path><path id="Shape-24" data-name="Shape" d="M680.36,609.32l-1.63,2-10.86-10.87a.87.87,0,0,1,.68-.26l4,.22a.87.87,0,0,1,.63.31Z" class="cls-7"></path><path id="Shape-25" data-name="Shape" d="M685.76,615.79l-1.26,1.26L682,614.54l1.6-1.34Z" class="cls-7"></path><path id="Shape-26" data-name="Shape" d="M684.51,617.06h0" class="cls-4"></path><path id="Shape-27" data-name="Shape" d="M692.42,624.08a.88.88,0,0,1-1.24,0,.88.88,0,0,1,1.24-1.24A.88.88,0,0,1,692.42,624.08Z" class="cls-8"></path><path id="Shape-28" data-name="Shape" d="M681.68,614.79l10.91-9.09a.89.89,0,0,0,.31-.63l.22-4a.92.92,0,0,0-1-1l-4,.22a.84.84,0,0,0-.63.31c-12.07,14.47-8.33,10-9.09,10.9Z" class="cls-9"></path><path id="Shape-29" data-name="Shape" d="M693.12,601.1l-.22,4a.89.89,0,0,1-.31.63l-10.91,9.09v-3.21l11.17-11.17A.93.93,0,0,1,693.12,601.1Z" class="cls-4"></path><path id="Shape-30" data-name="Shape" d="M669.81,622.2l3.6-4.21,1.17.73.7,1.14-4.21,3.6Z" class="cls-5"></path><path id="Shape-31" data-name="Shape" d="M670.61,625.14a1.76,1.76,0,1,1,0-2.49A1.76,1.76,0,0,1,670.61,625.14Z" class="cls-6"></path><path id="Shape-32" data-name="Shape" d="M670.43,624.08a.88.88,0,0,1-1.24,0,.88.88,0,1,1,1.24-1.24A.88.88,0,0,1,670.43,624.08Z" class="cls-8"></path><path id="Shape-33" data-name="Shape" d="M681.68,611.58v3.21l-4.21,3.51-2-.56-.55-2,3.51-4.21Z" class="cls-6"></path><path id="Shape-34" data-name="Shape" d="M676.21,617.5a.45.45,0,0,1-.41-.27.45.45,0,0,1,.1-.48l2.8-2.8a.44.44,0,0,1,0-.62c.53-.53,1.29.57.62,1.24l-2.8,2.8a.44.44,0,0,1-.31.13Z" class="cls-10"></path><path id="Shape-35" data-name="Shape" d="M679.63,614.7a.58.58,0,0,0-.74,0,.45.45,0,0,1-.32-.32.43.43,0,0,1,.13-.43.9.9,0,0,1,1.24,0,.45.45,0,0,1,.1.48A.45.45,0,0,1,679.63,614.7Z" class="cls-10"></path><path id="Shape-36" data-name="Shape" d="M680.36,621.68c0,.06-.05.07-.38.4a1.76,1.76,0,0,1-2.48,0l-6.62-6.62a1.76,1.76,0,0,1,0-2.49l.31-.31a.46.46,0,0,1,.31-.13.44.44,0,0,1,.31.13l8.49,8.49a.42.42,0,0,1,.06.53Z" class="cls-8"></path></g> -->
 	<!-- <g id="MinasTirithCombat" data-name="010---Swords"><path id="Shape-73" data-name="Shape" d="M907.23,672.54a1.17,1.17,0,0,0-.8-.4l-5.08-.27a1.14,1.14,0,0,0-1.21,1.21l.27,5.08a1.17,1.17,0,0,0,.4.8l11.5,9.59,3-1.11.33-.39.79-3.46Z" class="cls-4"></path><path id="Shape-74" data-name="Shape" d="M920.57,688.55c-3.49,1.52-2.87,1.2-3.41,1.63l-.72,1.81,3.69,3.08,1.93-.72,1.28-2.49Z" class="cls-4"></path><path id="Shape-75" data-name="Shape" d="M928.32,701.66l-5.38-4.6.68-1.53,1.71-.86,4.6,5.38Z" class="cls-5"></path><path id="Shape-76" data-name="Shape" d="M928.56,691.44l-8.46,8.45a2.25,2.25,0,0,1-3.18,0c-.46-.46-.44-.43-.48-.5a.53.53,0,0,0,0-.57c.06-.1-.69.66,10.93-11a.56.56,0,0,1,.79,0l.4.39a2.26,2.26,0,0,1,0,3.19Z" class="cls-6"></path><path id="Shape-77" data-name="Shape" d="M932.08,703.81a2.25,2.25,0,1,1,0-3.18A2.25,2.25,0,0,1,932.08,703.81Z" class="cls-6"></path><path id="Shape-78" data-name="Shape" d="M916.44,683.59l-2.08,2.5-13.88-13.88a1.08,1.08,0,0,1,.87-.34l5.08.27a1.17,1.17,0,0,1,.8.4Z" class="cls-7"></path><path id="Shape-79" data-name="Shape" d="M923.34,691.86l-1.61,1.6-3.2-3.2,2-1.71Z" class="cls-7"></path><path id="Shape-80" data-name="Shape" d="M921.75,693.48l0,0" class="cls-4"></path><path id="Shape-81" data-name="Shape" d="M931.85,702.46a1.13,1.13,0,1,1,0-1.6A1.13,1.13,0,0,1,931.85,702.46Z" class="cls-8"></path><path id="Shape-82" data-name="Shape" d="M918.13,690.58,932.07,679a1.12,1.12,0,0,0,.39-.8l.28-5.08a1.14,1.14,0,0,0-.33-.87,1.19,1.19,0,0,0-.88-.34l-5.07.27a1.14,1.14,0,0,0-.81.41C910.22,691,915,685.33,914,686.48Z" class="cls-9"></path><path id="Shape-83" data-name="Shape" d="M932.74,673.08l-.28,5.08a1.12,1.12,0,0,1-.39.8l-13.94,11.62v-4.1l14.27-14.27A1.11,1.11,0,0,1,932.74,673.08Z" class="cls-4"></path><path id="Shape-84" data-name="Shape" d="M903,700.05l4.6-5.38,1.5.93.89,1.46-5.38,4.6Z" class="cls-5"></path><path id="Shape-85" data-name="Shape" d="M904,703.81a2.25,2.25,0,1,1,0-3.18A2.25,2.25,0,0,1,904,703.81Z" class="cls-6"></path><path id="Shape-86" data-name="Shape" d="M903.75,702.46a1.13,1.13,0,1,1,0-1.6A1.15,1.15,0,0,1,903.75,702.46Z" class="cls-8"></path><path id="Shape-87" data-name="Shape" d="M918.13,686.48v4.1l-5.38,4.49-2.49-.72-.72-2.49,4.49-5.38Z" class="cls-6"></path><path id="Shape-88" data-name="Shape" d="M911.13,694a.58.58,0,0,1-.52-.35.56.56,0,0,1,.13-.61l3.57-3.58a.56.56,0,0,1,0-.79c.68-.68,1.65.74.8,1.59l-3.58,3.58a.58.58,0,0,1-.4.16Z" class="cls-10"></path><path id="Shape-89" data-name="Shape" d="M915.5,690.46a.57.57,0,0,1-.39-.16.57.57,0,0,1-1-.25.57.57,0,0,1,.16-.55,1.16,1.16,0,0,1,1.59,0,.57.57,0,0,1,.12.62A.55.55,0,0,1,915.5,690.46Z" class="cls-10"></path><path id="Shape-90" data-name="Shape" d="M916.44,699.39c0,.07-.06.08-.48.5a2.25,2.25,0,0,1-3.18,0l-8.46-8.45a2.26,2.26,0,0,1,0-3.19l.4-.39a.54.54,0,0,1,.4-.17.52.52,0,0,1,.39.17l10.85,10.84a.57.57,0,0,1,.08.69Z" class="cls-8"></path></g> -->
-	
+
 	<!-- <g id="Lithlad" data-name="010---Swords"><path id="Shape-199" data-name="Shape" d="M1252.84,612.14a1.5,1.5,0,0,0-1.08-.53l-6.83-.37a1.52,1.52,0,0,0-1.17.45,1.54,1.54,0,0,0-.45,1.17l.37,6.83a1.51,1.51,0,0,0,.54,1.08l15.44,12.88,4-1.49.45-.53,1.06-4.65Z" class="cls-4"></path><path id="Shape-200" data-name="Shape" d="M1270.76,633.65c-4.69,2-3.86,1.61-4.57,2.19l-1,2.43,5,4.14,2.59-1,1.71-3.35Z" class="cls-4"></path><path id="Shape-201" data-name="Shape" d="M1281.17,651.27l-7.23-6.19.92-2,2.29-1.17,6.19,7.23Z" class="cls-5"></path><path id="Shape-202" data-name="Shape" d="M1281.5,637.53l-11.37,11.37a3,3,0,0,1-4.27,0c-.62-.62-.6-.59-.65-.68a.71.71,0,0,0,0-.77c.08-.13-.93.88,14.69-14.73a.75.75,0,0,1,1.07,0l.53.53a3,3,0,0,1,0,4.28Z" class="cls-6"></path><path id="Shape-203" data-name="Shape" d="M1286.23,654.16a3,3,0,1,1,0-4.27A3,3,0,0,1,1286.23,654.16Z" class="cls-6"></path><path id="Shape-204" data-name="Shape" d="M1265.21,627l-2.79,3.37-18.66-18.66a1.47,1.47,0,0,1,1.17-.45l6.83.37a1.5,1.5,0,0,1,1.08.53Z" class="cls-7"></path><path id="Shape-205" data-name="Shape" d="M1274.48,638.1l-2.15,2.16-4.31-4.32,2.74-2.29Z" class="cls-7"></path><path id="Shape-206" data-name="Shape" d="M1272.34,640.27h0" class="cls-4"></path><path id="Shape-207" data-name="Shape" d="M1285.92,652.34a1.51,1.51,0,1,1,0-2.14A1.5,1.5,0,0,1,1285.92,652.34Z" class="cls-8"></path><path id="Shape-208" data-name="Shape" d="M1267.48,636.38c.53-.43,3.74-3.11,18.73-15.61a1.55,1.55,0,0,0,.54-1.08l.37-6.82a1.54,1.54,0,0,0-1.63-1.63l-6.82.37a1.51,1.51,0,0,0-1.08.54c-20.73,24.85-14.31,17.17-15.62,18.72Z" class="cls-9"></path><path id="Shape-209" data-name="Shape" d="M1287.12,612.87l-.37,6.82a1.55,1.55,0,0,1-.54,1.08c-14.89,12.42-18.21,15.18-18.73,15.61v-5.51l19.18-19.18A1.54,1.54,0,0,1,1287.12,612.87Z" class="cls-4"></path><path id="Shape-210" data-name="Shape" d="M1247.09,649.1l6.18-7.23,2,1.26,1.19,2-7.23,6.19Z" class="cls-5"></path><path id="Shape-211" data-name="Shape" d="M1248.47,654.16a3,3,0,1,1,0-4.27A3,3,0,0,1,1248.47,654.16Z" class="cls-6"></path><path id="Shape-212" data-name="Shape" d="M1248.16,652.34a1.51,1.51,0,1,1,0-2.14A1.53,1.53,0,0,1,1248.16,652.34Z" class="cls-8"></path><path id="Shape-213" data-name="Shape" d="M1267.48,630.87v5.51l-7.23,6-3.35-1-1-3.35,6-7.23Z" class="cls-6"></path><path id="Shape-214" data-name="Shape" d="M1258.08,641a.75.75,0,0,1-.53-1.29l4.8-4.81a.75.75,0,0,1,0-1.06c.91-.91,2.22,1,1.07,2.13l-4.8,4.81a.79.79,0,0,1-.54.22Z" class="cls-10"></path><path id="Shape-215" data-name="Shape" d="M1264,636.22a.77.77,0,0,1-.54-.22.78.78,0,0,1-.74.22.77.77,0,0,1-.54-.55.76.76,0,0,1,.21-.74,1.55,1.55,0,0,1,2.14,0,.75.75,0,0,1,.16.83A.74.74,0,0,1,1264,636.22Z" class="cls-10"></path><path id="Shape-216" data-name="Shape" d="M1265.21,648.22c0,.09-.08.11-.65.68a3,3,0,0,1-4.26,0l-11.37-11.37a3,3,0,0,1,0-4.28l.53-.52a.74.74,0,0,1,.54-.23.72.72,0,0,1,.53.23l14.57,14.57a.75.75,0,0,1,.11.92Z" class="cls-8"></path></g> -->
 	<!-- <g id="Khand" data-name="010---Swords"><path id="Shape-181" data-name="Shape" d="M1343.68,935.1a1.83,1.83,0,0,0-1.27-.63l-8-.43a1.8,1.8,0,0,0-1.9,1.91l.43,8a1.81,1.81,0,0,0,.63,1.27l18.14,15.13,4.75-1.75.52-.62,1.25-5.46Z" class="cls-4"></path><path id="Shape-182" data-name="Shape" d="M1364.73,960.36c-5.51,2.4-4.54,1.89-5.38,2.58l-1.14,2.85,5.83,4.86,3-1.13,2-3.93Z" class="cls-4"></path><path id="Shape-183" data-name="Shape" d="M1377,981.05l-8.49-7.26,1.08-2.4,2.69-1.37,7.27,8.49Z" class="cls-5"></path><path id="Shape-184" data-name="Shape" d="M1377.33,964.92,1364,978.27a3.55,3.55,0,0,1-5,0c-.72-.73-.7-.7-.76-.8a.88.88,0,0,0,0-.91c.09-.15-1.1,1.05,17.24-17.29a.89.89,0,0,1,1.26,0l.62.63a3.53,3.53,0,0,1,0,5Z" class="cls-6"></path><path id="Shape-185" data-name="Shape" d="M1382.9,984.45a3.55,3.55,0,1,1,0-5A3.56,3.56,0,0,1,1382.9,984.45Z" class="cls-6"></path><path id="Shape-186" data-name="Shape" d="M1358.21,952.53l-3.28,4L1333,934.57a1.72,1.72,0,0,1,1.37-.53l8,.43a1.83,1.83,0,0,1,1.27.63Z" class="cls-7"></path><path id="Shape-187" data-name="Shape" d="M1369.09,965.59l-2.52,2.53-5.07-5.07,3.23-2.69Z" class="cls-7"></path><path id="Shape-188" data-name="Shape" d="M1366.58,968.14v0" class="cls-4"></path><path id="Shape-189" data-name="Shape" d="M1382.53,982.31a1.77,1.77,0,0,1-2.51-2.51,1.76,1.76,0,0,1,2.51,0A1.78,1.78,0,0,1,1382.53,982.31Z" class="cls-8"></path><path id="Shape-190" data-name="Shape" d="M1360.87,963.57l22-18.34a1.81,1.81,0,0,0,.63-1.27l.43-8a1.8,1.8,0,0,0-1.9-1.9l-8,.42a1.81,1.81,0,0,0-1.28.64c-24.34,29.19-16.8,20.17-18.34,22Z" class="cls-9"></path><path id="Shape-191" data-name="Shape" d="M1383.93,936l-.43,8a1.81,1.81,0,0,1-.63,1.27l-22,18.34V957.1l22.53-22.53A1.79,1.79,0,0,1,1383.93,936Z" class="cls-4"></path><path id="Shape-192" data-name="Shape" d="M1336.92,978.51l7.27-8.49,2.36,1.48,1.41,2.29-8.49,7.26Z" class="cls-5"></path><path id="Shape-193" data-name="Shape" d="M1338.54,984.45a3.55,3.55,0,1,1,0-5A3.55,3.55,0,0,1,1338.54,984.45Z" class="cls-6"></path><path id="Shape-194" data-name="Shape" d="M1338.18,982.31a1.77,1.77,0,0,1-2.51-2.51,1.76,1.76,0,0,1,2.51,0A1.78,1.78,0,0,1,1338.18,982.31Z" class="cls-8"></path><path id="Shape-195" data-name="Shape" d="M1360.87,957.1v6.47l-8.49,7.08-3.93-1.13-1.12-3.93,7.07-8.49Z" class="cls-6"></path><path id="Shape-196" data-name="Shape" d="M1349.83,969a.89.89,0,0,1-.62-1.52l5.64-5.64a.91.91,0,0,1,0-1.26c1.07-1.06,2.6,1.17,1.26,2.51l-5.65,5.65a.9.9,0,0,1-.63.26Z" class="cls-10"></path><path id="Shape-197" data-name="Shape" d="M1356.73,963.38a.85.85,0,0,1-.62-.26.89.89,0,0,1-1.51-.38.9.9,0,0,1,.25-.87,1.82,1.82,0,0,1,2.51,0,.88.88,0,0,1-.63,1.51Z" class="cls-10"></path><path id="Shape-198" data-name="Shape" d="M1358.21,977.47a6.72,6.72,0,0,1-.76.8,3.56,3.56,0,0,1-5,0l-13.35-13.35a3.56,3.56,0,0,1,0-5l.63-.62a.87.87,0,0,1,1.26,0l17.11,17.11a.89.89,0,0,1,.13,1.08Z" class="cls-8"></path></g> -->
 	<!-- <g id="Havres_Gris" data-name="010---Swords"><path id="Shape-127" data-name="Shape" d="M210.72,184.23a1.71,1.71,0,0,0-1.22-.6l-7.74-.42a1.76,1.76,0,0,0-1.85,1.84l.42,7.74a1.78,1.78,0,0,0,.61,1.23l17.52,14.6,4.58-1.69.5-.6,1.21-5.27Z" class="cls-4"></path><path id="Shape-128" data-name="Shape" d="M231.05,208.62c-5.33,2.32-4.38,1.83-5.19,2.49l-1.11,2.75,5.63,4.69,2.94-1.08,1.94-3.8Z" class="cls-4"></path><path id="Shape-129" data-name="Shape" d="M242.85,228.6l-8.2-7,1-2.32,2.6-1.32,7,8.19Z" class="cls-5"></path><path id="Shape-130" data-name="Shape" d="M243.22,213l-12.89,12.89a3.43,3.43,0,0,1-4.84,0c-.7-.7-.68-.67-.74-.77a.85.85,0,0,0,0-.87c.09-.15-1.06,1,16.65-16.71a.88.88,0,0,1,1.22,0l.6.61a3.42,3.42,0,0,1,0,4.85Z" class="cls-6"></path><path id="Shape-131" data-name="Shape" d="M248.59,231.88a3.43,3.43,0,1,1,0-4.85A3.43,3.43,0,0,1,248.59,231.88Z" class="cls-6"></path><path id="Shape-132" data-name="Shape" d="M224.75,201.06l-3.17,3.82-21.15-21.16a1.65,1.65,0,0,1,1.33-.51l7.74.42a1.71,1.71,0,0,1,1.22.6Z" class="cls-7"></path><path id="Shape-133" data-name="Shape" d="M235.26,213.67l-2.44,2.44-4.89-4.89,3.12-2.6Z" class="cls-7"></path><path id="Shape-134" data-name="Shape" d="M232.84,216.13l0,0" class="cls-4"></path><path id="Shape-135" data-name="Shape" d="M248.23,229.81a1.71,1.71,0,1,1,0-2.42A1.71,1.71,0,0,1,248.23,229.81Z" class="cls-8"></path><path id="Shape-136" data-name="Shape" d="M227.32,211.72,248.56,194a1.78,1.78,0,0,0,.61-1.23l.42-7.73a1.77,1.77,0,0,0-.51-1.34,1.74,1.74,0,0,0-1.33-.5l-7.74.41a1.74,1.74,0,0,0-1.23.61c-23.5,28.18-16.22,19.47-17.7,21.24Z" class="cls-9"></path><path id="Shape-137" data-name="Shape" d="M249.59,185.06l-.42,7.73a1.78,1.78,0,0,1-.61,1.23l-21.24,17.7v-6.24l21.76-21.76A1.75,1.75,0,0,1,249.59,185.06Z" class="cls-4"></path><path id="Shape-138" data-name="Shape" d="M204.2,226.14l7-8.19,2.29,1.42,1.35,2.22-8.2,7Z" class="cls-5"></path><path id="Shape-139" data-name="Shape" d="M205.76,231.88a3.43,3.43,0,1,1,0-4.85A3.42,3.42,0,0,1,205.76,231.88Z" class="cls-6"></path><path id="Shape-140" data-name="Shape" d="M205.41,229.81a1.71,1.71,0,1,1,0-2.42A1.71,1.71,0,0,1,205.41,229.81Z" class="cls-8"></path><path id="Shape-141" data-name="Shape" d="M227.32,205.48v6.24l-8.2,6.83-3.79-1.08-1.09-3.8,6.84-8.19Z" class="cls-6"></path><path id="Shape-142" data-name="Shape" d="M216.67,217a.87.87,0,0,1-.8-.53.86.86,0,0,1,.19-.93l5.45-5.45a.86.86,0,0,1,0-1.21c1-1,2.51,1.12,1.21,2.42l-5.45,5.45a.86.86,0,0,1-.6.25Z" class="cls-10"></path><path id="Shape-143" data-name="Shape" d="M223.33,211.54a.86.86,0,0,1-.61-.25.86.86,0,1,1-1.21-1.21,1.75,1.75,0,0,1,2.42,0,.85.85,0,0,1,.19.93A.86.86,0,0,1,223.33,211.54Z" class="cls-10"></path><path id="Shape-144" data-name="Shape" d="M224.75,225.14c-.06.11-.09.13-.73.77a3.43,3.43,0,0,1-4.84,0L206.29,213a3.43,3.43,0,0,1,0-4.85l.6-.6a.86.86,0,0,1,.61-.25.84.84,0,0,1,.6.25l16.52,16.52a.86.86,0,0,1,.13,1Z" class="cls-8"></path></g> -->
@@ -2485,7 +2485,7 @@
 	<!-- <g id="Forodwaith" data-name="010---Swords"><path id="Shape-145" data-name="Shape" d="M587.87,24.37A1.22,1.22,0,0,0,587,24l-5.35-.29a1.2,1.2,0,0,0-1.27,1.27l.29,5.35a1.22,1.22,0,0,0,.42.85l12.1,10.09,3.17-1.17.35-.41.83-3.64Z" class="cls-4"></path><path id="Shape-146" data-name="Shape" d="M601.91,41.22c-3.68,1.6-3,1.26-3.58,1.72l-.77,1.9,3.89,3.24,2-.75,1.34-2.62Z" class="cls-4"></path><path id="Shape-147" data-name="Shape" d="M610.07,55l-5.67-4.85.72-1.6,1.8-.92,4.85,5.67Z" class="cls-5"></path><path id="Shape-148" data-name="Shape" d="M610.32,44.26l-8.91,8.91a2.37,2.37,0,0,1-3.34,0c-.48-.49-.47-.46-.51-.53a.61.61,0,0,0,0-.61c.06-.1-.73.7,11.51-11.54a.6.6,0,0,1,.84,0l.41.42a2.35,2.35,0,0,1,0,3.35Z" class="cls-6"></path><path id="Shape-149" data-name="Shape" d="M614,57.29a2.37,2.37,0,1,1,0-3.35A2.35,2.35,0,0,1,614,57.29Z" class="cls-6"></path><path id="Shape-150" data-name="Shape" d="M597.56,36l-2.19,2.63L580.75,24a1.21,1.21,0,0,1,.92-.35L587,24a1.22,1.22,0,0,1,.85.42Z" class="cls-7"></path><path id="Shape-151" data-name="Shape" d="M604.82,44.71l-1.68,1.69L599.76,43l2.15-1.8Z" class="cls-7"></path><path id="Shape-152" data-name="Shape" d="M603.15,46.41h0" class="cls-4"></path><path id="Shape-153" data-name="Shape" d="M613.79,55.86a1.18,1.18,0,0,1-1.68-1.67,1.2,1.2,0,0,1,1.68,0A1.18,1.18,0,0,1,613.79,55.86Z" class="cls-8"></path><path id="Shape-154" data-name="Shape" d="M599.34,43.36,614,31.13a1.26,1.26,0,0,0,.42-.85l.29-5.34a1.23,1.23,0,0,0-1.28-1.28l-5.34.29a1.2,1.2,0,0,0-.85.42C591,43.85,596.05,37.83,595,39.05Z" class="cls-9"></path><path id="Shape-155" data-name="Shape" d="M614.73,24.94l-.29,5.34a1.26,1.26,0,0,1-.42.85c-11.67,9.73-14.27,11.9-14.68,12.23V39.05l15-15A1.19,1.19,0,0,1,614.73,24.94Z" class="cls-4"></path><path id="Shape-156" data-name="Shape" d="M583.36,53.33l4.84-5.67,1.58,1,.94,1.53L585.06,55Z" class="cls-5"></path><path id="Shape-157" data-name="Shape" d="M584.44,57.29a2.37,2.37,0,1,1,0-3.35A2.36,2.36,0,0,1,584.44,57.29Z" class="cls-6"></path><path id="Shape-158" data-name="Shape" d="M584.19,55.86a1.17,1.17,0,0,1-1.67,0,1.18,1.18,0,0,1,1.67-1.67A1.17,1.17,0,0,1,584.19,55.86Z" class="cls-8"></path><path id="Shape-159" data-name="Shape" d="M599.34,39.05v4.31l-5.67,4.72-2.62-.75-.75-2.62L595,39.05Z" class="cls-6"></path><path id="Shape-160" data-name="Shape" d="M592,47a.58.58,0,0,1-.54-.36.6.6,0,0,1,.13-.65l3.76-3.76a.6.6,0,0,1,0-.84c.71-.71,1.73.78.84,1.67l-3.77,3.77A.59.59,0,0,1,592,47Z" class="cls-10"></path><path id="Shape-161" data-name="Shape" d="M596.58,43.24a.6.6,0,0,1-.42-.18.58.58,0,0,1-.58.17.61.61,0,0,1-.43-.42.59.59,0,0,1,.17-.58,1.21,1.21,0,0,1,1.68,0,.57.57,0,0,1,.12.64A.59.59,0,0,1,596.58,43.24Z" class="cls-10"></path><path id="Shape-162" data-name="Shape" d="M597.56,52.64c0,.07-.06.08-.51.53a2.37,2.37,0,0,1-3.34,0l-8.91-8.91a2.38,2.38,0,0,1,0-3.35l.42-.41a.58.58,0,0,1,.84,0l11.41,11.41a.6.6,0,0,1,.09.73Z" class="cls-8"></path></g> -->
 	<!-- <g id="Rhudaur" data-name="010---Swords"><path id="Shape-253" data-name="Shape" d="M609.21,203.12a1.17,1.17,0,0,0-.81-.4l-5.1-.28a1.18,1.18,0,0,0-.87.34,1.15,1.15,0,0,0-.34.88l.28,5.09a1.1,1.1,0,0,0,.4.81l11.53,9.62,3-1.11.33-.4.8-3.47Z" class="cls-4"></path><path id="Shape-254" data-name="Shape" d="M622.59,219.18c-3.5,1.52-2.88,1.2-3.42,1.64l-.72,1.81,3.7,3.09,1.94-.72,1.28-2.49Z" class="cls-4"></path><path id="Shape-255" data-name="Shape" d="M630.36,232.34,625,227.72l.68-1.53,1.71-.87,4.62,5.4Z" class="cls-5"></path><path id="Shape-256" data-name="Shape" d="M630.61,222.08l-8.49,8.48a2.26,2.26,0,0,1-3.19,0c-.46-.46-.45-.44-.48-.5a.6.6,0,0,0,0-.58c0-.09-.7.66,11-11a.57.57,0,0,1,.8,0l.4.4a2.27,2.27,0,0,1,0,3.2Z" class="cls-6"></path><path id="Shape-257" data-name="Shape" d="M634.14,234.5a2.26,2.26,0,1,1,0-3.2A2.25,2.25,0,0,1,634.14,234.5Z" class="cls-6"></path><path id="Shape-258" data-name="Shape" d="M618.45,214.2l-2.09,2.51-13.93-13.93a1.14,1.14,0,0,1,.87-.34l5.1.28a1.17,1.17,0,0,1,.81.4Z" class="cls-7"></path><path id="Shape-259" data-name="Shape" d="M625.37,222.51l-1.61,1.6-3.22-3.22,2.05-1.71Z" class="cls-7"></path><path id="Shape-260" data-name="Shape" d="M623.77,224.12h0" class="cls-4"></path><path id="Shape-261" data-name="Shape" d="M633.91,233.13a1.13,1.13,0,0,1-1.6,0,1.12,1.12,0,0,1,0-1.59,1.13,1.13,0,0,1,1.6,0A1.12,1.12,0,0,1,633.91,233.13Z" class="cls-8"></path><path id="Shape-262" data-name="Shape" d="M620.14,221.22l14-11.66a1.17,1.17,0,0,0,.4-.81l.27-5.09a1.16,1.16,0,0,0-.33-.88,1.14,1.14,0,0,0-.88-.33l-5.09.27a1.15,1.15,0,0,0-.82.41C612.21,221.68,617,216,616,217.11Z" class="cls-9"></path><path id="Shape-263" data-name="Shape" d="M634.8,203.66l-.27,5.09a1.17,1.17,0,0,1-.4.81l-14,11.66v-4.11l14.32-14.33A1.12,1.12,0,0,1,634.8,203.66Z" class="cls-4"></path><path id="Shape-264" data-name="Shape" d="M604.91,230.72l4.62-5.4,1.5.94.9,1.46-5.4,4.62Z" class="cls-5"></path><path id="Shape-265" data-name="Shape" d="M605.94,234.5a2.26,2.26,0,1,1,0-3.2A2.25,2.25,0,0,1,605.94,234.5Z" class="cls-6"></path><path id="Shape-266" data-name="Shape" d="M605.71,233.13a1.13,1.13,0,0,1-1.6,0,1.12,1.12,0,0,1,0-1.59,1.13,1.13,0,0,1,1.6,0A1.12,1.12,0,0,1,605.71,233.13Z" class="cls-8"></path><path id="Shape-267" data-name="Shape" d="M620.14,217.11v4.11l-5.4,4.5-2.5-.72-.71-2.49,4.5-5.4Z" class="cls-6"></path><path id="Shape-268" data-name="Shape" d="M613.12,224.69a.57.57,0,0,1-.52-.35.55.55,0,0,1,.12-.61l3.59-3.59a.57.57,0,0,1,0-.8c.68-.68,1.65.74.8,1.6l-3.59,3.59a.59.59,0,0,1-.4.16Z" class="cls-10"></path><path id="Shape-269" data-name="Shape" d="M617.51,221.1a.58.58,0,0,1-.4-.16.56.56,0,0,1-.55.16.58.58,0,0,1-.41-.41.56.56,0,0,1,.16-.55,1.15,1.15,0,0,1,1.6,0,.55.55,0,0,1,.12.61A.57.57,0,0,1,617.51,221.1Z" class="cls-10"></path><path id="Shape-270" data-name="Shape" d="M618.45,230.06a6,6,0,0,1-.49.5,2.26,2.26,0,0,1-3.19,0l-8.48-8.48a2.27,2.27,0,0,1,0-3.2l.4-.39a.52.52,0,0,1,.39-.17.54.54,0,0,1,.4.17l10.88,10.88a.57.57,0,0,1,.09.69Z" class="cls-8"></path></g> -->
 	<!-- <g id="Minas Morgul" data-name="010---Swords"><path id="Shape-271" data-name="Shape" d="M1004.23,680.37a.89.89,0,0,0-.64-.32l-4.1-.23a.93.93,0,0,0-1,1l.22,4.09a.9.9,0,0,0,.33.64l9.25,7.72,2.42-.89.27-.32.63-2.78Z" class="cls-4"></path><path id="Shape-272" data-name="Shape" d="M1015,693.25c-2.81,1.22-2.31,1-2.74,1.32l-.59,1.45,3,2.48,1.55-.58,1-2Z" class="cls-4"></path><path id="Shape-273" data-name="Shape" d="M1021.21,703.81l-4.33-3.71.54-1.22,1.38-.7,3.7,4.33Z" class="cls-5"></path><path id="Shape-274" data-name="Shape" d="M1021.4,695.58l-6.81,6.81a1.82,1.82,0,0,1-2.56,0,3.63,3.63,0,0,1-.39-.41.43.43,0,0,0,0-.46c.05-.08-.55.53,8.8-8.83a.47.47,0,0,1,.64,0l.32.32a1.82,1.82,0,0,1,0,2.57Z" class="cls-6"></path><path id="Shape-275" data-name="Shape" d="M1024.24,705.54a1.81,1.81,0,1,1,0-2.56A1.82,1.82,0,0,1,1024.24,705.54Z" class="cls-6"></path><path id="Shape-276" data-name="Shape" d="M1011.64,689.26l-1.67,2L998.79,680.1a.93.93,0,0,1,.7-.28l4.1.23a.89.89,0,0,1,.64.32Z" class="cls-7"></path><path id="Shape-277" data-name="Shape" d="M1017.2,695.92l-1.29,1.29-2.59-2.58,1.65-1.38Z" class="cls-7"></path><path id="Shape-278" data-name="Shape" d="M1015.92,697.22h0" class="cls-4"></path><path id="Shape-279" data-name="Shape" d="M1024.05,704.45a.91.91,0,0,1-1.28-1.28.89.89,0,0,1,1.28,0A.91.91,0,0,1,1024.05,704.45Z" class="cls-8"></path><path id="Shape-280" data-name="Shape" d="M1013,694.89l11.22-9.36a.9.9,0,0,0,.33-.64l.22-4.09a1,1,0,0,0-.27-.7.9.9,0,0,0-.71-.27l-4.08.22a.91.91,0,0,0-.65.32c-12.42,14.89-8.57,10.29-9.36,11.22Z" class="cls-9"></path><path id="Shape-281" data-name="Shape" d="M1024.77,680.8l-.22,4.09a.9.9,0,0,1-.33.64L1013,694.89v-3.3l11.5-11.49A1,1,0,0,1,1024.77,680.8Z" class="cls-4"></path><path id="Shape-282" data-name="Shape" d="M1000.78,702.51l3.71-4.33,1.21.75.71,1.17-4.33,3.71Z" class="cls-5"></path><path id="Shape-283" data-name="Shape" d="M1001.61,705.54a1.8,1.8,0,0,1-2.56,0,1.82,1.82,0,0,1,0-2.56,1.81,1.81,0,0,1,2.56,2.56Z" class="cls-6"></path><path id="Shape-284" data-name="Shape" d="M1001.43,704.45a.91.91,0,0,1-1.28,0,.91.91,0,1,1,1.28-1.28A.91.91,0,0,1,1001.43,704.45Z" class="cls-8"></path><path id="Shape-285" data-name="Shape" d="M1013,691.59v3.3l-4.33,3.61-2-.58-.58-2,3.61-4.33Z" class="cls-6"></path><path id="Shape-286" data-name="Shape" d="M1007.37,697.67a.46.46,0,0,1-.42-.28.45.45,0,0,1,.1-.49l2.88-2.88a.47.47,0,0,1,0-.64c.55-.54,1.33.6.64,1.28l-2.88,2.88a.42.42,0,0,1-.32.13Z" class="cls-10"></path><path id="Shape-287" data-name="Shape" d="M1010.89,694.79a.44.44,0,0,1-.32-.13.45.45,0,0,1-.44.13.46.46,0,0,1-.33-.33.45.45,0,0,1,.13-.44.93.93,0,0,1,1.28,0,.45.45,0,0,1,.1.49A.46.46,0,0,1,1010.89,694.79Z" class="cls-10"></path><path id="Shape-288" data-name="Shape" d="M1011.64,702c0,.06,0,.07-.38.41a1.82,1.82,0,0,1-2.56,0l-6.81-6.81a1.82,1.82,0,0,1,0-2.57l.32-.31a.43.43,0,0,1,.32-.14.45.45,0,0,1,.32.14l8.73,8.73a.45.45,0,0,1,.06.55Z" class="cls-8"></path></g> -->
-	
+
 	<!-- <g id="Trouée du Rohan" data-name="010---Swords"><path id="Shape-145" data-name="Shape" d="M562.41,532.44a1,1,0,0,0-.68-.34l-4.33-.23a1,1,0,0,0-1,1l.23,4.33a1,1,0,0,0,.34.68l9.78,8.16,2.56-.95.28-.33.68-2.94Z" class="cls-4"></path><path id="Shape-146" data-name="Shape" d="M573.76,546.06c-3,1.29-2.44,1-2.9,1.39l-.61,1.53,3.14,2.62L575,551l1.08-2.12Z" class="cls-4"></path><path id="Shape-147" data-name="Shape" d="M580.35,557.21l-4.58-3.91.58-1.3,1.46-.74,3.91,4.58Z" class="cls-5"></path><path id="Shape-148" data-name="Shape" d="M580.56,548.51l-7.2,7.2a1.9,1.9,0,0,1-2.7,0c-.39-.39-.38-.37-.41-.43a.48.48,0,0,0,0-.49c0-.08-.59.57,9.29-9.32a.48.48,0,0,1,.68,0l.34.34a1.91,1.91,0,0,1,0,2.7Z" class="cls-6"></path><path id="Shape-149" data-name="Shape" d="M583.56,559.05a1.92,1.92,0,1,1,0-2.71A1.93,1.93,0,0,1,583.56,559.05Z" class="cls-6"></path><path id="Shape-150" data-name="Shape" d="M570.25,541.84,568.48,544l-11.82-11.82a1,1,0,0,1,.74-.28l4.33.23a1,1,0,0,1,.68.34Z" class="cls-7"></path><path id="Shape-151" data-name="Shape" d="M576.11,548.88l-1.36,1.36L572,547.51l1.74-1.45Z" class="cls-7"></path><path id="Shape-152" data-name="Shape" d="M574.76,550.25h0" class="cls-4"></path><path id="Shape-153" data-name="Shape" d="M583.36,557.89a1,1,0,0,1-1.35,0,1,1,0,1,1,1.35-1.35A1,1,0,0,1,583.36,557.89Z" class="cls-8"></path><path id="Shape-154" data-name="Shape" d="M571.68,547.79c.34-.27,2.37-2,11.86-9.89a1,1,0,0,0,.34-.68l.24-4.32a1,1,0,0,0-.29-.74,1,1,0,0,0-.74-.29l-4.32.23a1,1,0,0,0-.69.35C565,548.18,569,543.32,568.19,544.3Z" class="cls-9"></path><path id="Shape-155" data-name="Shape" d="M584.12,532.9l-.24,4.32a1,1,0,0,1-.34.68l-11.86,9.89V544.3l12.15-12.15A1,1,0,0,1,584.12,532.9Z" class="cls-4"></path><path id="Shape-156" data-name="Shape" d="M558.77,555.84l3.91-4.58,1.28.8.76,1.24-4.58,3.91Z" class="cls-5"></path><path id="Shape-157" data-name="Shape" d="M559.64,559.05a1.91,1.91,0,1,1,0-2.71A1.92,1.92,0,0,1,559.64,559.05Z" class="cls-6"></path><path id="Shape-158" data-name="Shape" d="M559.44,557.89a1,1,0,0,1-1.35-1.35,1,1,0,1,1,1.35,1.35Z" class="cls-8"></path><path id="Shape-159" data-name="Shape" d="M571.68,544.3v3.49l-4.58,3.81L565,551l-.61-2.12,3.81-4.58Z" class="cls-6"></path><path id="Shape-160" data-name="Shape" d="M565.73,550.73a.47.47,0,0,1-.44-.29.49.49,0,0,1,.1-.52l3.05-3a.46.46,0,0,1,0-.67c.57-.58,1.4.62.67,1.35l-3,3a.48.48,0,0,1-.34.14Z" class="cls-10"></path><path id="Shape-161" data-name="Shape" d="M569.45,547.69a.48.48,0,0,1-.34-.14.46.46,0,0,1-.47.13.47.47,0,0,1-.34-.34.49.49,0,0,1,.14-.47,1,1,0,0,1,1.35,0,.46.46,0,0,1,.1.52A.48.48,0,0,1,569.45,547.69Z" class="cls-10"></path><path id="Shape-162" data-name="Shape" d="M570.25,555.28a4.38,4.38,0,0,1-.42.43,1.9,1.9,0,0,1-2.7,0l-7.2-7.2a1.92,1.92,0,0,1,0-2.7l.34-.34a.48.48,0,0,1,.68,0l9.22,9.23a.47.47,0,0,1,.08.58Z" class="cls-8"></path></g> -->
 	<!-- <g id="Gouffre de Helm" data-name="010---Swords"><path id="Shape-127" data-name="Shape" d="M589,580.79a.79.79,0,0,0-.56-.27l-3.48-.19a.78.78,0,0,0-.6.23.8.8,0,0,0-.23.6l.19,3.49a.79.79,0,0,0,.27.55l7.89,6.57,2.06-.76.23-.27.54-2.37Z" class="cls-4"></path><path id="Shape-128" data-name="Shape" d="M598.14,591.77c-2.4,1.05-2,.83-2.34,1.13l-.5,1.23,2.54,2.12,1.32-.49.88-1.71Z" class="cls-4"></path><path id="Shape-129" data-name="Shape" d="M603.46,600.77l-3.7-3.16.47-1,1.17-.6,3.16,3.7Z" class="cls-5"></path><path id="Shape-130" data-name="Shape" d="M603.62,593.76l-5.8,5.8a1.55,1.55,0,0,1-2.18,0c-.32-.31-.31-.3-.34-.35a.35.35,0,0,0,0-.39c0-.06-.47.45,7.5-7.52a.39.39,0,0,1,.55,0l.27.27a1.53,1.53,0,0,1,0,2.19Z" class="cls-6"></path><path id="Shape-131" data-name="Shape" d="M606,602.25a1.54,1.54,0,1,1,0-2.18A1.55,1.55,0,0,1,606,602.25Z" class="cls-6"></path><path id="Shape-132" data-name="Shape" d="M595.3,588.37l-1.42,1.72-9.53-9.53a.75.75,0,0,1,.6-.23l3.48.19a.79.79,0,0,1,.56.27Z" class="cls-7"></path><path id="Shape-133" data-name="Shape" d="M600,594.05l-1.1,1.1-2.2-2.2,1.4-1.18Z" class="cls-7"></path><path id="Shape-134" data-name="Shape" d="M599,595.16h0" class="cls-4"></path><path id="Shape-135" data-name="Shape" d="M605.88,601.32a.77.77,0,1,1,0-1.09A.77.77,0,0,1,605.88,601.32Z" class="cls-8"></path><path id="Shape-136" data-name="Shape" d="M596.46,593.17l9.57-8a.79.79,0,0,0,.27-.55l.19-3.49a.79.79,0,0,0-.83-.83l-3.48.19a.76.76,0,0,0-.56.28l-8,9.56Z" class="cls-9"></path><path id="Shape-137" data-name="Shape" d="M606.49,581.16l-.19,3.49a.79.79,0,0,1-.27.55l-9.57,8v-2.81l9.8-9.8A.8.8,0,0,1,606.49,581.16Z" class="cls-4"></path><path id="Shape-138" data-name="Shape" d="M586.05,599.67l3.16-3.7,1,.65.61,1-3.7,3.16Z" class="cls-5"></path><path id="Shape-139" data-name="Shape" d="M586.75,602.25a1.54,1.54,0,1,1,0-2.18A1.55,1.55,0,0,1,586.75,602.25Z" class="cls-6"></path><path id="Shape-140" data-name="Shape" d="M586.59,601.32a.77.77,0,1,1,0-1.09A.77.77,0,0,1,586.59,601.32Z" class="cls-8"></path><path id="Shape-141" data-name="Shape" d="M596.46,590.36v2.81l-3.69,3.08-1.71-.49-.49-1.71,3.08-3.69Z" class="cls-6"></path><path id="Shape-142" data-name="Shape" d="M591.66,595.54a.38.38,0,0,1-.27-.65l2.45-2.46a.38.38,0,0,1,0-.54c.47-.47,1.13.5.55,1.09l-2.45,2.45a.41.41,0,0,1-.28.11Z" class="cls-10"></path><path id="Shape-143" data-name="Shape" d="M594.66,593.09a.39.39,0,0,1-.27-.11.41.41,0,0,1-.38.11.43.43,0,0,1-.28-.28.41.41,0,0,1,.11-.38.8.8,0,0,1,1.1,0,.39.39,0,0,1,.08.42A.38.38,0,0,1,594.66,593.09Z" class="cls-10"></path><path id="Shape-144" data-name="Shape" d="M595.3,599.21s0,.06-.33.35a1.55,1.55,0,0,1-2.18,0l-5.8-5.8a1.56,1.56,0,0,1,0-2.19l.27-.27a.39.39,0,0,1,.27-.11.39.39,0,0,1,.28.11l7.44,7.44a.38.38,0,0,1,0,.47Z" class="cls-8"></path></g> -->
 	<!-- <g id="Lebennin" data-name="010---Swords"><path id="Shape-163" data-name="Shape" d="M785.42,766.23a1.62,1.62,0,0,0-1.12-.56l-7.09-.38a1.57,1.57,0,0,0-1.21.46,1.63,1.63,0,0,0-.47,1.22l.38,7.08a1.6,1.6,0,0,0,.56,1.12l16,13.36,4.2-1.54.46-.55,1.1-4.82Z" class="cls-4"></path><path id="Shape-164" data-name="Shape" d="M804,788.53c-4.87,2.13-4,1.68-4.75,2.28l-1,2.52,5.15,4.29,2.69-1,1.78-3.47Z" class="cls-4"></path><path id="Shape-165" data-name="Shape" d="M814.81,806.82l-7.5-6.42,1-2.12,2.38-1.21,6.42,7.5Z" class="cls-5"></path><path id="Shape-166" data-name="Shape" d="M815.15,792.56l-11.8,11.8a3.13,3.13,0,0,1-4.42,0,5.14,5.14,0,0,1-.68-.71.77.77,0,0,0,0-.8c.08-.13-1,.92,15.24-15.28a.8.8,0,0,1,1.11,0l.55.56a3.13,3.13,0,0,1,0,4.43Z" class="cls-6"></path><path id="Shape-167" data-name="Shape" d="M820.06,809.82a3.14,3.14,0,1,1,0-4.44A3.14,3.14,0,0,1,820.06,809.82Z" class="cls-6"></path><path id="Shape-168" data-name="Shape" d="M798.25,781.62l-2.9,3.49L776,765.76a1.53,1.53,0,0,1,1.21-.47l7.09.38a1.62,1.62,0,0,1,1.12.56Z" class="cls-7"></path><path id="Shape-169" data-name="Shape" d="M807.87,793.16l-2.24,2.23-4.47-4.47,2.85-2.39Z" class="cls-7"></path><path id="Shape-170" data-name="Shape" d="M805.65,795.41l0,0" class="cls-4"></path><path id="Shape-171" data-name="Shape" d="M819.74,807.92a1.57,1.57,0,1,1,0-2.21A1.56,1.56,0,0,1,819.74,807.92Z" class="cls-8"></path><path id="Shape-172" data-name="Shape" d="M800.6,791.37c.55-.44,3.88-3.23,19.44-16.2a1.55,1.55,0,0,0,.55-1.12L821,767a1.61,1.61,0,0,0-1.69-1.69l-7.07.38a1.59,1.59,0,0,0-1.13.56c-21.5,25.78-14.84,17.82-16.2,19.43Z" class="cls-9"></path><path id="Shape-173" data-name="Shape" d="M821,767l-.39,7.07a1.55,1.55,0,0,1-.55,1.12c-15.45,12.89-18.89,15.76-19.44,16.2v-5.71l19.91-19.9A1.62,1.62,0,0,1,821,767Z" class="cls-4"></path><path id="Shape-174" data-name="Shape" d="M779.45,804.57l6.41-7.5,2.09,1.3,1.24,2-7.49,6.42Z" class="cls-5"></path><path id="Shape-175" data-name="Shape" d="M780.88,809.82a3.14,3.14,0,1,1,0-4.44A3.14,3.14,0,0,1,780.88,809.82Z" class="cls-6"></path><path id="Shape-176" data-name="Shape" d="M780.56,807.92a1.57,1.57,0,1,1,0-2.21A1.56,1.56,0,0,1,780.56,807.92Z" class="cls-8"></path><path id="Shape-177" data-name="Shape" d="M800.6,785.66v5.71l-7.5,6.25-3.47-1-1-3.47,6.25-7.5Z" class="cls-6"></path><path id="Shape-178" data-name="Shape" d="M790.85,796.19a.78.78,0,0,1-.55-1.33l5-5a.78.78,0,0,1,0-1.11c.94-.94,2.29,1,1.1,2.22l-5,5a.79.79,0,0,1-.56.23Z" class="cls-10"></path><path id="Shape-179" data-name="Shape" d="M797,791.21a.79.79,0,0,1-.56-.23.77.77,0,0,1-.76.22.78.78,0,0,1-.34-1.33,1.6,1.6,0,0,1,2.21,0,.79.79,0,0,1-.55,1.34Z" class="cls-10"></path><path id="Shape-180" data-name="Shape" d="M798.25,803.65c-.06.1-.08.12-.67.71a3.14,3.14,0,0,1-4.43,0l-11.79-11.8a3.14,3.14,0,0,1,0-4.43l.56-.55a.75.75,0,0,1,1.1,0l15.12,15.11a.79.79,0,0,1,.11,1Z" class="cls-8"></path></g> -->
@@ -2574,7 +2574,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 	C457.128,482.105,459.388,482.97,461.647,482.97z"/>
 <g>
 	<polygon style="fill:#AFB6BB;" points="273.655,211.284 74.858,12.487 0,0.013 12.482,74.871 211.271,273.668 	"/>
-	
+
 		<rect x="260.289" y="260.939" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 734.9041 304.4402)" style="fill:#AFB6BB;" width="88.222" height="86.969"/>
 </g>
 <path style="fill:#839594;" d="M224.812,233.653c-2.26,0-4.52-0.865-6.241-2.586L99.69,112.185c-3.452-3.452-3.452-9.031,0-12.482
@@ -2595,16 +2595,16 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 <rect x="86.271" y="381.631" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -89.873 761.3284)" style="fill:#8E5F46;" width="52.939" height="35.292"/>
 <path style="fill:#FFFFFF;" d="M50.353,482.97c-2.26,0-4.52-0.865-6.241-2.586l-12.473-12.482c-3.443-3.452-3.443-9.031,0-12.482
 	c3.452-3.46,9.039-3.443,12.482,0l12.473,12.482c3.443,3.452,3.443,9.031,0,12.482C54.872,482.105,52.612,482.97,50.353,482.97z"/>
-<polygon style="fill:#EBBA16;" points="318.164,405.517 405.504,318.177 405.504,280.748 368.075,280.748 280.735,368.088 
+<polygon style="fill:#EBBA16;" points="318.164,405.517 405.504,318.177 405.504,280.748 368.075,280.748 280.735,368.088
 	280.735,405.517 "/>
 <path style="fill:#839594;" d="M79.448,88.289c-2.26,0-4.52-0.865-6.241-2.586L46.724,59.22c-3.452-3.452-3.452-9.031,0-12.482
 	c3.443-3.452,9.039-3.452,12.482,0L85.689,73.22c3.452,3.452,3.452,9.031,0,12.482C83.968,87.424,81.708,88.289,79.448,88.289z"/>
-<polygon style="fill:#EBBA16;" points="193.836,405.517 106.496,318.177 106.496,280.748 143.925,280.748 231.265,368.088 
+<polygon style="fill:#EBBA16;" points="193.836,405.517 106.496,318.177 106.496,280.748 143.925,280.748 231.265,368.088
 	231.265,405.517 "/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-  	</div>    
+  	</div>
 </div>
 
-<br><br>	
+<br><br>
 
 
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -2807,7 +2807,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 
 <script>
 export default {
-	layout: 'seigneuror',
+	layout: "seigneuror",
 	head() {
 		return {
 			title: "Le Seigneur d'Or"
@@ -2816,14 +2816,14 @@ export default {
   data() {
     return {
 		nbMap: 0,
-		title: '',
-		region: '',
-		bleu: 'hsl(202, 87%, 58%)',
-		montagne: '#565656',
-		contour: '#fff',
-		newStock: 'B7B8C4',
+		title: "",
+		region: "",
+		bleu: "hsl(202, 87%, 58%)",
+		montagne: "#565656",
+		contour: "#fff",
+		newStock: "B7B8C4",
 		map: [],
-		information: '',
+		information: "",
 		isShowModal: false,
 		nbTerritoireElfe: 0,
 		nbTerritoireHomme: 0,
@@ -2855,7 +2855,7 @@ export default {
 		}
 	},
 	async fetch() {
-	  this.map = await this.$http.$get('https://api.npoint.io/f07ce59550299d4c6d49');
+	  this.map = await this.$http.$get("https://api.npoint.io/f07ce59550299d4c6d49");
 
 		for (var key in this.map) {
 			if (!this.map.hasOwnProperty(key)) continue;
@@ -2868,38 +2868,38 @@ export default {
 
 				switch (obj[prop]) {
 
-					case '#00bfff':
-					case '#00BFFF':
+					case "#00bfff":
+					case "#00BFFF":
 						this.nbTerritoireElfe += 1;
 						break;
 
-					case '#1e90ff':
-					case '#1E90FF':
+					case "#1e90ff":
+					case "#1E90FF":
 						this.nbTerritoireHomme += 1;
 						break;
 
-					case '#fffc00':
-					case '#FFFC00':
+					case "#fffc00":
+					case "#FFFC00":
 						this.nbTerritoireNain += 1;
 						break;
 
-					case '#db5461': 
-					case '#DB5461':
+					case "#db5461":
+					case "#DB5461":
 						this.nbTerritoireMordor += 1;
 						break;
 
-					case '#ffffff':
-					case '#FFFFFF':
+					case "#ffffff":
+					case "#FFFFFF":
 						this.nbTerritoireIsengard += 1;
 						break;
 
-					case '#ff6f00':
-					case '#FF6F00':
+					case "#ff6f00":
+					case "#FF6F00":
 						this.nbTerritoireGobelin += 1;
 						break;
 
-					case '#c500ff':
-					case '#C500FF':
+					case "#c500ff":
+					case "#C500FF":
 						this.nbTerritoireAngmar += 1;
 						break;
 					default:
@@ -2907,11 +2907,11 @@ export default {
 				}
 			}
 
-			if(!obj['players'].length > 0) continue;
-			let obj2 = JSON.parse(JSON.stringify(obj['players']))
+			if(!obj["players"].length > 0) continue;
+			let obj2 = JSON.parse(JSON.stringify(obj["players"]))
 			for (var player in obj2) {
-				
-				switch (obj2[player]['faction']) {
+
+				switch (obj2[player]["faction"]) {
 					case 1:
 						this.nbPlayerElfe += 1
 						this.nbPlayers += 1;

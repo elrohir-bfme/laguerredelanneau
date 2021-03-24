@@ -28,7 +28,7 @@ partant de l’écurie qui leur appartient bien.</p>
                 </div>
                 <div class="bg-gray-900 mt-4 px-4 pb-4 pt-1 rounded-lg">
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">Comptoir Commercial</h2>
-                <p class="text-base leading-relaxed mt-2">Permet l’envoi de ressource à une autre factions, même si elle ne possède pas ce bâtiment. 
+                <p class="text-base leading-relaxed mt-2">Permet l’envoi de ressource à une autre factions, même si elle ne possède pas ce bâtiment.
                     Le transfert d’argent sera effectif à partir du prochain tour.</p>
                 <p class="text-indigo-500 inline-flex items-center mt-3">Prix : 500</p>
                  </div>
@@ -56,8 +56,8 @@ puis, lvl 2, puis lvl 3)</p>
                 <p class="text-base leading-relaxed mt-2">permet le recrutement de joueur
 mercenaire. Vous trouverez les spécificités de ces joueurs dans la Section
 Répartition des factions et la section IV. Rôle des joueurs.
-Le prix du mercenaire est fixé par la modération selon le niveau des joueurs. 4 tranches de niveau seront faites, 
-et les joueurs se verront octroyer un niveau lorsque le moment se présentera. Voici les niveaux : 
+Le prix du mercenaire est fixé par la modération selon le niveau des joueurs. 4 tranches de niveau seront faites,
+et les joueurs se verront octroyer un niveau lorsque le moment se présentera. Voici les niveaux :
 A : 1500, B : 1000, C : 650 et D : 300</p>
                 <p class="text-indigo-500 inline-flex items-center mt-3">Prix : 800</p>
                 </div>
@@ -68,7 +68,7 @@ A : 1500, B : 1000, C : 650 et D : 300</p>
                 </div>
                 <div class="bg-gray-900 mt-4 px-4 pb-4 pt-1 rounded-lg">
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">La Prison</h2>
-                <p class="text-base leading-relaxed mt-2">Les joueurs qui ont combattu et perdu peuvent être fait prisonniers, 
+                <p class="text-base leading-relaxed mt-2">Les joueurs qui ont combattu et perdu peuvent être fait prisonniers,
 les joueurs avec un handicap, se trouvant sur la même map, peuvent aussi être capturés.
 Cela coutera 300 points de ressources. Le ou les
 prisonniers seront sous le contrôle d’un ou plusieurs joueurs de sa faction
@@ -79,7 +79,7 @@ le perd, il augmente sa durée d'emprisonnement de deux tours. Le joueur
 peut aussi être libéré par le biais d'une rançon, elle doit soit être transférée
 par le comptoir commercial. Si le joueur est libéré grâce une demande de
 rançon, il regagnera directement une forteresse de son empire sans avoir de
-malus. De plus, une prison déverrouille un maximum de deux prisonniers. 
+malus. De plus, une prison déverrouille un maximum de deux prisonniers.
 Points sur les prisonniers, emprisonnement pour une durée de 2 tours, et le tour suivant, les joueurs libérés peuvent se déployer avec 30% de handicap qui se dissiperont au tour suivant. </p>
                 <p class="text-indigo-500 inline-flex items-center mt-3">Prix : 2000</p>
                 </div>
@@ -130,12 +130,14 @@ ou au début d’un tour ;</p>
             </div>
 
         </div>
-    </div>  
+    </div>
 </template>
 
 <script>
 export default {
-
+	head: {
+		title: "Bâtiments - La Guerre de l'Anneau",
+  	},
 }
 </script>
 

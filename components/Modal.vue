@@ -75,7 +75,13 @@
                 
                 <button class="relative inline-block h-8 px-2 text-teal-100 transition-colors duration-150 bg-teal-700 rounded-lg focus:shadow-outline hover:bg-teal-800">
                   <span class="ml-1 mr-2">{{structure.name}}</span>
-                  <span v-if="structure.level" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">{{structure.level}}</span>
+                  <img v-if="structure.build === false" alt="Construction" class="build absolute w-8 h-8 bg-gray-400 rounded-full" src="~assets/hammer.svg">
+                  <!-- <div v-if="structure.build === false"  class="build absolute px-2 py-1 bg-gray-900 rounded-full"> -->
+                  <!-- <svg  class="w-5 h-5 stroke-current stroke-2 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg> -->
+                  <!-- </div> -->
+                  <span v-else-if="structure.level" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">{{structure.level}}</span>
                 </button>
             </p>
           </div>
@@ -261,6 +267,11 @@ export default {
 }
 .tooltip:hover .tooltip-text {
   visibility: visible;
+}
+
+.build {
+  right: -20px;
+  top: -20px;
 }
 
 </style>

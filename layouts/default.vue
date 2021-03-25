@@ -3,10 +3,12 @@
 		<header>
 			<Navbar />
 		</header>
-		<Nuxt class="flex-grow"/>
+		<Nuxt class="flex-grow mb-16"/>
+		<!--
 		<footer>
 			<Footer />
 		</footer>
+		-->
 	</div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
 	<section class="container mx-auto pb-8">
 
-		<h1 class="mx-auto sm:text-3xl text-3xl text-center font-medium title-font mb-4 text-gray-300">Chronologie de la Guerre de l'Anneau</h1>
+		<h1 class="mx-auto sm:text-3xl text-3xl text-center font-medium title-font mb-4 text-gray-300 underline">Chronologie de la Guerre de l'Anneau</h1>
 		<h2 class="mx-auto lg:w-2/3 text-2xl text-center body-font leading-relaxed text-gray-600 ">Suivez les évènements et les prises de territoire dans cette lutte incessante !</h2>
 
 		<div>

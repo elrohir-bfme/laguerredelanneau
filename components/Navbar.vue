@@ -1,5 +1,5 @@
 <template>
-	<nav class="container flex flex-wrap m-5 mx-auto items-center justify-around text-2xl bg-gray border-2 border-orange-500 border-opacity-75 hover:border-orange-600">
+	<nav class="container flex flex-wrap m-5 mx-auto items-center justify-evenly text-2xl bg-gray border-2 border-orange-500 border-opacity-75 hover:border-orange-600">
 		<nuxt-link class="animate-pulse p-2 hover:bg-gray-900" to="/">
 			<object type="image/svg+xml" data="/img/pages/logo.svg" style="width:40px;pointer-events: none;"/>
 		</nuxt-link>

@@ -20,6 +20,6 @@
         ],
         "id": 1,
 		"startTourId": 7,
-		"endTourId": 10
+		"endTourId": null
     }
 ]

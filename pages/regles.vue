@@ -80,7 +80,7 @@
 		</div>
 		</div>
 	</div>
-	<h3 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white text-center">Les règles de la Guerre de l'Anneau</h3>
+	<h3 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white text-center">Les Règles de la Guerre de l'Anneau</h3>
 	<div class="videoWrapper">
 		<iframe src="https://drive.google.com/file/d/13tU3yWSxy_z9bDkyaIDw2nU8SmlZCa4V/preview"></iframe>
 	</div>

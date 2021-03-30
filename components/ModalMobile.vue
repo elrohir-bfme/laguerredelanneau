@@ -87,7 +87,8 @@
       <div v-if="map[region] && map[region].players && map[region].players.length > 0" class="px-6 py-4 flex flex-wrap">
         <div class="mx-auto m-2" v-for="player in map[region].players" :key="player.name"> 
           
-          <div v-if="player.mercenaire" class="rounded-lg bg-gray-400 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-gray-500">{{updatePlayer(player.name)}}
+          <div v-if="player.mercenaire">
+          <div class="rounded-lg bg-gray-400 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-gray-500">{{updatePlayer(player.name)}}
             <span class="block text-center text-xs font-normal">
               {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/trophy.svg">
               
@@ -99,7 +100,9 @@
               <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
-          <div v-else-if="player.faction == 1" class="rounded-lg bg-teal-600 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-teal-700">{{updatePlayer(player.name)}} 
+          </div>
+          <div v-else>
+          <div v-if="player.faction == 1" class="rounded-lg bg-teal-600 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-teal-700">{{updatePlayer(player.name)}} 
             <img v-if="player.chef == true" alt="Chef de Faction" class="w-4 h-4 inline-block" src="~assets/crown.svg">
             <span class="block text-center text-xs font-normal">
               {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/trophy.svg">
@@ -208,6 +211,7 @@
 
             <img v-if="player.flag" alt="Etendard" class="build relative w-8 h-8" src="~assets/flag.svg">
 
+          </div>
           </div>
         
       </div>

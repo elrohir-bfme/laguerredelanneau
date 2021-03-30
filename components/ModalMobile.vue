@@ -96,7 +96,8 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">  
-              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg"> 
+              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
+              <img v-if="player.handicap == 4" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangviolet.svg">  
               <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
@@ -111,7 +112,8 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">  
-              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">  
+              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
+              <img v-if="player.handicap == 4" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangviolet.svg">   
               <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
@@ -125,7 +127,8 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">  
-              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg"> 
+              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
+              <img v-if="player.handicap == 4" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangviolet.svg">  
               <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
@@ -139,7 +142,8 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">  
-              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg"> 
+              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
+              <img v-if="player.handicap == 4" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangviolet.svg">  
               <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
@@ -152,7 +156,8 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">  
-              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg"> 
+              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
+              <img v-if="player.handicap == 4" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangviolet.svg">  
               <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
@@ -165,7 +170,8 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">  
-              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg"> 
+              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
+              <img v-if="player.handicap == 4" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangviolet.svg">  
               <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
@@ -178,7 +184,8 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">  
-              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg"> 
+              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
+              <img v-if="player.handicap == 4" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangviolet.svg">  
               <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
@@ -191,7 +198,8 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">  
-              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg"> 
+              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
+              <img v-if="player.handicap == 4" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangviolet.svg">  
               <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
@@ -204,7 +212,8 @@
               
               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangjaune.svg">
               <img v-if="player.handicap == 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">  
-              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg"> 
+              <img v-if="player.handicap == 3" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sang.svg">
+              <img v-if="player.handicap == 4" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/sangviolet.svg">  
               <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>

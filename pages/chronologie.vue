@@ -59,7 +59,16 @@
         <p class="text-2xl text-center text-gray-200">Tour 10 (22 Mars)</p>
         </div>
         <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/823536767373803561/unknown.png" alt="">        
-    </div>
+
+        <div class="mx-auto mt-8 mb-4 w-full">
+        <p class="text-2xl text-center text-gray-200">Tour 11 (30 Mars)</p>
+        </div>
+        <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/826376908777979904/tour11.png" alt="">        
+        
+        
+        
+        </div>
+        
 
     
   </div>

@@ -1,3 +1,370 @@
+<script>
+ //? moved script at top for better readability on this big file 🤣
+  export default {
+    head: {
+      title: "La Guerre de l'Anneau",
+      meta: [{
+        hid: 'description',
+        name: 'description',
+        content: "Carte de la Guerre de l'Anneau"
+      }],
+    },
+    data() {
+      return {
+        nbMap: 0,
+        title: '',
+        region: '',
+        bleu: 'hsl(202, 87%, 58%)',
+        montagne: '#565656',
+        contour: '#fff',
+        newStock: 'B7B8C4',
+        map: [],
+        information: '',
+        isShowModal: false,
+        nbTerritoireRohan: 0,
+        nbTerritoireElfe: 0,
+        nbTerritoireGondor: 0,
+        nbTerritoireNain: 0,
+        nbTerritoireMordor: 0,
+        nbTerritoireIsengard: 0,
+        nbTerritoireGobelin: 0,
+        nbTerritoireAngmar: 0,
+        nbPlayerRohan: 0,
+        nbPlayerElfe: 0,
+        nbPlayerGondor: 0,
+        nbPlayerNain: 0,
+        nbPlayerMordor: 0,
+        nbPlayerIsengard: 0,
+        nbPlayerGobelin: 0,
+        nbPlayerAngmar: 0,
+
+        nbPlayers: 0,
+
+        faction: null,
+        loading: false,
+        regionMobile: ''
+
+      }
+    },
+    methods: {
+      getInfo(e) {
+        this.title = e.target.id;
+        this.region = e.target.getAttribute("aria-valuetext");
+        // let node = document.getElementById(e.target.id).getBBox();
+        // console.log(node)
+        // var canvas = document.getElementById("canvas");
+        // var ctx = canvas.getContext("2d");
+        // var image = document.getElementById("source");
+
+        // ctx.drawImage(image, node.x, node.y, 104, 124, 21, 20, 87, 104);
+      },
+      toggleModal(e) {
+        if(e && e.target.getAttribute("aria-valuetext")) {
+          this.regionMobile = e.target.getAttribute("aria-valuetext");
+          this.isShowModal = !this.isShowModal;
+        }
+        else {
+          this.isShowModal = !this.isShowModal;
+        }
+      },
+      bringToTopofSVG(targetElement){
+        let parent = targetElement.ownerSVGElement;
+        parent.appendChild(targetElement);
+      }
+    },
+    async fetch() {
+      this.loading = true;
+      const [map, faction] = await Promise.all([this.$http.$get('https://api.npoint.io/38a2899b98818d89418c'), this.$http.$get('https://api.npoint.io/38a2899b98818d89418c/factions')]);
+      this.map = map ; //API
+      this.faction = faction ; //API
+        // this.map = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847'); //API
+        // this.faction = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847/factions'); //API
+      this.loading = false;
+
+      for (var key in this.map) {
+        var obj = this.map[key];
+
+
+        for (let prop in obj) {
+          if (!obj.hasOwnProperty(prop)) continue;
+
+          switch (obj[prop]) {
+            case '#0bff00':
+            case '#0BFF00':
+              this.nbTerritoireRohan += 1;
+              break;
+
+            case '#00bfff':
+            case '#00BFFF':
+              this.nbTerritoireElfe += 1;
+              break;
+
+            case '#1e90ff':
+            case '#1E90FF':
+              this.nbTerritoireGondor += 1;
+              break;
+
+            case '#fffc00':
+            case '#FFFC00':
+              this.nbTerritoireNain += 1;
+              break;
+
+            case '#db5461':
+            case '#DB5461':
+              this.nbTerritoireMordor += 1;
+              break;
+
+            case '#ffffff':
+            case '#FFFFFF':
+              this.nbTerritoireIsengard += 1;
+              break;
+
+            case '#ff6f00':
+            case '#FF6F00':
+              this.nbTerritoireGobelin += 1;
+              break;
+
+            case '#c500ff':
+            case '#C500FF':
+              this.nbTerritoireAngmar += 1;
+              break;
+            default:
+              break;
+          }
+        }
+
+        if (obj.hasOwnProperty("players") && obj.players.length > 0) {
+          let obj2 = JSON.parse(JSON.stringify(obj['players']))
+          for (var player in obj2) {
+
+            switch (obj2[player]['faction']) {
+              case 1:
+                this.nbPlayerElfe += 1
+                this.nbPlayers += 1;
+                break;
+              case 2:
+                this.nbPlayerRohan += 1;
+                this.nbPlayers += 1;
+                break;
+              case 3:
+                this.nbPlayerGondor += 1
+                this.nbPlayers += 1;
+                break;
+              case 4:
+                this.nbPlayerNain += 1
+                this.nbPlayers += 1;
+                break;
+              case 5:
+                this.nbPlayerMordor += 1
+                this.nbPlayers += 1;
+                break;
+              case 6:
+                this.nbPlayerIsengard += 1
+                this.nbPlayers += 1;
+                break;
+              case 7:
+                this.nbPlayerGobelin += 1
+                this.nbPlayers += 1;
+                break;
+              case 8:
+                this.nbPlayerAngmar += 1
+                this.nbPlayers += 1;
+                break;
+              default:
+                break;
+            }
+          }
+        }
+      }
+    },
+    filters: {
+      pourcentage: function (valeur, decimales) {
+        if (decimales === undefined) {
+          decimales = 2;
+        }
+        if (valeur === 0) {
+          return "";
+        }
+        return Math.round(valeur * Math.pow(10, decimales)) / Math.pow(10, decimales) + ' %';
+      }
+    }
+  }
+
+</script>
+<style scoped>
+  .map {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  path {
+    cursor: url("~assets/cursor2.png"), pointer;
+    stroke-opacity: 1;
+    stroke-width: 2;
+    fill-opacity: 1;
+    -webkit-transition: all 150ms;
+    -moz-transition: all 150ms;
+    -o-transition: all 150ms;
+    transition: all 150ms;
+  }
+
+  .st:hover {
+    fill: white !important;
+    opacity: 0.2 !important;
+  }
+
+
+
+  .embedresize {
+    max-width: 560px;
+    margin: auto;
+  }
+
+  .embedresize div {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+
+  .embedresize iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .eau {
+    color: rgba(128, 90, 213, var(--text-opacity));
+    stroke: currentColor;
+    stroke-width: 6px;
+    stroke: rgb(44, 44, 219);
+    fill-opacity: 0.2;
+    fill: rgb(44, 44, 219);
+  }
+
+
+
+  .epee-1 {
+    fill: #fff;
+  }
+
+  .epee-2 {
+    fill: #a5a5a4;
+  }
+
+  .epee-3 {
+    fill: #a56a43;
+  }
+
+  .epee-4 {
+    fill: #f0c419;
+  }
+
+  .epee-5 {
+    fill: #7f8284;
+  }
+
+  .epee-6 {
+    fill: #f3d55b;
+  }
+
+  .epee-7 {
+    fill: #d1d4d1;
+  }
+
+  .epee-8 {
+    fill: #f29c1f;
+  }
+
+  .regiontext {
+    bottom: 1.6em;
+    /* left: 2em; */
+    /* padding-left: 80px; */
+    /* padding-right: 80px; */
+    margin-left: 18%;
+    margin-right: 100;
+    text-align: center;
+  }
+
+  .regionimg {
+    left: 3em;
+    top: 26px;
+  }
+
+  .cls-15 {
+    fill: #fff031;
+  }
+
+  .cls-16 {
+    fill: #dbdbdb;
+  }
+
+  .cls-17 {
+    fill: #f2f2f2;
+  }
+
+  .cls-18 {
+    fill: #883f2e;
+  }
+
+  .cls-19 {
+    fill: #6d3326;
+  }
+
+  .cls-20 {
+    fill: #4c4c4c;
+  }
+
+  .cls-21 {
+    fill: #474747;
+  }
+
+  .cls-22 {
+    fill: #2097ef;
+  }
+
+  .cls-23 {
+    fill: #5eb8ef;
+  }
+
+
+  .build-19 {
+    fill: #78a9bd;
+  }
+
+  .build-20 {
+    fill: #2e2213;
+  }
+
+  .build-21 {
+    fill: #b5aead;
+    stroke: #2e2213;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+  }
+
+  .build-22 {
+    fill: #2e1313;
+  }
+
+  .build-23 {
+    fill: #8e8b86;
+  }
+
+  .rounded-bfme {
+    border-radius: 3.5rem;
+}
+
+.mur {
+  fill: #ff0052;
+  stroke: black;
+  stroke-width: 5px
+}
+
+</style>
 <template>
   <div>
     <Timer class="text-center text-white text-2xl p-4"/>
@@ -7208,370 +7575,3 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
     </div>
   </div>
 </template>
-
-
-<script>
-  export default {
-    head: {
-      title: "La Guerre de l'Anneau",
-      meta: [{
-        hid: 'description',
-        name: 'description',
-        content: "Carte de la Guerre de l'Anneau"
-      }],
-    },
-    data() {
-      return {
-        nbMap: 0,
-        title: '',
-        region: '',
-        bleu: 'hsl(202, 87%, 58%)',
-        montagne: '#565656',
-        contour: '#fff',
-        newStock: 'B7B8C4',
-        map: [],
-        information: '',
-        isShowModal: false,
-        nbTerritoireRohan: 0,
-        nbTerritoireElfe: 0,
-        nbTerritoireGondor: 0,
-        nbTerritoireNain: 0,
-        nbTerritoireMordor: 0,
-        nbTerritoireIsengard: 0,
-        nbTerritoireGobelin: 0,
-        nbTerritoireAngmar: 0,
-        nbPlayerRohan: 0,
-        nbPlayerElfe: 0,
-        nbPlayerGondor: 0,
-        nbPlayerNain: 0,
-        nbPlayerMordor: 0,
-        nbPlayerIsengard: 0,
-        nbPlayerGobelin: 0,
-        nbPlayerAngmar: 0,
-
-        nbPlayers: 0,
-
-        faction: null,
-        loading: false,
-        regionMobile: ''
-
-      }
-    },
-    methods: {
-      getInfo(e) {
-        this.title = e.target.id;
-        this.region = e.target.getAttribute("aria-valuetext");
-        // let node = document.getElementById(e.target.id).getBBox();
-        // console.log(node)
-        // var canvas = document.getElementById("canvas");
-        // var ctx = canvas.getContext("2d");
-        // var image = document.getElementById("source");
-
-        // ctx.drawImage(image, node.x, node.y, 104, 124, 21, 20, 87, 104);
-      },
-      toggleModal(e) {
-        if(e && e.target.getAttribute("aria-valuetext")) {
-          this.regionMobile = e.target.getAttribute("aria-valuetext");
-          this.isShowModal = !this.isShowModal;
-        }
-        else {
-          this.isShowModal = !this.isShowModal;
-        }
-      },
-      bringToTopofSVG(targetElement){
-        let parent = targetElement.ownerSVGElement;
-        parent.appendChild(targetElement);
-      }
-    },
-    async fetch() {
-      this.loading = true;
-      this.map = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c');
-      this.faction = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c/factions'); //API
-        // this.map = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847'); //API
-        // this.faction = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847/factions'); //API
-      this.loading = false;
-
-      for (var key in this.map) {
-        var obj = this.map[key];
-
-
-        for (let prop in obj) {
-          if (!obj.hasOwnProperty(prop)) continue;
-
-          switch (obj[prop]) {
-            case '#0bff00':
-            case '#0BFF00':
-              this.nbTerritoireRohan += 1;
-              break;
-
-            case '#00bfff':
-            case '#00BFFF':
-              this.nbTerritoireElfe += 1;
-              break;
-
-            case '#1e90ff':
-            case '#1E90FF':
-              this.nbTerritoireGondor += 1;
-              break;
-
-            case '#fffc00':
-            case '#FFFC00':
-              this.nbTerritoireNain += 1;
-              break;
-
-            case '#db5461':
-            case '#DB5461':
-              this.nbTerritoireMordor += 1;
-              break;
-
-            case '#ffffff':
-            case '#FFFFFF':
-              this.nbTerritoireIsengard += 1;
-              break;
-
-            case '#ff6f00':
-            case '#FF6F00':
-              this.nbTerritoireGobelin += 1;
-              break;
-
-            case '#c500ff':
-            case '#C500FF':
-              this.nbTerritoireAngmar += 1;
-              break;
-            default:
-              break;
-          }
-        }
-
-        if (obj.hasOwnProperty("players") && obj.players.length > 0) {
-          let obj2 = JSON.parse(JSON.stringify(obj['players']))
-          for (var player in obj2) {
-
-            switch (obj2[player]['faction']) {
-              case 1:
-                this.nbPlayerElfe += 1
-                this.nbPlayers += 1;
-                break;
-              case 2:
-                this.nbPlayerRohan += 1;
-                this.nbPlayers += 1;
-                break;
-              case 3:
-                this.nbPlayerGondor += 1
-                this.nbPlayers += 1;
-                break;
-              case 4:
-                this.nbPlayerNain += 1
-                this.nbPlayers += 1;
-                break;
-              case 5:
-                this.nbPlayerMordor += 1
-                this.nbPlayers += 1;
-                break;
-              case 6:
-                this.nbPlayerIsengard += 1
-                this.nbPlayers += 1;
-                break;
-              case 7:
-                this.nbPlayerGobelin += 1
-                this.nbPlayers += 1;
-                break;
-              case 8:
-                this.nbPlayerAngmar += 1
-                this.nbPlayers += 1;
-                break;
-              default:
-                break;
-            }
-          }
-        }
-      }
-    },
-    filters: {
-      pourcentage: function (valeur, decimales) {
-        if (decimales === undefined) {
-          decimales = 2;
-        }
-        if (valeur === 0) {
-          return "";
-        }
-        return Math.round(valeur * Math.pow(10, decimales)) / Math.pow(10, decimales) + ' %';
-      }
-    }
-  }
-
-</script>
-<style scoped>
-  .map {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
-
-  path {
-    cursor: url("~assets/cursor2.png"), pointer;
-    stroke-opacity: 1;
-    stroke-width: 2;
-    fill-opacity: 1;
-    -webkit-transition: all 150ms;
-    -moz-transition: all 150ms;
-    -o-transition: all 150ms;
-    transition: all 150ms;
-  }
-
-  .st:hover {
-    fill: white !important;
-    opacity: 0.2 !important;
-  }
-
-
-
-  .embedresize {
-    max-width: 560px;
-    margin: auto;
-  }
-
-  .embedresize div {
-    position: relative;
-    height: 0;
-    padding-bottom: 56.25%;
-  }
-
-  .embedresize iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .eau {
-    color: rgba(128, 90, 213, var(--text-opacity));
-    stroke: currentColor;
-    stroke-width: 6px;
-    stroke: rgb(44, 44, 219);
-    fill-opacity: 0.2;
-    fill: rgb(44, 44, 219);
-  }
-
-
-
-  .epee-1 {
-    fill: #fff;
-  }
-
-  .epee-2 {
-    fill: #a5a5a4;
-  }
-
-  .epee-3 {
-    fill: #a56a43;
-  }
-
-  .epee-4 {
-    fill: #f0c419;
-  }
-
-  .epee-5 {
-    fill: #7f8284;
-  }
-
-  .epee-6 {
-    fill: #f3d55b;
-  }
-
-  .epee-7 {
-    fill: #d1d4d1;
-  }
-
-  .epee-8 {
-    fill: #f29c1f;
-  }
-
-  .regiontext {
-    bottom: 1.6em;
-    /* left: 2em; */
-    /* padding-left: 80px; */
-    /* padding-right: 80px; */
-    margin-left: 18%;
-    margin-right: 100;
-    text-align: center;
-  }
-
-  .regionimg {
-    left: 3em;
-    top: 26px;
-  }
-
-  .cls-15 {
-    fill: #fff031;
-  }
-
-  .cls-16 {
-    fill: #dbdbdb;
-  }
-
-  .cls-17 {
-    fill: #f2f2f2;
-  }
-
-  .cls-18 {
-    fill: #883f2e;
-  }
-
-  .cls-19 {
-    fill: #6d3326;
-  }
-
-  .cls-20 {
-    fill: #4c4c4c;
-  }
-
-  .cls-21 {
-    fill: #474747;
-  }
-
-  .cls-22 {
-    fill: #2097ef;
-  }
-
-  .cls-23 {
-    fill: #5eb8ef;
-  }
-
-
-  .build-19 {
-    fill: #78a9bd;
-  }
-
-  .build-20 {
-    fill: #2e2213;
-  }
-
-  .build-21 {
-    fill: #b5aead;
-    stroke: #2e2213;
-    stroke-miterlimit: 10;
-    stroke-width: 2px;
-  }
-
-  .build-22 {
-    fill: #2e1313;
-  }
-
-  .build-23 {
-    fill: #8e8b86;
-  }
-
-  .rounded-bfme {
-    border-radius: 3.5rem;
-}
-
-.mur {
-  fill: #ff0052;
-  stroke: black;
-  stroke-width: 5px
-}
-
-</style>

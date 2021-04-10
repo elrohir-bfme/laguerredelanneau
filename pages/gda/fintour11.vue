@@ -7150,53 +7150,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           <h2 class="mt-4 font-bold text-xl text-purple-300">Faction d'Angmar Morte</h2>
           <h6 class="mt-2 text-xl font-bold underline">15/03/2021</h6>
 
-          <!-- <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-purple-800 uppercase px-2 py-1 text-xs mr-1">{{faction.angmar.capital}}
-                <svg class="ml-2 stroke-current text-purple-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-purple-800 uppercase px-2 py-1 text-xs mr-1">{{faction.angmar.money}}
-                <svg class="ml-2 stroke-current text-purple-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </span>
-            </li>
-          </ul>
-
-          <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-purple-800 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireAngmar}}
-                Territoires
-                <svg class="ml-2 stroke-current text-purple-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd"
-                    d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
-                    clipRule="evenodd" /></svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-purple-800 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerAngmar}}
-                Joueurs
-                <svg class="ml-2 stroke-current text-purple-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg></span>
-            </li>
-          </ul>
-          <ul class="flex flex-row mt-4 space-x-1">
-              <span class="flex rounded-full bg-purple-800 uppercase px-4 py-1 text-xs mr-1">
-                {{faction.angmar.win}}/{{faction.angmar.loose}} ({{Math.round(faction.angmar.win/(faction.angmar.win+faction.angmar.loose)*100)}} % de Victoires)
-              </span>
-          </ul> -->
+ 
         </div>
       </div>
 
@@ -7261,13 +7215,6 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
       getInfo(e) {
         this.title = e.target.id;
         this.region = e.target.getAttribute("aria-valuetext");
-        // let node = document.getElementById(e.target.id).getBBox();
-        // console.log(node)
-        // var canvas = document.getElementById("canvas");
-        // var ctx = canvas.getContext("2d");
-        // var image = document.getElementById("source");
-
-        // ctx.drawImage(image, node.x, node.y, 104, 124, 21, 20, 87, 104);
       },
       toggleModal(e) {
         if(e && e.target.getAttribute("aria-valuetext")) {
@@ -7285,10 +7232,8 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
     },
     async fetch() {
       this.loading = true;
-      this.map = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c');
-      this.faction = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c/factions'); //API
-        // this.map = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847'); //API
-        // this.faction = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847/factions'); //API
+      this.map = await this.$http.$get('https://api.npoint.io/40011285867d58d598da');
+      this.faction = await this.$http.$get('https://api.npoint.io/40011285867d58d598da/factions');
       this.loading = false;
 
       for (var key in this.map) {

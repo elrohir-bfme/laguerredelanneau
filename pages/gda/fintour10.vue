@@ -7285,10 +7285,8 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
     },
     async fetch() {
       this.loading = true;
-      this.map = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c');
-      this.faction = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c/factions'); //API
-        // this.map = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847'); //API
-        // this.faction = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847/factions'); //API
+      this.map = await this.$http.$get('https://api.npoint.io/44ad2770289e56dbc94c');
+      this.faction = await this.$http.$get('https://api.npoint.io/44ad2770289e56dbc94c/factions');
       this.loading = false;
 
       for (var key in this.map) {

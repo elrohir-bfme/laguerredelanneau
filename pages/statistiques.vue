@@ -84,6 +84,11 @@ export default {
           type: 'string',
         },
         {
+          label: 'Région',
+          field: 'region',
+          type: 'string',
+        },
+        {
           label: 'Victoire',
           field: 'win',
           type: 'number'
@@ -271,7 +276,8 @@ export default {
                         "win": obj2[player]['win'],
                         "lose": obj2[player]['lose'],
                         "color": color,
-                        "ratio": Math.round(obj2[player]['win']/ (obj2[player]['lose']+ obj2[player]['win']) * 100) + "%"
+                        "ratio": Math.round(obj2[player]['win']/ (obj2[player]['lose']+ obj2[player]['win']) * 100) + "%",
+                        "region": obj.name
                     }
                   }
                 else {
@@ -281,7 +287,8 @@ export default {
                       "win": obj2[player]['win'],
                       "lose": obj2[player]['lose'],
                       "color": color,
-                      "ratio": "Aucune partie joué"
+                      "ratio": "Aucune partie joué",
+                      "region": obj.name
                   }
                 }
 

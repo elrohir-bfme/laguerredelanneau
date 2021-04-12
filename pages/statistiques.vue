@@ -287,7 +287,7 @@ export default {
                       "win": obj2[player]['win'],
                       "lose": obj2[player]['lose'],
                       "color": color,
-                      "ratio": "Aucune partie joué",
+                      "ratio": "0%",
                       "region": obj.name
                   }
                 }

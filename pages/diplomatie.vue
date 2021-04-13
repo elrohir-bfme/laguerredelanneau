@@ -47,12 +47,12 @@
                 EN GUERRE
             </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
+                <!-- ALLIANCE<br>
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span> -->
             </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
+                <!-- ALLIANCE<br>
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span> -->
             </td>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
@@ -61,8 +61,8 @@
                 EN GUERRE
             </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
+                <!-- ALLIANCE<br>
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span> -->
             </td>
             <tr>
             <td>
@@ -79,11 +79,11 @@
             </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
                 ALLIANCE<br>
-                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
+                <span class="text-gray-500">TOUR 13 à la fin du TOUR 15</span>
             </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
                 ALLIANCE<br>
-                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
+                <span class="text-gray-500">TOUR 13 à la fin du TOUR 15</span>
             </td>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
@@ -98,8 +98,8 @@
             <td/>
             <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
+                <!-- ALLIANCE<br>
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span> -->
             </td>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
@@ -108,8 +108,8 @@
                 EN GUERRE
             </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
+                <!-- ALLIANCE<br>
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span> -->
             </td>
             </tr>
             <tr>
@@ -128,8 +128,8 @@
                 EN GUERRE
             </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
+                <!-- ALLIANCE<br>
+                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span> -->
             </td>
             </tr>
             <tr>
@@ -144,7 +144,7 @@
             <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
                 ALLIANCE<br>
-                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span>
+                <span class="text-gray-500">TOUR 13 à la fin du TOUR 15</span>
             </td>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE

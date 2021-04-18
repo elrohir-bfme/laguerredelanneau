@@ -6617,7 +6617,7 @@
     <ModalMobile class="flex lg:hidden md:hidden mb-4" v-if="!loading" :map="map" :region="regionMobile" />
 
     
-    <Toggle @close="toggleActiveModal" :toggleActive="toggleActive" />
+    <!-- <Toggle @close="toggleActiveModal" :toggleActive="toggleActive" /> -->
 
     </div>
     <div class="container mx-auto">

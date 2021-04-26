@@ -80,6 +80,12 @@
         </div>
         <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/833972524966477854/unknown.png" alt="">        
         
+        <div class="mx-auto mt-8 mb-4 w-full">
+        <p class="text-2xl text-center text-gray-200">Tour 15 (27 Avril)</p>
+        </div>
+        <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/836372557270876170/unknown.png" alt="">        
+        
+        
         
         
         

@@ -15,20 +15,12 @@
                 <span class="block md:hidden text-xs lg:text-base">Elfe</span>
             </th>
             <th class="border border-gray-800">
-                <img src="~assets/factions/gondor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
-                <span class="block md:hidden text-xs lg:text-base">Gondor</span>
-            </th>
-            <th class="border border-gray-800">
                 <img src="~assets/factions/nain.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Nain</span>
             </th>
             <th class="border border-gray-800">
                 <img src="~assets/factions/mordor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Mordor</span>
-            </th>
-            <th class="border border-gray-800">
-                <img src="~assets/factions/isengard.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
-                <span class="block md:hidden text-xs lg:text-base">Isengard</span>
             </th>
             <th class="border border-gray-800">
                 <img src="~assets/factions/gobelin.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
@@ -50,13 +42,6 @@
                 ALLIANCE<br>
                 <span class="text-gray-500">TOUR 14 à la fin du TOUR 16</span>
             </td>
-            <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 14 à la fin du TOUR 16</span>
-            </td>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
-            </td>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
             </td>
@@ -74,13 +59,6 @@
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
             </td>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
-            </td>
-            <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 13 à la fin du TOUR 15</span>
-            </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
                 ALLIANCE<br>
                 <span class="text-gray-500">TOUR 13 à la fin du TOUR 15</span>
@@ -89,49 +67,20 @@
                 EN GUERRE
             </td>
             </tr>
-            <tr>
-            <td>
-                <img src="~assets/factions/gondor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
-                <span class="block md:hidden text-xs lg:text-base">Gondor</span>
-            </td>
-            <td/>
-            <td/>
-            <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
-            <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                <!-- ALLIANCE<br>
-                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span> -->
-            </td>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
-            </td>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
-            </td>
-            <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                <!-- ALLIANCE<br>
-                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span> -->
-            </td>
-            </tr>
-            <tr>
             <td>
                 <img src="~assets/factions/nain.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Nain</span>
             </td>
             <td/>
             <td/>
-            <td/>
             <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
             </td>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
-            </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                <!-- ALLIANCE<br>
-                <span class="text-gray-500">TOUR 10 à la fin du TOUR 12</span> -->
+                ALLIANCE<br>
+                <span class="text-gray-500">TOUR 14 à la fin du TOUR 16</span>
             </td>
-            </tr>
             <tr>
             <td>
                 <img src="~assets/factions/mordor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
@@ -140,43 +89,10 @@
             <td/>
             <td/>
             <td/>
-            <td/>
-            <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
-            <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 13 à la fin du TOUR 15</span>
-            </td>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
-            </td>
-            </tr>
-            <tr>
-            <td>
-                <img src="~assets/factions/isengard.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
-                <span class="block md:hidden text-xs lg:text-base">Isengard</span>
-            </td>
-            <td/>
-            <td/>
-            <td/>
-            <td/>
-            <td/>
             <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
             </td>
-            </tr>
-            <tr>
-            <td>
-                <img src="~assets/factions/gobelin.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
-                <span class="block md:hidden text-xs lg:text-base">Gobelin</span>
-            </td>
-            <td/>
-            <td/>
-            <td/>
-            <td/>
-            <td/>
-            <td/>
-            <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
             </tr>
         </tbody>
         </table>

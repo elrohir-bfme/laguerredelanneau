@@ -6884,13 +6884,13 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         <div
           class="flex flex-col items-center justify-center bg-blue-600 hover:bg-blue-800 text-blue-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/gondor_dead.png" alt="" class="h-full w-full">
+            <img src="~assets/factions/gondor.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-blue-300">Faction du Gondor Morte</h2>
-          <h6 class="mt-2 text-xl font-bold underline">04/05/2021</h6>
+          <h2 class="mt-4 font-bold text-xl text-blue-300">Chef de la Faction du Gondor</h2>
+          <h6 class="mt-2 text-xl font-bold underline">{{faction.gondor.chef}}</h6>
 
-          <!-- <ul class="flex flex-row mt-4 space-x-1">
+          <ul class="flex flex-row mt-4 space-x-1">
             <li>
               <span class="flex rounded-full bg-blue-700 uppercase px-2 py-1 text-xs mr-1">{{faction.gondor.capital}}
                 <svg class="ml-2 stroke-current text-blue-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -6930,7 +6930,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                     d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg></span>
             </li>
-          </ul> -->
+          </ul>
         </div>
 
         <div
@@ -7046,13 +7046,13 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         <div
           class="flex flex-col items-center justify-center bg-gray-800 hover:bg-gray-900 text-gray-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/isengard_dead.png" alt="" class="h-full w-full">
+            <img src="~assets/factions/isengard.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-gray-300">Faction d'Isengard Morte</h2>
-          <h6 class="mt-2 text-xl font-bold underline">04/05/2021</h6>
+          <h2 class="mt-4 font-bold text-xl text-gray-300">Faction d'Isengard</h2>
+          <h6 class="mt-2 text-xl font-bold underline">{{faction.isengard.chef}}</h6>
 
-          <!-- <ul class="flex flex-row mt-4 space-x-1">
+          <ul class="flex flex-row mt-4 space-x-1">
             <li>
               <span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-xs mr-1">{{faction.isengard.capital}}
                 <svg class="ml-2 stroke-current text-gray-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -7093,7 +7093,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                     d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg></span>
             </li>
-          </ul> -->
+          </ul>
         </div>
 
         <div
@@ -7306,10 +7306,10 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
     async fetch() {
       this.loading = true;
 
-      // this.map = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c');
-      // this.faction = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c/factions'); //API
-        this.map = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847'); //API
-        this.faction = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847/factions'); //API
+      this.map = await this.$http.$get('https://api.npoint.io/6aed2a0a9bf6642666da');
+      this.faction = await this.$http.$get('https://api.npoint.io/6aed2a0a9bf6642666da/factions'); //API
+        // this.map = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847'); //API
+        // this.faction = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847/factions'); //API
       this.loading = false;
 
       

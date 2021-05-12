@@ -45,12 +45,6 @@ export default {
 
 <style>
 
-.container {
-  margin: 15px auto !important;
-  max-width: 1280px !important;
-  font-family: 'kenyan coffee rg' !important;
-}
-
 .flex-container {
   padding: 0;
   margin: 0;

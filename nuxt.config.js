@@ -1,10 +1,5 @@
 export default {
   /*
-  ** Nuxt rendering mode
-  ** See https://nuxtjs.org/api/configuration-mode
-  */
-  ssr: false,
-  /*
   ** Nuxt target
   ** See https://nuxtjs.org/api/configuration-target
   */
@@ -45,15 +40,16 @@ export default {
   ** See https://nuxtjs.org/api/configuration-components
   */
   components: true,
-  /*
-  ** Nuxt.js dev-modules
-  */
-  buildModules: ['@nuxtjs/tailwindcss', '@nuxt/postcss8'],
+
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  buildModules: [
+    // https://go.nuxtjs.dev/tailwindcss
+    '@nuxtjs/tailwindcss',
+  ],
   /*
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxt/http',
     'vue-scrollto/nuxt',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
@@ -70,8 +66,15 @@ export default {
         themeColor: "#3E7A4A",
       },
     ],
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/strapi'
   ],
+
+  strapi: {
+    entities: ['factions', 'matchs'],
+    url: 'http://localhost:1337'
+  },
+
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
@@ -100,7 +103,6 @@ export default {
   },
 
   tailwindcss: {
-    jit: true,
     viewer: true
   }
 }

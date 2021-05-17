@@ -70,9 +70,10 @@ export default {
     '@nuxtjs/strapi'
   ],
 
+  /* url: 'http://api.laterredumilieu.fr' */
   strapi: {
-    entities: ['factions', 'matchs'],
-    url: 'http://localhost:1337'
+    entities: ['factions', 'matchs', 'regions', 'players', 'clans'],
+    url: 'http://localhost:1337/'
   },
 
   /*

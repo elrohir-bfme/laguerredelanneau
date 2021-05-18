@@ -82,7 +82,7 @@
       </div>
 
       <!-- LISTES DES JOUEURS -->
-
+      <pre> {{ data.players}} </pre>
       <div v-if="data && data.players && data.players.length > 0" class="px-6 py-4 flex flex-wrap">
         <div class="mx-auto m-2" v-for="player in data.players" :key="player.name"> 
           <div v-if="player.mercenaire">
@@ -101,7 +101,7 @@
           </div>
           </div>
           <div v-else>
-          <div v-if="player.faction == 1" class="rounded-lg bg-teal-600 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-teal-700">{{updatePlayer(player.name)}} 
+          <div v-if="getFaction(player.faction) == 1" class="rounded-lg bg-teal-600 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-teal-700">{{updatePlayer(player.name)}} 
             <img v-if="player.chef == true" alt="Chef de Faction" class="w-4 h-4 inline-block" src="~assets/crown.svg">
             <span class="block text-center text-xs font-normal">
               {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/trophy.svg">
@@ -241,7 +241,8 @@ export default {
   data() {
     return {
       data: [],
-      mapimg: true
+      mapimg: true,
+      faction: {}
     }
   },
   async fetch() {
@@ -256,6 +257,9 @@ export default {
       },
       updatePlayer(name){
         return name.replace(/_/g, " ");
+      },
+      getFaction(id){
+        this.faction = await this.$strapi.$factions.findOne(id)
       }
   },
   props: {
@@ -263,6 +267,10 @@ export default {
           type: String,
           required: true
       },
+      factions: {
+        type: Array,
+        required: true
+      }
   }
 }
 </script>

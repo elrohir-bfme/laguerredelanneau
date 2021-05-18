@@ -25,15 +25,15 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: ['node_modules/lite-youtube-embed/src/lite-yt-embed.css'],
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
     { src: '~/plugins/vue-good-table', ssr: false },
-    { src: '~/plugins/vuejs-countdown-timer', ssr: false}
+    { src: '~/plugins/vuejs-countdown-timer', ssr: false},
+    '~/plugins/youtube.client.js'
   ],
   /*
   ** Auto import components

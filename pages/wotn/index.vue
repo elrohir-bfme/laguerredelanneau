@@ -143,6 +143,7 @@
 
 
 <script>
+
   export default {
     layout: 'wotn',
     head: {

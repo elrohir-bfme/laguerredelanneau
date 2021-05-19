@@ -67,13 +67,26 @@ export default {
       },
     ],
     '@nuxtjs/pwa',
-    '@nuxtjs/strapi'
+    '@nuxtjs/strapi',
+    '@nuxtjs/apollo'
   ],
 
   /* url: 'http://api.laterredumilieu.fr' */
   strapi: {
     entities: ['factions', 'matchs', 'regions', 'players', 'clans'],
     url: 'http://localhost:1337/'
+  },
+
+  apollo: {  
+    clientConfigs: {
+      default: {
+        httpEndpoint: process.env.BACKEND_URL || "http://localhost:1337/graphql"
+      }
+    }
+  },
+
+  env: {
+    strapiBaseUri: process.env.API_URL || "http://localhost:1337"
   },
 
   /*

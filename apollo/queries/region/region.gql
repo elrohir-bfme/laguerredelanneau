@@ -1,0 +1,23 @@
+# Write your query or mutation here
+query Region($id: ID!) {
+  region(id: $id) {    
+    id
+    name
+  	description
+    map
+    img
+    color
+    mapdl
+    fight
+    players {
+      prisonnier
+      name
+      win
+      lose
+      handicap
+      faction {
+        frontColor
+      }
+    }
+  }
+}

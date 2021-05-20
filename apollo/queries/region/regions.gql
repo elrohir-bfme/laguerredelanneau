@@ -1,11 +1,8 @@
 query Regions {
     regions {
       name
-      players {
-        name
-        faction {
-          frontColor
-        }
-      }
+      id
+      color
+      path
     }
 }

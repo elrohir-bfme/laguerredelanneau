@@ -77,7 +77,7 @@
     <br><br>
     <br><br>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4" v-if="!loading">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
       <div v-for="faction in factions" :key="faction.name"
         :class="`bg-${faction.frontColor}-800 hover:bg-${faction.frontColor}-900 text-${faction.frontColor}-100`"
         class="flex flex-col items-center justify-center p-4 shadow rounded-lg">
@@ -88,10 +88,10 @@
         <h2 :class="`text-${faction.frontColor}-300`" class="mt-4 font-bold text-xl text-green-300">
           Chef de la Faction du {{faction.name}}
         </h2>
-        <h6 v-if="!loading" class="mt-2 text-xl font-bold underline">{{faction.chef}}</h6>
+        <h6 class="mt-2 text-xl font-bold underline">{{faction.chef}}</h6>
 
         <ul class="flex flex-row mt-4 space-x-1">
-          <li v-if="!loading">
+          <li>
             <span :class="`bg-${faction.frontColor}-700`" class="flex rounded-full uppercase px-2 py-1 text-xs mr-1">
               {{faction.capital}}
               <svg :class="`text-${faction.frontColor}-400`" class="ml-2 stroke-current h-5 w-5"
@@ -101,7 +101,7 @@
               </svg>
             </span>
           </li>
-          <li v-if="!loading">
+          <li>
             <span :class="`bg-${faction.frontColor}-700`"
               class="flex rounded-full uppercase px-2 py-1 text-xs mr-1">{{faction.money}}
               <svg :class="`text-${faction.frontColor}-400`" class="ml-2 stroke-current h-5 w-5"
@@ -114,7 +114,8 @@
         </ul>
         <ul class="flex flex-row mt-4 space-x-1">
           <li>
-            <span :class="`bg-${faction.frontColor}-700`" class="flex rounded-full uppercase px-2 py-1 text-xs mr-1">0
+            <span :class="`bg-${faction.frontColor}-700`" class="flex rounded-full uppercase px-2 py-1 text-xs mr-1">
+              {{faction.regions.length}}
               Territoires
               <svg :class="`text-${faction.frontColor}-400`" class="ml-2 stroke-current h-5 w-5"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -124,7 +125,8 @@
             </span>
           </li>
           <li>
-            <span :class="`bg-${faction.frontColor}-700`" class="flex rounded-full uppercase px-2 py-1 text-xs mr-1">0
+            <span :class="`bg-${faction.frontColor}-700`" class="flex rounded-full uppercase px-2 py-1 text-xs mr-1">
+              {{faction.players.length}}
               Joueurs
               <svg :class="`text-${faction.frontColor}-400`" class="ml-2 stroke-current h-5 w-5"
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -136,13 +138,16 @@
       </div>
     </div>
 
-  <ModalRegion class="hidden lg:flex md:flex" v-if="isShowModal && !loading" @close="toggleModal" :region="region" :factions="factions" />
+  <ModalRegion class="hidden lg:flex md:flex" v-if="isShowModal" @close="toggleModal" :id="region" :factions="factions" />
 
   </div>
 </template>
 
 
 <script>
+
+  import getFactions from '~/apollo/queries/faction/factions'
+  import getRegions from '~/apollo/queries/region/regions'
 
   export default {
     layout: 'wotn',
@@ -156,13 +161,20 @@
     },
     data() {
       return {
-        loading: false,
         toggleActive: false,
         isShowModal: false,
         region: '',
         regions: [],
         factions: [],
         count: 0
+      }
+    },
+    apollo: {
+      factions: {
+        query: getFactions
+      },
+      regions: {
+        query: getRegions
       }
     },
     methods: {
@@ -177,14 +189,6 @@
           this.isShowModal = !this.isShowModal;
         }
       }
-    },
-    async fetch() {
-      this.loading = true;
-      this.factions =  await this.$strapi.$factions.find()
-      this.regions =  await this.$strapi.$regions.find()
-      this.count = await this.$strapi.$players.count({ 'faction.name' : 'Arnor' })
-
-      this.loading = false;
     }
   }
 

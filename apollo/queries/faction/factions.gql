@@ -1,0 +1,22 @@
+# Write your query or mutation here
+query Factions {
+  factions {
+    name
+    capital
+    money
+    win
+    loose
+    color
+    img {
+      url
+    }
+    chef
+    frontColor
+    players {
+      id
+    }
+    regions {
+      id
+    }
+  }
+}

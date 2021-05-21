@@ -1,0 +1,9 @@
+query Players {
+  players {
+    id
+    name
+    faction {
+      name
+    }
+  }
+}

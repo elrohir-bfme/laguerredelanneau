@@ -4,6 +4,7 @@
       <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-2xl justify-center bg-gray border-orange-500 border-2 border-opacity-75 hover:border-orange-600">
           <h1 style="font-family: 'Albertus'" class="p-4 hover:text-white hover:bg-gray-900">La Guerre du Nord</h1>
+          <nuxt-link style="font-family: 'Albertus'" class="p-4 text-pink-400 hover:text-white hover:bg-gray-900" to="/wotn/matchs">Matchs</nuxt-link>
           <nuxt-link style="font-family: 'Albertus'" class="p-4 text-red-400 hover:text-white hover:bg-gray-900" to="/wotn/statistiques">Statistiques</nuxt-link>
           <nuxt-link style="font-family: 'Albertus'" class="p-4 text-blue-400 hover:text-white hover:bg-gray-900" to="/wotn/regles">Règles</nuxt-link>
           <nuxt-link style="font-family: 'Albertus'" class="p-4 text-green-400 hover:text-white hover:bg-gray-900" to="/wotn/videos">Vidéos</nuxt-link>

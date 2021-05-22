@@ -1,0 +1,14 @@
+mutation($title: String!, $slug: String!, $content: String){
+  createArticle(input: {
+    data: {
+      title: $title,
+      slug: $slug,
+      content: $content
+    }
+  }){
+    article{
+      id
+      title
+    }
+  }
+}

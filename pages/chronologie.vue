@@ -100,6 +100,12 @@
         </div>
         <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/844084552309276703/unknown.png" alt="">        
         
+        <div class="mx-auto mt-8 mb-4 w-full">
+        <p class="text-2xl text-center text-gray-200">Tour 19 (25 Mai)</p>
+        </div>
+        <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/846707018537893888/unknown.png" alt="">        
+        
+        
         
         
         

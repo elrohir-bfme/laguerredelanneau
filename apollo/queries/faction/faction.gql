@@ -1,0 +1,12 @@
+# Write your query or mutation here
+query Factions($id: ID!) {
+  faction(id: $id) {
+    players {
+      id
+      name
+      region {
+        name
+      }
+    }
+  }
+}

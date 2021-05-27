@@ -6,6 +6,13 @@ query Factions($id: ID!) {
       name
       region {
         name
+        adjacents {
+          id
+          name
+          adjacents {
+            name
+          }
+        }
       }
     }
   }

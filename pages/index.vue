@@ -26,7 +26,7 @@
           <nuxt-link to="/le_seigneur_d_or" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-red-300 border-2 rounded-xl">
             <img alt="gallery" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/wars/bg.jpg">
             <div class="text-center relative z-10 w-full">
-              <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-red-500 group-hover:bg-white inline p-2 rounded">Gladiator Wars</h2>
+              <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-red-500 group-hover:bg-white inline p-2 rounded">Arène d'Arda</h2>
               <br>
               <br>
               <p class="text-2xl text-red-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Affrontement de clans au sein de la Terre du Milieu</p>

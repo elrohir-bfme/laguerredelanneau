@@ -7,7 +7,8 @@
           <nuxt-link style="font-family: 'Albertus'" class="p-4 text-blue-600 hover:text-white hover:bg-gray-900" to="/gda">GDA</nuxt-link>
           <nuxt-link style="font-family: 'Albertus'" class="p-4 text-orange-600 hover:text-white hover:bg-gray-900" to="/wotn">GDA WOTN</nuxt-link>
           <nuxt-link style="font-family: 'Albertus'" class="p-4 text-indigo-600 hover:text-white hover:bg-gray-900" to="/gda109">GDA 1.09</nuxt-link>
-          <nuxt-link style="font-family: 'Albertus'" class="p-4 text-pink-600 hover:text-white hover:bg-gray-900" to="/gladiatorswars">Gladiators wars</nuxt-link>
+          <nuxt-link style="font-family: 'Albertus'" class="p-4 text-pink-600 hover:text-white hover:bg-gray-900" to="/arenedarda">Arène d'Arda</nuxt-link>
+          <nuxt-link style="font-family: 'Albertus'" class="p-4 text-purple-600 hover:text-white hover:bg-gray-900" to="/rngtournament">RNG Tournoi</nuxt-link>
           <a style="font-family: 'Albertus'" class="p-4 text-gray-600 hover:text-white hover:bg-gray-900" target="_blank" href="http://bit.ly/LaTerreduMilieu">
             <svg class="h-10 w-10 animate-pulse" width="71" height="55" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">

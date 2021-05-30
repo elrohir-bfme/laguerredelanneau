@@ -18,7 +18,7 @@
                 </div>
                 <div class="flex-1 pl-1 md:mr-16">
                     <div class="px-2 text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                        Equipe A
+                        Equipe A4
                     </div>
                     <div class="px-2 text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
                         Equipe B

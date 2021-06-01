@@ -1,10 +1,6 @@
 <template>
   <div>
     <Timer class="text-center text-white text-2xl p-4"/>
-    <p class="text-center text-white text-2xl p-4">Vous pouvez rejoindre une faction avant le Dimanche 6 Juin !</p>
-    <p class="text-center text-white text-2xl p-4">Après cette date, la GDA passe en mort subite</p>
-    <p class="text-center text-white text-2xl p-4">Lorsque vous perdrez la bataille, vous disparaissez de la carte! Le respawn sera donc désactivé !</p>
-    <p class="text-center text-white text-2xl p-4">Les mercenaires ne pourront pas être engagé. Seul la prolongation de contrat est autorisé </p>
     <div class="map">
       <!-- <SvgPanZoom :minZoom=1 :maxZoom=5 :contain=true :panEbnable=false :fit=false> -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5120 4096">
@@ -6949,13 +6945,10 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         <div
           class="flex flex-col items-center justify-center bg-yellow-700 hover:bg-yellow-900 text-yellow-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/naindead.png" alt="" class="h-full w-full">
+            <img src="~assets/factions/nain.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-yellow-300">Faction Naine Morte</h2>
-          <h6 class="mt-2 text-xl font-bold underline">01/06/2021</h6>
-
-          <!-- <h2 class="mt-4 font-bold text-xl text-yellow-300">Chef de la Faction du Nain</h2>
+          <h2 class="mt-4 font-bold text-xl text-yellow-300">Chef de la Faction du Nain</h2>
           <h6 class="mt-2 text-xl font-bold underline">{{faction.nain.chef}}</h6>
 
           <ul class="flex flex-row mt-4 space-x-1">
@@ -6998,7 +6991,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
                     d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg></span>
             </li>
-          </ul> -->
+          </ul>
         </div>
       </div>
 
@@ -7324,8 +7317,8 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
 
       // this.map = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c');
       // this.faction = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c/factions'); //API
-        this.map = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847'); //API
-        this.faction = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847/factions'); //API
+        this.map = await this.$http.$get('https://api.npoint.io/af1757da303ceedf3aad'); //API
+        this.faction = await this.$http.$get('https://api.npoint.io/af1757da303ceedf3aad/factions'); //API
       this.loading = false;
 
       

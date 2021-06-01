@@ -65,7 +65,6 @@
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
             </td>
-            </tr>
         </tbody>
         </table>
     </div>

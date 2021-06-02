@@ -39,7 +39,7 @@
                                     <div class="flex items-center">
                                         <div class="flex-shrink-0">
                                             <a href="#" class="block relative">
-                                                <img alt="profil" src="https://www.spaziogames.it/wp-content/uploads/2020/01/the-lord-of-the-rings-gollum.jpg" class="mx-auto object-cover rounded-full h-10 w-10 "/>
+                                                <img v-if="player.img" alt="profil" :src="`http://localhost:1337${player.img.url}`" class="mx-auto object-cover rounded-full h-10 w-10 "/>
                                             </a>
                                         </div>
                                         <span class="ml-3 relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
@@ -58,13 +58,24 @@
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                     <select 
-                                        id="regions" 
+                                        :id="player.id" 
                                         class="block w-52 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500" 
                                         name="regions">
-                                            <option v-for="region in player.region.adjacents" :key="region.id" :value="region.id">
+                                            <option v-for="region in player.region.adjacents" :key="region.id" :value="region.name">
                                                 {{region.name}}
                                             </option>
+                                            <option v-for="region in player.region.null" :key="region.id" :value="region.name">
+                                                {{region.name}}
+                                            </option>
+
+                                            
                                     </select>
+
+                                    <div v-for="adjacent in player.region.null" :key="adjacent.id">
+                                                <span v-for="region in adjacent.adjacents" :key="region.id" :value="region.name">
+                                                    {{region.name}}
+                                            </span>
+                                            </div>
                                 </td>
                             </tr>
                             
@@ -121,7 +132,7 @@ export default {
             }
         },
             generateText() {
-                // let data = "";
+                let data = "";
                 // let faction = "";
                 // let playerArray = [];
                 // switch (this.selectedFaction) {
@@ -136,16 +147,18 @@ export default {
                 //     default : console.log("No faction selected");
                 // }
                 // //Get data
-                // playerArray.forEach(element => {
-                //     data += `${element.name} ${element.code} ${document.getElementById(element.name + "arrive").value}\n`;
-                // });
+                this.players.forEach(element => {
+                    data += `${element.name} ${element.region.name} ${document.getElementById(element.id).value}\n`;
+                    // data += `${element.name} ${element.code} ${document.getElementById(element.name + "arrive").value}\n`;
+                    console.log(element)
+                });
                 // this.addPlayer.forEach(element => {
                 //     data += `spawn ${element.name.replace(/ /g, '_')} ${document.getElementById(element.name + "arrive").value} ${element.faction}\n`;
                 // });
                     
                 // //convert the text to BLOB
                 
-                const textToBLOB = new Blob(["data"], { type: "text/plain" });
+                const textToBLOB = new Blob([data], { type: "text/plain" });
                 const sFileName = `orders${"faction"}.txt`;	   // The file to save the data.
                 let newLink = document.createElement("a");
                 newLink.download = sFileName;

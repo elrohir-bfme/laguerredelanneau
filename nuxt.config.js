@@ -74,8 +74,7 @@ export default {
 
   /* url: 'http://api.laterredumilieu.fr' */
   strapi: {
-    entities: ['factions', 'matchs', 'regions', 'players', 'clans'],
-    url: 'http://localhost:1337/'
+    url: process.env.STRAPI || "http://localhost:1337/"
   },
 
   apollo: {  
@@ -87,7 +86,7 @@ export default {
   },
 
   env: {
-    strapiBaseUri: process.env.API_URL || "http://localhost:1337"
+    strapiBaseUri: process.env.STRAPI || "http://localhost:1337"
   },
 
   /*

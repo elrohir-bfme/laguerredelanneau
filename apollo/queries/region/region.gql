@@ -6,6 +6,13 @@ query Region($id: ID!) {
   	description
     map
     img
+    game
+    minimap {
+      url
+    }
+    matches {
+      match
+    }
     color
     mapdl
     fight
@@ -17,6 +24,9 @@ query Region($id: ID!) {
       handicap
       faction {
         frontColor
+      }
+      img {
+        url
       }
     }
   }

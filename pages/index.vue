@@ -1,8 +1,7 @@
 <template>
   <div>
     <Timer class="text-center text-white text-2xl p-4"/>
-    <p class="text-center text-white text-2xl p-4">Vous pouvez rejoindre une faction avant le Dimanche 6 Juin !</p>
-    <p class="text-center text-white text-2xl p-4">Après cette date, la GDA passe en mort subite</p>
+    <p class="text-center text-white text-2xl p-4">La GDA passe en mort subite</p>
     <p class="text-center text-white text-2xl p-4">Lorsque vous perdrez la bataille, vous disparaissez de la carte! Le respawn sera donc désactivé !</p>
     <p class="text-center text-white text-2xl p-4">Les mercenaires ne pourront pas être engagé. Seul la prolongation de contrat est autorisé </p>
     <div class="map">

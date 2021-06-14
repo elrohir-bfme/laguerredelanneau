@@ -739,16 +739,12 @@
             <path id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-gobelin" d="M2721.83,2063.37l9.74-18.2,17.58-16.9s4.9-22.77,6.46-24.36,9.51-16.76,9.51-16.76l-9.51-26.29-.45-25.88,10-15.45,19-8.34,9.79,14.22-11.87,14.43-.24,25.21,5.19,30.37-9.59,13.92-9.75,8.58v11.36l-2.56,13.88-9.51,9-9.13,12.95-4.18,9.18-7.36,5.61-10.76-5.61Z"></path>
 
 
-          <!-- <path id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-elfe" d="M2869.84,1791.34c.78-4.25,1.68-8.8,5.13-10.25,4-1.69,10.05,1.46,11.79,5.64,1.37,3.29-1,4.69,0,9.22,1,4.87,4.15,5.11,6.15,10.26,1.13,2.92.92,6,.51,12.3a52.23,52.23,0,0,1-2.56,14.86c-2.34,6.73-4,6.08-5.64,11.79-1.73,6,.05,7-1.54,15.37-.94,4.94-1.56,4.58-3.07,11.28a67.45,67.45,0,0,0-2.05,13.33c-.27,7.23,1.22,8,.51,13.83-.45,3.73-1.23,10.14-5.13,11.79-1.22.52-1.92.22-9.22-1.53-7.69-1.86-8.15-1.82-8.71-2.57-2.32-3.05,2.18-7.74,5.63-19,.32-1,1.42-7,3.59-19,2.55-14,2.78-15.42,3.08-17.42s1.28-8.9,2.05-17.94c.83-9.75,1.24-14.62,1-19C2870.82,1803.16,2868.25,1800.05,2869.84,1791.34Z"></path> -->
+          <path id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-elfe" d="M2869.84,1791.34c.78-4.25,1.68-8.8,5.13-10.25,4-1.69,10.05,1.46,11.79,5.64,1.37,3.29-1,4.69,0,9.22,1,4.87,4.15,5.11,6.15,10.26,1.13,2.92.92,6,.51,12.3a52.23,52.23,0,0,1-2.56,14.86c-2.34,6.73-4,6.08-5.64,11.79-1.73,6,.05,7-1.54,15.37-.94,4.94-1.56,4.58-3.07,11.28a67.45,67.45,0,0,0-2.05,13.33c-.27,7.23,1.22,8,.51,13.83-.45,3.73-1.23,10.14-5.13,11.79-1.22.52-1.92.22-9.22-1.53-7.69-1.86-8.15-1.82-8.71-2.57-2.32-3.05,2.18-7.74,5.63-19,.32-1,1.42-7,3.59-19,2.55-14,2.78-15.42,3.08-17.42s1.28-8.9,2.05-17.94c.83-9.75,1.24-14.62,1-19C2870.82,1803.16,2868.25,1800.05,2869.84,1791.34Z"></path>
 
             <path id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-mordor"  d="M3398.22,2090.17c.38-6.22-2.25-9.82,0-12,3.07-2.9,10.94,1,12.43,1.74,2.94,1.46,9.69,4.82,11.09,11.1,1.19,5.34-2.12,9.92-8.43,18.64-4.7,6.5-6.57,7.41-12.87,15.09-7,8.56-10.53,12.84-12,16.87-3.2,8.86.74,11.71,0,29.73-.39,9.73-.65,14.72-3.55,20.42-3.82,7.53-9.85,11.81-15.09,15.54-11.53,8.19-15.88,6.06-20.41,12.42-5,7-.84,11.15-5.77,19.53-4.08,6.94-10.46,10.12-18.65,14.21-15,7.49-18.66,3.39-26.18,10.2-5.35,4.85-6.1,9.28-14.21,14.65-5.46,3.62-8.38,3.77-10.2,3.55a12.78,12.78,0,0,1-10.21-8.43c-2.3-6.93,3.3-13.57,5.32-16,3.67-4.35,6.84-5.42,19.09-11.1,14-6.47,20.88-10.19,24.85-12.42,12.91-7.25,15.66-10.45,16.87-12,5.24-6.65,3.05-9.27,8-16.42,5.48-7.93,9.3-6.34,19.53-16,6-5.66,11.73-11.06,14.2-19.53,1.55-5.3.07-5.84.45-20.86.27-11.07.41-16.61,2.21-21.3,2-5.3,3.25-4.29,12.88-17.76C3397.39,2096.4,3398.07,2092.65,3398.22,2090.17Z"></path>
 
-            <!-- <path id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-elfe" d="M2211.51,2012.67c3.9-10.35,11.83-9.79,20.73-20.73,7.7-9.48,3.83-12.44,11.52-21.43,7.27-8.49,10.49-5.57,22.35-15.64,10.53-8.94,11.29-14,21.72-19.48,4.91-2.57,10.58-5.42,15.33-2.88,4.39,2.36,6.62,8.6,5.42,13.42-.93,3.74-3.63,5.44-12.77,11.81-5.14,3.58-10.21,7.25-15.33,10.86a223.74,223.74,0,0,0-20.11,16.28c-13,11.43-19.56,17.14-21.4,22-1.44,3.83-2.29,8.55-6.71,13.09a24.15,24.15,0,0,1-8.3,5.43c-2.88,1.13-9,3.55-12.13,1S2210,2016.69,2211.51,2012.67Z"></path> -->
+            <path id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-elfe" d="M2211.51,2012.67c3.9-10.35,11.83-9.79,20.73-20.73,7.7-9.48,3.83-12.44,11.52-21.43,7.27-8.49,10.49-5.57,22.35-15.64,10.53-8.94,11.29-14,21.72-19.48,4.91-2.57,10.58-5.42,15.33-2.88,4.39,2.36,6.62,8.6,5.42,13.42-.93,3.74-3.63,5.44-12.77,11.81-5.14,3.58-10.21,7.25-15.33,10.86a223.74,223.74,0,0,0-20.11,16.28c-13,11.43-19.56,17.14-21.4,22-1.44,3.83-2.29,8.55-6.71,13.09a24.15,24.15,0,0,1-8.3,5.43c-2.88,1.13-9,3.55-12.13,1S2210,2016.69,2211.51,2012.67Z"></path>
             <path id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-elfe-gobelin"  d="M2635.33,1904.24l5.27-8.34,8.73-2.38,2,10.72-2,13.77-3.36,17s-4,9.35-2.44,10.74,3.33,11.38,3.64,13.65-2.05,10.92-3.64,14.72-11.05,13.06-11.05,13.06l-9.18,8.27-10.52,12.68-8.35,8-7,7.35-9.48-7.35,6.61-14.39,12.76-11.19,11.1-15.71,9-10.57,3.66-13V1935l1-15Z"></path>
-
-            <polygon xmlns="http://www.w3.org/2000/svg" id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-elfe" points="2347.38 2082.88 2332.89 2079.95 2338.36 2062.97 2347.38 2049.57 2362.72 2058.49 2385.97 2069.15 2403.94 2080.41 2415.56 2099.2 2434.75 2111.77 2455.7 2116.69 2469.48 2122.84 2466.84 2138.82 2452.95 2148.47 2428.29 2135.13 2403.53 2122.01 2391.64 2108.08 2376.07 2098.53 2359.14 2089.53 2347.38 2082.88"/>
-          
-            <path xmlns="http://www.w3.org/2000/svg" id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-mordor" d="M2592.59,2942.34s12-24.12,10.32-24.12-20.34-7.83-20.34-7.83L2567,2888.87l-25.08-7.82-23.48-21.67-19.56-5.08s-7.52,24.79-5.06,25.44,22.66,23.48,22.66,23.48,23.48,13,25.44,13.69,26.85,18.26,26.85,18.26Z"/>
           </g>
         </g>
 
@@ -6845,18 +6841,18 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         </div>
 
         <div
-          class="flex flex-col items-center justify-center bg-green-500 hover:bg-green-600 text-green-100 p-4 shadow rounded-lg">
-          <div class="inline-flex rounded-full overflow-hidden h-40 w-40">
+          class="flex flex-col items-center justify-center bg-teal-800 hover:bg-teal-900 text-teal-100 p-4 shadow rounded-lg">
+          <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
             <img src="~assets/factions/elfe.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-green-700">Chef de la Faction du Elfe</h2>
+          <h2 class="mt-4 font-bold text-xl text-teal-300">Chef de la Faction du Elfe</h2>
           <h6 class="mt-2 text-xl font-bold underline">{{faction.elfe.chef}}</h6>
 
           <ul class="flex flex-row mt-4 space-x-1">
             <li>
-              <span class="flex rounded-full bg-green-400 uppercase px-2 py-1 text-xs mr-1">{{faction.elfe.capital}}
-                <svg class="ml-2 stroke-current text-green-700 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+              <span class="flex rounded-full bg-teal-700 uppercase px-2 py-1 text-xs mr-1">{{faction.elfe.capital}}
+                <svg class="ml-2 stroke-current text-teal-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -6864,8 +6860,8 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
               </span>
             </li>
             <li>
-              <span class="flex rounded-full bg-green-400 uppercase px-2 py-1 text-xs mr-1">{{faction.elfe.money}}
-                <svg class="ml-2 stroke-current text-green-700 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+              <span class="flex rounded-full bg-teal-700 uppercase px-2 py-1 text-xs mr-1">{{faction.elfe.money}}
+                <svg class="ml-2 stroke-current text-teal-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -6875,9 +6871,9 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           </ul>
           <ul class="flex flex-row mt-4 space-x-1">
             <li>
-              <span class="flex rounded-full bg-green-400 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireElfe}}
+              <span class="flex rounded-full bg-teal-700 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireElfe}}
                 Territoires
-                <svg class="ml-2 stroke-current text-green-700 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-2 stroke-current text-teal-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd"
                     d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
@@ -6885,9 +6881,9 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
               </span>
             </li>
             <li>
-              <span class="flex rounded-full bg-green-400 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerElfe}}
+              <span class="flex rounded-full bg-teal-700 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerElfe}}
                 Joueurs
-                <svg class="ml-2 stroke-current text-green-700 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                <svg class="ml-2 stroke-current text-teal-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -6949,12 +6945,12 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         </div>
 
         <div
-          class="flex flex-col items-center justify-center bg-yellow-500 hover:bg-yellow-600 text-white p-4 shadow rounded-lg">
+          class="flex flex-col items-center justify-center bg-yellow-700 hover:bg-yellow-900 text-yellow-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
             <img src="~assets/factions/naindead.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-yellow-400">Faction Naine Morte</h2>
+          <h2 class="mt-4 font-bold text-xl text-yellow-300">Faction Naine Morte</h2>
           <h6 class="mt-2 text-xl font-bold underline">01/06/2021</h6>
 
           <!-- <h2 class="mt-4 font-bold text-xl text-yellow-300">Chef de la Faction du Nain</h2>
@@ -7115,18 +7111,18 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         </div>
 
         <div
-          class="flex flex-col items-center justify-center bg-yellow-800 hover:bg-yellow-900 text-white p-4 shadow rounded-lg">
+          class="flex flex-col items-center justify-center bg-orange-800 hover:bg-orange-900 text-orange-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
             <img src="~assets/factions/gobelin.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-yellow-300">Chef de la Faction Gobelin</h2>
+          <h2 class="mt-4 font-bold text-xl text-orange-300">Chef de la Faction Gobelin</h2>
           <h6 class="mt-2 text-xl font-bold underline">{{faction.gobelin.chef}}</h6>
 
           <ul class="flex flex-row mt-4 space-x-1">
             <li>
-              <span class="flex rounded-full bg-yellow-700 uppercase px-2 py-1 text-xs mr-1">{{faction.gobelin.capital}}
-                <svg class="ml-2 stroke-current text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+              <span class="flex rounded-full bg-orange-700 uppercase px-2 py-1 text-xs mr-1">{{faction.gobelin.capital}}
+                <svg class="ml-2 stroke-current text-orange-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -7134,8 +7130,8 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
               </span>
             </li>
             <li>
-              <span class="flex rounded-full bg-yellow-700 uppercase px-2 py-1 text-xs mr-1">{{faction.gobelin.money}}
-                <svg class="ml-2 stroke-current text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+              <span class="flex rounded-full bg-orange-700 uppercase px-2 py-1 text-xs mr-1">{{faction.gobelin.money}}
+                <svg class="ml-2 stroke-current text-orange-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -7146,9 +7142,9 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
 
           <ul class="flex flex-row mt-4 space-x-1">
             <li>
-              <span class="flex rounded-full bg-yellow-700 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireGobelin}}
+              <span class="flex rounded-full bg-orange-700 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireGobelin}}
                 Territoires
-                <svg class="ml-2 stroke-current text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-2 stroke-current text-orange-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd"
                     d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
@@ -7156,9 +7152,9 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
               </span>
             </li>
             <li>
-              <span class="flex rounded-full bg-yellow-700 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerGobelin}}
+              <span class="flex rounded-full bg-orange-700 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerGobelin}}
                 Joueurs
-                <svg class="ml-2 stroke-current text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                <svg class="ml-2 stroke-current text-orange-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -7289,6 +7285,15 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
       getInfo(e) {
         this.title = e.target.id;
         this.region = e.target.getAttribute("aria-valuetext");
+        // let node = document.getElementById(e.target.id).getBBox();
+        // console.log(node)
+        // var canvas = document.getElementById("canvas");
+        // var ctx = canvas.getContext("2d");
+        // var image = document.getElementById("source");
+
+        // ctx.drawImage(image, node.x, node.y, 104, 124, 21, 20, 87, 104);
+
+
       },
       toggleModal(e) {
         if(e && e.target.getAttribute("aria-valuetext")) {
@@ -7298,17 +7303,46 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         else {
           this.isShowModal = !this.isShowModal;
         }
-      }
+      },
+      bringToTopofSVG(targetElement){
+        let parent = targetElement.ownerSVGElement;
+        parent.appendChild(targetElement);
+      },
+      // toggleActiveModal() {
+      //   this.toggleActive = !this.toggleActive;
+      // },
+      // getCoordinate(p) {
+      //     var b = p.getBBox();
+      //     let transform= "translate(" + (b.x + b.width/2) + " " + (b.y + b.height/2) + "";
+      //     return transform
+      // }
     },
     async fetch() {
       this.loading = true;
 
-      this.map = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c');
-      this.faction = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c/factions'); //API
+      this.map = await this.$http.$get('https://api.npoint.io/d963c206b91a2e73aed0');
+      this.faction = await this.$http.$get('https://api.npoint.io/d963c206b91a2e73aed0/factions'); //API
         // this.map = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847'); //API
         // this.faction = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847/factions'); //API
       this.loading = false;
 
+      
+      
+      // function addText(p) {
+      //     var t = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      //     var b = p.getBBox();
+      //     t.setAttribute("transform", "translate(" + (b.x + b.width/2) + " " + (b.y + b.height/2) + ")");
+      //     t.textContent = "a";
+      //     t.setAttribute("fill", "red");
+      //     t.setAttribute("font-size", "14");
+      //     p.parentNode.insertBefore(t, p.nextSibling);
+      // }
+
+      // var paths = document.querySelectorAll("path");
+      // for (var p in paths)
+      // {
+      //     addText(paths[p])
+      // }
 
       for (var key in this.map) {
         var obj = this.map[key];

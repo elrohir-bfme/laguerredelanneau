@@ -15,10 +15,6 @@
                 <span class="block md:hidden text-xs lg:text-base">Elfe</span>
             </th>
             <th class="border border-gray-800">
-                <img src="~assets/factions/nain.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
-                <span class="block md:hidden text-xs lg:text-base">Nain</span>
-            </th>
-            <th class="border border-gray-800">
                 <img src="~assets/factions/mordor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Mordor</span>
             </th>
@@ -41,11 +37,8 @@
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
             </td>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
-            </td>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
+            <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
+                ALLIANCE
             </td>
             <tr>
             <td>
@@ -54,43 +47,24 @@
             </td>
             <td/>
             <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
-            </td>
             <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE<br>
-                <span class="text-gray-500">TOUR 16 à la fin du TOUR 18</span>
+                ALLIANCE
             </td>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
             </td>
             </tr>
-            <td>
-                <img src="~assets/factions/nain.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
-                <span class="block md:hidden text-xs lg:text-base">Nain</span>
-            </td>
-            <td/>
-            <td/>
-            <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
-            </td>
-            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
-                EN GUERRE
-            </td>
-            <tr>
+            
             <td>
                 <img src="~assets/factions/mordor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Mordor</span>
             </td>
             <td/>
             <td/>
-            <td/>
             <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
             </td>
-            </tr>
         </tbody>
         </table>
     </div>

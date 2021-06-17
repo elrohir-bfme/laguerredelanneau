@@ -74,19 +74,19 @@ export default {
 
   /* url: 'http://api.laterredumilieu.fr' */
   strapi: {
-    url: process.env.STRAPI || "http://localhost:1337/"
+    url: "http://api.laterredumilieu.fr"
   },
 
   apollo: {  
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.BACKEND_URL || "http://localhost:1337/graphql"
+        httpEndpoint: "http://api.laterredumilieu.fr/graphql"
       }
     }
   },
 
   env: {
-    strapiBaseUri: process.env.STRAPI || "http://localhost:1337"
+    strapiBaseUri: "http://api.laterredumilieu.fr"
   },
 
   /*

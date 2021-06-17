@@ -6845,18 +6845,18 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         </div>
 
         <div
-          class="flex flex-col items-center justify-center bg-green-500 hover:bg-green-600 text-green-100 p-4 shadow rounded-lg">
-          <div class="inline-flex rounded-full overflow-hidden h-40 w-40">
+          class="flex flex-col items-center justify-center bg-teal-800 hover:bg-teal-900 text-teal-100 p-4 shadow rounded-lg">
+          <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
             <img src="~assets/factions/elfe.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-green-700">Chef de la Faction du Elfe</h2>
+          <h2 class="mt-4 font-bold text-xl text-teal-300">Chef de la Faction du Elfe</h2>
           <h6 class="mt-2 text-xl font-bold underline">{{faction.elfe.chef}}</h6>
 
           <ul class="flex flex-row mt-4 space-x-1">
             <li>
-              <span class="flex rounded-full bg-green-400 uppercase px-2 py-1 text-xs mr-1">{{faction.elfe.capital}}
-                <svg class="ml-2 stroke-current text-green-700 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+              <span class="flex rounded-full bg-teal-700 uppercase px-2 py-1 text-xs mr-1">{{faction.elfe.capital}}
+                <svg class="ml-2 stroke-current text-teal-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -6864,8 +6864,8 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
               </span>
             </li>
             <li>
-              <span class="flex rounded-full bg-green-400 uppercase px-2 py-1 text-xs mr-1">{{faction.elfe.money}}
-                <svg class="ml-2 stroke-current text-green-700 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+              <span class="flex rounded-full bg-teal-700 uppercase px-2 py-1 text-xs mr-1">{{faction.elfe.money}}
+                <svg class="ml-2 stroke-current text-teal-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -6875,9 +6875,9 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           </ul>
           <ul class="flex flex-row mt-4 space-x-1">
             <li>
-              <span class="flex rounded-full bg-green-400 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireElfe}}
+              <span class="flex rounded-full bg-teal-700 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireElfe}}
                 Territoires
-                <svg class="ml-2 stroke-current text-green-700 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-2 stroke-current text-teal-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd"
                     d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
@@ -6885,9 +6885,9 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
               </span>
             </li>
             <li>
-              <span class="flex rounded-full bg-green-400 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerElfe}}
+              <span class="flex rounded-full bg-teal-700 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerElfe}}
                 Joueurs
-                <svg class="ml-2 stroke-current text-green-700 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                <svg class="ml-2 stroke-current text-teal-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -6949,12 +6949,12 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         </div>
 
         <div
-          class="flex flex-col items-center justify-center bg-yellow-500 hover:bg-yellow-600 text-white p-4 shadow rounded-lg">
+          class="flex flex-col items-center justify-center bg-yellow-700 hover:bg-yellow-900 text-yellow-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
             <img src="~assets/factions/naindead.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-yellow-400">Faction Naine Morte</h2>
+          <h2 class="mt-4 font-bold text-xl text-yellow-300">Faction Naine Morte</h2>
           <h6 class="mt-2 text-xl font-bold underline">01/06/2021</h6>
 
           <!-- <h2 class="mt-4 font-bold text-xl text-yellow-300">Chef de la Faction du Nain</h2>
@@ -7115,18 +7115,18 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         </div>
 
         <div
-          class="flex flex-col items-center justify-center bg-yellow-800 hover:bg-yellow-900 text-white p-4 shadow rounded-lg">
+          class="flex flex-col items-center justify-center bg-orange-800 hover:bg-orange-900 text-orange-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
             <img src="~assets/factions/gobelin.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-yellow-300">Chef de la Faction Gobelin</h2>
+          <h2 class="mt-4 font-bold text-xl text-orange-300">Chef de la Faction Gobelin</h2>
           <h6 class="mt-2 text-xl font-bold underline">{{faction.gobelin.chef}}</h6>
 
           <ul class="flex flex-row mt-4 space-x-1">
             <li>
-              <span class="flex rounded-full bg-yellow-700 uppercase px-2 py-1 text-xs mr-1">{{faction.gobelin.capital}}
-                <svg class="ml-2 stroke-current text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+              <span class="flex rounded-full bg-orange-700 uppercase px-2 py-1 text-xs mr-1">{{faction.gobelin.capital}}
+                <svg class="ml-2 stroke-current text-orange-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -7134,8 +7134,8 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
               </span>
             </li>
             <li>
-              <span class="flex rounded-full bg-yellow-700 uppercase px-2 py-1 text-xs mr-1">{{faction.gobelin.money}}
-                <svg class="ml-2 stroke-current text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+              <span class="flex rounded-full bg-orange-700 uppercase px-2 py-1 text-xs mr-1">{{faction.gobelin.money}}
+                <svg class="ml-2 stroke-current text-orange-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -7146,9 +7146,9 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
 
           <ul class="flex flex-row mt-4 space-x-1">
             <li>
-              <span class="flex rounded-full bg-yellow-700 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireGobelin}}
+              <span class="flex rounded-full bg-orange-700 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireGobelin}}
                 Territoires
-                <svg class="ml-2 stroke-current text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-2 stroke-current text-orange-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd"
                     d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
@@ -7156,9 +7156,9 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
               </span>
             </li>
             <li>
-              <span class="flex rounded-full bg-yellow-700 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerGobelin}}
+              <span class="flex rounded-full bg-orange-700 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerGobelin}}
                 Joueurs
-                <svg class="ml-2 stroke-current text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                <svg class="ml-2 stroke-current text-orange-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -7289,6 +7289,15 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
       getInfo(e) {
         this.title = e.target.id;
         this.region = e.target.getAttribute("aria-valuetext");
+        // let node = document.getElementById(e.target.id).getBBox();
+        // console.log(node)
+        // var canvas = document.getElementById("canvas");
+        // var ctx = canvas.getContext("2d");
+        // var image = document.getElementById("source");
+
+        // ctx.drawImage(image, node.x, node.y, 104, 124, 21, 20, 87, 104);
+
+
       },
       toggleModal(e) {
         if(e && e.target.getAttribute("aria-valuetext")) {
@@ -7298,7 +7307,19 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         else {
           this.isShowModal = !this.isShowModal;
         }
-      }
+      },
+      bringToTopofSVG(targetElement){
+        let parent = targetElement.ownerSVGElement;
+        parent.appendChild(targetElement);
+      },
+      // toggleActiveModal() {
+      //   this.toggleActive = !this.toggleActive;
+      // },
+      // getCoordinate(p) {
+      //     var b = p.getBBox();
+      //     let transform= "translate(" + (b.x + b.width/2) + " " + (b.y + b.height/2) + "";
+      //     return transform
+      // }
     },
     async fetch() {
       this.loading = true;
@@ -7309,6 +7330,23 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         // this.faction = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847/factions'); //API
       this.loading = false;
 
+      
+      
+      // function addText(p) {
+      //     var t = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      //     var b = p.getBBox();
+      //     t.setAttribute("transform", "translate(" + (b.x + b.width/2) + " " + (b.y + b.height/2) + ")");
+      //     t.textContent = "a";
+      //     t.setAttribute("fill", "red");
+      //     t.setAttribute("font-size", "14");
+      //     p.parentNode.insertBefore(t, p.nextSibling);
+      // }
+
+      // var paths = document.querySelectorAll("path");
+      // for (var p in paths)
+      // {
+      //     addText(paths[p])
+      // }
 
       for (var key in this.map) {
         var obj = this.map[key];

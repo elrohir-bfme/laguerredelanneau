@@ -105,6 +105,7 @@
               <img v-if="player.prisonnier" alt="Prisonnier" class="w-4 h-4 inline-block" src="~assets/chain.svg">
             </span>
           </div>
+          <img v-if="player.flag" alt="Etendard" class="flag relative w-8 h-8" src="~assets/flag.svg">
           </div>
           <div v-else>
           <div v-if="player.faction == 1" class="rounded-lg bg-teal-600 uppercase px-2 py-1 text-xs font-bold mr-3 text-white text-center hover:bg-teal-700">{{updatePlayer(player.name)}} 

@@ -55,7 +55,7 @@ export default {
     '@nuxtjs/robots',
     ["nuxt-social-meta",
       {
-        url: "https://laguerredelanneau.vercel.app/",
+        url: "https://events.laterredumilieu.fr",
         title: "La Guerre de l'Anneau",
         site_name: "La Guerre de l'Anneau",
         description: "Evènement se déroulant sur le jeux : La Bataille pour la Terre du Milieu 2. Vous pouvez rejoindre une faction et combattre au fur est à mesure des tours pour devenir le maitre de la Terre du Milieu",
@@ -74,19 +74,19 @@ export default {
 
   /* url: 'http://api.laterredumilieu.fr' */
   strapi: {
-    url: "http://api.laterredumilieu.fr"
+    url: "https://api.laterredumilieu.fr/"
   },
 
   apollo: {  
     clientConfigs: {
       default: {
-        httpEndpoint: "http://api.laterredumilieu.fr/graphql"
+        httpEndpoint: "https://api.laterredumilieu.fr/graphql"
       }
     }
   },
 
   env: {
-    strapiBaseUri: "http://api.laterredumilieu.fr"
+    strapiBaseUri: "https://api.laterredumilieu.fr"
   },
 
   /*
@@ -96,14 +96,14 @@ export default {
  build: {},
 
   sitemap: {
-    hostname: 'https://laguerredelanneau.vercel.app/',
+    hostname: 'https://events.laterredumilieu.fr',
   },
 
   pwa: {
     meta: {
       /* meta options */
       lang: 'fr',
-      ogHost: 'https://laguerredelanneau.vercel.app/',
+      ogHost: 'https://events.laterredumilieu.fr',
       twitterCard: "La Guerre de l'Anneau",
       twitterCreator: "@Elrohir_bfme",
       theme_color: '#3E7A4A'

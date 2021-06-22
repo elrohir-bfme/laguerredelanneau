@@ -4,7 +4,7 @@
   <div class="px-8 py-4 mx-auto flex flex-wrap">
     <div class="lg:w-full mx-auto">
         <div class="flex flex-wrap -mx-2">
-        <div class="w-1/2">
+        <div class="w-full lg:w-1/2">
           <nuxt-link to="/gda" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-blue-300 border-2 rounded-xl">
             <img alt="gallery" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/map.jpg">
             <div class="text-center relative z-10 w-full">
@@ -23,7 +23,7 @@
             </div>
           </nuxt-link>
         </div>
-        <div class="px-2 w-1/2">
+        <div class="px-2 w-full lg:w-1/2">
           <nuxt-link to="/" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
             <img alt="gallery" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/wotr/bg.jpg">
             <div class="text-center relative z-10 w-full">
@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="flex flex-wrap -mx-2 mt-4">
-        <div class="w-1/2">
+        <div class="w-full lg:w-1/2">
           <nuxt-link to="/arenedarda" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-red-300 border-2 rounded-xl">
             <img alt="gallery" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/wars/bg.jpg">
             <div class="text-center relative z-10 w-full">
@@ -61,7 +61,7 @@
             </div>
           </nuxt-link>
         </div>
-        <div class="px-2 w-1/2">
+        <div class="px-2 w-full lg:w-1/2">
           <nuxt-link to="/third_age" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-green-300 border-2 rounded-xl">
             <img alt="gallery" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/third_age/map.jpg">
             <div class="text-center relative z-10 w-full">

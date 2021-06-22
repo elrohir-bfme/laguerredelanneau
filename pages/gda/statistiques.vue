@@ -160,50 +160,39 @@ export default {
   async fetch() {
       this.loaded = false
       this.players = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c');
-
       for (let key in this.players) {
-
         var obj = this.players[key];
-
         for (let prop in obj) {
           if (!obj.hasOwnProperty(prop)) continue;
-
           switch (obj[prop]) {
             case '#0bff00':
             case '#0BFF00':
               this.nbTerritoireRohan += 1;
               break;
-
             case '#00bfff':
             case '#00BFFF':
               this.nbTerritoireElfe += 1;
               break;
-
             case '#1e90ff':
             case '#1E90FF':
               this.nbTerritoireGondor += 1;
               break;
-
             case '#fffc00':
             case '#FFFC00':
               this.nbTerritoireNain += 1;
               break;
-
             case '#db5461':
             case '#DB5461':
               this.nbTerritoireMordor += 1;
               break;
-
             case '#ffffff':
             case '#FFFFFF':
               this.nbTerritoireIsengard += 1;
               break;
-
             case '#ff6f00':
             case '#FF6F00':
               this.nbTerritoireGobelin += 1;
               break;
-
             case '#c500ff':
             case '#C500FF':
               this.nbTerritoireAngmar += 1;
@@ -215,7 +204,6 @@ export default {
         
         if(obj.hasOwnProperty("players") && obj.players.length > 0) {
             let obj2 = JSON.parse(JSON.stringify(obj['players']))
-
             for (let player in obj2) {
                 let faction = "Mercenaire";
                 let color = "text-white";
@@ -266,7 +254,6 @@ export default {
                         this.nbFactionMercenaire += 1
                     break;
                 }
-
                 let newPlayer = {}
                 if(obj2[player]['lose'] > 0 || obj2[player]['win'] > 0)
                   {
@@ -291,11 +278,8 @@ export default {
                       "region": obj.name
                   }
                 }
-
-
                 this.rows.push(newPlayer);
             }
-
             
         }
       }
@@ -307,9 +291,7 @@ export default {
 </script>
 
 <style scoped>
-
 .bg-lotr {
   background-color: #18191c;
 }
-
 </style>

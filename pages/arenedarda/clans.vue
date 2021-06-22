@@ -15,10 +15,25 @@
                         {{clan.name}}
                     </p>
                     <p class="text-xl text-gray-200 dark:text-gray-200 font-light mb-4">
-                        {{clan.points}}
                         <img  class="inline-block rounded-full w-10" src="~assets/wars/point.jpg">
+                        {{clan.points}} {{clan.points > 0 ? "points" : "point"}}
                     </p>
-                    <p>
+                        <div class="grid grid-cols-3 gap-4 text-white text-center">
+                            <div>
+                                <span class="text-green-500  inline-block">
+                                    BFME 2 1.09
+                                    <img class="inline-block w-8" src="~assets/wars/bfme2.png">
+                                </span>
+                            </div>
+                            <div>
+                            </div>
+                            <div>
+                                <span class="text-blue-500 inline-block">
+                                    ROTWK 2.02
+                                    <img class="inline-block w-8" src="~assets/wars/rotwk.png">
+                                </span>
+                            </div>
+                        </div> 
                         <div class="mx-auto m-2" v-for="player in clan.players" :key="player.name" >
                             <div class="grid grid-cols-3 gap-4 text-white text-center">
                                 <div class="bg-green-600 rounded-lg">
@@ -44,11 +59,9 @@
                                 </div>
                             </div> 
                         </div>
-                    </p>
-
                 </div>
                 <div class="rounded-lg bg-gray-900 dark:bg-white p-2 w-full">
-                      <div class="flex items-center justify-between text-3xs text-white dark:text-white">
+                      <div class="grid grid-cols-3 gap-4 text-white text-center">
                           <p class="flex flex-col">
                               Victoire
                               <span class="text-white dark:text-indigo-500 font-bold">

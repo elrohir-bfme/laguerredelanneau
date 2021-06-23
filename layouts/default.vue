@@ -28,8 +28,32 @@
 </template>
 
 <style>
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+@font-face {
+  font-family: 'LOTR';
+  font-display: swap;
+  src: url('~assets/font/LOTR.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Albertus';
+  font-display: swap;
+  src: url('~assets/font/Albertus.otf') format('truetype');
+}
+
+
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #18191c;
+  font-family: 'Albertus';
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -46,18 +70,6 @@ html {
   box-sizing: border-box;
   margin: 0;
   cursor: url("~assets/cursor1.png"),auto;
-}
-
-@font-face {
-  font-family: 'LOTR';
-  font-display: swap;
-  src: url('~assets/font/LOTR.TTF') format('truetype');
-}
-
-@font-face {
-  font-family: 'Albertus';
-  font-display: swap;
-  src: url('~assets/font/Albertus.otf') format('truetype');
 }
 
 .tooltip .tooltip-text {

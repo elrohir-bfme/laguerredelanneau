@@ -26,6 +26,7 @@ export default {
   ** Global CSS
   */
   css: ['node_modules/lite-youtube-embed/src/lite-yt-embed.css'],
+
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
@@ -56,10 +57,10 @@ export default {
     ["nuxt-social-meta",
       {
         url: "https://events.laterredumilieu.fr",
-        title: "La Guerre de l'Anneau",
-        site_name: "La Guerre de l'Anneau",
-        description: "Evènement se déroulant sur le jeux : La Bataille pour la Terre du Milieu 2. Vous pouvez rejoindre une faction et combattre au fur est à mesure des tours pour devenir le maitre de la Terre du Milieu",
-        img: "/GDA.png",
+        title: "Events de la Terre du Milieu",
+        site_name: "Events de la Terre du Milieu",
+        description: "Retrouvez les évènements de la Terre du Milieu, sur les jeux la Bataille pour la Terre du Milieu mais pas seulement",
+        img: "/eventsltdm.jpg",
         locale: "fr",
         twitter: "@Elrohir_bfme",
         twitter_card: "summary_large_image",
@@ -95,22 +96,29 @@ export default {
   */
  build: {},
 
-  sitemap: {
-    hostname: 'https://events.laterredumilieu.fr',
-  },
+sitemap: {
+  hostname: 'https://events.laterredumilieu.fr',
+  path: '/sitemap.xml',
+  cacheTime: 1000 * 60 * 15, // La durée avant que le sitemap soit regénéré. Ici 15mn.
+  gzip: true,
+},
+
+robots: {
+  Sitemap: 'https://events.laterredumilieu.fr/sitemap.xml',
+},
 
   pwa: {
     meta: {
       /* meta options */
       lang: 'fr',
       ogHost: 'https://events.laterredumilieu.fr',
-      twitterCard: "La Guerre de l'Anneau",
+      twitterCard: "Events de la Terre du Milieu",
       twitterCreator: "@Elrohir_bfme",
       theme_color: '#3E7A4A'
     },
     manifest: {
-      name: "La Guerre de l'Anneau",
-      description : "Evènement se déroulant sur le jeux : La Bataille pour la Terre du Milieu 2. Vous pouvez rejoindre une faction et combattre au fur est à mesure des tours pour devenir le maitre de la Terre du Milieu",
+      name: "Events de la Terre du Milieu",
+      description : "Retrouvez les évènements de la Terre du Milieu, sur les jeux la Bataille pour la Terre du Milieu mais pas seulement",
       lang: 'fr',
       useWebmanifestExtension: false,
     }

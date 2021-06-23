@@ -7244,13 +7244,70 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
 
 <script>
   export default {
-    head: {
-      title: "La Guerre de l'Anneau",
-      meta: [{
-        hid: 'description',
-        name: 'description',
-        content: "Carte de la Guerre de l'Anneau"
-      }],
+    head() {
+    return {
+      title: "La Guerre de l'Anneau ⛰️",
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            "Evènement se déroulant sur le jeux : La Bataille pour la Terre du Milieu 2 : l'Avènement du Roi Sorcier. Vous pouvez rejoindre une faction et combattre au fur est à mesure des tours pour devenir le maitre de la Terre du Milieu",
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:
+            "La Guerre de l'Anneau, GDA, Mordor, Elfe, Nain, Rohan, Gondor, Isengard, Gobelin, Angmar, bfme2, rotwk, elrohir",
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: "La Guerre de l'Anneau ⛰️",
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content:
+            "Evènement se déroulant sur le jeux : La Bataille pour la Terre du Milieu 2 : l'Avènement du Roi Sorcier. Vous pouvez rejoindre une faction et combattre au fur est à mesure des tours pour devenir le maitre de la Terre du Milieu",
+        },
+        {
+          hid: 'twitter:creator',
+          name: 'twitter:creator',
+          content: '@Elrohir_BFME',
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content:
+            'https://events.laterredumilieu.fr/GDA.png',
+        },
+        { hid: 'og:title', name: 'og:title', content: "La Guerre de l'Anneau ⛰️"},
+        { hid: 'og:type', name: 'og:type', content: 'website' },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: 'https://events.laterredumilieu.fr/gda',
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content:
+            'https://events.laterredumilieu.fr/GDA.png',
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content:
+             "Evènement se déroulant sur le jeux : La Bataille pour la Terre du Milieu 2 : l'Avènement du Roi Sorcier. Vous pouvez rejoindre une faction et combattre au fur est à mesure des tours pour devenir le maitre de la Terre du Milieu",
+        },
+      ],
+    }
     },
     data() {
       return {

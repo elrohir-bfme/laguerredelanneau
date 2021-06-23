@@ -19,9 +19,6 @@
                 </a>
             </div>
         </div>
-        
-        
-
     </div>
   <div class="bg-lightblue pt-4 px-4 text-white">
     <div class="mx-auto max-w-6xl flex flex-col md:flex-row">

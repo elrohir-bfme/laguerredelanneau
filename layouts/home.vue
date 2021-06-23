@@ -80,7 +80,6 @@
   src: url('~assets/font/Albertus.otf') format('truetype');
 }
 
-          /* <!-- <nuxt-link style="font-family: 'Albertus'" class="p-4 text-orange-600 hover:text-white hover:bg-gray-900" to="/wotn">GPE</nuxt-link> --> */
 html {
   background-color: #18191c;
   font-family: 'Albertus', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;

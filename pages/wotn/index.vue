@@ -200,7 +200,6 @@
   }
 
   path {
-    cursor: url("~assets/cursor2.png"), pointer;
     stroke-opacity: 1;
     stroke-width: 2;
     fill-opacity: 1;

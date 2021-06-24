@@ -10,7 +10,7 @@
 
         <div class="lg:grid grid-flow-col grid-cols-3 place-items-center">
             <div class="col-span-2">
-                <img class="mx-auto p-4 rounded-xl"  src="~assets/wars/arene.png" alt="Event Arène d'Arda" title="Event Arène d'Arda">
+                <img class="mx-auto p-4 rounded-xl"  src="~assets/wars/arene_opti.jpg" alt="Event Arène d'Arda" title="Event Arène d'Arda">
             </div>
             <div>
                 <a href="http://laterredumilieu.fr/Discord" class="mx-auto rounded-lg block bg-gradient-to-r from-indigo-600 via-indigo-700 to-indigo-900  hover:from-indigo-900 hover:via-indigo-700  hover:to-indigo-600  py-3 px-4 text-lg text-white font-bold uppercase mt-10">

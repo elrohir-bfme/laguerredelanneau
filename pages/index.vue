@@ -1,12 +1,12 @@
 <template>
 <section class="text-gray-400 body-font">
-  <h1 class="text-center text-white text-3xl">Bienvenue sur les évènements de la Terre du Milieu</h1>
+  <h1 class="text-center text-white text-3xl">Bienvenue sur les évènements de la Terre du Milieu 📅</h1>
   <div class="px-8 py-4 mx-auto flex flex-wrap">
     <div class="lg:w-full mx-auto">
         <div class="flex flex-wrap -mx-2">
         <div class="w-full lg:w-1/2">
-          <nuxt-link to="/gda" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-blue-300 border-2 rounded-xl">
-            <img alt="gallery" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/map.jpg">
+          <nuxt-link title="La Guerre de l'Anneau" to="/gda" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-blue-300 border-2 rounded-xl">
+            <img alt="La Guerre de l'Anneau" title="La Guerre de l'Anneau" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/map_opti.jpg">
             <div class="text-center relative z-10 w-full">
               <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-blue-500 group-hover:bg-white inline p-2 rounded">La Guerre de l'Anneau ⛰️</h2>
               <br>
@@ -24,8 +24,8 @@
           </nuxt-link>
         </div>
         <div class="px-2 w-full lg:w-1/2">
-          <nuxt-link to="/" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
-            <img alt="gallery" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/wotr/bg.jpg">
+          <nuxt-link title="La Guerre pour l'Eriador"  to="/" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
+            <img alt="La Guerre pour l'Eriador" title="La Guerre pour l'Eriador" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/wotr/bg_opti.jpg">
             <div class="text-center relative z-10 w-full">
               <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-indigo-500 group-hover:bg-white inline p-2 rounded">La Guerre pour l'Eriador</h2>
               <br>
@@ -43,8 +43,8 @@
       </div>
       <div class="flex flex-wrap -mx-2 mt-4">
         <div class="w-full lg:w-1/2">
-          <nuxt-link to="/arenedarda" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-red-300 border-2 rounded-xl">
-            <img alt="gallery" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/wars/bg.jpg">
+          <nuxt-link title="L'Arène d'Arda"  to="/arenedarda" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-red-300 border-2 rounded-xl">
+            <img alt="Arène d'Arda" title="Arène d'Arda" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/wars/bg_opti.jpg">
             <div class="text-center relative z-10 w-full">
               <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-red-500 group-hover:bg-white inline p-2 rounded">Arène d'Arda ⚔️</h2>
               <br>
@@ -62,8 +62,8 @@
           </nuxt-link>
         </div>
         <div class="px-2 w-full lg:w-1/2">
-          <nuxt-link to="/third_age" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-green-300 border-2 rounded-xl">
-            <img alt="gallery" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/third_age/map.jpg">
+          <nuxt-link title="Third Age Total War"  to="/third_age" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-green-300 border-2 rounded-xl">
+            <img alt="Third Age Total War" title="Third Age Total War" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/third_age/map_opti.jpg">
             <div class="text-center relative z-10 w-full">
               <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-green-500 group-hover:bg-white inline p-2 rounded">Third Age Total War</h2>
               <br>
@@ -89,5 +89,76 @@
 <script>
 export default {
   layout: "home",
+      head() {
+    return {
+      title: "Events de la Terre du Milieu 📅",
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            "Retrouvez les évènements de la Terre du Milieu, comme les Tournois, Guerre de l'Anneau sur les jeux la Bataille pour la Terre du Milieu mais pas seulement",
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:
+            "La Guerre de l'Anneau, Third Age Total War, Elrohir, GDE, Tournoi, GDA, Mordor, Elfe, Nain, Rohan, Gondor, Isengard, Gobelin, Angmar, bfme2, rotwk, elrohir",
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: "Events de la Terre du Milieu 📅",
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content:
+          "Retrouvez les évènements de la Terre du Milieu, comme les Tournois, Guerre de l'Anneau sur les jeux la Bataille pour la Terre du Milieu mais pas seulement",
+        },
+        {
+          hid: 'twitter:creator',
+          name: 'twitter:creator',
+          content: '@Elrohir_BFME',
+        },
+        { name: "twitter:site", content: "@Elrohir_BFME" },
+        {
+          hid: "twitter:url",
+          name: "twitter:url",
+          content: "https://events.laterredumilieu.fr",
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content:
+            'https://events.laterredumilieu.fr/eventsltdm.jpg',
+        },
+        { hid: 'og:title', name: 'og:title', content: "Events de la Terre du Milieu 📅"},
+        { hid: 'og:type', name: 'og:type', content: 'website' },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: 'https://events.laterredumilieu.fr',
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content:
+            'https://events.laterredumilieu.fr/eventsltdm.jpg',
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content:
+             "Retrouvez les évènements de la Terre du Milieu, comme les Tournois, Guerre de l'Anneau sur les jeux la Bataille pour la Terre du Milieu mais pas seulement",
+        },
+      ],
+    }
+    },
 }
 </script>

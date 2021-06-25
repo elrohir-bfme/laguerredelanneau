@@ -1,9 +1,9 @@
 <template>
   <div>
     <Timer class="text-center text-white text-2xl p-4"/>
-    <p class="text-center text-white text-2xl p-4">La GDA passe en mort subite</p>
-    <p class="text-center text-white text-2xl p-4">Lorsque vous perdrez la bataille, vous disparaissez de la carte! Le respawn sera donc désactivé !</p>
-    <p class="text-center text-white text-2xl p-4">Les mercenaires ne pourront pas être engagé. Seul la prolongation de contrat est autorisé </p>
+    <button @click="$fetch" type="button" class="py-2 mb-10 px-4 flex justify-center items-center  bg-gray-600 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-gray-200 text-white mx-auto transition ease-in duration-200 text-center text-base shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+        Cliquer ici pour actualiser la carte si y'a eu des changements sans même recharger la page incroyable non !
+    </button>
     <div class="map">
       <!-- <SvgPanZoom :minZoom=1 :maxZoom=5 :contain=true :panEbnable=false :fit=false> -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5120 4096">
@@ -6791,6 +6791,11 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
 
 
 
+      <p class="text-center text-white text-2xl p-4">La GDA passe en mort subite</p>
+      <p class="text-center text-white text-2xl p-4">Lorsque vous perdrez la bataille, vous disparaissez de la carte! Le respawn sera donc désactivé !</p>
+      <p class="text-center text-white text-2xl p-4">Les mercenaires ne pourront pas être engagé. Seul la prolongation de contrat est autorisé </p>
+    
+
       <br><br>
 
       
@@ -7347,6 +7352,9 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         toggleActive: false
 
       }
+    },
+    watch: {
+        '$route.query': '$fetch'
     },
     methods: {
       getInfo(e) {

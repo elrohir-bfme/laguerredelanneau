@@ -3,6 +3,9 @@
     <p class="text-center text-3xl font-bold text-white">
         Liste des clans de la Terre du Milieu
     </p>
+    <button @click="$fetch" type="button" class="py-2 px-4 flex justify-center items-center  bg-gray-600 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-gray-200 text-white mx-auto transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+        Cliquer pour voir si y'a pas eu des changements dans cette guerre sans même recharger la page incroyable non !
+    </button>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-20">
         <div v-for="clan in clans" :key="clan.id" class="p-4 relative mb-14">
             <div class="text-center mb-4 absolute -top-16 right-1/2 transform translate-x-1/2">
@@ -114,6 +117,9 @@ export default {
       this.loading = true;
       this.clans =  await this.$strapi.find('clans')
       this.loading = false;
+    },
+    watch: {
+        '$route.query': '$fetch'
     },
     methods: {
         test() {

@@ -122,14 +122,19 @@
         <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/852415900526444564/unknown.png" alt="">        
         
                 <div class="mx-auto mt-8 mb-4 w-full">
-        <p class="text-2xl text-center text-gray-200">Tour 23 (21 Juin)</p>
+        <p class="text-2xl text-center text-gray-200">Tour 23 (15 Juin)</p>
         </div>
         <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/854296777175597056/unknown.png" alt="">        
 
         <div class="mx-auto mt-8 mb-4 w-full">
-        <p class="text-2xl text-center text-gray-200">Tour 24 (28 Juin)</p>
+        <p class="text-2xl text-center text-gray-200">Tour 24 (22 Juin)</p>
         </div>
         <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/856802853012504576/unknown.png" alt="">        
+        
+        <div class="mx-auto mt-8 mb-4 w-full">
+        <p class="text-2xl text-center text-gray-200">Tour 25 (29 Juin)</p>
+        </div>
+        <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/859344627068436540/unknown.png" alt="">        
         
         
         

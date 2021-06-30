@@ -27,40 +27,40 @@ export default {
         },
     },
     async fetch() {
-      this.plannings =  await this.$strapi.find('plannings')
+      this.events =  await this.$strapi.find('plannings')
     },
     data: () => ({
-        plannings: [],
-        events: [
-            {
-            start: '2021-06-30 11:30',
-            end: '2021-06-30 12:30',
-            title: 'Need to go shopping',
-            content: '<i class="v-icon material-icons">shopping_cart</i>',
-            class: 'bfme'
-            },
-            {
-            start: '2021-06-15 12:30',
-            end: '2021-06-15 13:30',
-            title: 'Golf with John',
-            content: '<i class="v-icon material-icons">golf_course</i>',
-            class: 'bfme2'
-            },
-            {
-            start: '2021-06-16 14:30',
-            end: '2021-06-17 15:30',
-            title: 'Dad\'s birthday!',
-            content: '<i class="v-icon material-icons">cake</i>',
-            class: 'rotwk'
-            },
-            {
-            start: '2021-06-16 14:30',
-            end: '2021-06-17 15:30',
-            title: 'Dad\'s birthday!',
-            content: '<i class="v-icon material-icons">cake</i>',
-            class: 'bfme'
-            }
-        ]
+        events: [],
+        // events: [
+        //     {
+        //     start: '2021-06-30 11:30',
+        //     end: '2021-06-30 12:30',
+        //     title: 'Need to go shopping',
+        //     content: '<i class="v-icon material-icons">shopping_cart</i>',
+        //     class: 'bfme'
+        //     },
+        //     {
+        //     start: '2021-06-15 12:30',
+        //     end: '2021-06-15 13:30',
+        //     title: 'Golf with John',
+        //     content: '<i class="v-icon material-icons">golf_course</i>',
+        //     class: 'bfme2'
+        //     },
+        //     {
+        //     start: '2021-06-16 14:30',
+        //     end: '2021-06-17 15:30',
+        //     title: 'Dad\'s birthday!',
+        //     content: '<i class="v-icon material-icons">cake</i>',
+        //     class: 'rotwk'
+        //     },
+        //     {
+        //     start: '2021-06-16 14:30',
+        //     end: '2021-06-17 15:30',
+        //     title: 'Dad\'s birthday!',
+        //     content: '<i class="v-icon material-icons">cake</i>',
+        //     class: 'bfme'
+        //     }
+        // ]
     })
 }
 </script>

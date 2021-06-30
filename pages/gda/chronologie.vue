@@ -134,7 +134,7 @@
         <div class="mx-auto mt-8 mb-4 w-full">
         <p class="text-2xl text-center text-gray-200">Tour 25 (29 Juin)</p>
         </div>
-        <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/859344627068436540/unknown.png" alt="">        
+        <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/859362642270093352/unknown.png" alt="">        
         
         
         

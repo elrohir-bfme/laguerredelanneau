@@ -37,8 +37,8 @@
             <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
                 EN GUERRE
             </td>
-            <td class="border border-gray-800 text-center title-font text-green-400 font-bold text-xs lg:text-base">
-                ALLIANCE
+            <td class="border border-gray-800 text-center title-font text-red-600 font-bold text-xs lg:text-base">
+                EN GUERRE
             </td>
             <tr>
             <td>

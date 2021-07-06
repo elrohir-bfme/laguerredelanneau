@@ -15,6 +15,10 @@
                 <img class="flex mx-auto w-12 h-12"  src="~assets/wars/icons/gard.png" alt="gard">
                 Clan
               </nuxt-link>
+              <nuxt-link class="text-2xl  mx-3 p-4 text-teal-400 hover:text-white hover:bg-gray-900 cursor-pointer" to="/arenedarda/epreuves">
+                <img class="flex mx-auto w-12 h-12"  src="~assets/wars/icons/infos.png" alt="épreuves">
+                épreuves
+              </nuxt-link>
               <a class="text-lg uppercase mx-3 p-4 text-white hover:text-gray-300 cursor-pointer" target="_blank" href="http://bit.ly/LaTerreduMilieu">
                 <svg class="h-12 w-12" width="256px" height="293px" viewBox="0 0 256 293" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                     <g>

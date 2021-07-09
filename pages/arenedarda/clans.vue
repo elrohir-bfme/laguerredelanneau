@@ -61,9 +61,9 @@
                                     <p class="mt-2">
                                     {{player.grade202}}
                                     
-                                    <img v-if="player.grade202 == 'general'"  class="w-8 h-4 inline-block" src="~assets/wars/gradeGeneral.svg" title="general" alt="general">
-                                    <img v-if="player.grade202 == 'lieutenant'"  class="w-8 h-4 inline-block" src="~assets/wars/gradeLieutenant.svg" title="lieutenant" alt="lieutenant">  
-                                    <img v-if="player.grade202 == 'soldat'"  class="w-8 h-4 inline-block" src="~assets/wars/gradeSoldat.svg" title="soldat" alt="soldat"> 
+                                    <img v-if="player.grade202 == 'Champion'"  class="w-8 h-4 inline-block" src="~assets/wars/gradeGeneral.svg" title="Champion" alt="Champion">
+                                    <img v-if="player.grade202 == 'Mirmillon'"  class="w-8 h-4 inline-block" src="~assets/wars/gradeLieutenant.svg" title="Mirmillon" alt="Mirmillon">  
+                                    <img v-if="player.grade202 == 'Provotactor'"  class="w-8 h-4 inline-block" src="~assets/wars/gradeSoldat.svg" title="Provotactor" alt="Provotactor"> 
                                     </p> 
                                 </div>
                             </div> 

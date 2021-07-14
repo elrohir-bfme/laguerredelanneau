@@ -8,112 +8,83 @@
             Cliquer pour récupérer le replay
         </p>
     </div>
-    <ul class="flex flex-col">
-        <li class="border-gray-400 flex flex-row mb-2">
-            <div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
-                <div class="flex flex-col w-10 h-10 justify-center items-center mr-4">
-                    <a href="#" class="block relative">
-                        <img alt="profil" src="/images/person/6.jpg" class="mx-auto object-cover rounded-full h-10 w-10 "/>
-                    </a>
-                </div>
-                <div class="flex-1 pl-1 md:mr-16">
-                    <div class="px-2 text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                        Equipe A4
-                    </div>
-                    <div class="px-2 text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
-                        Equipe B
-                    </div>
-                </div>
-                <div class="text-gray-600 dark:text-gray-200 text-xs">
-                    Thème (2vs2)
-                </div>
-                <button class="w-24 text-right flex justify-end">
-                    <svg width="12" fill="currentColor" height="12" class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z">
-                        </path>
-                    </svg>
-                </button>
-            </div>
-        </li>
-        <li class="border-gray-400 flex flex-row mb-2">
-            <div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
-                <div class="flex flex-col w-10 h-10 justify-center items-center mr-4">
-                    <a href="#" class="block relative">
-                        <img alt="profil" src="/images/person/10.jpg" class="mx-auto object-cover rounded-full h-10 w-10 "/>
-                    </a>
-                </div>
-                <div class="flex-1 pl-1 md:mr-16">
-                    <div class="font-medium dark:text-white">
-                        Designer
-                    </div>
-                    <div class="text-gray-600 dark:text-gray-200 text-sm">
-                        Charlie Moi
-                    </div>
-                </div>
-                <div class="text-gray-600 dark:text-gray-200 text-xs">
-                    6:00 AM
-                </div>
-                <button class="w-24 text-right flex justify-end">
-                    <svg width="12" fill="currentColor" height="12" class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z">
-                        </path>
-                    </svg>
-                </button>
-            </div>
-        </li>
-        <li class="border-gray-400 flex flex-row mb-2">
-            <div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
-                <div class="flex flex-col w-10 h-10 justify-center items-center mr-4">
-                    <a href="#" class="block relative">
-                        <img alt="profil" src="/images/person/3.jpg" class="mx-auto object-cover rounded-full h-10 w-10 "/>
-                    </a>
-                </div>
-                <div class="flex-1 pl-1 md:mr-16">
-                    <div class="font-medium dark:text-white">
-                        CEO
-                    </div>
-                    <div class="text-gray-600 dark:text-gray-200 text-sm">
-                        Marine Jeanne
-                    </div>
-                </div>
-                <div class="text-gray-600 dark:text-gray-200 text-xs">
-                    6:00 AM
-                </div>
-                <button class="w-24 text-right flex justify-end">
-                    <svg width="12" fill="currentColor" height="12" class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z">
-                        </path>
-                    </svg>
-                </button>
-            </div>
-        </li>
-        <li class="border-gray-400 flex flex-row mb-2">
-            <div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
-                <div class="flex flex-col w-10 h-10 justify-center items-center mr-4">
-                    <a href="#" class="block relative">
-                        <img alt="profil" src="/images/person/7.jpg" class="mx-auto object-cover rounded-full h-10 w-10 "/>
-                    </a>
-                </div>
-                <div class="flex-1 pl-1 md:mr-16">
-                    <div class="font-medium dark:text-white">
-                        CTO
-                    </div>
-                    <div class="text-gray-600 dark:text-gray-200 text-sm">
-                        Boby PArk
-                    </div>
-                </div>
-                <div class="text-gray-600 dark:text-gray-200 text-xs">
-                    6:00 AM
-                </div>
-                <button class="w-24 text-right flex justify-end">
-                    <svg width="12" fill="currentColor" height="12" class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z">
-                        </path>
-                    </svg>
-                </button>
-            </div>
-        </li>
-    </ul>
+
+    <div class="flex items-center justify-center bg-gray-900 p-4 rounded">
+	<div class="col-span-12">
+		<div class="overflow-auto lg:overflow-visible ">
+			<table class="table text-gray-400 border-separate space-y-6 text-sm">
+				<thead class="bg-gray-800 text-gray-500">
+					<tr>
+						<th class="p-3">Numéro</th>
+						<th class="p-3 text-left">Version</th>
+						<th class="p-3 text-left">Type</th>
+						<th class="p-3 text-left">Equipe</th>
+						<th class="p-3 text-left">Victoire</th>
+						<th class="p-3 text-left">Défaite</th>
+						<th class="p-3 text-left">Replay</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr v-for="(replay, index) in replays" :key="replay.id" class="bg-gray-800">
+                        <td class="p-3 font-bold">
+							#{{index}}
+						</td>
+                        <td class="p-3">
+                            <img v-if="replay.version === 'BFME2'" class="h-8 w-8  object-cover" src="~assets/wars/bfme2.png" alt="unsplash image">
+                            <img v-if="replay.version === 'ROTWK'" class="h-8 w-8  object-cover" src="~assets/wars/rotwk.png" alt="unsplash image">
+							
+						</td>
+						<td class="p-3">
+							<div class="flex align-items-center">
+								<div class="ml-3">
+									<div class="">{{replay.rang}}</div>
+									<div class="text-gray-500">{{replay.type}}</div>
+									<div class="text-gray-500">{{replay.bo}}</div>
+								</div>
+							</div>
+						</td>
+						<td class="p-3">
+                            <div class="flex align-items-center">
+                                <div class="ml-3">
+									<div><span class="bg-green-400 text-gray-50 rounded-md px-2">{{replay.team_victoire}}</span></div>
+									<div class="text-center">VS</div>
+									<div><span class="bg-red-400 text-gray-50 rounded-md px-2">{{replay.team_defaite}}</span></div>
+								</div>
+							</div>
+						</td>
+						
+                        <td class="p-3">
+							<div v-for="player in replay.players_clans_victoire" :key="player.id" class="flex align-items-center">
+								<div class="ml-3">
+									<div class=""><span class="font-bold">{{player.name}} </span>({{player.victory}}/{{player.defeat}})</div>
+								</div>
+							</div>
+						</td>
+
+                        <td class="p-3">
+							<div v-for="player in replay.players_clans_defaite" :key="player.id" class="flex align-items-center">
+								<div class="ml-3">
+									<div class=""><span class="font-bold">{{player.name}} </span>({{player.victory}}/{{player.defeat}})</div>
+								</div>
+							</div>
+						</td>
+						
+						<td class="p-3 ">
+                            <div v-for="(replay, index) in replay.replays" :key="replay.id" class="flex align-items-center">
+								<div class="ml-3">
+                                    <a target="_blank" :href="replay.replay" class="text-gray-400 hover:text-gray-100 mr-2">
+                                        <i class="text-base">Replay {{index}}</i>
+                                    </a>
+                                </div>
+                            </div>
+						</td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
 </div>
 
 
@@ -122,9 +93,40 @@
 <script>
 export default {
   layout: "wars",
+    data() {
+        return {
+        loading: false,
+        replays: []
+        }
+    },
+    async fetch() {
+      this.loading = true;
+      this.replays =  await this.$strapi.find('replays-clans')
+      this.loading = false;
+    },
 }
 </script>
 
 <style>
+	.table {
+		border-spacing: 0 15px;
+	}
 
+	i {
+		font-size: 1rem !important;
+	}
+
+	.table tr {
+		border-radius: 20px;
+	}
+
+	tr td:nth-child(n+7),
+	tr th:nth-child(n+7) {
+		border-radius: 0 .625rem .625rem 0;
+	}
+
+	tr td:nth-child(1),
+	tr th:nth-child(1) {
+		border-radius: .625rem 0 0 .625rem;
+	}
 </style>

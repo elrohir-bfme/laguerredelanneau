@@ -166,6 +166,11 @@
         </div>
         <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/870197776577888256/unknown.png" alt="">        
         
+        <div class="mx-auto mt-8 mb-4 w-full">
+        <p class="text-2xl text-center text-gray-200">Tour 32 (30 Juillet)</p>
+        </div>
+        <img class="mx-auto border-orange-500 border-2"  src="https://cdn.discordapp.com/attachments/766584396429262869/870563312071475221/unknown.png" alt="">        
+        
         
         
         </div>

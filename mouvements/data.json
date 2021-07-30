@@ -49,8 +49,8 @@
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
     },
     "time": {
-        "end": "2021-07-27 00:00:00",
-        "tour": 29,
+        "end": "2021-07-30 00:00:00",
+        "tour": 31,
         "start": "2021-04-13 00:00:00"
     },
     "Erech": {
@@ -504,20 +504,11 @@
         "img": "https://laguerredelanneau.vercel.app/Territories_img/C_Rohan.png",
         "map": 8,
         "name": "Rohan",
-        "color": "#db5461",
+        "color": "#00bfff",
         "fight": "hidden",
         "mapdl": "https://github.com/La-Terre-du-Milieu/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ROHAN/rohan%20wotr.zip",
         "outpost": true,
-        "players": [
-            {
-                "win": 1,
-                "lose": 3,
-                "name": "Nico",
-                "faction": 1,
-                "handicap": 0,
-                "prisonnier": false
-            }
-        ],
+        "players": [],
         "adjacents": [
             "Edoras",
             "Ouestfold",
@@ -1040,7 +1031,16 @@
         "color": "#00bfff",
         "fight": "hidden",
         "mapdl": "https://github.com/La-Terre-du-Milieu/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ROHAN/fords%20of%20isen%20wotr.zip",
-        "players": [],
+        "players": [
+            {
+                "win": 3,
+                "lose": 4,
+                "name": "Bélier",
+                "faction": 1,
+                "handicap": 0,
+                "prisonnier": false
+            }
+        ],
         "adjacents": [
             "Breche_Rohan",
             "Ouestfold",
@@ -1584,15 +1584,6 @@
                 "prisonnier": false
             },
             {
-                "win": 7,
-                "chef": true,
-                "lose": 2,
-                "name": "Grèhelfe",
-                "faction": 1,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
                 "win": 4,
                 "lose": 0,
                 "name": "Bobofff",
@@ -1604,57 +1595,6 @@
                 "win": 3,
                 "lose": 0,
                 "name": "Hoplite",
-                "faction": 5,
-                "handicap": 0,
-                "mercenaire": true,
-                "prisonnier": false
-            },
-            {
-                "win": 3,
-                "lose": 0,
-                "name": "Ninkazy",
-                "faction": 5,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 5,
-                "lose": 0,
-                "name": "Woopwoop",
-                "faction": 5,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "TK",
-                "faction": 5,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 2,
-                "lose": 0,
-                "name": "Aragornanus",
-                "faction": 5,
-                "handicap": 0,
-                "mercenaire": true,
-                "prisonnier": false
-            },
-            {
-                "win": 5,
-                "chef": true,
-                "lose": 1,
-                "name": "qDR",
-                "faction": 5,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 0,
-                "lose": 0,
-                "name": "Avath",
                 "faction": 5,
                 "handicap": 0,
                 "mercenaire": true,
@@ -1717,19 +1657,6 @@
                 "prisonnier": false
             },
             {
-                "win": 7,
-                "flag": true,
-                "lose": 1,
-                "name": "Colleguos",
-                "faction": 1,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "name": "Bélier_Elfe",
-                "faction": 1
-            },
-            {
                 "win": 0,
                 "lose": 0,
                 "name": "Ipodkiller",
@@ -1741,14 +1668,6 @@
                 "win": 4,
                 "lose": 4,
                 "name": "Lolicorne",
-                "faction": 1,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 4,
-                "lose": 1,
-                "name": "brodsio",
                 "faction": 1,
                 "handicap": 0,
                 "prisonnier": false
@@ -2512,7 +2431,7 @@
         "map": 6,
         "name": "Gouffre de Helm",
         "color": "#0bff00",
-        "fight": "hidden",
+        "fight": "inline",
         "mapdl": "https://github.com/La-Terre-du-Milieu/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ROHAN/gouffre%20de%20helm%20wotr.zip",
         "players": [
             {
@@ -2544,6 +2463,137 @@
                 "lose": 0,
                 "name": "Raugorn",
                 "faction": 2,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 1,
+                "lose": 3,
+                "name": "Nico",
+                "faction": 1,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 7,
+                "chef": true,
+                "lose": 2,
+                "name": "Grèhelfe",
+                "faction": 1,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 3,
+                "lose": 0,
+                "name": "Ninkazy",
+                "faction": 5,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 5,
+                "lose": 0,
+                "name": "Woopwoop",
+                "faction": 5,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "TK",
+                "faction": 5,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 2,
+                "lose": 0,
+                "name": "Aragornanus",
+                "faction": 5,
+                "handicap": 0,
+                "mercenaire": true,
+                "prisonnier": false
+            },
+            {
+                "win": 5,
+                "chef": true,
+                "lose": 1,
+                "name": "qDR",
+                "faction": 5,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 0,
+                "lose": 0,
+                "name": "Avath",
+                "faction": 5,
+                "handicap": 0,
+                "mercenaire": true,
+                "prisonnier": false
+            },
+            {
+                "win": 7,
+                "flag": true,
+                "lose": 1,
+                "name": "Colleguos",
+                "faction": 1,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "name": "Bélier_Elfe",
+                "faction": 1
+            },
+            {
+                "win": 4,
+                "lose": 1,
+                "name": "brodsio",
+                "faction": 1,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 10,
+                "lose": 1,
+                "name": "Elrohir",
+                "faction": 1,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 5,
+                "flag": true,
+                "lose": 0,
+                "name": "Toinou",
+                "faction": 1,
+                "handicap": 0,
+                "mercenaire": true,
+                "prisonnier": false
+            },
+            {
+                "win": 4,
+                "lose": 1,
+                "name": "Malodius",
+                "faction": 5,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 4,
+                "lose": 0,
+                "name": "Kaktus",
+                "faction": 5,
+                "handicap": 0,
+                "prisonnier": false
+            },
+            {
+                "win": 6,
+                "lose": 0,
+                "name": "Iamtheliquor",
+                "faction": 5,
                 "handicap": 0,
                 "prisonnier": false
             }
@@ -2628,36 +2678,10 @@
                 "prisonnier": false
             },
             {
-                "win": 10,
-                "lose": 1,
-                "name": "Elrohir",
-                "faction": 1,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 5,
-                "flag": true,
-                "lose": 0,
-                "name": "Toinou",
-                "faction": 1,
-                "handicap": 0,
-                "mercenaire": true,
-                "prisonnier": false
-            },
-            {
                 "win": 4,
                 "lose": 5,
                 "name": "Diablo",
                 "faction": 1,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 4,
-                "lose": 1,
-                "name": "Malodius",
-                "faction": 5,
                 "handicap": 0,
                 "prisonnier": false
             },
@@ -2681,14 +2705,6 @@
                 "win": 6,
                 "lose": 2,
                 "name": "RuSh|_SpiRit",
-                "faction": 5,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 4,
-                "lose": 0,
-                "name": "Kaktus",
                 "faction": 5,
                 "handicap": 0,
                 "prisonnier": false
@@ -2729,14 +2745,6 @@
                 "win": 8,
                 "lose": 0,
                 "name": "Fairy",
-                "faction": 5,
-                "handicap": 0,
-                "prisonnier": false
-            },
-            {
-                "win": 6,
-                "lose": 0,
-                "name": "Iamtheliquor",
                 "faction": 5,
                 "handicap": 0,
                 "prisonnier": false
@@ -3203,16 +3211,7 @@
         "color": "#db5461",
         "fight": "hidden",
         "mapdl": "https://github.com/La-Terre-du-Milieu/ROTWK_MAP_EVENT/raw/master/pack%20de%20map%20r%C3%A9gion%20ROHAN/avancee%20de%20fangorn%20wotr.zip",
-        "players": [
-            {
-                "win": 3,
-                "lose": 4,
-                "name": "Bélier",
-                "faction": 1,
-                "handicap": 0,
-                "prisonnier": false
-            }
-        ],
+        "players": [],
         "adjacents": [
             "Ouestfold",
             "C_Rohan",

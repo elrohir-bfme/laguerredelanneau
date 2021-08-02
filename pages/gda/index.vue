@@ -6653,6 +6653,10 @@
     <Hud class="hidden lg:block" v-if="!loading" :map="map" :region="region" />
     <!-- <Panel v-if="!loading" :map="map" :region="region" /> -->
 
+    <Hud2 class="hidden lg:block" v-if="!loading" :map="map" :region="region" />
+
+
+    
     <ModalMobile class="flex lg:hidden md:hidden mb-4" v-if="!loading" :map="map" :region="regionMobile" />
 
     

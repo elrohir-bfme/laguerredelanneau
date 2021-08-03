@@ -6,9 +6,9 @@
     <div class="z-40 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all" role="dialog"
       aria-modal="true" aria-labelledby="modal-headline">
       <div class="max-w-lg rounded overflow-hidden shadow-lg">
-        <div class="relative">
-          <img v-if="region && !viewMinimap"  @click="changeImg()" class="w-full" :src="region.img">
-          <img v-if="viewMinimap && region.minimap"  @click="changeImg()" class="w-full" :src="`http://localhost:1337${region.minimap.url}`">
+        <div class="relative flex">
+          <img class="w-2/3" :src="region.img">
+          <img class="w-1/3" src="https://cdn.discordapp.com/attachments/646821517107265543/872054737355292672/unknown.png">
           <div v-if="region" style="top: 0.45em; left: 0.45em"
             class="absolute bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-3 rounded-full">
             Map {{region.map}} Joueurs
@@ -18,7 +18,7 @@
           <div class="flex justify-between font-bold text-xl mb-2">
             <div v-if="region">
               <p class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 ml-2 px-4 rounded text-base">
-                {{region.name}} | {{region.matches.length}} parties
+                {{region.name}} | {{region.matches && region.matches.length}} parties
               </p>
             </div>
             <div>

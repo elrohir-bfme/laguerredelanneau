@@ -80,7 +80,7 @@
         :class="`bg-${faction.frontColor}-800 hover:bg-${faction.frontColor}-900 text-${faction.frontColor}-100`"
         class="flex flex-col items-center justify-center p-4 shadow rounded-lg">
         <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-          <img :src="`http://localhost:1337${faction.img.url}`" alt="" class="h-full w-full">
+          <!-- <img :src="`http://api.laterredumilieu.fr${faction.img.url}`" alt="" class="h-full w-full"> -->
         </div>
 
         <h2 :class="`text-${faction.frontColor}-300`" class="mt-4 font-bold text-xl text-green-300">

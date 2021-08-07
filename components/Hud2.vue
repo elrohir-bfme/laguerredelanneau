@@ -29,7 +29,6 @@ export default {
     methods: {
         occurences(arr, val) {
             if(arr === undefined) return 0
-            console.log(arr, val)
             return arr.reduce((a, v) => (v.faction === val ? a + 1 : a), 0)
         },
         colors(value) {

@@ -821,6 +821,72 @@
           <ModalGDE class="hidden lg:flex md:flex" v-if="isShowModal && !loading" @close="toggleModal" :map="map" :region="region" />
 
 
+
+
+   <br><br>
+    <br><br>
+    <br><br>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div v-for="faction in factions" :key="faction.name"
+        :class="`bg-${color(faction.id)}-800 hover:bg-${color(faction.id)}-900 text-${color(faction.id)}-100`"
+        class="flex flex-col items-center justify-center p-4 shadow rounded-lg">
+        <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
+          <!-- <img :src="`http://api.laterredumilieu.fr${faction.img.url}`" alt="" class="h-full w-full"> -->
+        </div>
+
+        <h2 :class="`text-${color(faction.id)}-300`" class="mt-4 font-bold text-xl">
+          Chef de la Faction du {{faction.name}}
+        </h2>
+        <h6 class="mt-2 text-xl font-bold underline">{{faction.chef}}</h6>
+
+        <ul class="flex flex-row mt-4 space-x-1">
+          <li>
+            <span :class="`bg-${color(faction.id)}-700`" class="flex rounded-full uppercase px-2 py-1 text-xs mr-1">
+              {{faction.capital}}
+              <svg :class="`text-${color(faction.id)}-400`" class="ml-2 stroke-current h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
+            </span>
+          </li>
+          <li>
+            <span :class="`bg-${color(faction.id)}-700`"
+              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1">{{faction.money}}
+              <svg :class="`text-${color(faction.id)}-400`" class="ml-2 stroke-current h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+          </li>
+        </ul>
+        <ul class="flex flex-row mt-4 space-x-1">
+          <li>
+            <span :class="`bg-${color(faction.id)}-700`" class="flex rounded-full uppercase px-2 py-1 text-xs mr-1">
+              <!-- {{faction.regions.length}} -->
+              Territoires
+              <svg :class="`text-${color(faction.id)}-400`" class="ml-2 stroke-current h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd"
+                  d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
+                  clipRule="evenodd" /></svg>
+            </span>
+          </li>
+          <li>
+            <span :class="`bg-${color(faction.id)}-700`" class="flex rounded-full uppercase px-2 py-1 text-xs mr-1">
+              <!-- {{faction.players.length}} -->
+              Joueurs
+              <svg :class="`text-${color(faction.id)}-400`" class="ml-2 stroke-current h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg></span>
+          </li>
+        </ul>
+      </div>
+    </div>
       
     </div>
   </div>
@@ -926,7 +992,7 @@ export default {
 
       nbPlayers: 0,
 
-      faction: null,
+      factions: null,
       loading: false,
       regionMobile: "",
 
@@ -962,6 +1028,31 @@ export default {
         this.isShowModal = !this.isShowModal;
       }
     },
+    color(id) {
+      switch (id) {
+        case 1:
+          return "indigo"
+        case 2:
+          return "blue"
+        case 3:
+          return "green"
+        case 4:
+          return "teal"
+        case 5:
+          return "yellow"
+        case 6:
+          return "red"
+        case 7:
+          return "gray"
+        case 8:
+          return "orange"
+        case 9:
+          return "purple"
+        default:
+          return "black"
+          break;
+      }
+    }
   },
   async fetch() {
     this.loading = true;
@@ -969,7 +1060,7 @@ export default {
     this.map = await this.$http.$get(
       "https://api.npoint.io/19d0bb44fe007ec4761b"
     );
-    this.faction = await this.$http.$get(
+    this.factions = await this.$http.$get(
       "https://api.npoint.io/19d0bb44fe007ec4761b/factions"
     ); //API
     this.loading = false;
@@ -1029,7 +1120,7 @@ export default {
       if (obj.hasOwnProperty("players") && obj.players.length > 0) {
         let obj2 = JSON.parse(JSON.stringify(obj["players"]));
         for (var player in obj2) {
-          switch (obj2[player]["faction"]) {
+          switch (obj2[player]["factions"]) {
             case 1:
               this.nbPlayerElfe += 1;
               this.nbPlayers += 1;

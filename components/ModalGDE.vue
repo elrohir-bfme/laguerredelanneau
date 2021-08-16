@@ -7,37 +7,28 @@
       aria-modal="true" aria-labelledby="modal-headline">
       <div class="max-w-lg rounded overflow-hidden shadow-lg">
         <div class="relative flex">
-          <img v-if="map[region]" class="w-2/3" :src="map[region].img">
+          <img v-if="map[region]" :class="map[region].minimap ? 'w-2/3' : 'w-full'" :src="map[region].img">
           <div class="w-1/3">
-            <img class="object-contain" src="https://cdn.discordapp.com/attachments/646821517107265543/872054737355292672/unknown.png">
+            <img v-if="map[region]" class="object-contain" :src="map[region].minimap ? map[region].minimap : 'https://cdn.discordapp.com/attachments/646821517107265543/872054737355292672/unknown.png'">
             <a v-if="map[region] && map[region].mapdl" target="_blank" :href="map[region].mapdl"
-              class="bg-gray-300 hover:bg-gray-400 text-gray-900 font-bold mx-auto py-4 flex text-sm">
+              class="bg-gray-300 hover:bg-gray-400 text-gray-900 font-bold mx-auto py-4 flex text-sm justify-center">
               <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
               <span>Télécharger</span>
             </a>
-          </div>
-          <div v-if="map[region] && map[region]" style="top: 0.45em; left: 0.45em"
-            class="absolute bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-3 rounded-full">
-             Map {{map[region].map}} Joueurs
           </div>
         </div>
         <div class="px-6 py-3">
           <div class="flex justify-between font-bold text-xl mb-2">
             <div v-if="map[region]">
               <p class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 ml-2 px-4 rounded text-base">
-                {{map[region].name}} |  parties
+                {{map[region].name}}
               </p>
             </div>
-            <div>
-              <a v-if="map[region] && map[region].mapdl" target="_blank" :href="map[region].mapdl"
-                class="bg-gray-300 hover:bg-gray-400 text-gray-900 font-bold py-2 ml-2 px-4 rounded inline-flex items-center text-sm">
-                <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                  <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
-                <span>Télécharger la carte</span>
-              </a>
+            <div v-if="map[region] && map[region]"
+              class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-3 rounded-full text-base">
+              Map {{map[region].map}} Joueurs
             </div>
-
           </div>
           <p v-if="map[region]" class="text-gray-700 text-base ">
             {{map[region].description}}
@@ -47,10 +38,10 @@
         <div v-if="map[region] && map[region].players && map[region].players.length > 0" class="border-t border-gray-300 px-6 py-4 flex flex-wrap">
           <div class="mx-auto m-2" v-for="player in map[region].players" :key="player.name">
             <div class="shadow-lg rounded-2xl p-2"
-              :class="`bg-${player.faction.frontColor}-700 hover:bg-${player.faction.frontColor}-800`" >
+              :class="`bg-${color(player.faction)}-700 hover:bg-${color(player.faction)}-800`" >
                 <div class="flex-row gap-4 flex justify-center items-center">
                     <div class="flex-shrink-0">
-                      <img v-if="player.img" alt="profil" src="https://cdn.discordapp.com/attachments/646821517107265543/872054737355292672/unknown.png" 
+                      <img alt="profil" src="https://cdn.discordapp.com/attachments/646821517107265543/872054737355292672/unknown.png" 
                       class="mx-auto object-cover rounded-full h-12 w-12"/>
                     </div>
                     <div class="flex flex-col">
@@ -103,6 +94,19 @@
       changeImg() {
         console.log("kdoekdoeko")
         this.viewMinimap = !this.viewMinimap
+      },
+      color(id) {
+        switch (id) {
+          case 1:
+            return "teal"
+            break;
+          case 5 :
+            return "red"
+            break;
+          default:
+            return "black"
+            break;
+        }
       }
     },
     props: {

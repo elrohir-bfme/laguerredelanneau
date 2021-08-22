@@ -1,9 +1,9 @@
 <template>
   <div>
-    <Timer class="text-center text-white text-2xl p-4"/>
+    <!-- <Timer class="text-center text-white text-2xl p-4"/>
     <button @click="$fetch" type="button" class="py-2 mb-10 px-4 flex justify-center items-center  bg-gray-600 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-gray-200 text-white mx-auto transition ease-in duration-200 text-center text-base shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
         Cliquer ici pour actualiser la carte si y'a eu des changements sans même recharger la page incroyable non !
-    </button>
+    </button> -->
 
 
     <!-- <button @click="convertoimg()" type="button" class="py-2 mb-10 px-4 flex justify-center items-center  bg-gray-600 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-gray-200 text-white mx-auto transition ease-in duration-200 text-center text-base shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
@@ -764,36 +764,6 @@
               d="M758.1,1021c-8.46,4.61-14.1,8-20,10.82-6.12,2.92-9.08,7.53-9.05,14.16a85.94,85.94,0,0,1-5.09,29.31c-4,11.41-11,17.79-23.62,16.85-3.31-.25-6.66.12-10-.06-6.31-.36-11.79,1.17-16.16,6a35.21,35.21,0,0,1-5.95,5.29c-7.22,5.08-14.7,5.74-22.24.65-2.75-1.85-5.3-4-8-5.89-4.81-3.28-9.51-4.44-14.25.44-5,5.14-9.62,2.06-14.38-1.18-.47-1.73-1.54-3.66-1.41-5.52.79-11.87-2.4-22-10.5-31.14-5.94-6.7-3.91-13.55,3.91-17.87,1.73-1,3.55-2.1,5.44-2.37,10.12-1.49,16.89-7.12,21.21-16.19,4.61-9.71,13-15.08,22.77-18.07,10.81-3.31,18.83-9,23.22-19.92,4.26-10.59,13.28-14,24.16-14.13,15.64-.26,28.71,4,37.5,18.1,3.13,5,7.63,9.16,11.19,13.94S753.33,1013.88,758.1,1021Z">
               <title>{{ title }}</title>
             </path>
-            <!-- <path id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-mordor" d="M2721.83,2063.37l9.74-18.2,17.58-16.9s4.9-22.77,6.46-24.36,9.51-16.76,9.51-16.76l-9.51-26.29-.45-25.88,10-15.45,19-8.34,9.79,14.22-11.87,14.43-.24,25.21,5.19,30.37-9.59,13.92-9.75,8.58v11.36l-2.56,13.88-9.51,9-9.13,12.95-4.18,9.18-7.36,5.61-10.76-5.61Z"></path> -->
-
-
-          <!-- <path id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-elfe" d="M2869.84,1791.34c.78-4.25,1.68-8.8,5.13-10.25,4-1.69,10.05,1.46,11.79,5.64,1.37,3.29-1,4.69,0,9.22,1,4.87,4.15,5.11,6.15,10.26,1.13,2.92.92,6,.51,12.3a52.23,52.23,0,0,1-2.56,14.86c-2.34,6.73-4,6.08-5.64,11.79-1.73,6,.05,7-1.54,15.37-.94,4.94-1.56,4.58-3.07,11.28a67.45,67.45,0,0,0-2.05,13.33c-.27,7.23,1.22,8,.51,13.83-.45,3.73-1.23,10.14-5.13,11.79-1.22.52-1.92.22-9.22-1.53-7.69-1.86-8.15-1.82-8.71-2.57-2.32-3.05,2.18-7.74,5.63-19,.32-1,1.42-7,3.59-19,2.55-14,2.78-15.42,3.08-17.42s1.28-8.9,2.05-17.94c.83-9.75,1.24-14.62,1-19C2870.82,1803.16,2868.25,1800.05,2869.84,1791.34Z"></path> -->
-
-
-            <!-- <path id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-elfe" d="M2211.51,2012.67c3.9-10.35,11.83-9.79,20.73-20.73,7.7-9.48,3.83-12.44,11.52-21.43,7.27-8.49,10.49-5.57,22.35-15.64,10.53-8.94,11.29-14,21.72-19.48,4.91-2.57,10.58-5.42,15.33-2.88,4.39,2.36,6.62,8.6,5.42,13.42-.93,3.74-3.63,5.44-12.77,11.81-5.14,3.58-10.21,7.25-15.33,10.86a223.74,223.74,0,0,0-20.11,16.28c-13,11.43-19.56,17.14-21.4,22-1.44,3.83-2.29,8.55-6.71,13.09a24.15,24.15,0,0,1-8.3,5.43c-2.88,1.13-9,3.55-12.13,1S2210,2016.69,2211.51,2012.67Z"></path> -->
-            <!-- <path id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-elfe"  d="M2635.33,1904.24l5.27-8.34,8.73-2.38,2,10.72-2,13.77-3.36,17s-4,9.35-2.44,10.74,3.33,11.38,3.64,13.65-2.05,10.92-3.64,14.72-11.05,13.06-11.05,13.06l-9.18,8.27-10.52,12.68-8.35,8-7,7.35-9.48-7.35,6.61-14.39,12.76-11.19,11.1-15.71,9-10.57,3.66-13V1935l1-15Z"></path> -->
-
-            <!-- <polygon xmlns="http://www.w3.org/2000/svg" id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-elfe" points="2347.38 2082.88 2332.89 2079.95 2338.36 2062.97 2347.38 2049.57 2362.72 2058.49 2385.97 2069.15 2403.94 2080.41 2415.56 2099.2 2434.75 2111.77 2455.7 2116.69 2469.48 2122.84 2466.84 2138.82 2452.95 2148.47 2428.29 2135.13 2403.53 2122.01 2391.64 2108.08 2376.07 2098.53 2359.14 2089.53 2347.38 2082.88"/> -->
-          
-            <!-- <path xmlns="http://www.w3.org/2000/svg" id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-mordor" d="M2592.59,2942.34s12-24.12,10.32-24.12-20.34-7.83-20.34-7.83L2567,2888.87l-25.08-7.82-23.48-21.67-19.56-5.08s-7.52,24.79-5.06,25.44,22.66,23.48,22.66,23.48,23.48,13,25.44,13.69,26.85,18.26,26.85,18.26Z"/> -->
-
-            <!-- <path xmlns="http://www.w3.org/2000/svg" id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-mordor" d="M3226.24,2439l3.72-12.18,18.92,4.22-5.32,16.65-8.59,13.29-15.15,26.27s1,16.14,1.35,17.25,7.78,23.7,7.78,23.7l.34,14.95h-16.91l-8.79-23.61s-5.08-32.25-4.74-33.23,10.82-27.7,12.85-30.07S3226.24,2439,3226.24,2439Z"/> -->
-          
-            <!-- <path xmlns="http://www.w3.org/2000/svg" id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-mordor" d="M2689.14,2463.72s-3.91-9.46-2.27-12.6,14.78-15.9,14.78-15.9,11.6,3.38,11.17,7.26-4.21,13.36-3.14,14.86,10,29,10,29l-2.58,23.45s-8,16.76-7.43,17.91-2.52,15.4-2.52,15.4,1.45,8.29,2.52,12.49-3.75,18.48-3.75,18.48l-8.39,12.78s.94,6.58,1.65,14.17.67,20-.12,21.93-1.74,14.25-4,18.14-8.23,11.74-8.22,16-5.84,18-5.84,18l-6.88,3-8.44-9.82s2.18-21.74,3.26-22.51,10.57-22.8,10.57-22.8l4.25-33.64v-18.51l11.3-31.35s-1.38-22-1.27-23.34-3.72-13.23-3.72-13.23l-3.49-26.2Z"/> -->
-          
-            <!-- <path xmlns="http://www.w3.org/2000/svg" id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-elfe" d="M2560,2770.33l-7.76-10,5.74-8.18h10.78l14.61,9.09,19.54,11.37,15.7,8.19s21.23-2.28,22.7-1.82,15,0,16,1.82-.21,16.37-2.57,16.37-15.89,2.73-18.91,2.73-31.57-2.28-31.57-2.28l-24.21-15Z"/> -->
-
-
-            <polygon xmlns="http://www.w3.org/2000/svg" id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-mordor" points="2842.47 2433.18 2881.76 2413.61 2948.35 2388.95 2992.51 2378.08 3029.94 2367.21 3049.45 2373.3 3045.98 2391.4 3053.56 2410.17 3060.68 2428.29 3056.62 2446.76 3055.6 2464.82 3066.67 2482.76 3061.66 2502.7 3066.67 2534.71 3070.99 2553.84 3061.66 2570.79 3047.44 2586.84 3023.62 2589.3 2997.42 2589.3 2975.99 2589.3 2957.3 2605.93 2921.88 2597.95 2903.45 2593.52 2880.73 2597.95 2863.15 2597.95 2864.19 2575.56 2887.61 2570.79 2913.39 2570.79 2938.65 2575.56 2973.94 2567.91 3002.52 2566.96 3031.47 2564.78 3055.6 2553.84 3052.54 2528.5 3040.88 2508.8 3052.54 2481.98 3045.98 2471.7 3040.88 2455.64 3047.44 2432.17 3035.17 2397.69 3031.47 2381.78 3014.49 2400.22 2993.84 2400.22 2973.15 2407.41 2950.06 2417.66 2919.99 2428.29 2897.27 2434.2 2873.49 2442.93 2852.82 2455.64 2842.47 2433.18"/>
-
-            <polygon xmlns="http://www.w3.org/2000/svg" id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-elfe" points="2828.1 2435.22 2842.47 2466.03 2842.47 2496.45 2835.29 2521.59 2835.29 2552.05 2846.74 2597.95 2865.38 2605.93 2862.72 2567.91 2860.05 2521.62 2872.04 2500.22 2867.38 2466.03 2855.39 2439.94 2828.1 2435.22"/>
-
-            <path xmlns="http://www.w3.org/2000/svg" id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-elfe" d="M2598.31,2410.17h-18.38l7.09,29.77-7,21-12,28.55-10.7,20.71-5.08,29.19s5.26,20.58,5.74,23-9.89,23.34-8.7,26.86,6,23.29,6,23.29l11.17,24.28,28,26.38,26.59,13.47,27.47,7.7,28.24,5.22,1.72-17.6-23.75-7.79-27.7-16.11-22.3-14.54L2580,2620.07l-5.73-25.26v-26.9L2580,2547l-8-12.9,8-22.45,5-19,14-21.72,7.7-19.75-3.85-20.41Z"/>
-
-
-            <path xmlns="http://www.w3.org/2000/svg" id="Mur" title="Mur" aria-valuetext="Mur"  class="mur-mordor" d="M3232.72,2424.8l12.51,5.35-4.12,18.19-8.39,12.46-12,24.52v17.38l6.75,23,9,18.77,18,3.15h17.84l6.86,7.65-3.12,11.25s-17.55-.9-18.89,0-28.79-4.5-28.79-4.5l-18.9-12.6-9-33.36-3.6-30.78,11.7-28.26,13.95-21.84Z"/>
-
-          
           </g>
         </g>
 
@@ -6837,69 +6807,36 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
 
 
 
-      <p class="text-center text-white text-2xl p-4">La GDA passe en mort subite</p>
-      <p class="text-center text-white text-2xl p-4">Lorsque vous perdrez la bataille, vous disparaissez de la carte! Le respawn sera donc désactivé !</p>
-      <p class="text-center text-white text-2xl p-4">Les mercenaires ne pourront pas être engagé. Seul la prolongation de contrat est autorisé </p>
-    
+      <p class="text-center text-white text-2xl p-4">Le Mordor remplace la victoire 🏆</p>
+      <p class="text-center text-white text-2xl p-4">📅 L’Événement avait commencé le 25 Janvier 2021 et se termine aujourd'hui le 21 Août 2021 !</p>
+      <p class="text-center text-white text-2xl p-4">Un grand merci à tout le monde d'avoir participer !</p>
+      <p class="text-center text-white text-2xl p-4">Une vidéo résumé arrivera dans les prochaines semaines pour conclure cette Guerre de l'Anneau ⚔️</p>
+      <p class="text-center text-white text-2xl p-4">On se retrouve bientôt pour l'annonce du prochain grand événement en préparation : la Guerre de l'Eriador ! (Nouvelle Carte, Nouvelles Maps, Nouvelles règles...)</p>
+
+      <img src="~assets/gda/mordor_win.png" alt="" class="h-full w-full">
 
       <br><br>
 
+      
       
 
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4" v-if="!loading">
 
-        <div
-          class="flex flex-col items-center justify-center bg-green-800 hover:bg-green-900 text-green-100 p-4 shadow rounded-lg">
+
+
+                <div
+          class="flex flex-col items-center justify-center bg-red-800 hover:bg-red-900 text-red-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/rohan.png" alt="" class="h-full w-full">
+            <img src="~assets/factions/mordor.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-green-300">Chef de la Faction du Rohan</h2>
-          <h6 v-if="!loading" class="mt-2 text-xl font-bold underline">{{faction.rohan.chef}}</h6>
+          <h2 class="mt-4 font-bold text-xl text-red-300">Mordor</h2>
+          <h6 class="mt-2 text-xl font-bold underline">Première place 🏆 🥇</h6>
 
-          <ul class="flex flex-row mt-4 space-x-1">
-            <li v-if="!loading">
-              <span class="flex rounded-full bg-green-700 uppercase px-2 py-1 text-xs mr-1">{{faction.rohan.capital}}
-                <svg class="ml-2 stroke-current text-green-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              </span>
-            </li>
-            <li v-if="!loading">
-              <span class="flex rounded-full bg-green-700 uppercase px-2 py-1 text-xs mr-1">{{faction.rohan.money}}
-                <svg class="ml-2 stroke-current text-green-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </span>
-            </li>
-          </ul>
-          <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-green-700 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireRohan}}
-                Territoires
-                <svg class="ml-2 stroke-current text-green-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd"
-                    d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
-                    clipRule="evenodd" /></svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-green-700 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerRohan}}
-                Joueurs
-                <svg class="ml-2 stroke-current text-green-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg></span>
-            </li>
-          </ul>
         </div>
+
+        
 
         <div
           class="flex flex-col items-center justify-center bg-teal-800 hover:bg-teal-900 text-teal-100 p-4 shadow rounded-lg">
@@ -6907,328 +6844,65 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
             <img src="~assets/factions/elfe.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-teal-300">Chef de la Faction du Elfe</h2>
-          <h6 class="mt-2 text-xl font-bold underline">{{faction.elfe.chef}}</h6>
+          <h2 class="mt-4 font-bold text-xl text-teal-300">Elfe</h2>
+          <h6 class="mt-2 text-xl font-bold underline">Seconde place 🏆🥈</h6>
 
-          <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-teal-700 uppercase px-2 py-1 text-xs mr-1">{{faction.elfe.capital}}
-                <svg class="ml-2 stroke-current text-teal-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-teal-700 uppercase px-2 py-1 text-xs mr-1">{{faction.elfe.money}}
-                <svg class="ml-2 stroke-current text-teal-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </span>
-            </li>
-          </ul>
-          <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-teal-700 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireElfe}}
-                Territoires
-                <svg class="ml-2 stroke-current text-teal-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd"
-                    d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
-                    clipRule="evenodd" /></svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-teal-700 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerElfe}}
-                Joueurs
-                <svg class="ml-2 stroke-current text-teal-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg></span>
-            </li>
-          </ul>
         </div>
 
         <div
-          class="flex flex-col items-center justify-center bg-blue-600 hover:bg-blue-800 text-blue-100 p-4 shadow rounded-lg">
+          class="flex flex-col items-center justify-center bg-green-800 hover:bg-green-900 text-green-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/gondor_dead.png" alt="" class="h-full w-full">
+            <img src="~assets/factions/rohan.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-blue-300">Faction du Gondor Morte</h2>
-          <h6 class="mt-2 text-xl font-bold underline">04/05/2021</h6>
+          <h2 class="mt-4 font-bold text-xl text-green-300">Rohan</h2>
+          <h6 v-if="!loading" class="mt-2 text-xl font-bold underline">Troisième place 🏆 🥉</h6>
+        </div>
 
-          <!-- <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-blue-700 uppercase px-2 py-1 text-xs mr-1">{{faction.gondor.capital}}
-                <svg class="ml-2 stroke-current text-blue-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-blue-700 uppercase px-2 py-1 text-xs mr-1">{{faction.gondor.money}}
-                <svg class="ml-2 stroke-current text-blue-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </span>
-            </li>
-          </ul>
-          <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-blue-700 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireGondor}}
-                Territoires
-                <svg class="ml-2 stroke-current text-blue-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd"
-                    d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
-                    clipRule="evenodd" /></svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-blue-700 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerGondor}}
-                Joueurs
-                <svg class="ml-2 stroke-current text-blue-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg></span>
-            </li>
-          </ul> -->
+                <div
+          class="flex flex-col items-center justify-center bg-orange-800 hover:bg-orange-900 text-orange-100 p-4 shadow rounded-lg">
+          <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
+            <img src="~assets/factions/gobelin.png" alt="" class="h-full w-full">
+          </div>
+
+          <h2 class="mt-4 font-bold text-xl text-orange-300">Gobelin</h2>
+          <h6 class="mt-2 text-xl font-bold underline">Quatrième place 🏅</h6>
         </div>
 
         <div
           class="flex flex-col items-center justify-center bg-yellow-700 hover:bg-yellow-900 text-yellow-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/naindead.png" alt="" class="h-full w-full">
+            <img src="~assets/factions/nain.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-yellow-300">Faction Naine Morte</h2>
-          <h6 class="mt-2 text-xl font-bold underline">01/06/2021</h6>
-
-          <!-- <h2 class="mt-4 font-bold text-xl text-yellow-300">Chef de la Faction du Nain</h2>
-          <h6 class="mt-2 text-xl font-bold underline">{{faction.nain.chef}}</h6>
-
-          <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-yellow-800 uppercase px-2 py-1 text-xs mr-1">{{faction.nain.capital}}
-                <svg class="ml-2 stroke-current text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-yellow-800 uppercase px-2 py-1 text-xs mr-1">{{faction.nain.money}}
-                <svg class="ml-2 stroke-current text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </span>
-            </li>
-          </ul>
-          <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-yellow-800 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireNain}}
-                Territoires
-                <svg class="ml-2 stroke-current text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd"
-                    d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
-                    clipRule="evenodd" /></svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-yellow-800 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerNain}}
-                Joueurs
-                <svg class="ml-2 stroke-current text-yellow-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg></span>
-            </li>
-          </ul> -->
-        </div>
-      </div>
-
-      <br>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4" v-if="!loading">
-
-        <div
-          class="flex flex-col items-center justify-center bg-red-800 hover:bg-red-900 text-red-100 p-4 shadow rounded-lg">
-          <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/mordor.png" alt="" class="h-full w-full">
-          </div>
-
-          <h2 class="mt-4 font-bold text-xl text-red-300">Chef de la Faction du Mordor</h2>
-          <h6 class="mt-2 text-xl font-bold underline">{{faction.mordor.chef}}</h6>
-
-          <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-red-700 uppercase px-2 py-1 text-xs mr-1">{{faction.mordor.capital}}
-                <svg class="ml-2 stroke-current text-red-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-red-700 uppercase px-2 py-1 text-xs mr-1">{{faction.mordor.money}}
-                <svg class="ml-2 stroke-current text-red-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </span>
-            </li>
-          </ul>
-
-          <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-red-700 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireMordor}}
-                Territoires
-                <svg class="ml-2 stroke-current text-red-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd"
-                    d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
-                    clipRule="evenodd" /></svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-red-700 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerMordor}}
-                Joueurs
-                <svg class="ml-2 stroke-current text-red-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg></span>
-            </li>
-          </ul>
+          <h2 class="mt-4 font-bold text-xl text-yellow-300">Nain</h2>
+          <h6 class="mt-2 text-xl font-bold underline">Cinquième place 🏅</h6>
         </div>
 
         <div
           class="flex flex-col items-center justify-center bg-gray-800 hover:bg-gray-900 text-gray-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/isengard_dead.png" alt="" class="h-full w-full">
+            <img src="~assets/factions/isengard.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-gray-300">Faction d'Isengard Morte</h2>
-          <h6 class="mt-2 text-xl font-bold underline">04/05/2021</h6>
+          <h2 class="mt-4 font-bold text-xl text-gray-300">Isengard</h2>
+          <h6 class="mt-2 text-xl font-bold underline">Sixième place 🏅</h6>
 
-          <!-- <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-xs mr-1">{{faction.isengard.capital}}
-                <svg class="ml-2 stroke-current text-gray-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-xs mr-1">{{faction.isengard.money}}
-                <svg class="ml-2 stroke-current text-gray-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </span>
-            </li>
-          </ul>
-
-          <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireIsengard}}
-                Territoires
-                <svg class="ml-2 stroke-current text-gray-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd"
-                    d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
-                    clipRule="evenodd" /></svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-gray-700 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerIsengard}}
-                Joueurs
-                <svg class="ml-2 stroke-current text-gray-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg></span>
-            </li>
-          </ul> -->
         </div>
+
 
         <div
-          class="flex flex-col items-center justify-center bg-orange-800 hover:bg-orange-900 text-orange-100 p-4 shadow rounded-lg">
+          class="flex flex-col items-center justify-center bg-blue-600 hover:bg-blue-800 text-blue-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/naindead.png" alt="" class="h-full w-full">
+            <img src="~assets/factions/gondor.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-orange-300">Faction Gobeline Morte</h2>
-          <h6 class="mt-2 text-xl font-bold underline">13/07/2021</h6>
-          <!-- <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/gobelin.png" alt="" class="h-full w-full">
-          </div>
+          <h2 class="mt-4 font-bold text-xl text-blue-300">Gondor</h2>
+          <h6 class="mt-2 text-xl font-bold underline">Septième place 🏅</h6>
 
-          <h2 class="mt-4 font-bold text-xl text-orange-300">Chef de la Faction Gobelin</h2>
-          <h6 class="mt-2 text-xl font-bold underline">{{faction.gobelin.chef}}</h6>
-
-          <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-orange-700 uppercase px-2 py-1 text-xs mr-1">{{faction.gobelin.capital}}
-                <svg class="ml-2 stroke-current text-orange-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-orange-700 uppercase px-2 py-1 text-xs mr-1">{{faction.gobelin.money}}
-                <svg class="ml-2 stroke-current text-orange-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </span>
-            </li>
-          </ul>
-
-          <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-orange-700 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireGobelin}}
-                Territoires
-                <svg class="ml-2 stroke-current text-orange-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd"
-                    d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
-                    clipRule="evenodd" /></svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-orange-700 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerGobelin}}
-                Joueurs
-                <svg class="ml-2 stroke-current text-orange-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg></span>
-            </li>
-          </ul> -->
+  
         </div>
+
 
         <div
           class="flex flex-col items-center justify-center bg-purple-700 hover:bg-purple-900 text-purple-100 p-4 shadow rounded-lg">
@@ -7236,58 +6910,23 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
             <img src="~assets/factions/angmar_dead.png" alt="" class="h-full w-full">
           </div>
 
-          <h2 class="mt-4 font-bold text-xl text-purple-300">Faction d'Angmar Morte</h2>
-          <h6 class="mt-2 text-xl font-bold underline">15/03/2021</h6>
-
-          <!-- <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-purple-800 uppercase px-2 py-1 text-xs mr-1">{{faction.angmar.capital}}
-                <svg class="ml-2 stroke-current text-purple-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-purple-800 uppercase px-2 py-1 text-xs mr-1">{{faction.angmar.money}}
-                <svg class="ml-2 stroke-current text-purple-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </span>
-            </li>
-          </ul>
-
-          <ul class="flex flex-row mt-4 space-x-1">
-            <li>
-              <span class="flex rounded-full bg-purple-800 uppercase px-2 py-1 text-xs mr-1">{{nbTerritoireAngmar}}
-                Territoires
-                <svg class="ml-2 stroke-current text-purple-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd"
-                    d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
-                    clipRule="evenodd" /></svg>
-              </span>
-            </li>
-            <li>
-              <span class="flex rounded-full bg-purple-800 uppercase px-2 py-1 text-xs mr-1">{{nbPlayerAngmar}}
-                Joueurs
-                <svg class="ml-2 stroke-current text-purple-400 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg></span>
-            </li>
-          </ul>
-          <ul class="flex flex-row mt-4 space-x-1">
-              <span class="flex rounded-full bg-purple-800 uppercase px-4 py-1 text-xs mr-1">
-                {{faction.angmar.win}}/{{faction.angmar.loose}} ({{Math.round(faction.angmar.win/(faction.angmar.win+faction.angmar.loose)*100)}} % de Victoires)
-              </span>
-          </ul> -->
+          <h2 class="mt-4 font-bold text-xl text-purple-300">Angmar</h2>
+          <h6 class="mt-2 text-xl font-bold underline">Huitième place 🏅</h6>
         </div>
       </div>
+      </div>
+
+
+      <br>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4" v-if="!loading">
+
+
+
+
+
+
+
 
       <br><br>
       <br><br>

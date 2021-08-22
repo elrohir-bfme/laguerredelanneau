@@ -7,15 +7,15 @@
             <tr>
             <th class="border border-gray-800 bg-gray-900 rounded-2xl"></th>
             <th class="border border-gray-800 text-center p-1">
-                <img src="~assets/factions/rohan.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="~assets/gda/factions/rohan.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Rohan</span>
             </th>
             <th class="border border-gray-800">
-                <img src="~assets/factions/elfe.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="~assets/gda/factions/elfe.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Elfe</span>
             </th>
             <th class="border border-gray-800">
-                <img src="~assets/factions/mordor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="~assets/gda/factions/mordor.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Mordor</span>
             </th>
             </tr>
@@ -23,7 +23,7 @@
         <tbody>
             <tr>
             <td>
-                <img src="~assets/factions/rohan.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="~assets/gda/factions/rohan.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Rohan</span>
             </td>
             <td class="border border-gray-800 bg-gray-900 rounded-2xl"/>
@@ -35,7 +35,7 @@
             </td>
             <tr>
             <td>
-                <img src="~assets/factions/elfe.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
+                <img src="~assets/gda/factions/elfe.png" alt="" class="hidden md:block h-16 w-auto mx-auto">
                 <span class="block md:hidden text-xs lg:text-base">Elfe</span>
             </td>
             <td/>

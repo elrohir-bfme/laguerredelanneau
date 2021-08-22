@@ -14,14 +14,14 @@
                   <span class="rounded-full h-6 w-6 flex items-center justify-center bg-gray-800 text-gray-500">{{name}}</span>
                 </div>
                 <div class="flex items-center">
-                  <img v-if="match.win == 1" alt="Rohan" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/factions/rohan.png">
-                  <img v-else-if="match.win == 2" alt="Elfe" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/factions/elfe.png">
-                  <img v-else-if="match.win == 3" alt="Homme" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/factions/gondor.png">
-                  <img v-else-if="match.win == 4" alt="Nain" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/factions/nain.png">
-                  <img v-else-if="match.win == 5" alt="Mordor" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/factions/mordor.png">
-                  <img v-else-if="match.win == 6" alt="Isengard" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/factions/isengard.png">
-                  <img v-else-if="match.win == 7" alt="Gobelin" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/factions/gobelin.png">
-                  <img v-else alt="Angmar" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/factions/angmar.png">
+                  <img v-if="match.win == 1" alt="Rohan" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/gda/factions/rohan.png">
+                  <img v-else-if="match.win == 2" alt="Elfe" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/gda/factions/elfe.png">
+                  <img v-else-if="match.win == 3" alt="Homme" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/gda/factions/gondor.png">
+                  <img v-else-if="match.win == 4" alt="Nain" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/gda/factions/nain.png">
+                  <img v-else-if="match.win == 5" alt="Mordor" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/gda/factions/mordor.png">
+                  <img v-else-if="match.win == 6" alt="Isengard" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/gda/factions/isengard.png">
+                  <img v-else-if="match.win == 7" alt="Gobelin" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/gda/factions/gobelin.png">
+                  <img v-else alt="Angmar" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2" src="~assets/gda/factions/angmar.png">
                   
 
                   <div v-if="match.finish" class="flex-grow">
@@ -49,14 +49,14 @@
                     <p class="text-white title-font font-medium text-center">{{match.map}}</p>
                     <p class="text-gray-600 text-center">CONTRE</p>
                   </div>
-                  <img v-if="match.lose == 1" alt="Rohan" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/factions/rohan.png">
-                  <img v-else-if="match.lose == 2" alt="Elfe" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/factions/elfe.png">
-                  <img v-else-if="match.lose == 3" alt="Homme" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/factions/gondor.png">
-                  <img v-else-if="match.lose == 4" alt="Nain" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/factions/nain.png">
-                  <img v-else-if="match.lose == 5" alt="Mordor" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/factions/mordor.png">
-                  <img v-else-if="match.lose == 6" alt="Isengard" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/factions/isengard.png">
-                  <img v-else-if="match.lose == 7" alt="Gobelin" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/factions/gobelin.png">
-                  <img v-else alt="Angmar" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/factions/angmar.png">
+                  <img v-if="match.lose == 1" alt="Rohan" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/gda/factions/rohan.png">
+                  <img v-else-if="match.lose == 2" alt="Elfe" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/gda/factions/elfe.png">
+                  <img v-else-if="match.lose == 3" alt="Homme" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/gda/factions/gondor.png">
+                  <img v-else-if="match.lose == 4" alt="Nain" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/gda/factions/nain.png">
+                  <img v-else-if="match.lose == 5" alt="Mordor" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/gda/factions/mordor.png">
+                  <img v-else-if="match.lose == 6" alt="Isengard" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/gda/factions/isengard.png">
+                  <img v-else-if="match.lose == 7" alt="Gobelin" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/gda/factions/gobelin.png">
+                  <img v-else alt="Angmar" class="w-12 h-12 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-4" src="~assets/gda/factions/angmar.png">
               </div>
               <div class="text-center mt-6">
                 <a v-if="match.youtube" target="_blank" :href="match.youtube" class="mr-2 border-2 text-lg tracking-wide border-red-500 rounded-lg text-red-600 px-4 py-3 transition duration-300 ease-in-out hover:bg-red-700 hover:text-red-400">

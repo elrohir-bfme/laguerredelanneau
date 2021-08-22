@@ -54,9 +54,9 @@
                                 {{(player.name)}}
                                     <span class="block text-center text-xs font-normal">
                                     
-                                    {{player.victory}} <img alt="Victoire" class="w-8 h-4 inline-block" src="~assets/trophy.svg" title="Victoire">
+                                    {{player.victory}} <img alt="Victoire" class="w-8 h-4 inline-block" src="~assets/svg/trophy.svg" title="Victoire">
                                     
-                                    {{player.defeat}} <img alt="Défaite" class="w-8 h-4 inline-block" src="~assets/skull.svg" title="Défaite">
+                                    {{player.defeat}} <img alt="Défaite" class="w-8 h-4 inline-block" src="~assets/svg/skull.svg" title="Défaite">
                                 
                                     </span>    
                                 </div>

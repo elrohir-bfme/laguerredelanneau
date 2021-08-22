@@ -12,7 +12,7 @@
             <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div class="rounded-lg h-auto w-auto overflow-hidden">
-                <img alt="content" src="~assets/batiments/ecurie.png">
+                <img alt="content" src="~assets/gda/batiments/ecurie.png">
                 </div>
                 <div class="bg-gray-900 mt-4 px-4 pb-4 pt-1 rounded-lg">
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">Ecurie</h2>
@@ -24,7 +24,7 @@ partant de l’écurie qui leur appartient bien.</p>
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div class="rounded-lg h-auto w-auto overflow-hidden">
-                <img alt="content" src="~assets/batiments/comptoir.png">
+                <img alt="content" src="~assets/gda/batiments/comptoir.png">
                 </div>
                 <div class="bg-gray-900 mt-4 px-4 pb-4 pt-1 rounded-lg">
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">Comptoir Commercial</h2>
@@ -35,7 +35,7 @@ partant de l’écurie qui leur appartient bien.</p>
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div class="rounded-lg h-auto w-auto overflow-hidden">
-                <img alt="content" src="~assets/batiments/ferme.png">
+                <img alt="content" src="~assets/gda/batiments/ferme.png">
                 </div>
                 <div class="bg-gray-900 mt-4 px-4 pb-4 pt-1 rounded-lg">
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">Ferme</h2>
@@ -49,7 +49,7 @@ puis, lvl 2, puis lvl 3)</p>
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="~assets/batiments/camp.png">
+                <img alt="content" class="object-cover object-center h-full w-full" src="~assets/gda/batiments/camp.png">
                 </div>
                 <div class="bg-gray-900 mt-4 px-4 pb-4 pt-1 rounded-lg">
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">Camp de Mercenaire</h2>
@@ -64,7 +64,7 @@ A : 1500, B : 1000, C : 650 et D : 300</p>
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div class="rounded-lg h-auto w-auto overflow-hidden">
-                <img alt="content" src="~assets/batiments/prison.jpg">
+                <img alt="content" src="~assets/gda/batiments/prison.jpg">
                 </div>
                 <div class="bg-gray-900 mt-4 px-4 pb-4 pt-1 rounded-lg">
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">La Prison</h2>
@@ -86,7 +86,7 @@ Points sur les prisonniers, emprisonnement pour une durée de 2 tours, et le tou
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div class="rounded-lg h-auto w-auto overflow-hidden">
-                <img alt="content" src="~assets/batiments/maison.png">
+                <img alt="content" src="~assets/gda/batiments/maison.png">
                 </div>
                 <div class="bg-gray-900 mt-4 px-4 pb-4 pt-1 rounded-lg">
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">Lieu de guérison</h2>
@@ -100,7 +100,7 @@ ou au début d’un tour ;</p>
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div class="rounded-lg h-auto w-auto overflow-hidden">
-                <img alt="content" src="~assets/batiments/mur.png">
+                <img alt="content" src="~assets/gda/batiments/mur.png">
                 </div>
                 <div class="bg-gray-900 mt-4 px-4 pb-4 pt-1 rounded-lg">
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">Un Mur</h2>
@@ -110,7 +110,7 @@ ou au début d’un tour ;</p>
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div class="rounded-lg h-auto w-auto overflow-hidden">
-                <img alt="content" src="~assets/batiments/belier.png">
+                <img alt="content" src="~assets/gda/batiments/belier.png">
                 </div>
                 <div class="bg-gray-900 mt-4 px-4 pb-4 pt-1 rounded-lg">
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">Bélier</h2>
@@ -120,7 +120,7 @@ ou au début d’un tour ;</p>
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div class="rounded-lg h-auto w-auto overflow-hidden">
-                <img alt="content" src="~assets/batiments/port.png">
+                <img alt="content" src="~assets/gda/batiments/port.png">
                 </div>
                 <div class="bg-gray-900 mt-4 px-4 pb-4 pt-1 rounded-lg">
                 <h2 class="text-xl font-medium text-indigo-400 mt-5">Port Amélioré</h2>

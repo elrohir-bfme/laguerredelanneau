@@ -6,7 +6,7 @@
         <div class="flex flex-wrap -mx-2">
         <div class="w-full lg:w-1/2">
           <nuxt-link title="La Guerre de l'Anneau" to="/gda" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-blue-300 border-2 rounded-xl">
-            <img alt="La Guerre de l'Anneau" title="La Guerre de l'Anneau" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/map_opti.jpg">
+            <img alt="La Guerre de l'Anneau" title="La Guerre de l'Anneau" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/gda/map_opti.jpg">
             <div class="text-center relative z-10 w-full">
               <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-blue-500 group-hover:bg-white inline p-2 rounded">La Guerre de l'Anneau ⛰️</h2>
               <br>

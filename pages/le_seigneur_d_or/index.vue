@@ -3,7 +3,7 @@
 <ModalSeigneurDor v-if="isShowModal" @close="toggleModal" :region="region"/>
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1440 1060" style="enable-background:new 0 0 1440 1060;" xml:space="preserve">
-   <image style="overflow:visible;" width="1440" height="1060" xlink:href="~assets/laguerredelanneau.png" transform="matrix(1 0 0 1 0 0)"></image>
+   <image style="overflow:visible;" width="1440" height="1060" xlink:href="~assets/seigneur_d_or/laguerredelanneau.png" transform="matrix(1 0 0 1 0 0)"></image>
 <g>
 	<g>
 		<path 
@@ -2530,14 +2530,14 @@
 	<g id="Amon Sul" data-name="010---Swords"><path id="Shape-181" data-name="Shape" d="M506.19,282.65a.88.88,0,0,0-.64-.31l-4-.22a.92.92,0,0,0-.69.26,1,1,0,0,0-.27.69l.22,4a.9.9,0,0,0,.32.63l9.08,7.58,2.38-.88.26-.31.63-2.73Z" class="cls-4"></path><path id="Shape-182" data-name="Shape" d="M516.73,295.3c-2.76,1.2-2.27.95-2.69,1.29l-.57,1.43,2.91,2.43,1.53-.56,1-2Z" class="cls-4"></path><path id="Shape-183" data-name="Shape" d="M522.85,305.66,518.6,302l.54-1.2,1.35-.68,3.64,4.25Z" class="cls-5"></path><path id="Shape-184" data-name="Shape" d="M523,297.58l-6.68,6.69a1.78,1.78,0,0,1-2.51,0c-.37-.37-.35-.35-.38-.4a.47.47,0,0,0,0-.46c0-.07-.55.53,8.63-8.66a.45.45,0,0,1,.63,0l.31.32a1.75,1.75,0,0,1,0,2.51Z" class="cls-6"></path><path id="Shape-185" data-name="Shape" d="M525.83,307.36a1.77,1.77,0,0,1-2.51-2.51,1.77,1.77,0,0,1,2.51,2.51Z" class="cls-6"></path><path id="Shape-186" data-name="Shape" d="M513.47,291.38l-1.65,2-11-11a.86.86,0,0,1,.69-.27l4,.22a.88.88,0,0,1,.64.31Z" class="cls-7"></path><path id="Shape-187" data-name="Shape" d="M518.92,297.92l-1.27,1.27-2.54-2.54,1.62-1.35Z" class="cls-7"></path><path id="Shape-188" data-name="Shape" d="M517.66,299.19h0" class="cls-4"></path><path id="Shape-189" data-name="Shape" d="M525.64,306.29a.88.88,0,0,1-1.25,0,.89.89,0,1,1,1.25,0Z" class="cls-8"></path><path id="Shape-190" data-name="Shape" d="M514.8,296.91l11-9.19a.9.9,0,0,0,.32-.63l.22-4a.92.92,0,0,0-1-1l-4,.22a.89.89,0,0,0-.64.32c-12.19,14.61-8.41,10.09-9.18,11Z" class="cls-9"></path><path id="Shape-191" data-name="Shape" d="M526.35,283.08l-.22,4a.9.9,0,0,1-.32.63l-11,9.19v-3.24l11.28-11.28A.89.89,0,0,1,526.35,283.08Z" class="cls-4"></path><path id="Shape-192" data-name="Shape" d="M502.8,304.39l3.64-4.25,1.19.74.7,1.14-4.25,3.64Z" class="cls-5"></path><path id="Shape-193" data-name="Shape" d="M503.62,307.36a1.78,1.78,0,0,1-2.52-2.51,1.78,1.78,0,0,1,2.52,2.51Z" class="cls-6"></path><path id="Shape-194" data-name="Shape" d="M503.43,306.29a.88.88,0,0,1-1.25,0,.89.89,0,1,1,1.25,0Z" class="cls-8"></path><path id="Shape-195" data-name="Shape" d="M514.8,293.67v3.24l-4.25,3.54-2-.56-.57-2,3.55-4.25Z" class="cls-6"></path><path id="Shape-196" data-name="Shape" d="M509.27,299.64a.44.44,0,0,1-.31-.76l2.82-2.82a.45.45,0,0,1,0-.63c.54-.54,1.3.58.63,1.25l-2.82,2.83a.48.48,0,0,1-.32.13Z" class="cls-10"></path><path id="Shape-197" data-name="Shape" d="M512.73,296.81a.42.42,0,0,1-.32-.13.44.44,0,0,1-.43.13.43.43,0,0,1-.32-.32.45.45,0,0,1,.12-.43.91.91,0,0,1,1.26,0,.43.43,0,0,1,.1.48A.43.43,0,0,1,512.73,296.81Z" class="cls-10"></path><path id="Shape-198" data-name="Shape" d="M513.47,303.87l-.39.4a1.78,1.78,0,0,1-2.51,0l-6.68-6.69a1.78,1.78,0,0,1,0-2.51l.31-.31a.45.45,0,0,1,.32-.14.43.43,0,0,1,.31.14l8.57,8.57a.45.45,0,0,1,.07.54Z" class="cls-8"></path></g> -->
 
 
-	<!-- <image width="128" height="127" transform="translate(964.45 159.94) scale(0.21)" xlink:href="~assets/factions/nain.png"></image> -->
-	<!-- <image width="116" height="116" transform="translate(1141.75 588.15) scale(0.23)" xlink:href="~assets/factions/mordor.png"></image> -->
-	<!-- <image width="128" height="127" transform="translate(670.98 600.82) scale(0.2)" xlink:href="~assets/factions/rohan.png"></image> -->
-	<!-- <image width="128" height="127" transform="translate(605.7 480.55) scale(0.15)" xlink:href="~assets/factions/isengard.png"></image> -->
-	<!-- <image width="128" height="127" transform="translate(854.48 674.75) scale(0.25)" xlink:href="~assets/factions/gondor.png"></image> -->
-	<!-- <image width="128" height="127" transform="translate(630.76 410.24) scale(0.2)" xlink:href="~assets/factions/gobelin.png"></image> -->
-	<!-- <image width="128" height="127" transform="translate(670.48 270.89) scale(0.31)" xlink:href="~assets/factions/elfe.png"></image> -->
-	<!-- <image width="128" height="127" transform="translate(537.09 69.75) scale(0.26)" xlink:href="~assets/factions/angmar.png"></image> -->
+	<!-- <image width="128" height="127" transform="translate(964.45 159.94) scale(0.21)" xlink:href="~assets/gda/factions/nain.png"></image> -->
+	<!-- <image width="116" height="116" transform="translate(1141.75 588.15) scale(0.23)" xlink:href="~assets/gda/factions/mordor.png"></image> -->
+	<!-- <image width="128" height="127" transform="translate(670.98 600.82) scale(0.2)" xlink:href="~assets/gda/factions/rohan.png"></image> -->
+	<!-- <image width="128" height="127" transform="translate(605.7 480.55) scale(0.15)" xlink:href="~assets/gda/factions/isengard.png"></image> -->
+	<!-- <image width="128" height="127" transform="translate(854.48 674.75) scale(0.25)" xlink:href="~assets/gda/factions/gondor.png"></image> -->
+	<!-- <image width="128" height="127" transform="translate(630.76 410.24) scale(0.2)" xlink:href="~assets/gda/factions/gobelin.png"></image> -->
+	<!-- <image width="128" height="127" transform="translate(670.48 270.89) scale(0.31)" xlink:href="~assets/gda/factions/elfe.png"></image> -->
+	<!-- <image width="128" height="127" transform="translate(537.09 69.75) scale(0.26)" xlink:href="~assets/gda/factions/angmar.png"></image> -->
 
 </svg>
 <div class="text-center py-4 px-4">
@@ -2612,7 +2612,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 
 			<div class="flex flex-col items-center justify-center bg-teal-800 hover:bg-teal-900 text-teal-100 p-4 shadow rounded-lg">
 				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-					<img src="~assets/factions/elfe.png"
+					<img src="~assets/gda/factions/elfe.png"
 						 alt=""
 						 class="h-full w-full">
 				</div>
@@ -2638,7 +2638,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 
 			<div class="flex flex-col items-center justify-center bg-blue-600 hover:bg-blue-700 text-blue-100 p-4 shadow rounded-lg">
 				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-					<img src="~assets/factions/gondor.png"
+					<img src="~assets/gda/factions/gondor.png"
 						 alt=""
 						 class="h-full w-full">
 				</div>
@@ -2663,7 +2663,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 
 			<div class="flex flex-col items-center justify-center bg-yellow-700 hover:bg-yellow-900 text-yellow-100 p-4 shadow rounded-lg">
 				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-					<img src="~assets/factions/nain.png"
+					<img src="~assets/gda/factions/nain.png"
 						 alt=""
 						 class="h-full w-full">
 				</div>
@@ -2693,7 +2693,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 
 			<div class="flex flex-col items-center justify-center bg-red-800 hover:bg-red-900 text-red-100 p-4 shadow rounded-lg">
 				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-					<img src="~assets/factions/mordor.png"
+					<img src="~assets/gda/factions/mordor.png"
 						 alt=""
 						 class="h-full w-full">
 				</div>
@@ -2719,7 +2719,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 
 			<div class="flex flex-col items-center justify-center bg-gray-800 hover:bg-gray-900 text-gray-100 p-4 shadow rounded-lg">
 				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-					<img src="~assets/factions/isengard.png"
+					<img src="~assets/gda/factions/isengard.png"
 						 alt=""
 						 class="h-full w-full">
 				</div>
@@ -2745,7 +2745,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 
 			<div class="flex flex-col items-center justify-center bg-orange-800 hover:bg-orange-900 text-orange-100 p-4 shadow rounded-lg">
 				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-					<img src="~assets/factions/gobelin.png"
+					<img src="~assets/gda/factions/gobelin.png"
 						 alt=""
 						 class="h-full w-full">
 				</div>
@@ -2770,7 +2770,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z"/>
 
 			<div class="flex flex-col items-center justify-center bg-purple-700 hover:bg-purple-900 text-purple-100 p-4 shadow rounded-lg">
 				<div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-					<img src="~assets/factions/angmar.png"
+					<img src="~assets/gda/factions/angmar.png"
 						 alt=""
 						 class="h-full w-full">
 				</div>

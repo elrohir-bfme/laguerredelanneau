@@ -17,7 +17,7 @@
           <stop offset="50%" stop-color="#dd6f15" />
         </linearGradient>
       </defs>
-        <image width="5120" height="4096" xlink:href="~assets/map.jpg" transform="matrix(1 0 0 1 0 0)"></image>
+        <image width="5120" height="4096" xlink:href="~assets/gda/map.jpg" transform="matrix(1 0 0 1 0 0)"></image>
         <g id="Calque_2" data-name="Calque 2">
           <g id="Calque_1-2" data-name="Calque 1">
             <path id="Nord" title="Nord" class="st opacity-0" aria-valuetext="Inconnu" @mouseover="getInfo"
@@ -5863,21 +5863,21 @@
         </g>
 
         <image width="119" height="119" transform="translate(2481 2318.86) scale(0.65)"
-          xlink:href="~assets/factions/isengard2.png" />
+          xlink:href="~assets/gda/factions/isengard2.png" />
         <image width="128" height="127" transform="translate(1255.53 1565.22) scale(0.6)"
-          xlink:href="~assets/factions/elfe.png" />
+          xlink:href="~assets/gda/factions/elfe.png" />
         <image width="121" height="119" transform="translate(3317.52 2921.86) scale(0.67)"
-          xlink:href="~assets/factions/gondor2.png" />
+          xlink:href="~assets/gda/factions/gondor2.png" />
         <image width="119" height="119" transform="translate(2789.84 2710.54) scale(0.75)"
-          xlink:href="~assets/factions/rohan2.png" />
+          xlink:href="~assets/gda/factions/rohan2.png" />
         <image width="119" height="119" transform="translate(4249.62 2640.2) scale(0.6)"
-          xlink:href="~assets/factions/mordor2.png" />
+          xlink:href="~assets/gda/factions/mordor2.png" />
         <image width="119" height="119" transform="translate(3648.13 1258.09) scale(0.75)"
-          xlink:href="~assets/factions/nain2.png" />
+          xlink:href="~assets/gda/factions/nain2.png" />
         <image width="128" height="127" transform="translate(2538.59 2099.27) scale(0.5)"
-          xlink:href="~assets/factions/gobelin.png" />
+          xlink:href="~assets/gda/factions/gobelin.png" />
         <image width="128" height="127" transform="translate(2110.23 975.03) scale(0.50)"
-          xlink:href="~assets/factions/angmar.png" />
+          xlink:href="~assets/gda/factions/angmar.png" />
 
         <circle cx="3825.3" cy="2905.89" r="33.73" class="fill-current text-gray-900"></circle>
         <path class="fill-current text-white"
@@ -6809,7 +6809,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         <div
           class="flex flex-col items-center justify-center bg-green-800 hover:bg-green-900 text-green-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/rohan.png" alt="" class="h-full w-full">
+            <img src="~assets/gda/factions/rohan.png" alt="" class="h-full w-full">
           </div>
 
           <h2 class="mt-4 font-bold text-xl text-green-300">Chef de la Faction du Rohan</h2>
@@ -6861,7 +6861,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         <div
           class="flex flex-col items-center justify-center bg-teal-800 hover:bg-teal-900 text-teal-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/elfe.png" alt="" class="h-full w-full">
+            <img src="~assets/gda/factions/elfe.png" alt="" class="h-full w-full">
           </div>
 
           <h2 class="mt-4 font-bold text-xl text-teal-300">Chef de la Faction du Elfe</h2>
@@ -6913,7 +6913,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         <div
           class="flex flex-col items-center justify-center bg-blue-600 hover:bg-blue-800 text-blue-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/gondor_dead.png" alt="" class="h-full w-full">
+            <img src="~assets/gda/factions/gondor_dead.png" alt="" class="h-full w-full">
           </div>
 
           <h2 class="mt-4 font-bold text-xl text-blue-300">Faction du Gondor Morte</h2>
@@ -6965,7 +6965,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         <div
           class="flex flex-col items-center justify-center bg-yellow-700 hover:bg-yellow-900 text-yellow-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/naindead.png" alt="" class="h-full w-full">
+            <img src="~assets/gda/factions/naindead.png" alt="" class="h-full w-full">
           </div>
 
           <h2 class="mt-4 font-bold text-xl text-yellow-300">Faction Naine Morte</h2>
@@ -7025,7 +7025,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         <div
           class="flex flex-col items-center justify-center bg-red-800 hover:bg-red-900 text-red-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/mordor.png" alt="" class="h-full w-full">
+            <img src="~assets/gda/factions/mordor.png" alt="" class="h-full w-full">
           </div>
 
           <h2 class="mt-4 font-bold text-xl text-red-300">Chef de la Faction du Mordor</h2>
@@ -7078,7 +7078,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         <div
           class="flex flex-col items-center justify-center bg-gray-800 hover:bg-gray-900 text-gray-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/isengard_dead.png" alt="" class="h-full w-full">
+            <img src="~assets/gda/factions/isengard_dead.png" alt="" class="h-full w-full">
           </div>
 
           <h2 class="mt-4 font-bold text-xl text-gray-300">Faction d'Isengard Morte</h2>
@@ -7131,13 +7131,13 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         <div
           class="flex flex-col items-center justify-center bg-orange-800 hover:bg-orange-900 text-orange-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/naindead.png" alt="" class="h-full w-full">
+            <img src="~assets/gda/factions/naindead.png" alt="" class="h-full w-full">
           </div>
 
           <h2 class="mt-4 font-bold text-xl text-orange-300">Faction Gobeline Morte</h2>
           <h6 class="mt-2 text-xl font-bold underline">13/07/2021</h6>
           <!-- <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/gobelin.png" alt="" class="h-full w-full">
+            <img src="~assets/gda/factions/gobelin.png" alt="" class="h-full w-full">
           </div>
 
           <h2 class="mt-4 font-bold text-xl text-orange-300">Chef de la Faction Gobelin</h2>
@@ -7190,7 +7190,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
         <div
           class="flex flex-col items-center justify-center bg-purple-700 hover:bg-purple-900 text-purple-100 p-4 shadow rounded-lg">
           <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-            <img src="~assets/factions/angmar_dead.png" alt="" class="h-full w-full">
+            <img src="~assets/gda/factions/angmar_dead.png" alt="" class="h-full w-full">
           </div>
 
           <h2 class="mt-4 font-bold text-xl text-purple-300">Faction d'Angmar Morte</h2>

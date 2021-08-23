@@ -68,6 +68,7 @@ export default {
         site_name: "Events de la Terre du Milieu",
         description: "Retrouvez les évènements de la Terre du Milieu, sur les jeux la Bataille pour la Terre du Milieu mais pas seulement",
         img: "/eventsltdm.jpg",
+        img_size: { width: "1200", height: "800" },
         locale: "fr",
         twitter: "@Elrohir_bfme",
         twitter_card: "summary_large_image",

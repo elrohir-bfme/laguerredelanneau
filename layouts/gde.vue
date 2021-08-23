@@ -10,12 +10,25 @@
           <nuxt-link class="p-4 text-blue-400 hover:text-white hover:bg-gray-900" to="/wotn/regles">Règles</nuxt-link>
           <nuxt-link class="p-4 text-green-400 hover:text-white hover:bg-gray-900" to="/wotn/videos">Vidéos</nuxt-link>
           <a class="p-4 hover:text-white hover:bg-gray-900" target="_blank" href="http://bit.ly/LaTerreduMilieu">Discord</a>
+          <span v-if="$strapi.user !== null" class="p-4 hover:text-white hover:bg-gray-900">{{ $strapi.user.username }}</span>
+          <button v-if="$strapi.user !== null" @click="logout" class="p-4 hover:text-white hover:bg-gray-900">Déconnection</button>
         </nav>
       </div>
     </header>
     <Nuxt />
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    async logout() {
+      await this.$strapi.logout()
+      this.$nuxt.$router.push('/gde/login')
+    },
+  },
+}
+</script>
 
 <style>
 

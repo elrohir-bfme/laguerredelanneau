@@ -71,17 +71,12 @@
                             </td>
                             <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                 <span class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                    <select class="block w-52 text-gray-700 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500" name="animals">
-                                      <option v-for="region in regions" :key="region.id" :value="region.name">
+                                    <select @change="switchSelect($event, player.id)" class="block w-52 text-gray-700 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500" name="animals">
+                                      <option v-for="region in regions" :key="region.id" :value="region.id">
                                           {{region.name}}
                                       </option>
                                   </select>
                                 </span>
-                            </td>
-                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                              <button type="button" class="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                                    Valider
-                              </button>
                             </td>
                         </tr>
                         
@@ -127,6 +122,15 @@ export default {
     }
   },
   methods: {
+    async switchSelect(event, idPlayer) {
+      console.log(event.target.value, idPlayer);
+      const update = await this.$strapi.update('players', '609af82a99bd792090fafa29', { region: event.target.value }) //Region 
+
+      if(update) {
+        this.data = this.data.map(player => player.id === idPlayer ? update : player);
+      }
+      console.log(update)
+    },
     readPost(article) {
       if (this.$strapi.user) {
         this.error = ''

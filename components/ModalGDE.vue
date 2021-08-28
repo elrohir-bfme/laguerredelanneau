@@ -21,7 +21,7 @@
         <div class="px-6 py-3">
           <div class="flex justify-between font-bold text-xl mb-2">
             <div v-if="map[region]">
-              <p class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 ml-2 px-4 rounded text-base">
+              <p @click="copyId()" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 ml-2 px-4 rounded text-base">
                 {{map[region].name}}
               </p>
             </div>
@@ -33,6 +33,21 @@
           <p v-if="map[region]" class="text-gray-700 text-base ">
             {{map[region].description}}
           </p>
+        </div>
+
+        <div v-if="map[region] && map[region].adjacents && map[region].adjacents.length > 0" >
+          <div>
+            <div>
+              <button class="mb-1 p-4 mx-auto bg-indigo-500 hover:bg-indigo-600 no-underline text-white flex justify-between rounded" @click.prevent="active = !active">
+                <strong>adjacent   </strong>
+                <span class="text-gray-200" v-show="!active">&#10133;</span>
+                <span class="text-gray-200" v-show="active">&#10134;</span>
+              </button>
+            </div>
+            <div class="p-2 text-center" v-show="active" v-for="adjacent in map[region].adjacents" :key="adjacent"><slot />
+             <button @click="ActionAdjacent()">{{ map[adjacent].name }}</button> 
+            </div>            
+          </div>
         </div>
 
         <div v-if="map[region] && map[region].players && map[region].players.length > 0" class="border-t border-gray-300 px-6 py-4 flex flex-wrap">
@@ -73,7 +88,8 @@
   export default {
     data() {
       return {
-        data: []
+        data: [],
+        active: false
       }
     },
     methods: {
@@ -85,11 +101,18 @@
       },
       updatePlayer(name){
         return name.replace(/_/g, " ");
+      },
+      ActionAdjacent() {
+        console.log("value")
+        // this.$emit('update-info', value);
       }
     },
     methods: {
       handleClose() {
         this.$emit("close");
+      },
+      copyId() {
+        navigator.clipboard.writeText(this.region)
       },
       changeImg() {
         console.log("kdoekdoeko")
@@ -117,7 +140,7 @@
       region: {
           type: String,
           required: true
-      },
+      }
     }
   }
 

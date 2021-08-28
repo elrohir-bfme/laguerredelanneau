@@ -109,6 +109,11 @@
 <script>
 export default {
   layout: "gde",
+  middleware({ $strapi, redirect }) {
+    if (!$strapi.user) {
+      redirect('/gde/login')
+    }
+  },
   async asyncData({ $strapi }) {
     console.log($strapi.user)
     const faction = await $strapi.find('factions', { id: $strapi.user.faction })

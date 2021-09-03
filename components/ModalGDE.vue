@@ -8,8 +8,8 @@
       <div class="max-w-lg rounded overflow-hidden shadow-lg">
         <div class="relative flex">
           <img v-if="map[region]" :class="map[region].minimap ? 'w-2/3' : 'w-full'" :src="map[region].img">
-          <div class="w-1/3">
-            <img v-if="map[region]" class="object-contain" :src="map[region].minimap ? map[region].minimap : 'https://cdn.discordapp.com/attachments/646821517107265543/872054737355292672/unknown.png'">
+          <div v-if="map[region] && map[region].minimap" class="w-1/3">
+            <img v-if="map[region]" class="object-contain" :src="map[region].minimap && map[region].minimap">
             <a v-if="map[region] && map[region].mapdl" target="_blank" :href="map[region].mapdl"
               class="bg-gray-300 hover:bg-gray-400 text-gray-900 font-bold mx-auto py-4 flex text-sm justify-center">
               <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -29,6 +29,14 @@
               class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-3 rounded-full text-base">
               Map {{map[region].map}} Joueurs
             </div>
+            <div>
+              <a v-if="map[region] && map[region].mapdl" target="_blank" :href="map[region].mapdl"
+                class="bg-gray-300 hover:bg-gray-400 text-gray-900 font-bold py-2 ml-2 px-4 rounded inline-flex items-center text-sm">
+                <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
+                <span>Télécharger la carte</span>
+              </a>
+            </div>
           </div>
           <p v-if="map[region]" class="text-gray-700 text-base ">
             {{map[region].description}}
@@ -45,7 +53,7 @@
               </button>
             </div>
             <div class="p-2 text-center" v-show="active" v-for="adjacent in map[region].adjacents" :key="adjacent"><slot />
-             <button @click="ActionAdjacent()">{{ map[adjacent].name }}</button> 
+             <button @click="ActionAdjacent(adjacent)">{{ map[adjacent] && map[adjacent].name ? map[adjacent].name : "INCONNU"}}</button> 
             </div>            
           </div>
         </div>
@@ -102,17 +110,9 @@
       updatePlayer(name){
         return name.replace(/_/g, " ");
       },
-      ActionAdjacent() {
-        console.log("value")
-        // this.$emit('update-info', value);
-      }
-    },
-    methods: {
-      handleClose() {
+      ActionAdjacent(value) {
         this.$emit("close");
-      },
-      copyId() {
-        navigator.clipboard.writeText(this.region)
+        this.$emit('update-info', value);
       },
       changeImg() {
         console.log("kdoekdoeko")

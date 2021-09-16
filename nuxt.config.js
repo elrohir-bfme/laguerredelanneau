@@ -77,8 +77,7 @@ export default {
     ],
     '@nuxtjs/pwa',
     '@nuxtjs/strapi',
-    '@nuxtjs/apollo',
-    '@nuxt/image'
+    '@nuxtjs/apollo'
   ],
 
   /* url: 'http://api.laterredumilieu.fr' */

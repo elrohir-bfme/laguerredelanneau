@@ -25,7 +25,7 @@
         </div>
         <div class="px-2 w-full lg:w-1/2">
           <nuxt-link title="La Guerre pour l'Eriador"  to="/" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
-            <img alt="La Guerre pour l'Eriador" title="La Guerre pour l'Eriador" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/wotr/bg_opti.jpg">
+            <img alt="La Guerre pour l'Eriador" title="La Guerre pour l'Eriador" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/gde/mapGDE.webp">
             <div class="text-center relative z-10 w-full">
               <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-indigo-500 group-hover:bg-white inline p-2 rounded">La Guerre pour l'Eriador</h2>
               <br>
@@ -130,26 +130,26 @@ export default {
         {
           hid: "twitter:url",
           name: "twitter:url",
-          content: "https://events.laterredumilieu.fr",
+          content: "https://laguerredelanneau.vercel.app",
         },
         {
           hid: 'twitter:image',
           name: 'twitter:image',
           content:
-            'https://events.laterredumilieu.fr/eventsltdm.jpg',
+            'https://laguerredelanneau.vercel.app/eventsltdm.webp',
         },
         { hid: 'og:title', name: 'og:title', content: "Events de la Terre du Milieu 📅"},
         { hid: 'og:type', name: 'og:type', content: 'website' },
         {
           hid: 'og:url',
           name: 'og:url',
-          content: 'https://events.laterredumilieu.fr',
+          content: 'https://laguerredelanneau.vercel.app',
         },
         {
           hid: 'og:image',
           name: 'og:image',
           content:
-            'https://events.laterredumilieu.fr/eventsltdm.jpg',
+            'https://laguerredelanneau.vercel.app/eventsltdm.webp',
         },
         {
           hid: 'og:description',

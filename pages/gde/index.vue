@@ -8,7 +8,7 @@
         <image
           width="2336"
           height="2114"
-          xlink:href="~assets/gde/mapGDE.jpg"
+          xlink:href="~assets/gde/mapGDE.webp"
           transform="matrix(1 0 0 1 0 0)"
         ></image>
         <g id="Calque_2" data-name="Calque 2">
@@ -832,7 +832,7 @@
         :class="`bg-${color(faction.id)}-800 hover:bg-${color(faction.id)}-900 text-${color(faction.id)}-100`"
         class="flex flex-col items-center justify-center p-4 shadow rounded-lg">
         <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-          <img :src="require(`~/assets/gde/factions/${faction.name}.png`)" alt="" class="h-full w-full">
+          <img :src="require(`~/assets/gde/factions/${faction.name}.webp`)" alt="" class="h-full w-full">
         </div>
 
         <h2 :class="`text-${color(faction.id)}-300`" class="mt-4 font-bold text-xl">
@@ -934,7 +934,7 @@ export default {
         {
           hid: "twitter:image",
           name: "twitter:image",
-          content: "https://events.laterredumilieu.fr/GDA.png",
+          content: "https://laguerredelanneau.vercel.app/GDA.webp",
         },
         {
           hid: "og:title",
@@ -945,12 +945,12 @@ export default {
         {
           hid: "og:url",
           name: "og:url",
-          content: "https://events.laterredumilieu.fr/gda",
+          content: "https://laguerredelanneau.vercel.app/gda",
         },
         {
           hid: "og:image",
           name: "og:image",
-          content: "https://events.laterredumilieu.fr/GDA.png",
+          content: "https://laguerredelanneau.vercel.app/GDA.webp",
         },
         {
           hid: "og:description",

@@ -281,7 +281,7 @@
           {
             hid: 'twitter:image',
             name: 'twitter:image',
-            content: 'https://events.laterredumilieu.fr/arena/bg.jpg',
+            content: 'https://laguerredelanneau.vercel.app/arena/bg.webp',
           },
           {
             hid: 'og:title',
@@ -296,12 +296,12 @@
           {
             hid: 'og:url',
             name: 'og:url',
-            content: 'https://events.laterredumilieu.fr/arenedarda',
+            content: 'https://laguerredelanneau.vercel.app/arenedarda',
           },
           {
             hid: 'og:image',
             name: 'og:image',
-            content: 'https://events.laterredumilieu.fr/arena/bg.jpg',
+            content: 'https://laguerredelanneau.vercel.app/arena/bg.webp',
           },
           {
             hid: 'og:description',

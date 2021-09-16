@@ -7307,7 +7307,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           {
             hid: 'twitter:image',
             name: 'twitter:image',
-            content: 'https://events.laterredumilieu.fr/GDA.png',
+            content: 'https://laguerredelanneau.vercel.app/GDA.webp',
           },
           {
             hid: 'og:title',
@@ -7322,12 +7322,12 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           {
             hid: 'og:url',
             name: 'og:url',
-            content: 'https://events.laterredumilieu.fr/gda',
+            content: 'https://laguerredelanneau.vercel.app/gda',
           },
           {
             hid: 'og:image',
             name: 'og:image',
-            content: 'https://events.laterredumilieu.fr/GDA.png',
+            content: 'https://laguerredelanneau.vercel.app/GDA.webp',
           },
           {
             hid: 'og:description',

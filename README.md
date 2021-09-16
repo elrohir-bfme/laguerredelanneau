@@ -2,7 +2,7 @@
 
 ## Map intective based on the middle earth && battle for middle earth 2 & rotwk : War Of The Ring
 
-[Site Website] (https://laguerredelanneau.vercel.app/)
+[Site Website] (https://laguerredelanneau.vercel.app)
 
 Site use : 
 

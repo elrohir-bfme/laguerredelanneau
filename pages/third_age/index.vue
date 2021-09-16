@@ -4,7 +4,7 @@
       <ModalThirdAge v-if="isShowModal" @close="toggleModal" :region="region" />
       <!-- <SvgPanZoom :minZoom=1 :maxZoom=5 :contain=true :panEbnable=false :fit=false> -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2693 1943">
-        <image width="2693" height="1943" xlink:href="~assets/third_age/map.jpg" transform="matrix(1 0 0 1 0 0)">
+        <image width="2693" height="1943" xlink:href="~assets/third_age/map.webp" transform="matrix(1 0 0 1 0 0)">
         </image>
         <g id="Calque_2" data-name="Calque 2">
           <g id="Calque_1-2" data-name="Calque 1">

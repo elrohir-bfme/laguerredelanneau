@@ -25,7 +25,7 @@ export default {
       {
         hid: "canonical",
         rel: "canonical",
-        href: "https://events.laterredumilieu.fr",
+        href: "https://laguerredelanneau.vercel.app",
       },
     ]
   },
@@ -63,11 +63,11 @@ export default {
     '@nuxtjs/robots',
     ["nuxt-social-meta",
       {
-        url: "https://events.laterredumilieu.fr",
+        url: "https://laguerredelanneau.vercel.app",
         title: "Events de la Terre du Milieu",
         site_name: "Events de la Terre du Milieu",
         description: "Retrouvez les évènements de la Terre du Milieu, sur les jeux la Bataille pour la Terre du Milieu mais pas seulement",
-        img: "/eventsltdm.jpg",
+        img: "/eventsltdm.webp",
         img_size: { width: "1200", height: "800" },
         locale: "fr",
         twitter: "@Elrohir_bfme",
@@ -105,21 +105,21 @@ export default {
  build: {},
 
 sitemap: {
-  hostname: 'https://events.laterredumilieu.fr',
+  hostname: 'https://laguerredelanneau.vercel.app',
   path: '/sitemap.xml',
   cacheTime: 1000 * 60 * 15, // La durée avant que le sitemap soit regénéré. Ici 15mn.
   gzip: true,
 },
 
 robots: {
-  Sitemap: 'https://events.laterredumilieu.fr/sitemap.xml',
+  Sitemap: 'https://laguerredelanneau.vercel.app/sitemap.xml',
 },
 
   pwa: {
     meta: {
       /* meta options */
       lang: 'fr',
-      ogHost: 'https://events.laterredumilieu.fr',
+      ogHost: 'https://laguerredelanneau.vercel.app',
       twitterCard: "Events de la Terre du Milieu",
       twitterCreator: "@Elrohir_bfme",
       theme_color: '#3E7A4A'

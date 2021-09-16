@@ -3,7 +3,7 @@
 <ModalSeigneurDor v-if="isShowModal" @close="toggleModal" :region="region"/>
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1440 1060" style="enable-background:new 0 0 1440 1060;" xml:space="preserve">
-   <image style="overflow:visible;" width="1440" height="1060" xlink:href="~assets/seigneur_d_or/laguerredelanneau.png" transform="matrix(1 0 0 1 0 0)"></image>
+   <image style="overflow:visible;" width="1440" height="1060" xlink:href="~assets/seigneur_d_or/laguerredelanneau.webp" transform="matrix(1 0 0 1 0 0)"></image>
 <g>
 	<g>
 		<path 

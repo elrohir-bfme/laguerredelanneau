@@ -12,7 +12,7 @@
         <div class="text-center py-4">
             <h3 style="font-family: 'Albertus'" class="text-center text-2xl text-green-400 p-4">Prendre le rôle GDA et</h3>
             <h3 style="font-family: 'Albertus'" class="text-center text-2xl text-green-400 p-4">Prendre une des factions disponible sur le Discord</h3>
-            <img class="mx-auto" src="~assets/gda/msg.png" alt="Inscriptions Discord">
+            <img class="mx-auto" src="~assets/gda/msg.webp" alt="Inscriptions Discord">
         </div>
         <div class="text-center py-4">
             <h4 style="font-family: 'Albertus'" class="text-center text-2xl text-indigo-300 p-4">

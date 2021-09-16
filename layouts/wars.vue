@@ -1,6 +1,6 @@
 <template>
 <div class="relative h-screen">
-    <nuxt-img src="/arena/bg.jpg" class="absolute h-full w-full object-cover"/>
+    <nuxt-img src="/arena/bg.webp" class="absolute h-full w-full object-cover"/>
     <div class="inset-0 bg-black opacity-25 absolute">
     </div>
     <header class="relative">

@@ -6813,7 +6813,7 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
       <p class="text-center text-white text-2xl p-4">Une vidéo résumé arrivera dans les prochaines semaines pour conclure cette Guerre de l'Anneau ⚔️</p>
       <p class="text-center text-white text-2xl p-4">On se retrouve bientôt pour l'annonce du prochain grand événement en préparation : la Guerre de l'Eriador ! (Nouvelle Carte, Nouvelles Maps, Nouvelles règles...)</p>
 
-      <img src="~assets/gda/mordor_win.png" alt="" class="h-full w-full">
+      <img src="~assets/gda/mordor_win.webp" alt="" class="h-full w-full">
 
       <br><br>
 
@@ -6981,20 +6981,20 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
           hid: 'twitter:image',
           name: 'twitter:image',
           content:
-            'https://events.laterredumilieu.fr/GDA.png',
+            'https://laguerredelanneau.vercel.app/GDA.webp',
         },
         { hid: 'og:title', name: 'og:title', content: "La Guerre de l'Anneau ⛰️"},
         { hid: 'og:type', name: 'og:type', content: 'website' },
         {
           hid: 'og:url',
           name: 'og:url',
-          content: 'https://events.laterredumilieu.fr/gda',
+          content: 'https://laguerredelanneau.vercel.app/gda',
         },
         {
           hid: 'og:image',
           name: 'og:image',
           content:
-            'https://events.laterredumilieu.fr/GDA.png',
+            'https://laguerredelanneau.vercel.app/GDA.webp',
         },
         {
           hid: 'og:description',

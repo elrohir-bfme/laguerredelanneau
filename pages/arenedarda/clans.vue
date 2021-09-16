@@ -172,20 +172,20 @@ export default {
           hid: 'twitter:image',
           name: 'twitter:image',
           content:
-            'https://events.laterredumilieu.fr/arena/arene.jpg',
+            'https://laguerredelanneau.vercel.app/arena/arene.webp',
         },
         { hid: 'og:title', name: 'og:title', content: 'Clans ⚔️' },
         { hid: 'og:type', name: 'og:type', content: 'website' },
         {
           hid: 'og:url',
           name: 'og:url',
-          content: 'https://events.laterredumilieu.fr/arenedarda/clans',
+          content: 'https://laguerredelanneau.vercel.app/arenedarda/clans',
         },
         {
           hid: 'og:image',
           name: 'og:image',
           content:
-            'https://events.laterredumilieu.fr/arena/arene.jpg',
+            'https://laguerredelanneau.vercel.app/arena/arene.webp',
         },
         {
           hid: 'og:description',

@@ -2,8 +2,8 @@
     <div class="fixed left-0 bottom-0 text-white text-center">
         <div class="pngcontainer1">
             <img id="region_img" :src="map[region] ? map[region].img : 'https://wallup.net/wp-content/uploads/2018/09/28/960672-art-artwork-fantasy-artistic-original-lord-rings-lotr.jpg'" />
-            <img id="region_bg" src="~assets/bg.jpg" />
-            <img v-if="map[region]" id="region_faction" :src="`https://laguerredelanneau.vercel.app/factions/${factions(map[region].color)}`"/>  
+            <img id="region_bg" src="~assets/bg.webp" />
+            <img v-if="map[region]" id="region_faction" :src="`https://laguerredelanneau.vercel.appfactions/${factions(map[region].color)}`"/>  
             <img src="~assets/palantir.png" />
             <p id="region_player"> {{map[region] ? map[region].map ? `Map ${map[region].map} Joueurs` : "" : ""}}</p>
             <div id="region_txt">
@@ -71,7 +71,7 @@ export default {
                     faction = "angmar.png"
                 break;
                 default:
-                    faction = "bg.jpg"
+                    faction = "bg.webp"
                 break;
           }
           return faction;

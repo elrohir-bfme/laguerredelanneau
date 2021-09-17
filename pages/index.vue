@@ -6,7 +6,12 @@
         <div class="flex flex-wrap -mx-2">
         <div class="px-2 w-full lg:w-1/2">
           <nuxt-link title="Tournoi Mystère ✨"  to="/tournois/tournoi_mystere_2_02" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-green-300 border-2 rounded-xl">
-            <img alt="Tournoi Mystère ✨" title="Tournoi Mystère ✨" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/tournois/tournoi_mystere_2_02.webp">
+            <NuxtImg
+              src="tournois/tournoi_mystere_2_02.webp"
+              class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
+              alt="Tournoi Mystère ✨"
+              loading="lazy"
+            />
             <div class="text-center relative z-10 w-full">
               <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-blue-500 group-hover:bg-white inline p-2 rounded">Tournoi Mystère ✨</h2>
               <br>
@@ -26,7 +31,12 @@
 
         <div class="w-full lg:w-1/2">
           <nuxt-link title="L'Arène d'Arda"  to="/arenedarda" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-red-300 border-2 rounded-xl">
-            <img alt="Arène d'Arda" title="Arène d'Arda" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/wars/bg_opti.jpg">
+            <NuxtImg
+              src="wars/bg_opti.jpg"
+              class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
+              alt="Arène d'Arda"
+              loading="lazy"
+            />
             <div class="text-center relative z-10 w-full">
               <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-red-500 group-hover:bg-white inline p-2 rounded">Arène d'Arda ⚔️</h2>
               <br>
@@ -49,7 +59,12 @@
       <div class="flex flex-wrap -mx-2 mt-4">
         <div class="px-2 w-full lg:w-1/2">
           <nuxt-link title="La Guerre pour l'Eriador"  to="/" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
-            <img alt="La Guerre pour l'Eriador" title="La Guerre pour l'Eriador" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/gde/mapGDE.webp">
+            <NuxtImg
+              src="gde/mapGDE_opti.webp"
+              class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
+              alt="La Guerre pour l'Eriador"
+              loading="lazy"
+            />
             <div class="text-center relative z-10 w-full">
               <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-indigo-500 group-hover:bg-white inline p-2 rounded">La Guerre pour l'Eriador</h2>
               <br>
@@ -66,7 +81,12 @@
         </div>
         <div class="w-full lg:w-1/2">
           <nuxt-link title="La Guerre de l'Anneau" to="/gda" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-blue-300 border-2 rounded-xl">
-            <img alt="La Guerre de l'Anneau" title="La Guerre de l'Anneau" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/gda/map_opti.jpg">
+            <NuxtImg
+              src="gda/map_opti.jpg"
+              class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
+              alt="La Guerre de l'Anneau"
+              loading="lazy"
+            />
             <div class="text-center relative z-10 w-full">
               <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-blue-500 group-hover:bg-white inline p-2 rounded">La Guerre de l'Anneau ⛰️</h2>
               <br>

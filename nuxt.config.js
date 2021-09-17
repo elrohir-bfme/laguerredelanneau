@@ -77,7 +77,8 @@ export default {
     ],
     '@nuxtjs/pwa',
     '@nuxtjs/strapi',
-    '@nuxtjs/apollo'
+    '@nuxtjs/apollo',
+    '@nuxt/image',
   ],
 
   /* url: 'http://api.laterredumilieu.fr' */
@@ -144,4 +145,8 @@ robots: {
       ]
     }  
   },
+
+  image: {
+    dir: 'assets/'
+  }
 }

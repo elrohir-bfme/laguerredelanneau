@@ -61,20 +61,20 @@ export default {
     'vue-scrollto/nuxt',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
-    ["nuxt-social-meta",
-      {
-        url: "https://laguerredelanneau.vercel.app",
-        title: "Events de la Terre du Milieu",
-        site_name: "Events de la Terre du Milieu",
-        description: "Retrouvez les évènements de la Terre du Milieu, sur les jeux la Bataille pour la Terre du Milieu mais pas seulement",
-        img: "/eventsltdm.webp",
-        img_size: { width: "1200", height: "800" },
-        locale: "fr",
-        twitter: "@Elrohir_bfme",
-        twitter_card: "summary_large_image",
-        themeColor: "#3E7A4A",
-      },
-    ],
+    // ["nuxt-social-meta",
+    //   {
+    //     url: "https://laguerredelanneau.vercel.app",
+    //     title: "Events de la Terre du Milieu",
+    //     site_name: "Events de la Terre du Milieu",
+    //     description: "Retrouvez les évènements de la Terre du Milieu, sur les jeux la Bataille pour la Terre du Milieu mais pas seulement",
+    //     img: "/eventsltdm.webp",
+    //     img_size: { width: "1200", height: "800" },
+    //     locale: "fr",
+    //     twitter: "@Elrohir_bfme",
+    //     twitter_card: "summary_large_image",
+    //     themeColor: "#3E7A4A",
+    //   },
+    // ],
     '@nuxtjs/pwa',
     '@nuxtjs/strapi',
     '@nuxtjs/apollo',
@@ -147,6 +147,10 @@ robots: {
   },
 
   image: {
-    dir: 'assets/'
-  }
+    dir: 'assets/',
+    domains: [
+      'laguerredelanneau.vercel.app'
+    ]
+  },
+
 }

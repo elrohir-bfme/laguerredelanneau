@@ -147,7 +147,6 @@ robots: {
   },
 
   image: {
-    dir: 'assets/',
     domains: [
       'laguerredelanneau.vercel.app'
     ]

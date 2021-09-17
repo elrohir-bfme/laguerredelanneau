@@ -32,7 +32,7 @@
         <div class="w-full lg:w-1/2">
           <nuxt-link title="L'Arène d'Arda"  to="/arenedarda" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-red-300 border-2 rounded-xl">
             <NuxtImg
-              src="wars/bg_opti.jpg"
+              src="arena/bg.webp"
               class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
               alt="Arène d'Arda"
               loading="lazy"
@@ -60,7 +60,7 @@
         <div class="px-2 w-full lg:w-1/2">
           <nuxt-link title="La Guerre pour l'Eriador"  to="/" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
             <NuxtImg
-              src="gde/mapGDE_opti.webp"
+              src="img/map_gde.webp"
               class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
               alt="La Guerre pour l'Eriador"
               loading="lazy"
@@ -82,7 +82,7 @@
         <div class="w-full lg:w-1/2">
           <nuxt-link title="La Guerre de l'Anneau" to="/gda" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-blue-300 border-2 rounded-xl">
             <NuxtImg
-              src="gda/map_opti.jpg"
+              src="img/map_gda.webp"
               class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
               alt="La Guerre de l'Anneau"
               loading="lazy"

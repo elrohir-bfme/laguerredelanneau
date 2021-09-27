@@ -4,22 +4,21 @@
     <div class="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
         <h2 class="text-3xl font-extrabold text-gray-200 dark:text-white sm:text-4xl">
             <span class="block">
-                NOUVEAU TOURNOI
+                TOURNOI Mystère ✨
             </span>
             <span class="block text-xl text-blue-500 mt-4 mb-4">
                 Organisé par Diablo qui va vous proposez un tournoi orienté sur des maps personnalisés
             </span>
         </h2>
-        <p class="text-xl mt-4 max-w-md mx-auto text-gray-200">
-            Le style du tournoi dépendra du nombre d'inscription, vous aurez ces informations dès que possible.
-        </p>
         <div class="lg:mt-0 lg:flex-shrink-0">
             <div class="mt-12 inline-flex rounded-md shadow">
                 <a href="https://discord.gg/JmpBwuq2dw" type="button" class="py-4 px-6  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                    Inscrition sur le Discord
+                    Suivre le tournoi sur le Discord
                 </a>
             </div>
         </div>
+
+        <iframe src="https://challonge.com/fr/6aav36mu/module" width="100%" height="1500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
     </div>
 </div>
 
@@ -68,25 +67,6 @@
                     <div class="flex">
                         <div class="flex-shrink-0">
                             <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="h-8 w-8" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="ml-4">
-                            <h5 class="text-lg leading-6 text-gray-100 dark:text-white font-bold">
-                                Inscription 
-                            </h5>
-                            <p class="mt-2 text-base leading-6 text-gray-300 dark:text-gray-300">
-                               Par équipe de 2 joueurs
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="mt-10">
-                    <div class="flex">
-                        <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                                 <svg width="20" height="20" fill="currentColor" class="h-6 w-6" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
                                     </path>
@@ -115,7 +95,7 @@
                                 Date: 
                             </h5>
                             <p class="mt-2 text-base leading-6 text-gray-300 dark:text-gray-300">
-                               Les inscriptions sont ouverte jusqu'au 26 septembre au soir.
+                              A débuté le 26 septembre au soir.
                             </p>
                         </div>
                     </div>

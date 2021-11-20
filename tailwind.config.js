@@ -9,6 +9,13 @@ module.exports = {
   },
   darkMode: false,
   theme: {
+    fontFamily: {
+      sans: ["albertus"],
+      serif: ["albertus"],
+      mono: ["albertus"],
+      display: ["albertus"],
+      body: ["albertus"]
+    },
     extend: {
       colors: {
         rose: colors.rose,

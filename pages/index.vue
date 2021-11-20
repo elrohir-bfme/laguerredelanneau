@@ -5,25 +5,25 @@
     <div class="lg:w-full mx-auto">
         <div class="flex flex-wrap -mx-2">
         <div class="px-2 w-full lg:w-1/2">
-          <nuxt-link title="Tournoi Mystère ✨"  to="/tournois/tournoi_mystere_2_02" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-green-300 border-2 rounded-xl">
+          <nuxt-link title="Tournoi les Guerres du Nord"  to="/tournois/tournoi_les_guerres_du_nord" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-green-300 border-2 rounded-xl">
             <NuxtImg
-              src="tournois/tournoi_mystere_2_02.webp"
+              src="tournois/les_guerres_du_nord.webp"
               class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
-              alt="Tournoi Mystère ✨"
+              alt="Tournoi les Guerres du Nord"
               loading="lazy"
             />
             <div class="text-center relative z-10 w-full">
-              <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-blue-500 group-hover:bg-white inline p-2 rounded">Tournoi Mystère ✨</h2>
+              <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-blue-500 group-hover:bg-white inline p-2 rounded">Tournoi : Les Guerres du Nord</h2>
               <br>
               <br>
-              <p class="text-2xl text-blue-300 leading-relaxed group-hover:text-white group-hover:bg-blue-500 inline p-2 rounded">Organisé par Diablo et Elrohir, les inscriptions sont ouverte jusqu'au 26 septembre au soir</p>
+              <p class="text-2xl text-blue-300 leading-relaxed group-hover:text-white group-hover:bg-blue-500 inline p-2 rounded">Organisé par Elrohir qui a commencé le 19 Novembre 2021</p>
               <br>
               <br>
               <button style="font-family: 'Albertus'" to="/third_age"  class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-400 dark:focus:bg-blue-700">
                 <svg class="w-5 h-5 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-                <span class="mx-1">Découvrir ce tournoi</span>
+                <span class="mx-1">Tournoi en cours</span>
               </button>
             </div>
           </nuxt-link>

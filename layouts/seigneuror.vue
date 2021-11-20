@@ -55,7 +55,7 @@ html {
 @font-face {
   font-family: 'LOTR';
   font-display: swap;
-  src: url('~assets/font/LOTR.TTF') format('truetype');
+  src: url('~assets/fonts/LOTR.TTF') format('truetype');
 }
 
 .tooltip .tooltip-text {

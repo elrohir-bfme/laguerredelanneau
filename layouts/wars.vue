@@ -47,7 +47,7 @@
 @font-face {
   font-family: 'Albertus';
   font-display: swap;
-  src: url('~assets/font/Albertus.otf') format('truetype');
+  src: url('~assets/fonts/Albertus.otf') format('truetype');
 }
 
 html {

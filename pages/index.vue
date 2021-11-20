@@ -30,6 +30,29 @@
         </div>
 
         <div class="w-full lg:w-1/2">
+          <nuxt-link title="La Guerre pour l'Eriador"  to="/" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
+            <NuxtImg
+              src="img/map_gde.webp"
+              class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
+              alt="La Guerre pour l'Eriador"
+              loading="lazy"
+            />
+            <div class="text-center relative z-10 w-full">
+              <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-indigo-500 group-hover:bg-white inline p-2 rounded">La Guerre pour l'Eriador</h2>
+              <br>
+              <br>
+              <p class="text-2xl text-indigo-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">9 Factions pour la lutte de l'Eriador !</p>
+              <br>
+              <br>
+              <button
+              class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md dark:bg-gray-800 hover:bg-indigo-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-indigo-500 dark:focus:bg-gray-700">
+                <span class="mx-1">Prochain évènement</span>
+              </button>
+            </div>
+          </nuxt-link>
+        </div>
+
+        <!-- <div class="w-full lg:w-1/2">
           <nuxt-link title="L'Arène d'Arda"  to="/arenedarda" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-red-300 border-2 rounded-xl">
             <NuxtImg
               src="arena/bg.webp"
@@ -52,11 +75,11 @@
             </button>
             </div>
           </nuxt-link>
-        </div>
+        </div> -->
         
         
       </div>
-      <div class="flex flex-wrap -mx-2 mt-4">
+      <!-- <div class="flex flex-wrap -mx-2 mt-4">
         <div class="px-2 w-full lg:w-1/2">
           <nuxt-link title="La Guerre pour l'Eriador"  to="/" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
             <NuxtImg
@@ -102,7 +125,7 @@
             </button>
             </div>
           </nuxt-link>
-        </div>
+        </div> -->
         <!-- <div class="px-2 w-full lg:w-1/2">
           <nuxt-link title="Third Age Total War"  to="/third_age" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-green-300 border-2 rounded-xl">
             <img alt="Third Age Total War" title="Third Age Total War" class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl" src="~assets/third_age/map_opti.jpg">
@@ -122,7 +145,7 @@
             </div>
           </nuxt-link>
         </div> -->
-      </div>
+      <!-- </div> -->
     </div>
   </div>
 </section>

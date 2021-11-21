@@ -4,6 +4,36 @@
     <div class="flex flex-wrap -m-4">
       <div class="p-4 md:w-1/3">
         <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <NuxtImg
+            src="tournois/tournoi_halloween_2021.jpg"
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            alt="Tournoi sur les Guerres du Nord"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">ROTWK</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">🎃 Soirée Halloween 👻</h1>
+            <p class="leading-relaxed mb-3">Soirée de l'horreur avec des ffa de folie</p>
+            <div class="flex items-center flex-wrap ">
+              <!-- <nuxt-link title="Tournoi Mystère"  to="/les_archives_de_numenor/tournois/tournoi_mystere_2_02" class="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0">En découvrir plus
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </nuxt-link> -->
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-500">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                2 Novembre 2021
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="~assets/wars/arene_opti.jpg" alt="blog">
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">ROTWK</h2>
@@ -107,10 +137,372 @@
           </div>
         </div>
       </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <NuxtImg
+            src="tournois/ffs_bfme_1.jpg"
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            alt="Tournoi sur les Guerres du Nord"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">BFME2</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">La Bataille pour la Terre des Streamers</h1>
+            <p class="leading-relaxed mb-3">Premier event avec d'autres streamers !</p>
+            <div class="flex items-center flex-wrap ">
+              <!-- <nuxt-link title="Tournoi Mystère"  to="/les_archives_de_numenor/tournois/tournoi_mystere_2_02" class="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0">En découvrir plus
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </nuxt-link> -->
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-500">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                28 Janvier 2021
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <NuxtImg
+            src="tournois/les_defis_des_gobelins_freres_de_sang.jpg"
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            alt="Les défis des Gobelins : Frères de Sang"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">ROTWK</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Mini event : Les défis des Gobelins</h1>
+            <p class="leading-relaxed mb-3">Organisé par Utharlok : Défi des Frères de Sang</p>
+            <div class="flex items-center flex-wrap ">
+              <!-- <nuxt-link title="Tournoi Mystère"  to="/les_archives_de_numenor/tournois/tournoi_mystere_2_02" class="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0">En découvrir plus
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </nuxt-link> -->
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-500">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                11 Janvier 2021
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <NuxtImg
+            src="tournois/tournoi_sel_en_terre_du_milieu.jpg"
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            alt="Sel en Terre du Milieu"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">ROTWK</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Soirée Sel en Terre du Milieu</h1>
+            <p class="leading-relaxed mb-3">Première soirée mini tournoi</p>
+            <div class="flex items-center flex-wrap ">
+              <!-- <nuxt-link title="Tournoi Mystère"  to="/les_archives_de_numenor/tournois/tournoi_mystere_2_02" class="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0">En découvrir plus
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </nuxt-link> -->
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-500">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                7 Décembre 2020
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <NuxtImg
+            src="tournois/tournoi_bfme2_ete_2020.jpg"
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            alt="Tournoi BFME2 : 1vs1"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">BFME2</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Tournoi BFME2 1.09</h1>
+            <p class="leading-relaxed mb-3">Tournoi de l'été !</p>
+            <div class="flex items-center flex-wrap ">
+              <!-- <nuxt-link title="Tournoi Mystère"  to="/les_archives_de_numenor/tournois/tournoi_mystere_2_02" class="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0">En découvrir plus
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </nuxt-link> -->
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-500">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                23 Juillet 2020
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <NuxtImg
+            src="tournois/affiche_tournoi_ffa_rotwk.jpg"
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            alt="Tournoi ROTWK : FFA"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">ROTWK</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Tournoi FFA</h1>
+            <p class="leading-relaxed mb-3">Premier tournoi FFA, un massacre !</p>
+            <div class="flex items-center flex-wrap ">
+              <!-- <nuxt-link title="Tournoi Mystère"  to="/les_archives_de_numenor/tournois/tournoi_mystere_2_02" class="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0">En découvrir plus
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </nuxt-link> -->
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-500">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                5 Mai 2020
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <NuxtImg
+            src="tournois/tournoi_rotwk_bien_vs_mal.jpg"
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            alt="Tournoi ROTWK : BIEN VS MAL"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">ROTWK</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Tournoi BIEN VS MAL</h1>
+            <p class="leading-relaxed mb-3">Tournoi avec de l'originalité</p>
+            <div class="flex items-center flex-wrap ">
+              <!-- <nuxt-link title="Tournoi Mystère"  to="/les_archives_de_numenor/tournois/tournoi_mystere_2_02" class="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0">En découvrir plus
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </nuxt-link> -->
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-500">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                22 Avril 2020
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <NuxtImg
+            src="tournois/tournoi_bfme2_1_09_2020.jpg"
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            alt="Tournoi BFME2 : 1vs1"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">BFME2</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Tournoi La Bataille pour la Terre du Milieu 2</h1>
+            <p class="leading-relaxed mb-3">Gros tournoi sur le patch 1.09</p>
+            <div class="flex items-center flex-wrap ">
+              <!-- <nuxt-link title="Tournoi Mystère"  to="/les_archives_de_numenor/tournois/tournoi_mystere_2_02" class="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0">En découvrir plus
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </nuxt-link> -->
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-500">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                14 Mars 2020
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <NuxtImg
+            src="tournois/tournoi_bfme_2020.jpg"
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            alt="Tournoi BFME1 : 1vs1"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">BFME</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Tournoi BFME</h1>
+            <p class="leading-relaxed mb-3">Tournoi sur le patch 1.08 de Miraak</p>
+            <div class="flex items-center flex-wrap ">
+              <!-- <nuxt-link title="Tournoi Mystère"  to="/les_archives_de_numenor/tournois/tournoi_mystere_2_02" class="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0">En découvrir plus
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </nuxt-link> -->
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-500">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                2 Février 2020
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <NuxtImg
+            src="tournois/tournoi_noel_rotwk_fr_2019.jpg"
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            alt="Tournoi ROTWK : 1vs1"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">ROTWK</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Tournoi de Noël 2019</h1>
+            <p class="leading-relaxed mb-3">Le tournoi des français pendant les fêtes de fin d'année</p>
+            <div class="flex items-center flex-wrap ">
+              <!-- <nuxt-link title="Tournoi Mystère"  to="/les_archives_de_numenor/tournois/tournoi_mystere_2_02" class="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0">En découvrir plus
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </nuxt-link> -->
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-500">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                25 Décembre 2019
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <NuxtImg
+            src="tournois/tournoi_noel_rotwk_2019.jpg"
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            alt="Tournoi ROTWK : 1vs1"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">ROTWK</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Tournoi de Noël International</h1>
+            <p class="leading-relaxed mb-3">Un magnifique tournoi de noël</p>
+            <div class="flex items-center flex-wrap ">
+              <!-- <nuxt-link title="Tournoi Mystère"  to="/les_archives_de_numenor/tournois/tournoi_mystere_2_02" class="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0">En découvrir plus
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </nuxt-link> -->
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-500">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                25 Novembre 2019
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <NuxtImg
+            src="tournois/tournoi_bfme2_2v2.jpg"
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            alt="Tournoi BFME2 : 2vs2"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">BFME2</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Tournoi BFME 2VS2</h1>
+            <p class="leading-relaxed mb-3">Un très vieux tournoi organisé sur ma chaîne (Elrohir)</p>
+            <div class="flex items-center flex-wrap ">
+              <!-- <nuxt-link title="Tournoi Mystère"  to="/les_archives_de_numenor/tournois/tournoi_mystere_2_02" class="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0">En découvrir plus
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </nuxt-link> -->
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-500">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                21 Octobre 2019
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <NuxtImg
+            src="tournois/coupe_rotwk_2019.jpg"
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            alt="Tournoi ROTWK : 1vs1"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">ROTWK</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Coupe du Monde ROTWK 2019</h1>
+            <p class="leading-relaxed mb-3">Ma première coupe du monde sur le jeu !</p>
+            <div class="flex items-center flex-wrap ">
+              <nuxt-link title="Tournoi Mystère"  to="/les_archives_de_numenor/tournois/coupe_du_monde_rotwk_2019" class="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0">En découvrir plus
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </nuxt-link>
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-500">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                31 Août 2019
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 </template>
+
+
 
 <script>
 export default {

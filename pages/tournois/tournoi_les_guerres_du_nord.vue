@@ -4,10 +4,10 @@
     <div class="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
         <h2 class="text-3xl font-extrabold text-gray-200 dark:text-white sm:text-4xl">
             <span class="block">
-                TOURNOI Tournoi les Guerres du Nord
+                Tournoi les Guerres du Nord en double élimination
             </span>
             <span class="block text-xl text-blue-500 mt-4 mb-4">
-                Organisé Elrohir
+                Organisé Elrohir sur le Discord de la Terre du Milieu
             </span>
         </h2>
         <div class="lg:mt-0 lg:flex-shrink-0">

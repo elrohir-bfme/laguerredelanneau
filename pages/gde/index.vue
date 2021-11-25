@@ -893,6 +893,7 @@
 </template>
 
 <script>
+
 export default {
   head() {
     return {
@@ -1027,6 +1028,13 @@ export default {
       console.log(e.target.id, e.target.getAttribute("aria-valuetext"))
       this.title = e.target.id;
       this.region = e.target.getAttribute("aria-valuetext");
+
+      var points = e.target.getAttribute("aria-valuetext");
+
+      console.log(points)
+      var center = center(points);
+
+      console.log(center, "center")
     },
     toggleModal(e) {
       if (e && e.target.getAttribute("aria-valuetext")) {

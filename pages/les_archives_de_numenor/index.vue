@@ -3,10 +3,10 @@
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-4">
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <NuxtImg
             src="tournois/tournoi_halloween_2021.jpg"
-            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            class="h-auto w-full object-cover object-center"
             alt="Tournoi sur les Guerres du Nord"
             loading="lazy"
           />
@@ -33,8 +33,8 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="~assets/wars/arene_opti.jpg" alt="blog">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <img class="h-auto w-full object-cover object-center" src="~assets/wars/arene_opti.jpg" alt="blog">
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">ROTWK</h2>
             <h1 class="title-font text-lg font-medium text-white mb-3">Arène d'Arda ⚔️</h1>
@@ -58,10 +58,10 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <NuxtImg
               src="img/map_gda.webp"
-              class="lg:h-48 md:h-36 w-full object-cover object-center"
+              class="h-auto w-full object-cover object-center"
               alt="La Guerre de l'Anneau"
               loading="lazy"
             />
@@ -88,8 +88,8 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="~assets/third_age/map.webp" alt="blog">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <img class="h-auto w-full object-cover object-center" src="~assets/third_age/map.webp" alt="blog">
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">THIRD AGE</h2>
             <h1 class="title-font text-lg font-medium text-white mb-3">Event Third Age Total War</h1>
@@ -113,8 +113,8 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="~assets/tournois/tournoi_mystere_2_02.webp" alt="blog">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
+          <img class="h-auto w-full object-cover object-center" src="~assets/tournois/tournoi_mystere_2_02.webp" alt="blog">
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">ROTWK</h2>
             <h1 class="title-font text-lg font-medium text-white mb-3">Tournoi Mystère ✨</h1>
@@ -138,10 +138,10 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <NuxtImg
             src="tournois/ffs_bfme_1.jpg"
-            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            class="h-auto w-full object-cover object-center"
             alt="Tournoi sur les Guerres du Nord"
             loading="lazy"
           />
@@ -168,10 +168,10 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <NuxtImg
             src="tournois/les_defis_des_gobelins_freres_de_sang.jpg"
-            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            class="h-auto w-full object-cover object-center"
             alt="Les défis des Gobelins : Frères de Sang"
             loading="lazy"
           />
@@ -198,10 +198,10 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <NuxtImg
             src="tournois/tournoi_sel_en_terre_du_milieu.jpg"
-            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            class="h-auto w-full object-cover object-center"
             alt="Sel en Terre du Milieu"
             loading="lazy"
           />
@@ -228,10 +228,10 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <NuxtImg
             src="tournois/tournoi_bfme2_ete_2020.jpg"
-            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            class="h-auto w-full object-cover object-center"
             alt="Tournoi BFME2 : 1vs1"
             loading="lazy"
           />
@@ -258,10 +258,10 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <NuxtImg
             src="tournois/affiche_tournoi_ffa_rotwk.jpg"
-            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            class="h-auto w-full object-cover object-center"
             alt="Tournoi ROTWK : FFA"
             loading="lazy"
           />
@@ -288,10 +288,10 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <NuxtImg
             src="tournois/tournoi_rotwk_bien_vs_mal.jpg"
-            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            class="h-auto w-full object-cover object-center"
             alt="Tournoi ROTWK : BIEN VS MAL"
             loading="lazy"
           />
@@ -318,10 +318,10 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <NuxtImg
             src="tournois/tournoi_bfme2_1_09_2020.jpg"
-            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            class="h-auto w-full object-cover object-center"
             alt="Tournoi BFME2 : 1vs1"
             loading="lazy"
           />
@@ -348,10 +348,10 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <NuxtImg
             src="tournois/tournoi_bfme_2020.jpg"
-            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            class="h-auto w-full object-cover object-center"
             alt="Tournoi BFME1 : 1vs1"
             loading="lazy"
           />
@@ -378,10 +378,10 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <NuxtImg
             src="tournois/tournoi_noel_rotwk_fr_2019.jpg"
-            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            class="h-auto w-full object-cover object-center"
             alt="Tournoi ROTWK : 1vs1"
             loading="lazy"
           />
@@ -408,10 +408,10 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <NuxtImg
             src="tournois/tournoi_noel_rotwk_2019.jpg"
-            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            class="h-auto w-full object-cover object-center"
             alt="Tournoi ROTWK : 1vs1"
             loading="lazy"
           />
@@ -438,10 +438,10 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <NuxtImg
             src="tournois/tournoi_bfme2_2v2.jpg"
-            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            class="h-auto w-full object-cover object-center"
             alt="Tournoi BFME2 : 2vs2"
             loading="lazy"
           />
@@ -468,10 +468,10 @@
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-orange-500 rounded-lg overflow-hidden bg">
+        <div class="h-auto border-2 border-orange-500 rounded-lg overflow-hidden bg">
           <NuxtImg
             src="tournois/coupe_rotwk_2019.jpg"
-            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            class="w-full h-auto object-cover object-center"
             alt="Tournoi ROTWK : 1vs1"
             loading="lazy"
           />

@@ -13,16 +13,15 @@
         alt="Tournoi ROTWK : 1vs1"
         loading="lazy"
     />
-    <iframe 
-        class="max-w-screen max-h-screen mx-auto"
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/csjE4saU_d0" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
+
+    <div class="videoWrapper m-8 z-0">
+      <lite-youtube
+        videoid="ogfYd705cRs"
+        playlabel="Play: Keynote (Google I/O '18)"
+        params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"
+      />
+    </div>
+
     <iframe
         src="https://challonge.com/fr/worlds19/module"
         width="100%"
@@ -45,6 +44,19 @@ export default {
 
 .bg {
   background-color: #18191c;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 </style>

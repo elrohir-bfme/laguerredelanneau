@@ -36,7 +36,7 @@ export default {
   plugins: [
     { src: '~/plugins/vue-good-table', ssr: false },
     { src: '~/plugins/vuejs-countdown-timer', ssr: false},
-    '~/plugins/youtube.client.js'
+    { src: '~/plugins/youtube.client', ssr: false}
   ],
   /*
   ** Auto import components

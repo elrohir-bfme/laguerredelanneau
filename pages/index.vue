@@ -30,7 +30,7 @@
         </div>
 
         <div class="w-full lg:w-1/2">
-          <nuxt-link title="La Guerre pour l'Eriador"  to="/" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
+          <nuxt-link title="La Guerre pour l'Eriador"  to="/gde" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
             <NuxtImg
               src="img/map_gde.webp"
               class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"

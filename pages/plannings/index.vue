@@ -13,7 +13,7 @@
             :time-step="30"
             :on-event-click="onEventClick"
         />
-        <!-- This example requires Tailwind CSS v2.0+ -->
+        This example requires Tailwind CSS v2.0+
         <div v-if="showDialog" class="fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
                 <div @click="handleClose" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
@@ -136,48 +136,3 @@ export default {
     }
 }
 </script>
-
-<style lang="scss">
-
-.vuecal--yellow-theme {
-    background-color: #18191c;
-    .vuecal__header {background-color: rgba(255, 179, 0, 0.8);color: #fff;}
-    .vuecal__now-line {color: #ffffff; opacity: 1}
-
-    .vuecal__now-line:after {
-        content:"L'HEURE ACTUELLE";
-        font-size: 20px;
-    }
-
-    .vuecal__event.bfme {background-color: rgba(255, 102, 102, 0.9);border: 2px solid rgb(235, 82, 82);color: #fff;}
-    .vuecal__event.bfme2 {background-color: rgba(59, 226, 59, 0.9);border: 2px solid rgb(2, 151, 46);color: #fff;}
-    .vuecal__event.rotwk {background-color: rgba(102, 168, 255, 0.9);border: 2px solid rgb(51, 105, 255);color: #fff;}
-    .vuecal__event.live {background-color: rgb(100, 65, 164);border: 2px solid rgb(107, 71, 175);color: #fff;}
-
-    .month-view {font-size: 3em; color: #ffffff}
-    .vuecal__cell--disabled {color: #97ebeb}
-    .vuecal__cell--out-of-scope {color: #ca97eb}
-
-
-    .month-view .vuecal__cell--today {background-color: rgba(249, 115, 22)}
-
-    
-    .month-view .vuecal__cell--has-events {background-color: #83458f;}
-    // .vuecal__cell-events-count {display: none;}
-    .vuecal__cell-events-count {
-        color: #fff;
-        background-color: darkblue;
-        /* width: 11px; */
-        /* font-size: 11px; */
-        top: 13%;
-        /* right: 2%; */
-        left: 10%;
-        padding: 1px 10px;
-        font-size: 20px;
-        height: 25px;
-        min-width: -4px;
-        line-height: normal;
-    }
-}
-
-</style>

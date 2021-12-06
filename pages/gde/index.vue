@@ -988,15 +988,15 @@
 <script>
 
 export default {
+  layout: "gde",
   head() {
     return {
-      title: "La Guerre de l'Anneau ⛰️",
+      title: "La Guerre de l'Eriador 🏔️",
       meta: [
         {
           hid: "description",
           name: "description",
-          content:
-            "Evènement se déroulant sur le jeux : La Bataille pour la Terre du Milieu 2 : l'Avènement du Roi Sorcier. Vous pouvez rejoindre une faction et combattre au fur est à mesure des tours pour devenir le maitre de la Terre du Milieu",
+          content:"L'heure de l'affrontement pour le contrôle de l'Eriador est arrivé ! Que vous soyez novice, chevronné ou vétéran des guerres précédentes, l'heure est venue pour vous, guerriers, de retourner vous battre au nom de votre faction !",
         },
         {
           hid: "keywords",
@@ -1012,13 +1012,12 @@ export default {
         {
           hid: "twitter:title",
           name: "twitter:title",
-          content: "La Guerre de l'Anneau ⛰️",
+          content: "La Guerre de l'Eriador 🏔️",
         },
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content:
-            "Evènement se déroulant sur le jeux : La Bataille pour la Terre du Milieu 2 : l'Avènement du Roi Sorcier. Vous pouvez rejoindre une faction et combattre au fur est à mesure des tours pour devenir le maitre de la Terre du Milieu",
+          content:"L'heure de l'affrontement pour le contrôle de l'Eriador est arrivé ! Que vous soyez novice, chevronné ou vétéran des guerres précédentes, l'heure est venue pour vous, guerriers, de retourner vous battre au nom de votre faction !",
         },
         {
           hid: "twitter:creator",
@@ -1028,7 +1027,7 @@ export default {
         {
           hid: "twitter:image",
           name: "twitter:image",
-          content: "https://laguerredelanneau.vercel.app/GDA.webp",
+          content: "https://events.laterredumilieu.fr/gde.webp",
         },
         {
           hid: "og:title",
@@ -1039,18 +1038,17 @@ export default {
         {
           hid: "og:url",
           name: "og:url",
-          content: "https://laguerredelanneau.vercel.app/gda",
+          content: "https://events.laterredumilieu.fr/gde",
         },
         {
           hid: "og:image",
           name: "og:image",
-          content: "https://laguerredelanneau.vercel.app/GDA.webp",
+          content: "https://events.laterredumilieu.fr/gde.webp",
         },
         {
           hid: "og:description",
           name: "og:description",
-          content:
-            "Evènement se déroulant sur le jeux : La Bataille pour la Terre du Milieu 2 : l'Avènement du Roi Sorcier. Vous pouvez rejoindre une faction et combattre au fur est à mesure des tours pour devenir le maitre de la Terre du Milieu",
+          content:"L'heure de l'affrontement pour le contrôle de l'Eriador est arrivé ! Que vous soyez novice, chevronné ou vétéran des guerres précédentes, l'heure est venue pour vous, guerriers, de retourner vous battre au nom de votre faction !",
         },
       ],
     };

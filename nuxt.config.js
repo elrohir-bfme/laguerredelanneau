@@ -3,9 +3,9 @@ export default {
   ** Nuxt target
   ** See https://events.laterredumilieu.fr//api/configuration-target
   */
-  ssr: true,
+  ssr: false,
   
-  target: 'static',
+  target: 'server',
   /*
   ** Headers of the page
   ** See https://events.laterredumilieu.fr//api/configuration-head

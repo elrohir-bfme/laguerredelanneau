@@ -1,5 +1,10 @@
 <template>
   <section class="text-gray-600 body-font">
+     <SocialHead
+      title="Inscription: La Guerre de l'Eriador 🏔️"
+      description="L'heure de l'affrontement pour le contrôle de l'Eriador est arrivé ! Que vous soyez novice, chevronné ou vétéran des guerres précédentes, l'heure est venue pour vous, guerriers, de retourner vous battre au nom de votre faction !"
+      image="https://events.laterredumilieu.fr/gde.webp"
+    />
     <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
         <img class="object-cover object-center rounded" alt="hero" src="https://cdn-longterm.mee6.xyz/plugins/reaction_roles/images/646686225737973770/9a7539ae39ada2acc4a0470d71fb62edd4e0968928a924fd2f0f26dafc2d74da.gif">
@@ -45,6 +50,7 @@
 <script>
 export default {
   layout: "gde",
+  
   head() {
     return {
       title: "Inscription: La Guerre de l'Eriador 🏔️",
@@ -58,58 +64,20 @@ export default {
           hid: "keywords",
           name: "keywords",
           content:
-            "La Guerre de l'Anneau, GDA, Mordor, Elfe, Nain, Rohan, Gondor, Isengard, Gobelin, Angmar, bfme2, rotwk, elrohir",
-        },
-        {
-          hid: "twitter:card",
-          name: "twitter:card",
-          content: "summary_large_image",
-        },
-        {
-          hid: "twitter:title",
-          name: "twitter:title",
-          content: "La Guerre de l'Eriador 🏔️",
-        },
-        {
-          hid: "twitter:description",
-          name: "twitter:description",
-          content:"L'heure de l'affrontement pour le contrôle de l'Eriador est arrivé ! Que vous soyez novice, chevronné ou vétéran des guerres précédentes, l'heure est venue pour vous, guerriers, de retourner vous battre au nom de votre faction !",
-        },
-        {
-          hid: "twitter:creator",
-          name: "twitter:creator",
-          content: "@Elrohir_BFME",
-        },
-        {
-          hid: "twitter:image",
-          name: "twitter:image",
-          content: "https://events.laterredumilieu.fr/gde.webp",
-        },
-        {
-          hid: "og:title",
-          name: "og:title",
-          content: "La Guerre de l'Anneau ⛰️",
-        },
-        { hid: "og:type", name: "og:type", content: "website" },
-        {
-          hid: "og:url",
-          name: "og:url",
-          content: "https://events.laterredumilieu.fr/gde",
-        },
-        {
-          hid: "og:image",
-          name: "og:image",
-          content: "https://events.laterredumilieu.fr/gde.webp",
-        },
-        {
-          hid: "og:description",
-          name: "og:description",
-          content:"L'heure de l'affrontement pour le contrôle de l'Eriador est arrivé ! Que vous soyez novice, chevronné ou vétéran des guerres précédentes, l'heure est venue pour vous, guerriers, de retourner vous battre au nom de votre faction !",
+            "La Guerre de l'Eriador, GDE, Mordor, Elfe, Nain, Rohan, Gondor, Isengard, Gobelin, Angmar, Arnor, Rohan, bfme, bfme2, rotwk, elrohir",
         },
       ],
-    };
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: "https://events.laterredumilieu.fr/gde/inscription"
+        }
+      ],
+    }
   }
 }
+
 </script>
 
 <style scoped>

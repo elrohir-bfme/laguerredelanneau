@@ -63,8 +63,8 @@
             <div class="shadow-lg rounded-2xl p-2"
               :class="`bg-${color(player.faction)}-700 hover:bg-${color(player.faction)}-800`" >
                 <div class="flex-row gap-4 flex justify-center items-center">
-                    <div class="flex-shrink-0">
-                      <img alt="profil" src="https://cdn.discordapp.com/attachments/646821517107265543/872054737355292672/unknown.png" 
+                    <div v-if="player.img" class="flex-shrink-0">
+                      <img  :alt="player.name" :src="player.img" 
                       class="mx-auto object-cover rounded-full h-12 w-12"/>
                     </div>
                     <div class="flex flex-col">

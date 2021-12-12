@@ -3,10 +3,24 @@
   "builds": [
     {
       "src": "nuxt.config.js",
-      "use": "@nuxtjs/vercel-builder"
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "serverFiles": ["package.json"],
+        "generateStaticRoutes": true
+      }
     }
   ],
   "redirects": [
     { "source": "/Discord", "destination": "https://discord.gg/dQvN9Yx" }
+  ],
+  "routes": [
+    {
+      "src": "/sw.js",
+      "continue": true,
+      "headers": {
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Service-Worker-Allowed": "/"
+      }
+    }
   ]
 }

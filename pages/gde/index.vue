@@ -1038,6 +1038,11 @@ export default {
           name: "twitter:image",
           content: "https://events.laterredumilieu.fr/gde.webp",
         },
+        				{
+					hid: "image",
+					property: "image",
+					content: "https://events.laterredumilieu.fr/gde.webp"
+				},
         {
           hid: "og:title",
           name: "og:title",

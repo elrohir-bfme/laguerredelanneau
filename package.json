@@ -24,7 +24,6 @@
     "lite-youtube-embed": "^0.2.0",
     "node-fetch": "^3.0.0",
     "nuxt": "^2.15.8",
-    "nuxt-social-meta": "1.0.0",
     "vue-cal": "^3.10.1",
     "vue-chartjs": "^3.5.1",
     "vue-good-table": "^2.21.8",

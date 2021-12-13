@@ -3,9 +3,20 @@ export default {
   ** Nuxt target
   ** See https://events.laterredumilieu.fr//api/configuration-target
   */
-  ssr: false,
   
+  publicRuntimeConfig: {
+    hostname: "https://events.laterredumilieu.fr",
+  },
+
   target: 'static',
+  modern: true,
+
+  loading: {
+    color: 'orange',
+    height: '3px',
+    continuous: true,
+    duration: 1000,
+  },
   /*
   ** Headers of the page
   ** See https://events.laterredumilieu.fr//api/configuration-head
@@ -159,14 +170,18 @@ export default {
  build: {},
 
 sitemap: {
-  hostname: 'https://laguerredelanneau.vercel.app',
-  path: '/sitemap.xml',
-  cacheTime: 1000 * 60 * 15, // La durée avant que le sitemap soit regénéré. Ici 15mn.
+  hostname: 'https://events.laterredumilieu.fr',
   gzip: true,
+  defaults: {
+      priority: 1,
+      lastmod: new Date()
+  },
 },
 
 robots: {
-  Sitemap: 'https://laguerredelanneau.vercel.app/sitemap.xml',
+  UserAgent: '*',
+  Allow: "/",
+  Sitemap: 'https://events.laterredumilieu.fr/sitemap.xml',
 },
 
   pwa: {
@@ -191,6 +206,7 @@ robots: {
   },
 
   build: {
+    cache: true,
     babel:{
       plugins: [
         ["@babel/plugin-proposal-class-properties", { "loose": true }],
@@ -199,6 +215,10 @@ robots: {
       ]
     }  
   },
+
+  generate: {
+    fallback: true
+},
 
   image: {
     domains: [

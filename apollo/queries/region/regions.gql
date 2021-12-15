@@ -1,8 +1,0 @@
-query Regions {
-    regions {
-      name
-      id
-      color
-      path
-    }
-}

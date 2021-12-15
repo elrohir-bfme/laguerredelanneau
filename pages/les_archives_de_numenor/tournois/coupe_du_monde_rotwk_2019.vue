@@ -14,14 +14,6 @@
         loading="lazy"
     />
 
-    <div class="videoWrapper m-8 z-0">
-      <lite-youtube
-        videoid="ogfYd705cRs"
-        playlabel="Play: Keynote (Google I/O '18)"
-        params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"
-      />
-    </div>
-
     <iframe
         src="https://challonge.com/fr/worlds19/module"
         width="100%"

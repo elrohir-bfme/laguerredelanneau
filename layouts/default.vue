@@ -11,7 +11,6 @@
           <nuxt-link style="font-family: 'Albertus'" class="p-4 text-blue-700 hover:text-white hover:bg-gray-900" to="/gda/inscription">Inscription</nuxt-link>
           <nuxt-link style="font-family: 'Albertus'" class="p-4 text-pink-600 hover:text-white hover:bg-gray-900" to="/gda/regles">Règles</nuxt-link>
           <nuxt-link style="font-family: 'Albertus'" class="p-4 text-green-600 hover:text-white hover:bg-gray-900" to="/gda/batiments">Les Bâtiments</nuxt-link>
-          <nuxt-link style="font-family: 'Albertus'" class="p-4 text-purple-600 hover:text-white hover:bg-gray-900" to="/gda/statistiques">Statistiques</nuxt-link>
           <!-- <nuxt-link style="font-family: 'Albertus'" class="p-4 hover:text-white hover:bg-gray-900" to="/tours">Phase de Combat</nuxt-link> -->
           <a style="font-family: 'Albertus'" class="p-4 text-gray-600 hover:text-white hover:bg-gray-900" target="_blank" href="http://bit.ly/LaTerreduMilieu">
             <svg class="h-10 w-10" width="256px" height="293px" viewBox="0 0 256 293" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">

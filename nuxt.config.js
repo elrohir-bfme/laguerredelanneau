@@ -9,7 +9,6 @@ export default {
   },
 
   target: 'static',
-  modern: true,
 
   loading: {
     color: 'orange',
@@ -105,55 +104,27 @@ export default {
       }
     ]
   },
-  /*
-  ** Global CSS
-  */
-  css: ['node_modules/lite-youtube-embed/src/lite-yt-embed.css'],
 
-  /*
-  ** Plugins to load before mounting the App
-  ** https://events.laterredumilieu.fr//guide/plugins
-  */
-  plugins: [
-    { src: '~/plugins/vue-good-table', ssr: false },
-    { src: '~/plugins/vuejs-countdown-timer', ssr: false},
-    { src: '~/plugins/youtube.client', ssr: false}
-  ],
-  /*
-  ** Auto import components
-  ** See https://events.laterredumilieu.fr//api/configuration-components
-  */
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
-    'vue-scrollto/nuxt',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     '@nuxtjs/pwa',
     '@nuxtjs/strapi',
-    '@nuxtjs/apollo',
     '@nuxt/image',
   ],
 
   /* url: 'http://api.laterredumilieu.fr' */
   strapi: {
     url: "https://api.laterredumilieu.fr/"
-  },
-
-  apollo: {  
-    clientConfigs: {
-      default: {
-        httpEndpoint: "https://api.laterredumilieu.fr/graphql"
-      }
-    }
   },
 
   env: {

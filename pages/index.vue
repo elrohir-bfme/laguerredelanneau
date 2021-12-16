@@ -53,7 +53,7 @@
         </div>
 
         <!-- <div class="w-full lg:w-1/2">
-          <nuxt-link title="L'Arène d'Arda"  to="/arenedarda" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-red-300 border-2 rounded-xl">
+          <nuxt-link title="L'Arène d'Arda"  to="/les_archives_de_numenor/arenedarda" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-red-300 border-2 rounded-xl">
             <NuxtImg
               src="arena/bg.webp"
               class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
@@ -67,7 +67,7 @@
               <p class="text-2xl text-red-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Affrontement de clans au sein de la Terre du Milieu</p>
               <br>
               <br>      
-              <button style="font-family: 'Albertus'" to="/arenedarda" class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-600 rounded-md dark:bg-gray-800 hover:bg-red-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-red-500 dark:focus:bg-gray-700">
+              <button style="font-family: 'Albertus'" to="/les_archives_de_numenor/arenedarda" class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-600 rounded-md dark:bg-gray-800 hover:bg-red-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-red-500 dark:focus:bg-gray-700">
                 <svg class="w-5 h-5 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>

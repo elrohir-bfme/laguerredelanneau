@@ -184,9 +184,7 @@ robots: {
     }  
   },
 
-  generate: {
-    fallback: true
-},
+
 
   image: {
     domains: [

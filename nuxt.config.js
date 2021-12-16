@@ -174,7 +174,6 @@ robots: {
   },
 
   build: {
-    cache: true,
     babel:{
       plugins: [
         ["@babel/plugin-proposal-class-properties", { "loose": true }],
@@ -183,8 +182,6 @@ robots: {
       ]
     }  
   },
-
-
 
   image: {
     domains: [

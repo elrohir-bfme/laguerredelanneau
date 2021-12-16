@@ -9,7 +9,6 @@ export default {
   },
 
   ssr: false,
-
   target: 'static',
 
   loading: {
@@ -176,6 +175,7 @@ robots: {
   },
 
   build: {
+    cache: true,
     babel:{
       plugins: [
         ["@babel/plugin-proposal-class-properties", { "loose": true }],
@@ -184,6 +184,10 @@ robots: {
       ]
     }  
   },
+
+  generate: {
+    fallback: true
+},
 
   image: {
     domains: [

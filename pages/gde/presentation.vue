@@ -54,7 +54,7 @@
           <div class="flex flex-wrap">
             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
               <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+                class="relative flex flex-col min-w-0 break-words bg-white hover:bg-gray-50 w-full mb-8 shadow-lg rounded-lg"
               >
                 <div class="px-4 py-5 flex-auto">
                   <img class="w-20 h-20 inline-flex items-center justify-center" src="~assets/gde/img/cloudbrake.png" alt="">
@@ -67,7 +67,7 @@
             </div>
             <div class="w-full md:w-4/12 px-4 text-center">
               <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+                class="relative flex flex-col min-w-0 break-words bg-white hover:bg-gray-50 w-full mb-8 shadow-lg rounded-lg"
               >
                 <div class="px-4 py-5 flex-auto">
                   <img class="w-20 h-20 inline-flex items-center justify-center" src="~assets/gde/img/blight.png" alt="">
@@ -80,7 +80,7 @@
             </div>
             <div class="pt-6 w-full md:w-4/12 px-4 text-center">
               <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+                class="relative flex flex-col min-w-0 break-words bg-white hover:bg-gray-50 w-full mb-8 shadow-lg rounded-lg"
               >
                 <div class="px-4 py-5 flex-auto">
                   <img class="w-20 h-20 inline-flex items-center justify-center" src="~assets/gde/img/darkness.png" alt="">
@@ -115,13 +115,16 @@
                 Pour gagner le jeu, les joueurs doivent, soit contrôler le territoire principal de l'ennemi, soit dominer un nombre déterminé de territoires. 
                 Les conditions de victoire sont encore en réflexion.
               </p>
-              <nuxt-link
-                to="/gde/inscription"
-                class="fbg-blue-500 hover:bg-blue-400 bg-blue-300 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
-                >Inscription !
-              </nuxt-link>
+              <div class="flex">
+                <nuxt-link
+                  to="/gde/inscription"
+                  class="mx-auto hover:bg-orange-600 bg-orange-500 text-white font-bold py-2 px-4 border-b-4 border-orange-700 hover:border-orange-600 rounded text-4xl"
+                  >Inscription !
+                </nuxt-link>
+              </div>
+
             </div>
-            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+            <div class="w-full md:w-6/12 px-4 mr-auto ml-auto">
               <div
                 class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg colorB"
               >
@@ -144,7 +147,7 @@
                     ></polygon>
                   </svg>
                   <h4 class="text-xl font-bold text-white">
-                    Récit de la Guerre d’Eriador par Gwildor, serviteur de la Maison d’Elrond de Fondcombe.
+                    Act 1 : Récit de la Guerre d’Eriador par Gwildor, serviteur de la Maison d’Elrond de Fondcombe.
                   </h4>
                   <p class="text-md font-light mt-2 text-white italic">
                     En l'an 3019 du Troisième  Age, depuis que le Soleil et la Lune se sont élevés dans le ciel, la Terre du Milieu est proche du point de basculement définitif. 
@@ -156,7 +159,7 @@
           </div>
         </div>
       </section>
-      <section class="pb-5 relative block colorA">
+      <section class="pb-5 relative block colorA pb-40">
         <div
           class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
           style="height: 80px;"
@@ -180,13 +183,13 @@
           <div class="items-center flex flex-wrap">
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
-                <h3 class="text-3xl font-semibold text-white">Act 3</h3>
+                <h3 class="text-3xl font-semibold text-white">Act 2</h3>
                 <p class="mt-4 text-lg leading-relaxed text-white italic">
                    En l’an 3018, les peuples de la Terre du Milieu se sont livrés une guerre sans merci pour la domination totale. Les Elfes se sont unifiés, les Nains sont sortis de leurs montagnes, le Gondor a préparé ses défenses, le Rohan avait réuni ses cavaliers, l’Isengard s’était éveillé, les Gobelins infestaient les montagnes, l’Angmar renaissait de ses cendres glaciales, et le Mordor était prêt à la guerre.
                 </p>
               </div>
             </div>
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4 pt-8">
               <img
                 alt="..."
                 class="max-w-full rounded-lg shadow-lg"
@@ -197,7 +200,7 @@
         </div>
       </section>
 
-      <section class="pb-5 relative block colorD">
+      <section class="pb-5 relative block colorD pb-20">
         <div
           class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
           style="height: 80px;"
@@ -222,15 +225,15 @@
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <img
                 alt="..."
-                class="max-w-full rounded-lg shadow-lg"
+                class="max-w-full rounded-lg shadow-lg pt-10"
                 src="~/assets/gde/img/gde_3.webp"
               />
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
-                <h3 class="text-3xl font-semibold text-white">Act 2</h3>
+                <h3 class="text-3xl font-semibold text-white">Act 3</h3>
                 <p class="mt-4 text-lg leading-relaxed text-white italic">
-                   Je rédige ces lignes alors même que nous évacuons la Vallée Cachée, nous dirigeant vers l’Ouest, vers Mithlond, où nous pourrons nous regrouper autour de Cirdan et des derniers de notre peuple. La Guerre de l’Anneau a provoqué tant de morts et destructions inutiles pour l’obtention du Maître Anneau. Au travers de ce récit, je vais vous raconter ce qui nous a amené à ce point crucial de notre Age.
+                   En Eriador, la guerre fut rapide contre Angmar, le souvenir douloureux de ses méfaits il y a plusieurs siècles ont poussé Elfes et Nains à s’unir pour détruire à nouveau Carn Dûm.  Mais au sud, ce fut le Gondor qui chuta le premier. Les Dunedains s'avérèrent trop faibles face à la violence et la férocité des armées du Mordor. Minas Tirith tomba rapidement et ce malgré l’intervention du Rohan.
                 </p>
               </div>
             </div>

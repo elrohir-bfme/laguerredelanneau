@@ -49,7 +49,6 @@
   src: url('~assets/fonts/Albertus.otf') format('truetype');
 }
 
-
 html {
   background-color: #18191c;
   font-family: 'Albertus';

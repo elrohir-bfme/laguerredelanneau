@@ -22,9 +22,9 @@
         <h3 class="font-semibold text-lg">Détail</h3>
       </div>
       <div class="mx-auto flex flex-wrap">
-      <img alt="ecommerce" class="lg:w-1/2 w-full h-full object-cover object-center rounded transform transition duration-500 hover:scale-110 hover:drop-shadow-xl" src="https://d15f34w2p8l1cc.cloudfront.net/hearthstone/f42ac5b145b39980dddd13077bdf241e0f1cc4dcaf4e4d72eeaa157672b599e5.png">
+      <img alt="ecommerce" class="lg:w-1/2 w-full h-full object-cover object-center rounded transform transition duration-500 hover:scale-110 hover:drop-shadow-xl" :src="`https://api.laterredumilieu.fr${data.img.url}`">
       <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-        <h2 class="text-sm title-font text-gray-500 tracking-widest">BRAND NAME</h2>
+        <h2 class="text-sm title-font text-gray-500 tracking-widest">{{data.title}}</h2>
         <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">The Catcher in the Rye</h1>
         
         <p class="leading-relaxed">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
@@ -54,6 +54,12 @@
         this.$emit("close");
       },
     },
+    props: {
+      data: {
+          type: Object,
+          required: true
+      }
+    }
   }
 
 </script>

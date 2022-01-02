@@ -73,7 +73,7 @@
                   <img class="w-20 h-20 inline-flex items-center justify-center" src="~assets/gde/img/blight.png" alt="">
                   <h6 class="text-xl font-semibold">Un déplacement par semaine !</h6>
                   <p class="mt-2 mb-4 text-gray-600">
-                    Le destin de l'Eriador est entre vos mains. Chaque semaine vous allez vous déplacez sur une carte interactive.
+                    Le destin de l'Eriador est entre vos mains. Chaque semaine vous allez vous déplacer sur une carte interactive.
                   </p>
                 </div>
               </div>
@@ -100,7 +100,7 @@
               <p
                 class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
               >
-                La Guerre de l'Eriador est le nom de la région ouest de la Terre du Milieu, une zone importante mais aussi méconnu du grand public.
+                La Guerre de l'Eriador est le nom de la région ouest de la Terre du Milieu, une zone importante mais aussi méconnue du grand public.
                 Le principe de cette évènement reprend le mode de jeu : "La Guerre de l'Anneau".
               </p>
               <p
@@ -360,7 +360,7 @@
                  Angmar
               </h6>
               <p class="mt-2 mb-4 text-gray-500">
-                Terrassé après seulement quelques semaines de combats contre les Nains et les Elfes, Sauron renvoya son serviteur le plus fidèle, le Roi-Sorcier, afin de régénérer le royaume glacial d’Angmar. Après leur défaite, les numénoréens noirs se cachèrent dans les montagnes, craignant le courroux des Eldar. Les trolls et orques purent se réfugier dans les immensités du Forodwaith où nul ne serait venu les chercher. Comme par le passé, le Roi-Sorcier dû rassembler ses forces et rebâtir Carn Dûm. Les maîtres d’esclaves servent à nouveau la Couronne de Fer, les numénoréens jurent à nouveau fidélité aux ténèbres, et les orques, trolls et loups se rallient au Roi-Sorcier. L’heure est bientôt à la revanche pour ses serviteurs, qui ont désormais l’occasion de briser les Peuples Libres. Ne craignant aucun adversaire, ils seraient ravis d’investir les Havres Gris afin d'assouvir leur vengeance. Mais les Elfes ne seront pas seuls, les Nains et les Hommes seront prêts à défendre férocement l’Eriador, d’autant qu’Arnor a pu lui aussi renaître de ses cendres. Une occasion pour le Roi-Sorcier d’Angmar d’en finir une bonne fois pour toute avec les Dunedains et de balayer une bonne fois pour tout être ne se soumettant pas au Seigneur Sauron.
+                Terrassé après seulement quelques semaines de combats contre les Nains et les Elfes, Sauron renvoya son serviteur le plus fidèle, le Roi-Sorcier, afin de régénérer le royaume glacial d’Angmar. Après leur défaite, les numénoréens noirs se cachèrent dans les montagnes, craignant le courroux des Eldar. Les trolls et orques purent se réfugier dans les immensités du Forodwaith où nul ne serait venu les chercher. Comme par le passé, le Roi-Sorcier dû rassembler ses forces et rebâtir Carn Dûm. Les maîtres d’esclaves servent à nouveau la Couronne de Fer, les numénoréens jurent à nouveau fidélité aux ténèbres, et les orques, trolls et loups se rallient au Roi-Sorcier. L’heure est bientôt à la revanche pour ses serviteurs, qui ont désormais l’occasion de briser les Peuples Libres. Ne craignant aucun adversaire, ils seraient ravis d’investir les Havres Gris afin d'assouvir leur vengeance. Mais les Elfes ne seront pas seuls, les Nains et les Hommes seront prêts à défendre férocement l’Eriador, d’autant qu’Arnor a pu lui aussi renaître de ses cendres. Une occasion pour le Roi-Sorcier d'en finir avec les Dunedains et de balayer tout être qui résisterait au Seigneur Sauron.
               </p>
             </div>
             <div class="w-full lg:w-4/12 px-4 text-center transform transition duration-500 hover:scale-110">
@@ -396,7 +396,7 @@
                 Gondor
               </h6>
               <p class="mt-2 mb-4 text-gray-500">
-                La perte de la cité Blanche fut un coup terrible pour les Dunedains. Les orques ont ravagé les rues, investi le palais et brûlé l’Arbre Blanc. Fort heureusement, une graine a pu être sauvée et mise en lieu sûr où lorsque le jour sera venu, les Dunedains iront réclamer leurs terres et libéreront le Gondor de la mainmise de Sauron. Se réfugiant en Eriador, les Gondoriens furent accueillis par les Elfes et les Dunedains du Nord qui les aidèrent à s’installer dans l’ancienne forteresse du royaume d’Arthedain : Fornost. Rebaptisant la forteresse de fond en comble, les gondoriens purent se rassembler autour de leurs capitaines, se restaurer et préparer de nouvelles forces en vue de la nouvelle guerre qui se prépare en Eriador. Ils sont conscients de la nécessité de défendre à tout prix cette terre, c’est pourquoi ils rejoignirent sans hésiter la nouvelle Grande Alliance des Elfes, des Hommes et des Nains, en espérant que dès que le Mal sera chassé d’Eriador, ils pourront se tourner rapidement vers le sud.
+                La perte de la cité Blanche fut un coup terrible pour les Dunedains. Les orques ont ravagé les rues, investi le palais et brûlé l’Arbre Blanc. Fort heureusement, une graine a pu être sauvée et mise en lieu sûr où lorsque le jour sera venu, les Dunedains iront réclamer leurs terres et libéreront le Gondor de la mainmise de Sauron. Se réfugiant en Eriador, les Gondoriens furent accueillis par les Elfes et les Dunedains du Nord qui les aidèrent à s’installer dans l’ancienne forteresse du royaume d’Arthedain : Fornost. Rebâtissant la forteresse de fond en comble, les gondoriens purent se rassembler autour de leurs capitaines, se restaurer et préparer de nouvelles forces en vue de la nouvelle guerre qui se prépare en Eriador. Ils sont conscients de la nécessité de défendre à tout prix cette terre, c’est pourquoi ils rejoignirent sans hésiter la nouvelle Grande Alliance des Elfes, des Hommes et des Nains, en espérant que dès que le Mal sera chassé d’Eriador, ils pourront se tourner rapidement vers le sud.
               </p>
             </div>
             <div class="w-full lg:w-4/12 px-4 text-center transform transition duration-500 hover:scale-110">
@@ -432,7 +432,7 @@
                 Rohan
               </h5>
               <p class="mt-2 mb-4 text-gray-500">
-                Les Seigneurs des Chevaux eurent fort à faire durant la Guerre de l’Anneau et furent les victimes les plus tragiques. Pris en sandwich entre le Mordor et les Eldar, ils perdirent leurs terres et leurs rares places fortes, contraints à l’exil comme leurs ancêtres nomades Eotheod. Ils avaient néanmoins fait suffisamment de dégâts sur leur passage pour que les forces de Sauron soient ralenties et contraintes de se replier malgré leur victoire à Minhiriath. Protégés par les cavaliers, le peuple rohirrim parti à l’ouest, vers l’Eriador, en prenant soin de ne pas trop s’approcher des Elfes auxquels il vouaient un très fort ressentiment. Ils se sont installés au Cardolan près d’une ancienne tour fortifiée qu’ils rebaptirent à leur guise. De là, ils lancèrent des raids contre de petits campements d’orques s'amassant de plus en plus près d’Eriador. Mais ils se rendirent rapidement compte qu’ils ne pouvaient combattre seuls contre la tempête qui s’annonce. C’est pourquoi ils ont finalement rejoint la Grande Alliance des Elfes, des Hommes et des Nains.
+                Les Seigneurs des Chevaux eurent fort à faire durant la Guerre de l’Anneau et furent les victimes les plus tragiques. Pris en sandwich entre le Mordor et les Eldar, ils perdirent leurs terres et leurs rares places fortes, contraints à l’exil comme leurs ancêtres nomades Eotheod. Ils avaient néanmoins fait suffisamment de dégâts sur leur passage pour que les forces de Sauron soient ralenties et contraintes de se replier malgré leur victoire à Minhiriath. Protégés par les cavaliers, le peuple rohirrim parti à l’ouest, vers l’Eriador, en prenant soin de ne pas trop s’approcher des Elfes auxquels il vouaient un très fort ressentiment. Ils se sont installés au Cardolan près d’une ancienne tour fortifiée qu'ils rebâtirent à leur guise. De là, ils lancèrent des raids contre de petits campements d’orques s'amassant de plus en plus près d’Eriador. Mais ils se rendirent rapidement compte qu’ils ne pouvaient combattre seuls contre la tempête qui s’annonce. C’est pourquoi ils ont finalement rejoint la Grande Alliance des Elfes, des Hommes et des Nains.
               </p>
             </div>
           </div>

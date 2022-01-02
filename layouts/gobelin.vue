@@ -85,7 +85,7 @@ export default {
 @font-face {
   font-family: 'GIGI';
   font-display: swap;
-  src: url('~assets/fonts/GIGI.ttf') format('truetype');
+  src: url('~assets/fonts/GIGI.TTF') format('truetype');
 }
 
 @font-face {

@@ -80,18 +80,18 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 
 @font-face {
   font-family: 'GIGI';
   font-display: swap;
-  src: url('~assets/fonts/GIGI.TTF') format('truetype');
+  src: url('~assets/fonts/GIGI.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Bodoni';
   font-display: swap;
-  src: url('~assets/fonts/Bodoni_MT.TTF') format('truetype');
+  src: url('~assets/fonts/Bodoni_MT.ttf') format('truetype');
 }
 
 ul {

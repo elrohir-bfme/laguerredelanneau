@@ -6,6 +6,8 @@
           <img alt="La Guerre de l'Eriador" title="La Guerre de l'Eriador" class="w-16 m-4" src="~assets/gde/logo.png">
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gde">La Guerre de l'Eriador</nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gde/inscription">Inscription</nuxt-link>
+          <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gde/regles">Règles</nuxt-link>
+          <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gde/joueurs">Joueurs</nuxt-link>
           <a rel="noopener noreferrer" style="font-family: 'Albertus'" class="p-4 text-gray-600 hover:text-white hover:bg-gray-900" target="_blank" href="http://bit.ly/LaTerreduMilieu">
             <svg class="h-10 w-10 animate-pulse" width="71" height="55" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
@@ -24,17 +26,6 @@
     <Nuxt />
   </div>
 </template>
-
-<script>
-export default {
-  methods: {
-    async logout() {
-      await this.$strapi.logout()
-      this.$nuxt.$router.push('/gde/login')
-    },
-  },
-}
-</script>
 
 <style>
 

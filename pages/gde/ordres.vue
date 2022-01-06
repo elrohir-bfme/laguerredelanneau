@@ -26,49 +26,55 @@
     </div>
 
         <div v-if="selectedFaction === 1">
-            <div v-for="player in playerElfe">
+            <div v-for="player in playerArnor" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 2">
-            <div v-for="player in playerRohan">
+            <div v-for="player in playerGondor" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 3">
-            <div v-for="player in playerGondor">
+            <div v-for="player in playerRohan" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 4">
-            <div v-for="player in playerNain">
+            <div v-for="player in playerElfe" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 5">
-            <div v-for="player in playerMordor">
+            <div v-for="player in playerNain" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 6">
-            <div v-for="player in playerIsengard">
+            <div v-for="player in playerMordor" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 7">
-            <div v-for="player in playerGobelin">
+            <div v-for="player in playerIsengard" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 8">
-            <div v-for="player in playerAngmar">
+            <div v-for="player in playerGobelin" v-bind:key="player.name">
+                <Order :player="player" :regions="regions"/>
+            </div>
+        </div>
+
+        <div v-if="selectedFaction === 9">
+            <div v-for="player in playerAngmar" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
         </div>
@@ -104,12 +110,14 @@
 <script>
 
 export default {
+layout: "gde",
   data() {
     return {
         newPlayerName: "",
         addPlayer: [],
         players: null,
         regions: [],
+        playerArnor: [],
         playerElfe: [],
         playerRohan: [],
         playerGondor: [],
@@ -120,14 +128,15 @@ export default {
         playerAngmar: [],
         selectedFaction: null,
         options: [
-            { faction: 'Elfe', 'value': 1 },
-            { faction: 'Rohan', 'value': 2 },
-            { faction: 'Gondor', 'value': 3 },
-            { faction: 'Nain', 'value': 4 },
-            { faction: 'Mordor', 'value': 5 },
-            { faction: 'Isengard', 'value': 6 },
-            { faction: 'Gobelin', 'value': 7 },
-            { faction: 'Angmar', 'value': 8 }
+            { faction: 'Arnor', 'value': 1 },
+            { faction: 'Gondor', 'value': 2 },
+            { faction: 'Rohan', 'value': 3 },
+            { faction: 'Elfe', 'value': 4 },
+            { faction: 'Nain', 'value': 5 },
+            { faction: 'Mordor', 'value': 6 },
+            { faction: 'Isengard', 'value': 7 },
+            { faction: 'Gobelin', 'value': 8 },
+            { faction: 'Angmar', 'value': 9 }
         ]
     }
   },
@@ -138,14 +147,15 @@ export default {
         let playerArray = [];
 
         switch (this.selectedFaction) {
-            case 1 : playerArray = this.playerElfe; faction = "elfe"; break;
-            case 2 : playerArray = this.playerRohan; faction = "rohan"; break;
-            case 3 : playerArray = this.playerGondor; faction = "gondor"; break;
-            case 4 : playerArray = this.playerNain; faction = "nain" ;break;
-            case 5 : playerArray = this.playerMordor; faction = "mordor"; break;
-            case 6 : playerArray = this.playerIsengard; faction = "isengard"; break;
-            case 7 : playerArray = this.playerGobelin; faction = "gobelin"; break;
-            case 8 : playerArray = this.playerAngmar; faction = "angmar"; break;
+            case 1 : playerArray = this.playerArnor; faction = "arnor"; break;
+            case 2 : playerArray = this.playerGondor; faction = "gondor"; break;
+            case 3 : playerArray = this.playerRohan; faction = "rohan"; break;
+            case 4 : playerArray = this.playerElfe; faction = "elfe"; break;
+            case 5 : playerArray = this.playerNain; faction = "nain" ;break;
+            case 6 : playerArray = this.playerMordor; faction = "mordor"; break;
+            case 7 : playerArray = this.playerIsengard; faction = "isengard"; break;
+            case 8 : playerArray = this.playerGobelin; faction = "gobelin"; break;
+            case 9 : playerArray = this.playerAngmar; faction = "angmar"; break;
             default : console.log("No faction selected");
         }
         //Get data
@@ -177,7 +187,7 @@ export default {
     },
 
     findFaction(color) {
-        return ["#00bfff", "#0bff00", "#1e90ff", "#fffc00", "#db5461", "#ffffff", "#ff6f00", "#c500ff"].indexOf(color) + 1;
+        return ["ff85ee", "#00bfff", "#0bff00", "#1e90ff", "#fffc00", "#db5461", "#ffffff", "#ff6f00", "#c500ff"].indexOf(color) + 1;
     },
 
     addPlayerMethod() {
@@ -199,170 +209,27 @@ export default {
     }
   },
   async fetch() {
-	  this.players = await this.$http.$get(`https://api.npoint.io/19d0bb44fe007ec4761b`)
+	  this.players = await this.$http.$get(`https://api.npoint.io/2eeb1bea715cd907d7bc`)
         for (const key in this.players) {
 
             const obj = this.players[key];
         
             if (true
-            && key!== "BateauA"
-            && key!== "BateauB"
-            && key!== "BateauC"
-            && key!== "BateauD"
-            && key!== "BateauE"
-            && key!== "BateauG"
-            && key!== "BateauH"
-            && key!== "BateauI"
-            && key!== "BateauJ"
-            && key!== "BateauK"
             && key!== "riviere"
             && key!== "time"
-            && key!== "Tol_Fuin"
-            && key!== "factions") {
+            && key!== "factions"
+            && key!== "La_Grande_Mer"
+            && key!== "Rhovanion") {
             
-                switch (key) {
-                    case "Mer_Forochel":
-                        let newRegionA = {
-                            "name": "Mer Forochel",
-                            "code": "BateauA",
-                            "adjacents": obj.adjacents,
-                            "fortress" : false,
-                            "citadel": false,
-                        }
-                        this.regions.push(newRegionA);
-                        break;
-
-                    case "Mer_Himling":
-                        let newRegionB = {
-                            "name": "Mer Himling",
-                            "code": "BateauB",
-                            "adjacents": obj.adjacents,
-                            "conquete": 0,
-                            "fortress" : false,
-                            "citadel": false,
-                        }
-                        this.regions.push(newRegionB);
-                        break;
-
-                    case "Mer_Havres_Gris":
-                        let newRegionC = {
-                            "name": "Mer Havres Gris",
-                            "code": "BateauC",
-                            "adjacents": obj.adjacents,
-                            "conquete": 0,
-                            "fortress" : false,
-                            "citadel": false,
-                        }
-                        this.regions.push(newRegionC);
-                        break;
-
-                    case "Mer_Minhiriath":
-                        let newRegionD = {
-                            "name": "Mer Minhiriath",
-                            "code": "BateauD",
-                            "adjacents": obj.adjacents,
-                            "conquete": 0,
-                            "fortress" : false,
-                            "citadel": false,
-                        }
-                        this.regions.push(newRegionD);
-                        break;
-
-                    case "Mer_Enedwaith":
-                        let newRegionE = {
-                            "name": "Mer Enedwaith",
-                            "code": "BateauE",
-                            "adjacents": obj.adjacents,
-                            "conquete": 0,
-                            "fortress" : false,
-                            "citadel": false,
-                        }
-                        this.regions.push(newRegionE);
-                        break;
-
-                    case "Belegear":
-                        let newRegionF = {
-                            "name": "Belegear",
-                            "code": "BateauF",
-                            "adjacents": obj.adjacents,
-                            "conquete": 0,
-                            "fortress" : false,
-                            "citadel": false,
-                        }
-                        this.regions.push(newRegionF);
-                        break;
-
-                    case "Mer_Andrast":
-                        let newRegionG = {
-                            "name": "Mer Andrast",
-                            "code": "BateauG",
-                            "adjacents": obj.adjacents,
-                            "conquete": 0,
-                            "fortress" : false,
-                            "citadel": false,
-                        }
-                        this.regions.push(newRegionG);
-                    break;
-                        
-                    case "Mer_Dol_Amroth":
-                        let newRegionH = {
-                            "name": "Mer Dol Amroth",
-                            "code": "BateauH",
-                            "adjacents": obj.adjacents,
-                            "conquete": 0,
-                            "fortress" : false,
-                            "citadel": false,
-                        }
-                        this.regions.push(newRegionH);
-                        break;
-
-                    case "Mer_Tolfalas":
-                        let newRegionI = {
-                            "name": "Mer Tolfalas",
-                            "code": "BateauI",
-                            "adjacents": obj.adjacents,
-                            "conquete": 0,
-                            "fortress" : false,
-                            "citadel": false,
-                        }
-                        this.regions.push(newRegionI);
-                        break;
-
-                    case "Mer_Umbar":
-                        let newRegionJ = {
-                            "name": "Mer Umbar",
-                            "code": "BateauJ",
-                            "adjacents": obj.adjacents,
-                            "conquete": 0,
-                            "fortress" : false,
-                            "citadel": false,
-                        }
-                        this.regions.push(newRegionJ);
-                        break;
-
-                    case "Mer_Pelargir":
-                        let newRegionK = {
-                            "name": "Mer Pelargir",
-                            "code": "BateauK",
-                            "adjacents": obj.adjacents,
-                            "conquete": 0,
-                            "fortress" : false,
-                            "citadel": false,
-                        }
-                        this.regions.push(newRegionK);
-                        break;
-                    default:
-                        let newRegion = {
-                            "name": obj.name,
-                            "code": key,
-                            "adjacents": obj.adjacents,
-                            "conquete": this.findFaction(obj.color),
-                            "fortress" : obj.hasOwnProperty("fortress"),
-                            "citadel": obj.hasOwnProperty("citadel"),
-                        }
-                        this.regions.push(newRegion);
-                        break;
+                let newRegion = {
+                    "name": obj.name,
+                    "code": key,
+                    "adjacents": obj.adjacents,
+                    "conquete": this.findFaction(obj.color),
+                    "fortress" : obj.hasOwnProperty("fortress"),
+                    "citadel": obj.hasOwnProperty("citadel"),
                 }
+                this.regions.push(newRegion);
             }
 
         
@@ -380,27 +247,30 @@ export default {
                     };
                     switch (obj2[player]['faction']) {
                         case 1:
-                            this.playerElfe.push(_player);
+                            this.playerArnor.push(_player);
                             break;
                         case 2:
-                            this.playerRohan.push(_player);
-                            break;
-                        case 3:
                             this.playerGondor.push(_player);
                             break;
+                        case 3:
+                            this.playerRohan.push(_player);
+                            break;
                         case 4:
-                            this.playerNain.push(_player);
+                            this.playerElfe.push(_player);
                             break;
                         case 5:
-                            this.playerMordor.push(_player);
+                            this.playerNain.push(_player);
                             break;
                         case 6:
-                            this.playerIsengard.push(_player);
+                            this.playerMordor.push(_player);
                             break;
                         case 7:
-                            this.playerGobelin.push(_player);
+                            this.playerIsengard.push(_player);
                             break;
                         case 8:
+                            this.playerGobelin.push(_player);
+                            break;
+                        case 9:
                             this.playerAngmar.push(_player);
                             break;
                         default:

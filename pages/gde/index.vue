@@ -94,7 +94,7 @@
               :id="map.Lindon && map.Lindon.name" 
               :title="map.Lindon && map.Lindon.name" 
               aria-valuetext="Lindon" 
-              class="st"
+              class="st lindon"
               :class="map.Lindon && map.Lindon.color !== '#3300000' ? 'opacity-25' : 'opacity-0'" 
               :fill="map.Lindon ? map.Lindon.color : '#3300000'" 
               @mouseover="getInfo" 
@@ -105,7 +105,7 @@
               :id="map.Forlindon && map.Forlindon.name" 
               :title="map.Forlindon && map.Forlindon.name" 
               aria-valuetext="Forlindon" 
-              class="st"
+              class="st lindon"
               :class="map.Forlindon && map.Forlindon.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
               :fill="map.Forlindon ? map.Forlindon.color : '#3300000'" 
               @mouseover="getInfo" 
@@ -116,7 +116,7 @@
               :id="map.Harlindon && map.Harlindon.name" 
               :title="map.Harlindon && map.Harlindon.name" 
               aria-valuetext="Harlindon" 
-              class="st"
+              class="st lindon"
               :class="map.Harlindon && map.Harlindon.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
               :fill="map.Harlindon ? map.Harlindon.color : '#3300000'" 
               @mouseover="getInfo" 
@@ -135,7 +135,7 @@
               :id="map.Siragalë && map.Siragalë.name" 
               :title="map.Siragalë && map.Siragalë.name" 
               aria-valuetext="Siragalë" 
-              class="st"
+              class="st lindon"
               :class="map.Siragalë && map.Siragalë.color !== '#3300000' ? 'opacity-25' : 'opacity-0'" 
               :fill="map.Siragalë ? map.Siragalë.color : '#3300000'" 
               @mouseover="getInfo" 
@@ -157,7 +157,7 @@
               :id="map.Ered_Luin && map.Ered_Luin.name" 
               :title="map.Ered_Luin && map.Ered_Luin.name" 
               aria-valuetext="Ered_Luin" 
-              class="st"
+              class="st lindon"
               :class="map.Ered_Luin && map.Ered_Luin.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
               :fill="map.Ered_Luin ? map.Ered_Luin.color : '#3300000'" 
               @mouseover="getInfo" 
@@ -209,7 +209,7 @@
               :id="map.Montagnes_Bleues && map.Montagnes_Bleues.name" 
               :title="map.Montagnes_Bleues && map.Montagnes_Bleues.name" 
               aria-valuetext="Montagnes_Bleues" 
-              class="st"
+              class="st lindon"
               :class="map.Montagnes_Bleues && map.Montagnes_Bleues.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
               :fill="map.Montagnes_Bleues ? map.Montagnes_Bleues.color : '#3300000'" 
               @mouseover="getInfo" 
@@ -242,7 +242,7 @@
               :id="map.Egenyar && map.Egenyar.name" 
               :title="map.Egenyar && map.Egenyar.name" 
               aria-valuetext="Egenyar" 
-              class="st"
+              class="st lindon"
               :class="map.Egenyar && map.Egenyar.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
               :fill="map.Egenyar ? map.Egenyar.color : '#3300000'" 
               @mouseover="getInfo" 
@@ -264,7 +264,7 @@
               :id="map.Hall_Thorin && map.Hall_Thorin.name" 
               :title="map.Hall_Thorin && map.Hall_Thorin.name" 
               aria-valuetext="Hall_Thorin" 
-              class="st"
+              class="st lindon"
               :class="map.Hall_Thorin && map.Hall_Thorin.color !== '#3300000' ? 'opacity-25' : 'opacity-0'" 
               :fill="map.Hall_Thorin ? map.Hall_Thorin.color : '#3300000'" 
               @mouseover="getInfo" 
@@ -929,6 +929,9 @@
     <br><br>
     <br><br>
 
+  <!-- <a href="https://drive.google.com/drive/folders/1OPe3oMYnwVQCA3X3pBnF8rTWtryAa7ej?usp=sharing" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    Button
+  </a> -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
       <div v-for="faction in factions" :key="faction.name"
         :class="`bg-${color(faction.id)}-800 hover:bg-${color(faction.id)}-900 text-${color(faction.id)}-100`"
@@ -1122,7 +1125,6 @@ export default {
   },
   methods: {
     updateInfo(value) {
-      
       console.log("UPDATE INFO")
       console.log(value)
       this.title = value;
@@ -1197,10 +1199,10 @@ export default {
     this.loading = true;
 
     this.map = await this.$http.$get(
-      "https://api.npoint.io/19d0bb44fe007ec4761b"
+      "https://api.npoint.io/2eeb1bea715cd907d7bc"
     );
     this.factions = await this.$http.$get(
-      "https://api.npoint.io/19d0bb44fe007ec4761b/factions"
+      "https://api.npoint.io/2eeb1bea715cd907d7bc/factions"
     ); //API
     this.loading = false;
 
@@ -1313,6 +1315,9 @@ export default {
       );
     },
   },
+  mounted() {
+    console.log("MONTED");
+  }
 };
 </script>
 <style scoped>
@@ -1343,6 +1348,14 @@ path {
   fill-opacity: 0.4;
   fill: rgb(81 112 158);
 }
+
+/* .lindon:hover ~ .lindon {
+    opacity: 1 !important;
+    fill-opacity: 0 !important;
+    stroke: blue !important;
+    stroke-width: 10px !important;
+    stroke-opacity: 0.4 !important;
+} */
 
 
 </style>

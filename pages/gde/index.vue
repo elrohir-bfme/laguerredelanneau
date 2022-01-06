@@ -2,6 +2,123 @@
   <div>
 
 
+<div class="p-4">
+  <div class="flex items-center mr-4 mb-2">
+    <div class="px-4">
+    <input type="checkbox" id="A3-yes" v-model="viewCheckbox.lindon" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
+    <div class="bg-white border-2 rounded-md border-blue-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+      <svg class="fill-current hidden w-3 h-3 text-blue-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" fill-rule="evenodd">
+        <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+        <path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+        </g>
+      </g>
+      </svg>
+    </div>
+	<label for="A3-yes" class="select-none text-teal-500">Lindon</label>
+    </div>
+  <div class="px-4">
+  	<input type="checkbox" id="A3-yes" v-model="viewCheckbox.eregion" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
+	<div class="bg-white border-2 rounded-md border-yellow-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-yellow-500">
+	  <svg class="fill-current hidden w-3 h-3 text-yellow-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+		<g fill="none" fill-rule="evenodd">
+		  <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+			<path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+		  </g>
+		</g>
+	  </svg>
+	</div>
+	<label for="A3-yes" class="select-none text-yellow-500">Eregion</label>
+  </div>
+
+
+  <div class="px-4">
+  	<input type="checkbox" id="A3-yes" v-model="viewCheckbox.angmar" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
+	<div class="bg-white border-2 rounded-md border-purple-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-purple-500">
+	  <svg class="fill-current hidden w-3 h-3 text-purple-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+		<g fill="none" fill-rule="evenodd">
+		  <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+			<path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+		  </g>
+		</g>
+	  </svg>
+	</div>
+	<label for="A3-yes" class="select-none text-purple-500">Angmar</label>
+  </div>
+
+    <div class="px-4">
+  	<input type="checkbox" id="A3-yes" v-model="viewCheckbox.rhudaur" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
+	<div class="bg-white border-2 rounded-md border-indigo-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-indigo-500">
+	  <svg class="fill-current hidden w-3 h-3 text-indigo-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+		<g fill="none" fill-rule="evenodd">
+		  <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+			<path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+		  </g>
+		</g>
+	  </svg>
+	</div>
+	<label for="A3-yes" class="select-none text-indigo-500">Rhudaur</label>
+  </div>
+
+  <div class="px-4">
+  	<input type="checkbox" id="A3-yes" v-model="viewCheckbox.cardolan" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
+	<div class="bg-white border-2 rounded-md border-pink-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-pink-500">
+	  <svg class="fill-current hidden w-3 h-3 text-pink-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+		<g fill="none" fill-rule="evenodd">
+		  <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+			<path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+		  </g>
+		</g>
+	  </svg>
+	</div>
+	<label for="A3-yes" class="select-none text-pink-500">Cardolan</label>
+  </div>
+
+    <div class="px-4">
+  	<input type="checkbox" id="A3-yes" v-model="viewCheckbox.arthedain" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
+	<div class="bg-white border-2 rounded-md border-orange-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-orange-500">
+	  <svg class="fill-current hidden w-3 h-3 text-orange-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+		<g fill="none" fill-rule="evenodd">
+		  <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+			<path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+		  </g>
+		</g>
+	  </svg>
+	</div>
+	<label for="A3-yes" class="select-none text-orange-500">Arthedain</label>
+  </div>
+
+    <div class="px-4">
+  	<input type="checkbox" id="A3-yes" v-model="viewCheckbox.rohan" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
+	<div class="bg-white border-2 rounded-md border-gray-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-gray-500">
+	  <svg class="fill-current hidden w-3 h-3 text-gray-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+		<g fill="none" fill-rule="evenodd">
+		  <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+			<path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+		  </g>
+		</g>
+	  </svg>
+	</div>
+	<label for="A3-yes" class="select-none text-gray-500">Rohan</label>
+  </div>
+
+      <div class="px-4">
+  	<input type="checkbox" id="A3-yes" v-model="viewCheckbox.brumeux" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
+	<div class="bg-white border-2 rounded-md border-red-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-red-500">
+	  <svg class="fill-current hidden w-3 h-3 text-red-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+		<g fill="none" fill-rule="evenodd">
+		  <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+			<path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+		  </g>
+		</g>
+	  </svg>
+	</div>
+	<label for="A3-yes" class="select-none text-red-500">Monts Brumeux</label>
+  </div>
+
+  </div>
+</div>
+
     <div id="svg-container" class="map" :style="btnStyles">
 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2336 2114">
@@ -71,7 +188,7 @@
               :title="map.Forodwaith && map.Forodwaith.name" 
               aria-valuetext="Forodwaith" 
               class="st"
-              :class="map.Forodwaith && map.Forodwaith.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Forodwaith && map.Forodwaith.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.angmar && 'fill-current text-purple-700 opacity-50']" 
               :fill="map.Forodwaith ? map.Forodwaith.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -84,7 +201,7 @@
               :title="map.Enedwaith && map.Enedwaith.name" 
               aria-valuetext="Enedwaith" 
               class="st"
-              :class="map.Enedwaith && map.Enedwaith.color !== '#3300000' ? 'opacity-25' : 'opacity-0'" 
+              :class="[map.Enedwaith && map.Enedwaith.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.rohan && 'fill-current text-gray-400 opacity-50']"
               :fill="map.Enedwaith ? map.Enedwaith.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -94,8 +211,8 @@
               :id="map.Lindon && map.Lindon.name" 
               :title="map.Lindon && map.Lindon.name" 
               aria-valuetext="Lindon" 
-              class="st lindon"
-              :class="map.Lindon && map.Lindon.color !== '#3300000' ? 'opacity-25' : 'opacity-0'" 
+              class="st"
+              :class="[map.Lindon && map.Lindon.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.lindon && 'fill-current text-teal-400 opacity-50']" 
               :fill="map.Lindon ? map.Lindon.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -105,8 +222,8 @@
               :id="map.Forlindon && map.Forlindon.name" 
               :title="map.Forlindon && map.Forlindon.name" 
               aria-valuetext="Forlindon" 
-              class="st lindon"
-              :class="map.Forlindon && map.Forlindon.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              class="st"
+              :class="[map.Forlindon && map.Forlindon.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.lindon && 'fill-current text-teal-400 opacity-50']"
               :fill="map.Forlindon ? map.Forlindon.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -117,7 +234,7 @@
               :title="map.Harlindon && map.Harlindon.name" 
               aria-valuetext="Harlindon" 
               class="st lindon"
-              :class="map.Harlindon && map.Harlindon.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Harlindon && map.Harlindon.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.lindon && 'fill-current text-teal-400 opacity-50']"
               :fill="map.Harlindon ? map.Harlindon.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -135,8 +252,8 @@
               :id="map.Siragalë && map.Siragalë.name" 
               :title="map.Siragalë && map.Siragalë.name" 
               aria-valuetext="Siragalë" 
-              class="st lindon"
-              :class="map.Siragalë && map.Siragalë.color !== '#3300000' ? 'opacity-25' : 'opacity-0'" 
+              class="st"
+              :class="[map.Siragalë && map.Siragalë.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.lindon && 'fill-current text-teal-400 opacity-50']"
               :fill="map.Siragalë ? map.Siragalë.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -147,7 +264,7 @@
               :title="map.Minhiriath && map.Minhiriath.name" 
               aria-valuetext="Minhiriath" 
               class="st"
-              :class="map.Minhiriath && map.Minhiriath.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Minhiriath && map.Minhiriath.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.cardolan && 'fill-current text-pink-500 opacity-50']" 
               :fill="map.Minhiriath ? map.Minhiriath.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -157,8 +274,8 @@
               :id="map.Ered_Luin && map.Ered_Luin.name" 
               :title="map.Ered_Luin && map.Ered_Luin.name" 
               aria-valuetext="Ered_Luin" 
-              class="st lindon"
-              :class="map.Ered_Luin && map.Ered_Luin.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              class="st"
+              :class="[map.Ered_Luin && map.Ered_Luin.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.lindon && 'fill-current text-teal-400 opacity-50']"
               :fill="map.Ered_Luin ? map.Ered_Luin.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -169,7 +286,7 @@
               :title="map.Pays_Dun && map.Pays_Dun.name" 
               aria-valuetext="Pays_Dun" 
               class="st"
-              :class="map.Pays_Dun && map.Pays_Dun.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Pays_Dun && map.Pays_Dun.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.rohan && 'fill-current text-gray-400 opacity-50']"
               :fill="map.Pays_Dun ? map.Pays_Dun.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -188,7 +305,7 @@
               :title="map.Breche_Rohan && map.Breche_Rohan.name" 
               aria-valuetext="Breche_Rohan" 
               class="st"
-              :class="map.Breche_Rohan && map.Breche_Rohan.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Breche_Rohan && map.Breche_Rohan.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.rohan && 'fill-current text-gray-400 opacity-50']" 
               :fill="map.Breche_Rohan ? map.Breche_Rohan.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -199,7 +316,7 @@
               :title="map.Girithlin && map.Girithlin.name" 
               aria-valuetext="Girithlin" 
               class="st"
-              :class="map.Girithlin && map.Girithlin.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Girithlin && map.Girithlin.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.cardolan && 'fill-current text-pink-500 opacity-50']" 
               :fill="map.Girithlin ? map.Girithlin.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -209,8 +326,8 @@
               :id="map.Montagnes_Bleues && map.Montagnes_Bleues.name" 
               :title="map.Montagnes_Bleues && map.Montagnes_Bleues.name" 
               aria-valuetext="Montagnes_Bleues" 
-              class="st lindon"
-              :class="map.Montagnes_Bleues && map.Montagnes_Bleues.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              class="st"
+              :class="[map.Montagnes_Bleues && map.Montagnes_Bleues.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.lindon && 'fill-current text-teal-400 opacity-50']"
               :fill="map.Montagnes_Bleues ? map.Montagnes_Bleues.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -221,7 +338,7 @@
               :title="map.Hollin && map.Hollin.name" 
               aria-valuetext="Hollin" 
               class="st"
-              :class="map.Hollin && map.Hollin.color !== '#3300000' ? 'opacity-25' : 'opacity-0'" 
+              :class="[map.Hollin && map.Hollin.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.rhudaur && 'fill-current text-indigo-600 opacity-50']"
               :fill="map.Hollin ? map.Hollin.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -232,7 +349,7 @@
               :title="map.Metraith && map.Metraith.name" 
               aria-valuetext="Metraith" 
               class="st"
-              :class="map.Metraith && map.Metraith.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Metraith && map.Metraith.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.cardolan && 'fill-current text-pink-500 opacity-50']" 
               :fill="map.Metraith ? map.Metraith.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -242,8 +359,8 @@
               :id="map.Egenyar && map.Egenyar.name" 
               :title="map.Egenyar && map.Egenyar.name" 
               aria-valuetext="Egenyar" 
-              class="st lindon"
-              :class="map.Egenyar && map.Egenyar.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              class="st"
+              :class="[map.Egenyar && map.Egenyar.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.lindon && 'fill-current text-teal-400 opacity-50']"
               :fill="map.Egenyar ? map.Egenyar.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -254,7 +371,7 @@
               :title="map.Forochel && map.Forochel.name" 
               aria-valuetext="Forochel" 
               class="st"
-              :class="map.Forochel && map.Forochel.color !== '#3300000' ? 'opacity-25' : 'opacity-0'" 
+              :class="[map.Forochel && map.Forochel.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.angmar && 'fill-current text-purple-700 opacity-50']" 
               :fill="map.Forochel ? map.Forochel.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -264,8 +381,8 @@
               :id="map.Hall_Thorin && map.Hall_Thorin.name" 
               :title="map.Hall_Thorin && map.Hall_Thorin.name" 
               aria-valuetext="Hall_Thorin" 
-              class="st lindon"
-              :class="map.Hall_Thorin && map.Hall_Thorin.color !== '#3300000' ? 'opacity-25' : 'opacity-0'" 
+              class="st"
+              :class="[map.Hall_Thorin && map.Hall_Thorin.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.lindon && 'fill-current text-teal-400 opacity-50']"
               :fill="map.Hall_Thorin ? map.Hall_Thorin.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -276,7 +393,7 @@
               :title="map.Landes_Etten && map.Landes_Etten.name" 
               aria-valuetext="Landes_Etten" 
               class="st"
-              :class="map.Landes_Etten && map.Landes_Etten.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Landes_Etten && map.Landes_Etten.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.rhudaur && 'fill-current text-indigo-600 opacity-50']" 
               :fill="map.Landes_Etten ? map.Landes_Etten.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -295,7 +412,7 @@
               :title="map.Fontgrise && map.Fontgrise.name" 
               aria-valuetext="Fontgrise" 
               class="st"
-              :class="map.Fontgrise && map.Fontgrise.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Fontgrise && map.Fontgrise.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.cardolan && 'fill-current text-pink-500 opacity-50']" 
               :fill="map.Fontgrise ? map.Fontgrise.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -306,7 +423,7 @@
               :title="map.Trouee_Trolls && map.Trouee_Trolls.name" 
               aria-valuetext="Trouee_Trolls" 
               class="st"
-              :class="map.Trouee_Trolls && map.Trouee_Trolls.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Trouee_Trolls && map.Trouee_Trolls.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.rhudaur && 'fill-current text-indigo-600 opacity-50']"  
               :fill="map.Trouee_Trolls ? map.Trouee_Trolls.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -317,7 +434,7 @@
               :title="map.Zagh_Kala && map.Zagh_Kala.name" 
               aria-valuetext="Zagh_Kala" 
               class="st"
-              :class="map.Zagh_Kala && map.Zagh_Kala.color !== '#3300000' ? 'opacity-25' : 'opacity-0'" 
+              :class="[map.Zagh_Kala && map.Zagh_Kala.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.brumeux && 'fill-current text-red-700 opacity-50']" 
               :fill="map.Zagh_Kala ? map.Zagh_Kala.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -328,7 +445,7 @@
               :title="map.Cameth_Brin && map.Cameth_Brin.name" 
               aria-valuetext="Cameth_Brin" 
               class="st"
-              :class="map.Cameth_Brin && map.Cameth_Brin.color !== '#3300000' ? 'opacity-25' : 'opacity-0'" 
+              :class="[map.Cameth_Brin && map.Cameth_Brin.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.rhudaur && 'fill-current text-indigo-600 opacity-50']"  
               :fill="map.Cameth_Brin ? map.Cameth_Brin.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -339,7 +456,7 @@
               :title="map.Arthedain && map.Arthedain.name" 
               aria-valuetext="Arthedain" 
               class="st"
-              :class="map.Arthedain && map.Arthedain.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Arthedain && map.Arthedain.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.angmar && 'fill-current text-purple-700 opacity-50']" 
               :fill="map.Arthedain ? map.Arthedain.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -350,7 +467,7 @@
               :title="map.Cairill && map.Cairill.name" 
               aria-valuetext="Cairill" 
               class="st"
-              :class="map.Cairill && map.Cairill.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Cairill && map.Cairill.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.rohan && 'fill-current text-gray-400 opacity-50']"
               :fill="map.Cairill ? map.Cairill.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -361,7 +478,7 @@
               :title="map.Isendale && map.Isendale.name" 
               aria-valuetext="Isendale" 
               class="st"
-              :class="map.Isendale && map.Isendale.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Isendale && map.Isendale.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.rohan && 'fill-current text-gray-400 opacity-50']"
               :fill="map.Isendale ? map.Isendale.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -372,7 +489,7 @@
               :title="map.Ruines_Nord && map.Ruines_Nord.name" 
               aria-valuetext="Ruines_Nord" 
               class="st"
-              :class="map.Ruines_Nord && map.Ruines_Nord.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Ruines_Nord && map.Ruines_Nord.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.angmar && 'fill-current text-purple-700 opacity-50']" 
               :fill="map.Ruines_Nord ? map.Ruines_Nord.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -383,7 +500,7 @@
               :title="map.Baie_Forochel && map.Baie_Forochel.name" 
               aria-valuetext="Baie_Forochel" 
               class="st"
-              :class="map.Baie_Forochel && map.Baie_Forochel.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Baie_Forochel && map.Baie_Forochel.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.angmar && 'fill-current text-purple-700 opacity-50']" 
               :fill="map.Baie_Forochel ? map.Baie_Forochel.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -394,7 +511,7 @@
               :title="map.Landes_Angmar && map.Landes_Angmar.name" 
               aria-valuetext="Landes_Angmar" 
               class="st"
-              :class="map.Landes_Angmar && map.Landes_Angmar.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Landes_Angmar && map.Landes_Angmar.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.angmar && 'fill-current text-purple-700 opacity-50']" 
               :fill="map.Landes_Angmar ? map.Landes_Angmar.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -405,7 +522,7 @@
               :title="map.Vieille_Foret && map.Vieille_Foret.name" 
               aria-valuetext="Vieille_Foret" 
               class="st"
-              :class="map.Vieille_Foret && map.Vieille_Foret.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Vieille_Foret && map.Vieille_Foret.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.arthedain && 'fill-current text-orange-400 opacity-50']" 
               :fill="map.Vieille_Foret ? map.Vieille_Foret.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -416,7 +533,7 @@
               :title="map.Isengard && map.Isengard.name" 
               aria-valuetext="Isengard" 
               class="st"
-              :class="map.Isengard && map.Isengard.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Isengard && map.Isengard.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.rohan && 'fill-current text-gray-400 opacity-50']" 
               :fill="map.Isengard ? map.Isengard.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -427,7 +544,7 @@
               :title="map.Grand_Mur && map.Grand_Mur.name" 
               aria-valuetext="Grand_Mur" 
               class="st"
-              :class="map.Grand_Mur && map.Grand_Mur.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Grand_Mur && map.Grand_Mur.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.angmar && 'fill-current text-purple-700 opacity-50']" 
               :fill="map.Grand_Mur ? map.Grand_Mur.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -438,7 +555,7 @@
               :title="map.Triste_Plaine && map.Triste_Plaine.name" 
               aria-valuetext="Triste_Plaine" 
               class="st"
-              :class="map.Triste_Plaine && map.Triste_Plaine.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Triste_Plaine && map.Triste_Plaine.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.lindon && 'fill-current text-teal-400 opacity-50']" 
               :fill="map.Triste_Plaine ? map.Triste_Plaine.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -449,7 +566,7 @@
               :title="map.Haut_Nord && map.Haut_Nord.name" 
               aria-valuetext="Haut_Nord" 
               class="st"
-              :class="map.Haut_Nord && map.Haut_Nord.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Haut_Nord && map.Haut_Nord.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.arthedain && 'fill-current text-orange-400 opacity-50']" 
               :fill="map.Haut_Nord ? map.Haut_Nord.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -460,7 +577,7 @@
               :title="map.Collines_Tours && map.Collines_Tours.name" 
               aria-valuetext="Collines_Tours" 
               class="st"
-              :class="map.Collines_Tours && map.Collines_Tours.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Collines_Tours && map.Collines_Tours.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.lindon && 'fill-current text-teal-400 opacity-50']" 
               :fill="map.Collines_Tours ? map.Collines_Tours.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -471,7 +588,7 @@
               :title="map.Nain_Enidh && map.Nain_Enidh.name" 
               aria-valuetext="Nain_Enidh" 
               class="st"
-              :class="map.Nain_Enidh && map.Nain_Enidh.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Nain_Enidh && map.Nain_Enidh.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.rhudaur && 'fill-current text-indigo-600 opacity-50']"
               :fill="map.Nain_Enidh ? map.Nain_Enidh.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -482,7 +599,7 @@
               :title="map.Pays_Bouc && map.Pays_Bouc.name" 
               aria-valuetext="Pays_Bouc" 
               class="st"
-              :class="map.Pays_Bouc && map.Pays_Bouc.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Pays_Bouc && map.Pays_Bouc.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.arthedain && 'fill-current text-orange-400 opacity-50']" 
               :fill="map.Pays_Bouc ? map.Pays_Bouc.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -493,7 +610,7 @@
               :title="map.Eregion && map.Eregion.name" 
               aria-valuetext="Eregion" 
               class="st"
-              :class="map.Eregion && map.Eregion.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Eregion && map.Eregion.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.eregion && 'fill-current text-yellow-400 opacity-50']" 
               :fill="map.Eregion ? map.Eregion.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -504,7 +621,7 @@
               :title="map.Gwathlo && map.Gwathlo.name" 
               aria-valuetext="Gwathlo" 
               class="st"
-              :class="map.Gwathlo && map.Gwathlo.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Gwathlo && map.Gwathlo.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.cardolan && 'fill-current text-pink-500 opacity-50']" 
               :fill="map.Gwathlo ? map.Gwathlo.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -515,7 +632,7 @@
               :title="map.Evendim_Collines && map.Evendim_Collines.name" 
               aria-valuetext="Evendim_Collines" 
               class="st"
-              :class="map.Evendim_Collines && map.Evendim_Collines.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Evendim_Collines && map.Evendim_Collines.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.arthedain && 'fill-current text-orange-400 opacity-50']" 
               :fill="map.Evendim_Collines ? map.Evendim_Collines.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -526,7 +643,7 @@
               :title="map.Gobelinville && map.Gobelinville.name" 
               aria-valuetext="Gobelinville" 
               class="st"
-              :class="map.Gobelinville && map.Gobelinville.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Gobelinville && map.Gobelinville.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.brumeux && 'fill-current text-red-700 opacity-50']" 
               :fill="map.Gobelinville ? map.Gobelinville.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -537,7 +654,7 @@
               :title="map.Dol_Tinereb && map.Dol_Tinereb.name" 
               aria-valuetext="Dol_Tinereb" 
               class="st"
-              :class="map.Dol_Tinereb && map.Dol_Tinereb.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Dol_Tinereb && map.Dol_Tinereb.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.cardolan && 'fill-current text-pink-500 opacity-50']" 
               :fill="map.Dol_Tinereb ? map.Dol_Tinereb.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -548,7 +665,7 @@
               :title="map.Collines_Vent && map.Collines_Vent.name" 
               aria-valuetext="Collines_Vent" 
               class="st"
-              :class="map.Collines_Vent && map.Collines_Vent.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Collines_Vent && map.Collines_Vent.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.rhudaur && 'fill-current text-indigo-600 opacity-50']"  
               :fill="map.Collines_Vent ? map.Collines_Vent.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -559,7 +676,7 @@
               :title="map.Haut_Sud && map.Haut_Sud.name" 
               aria-valuetext="Haut_Sud" 
               class="st"
-              :class="map.Haut_Sud && map.Haut_Sud.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Haut_Sud && map.Haut_Sud.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.cardolan && 'fill-current text-pink-500 opacity-50']" 
               :fill="map.Haut_Sud ? map.Haut_Sud.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -570,7 +687,7 @@
               :title="map.Landes_Sauvages && map.Landes_Sauvages.name" 
               aria-valuetext="Landes_Sauvages" 
               class="st"
-              :class="map.Landes_Sauvages && map.Landes_Sauvages.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Landes_Sauvages && map.Landes_Sauvages.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.rhudaur && 'fill-current text-indigo-600 opacity-50']"
               :fill="map.Landes_Sauvages ? map.Landes_Sauvages.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -581,7 +698,7 @@
               :title="map.Glad_Ereg && map.Glad_Ereg.name" 
               aria-valuetext="Glad_Ereg" 
               class="st"
-              :class="map.Glad_Ereg && map.Glad_Ereg.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Glad_Ereg && map.Glad_Ereg.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.eregion && 'fill-current text-yellow-400 opacity-50']" 
               :fill="map.Glad_Ereg ? map.Glad_Ereg.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -592,7 +709,7 @@
               :title="map.Sirannon && map.Sirannon.name" 
               aria-valuetext="Sirannon" 
               class="st"
-              :class="map.Sirannon && map.Sirannon.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Sirannon && map.Sirannon.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.eregion && 'fill-current text-yellow-400 opacity-50']" 
               :fill="map.Sirannon ? map.Sirannon.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -603,19 +720,19 @@
               :title="map.Rivière_Lune && map.Rivière_Lune.name" 
               aria-valuetext="Rivière_Lune" 
               class="st"
-              :class="map.Rivière_Lune && map.Rivière_Lune.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Rivière_Lune && map.Rivière_Lune.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.lindon && 'fill-current text-teal-400 opacity-50']" 
               :fill="map.Rivière_Lune ? map.Rivière_Lune.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
               d="M956.37,793.24c-5.32-1.84-8.71-2.91-12-4.19-9.62-3.72-19.16-7.69-28.84-11.27-8.39-3.1-17-2.48-25.64-.82-22.66,4.37-45,1.95-67.1-3.52-7.39-1.82-14.62-4.88-18.9-12-4-6.66-3.46-8.59,2.85-13.12,5.92-4.24,11.48-9,17.55-13,8.2-5.41,12-13.49,13.52-22.47,1.64-9.36,6.26-16.67,12.5-23.34,1.81-1.94,4.11-3.83,5-6.18,3.52-9.76,10.74-14.67,20.37-17.09a56.9,56.9,0,0,0,11.23-4.14c4.74-2.35,10.68-4.19,13.54-8.11,9.23-12.64,23.91-15.06,36.49-21.35a105.12,105.12,0,0,1,41.29-10.73c4.91-.29,9.76-1.63,15.76-2.69-4.37,12.54-1,24.43-.52,36.41.22,5.77-.65,12.36-3.34,17.32-8.37,15.45-12.63,32.14-17.21,48.83-2.29,8.34-5.8,16.36-8,24.73-2.22,8.64-3.51,17.53-5.11,26.32C958.68,778.94,957.72,785.12,956.37,793.24Z"
             />
             <path
-              :id="map.Evendim && map.Evendim.name" 
-              :title="map.Evendim && map.Evendim.name" 
-              aria-valuetext="Evendim" 
+              :id="map.Champs_Verts && map.Champs_Verts.name" 
+              :title="map.Champs_Verts && map.Champs_Verts.name" 
+              aria-valuetext="Champs_Verts" 
               class="st"
-              :class="map.Evendim && map.Evendim.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
-              :fill="map.Evendim ? map.Evendim.color : '#3300000'" 
+              :class="[map.Champs_Verts && map.Champs_Verts.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.arthedain && 'fill-current text-orange-400 opacity-50']" 
+              :fill="map.Champs_Verts ? map.Champs_Verts.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
               d="M1187.1,685.18c3.72.74,9.78,2.34,15.94,3.09,17.17,2.08,22.33,7.09,25,24.19.7,4.51,1.51,9.69,4.16,13.08,7.7,9.81,8.77,22.24,14.28,32.83,1.72,3.3-.17,5.64-2.62,7.75a23.89,23.89,0,0,0-8.15,14.43c-.53,2.88-2.9,5.75-5.13,7.89-3.09,3-6.88,5.21-10.31,7.83-10.83,8.31-21.45,16.65-35.71,18.87-8.08,1.26-15.74,5.47-23.83,6.45-11.77,1.44-22.39-3.3-28.17-13.55-8-14.25-19.87-16.29-33.83-13.46-6.73,1.36-11.93.17-17.7-3.68-15.23-10.16-31.91-14.78-50.32-10.19-2.45.61-5.09.43-7.79.63-1.66-5.6,1.77-8.78,3.9-12.33,5.29-8.82,10.69-17.59,16-26.39,1.38-2.27,2.36-4.93,4.16-6.79,10.19-10.55,15.59-23.8,21.33-36.88a16.93,16.93,0,0,1,2.24-2.87c1.61,1.92,2.8,3.85,4.47,5.17,2.27,1.81,4.76,4.13,7.41,4.52,12.15,1.8,24.37,3.15,36.59,4.35,6.33.62,12.62.28,18.39-3.19a10.2,10.2,0,0,1,5.75-1.37c11.48,1,20.45-5.19,29.72-10.25C1177.52,692.78,1181.58,689.16,1187.1,685.18Z"
@@ -625,7 +742,7 @@
               :title="map.Hobbitbourg && map.Hobbitbourg.name" 
               aria-valuetext="Hobbitbourg" 
               class="st"
-              :class="map.Hobbitbourg && map.Hobbitbourg.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Hobbitbourg && map.Hobbitbourg.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.arthedain && 'fill-current text-orange-400 opacity-50']" 
               :fill="map.Hobbitbourg ? map.Hobbitbourg.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -636,7 +753,7 @@
               :title="map.Moria && map.Moria.name" 
               aria-valuetext="Moria" 
               class="st"
-              :class="map.Moria && map.Moria.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Moria && map.Moria.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.brumeux && 'fill-current text-red-700 opacity-50']" 
               :fill="map.Moria ? map.Moria.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -647,7 +764,7 @@
               :title="map.Havres_Gris && map.Havres_Gris.name" 
               aria-valuetext="Havres_Gris" 
               class="st"
-              :class="map.Havres_Gris && map.Havres_Gris.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Havres_Gris && map.Havres_Gris.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.lindon && 'fill-current text-teal-400 opacity-50']" 
               :fill="map.Havres_Gris ? map.Havres_Gris.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -658,7 +775,7 @@
               :title="map.Pays_Touque && map.Pays_Touque.name" 
               aria-valuetext="Pays_Touque" 
               class="st"
-              :class="map.Pays_Touque && map.Pays_Touque.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Pays_Touque && map.Pays_Touque.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.arthedain && 'fill-current text-orange-400 opacity-50']" 
               :fill="map.Pays_Touque ? map.Pays_Touque.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -669,7 +786,7 @@
               :title="map.Champs_Fornost && map.Champs_Fornost.name" 
               aria-valuetext="Champs_Fornost" 
               class="st"
-              :class="map.Champs_Fornost && map.Champs_Fornost.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Champs_Fornost && map.Champs_Fornost.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.arthedain && 'fill-current text-orange-400 opacity-50']" 
               :fill="map.Champs_Fornost ? map.Champs_Fornost.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -680,7 +797,7 @@
               :title="map.Angle && map.Angle.name" 
               aria-valuetext="Angle" 
               class="st"
-              :class="map.Angle && map.Angle.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Angle && map.Angle.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.cardolan && 'fill-current text-pink-500 opacity-50']" 
               :fill="map.Angle ? map.Angle.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -691,7 +808,7 @@
               :title="map.Fondcombe && map.Fondcombe.name" 
               aria-valuetext="Fondcombe" 
               class="st"
-              :class="map.Fondcombe && map.Fondcombe.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Fondcombe && map.Fondcombe.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.eregion && 'fill-current text-yellow-400 opacity-50']" 
               :fill="map.Fondcombe ? map.Fondcombe.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -702,7 +819,7 @@
               :title="map.Carn_Dum && map.Carn_Dum.name" 
               aria-valuetext="Carn_Dum" 
               class="st"
-              :class="map.Carn_Dum && map.Carn_Dum.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Carn_Dum && map.Carn_Dum.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.angmar && 'fill-current text-purple-700 opacity-50']" 
               :fill="map.Carn_Dum ? map.Carn_Dum.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -713,7 +830,7 @@
               :title="map.Mont_Gräm && map.Mont_Gräm.name" 
               aria-valuetext="Mont_Gräm" 
               class="st"
-              :class="map.Mont_Gräm && map.Mont_Gräm.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Mont_Gräm && map.Mont_Gräm.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.angmar && 'fill-current text-purple-700 opacity-50']" 
               :fill="map.Mont_Gräm ? map.Mont_Gräm.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -732,7 +849,7 @@
               :title="map.Galgals && map.Galgals.name" 
               aria-valuetext="Galgals" 
               class="st"
-              :class="map.Galgals && map.Galgals.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Galgals && map.Galgals.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.arthedain && 'fill-current text-orange-400 opacity-50']" 
               :fill="map.Galgals ? map.Galgals.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -743,7 +860,7 @@
               :title="map.Bree && map.Bree.name" 
               aria-valuetext="Bree" 
               class="st"
-              :class="map.Bree && map.Bree.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Bree && map.Bree.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.arthedain && 'fill-current text-orange-400 opacity-50']" 
               :fill="map.Bree ? map.Bree.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -754,7 +871,7 @@
               :title="map.Annuminas && map.Annuminas.name" 
               aria-valuetext="Annuminas" 
               class="st"
-              :class="map.Annuminas && map.Annuminas.color !== '#3300000' ? 'opacity-25' : 'opacity-0'" 
+              :class="[map.Annuminas && map.Annuminas.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.arthedain && 'fill-current text-orange-400 opacity-50']" 
               :fill="map.Annuminas ? map.Annuminas.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -765,7 +882,7 @@
               :title="map.Gue_Bruinen && map.Gue_Bruinen.name" 
               aria-valuetext="Gue_Bruinen" 
               class="st"
-              :class="map.Gue_Bruinen && map.Gue_Bruinen.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Gue_Bruinen && map.Gue_Bruinen.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.eregion && 'fill-current text-yellow-400 opacity-50']" 
               :fill="map.Gue_Bruinen ? map.Gue_Bruinen.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -785,7 +902,7 @@
               :title="map.Fornost && map.Fornost.name" 
               aria-valuetext="Fornost" 
               class="st"
-              :class="map.Fornost && map.Fornost.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Fornost && map.Fornost.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.arthedain && 'fill-current text-orange-400 opacity-50']" 
               :fill="map.Fornost ? map.Fornost.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -796,7 +913,7 @@
               :title="map.Amon_Sul && map.Amon_Sul.name" 
               aria-valuetext="Amon_Sul" 
               class="st"
-              :class="map.Amon_Sul && map.Amon_Sul.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Amon_Sul && map.Amon_Sul.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.arthedain && 'fill-current text-orange-400 opacity-50']" 
               :fill="map.Amon_Sul ? map.Amon_Sul.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -807,7 +924,7 @@
               :title="map.Ost_in_Edhil && map.Ost_in_Edhil.name" 
               aria-valuetext="Ost_in_Edhil" 
               class="st"
-              :class="map.Ost_in_Edhil && map.Ost_in_Edhil.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Ost_in_Edhil && map.Ost_in_Edhil.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.eregion && 'fill-current text-yellow-400 opacity-50']" 
               :fill="map.Ost_in_Edhil ? map.Ost_in_Edhil.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -827,7 +944,7 @@
               :title="map.Tharbad && map.Tharbad.name" 
               aria-valuetext="Tharbad" 
               class="st"
-              :class="map.Tharbad && map.Tharbad.color !== '#3300000' ? 'opacity-25' : 'opacity-0'"
+              :class="[map.Tharbad && map.Tharbad.color !== '#3300000' ? 'opacity-25' : 'opacity-0', viewCheckbox.cardolan && 'fill-current text-pink-500 opacity-50']" 
               :fill="map.Tharbad ? map.Tharbad.color : '#3300000'" 
               @mouseover="getInfo" 
               @click="toggleModal"
@@ -1108,6 +1225,16 @@ export default {
 
       toggleActive: false,
       displayHUDValue: true,
+      viewCheckbox: {
+        lindon: false,
+        eregion: false,
+        angmar: false,
+        rhudaur: false,
+        cardolan: false,
+        arthedain: false,
+        rohan: false,
+        brumeux: false
+      }
     };
   },
   props: {

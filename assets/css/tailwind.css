@@ -2,3 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @include font-face( albertus, '~/assets/fonts/Albertus', 400, normal, otf);
+
+input:checked + div {
+    @apply border-blue-500;
+}
+input:checked + div svg {
+    @apply block;
+}

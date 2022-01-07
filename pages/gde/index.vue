@@ -1,40 +1,65 @@
 <template>
   <div>
-
-
-<div class="p-4">
-  <div class="flex items-center mr-4 mb-2">
-    <div class="px-4">
-    <input type="checkbox" id="A3-yes" v-model="viewCheckbox.lindon" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
-    <div class="bg-white border-2 rounded-md border-blue-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-      <svg class="fill-current hidden w-3 h-3 text-blue-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
-      <g fill="none" fill-rule="evenodd">
-        <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
-        <path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
-        </g>
-      </g>
-      </svg>
-    </div>
-	<label for="A3-yes" class="select-none text-teal-500">Lindon</label>
-    </div>
-  <div class="px-4">
-  	<input type="checkbox" id="A3-yes" v-model="viewCheckbox.eregion" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
-	<div class="bg-white border-2 rounded-md border-yellow-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-yellow-500">
-	  <svg class="fill-current hidden w-3 h-3 text-yellow-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
-		<g fill="none" fill-rule="evenodd">
-		  <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
-			<path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
-		  </g>
-		</g>
-	  </svg>
-	</div>
-	<label for="A3-yes" class="select-none text-yellow-500">Eregion</label>
+  <div class="container px-5 py-4 mx-auto flex">
+        <a href="https://drive.google.com/drive/folders/1OPe3oMYnwVQCA3X3pBnF8rTWtryAa7ej?usp=sharing" target="_blank" class="flex mx-auto text-orange-400 bg-gray-900 border-2  py-2 px-8 focus:outline-none hover:bg-gray-800 rounded text-lg transform transition duration-500 hover:scale-110 border-orange-400">Télécharger toutes les cartes</a>
   </div>
 
 
-  <div class="px-4">
-  	<input type="checkbox" id="A3-yes" v-model="viewCheckbox.angmar" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
-	<div class="bg-white border-2 rounded-md border-purple-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-purple-500">
+
+    <div id="svg-container" class="map" :style="btnStyles">
+
+      <ModalGDE class="hidden lg:flex md:flex" v-if="isShowModal && !loading" @close="toggleModal" :map="map" :region="region" @update-info="updateInfo" />
+
+      <div class="absolute w-6 h-6 top-2 left-2">
+        <input type="checkbox" id="displayHUDValue" v-model="displayHUDValue" name="displayHUDValue" value="yes" class="opacity-0 absolute h-4 w-4 md:h-8 md:w-8" />
+        <div class="bg-gray-900 border-2 rounded-md border-orange-400 h-4 w-4 md:h-8 md:w-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-orange-500">
+          <svg class="fill-current hidden w-3 h-3 text-orange-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+            <path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+            </g>
+          </g>
+          </svg>
+        </div>
+      </div>
+
+
+      <div class="absolute w-6 h-6 bottom-10 left-2" v-if="displayHUDValue">
+  <div class="flex">
+
+
+      <div class="px-2 md:px-4">
+      <input type="checkbox" id="lindon" v-model="viewCheckbox.lindon" name="lindon" value="yes" class="opacity-0 absolute h-4 w-4 md:h-8 md:w-8" />
+      <div class="bg-gray-900 border-2 rounded-md border-teal-400 h-4 w-4 md:h-8 md:w-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-teal-500">
+        <svg class="fill-current hidden w-3 h-3 text-teal-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+          <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+          <path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+          </g>
+        </g>
+        </svg>
+      </div>
+      <label for="lindon" class="select-none text-teal-500 text-base md:text-lg">Lindon</label>
+      </div>
+
+      <div class="px-2 md:px-4">
+        <input type="checkbox" id="eregion" v-model="viewCheckbox.eregion" name="eregion" value="yes" class="opacity-0 absolute h-4 w-4 md:h-8 md:w-8" />
+      <div class="bg-gray-900 border-2 rounded-md border-yellow-400 h-4 w-4 md:h-8 md:w-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-yellow-500">
+        <svg class="fill-current hidden w-3 h-3 text-yellow-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+          <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+          <path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+          </g>
+        </g>
+        </svg>
+      </div>
+      <label for="eregion" class="select-none text-yellow-500 text-base md:text-lg">Eregion</label>
+      </div>
+
+
+  <div class="px-2 md:px-4">
+  	<input type="checkbox" id="angmar" v-model="viewCheckbox.angmar" name="angmar" value="yes" class="opacity-0 absolute h-4 w-4 md:h-8 md:w-8" />
+	<div class="bg-gray-900 border-2 rounded-md border-purple-400 h-4 w-4 md:h-8 md:w-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-purple-500">
 	  <svg class="fill-current hidden w-3 h-3 text-purple-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
 		<g fill="none" fill-rule="evenodd">
 		  <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
@@ -43,12 +68,12 @@
 		</g>
 	  </svg>
 	</div>
-	<label for="A3-yes" class="select-none text-purple-500">Angmar</label>
+	<label for="angmar" class="select-none text-purple-500 text-base md:text-lg">Angmar</label>
   </div>
 
-    <div class="px-4">
-  	<input type="checkbox" id="A3-yes" v-model="viewCheckbox.rhudaur" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
-	<div class="bg-white border-2 rounded-md border-indigo-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-indigo-500">
+    <div class="px-2 md:px-4">
+  	<input type="checkbox" id="rhudaur" v-model="viewCheckbox.rhudaur" name="rhudaur" value="yes" class="opacity-0 absolute h-4 w-4 md:h-8 md:w-8" />
+	<div class="bg-gray-900 border-2 rounded-md border-indigo-400 h-4 w-4 md:h-8 md:w-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-indigo-500">
 	  <svg class="fill-current hidden w-3 h-3 text-indigo-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
 		<g fill="none" fill-rule="evenodd">
 		  <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
@@ -57,12 +82,12 @@
 		</g>
 	  </svg>
 	</div>
-	<label for="A3-yes" class="select-none text-indigo-500">Rhudaur</label>
+	<label for="rhudaur" class="select-none text-indigo-500 text-base md:text-lg">Rhudaur</label>
   </div>
 
-  <div class="px-4">
-  	<input type="checkbox" id="A3-yes" v-model="viewCheckbox.cardolan" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
-	<div class="bg-white border-2 rounded-md border-pink-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-pink-500">
+  <div class="px-2 md:px-4">
+  	<input type="checkbox" id="cardolan" v-model="viewCheckbox.cardolan" name="cardolan" value="yes" class="opacity-0 absolute h-4 w-4 md:h-8 md:w-8" />
+	<div class="bg-gray-900 border-2 rounded-md border-pink-400 h-4 w-4 md:h-8 md:w-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-pink-500">
 	  <svg class="fill-current hidden w-3 h-3 text-pink-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
 		<g fill="none" fill-rule="evenodd">
 		  <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
@@ -71,12 +96,12 @@
 		</g>
 	  </svg>
 	</div>
-	<label for="A3-yes" class="select-none text-pink-500">Cardolan</label>
+	<label for="cardolan" class="select-none text-pink-500 text-base md:text-lg">Cardolan</label>
   </div>
 
-    <div class="px-4">
-  	<input type="checkbox" id="A3-yes" v-model="viewCheckbox.arthedain" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
-	<div class="bg-white border-2 rounded-md border-orange-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-orange-500">
+    <div class="px-2 md:px-4">
+  	<input type="checkbox" id="arthedain" v-model="viewCheckbox.arthedain" name="arthedain" value="yes" class="opacity-0 absolute h-4 w-4 md:h-8 md:w-8" />
+	<div class="bg-gray-900 border-2 rounded-md border-orange-400 h-4 w-4 md:h-8 md:w-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-orange-500">
 	  <svg class="fill-current hidden w-3 h-3 text-orange-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
 		<g fill="none" fill-rule="evenodd">
 		  <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
@@ -85,12 +110,12 @@
 		</g>
 	  </svg>
 	</div>
-	<label for="A3-yes" class="select-none text-orange-500">Arthedain</label>
+	<label for="arthedain" class="select-none text-orange-500 text-base md:text-lg">Arthedain</label>
   </div>
 
-    <div class="px-4">
-  	<input type="checkbox" id="A3-yes" v-model="viewCheckbox.rohan" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
-	<div class="bg-white border-2 rounded-md border-gray-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-gray-500">
+    <div class="px-2 md:px-4">
+  	<input type="checkbox" id="rohan" v-model="viewCheckbox.rohan" name="rohan" value="yes" class="opacity-0 absolute h-4 w-4 md:h-8 md:w-8" />
+	<div class="bg-gray-900 border-2 rounded-md border-gray-400 h-4 w-4 md:h-8 md:w-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-gray-500">
 	  <svg class="fill-current hidden w-3 h-3 text-gray-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
 		<g fill="none" fill-rule="evenodd">
 		  <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
@@ -99,27 +124,25 @@
 		</g>
 	  </svg>
 	</div>
-	<label for="A3-yes" class="select-none text-gray-500">Rohan</label>
+	<label for="rohan" class="select-none text-gray-500 text-base md:text-lg">Rohan</label>
   </div>
 
-      <div class="px-4">
-  	<input type="checkbox" id="A3-yes" v-model="viewCheckbox.brumeux" name="A3-confirmation" value="yes" class="opacity-0 absolute h-8 w-8" />
-	<div class="bg-white border-2 rounded-md border-red-400 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-red-500">
-	  <svg class="fill-current hidden w-3 h-3 text-red-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
-		<g fill="none" fill-rule="evenodd">
-		  <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
-			<path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
-		  </g>
-		</g>
-	  </svg>
-	</div>
-	<label for="A3-yes" class="select-none text-red-500">Monts Brumeux</label>
-  </div>
+      <div class="px-2 md:px-4">
+  	    <input type="checkbox" id="brumeux" v-model="viewCheckbox.brumeux" name="brumeux" value="yes" class="opacity-0 absolute h-4 w-4 md:h-8 md:w-8" />
+        <div class="bg-gray-900 border-2 rounded-md border-red-400 h-4 w-4 md:h-8 md:w-8 flex flex-shrink-0 justify-center items-center mr-40 focus-within:border-red-500">
+          <svg class="fill-current hidden w-3 h-3 text-red-600 pointer-events-none" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+            <path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+            </g>
+          </g>
+          </svg>
+        </div>
+        <label for="brumeux" class="select-none text-red-500 text-base md:text-lg">Monts Brumeux</label>
+       </div>
 
   </div>
 </div>
-
-    <div id="svg-container" class="map" :style="btnStyles">
 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2336 2114">
           <defs>
@@ -1035,24 +1058,27 @@
           <g :class="map.Egenyar ? map.Egenyar.fight : 'hidden'" id="_010---Swords-64" data-name="010---Swords"><path id="Shape-1135" data-name="Shape" class="cls-2" d="M935.19,1209.22a2.13,2.13,0,0,0-1.47-.73l-9.24-.5a2.09,2.09,0,0,0-2.2,2.2l.5,9.25a2,2,0,0,0,.72,1.46l20.93,17.45,5.47-2,.6-.71,1.45-6.3Z"/><path id="Shape-1136" data-name="Shape" class="cls-2" d="M959.47,1238.35c-6.36,2.77-5.24,2.18-6.2,3l-1.32,3.28,6.72,5.61,3.51-1.3,2.32-4.54Z"/><path id="Shape-1137" data-name="Shape" class="cls-3" d="M973.56,1262.22l-9.79-8.38,1.24-2.77,3.11-1.58,8.38,9.79Z"/><path id="Shape-1138" data-name="Shape" class="cls-4" d="M974,1243.61,958.61,1259a4.08,4.08,0,0,1-5.78,0c-.84-.83-.82-.8-.88-.92a1,1,0,0,0,0-1c.1-.17-1.27,1.2,19.88-20a1,1,0,0,1,1.46,0l.71.73a4.07,4.07,0,0,1,0,5.79Z"/><path id="Shape-1139" data-name="Shape" class="cls-4" d="M980.42,1266.13a4.09,4.09,0,1,1,0-5.79A4.09,4.09,0,0,1,980.42,1266.13Z"/><path id="Shape-1140" data-name="Shape" class="cls-5" d="M952,1229.32l-3.79,4.56-25.27-25.27a2,2,0,0,1,1.59-.62l9.24.5a2.13,2.13,0,0,1,1.47.73Z"/><path id="Shape-1141" data-name="Shape" class="cls-5" d="M964.5,1244.38l-2.92,2.92-5.84-5.84,3.73-3.11Z"/><path id="Shape-1142" data-name="Shape" class="cls-2" d="M961.6,1247.32l0,0"/><path id="Shape-1143" data-name="Shape" class="cls-6" d="M980,1263.66a2,2,0,1,1,0-2.89A2,2,0,0,1,980,1263.66Z"/><path id="Shape-1144" data-name="Shape" class="cls-7" d="M955,1242.05c.72-.58,5.07-4.21,25.38-21.15a2,2,0,0,0,.72-1.46l.5-9.24a2.06,2.06,0,0,0-.6-1.59,2.1,2.1,0,0,0-1.59-.61l-9.24.49a2.12,2.12,0,0,0-1.48.74c-28.07,33.66-19.37,23.26-21.14,25.36Z"/><path id="Shape-1145" data-name="Shape" class="cls-2" d="M981.61,1210.2l-.5,9.24a2,2,0,0,1-.72,1.46c-20.18,16.82-24.67,20.57-25.38,21.15v-7.46l26-26A2,2,0,0,1,981.61,1210.2Z"/><path id="Shape-1146" data-name="Shape" class="cls-3" d="M927.39,1259.28l8.38-9.79,2.73,1.7,1.62,2.65-9.79,8.38Z"/><path id="Shape-1147" data-name="Shape" class="cls-4" d="M929.26,1266.13a4.09,4.09,0,1,1,0-5.79A4.08,4.08,0,0,1,929.26,1266.13Z"/><path id="Shape-1148" data-name="Shape" class="cls-6" d="M928.84,1263.66a2,2,0,1,1,0-2.89A2,2,0,0,1,928.84,1263.66Z"/><path id="Shape-1149" data-name="Shape" class="cls-4" d="M955,1234.59v7.46l-9.79,8.17-4.53-1.3-1.3-4.54,8.17-9.79Z"/><path id="Shape-1150" data-name="Shape" class="cls-8" d="M942.29,1248.35a1,1,0,0,1-.73-1.75l6.51-6.51a1,1,0,0,1,0-1.45c1.23-1.22,3,1.35,1.45,2.9l-6.51,6.51a1,1,0,0,1-.72.3Z"/><path id="Shape-1151" data-name="Shape" class="cls-8" d="M950.24,1241.84a1,1,0,0,1-.72-.3,1,1,0,1,1-1.45-1.45,2.11,2.11,0,0,1,2.9,0,1,1,0,0,1-.73,1.75Z"/><path id="Shape-1152" data-name="Shape" class="cls-6" d="M952,1258.08c-.08.14-.12.16-.88.92a4.08,4.08,0,0,1-5.78,0l-15.4-15.39a4.09,4.09,0,0,1,0-5.79l.72-.72a1,1,0,0,1,1.45,0l19.73,19.73a1,1,0,0,1,.16,1.25Z"/></g>
           <g :class="map.Montagnes_Bleues ? map.Montagnes_Bleues.fight : 'hidden'" id="_010---Swords-65" data-name="010---Swords"><path id="Shape-1153" data-name="Shape" class="cls-2" d="M619.4,1089.11a2.11,2.11,0,0,0-1.46-.73l-9.25-.5a2.09,2.09,0,0,0-2.2,2.2l.5,9.25a2.09,2.09,0,0,0,.73,1.46l20.92,17.45,5.47-2,.61-.71,1.44-6.3Z"/><path id="Shape-1154" data-name="Shape" class="cls-2" d="M643.68,1118.24c-6.36,2.77-5.23,2.18-6.2,3l-1.32,3.29,6.72,5.61,3.51-1.3,2.32-4.54Z"/><path id="Shape-1155" data-name="Shape" class="cls-3" d="M657.78,1142.11l-9.79-8.38,1.23-2.77,3.12-1.58,8.37,9.79Z"/><path id="Shape-1156" data-name="Shape" class="cls-4" d="M658.22,1123.5l-15.4,15.39a4.08,4.08,0,0,1-5.78,0c-.84-.83-.81-.8-.88-.92a1,1,0,0,0,0-1c.1-.17-1.26,1.2,19.89-20a1,1,0,0,1,1.45,0l.72.73a4.09,4.09,0,0,1,0,5.79Z"/><path id="Shape-1157" data-name="Shape" class="cls-4" d="M664.63,1146a4.09,4.09,0,1,1,0-5.79A4.08,4.08,0,0,1,664.63,1146Z"/><path id="Shape-1158" data-name="Shape" class="cls-5" d="M636.16,1109.21l-3.78,4.56-25.27-25.27a2,2,0,0,1,1.58-.62l9.25.5a2.11,2.11,0,0,1,1.46.73Z"/><path id="Shape-1159" data-name="Shape" class="cls-5" d="M648.71,1124.27l-2.91,2.92-5.84-5.84,3.72-3.11Z"/><path id="Shape-1160" data-name="Shape" class="cls-2" d="M645.82,1127.21l0,0"/><path id="Shape-1161" data-name="Shape" class="cls-6" d="M664.21,1143.55a2,2,0,1,1,0-2.89A2,2,0,0,1,664.21,1143.55Z"/><path id="Shape-1162" data-name="Shape" class="cls-7" d="M639.23,1121.94c.72-.58,5.06-4.21,25.37-21.15a2.05,2.05,0,0,0,.73-1.46l.5-9.24a2.09,2.09,0,0,0-2.2-2.2l-9.24.49a2.1,2.1,0,0,0-1.47.74c-28.07,33.66-19.37,23.26-21.15,25.36Z"/><path id="Shape-1163" data-name="Shape" class="cls-2" d="M665.83,1090.09l-.5,9.24a2.05,2.05,0,0,1-.73,1.46c-20.17,16.82-24.66,20.57-25.37,21.15v-7.46l26-26A2.06,2.06,0,0,1,665.83,1090.09Z"/><path id="Shape-1164" data-name="Shape" class="cls-3" d="M611.61,1139.17l8.38-9.79,2.72,1.7,1.62,2.65-9.79,8.38Z"/><path id="Shape-1165" data-name="Shape" class="cls-4" d="M613.48,1146a4.09,4.09,0,1,1,0-5.79A4.09,4.09,0,0,1,613.48,1146Z"/><path id="Shape-1166" data-name="Shape" class="cls-6" d="M613.06,1143.55a2,2,0,1,1,0-2.89A2.05,2.05,0,0,1,613.06,1143.55Z"/><path id="Shape-1167" data-name="Shape" class="cls-4" d="M639.23,1114.48v7.46l-9.79,8.17-4.53-1.3-1.3-4.54,8.16-9.79Z"/><path id="Shape-1168" data-name="Shape" class="cls-8" d="M626.5,1128.24a1,1,0,0,1-.94-.63,1,1,0,0,1,.22-1.12l6.51-6.51a1,1,0,0,1,0-1.45c1.23-1.22,3,1.35,1.44,2.9l-6.51,6.51a1,1,0,0,1-.72.3Z"/><path id="Shape-1169" data-name="Shape" class="cls-8" d="M634.46,1121.73a1.06,1.06,0,0,1-.73-.3,1,1,0,0,1-1,.29,1,1,0,0,1-.44-1.74,2.1,2.1,0,0,1,2.89,0,1,1,0,0,1-.72,1.75Z"/><path id="Shape-1170" data-name="Shape" class="cls-6" d="M636.16,1138c-.08.14-.11.16-.88.92a4.08,4.08,0,0,1-5.78,0l-15.4-15.39a4.11,4.11,0,0,1,0-5.79l.73-.72a1,1,0,0,1,1.44,0L636,1136.72a1,1,0,0,1,.15,1.25Z"/></g>
         </g>
+
+        <g v-if="viewCheckbox.lindon">
+        <path d="M447.52,938.83,397.57,973c-.87-4.88-1.46-7.78-13.3-18.41l-23.89-21.44c-7.79-7-12.3-8-16.32-9L367,908.41c.76,3.92,1.44,7.34,9.32,14.62l34.75,32.06c17.42-13.29,26.14-21.65,34.74-31.18Z"/><path d="M433.92,862.52c1.27,4.16,2.32,8.12,10.47,15.44l24.9,22.35c6.13,5.51,10.06,7.73,18.76,10.8L465,926.88c-1.35-4.44-2.54-8.54-11.56-16.63l-25.77-23.13c-6.13-5.51-10.89-7.62-16.8-8.83Z"/><path d="M466.81,840c4.36.9,6.62,1.41,20.08.76l77.3-3.78-24.61-22.09c-10-8.94-13.71-10.37-18.46-12l19.66-13.44c1.52,3.52,3.18,6.95,9,12.14l29.09,26.11c8.37,7.51,13.17,8.8,16.9,9.78l-19,13c-4.66-1.38-10.59-1.31-16.52-1l-73,3.33,21.36,19.18c4.76,4.28,12.43,9.65,20,11.45l-21.7,14.84C504.53,890.94,497,884,496,883.07l-32.55-29.22a108.08,108.08,0,0,0-21.07,2.88Z"/><path d="M575.09,789.38c-7.51-6.73-14.92-8.85-18.68-10.28,3.41-2.56,5.86-4.46,10.36-7.54,18.83-12.88,42.42-27.53,68.52-28.71,12.63-.53,21.13,2.78,26.4,7.51C675.76,763,667.92,788.11,635,810.6l-24.7,16.89c-1.21-4.54-2.41-8.63-12.37-17.57ZM612,798.3c6.13,5.51,8.16,7.32,13.3,10.65C654.1,786.71,651.47,769.68,643,762c-7.58-6.8-26.72-12.54-61.59,7.53,2.51,3.54,6.4,7,9.07,9.44Z"/><path d="M696.33,682.39c33.84-23.14,64.47-22.63,78.18-10.32,16.89,15.16,3.08,41.61-25.85,61.4-33,22.58-67.65,23.88-81.5,11.44C655.1,734.09,660.71,706.75,696.33,682.39ZM747,725.33c22.79-15.59,22.11-33,13.66-40.62-11.26-10.11-39.77-10-63.65,6.32-20.61,14.09-24.39,31.63-13.92,41C697.78,745.2,727.53,738.67,747,725.33Z"/><path d="M776.73,628.09c4.36.9,6.62,1.41,20.08.76l77.3-3.77L849.5,603c-10-8.94-13.71-10.36-18.45-12l19.65-13.44c1.52,3.53,3.18,7,8.95,12.14l29.09,26.11c8.37,7.51,13.17,8.8,16.91,9.78l-19,13c-4.67-1.38-10.6-1.31-16.53-1l-73,3.34L818.53,660c4.76,4.28,12.43,9.65,20,11.46l-21.7,14.83c-2.35-7.29-9.86-14.25-10.88-15.16l-32.55-29.21a107.32,107.32,0,0,0-21.07,2.88Z"/>
+        </g>
       </svg>
+    </div>
 
-          <ModalGDE class="hidden lg:flex md:flex" v-if="isShowModal && !loading" @close="toggleModal" :map="map" :region="region" @update-info="updateInfo" />
+          
 
 
 
+      
 
    <br><br>
     <br><br>
     <br><br>
 
-  <!-- <a href="https://drive.google.com/drive/folders/1OPe3oMYnwVQCA3X3pBnF8rTWtryAa7ej?usp=sharing" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-    Button
-  </a> -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
       <div v-for="faction in factions" :key="faction.name"
         :class="`bg-${color(faction.id)}-800 hover:bg-${color(faction.id)}-900 text-${color(faction.id)}-100`"
-        class="flex flex-col items-center justify-center p-4 shadow rounded-lg">
+        class="flex flex-col items-center justify-center p-4 shadow rounded-lg transform transition duration-500 hover:scale-90">
         <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
           <img :src="require(`~/assets/gde/factions/${faction.name}.webp`)" alt="" class="h-full w-full">
         </div>
@@ -1108,8 +1134,6 @@
           </li>
         </ul>
       </div>
-    </div>
-      
     </div>
   </div>
 </template>

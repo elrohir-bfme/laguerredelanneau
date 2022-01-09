@@ -121,6 +121,7 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/strapi',
     '@nuxt/image',
+    ['cookie-universal-nuxt', { alias: 'cookiz' }]
   ],
 
   /* url: 'http://api.laterredumilieu.fr' */

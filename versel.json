@@ -11,7 +11,7 @@
     }
   ],
   "redirects": [
-    { "source": "/Discord", "destination": "https://discord.gg/dQvN9Yx" }
+    { "source": "/Discord", "destination": "https://discord.gg/dQvN9Yx" },
     { "source": "/GDE", "destination": "https://events.laterredumilieu.fr/gde" }
   ],
   "routes": [

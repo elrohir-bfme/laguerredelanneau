@@ -29,7 +29,7 @@
           </nuxt-link>
         </div>
 
-        <div class="w-full lg:w-1/2">
+        <div class="w-full mt-5 lg:mt-0 lg:w-1/2">
           <nuxt-link title="La Guerre pour l'Eriador"  to="/gde" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
             <NuxtImg
               src="img/map_gde.webp"
@@ -47,6 +47,29 @@
               <button
               class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md dark:bg-gray-800 hover:bg-indigo-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-indigo-500 dark:focus:bg-gray-700">
                 <span class="mx-1">Prochain évènement</span>
+              </button>
+            </div>
+          </nuxt-link>
+        </div>
+
+        <div class="w-full mt-5">
+          <nuxt-link title="La Bataille pour la Terre des Duo"  to="/tournois/tournoi_la_bataille_des_duo" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
+            <NuxtImg
+              src="img/tournoi_duo.png"
+              class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
+              alt="La Bataille pour la Terre des Duo"
+              loading="lazy"
+            />
+            <div class="text-center relative z-10 w-full">
+              <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-orange-500 inline p-2 rounded">La Bataille pour la Terre des Duo</h2>
+              <br>
+              <br>
+              <p class="text-2xl text-orange-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Tournoi sur le 1 et lancé le 13 janvier 2022</p>
+              <br>
+              <br>
+              <button
+              class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-800 rounded-md dark:bg-gray-700 hover:bg-red-700 dark:hover:bg-gray-700 focus:outline-none focus:bg-red-500 dark:focus:bg-gray-700">
+                <span class="mx-1">Information sur le tournoi</span>
               </button>
             </div>
           </nuxt-link>

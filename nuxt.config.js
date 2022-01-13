@@ -8,7 +8,7 @@ export default {
     hostname: "https://events.laterredumilieu.fr",
   },
 
-  ssr: false,
+  ssr: true,
   target: 'static',
 
   loading: {

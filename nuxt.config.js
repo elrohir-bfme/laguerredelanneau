@@ -32,69 +32,69 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
       // Twitter
       // Test on: https://cards-dev.twitter.com/validator
-      {
-        hid: 'twitter:card',
-        name: 'twitter:card',
-        content: 'summary_large_image'
-      },
-      { hid: 'twitter:site', name: 'twitter:site', content: '@elrohir_bfme' },
-      {
-        hid: 'twitter:url',
-        name: 'twitter:url',
-        content: 'https://events.laterredumilieu.fr/'
-      },
-      {
-        hid: 'twitter:title',
-        name: 'twitter:title',
-        content: 'Events de la Terre du Milieu'
-      },
-      {
-        hid: 'twitter:description',
-        name: 'twitter:description',
-        content:
-          'Retrouvez les évènements de la Terre du Milieu, sur les jeux la Bataille pour la Terre du Milieu mais pas seulement'
-      },
-      {
-        hid: 'twitter:image',
-        name: 'twitter:image',
-        content: 'https://events.laterredumilieu.fr/eventsltdm.webp'
-      },
+      // {
+      //   hid: 'twitter:card',
+      //   name: 'twitter:card',
+      //   content: 'summary_large_image'
+      // },
+      // { hid: 'twitter:site', name: 'twitter:site', content: '@elrohir_bfme' },
+      // {
+      //   hid: 'twitter:url',
+      //   name: 'twitter:url',
+      //   content: 'https://events.laterredumilieu.fr/'
+      // },
+      // {
+      //   hid: 'twitter:title',
+      //   name: 'twitter:title',
+      //   content: 'Events de la Terre du Milieu'
+      // },
+      // {
+      //   hid: 'twitter:description',
+      //   name: 'twitter:description',
+      //   content:
+      //     'Retrouvez les évènements de la Terre du Milieu, sur les jeux la Bataille pour la Terre du Milieu mais pas seulement'
+      // },
+      // {
+      //   hid: 'twitter:image',
+      //   name: 'twitter:image',
+      //   content: 'https://events.laterredumilieu.fr/eventsltdm.webp'
+      // },
 
       // Open Graph
       // Test on: https://developers.facebook.com/tools/debug/
-      { hid: 'og:site_name', property: 'og:site_name', content: 'La Terre du Milieu' },
-      { hid: 'og:type', property: 'og:type', content: 'website' },
-      {
-        hid: 'og:url',
-        property: 'og:url',
-        content: 'https://events.laterredumilieu.fr/'
-      },
-      {
-        hid: 'og:title',
-        property: 'og:title',
-        content: 'Events de la Terre du Milieu'
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content:
-          'Retrouvez les évènements de la Terre du Milieu, sur les jeux la Bataille pour la Terre du Milieu mais pas seulement'
-      },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: 'https://events.laterredumilieu.fr/eventsltdm.webp'
-      },
-      {
-        hid: 'og:image:secure_url',
-        property: 'og:image:secure_url',
-        content: 'https://events.laterredumilieu.fr/'
-      },
-      {
-        hid: 'og:image:alt',
-        property: 'og:image:alt',
-        content: 'La Terre du Milieu'
-      }
+      // { hid: 'og:site_name', property: 'og:site_name', content: 'La Terre du Milieu' },
+      // { hid: 'og:type', property: 'og:type', content: 'website' },
+      // {
+      //   hid: 'og:url',
+      //   property: 'og:url',
+      //   content: 'https://events.laterredumilieu.fr/'
+      // },
+      // {
+      //   hid: 'og:title',
+      //   property: 'og:title',
+      //   content: 'Events de la Terre du Milieu'
+      // },
+      // {
+      //   hid: 'og:description',
+      //   property: 'og:description',
+      //   content:
+      //     'Retrouvez les évènements de la Terre du Milieu, sur les jeux la Bataille pour la Terre du Milieu mais pas seulement'
+      // },
+      // {
+      //   hid: 'og:image',
+      //   property: 'og:image',
+      //   content: 'https://events.laterredumilieu.fr/eventsltdm.webp'
+      // },
+      // {
+      //   hid: 'og:image:secure_url',
+      //   property: 'og:image:secure_url',
+      //   content: 'https://events.laterredumilieu.fr/'
+      // },
+      // {
+      //   hid: 'og:image:alt',
+      //   property: 'og:image:alt',
+      //   content: 'La Terre du Milieu'
+      // }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

@@ -7330,10 +7330,8 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
     async fetch() {
       this.loading = true;
 
-      // this.map = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c');
-      // this.faction = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c/factions'); //API
-        this.map = await this.$http.$get('https://api.npoint.io/0fbdfe5daece316e2abd'); //API
-        this.faction = await this.$http.$get('https://api.npoint.io/0fbdfe5daece316e2abd/factions'); //API
+      this.map = require(`~/assets/data/fintour23/GDA.json`);
+      this.faction = require(`~/assets/data/fintour23/factions.json`);
       this.loading = false;
 
       

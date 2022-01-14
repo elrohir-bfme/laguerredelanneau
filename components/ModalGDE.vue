@@ -61,17 +61,17 @@
         <div v-if="map[region] && map[region].players && map[region].players.length > 0" class="border-t border-gray-300 px-6 py-4 flex flex-wrap">
           <div class="mx-auto m-2" v-for="player in map[region].players" :key="player.name">
             <div class="shadow-lg rounded-2xl p-2"
-              :class="`bg-${color(player.faction)}-700 hover:bg-${color(player.faction)}-800`" >
+              :class="`bg-${color(player.faction).color}-${color(player.faction).code} hover:bg-${color(player.faction).color}-${color(player.faction).codeHover}`" >
                 <div class="flex-row gap-4 flex justify-center items-center">
                     <div v-if="player.img" class="flex-shrink-0">
                       <img  :alt="player.name" :src="player.img" 
                       class="mx-auto object-cover rounded-full h-12 w-12"/>
                     </div>
                     <div class="flex flex-col">
-                        <span class="text-white text-center">
+                        <span class="text-center" :class="color(player.faction).color == 'yellow' ? 'text-gray-900' : 'text-white'">
                             {{player.name}}
                         </span>
-                        <span class="text-white text-xs">
+                        <span class="text-xs" :class="color(player.faction).color == 'yellow' ? 'text-gray-900' : 'text-white'">
                             {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/svg/trophy.svg">
                             {{player.lose}} <img alt="Défaite" class="w-4 h-4 inline-block" src="~assets/svg/skull.svg">
                             <span v-if="player.handicap > 0">{{player.handicap}} %<img alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sang.svg"></span>
@@ -121,13 +121,25 @@
       color(id) {
         switch (id) {
           case 1:
-            return "teal"
-            break;
-          case 5 :
-            return "red"
-            break;
+            return { color: "indigo", code: "700", codeHover: "800"};
+          case 2:
+            return { color: "blue", code: "400", codeHover: "500"};
+          case 3:
+            return { color: "green", code: "800", codeHover: "900"};
+          case 4:
+            return { color: "teal", code: "600", codeHover: "700"};
+          case 5:
+            return { color: "yellow", code: "400", codehover: "500"};
+          case 6:
+            return { color: "red", code: "600", codehover: "700"};
+          case 7:
+            return { color: "gray", code: "700", codehover: "800"};
+          case 8:
+            return { color: "orange", code: "600", codehover: "700"};
+          case 9:
+            return { color: "purple", code: "700", codehover: "800"};
           default:
-            return "black"
+            return { color: "black", code: "700", codehover: "800"};
             break;
         }
       }

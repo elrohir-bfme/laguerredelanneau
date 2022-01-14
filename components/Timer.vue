@@ -6,7 +6,7 @@
 export default {
   data() {
   	return{
-      endtime:"Jan 15, 2022 18:00:00",
+      endtime:"Jan 16, 2022 18:00:00",
       wordString: {},
       start: "",
       end: "",

@@ -114,10 +114,6 @@
         this.$emit("close");
         this.$emit('update-info', value);
       },
-      changeImg() {
-        console.log("kdoekdoeko")
-        this.viewMinimap = !this.viewMinimap
-      },
       color(id) {
         switch (id) {
           case 1:

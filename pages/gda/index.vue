@@ -7109,15 +7109,10 @@ l105.931,105.931C464.163,437.199,455.292,441.198,448.238,448.252z" />
     },
     async fetch() {
       this.loading = true;
-
-      this.map = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c');
-      this.faction = await this.$http.$get('https://api.npoint.io/38a2899b98818d89418c/factions'); //API
-        // this.map = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847'); //API
-        // this.faction = await this.$http.$get('https://api.npoint.io/a982d740a3c6fa4e6847/factions'); //API
+      this.map = require(`~/assets/data/GDA.json`);
+      this.faction = require(`~/assets/data/factions.json`);
       this.loading = false;
 
-      
-      
       // function addText(p) {
       //     var t = document.createElementNS("http://www.w3.org/2000/svg", "text");
       //     var b = p.getBBox();

@@ -29,7 +29,7 @@ export default {
     }
   },
   async fetch() {
-	  this.heros = await this.$http.$get("https://api.npoint.io/5e8e7f3200df7a910c0f")
+	  this.heros = require(`~/assets/data/heros.json`);
 	}
 }
 </script>

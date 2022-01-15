@@ -58,7 +58,7 @@ export default {
         }
     },
     async fetch() {
-        this.data = await this.$http.$get("https://api.npoint.io/38a2899b98818d89418c/time")
+        this.data = require(`~/assets/data/time.json`);
     },
 };
 </script>

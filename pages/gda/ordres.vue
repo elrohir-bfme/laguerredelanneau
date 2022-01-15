@@ -199,7 +199,7 @@ export default {
     }
   },
   async fetch() {
-	  this.players = await this.$http.$get(`https://api.npoint.io/38a2899b98818d89418c`)
+      this.players = require(`~/assets/data/GDA.json`);
         for (const key in this.players) {
 
             const obj = this.players[key];

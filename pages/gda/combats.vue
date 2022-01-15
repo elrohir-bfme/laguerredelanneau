@@ -93,7 +93,7 @@ export default {
     }
   },
   async fetch() {
-	  this.tours = await this.$http.$get("https://api.npoint.io/30c5deeefc17427a8cd7")
+	  this.tours = require(`~/assets/data/combats.json`);
 	}
 }
 </script>

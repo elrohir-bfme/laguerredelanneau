@@ -28,7 +28,7 @@
 
     <div id="svg-container" class="map" :style="btnStyles">
       <ModalGDE
-        class="hidden lg:flex md:flex"
+        class="lg:flex md:flex"
         v-if="isShowModal && !loading"
         @close="toggleModal"
         :map="map"
@@ -36,7 +36,7 @@
         @update-info="updateInfo"
       />
 
-      <div class="absolute top-2 left-2">
+      <div class="absolute top-2 left-2" :class="isShowModal && 'hidden lg:block md:block'" >
 
         <label class="flex justify-start items-start">
           <div class="bg-gray-900 border-2 rounded border-orange-400 w-4 h-4 md:w-6 md:h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-orange-500">
@@ -56,7 +56,7 @@
 
       </div>
 
-      <div class="absolute w-6 h-6 -bottom-10 md:bottom-24 left-2" v-if="!displayHUDValue">
+      <div class="absolute w-6 h-6 -bottom-10 md:bottom-24 left-2" v-if="!displayHUDValue" :class="isShowModal && 'hidden lg:block md:block'">
         <div class="grid grid-flow-col grid-rows-2">
           <div class="px-2 md:px-4">
             <input
@@ -9456,13 +9456,13 @@
         xl:grid-cols-4
         gap-4
       "
+      :class="isShowModal && 'hidden lg:block md:block'"
+      v-if="factions"
     >
       <div
         v-for="faction in factions"
         :key="faction.name"
-        :class="`bg-${color(faction.id)}-800 hover:bg-${color(
-          faction.id
-        )}-900 text-${color(faction.id)}-100`"
+        :class="`bg-${color(faction.id).color}-${color(faction.id).code} hover:bg-${color(faction.id).color}-${color(faction.id).codeHover} text-${color(faction.id).color}-100`"
         class="
           flex flex-col
           items-center
@@ -9487,22 +9487,22 @@
         </div>
 
         <h2
-          :class="`text-${color(faction.id)}-300`"
+          :class="`text-${color(faction.id).color}-300`"
           class="mt-4 font-bold text-xl"
         >
           Chef de la Faction du {{ faction.name }}
         </h2>
         <h6 class="mt-2 text-xl font-bold underline">{{ faction.chef }}</h6>
 
-        <ul class="flex flex-row mt-4 space-x-1">
+        <ul class="flex flex-row mt-4 space-x-1 font-sans">
           <li>
             <span
-              :class="`bg-${color(faction.id)}-700`"
-              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1"
+              :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
+              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
             >
               {{ faction.capital }}
               <svg
-                :class="`text-${color(faction.id)}-400`"
+                :class="`text-${color(faction.id).color}-400`"
                 class="ml-2 stroke-current h-5 w-5"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -9520,11 +9520,11 @@
           </li>
           <li>
             <span
-              :class="`bg-${color(faction.id)}-700`"
-              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1"
+              :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
+              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
               >{{ faction.money }}
               <svg
-                :class="`text-${color(faction.id)}-400`"
+                :class="`text-${color(faction.id).color}-400`"
                 class="ml-2 stroke-current h-5 w-5"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -9541,16 +9541,16 @@
             </span>
           </li>
         </ul>
-        <ul class="flex flex-row mt-4 space-x-1">
+        <ul class="flex flex-row mt-4 space-x-1 font-sans">
           <li>
             <span
-              :class="`bg-${color(faction.id)}-700`"
-              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1"
+              :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
+              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
             >
               <!-- {{faction.regions.length}} -->
               Territoires
               <svg
-                :class="`text-${color(faction.id)}-400`"
+                :class="`text-${color(faction.id).color}-400`"
                 class="ml-2 stroke-current h-5 w-5"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -9566,13 +9566,13 @@
           </li>
           <li>
             <span
-              :class="`bg-${color(faction.id)}-700`"
-              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1"
+              :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
+              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 font-medium items-center"
             >
               <!-- {{faction.players.length}} -->
               Joueurs
               <svg
-                :class="`text-${color(faction.id)}-400`"
+                :class="`text-${color(faction.id).color}-400`"
                 class="ml-2 stroke-current h-5 w-5"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -9791,26 +9791,25 @@ export default {
     color(id) {
       switch (id) {
         case 1:
-          return "indigo";
+          return { color: "indigo", code: "600", codeHover: "700", codeHover2: "800"};
         case 2:
-          return "blue";
+          return { color: "blue", code: "600", codeHover: "700", codeHover2: "800"};
         case 3:
-          return "green";
+          return { color: "green", code: "700", codeHover: "800", codeHover2: "900"};
         case 4:
-          return "teal";
+          return { color: "teal", code: "600", codeHover: "700", codeHover2: "800"};
         case 5:
-          return "yellow";
+          return { color: "yellow", code: "600", codeHover: "700", codeHover2: "800"};
         case 6:
-          return "red";
+          return { color: "red", code: "600", codeHover: "700", codeHover2: "800"};
         case 7:
-          return "gray";
+          return { color: "gray", code: "700", codeHover: "800", codeHover2: "900"};
         case 8:
-          return "orange";
+          return { color: "orange", code: "600", codeHover: "700", codeHover2: "800"};
         case 9:
-          return "purple";
+          return { color: "purple", code: "700", codeHover: "800", codeHover2: "900"};
         default:
-          return "black";
-          break;
+          return { color: "black", code: "700", codeHover: "800", codeHover2: "900"};
       }
     },
     img(id) {

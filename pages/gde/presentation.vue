@@ -147,7 +147,7 @@
                     ></polygon>
                   </svg>
                   <h4 class="text-xl font-bold text-white">
-                    Act 1 : Récit de la Guerre d’Eriador par Gwildor, serviteur de la Maison d’Elrond de Fondcombe.
+                    Act 1 : Récit de la Guerre d’Eriador par Gildor, serviteur de la Maison d’Elrond de Fondcombe.
                   </h4>
                   <p class="text-md font-light mt-2 text-white italic">
                     En l'an 3019 du Troisième  Age, depuis que le Soleil et la Lune se sont élevés dans le ciel, la Terre du Milieu est proche du point de basculement définitif. 

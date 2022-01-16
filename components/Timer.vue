@@ -1,12 +1,12 @@
 <template>
-    <span class="mx-1">Bande annonce le : {{ days }} jours {{ hours }} heures {{ minutes }} minutes {{ seconds }} secondes</span>
+    <span class="mx-1">LANCEMENT DES INSCRIPTIONS DANS : {{ days }} jours {{ hours }} heures {{ minutes }} minutes {{ seconds }} secondes</span>
 </template>
 
 <script>
 export default {
   data() {
   	return{
-      endtime:"Jan 16, 2022 18:00:00",
+      endtime:"Jan 23, 2022 18:00:00",
       wordString: {},
       start: "",
       end: "",

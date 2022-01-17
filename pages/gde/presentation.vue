@@ -92,7 +92,7 @@
               </div>
             </div>
           </div>
-          <div class="aspect-w-16 aspect-h-9">
+          <div class="">
             <iframe src="https://www.youtube.com/embed/sfUly-xvu0A" title="La Guerre de l'Eriador" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="flex flex-wrap items-center mt-20">

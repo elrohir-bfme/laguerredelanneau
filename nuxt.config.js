@@ -172,11 +172,8 @@ robots: {
   },
 
   tailwindcss: {
-    cssPath: '~/assets/css/colors.css',
-    configPath: 'tailwind.config.js',
-    exposeConfig: false,
-    config: {},
-    injectPosition: 0,
+    configPath: '~/tailwind.config.js',
+    cssPath: '~/assets/css/tailwind.css'
   },
 
   build: {

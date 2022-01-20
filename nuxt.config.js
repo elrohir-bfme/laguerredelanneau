@@ -108,10 +108,11 @@ export default {
 
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    '@nuxtjs/tailwindcss',
-  ],
+    // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+    buildModules: [
+      
+    ],
+
   /*
   ** Nuxt.js modules
   */
@@ -132,12 +133,6 @@ export default {
   env: {
     strapiBaseUri: "https://api.laterredumilieu.fr"
   },
-
-  /*
-  ** Build configuration
-  ** See https://events.laterredumilieu.fr//api/configuration-build/
-  */
- build: {},
 
 sitemap: {
   hostname: 'https://events.laterredumilieu.fr',
@@ -171,20 +166,17 @@ robots: {
     }
   },
 
-  tailwindcss: {
-    configPath: '~/tailwind.config.js',
-    cssPath: '~/assets/css/tailwind.css'
-  },
+  css: [
+    '@/assets/css/main.css',
+  ],
 
   build: {
-    cache: true,
-    babel:{
-      plugins: [
-        ["@babel/plugin-proposal-class-properties", { "loose": true }],
-        ["@babel/plugin-proposal-private-methods", { "loose": true }],
-        ["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
-      ]
-    }  
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    } 
   },
 
   generate: {

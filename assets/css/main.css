@@ -1,6 +1,6 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @include font-face( albertus, '~/assets/fonts/Albertus', 400, normal, otf);
 
 input:checked + div {

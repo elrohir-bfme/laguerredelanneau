@@ -1,18 +1,15 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  // purge: {
-  //   mode: "layers",
-  //   enabled: true,  
-  //   content: [
-  //     "./components/**/*.vue",
-  //     "./layouts/**/*.vue",
-  //     "./pages/**/*.vue",
-  //     "./plugins/**/*.vue",
-  //     "./nuxt.config.js",
-  //   ],
-  // },
-  darkMode: false,
+  purge: {
+    content: [
+      './components/**/*.{vue,js}',
+      './layouts/**/*.vue',
+      './pages/**/*.vue',
+      './plugins/**/*.{js,ts}',
+      './nuxt.config.{js,ts}',
+    ],
+  },
   theme: {
     fontFamily: {
       sans: ["albertus"],

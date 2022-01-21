@@ -152,3 +152,17 @@
   }
 
 </script>
+
+<style scoped>
+
+.bg-orange-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(234, 88, 12, var(--tw-bg-opacity));
+}
+
+.hover\:bg-orange-700:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(194, 65, 12, var(--tw-bg-opacity));
+}
+
+</style>

@@ -9551,8 +9551,7 @@
               :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
               class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
             >
-              <!-- {{faction.regions.length}} -->
-              Territoires
+              Territoires {{territoires(faction.id)}}
               <svg
                 :class="`text-${color(faction.id).color}-400`"
                 class="ml-2 stroke-current h-5 w-5"
@@ -9573,8 +9572,7 @@
               :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
               class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 font-medium items-center"
             >
-              <!-- {{faction.players.length}} -->
-              Joueurs
+              Joueurs {{joueurs(faction.id)}}
               <svg
                 :class="`text-${color(faction.id).color}-400`"
                 class="ml-2 stroke-current h-5 w-5"
@@ -9684,6 +9682,7 @@ export default {
       map: [],
       information: "",
       isShowModal: false,
+      nbTerritoireArnor: 0,
       nbTerritoireRohan: 0,
       nbTerritoireElfe: 0,
       nbTerritoireGondor: 0,
@@ -9692,6 +9691,7 @@ export default {
       nbTerritoireIsengard: 0,
       nbTerritoireGobelin: 0,
       nbTerritoireAngmar: 0,
+      nbPlayerArnor: 0,
       nbPlayerRohan: 0,
       nbPlayerElfe: 0,
       nbPlayerGondor: 0,
@@ -9816,6 +9816,54 @@ export default {
           return { color: "black", code: "700", codeHover: "800", codeHover2: "900"};
       }
     },
+    territoires(id) {
+      switch (id) {
+        case 1:
+          return this.nbTerritoireArnor;
+        case 2:
+          return this.nbTerritoireGondor;
+        case 3:
+          return this.nbTerritoireRohan;
+        case 4:
+          return this.nbTerritoireElfe;
+        case 5:
+          return this.nbTerritoireNain;
+        case 6:
+          return this.nbTerritoireMordor;
+        case 7:
+          return this.nbTerritoireIsengard;
+        case 8:
+          return this.nbTerritoireGobelin;
+        case 9:
+          return this.nbTerritoireAngmar;
+        default:
+          return this.nbTerritoireArnor;
+      }
+    },
+    joueurs(id) {
+      switch (id) {
+        case 1:
+          return this.nbPlayerArnor;
+        case 2:
+          return this.nbPlayerGondor;
+        case 3:
+          return this.nbPlayerRohan;
+        case 4:
+          return this.nbPlayerElfe;
+        case 5:
+          return this.nbPlayerNain;
+        case 6:
+          return this.nbPlayerMordor;
+        case 7:
+          return this.nbPlayerIsengard;
+        case 8:
+          return this.nbPlayerGobelin;
+        case 9:
+          return this.nbPlayerAngmar;
+        default:
+          return this.nbPlayerArnor;
+      }
+    },
     img(id) {
       switch (id) {
         case 1:
@@ -9838,7 +9886,6 @@ export default {
           return "purple";
         default:
           return "black";
-          break;
       }
     },
   },
@@ -9861,18 +9908,22 @@ export default {
         if (!obj.hasOwnProperty(prop)) continue;
 
         switch (obj[prop]) {
+          case "#ff85ee":
+          case "#FF85EE":
+            this.nbTerritoireArnor += 1;
+            break;
           case "#0bff00":
           case "#0BFF00":
             this.nbTerritoireRohan += 1;
             break;
 
-          case "#00bfff":
-          case "#00BFFF":
+          case "#00e3ff":
+          case "#00E3FF":
             this.nbTerritoireElfe += 1;
             break;
 
-          case "#1e90ff":
-          case "#1E90FF":
+          case "#093aff":
+          case "#093AFF":
             this.nbTerritoireGondor += 1;
             break;
 
@@ -9881,8 +9932,8 @@ export default {
             this.nbTerritoireNain += 1;
             break;
 
-          case "#db5461":
-          case "#DB5461":
+          case "#ff3636":
+          case "#FF3636":
             this.nbTerritoireMordor += 1;
             break;
 
@@ -9907,74 +9958,41 @@ export default {
 
       if (obj.hasOwnProperty("players") && obj.players.length > 0) {
         let obj2 = JSON.parse(JSON.stringify(obj["players"]));
-
-        let test = 0;
         for (var player in obj2) {
-          // var element = document.getElementById(obj.name).getAttribute("d");
-          // console.log(element);
-
-          // var bbox = document.getElementById(obj.name).getBBox();
-          // var x = Math.floor(bbox.x + bbox.width / 2.0);
-          // var y = Math.floor(bbox.y + bbox.height / 2.0);
-
-          // if (test == 0) {
-          //   var newItem = document.createElementNS(
-          //     "http://www.w3.org/2000/svg",
-          //     "circle"
-          //   );
-          //   newItem.setAttribute("cx", x);
-          //   newItem.setAttribute("cy", y);
-          //   newItem.setAttribute("r", 20);
-          //   newItem.setAttribute("fill", "green");
-
-          //   var number = document.createElementNS(
-          //     "http://www.w3.org/2000/svg",
-          //     "text"
-          //   );
-          //   number.setAttributeNS(null, "x", x.toString());
-          //   number.setAttributeNS(null, "y", y + 5);
-          //   number.setAttributeNS(null, "text-anchor", "middle");
-          //   number.setAttributeNS(null, "stroke", "white");
-          //   number.setAttributeNS(null, "stroke-width", "1px");
-          //   number.setAttributeNS(null, "font-size", "20");
-          //   number.textContent = 1 + test;
-
-          //   document.getElementById("svg").appendChild(newItem);
-          //   document.getElementById("svg").appendChild(number);
-          // }
-
-          // test += 1;
-
-          switch (obj2[player]["factions"]) {
+          switch (obj2[player]["faction"]) {
             case 1:
-              this.nbPlayerElfe += 1;
+              this.nbPlayerArnor += 1;
               this.nbPlayers += 1;
               break;
             case 2:
-              this.nbPlayerRohan += 1;
-              this.nbPlayers += 1;
-              break;
-            case 3:
               this.nbPlayerGondor += 1;
               this.nbPlayers += 1;
               break;
+            case 3:
+              this.nbPlayerRohan += 1;
+              this.nbPlayers += 1;
+              break;
             case 4:
-              this.nbPlayerNain += 1;
+              this.nbPlayerElfe += 1;
               this.nbPlayers += 1;
               break;
             case 5:
-              this.nbPlayerMordor += 1;
+              this.nbPlayerNain += 1;
               this.nbPlayers += 1;
               break;
             case 6:
-              this.nbPlayerIsengard += 1;
+              this.nbPlayerMordor += 1;
               this.nbPlayers += 1;
               break;
             case 7:
-              this.nbPlayerGobelin += 1;
+              this.nbPlayerIsengard += 1;
               this.nbPlayers += 1;
               break;
             case 8:
+              this.nbPlayerGobelin += 1;
+              this.nbPlayers += 1;
+              break;
+            case 9:
               this.nbPlayerAngmar += 1;
               this.nbPlayers += 1;
               break;
@@ -9984,23 +10002,6 @@ export default {
         }
       }
     }
-  },
-  filters: {
-    pourcentage: function (valeur, decimales) {
-      if (decimales === undefined) {
-        decimales = 2;
-      }
-      if (valeur === 0) {
-        return "";
-      }
-      return (
-        Math.round(valeur * Math.pow(10, decimales)) / Math.pow(10, decimales) +
-        " %"
-      );
-    },
-  },
-  mounted() {
-    console.log("MONTED");
   },
 };
 </script>

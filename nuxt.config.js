@@ -110,8 +110,12 @@ export default {
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
-      
+      '@nuxtjs/tailwindcss'
     ],
+
+    tailwindcss: {
+      // jit: true,
+    },
 
   /*
   ** Nuxt.js modules
@@ -165,10 +169,6 @@ robots: {
       useWebmanifestExtension: false,
     }
   },
-
-  css: [
-    '@/assets/css/main.css',
-  ],
 
   build: {
     postcss: {

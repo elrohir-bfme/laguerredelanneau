@@ -1,13 +1,18 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  content: [
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
-  ],
+  // purge: {
+  //   mode: "layers",
+  //   enabled: true,  
+  //   content: [
+  //     "./components/**/*.vue",
+  //     "./layouts/**/*.vue",
+  //     "./pages/**/*.vue",
+  //     "./plugins/**/*.vue",
+  //     "./nuxt.config.js",
+  //   ],
+  // },
+  darkMode: false,
   theme: {
     fontFamily: {
       sans: ["albertus"],
@@ -28,7 +33,9 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/aspect-ratio')
+    require("@tailwindcss/aspect-ratio")
   ],
-  variants: {}
+  variants: {
+    extends: {},
+  }
 };

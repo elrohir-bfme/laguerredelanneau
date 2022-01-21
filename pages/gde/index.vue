@@ -7066,7 +7066,7 @@
             />
           </g>
           <g
-            :class="map.Evendim ? map.Evendim.fight : 'hidden'"
+            :class="map.Champs_Verts ? map.Champs_Verts.fight : 'hidden'"
             id="_010---Swords-47"
             data-name="010---Swords"
           >

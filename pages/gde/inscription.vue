@@ -11,7 +11,7 @@
       </div>
       <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center bg p-4 rounded-2xl">
         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Inscription pour la Guerre de l'Eriador
-          <br class="hidden lg:inline-block">du 24 au 30 janvier 2022 !
+          <br class="hidden lg:inline-block">LE DIMANCHE 23 JANVIER à 18H SUR DISCORD
         </h1>
         <p class="mb-8 leading-loose text-gray-300">
           La Guerre de l'Anneau a fait des ravages. Les factions du Bien comme celles du Mal se sont détruites pour le contrôle de la Terre du Milieu.

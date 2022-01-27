@@ -7,6 +7,7 @@
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gde">La Guerre de l'Eriador</nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gde/presentation">Présentation</nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gde/inscription">Inscription</nuxt-link>
+          <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gde/bande-annonce">Vidéos</nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gde/regles">Règles</nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gde/joueurs">Joueurs</nuxt-link>
           <a rel="noopener noreferrer" style="font-family: 'Albertus'" class="p-4 text-gray-600 hover:text-white hover:bg-gray-900" target="_blank" href="http://bit.ly/LaTerreduMilieu">

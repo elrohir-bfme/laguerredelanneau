@@ -1,7 +1,22 @@
 <template>
   <div>
     <div class="container px-5 py-4 mx-auto flex">
-      <a
+
+    </div>
+
+    <div class="flex text-center justify-between  items-center gap-2 pb-4">
+      <!-- <img href="~assets/gde/bien.png"/> -->
+          <img
+            src="~/assets/gde/bien.png"
+            alt=""
+            class="h-12 w-12"
+          />
+          <p class="text-white">
+            Camps du Bien - {{nbPlayerArnor + nbPlayerRohan + nbPlayerElfe +nbPlayerGondor + nbPlayerNain}} joueurs - 
+            {{nbTerritoireArnor + nbTerritoireRohan + nbTerritoireElfe + nbTerritoireGondor + nbTerritoireNain}} Territoires -
+            (V: {{winArnor + winGondor + winRohan + winElfe + winNain}} / D: {{loseArnor + loseGondor  + loseRohan + loseElfe + loseNain}})
+            </p>
+          <a
         href="https://drive.google.com/drive/folders/1OPe3oMYnwVQCA3X3pBnF8rTWtryAa7ej?usp=sharing"
         target="_blank"
         class="
@@ -24,7 +39,22 @@
         "
         >Télécharger toutes les cartes</a
       >
+        <p class="text-white">
+          Camps du Mal ({{nbPlayerMordor + nbPlayerIsengard + nbPlayerGobelin + nbPlayerAngmar}} Joueurs -
+          {{nbTerritoireMordor + nbTerritoireIsengard + nbTerritoireGobelin + nbTerritoireAngmar}} Territoires -
+          (V: {{winMordor + winIsengard + winGobelin + winAngmar}} / D: {{loseMordor + loseIsengard + loseGobelin + loseAngmar}}) 
+        </p>
+        <img
+          src="~/assets/gde/mal.png"
+          alt=""
+          class="h-12 w-12"
+        />
+          
+      
     </div>
+
+
+
 
     <div id="svg-container" class="map" :style="btnStyles">
       <ModalGDE
@@ -9701,7 +9731,24 @@ export default {
       nbPlayerGobelin: 0,
       nbPlayerAngmar: 0,
       adjacents: [],
-
+      winArnor: 0,
+      winGondor: 0,
+      winRohan: 0,
+      winElfe: 0,
+      winNain: 0,
+      winMordor: 0,
+      winIsengard: 0,
+      winGobelin: 0,
+      winAngmar: 0,
+      loseArnor: 0,
+      loseGondor: 0,
+      loseRohan: 0,
+      loseElfe: 0,
+      loseNain: 0,
+      loseMordor: 0,
+      loseIsengard: 0,
+      loseGobelin: 0,
+      loseAngmar: 0,
       nbPlayers: 0,
 
       factions: null,
@@ -9963,38 +10010,56 @@ export default {
             case 1:
               this.nbPlayerArnor += 1;
               this.nbPlayers += 1;
+              this.winArnor += obj2[player]["win"];
+              this.loseArnor += obj2[player]["lose"];
               break;
             case 2:
               this.nbPlayerGondor += 1;
               this.nbPlayers += 1;
+              this.winGondor += obj2[player]["win"];
+              this.loseGondor += obj2[player]["lose"];
               break;
             case 3:
               this.nbPlayerRohan += 1;
               this.nbPlayers += 1;
+              this.winRohan += obj2[player]["win"];
+              this.loseRohan += obj2[player]["lose"];
               break;
             case 4:
               this.nbPlayerElfe += 1;
               this.nbPlayers += 1;
+              this.winElfe += obj2[player]["win"];
+              this.loseElfe += obj2[player]["lose"];
               break;
             case 5:
               this.nbPlayerNain += 1;
               this.nbPlayers += 1;
+              this.winNain += obj2[player]["win"];
+              this.loseNain += obj2[player]["lose"];
               break;
             case 6:
               this.nbPlayerMordor += 1;
               this.nbPlayers += 1;
+              this.winMordor += obj2[player]["win"];
+              this.loseMordor += obj2[player]["lose"];
               break;
             case 7:
               this.nbPlayerIsengard += 1;
               this.nbPlayers += 1;
+              this.winIsengard += obj2[player]["win"];
+              this.loseIsengard += obj2[player]["lose"];
               break;
             case 8:
               this.nbPlayerGobelin += 1;
               this.nbPlayers += 1;
+              this.winGobelin += obj2[player]["win"];
+              this.loseGobelin += obj2[player]["lose"];
               break;
             case 9:
               this.nbPlayerAngmar += 1;
               this.nbPlayers += 1;
+              this.winAngmar += obj2[player]["win"];
+              this.loseAngmar += obj2[player]["lose"];
               break;
             default:
               break;

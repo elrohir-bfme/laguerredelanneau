@@ -6,14 +6,14 @@
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Si il y'a un souci veuillez contacter Elrohir sur le Discord de la Terre du Milieu merci</p>
     </div>
     <div v-if="!loading" class="flex flex-wrap -m-2">
-      <div v-for="player in players" v-bind:key="player.name" class="p-2 lg:w-1/3 md:w-1/2 w-full transform transition duration-500 hover:scale-110 hover:drop-shadow-xl">
+      <div v-for="player in players" v-bind:key="player.name" class="p-2 lg:w-1/4 md:w-1/2 w-full transform transition duration-500 hover:scale-110 hover:drop-shadow-xl">
         <div class="h-full flex items-center border p-4 rounded-lg bg-gray-900" :class="`border-${color(player.faction)}-700`">
-          <img :alt="player.name" class="w-48 h-48 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform transition duration-500 hover:scale-110 hover:drop-shadow-xl" :src="player.img ? player.img : 'https://dummyimage.com/80x80'">
+          <img v-if="player.img" :alt="player.name" class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform transition duration-500 hover:scale-110 hover:drop-shadow-xl" :src="player.img ? player.img : 'https://dummyimage.com/80x80'">
           <div class="flex-grow">
-            <h2 class="text-white title-font font-medium text-3xl">{{player.name}}</h2>
-            <p class="text-gray-500">Victoire</p>
-            <p class="text-gray-500">Défaite</p>
-            <p class="text-gray-500">Ratio</p>
+            <h2 class="text-white title-font font-medium text-3xl" :class="!player.img && 'text-center'">{{player.name}}</h2>
+            <p class="text-gray-500" :class="!player.img && 'text-center'">Victoire : {{player.win}}</p>
+            <p class="text-gray-500" :class="!player.img && 'text-center'">Défaite : {{player.lose}}</p>
+            <p class="text-gray-500" :class="!player.img && 'text-center'">Ratio : {{(player.win && player.win) ?(player.win / ((player.win + player.lose)) *100).toFixed(2) + '%' : "Aucune partie joué"}}</p>
           </div>
         </div>
       </div>
@@ -85,6 +85,21 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+.bg-orange-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(234, 88, 12, var(--tw-bg-opacity));
+}
+
+.text-orange-100 {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 213, var(--tw-text-opacity));
+}
+
+.hover\:bg-orange-700:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(194, 65, 12, var(--tw-bg-opacity));
+}
 
 </style>

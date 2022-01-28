@@ -12,6 +12,16 @@
      <iframe src="https://drive.google.com/file/d/1Rq_INEqVf9sU6QOo22eoStnvmB-h83gW/preview" width="640" height="480" allow="autoplay"></iframe>
     </div>
 
+        <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">BANDE ANNONCE DU GONDOR</h3>
+    <div class="videoWrapper m-8 z-0">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/mHL-J8VPt2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+        <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">BANDE ANNONCE D'ARNOR</h3>
+    <div class="videoWrapper m-8 z-0">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/sS1AV8oia1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
     
     </div>
 </template>

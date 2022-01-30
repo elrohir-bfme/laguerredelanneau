@@ -9480,6 +9480,10 @@
 
     <br /><br />
     <br /><br />
+
+     <img class="w-full md:w-1/3 mx-auto text-center" alt="Planning" src="~assets/planning.png">
+
+    <br /><br />
     <br /><br />
 
     <div

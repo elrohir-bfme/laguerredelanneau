@@ -74,7 +74,7 @@
                         <span class="text-xs text-white">
                             {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/svg/trophy.svg">
                             {{player.lose}} <img alt="Défaite" class="w-4 h-4 inline-block" src="~assets/svg/skull.svg">
-                            <span v-if="player.handicap > 0">{{player.handicap}} %<img alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sang.svg"></span>
+                            <span v-if="player.handicap > 0">{{player.handicap == 1 ? "15" : "30"}} %<img alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sang.svg"></span>
                         </span>
                         
                     </div>

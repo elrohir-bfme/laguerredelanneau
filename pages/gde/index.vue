@@ -12,7 +12,7 @@
             class="h-12 w-12"
           />
           <p class="text-white">
-            Camps du Bien - {{nbPlayerArnor + nbPlayerRohan + nbPlayerElfe +nbPlayerGondor + nbPlayerNain}} joueurs - 
+            Camp du Bien - {{nbPlayerArnor + nbPlayerRohan + nbPlayerElfe +nbPlayerGondor + nbPlayerNain}} joueurs - 
             {{nbTerritoireArnor + nbTerritoireRohan + nbTerritoireElfe + nbTerritoireGondor + nbTerritoireNain}} Territoires -
             (V: {{winArnor + winGondor + winRohan + winElfe + winNain}} / D: {{loseArnor + loseGondor  + loseRohan + loseElfe + loseNain}})
             </p>
@@ -40,7 +40,7 @@
         >Télécharger toutes les cartes</a
       >
         <p class="text-white">
-          Camps du Mal ({{nbPlayerMordor + nbPlayerIsengard + nbPlayerGobelin + nbPlayerAngmar}} Joueurs -
+          Camp du Mal ({{nbPlayerMordor + nbPlayerIsengard + nbPlayerGobelin + nbPlayerAngmar}} Joueurs -
           {{nbTerritoireMordor + nbTerritoireIsengard + nbTerritoireGobelin + nbTerritoireAngmar}} Territoires -
           (V: {{winMordor + winIsengard + winGobelin + winAngmar}} / D: {{loseMordor + loseIsengard + loseGobelin + loseAngmar}}) 
         </p>

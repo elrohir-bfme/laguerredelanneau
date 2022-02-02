@@ -27,6 +27,19 @@
      <iframe src="https://drive.google.com/file/d/1D91xmfcpJUwYbwIkZjoiit7rTUzBmy8X/preview" width="640" height="480" allow="autoplay"></iframe>
     </div>
 
+        <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">BANDE ANNONCE DES NAINS</h3>
+    <div class="videoWrapper m-8 z-0">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/eeM_J_lVN4s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">BANDE ANNONCE ISENGARD</h3>
+    <div class="videoWrapper m-8 z-0">
+     <iframe src="https://drive.google.com/file/d/1-LglGZs2JXn_O7rn6uIojdO0EJ6-te9v/preview" width="640" height="480" allow="autoplay"></iframe>
+    </div>
+
+
+    
+
     </div>
 </template>
 

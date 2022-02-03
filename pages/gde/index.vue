@@ -54,9 +54,9 @@
     </div>
 
 
-
-
-    <div id="svg-container" class="map" :style="btnStyles">
+<div class="flex">
+  <div class="flex-grow">
+        <div id="svg-container" class="map" :style="btnStyles">
       <ModalGDE
         class="lg:flex md:flex"
         v-if="isShowModal && !loading"
@@ -9477,6 +9477,16 @@
         </g>
       </svg>
     </div>
+  </div>
+  <div class="flex-none w-1/3">
+    <Matchs/>
+    <!-- <img class="h-full mx-auto text-center" alt="Planning" src="~assets/planning.png"> -->
+  </div>
+</div>
+
+
+
+
 
     <br /><br />
     <br /><br />
@@ -9499,7 +9509,7 @@
     >
       <div
         v-for="faction in factions"
-        :key="faction.name"
+        :key="faction.id"
         :class="`bg-${color(faction.id).color}-${color(faction.id).code} hover:bg-${color(faction.id).color}-${color(faction.id).codeHover} text-${color(faction.id).color}-100`"
         class="
           flex flex-col
@@ -9518,7 +9528,7 @@
           class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40"
         >
           <img
-            :src="require(`~/assets/gde/factions/${faction.name}.webp`)"
+            :src="require(`~/assets/gde/factions/${faction.faction.name}.webp`)"
             alt=""
             class="h-full w-full"
           />
@@ -9528,9 +9538,9 @@
           :class="`text-${color(faction.id).color}-300`"
           class="mt-4 font-bold text-xl"
         >
-          Chef de la Faction du {{ faction.name }}
+          Chef de la Faction du {{ faction.faction.name }}
         </h2>
-        <h6 class="mt-2 text-xl font-bold underline">{{ faction.chef }}</h6>
+        <h6 class="mt-2 text-xl font-bold underline">{{ faction.faction.chef }}</h6>
 
         <ul class="flex flex-row mt-4 space-x-1 font-sans">
           <li>
@@ -9947,9 +9957,20 @@ export default {
     this.map = await this.$http.$get(
       "https://api.npoint.io/2eeb1bea715cd907d7bc"
     );
-    this.factions = await this.$http.$get(
+    let factions = await this.$http.$get(
       "https://api.npoint.io/2eeb1bea715cd907d7bc/factions"
     ); //API
+
+
+    let objArray = []
+    Object.keys(factions).forEach(key => objArray.push({
+      name: key,
+      faction: factions[key],
+      id: factions[key].id
+    }));
+
+    this.factions = objArray.sort((a, b) => a.id - b.id);
+
     this.loading = false;
 
     for (var key in this.map) {

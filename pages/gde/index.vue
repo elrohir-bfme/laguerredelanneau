@@ -9478,10 +9478,10 @@
       </svg>
     </div>
   </div>
-  <div class="flex-none w-1/3">
-    <Matchs/>
+  <!-- <div class="flex-none w-1/3"> -->
+    <!-- <Matchs/> -->
     <!-- <img class="h-full mx-auto text-center" alt="Planning" src="~assets/planning.png"> -->
-  </div>
+  <!-- </div> -->
 </div>
 
 

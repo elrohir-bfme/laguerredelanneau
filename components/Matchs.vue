@@ -33,8 +33,9 @@
                         <tr v-for="(players1, index) in game.players1" :key="index"  >
                           <td class="p-2 whitespace-nowrap">
                               <div class="flex items-center">
-                                  <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" :src="require(`~/assets/gde/factions/${players1.faction}.webp`)" width="40" height="40" :alt="players1"></div>
+                                  <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" :src="require(`~/assets/gde/factions/${players1.faction}.webp`)" width="40" height="40" :alt="players1.faction"></div>
                                   <div class="font-medium text-gray-200">{{players1.name}}</div>
+                                  <div v-if="players1.img" class="w-10 h-10 flex-shrink-0 ml-2 sm:ml-3"><img class="rounded-full w-10 h-10" :src="players1.img" width="40" height="40" :alt="players1.name"></div>
                               </div>
                           </td>
                         </tr>
@@ -81,8 +82,9 @@
                         <tr v-for="(players2, index) in game.players2" :key="index"  >
                           <td class="p-2 whitespace-nowrap">
                               <div class="flex items-center">
-                                  <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" :src="require(`~/assets/gde/factions/${players2.faction}.webp`)" width="40" height="40" :alt="players1"></div>
+                                  <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" :src="require(`~/assets/gde/factions/${players2.faction}.webp`)" width="40" height="40" :alt="players2.faction"></div>
                                   <div class="font-medium text-base text-gray-200">{{players2.name}}</div>
+                                  <div v-if="players2.img" class="w-10 h-10 flex-shrink-0 ml-2 sm:ml-3"><img class="rounded-full w-10 h-10" :src="players2.img" width="40" height="40" :alt="players2.name"></div>
                               </div>
                           </td>
                         </tr>

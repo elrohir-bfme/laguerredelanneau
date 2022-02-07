@@ -16,29 +16,20 @@
             {{nbTerritoireArnor + nbTerritoireRohan + nbTerritoireElfe + nbTerritoireGondor + nbTerritoireNain}} Territoires -
             (V: {{winArnor + winGondor + winRohan + winElfe + winNain}} / D: {{loseArnor + loseGondor  + loseRohan + loseElfe + loseNain}})
             </p>
-          <a
-        href="https://drive.google.com/drive/folders/1OPe3oMYnwVQCA3X3pBnF8rTWtryAa7ej?usp=sharing"
-        target="_blank"
-        class="
-          flex
-          mx-auto
-          text-orange-400
-          bg-gray-900
-          border-2
-          py-2
-          px-8
-          focus:outline-none
-          hover:bg-gray-800
-          rounded
-          text-lg
-          transform
-          transition
-          duration-500
-          hover:scale-110
-          border-orange-400
-        "
-        >Télécharger toutes les cartes</a
-      >
+        
+        <div class="flex items-center">
+          <div>
+          <button @click="beforeTour()" class="border-2 border-gray-900 bg-gray-800 text-white block rounded-sm font-bold py-4 px-6 ml-2 flex items-center">
+              <svg viewBox="0 0 32 32" class="inline w-4 fill-current text-white" aria-hidden="true"><path d="M26.025 14.496l-14.286-.001 6.366-6.366L15.979 6 5.975 16.003 15.971 26l2.129-2.129-6.367-6.366h14.29z"/></svg>
+          </button>
+          </div>
+          <TimerGDE :tour="this.tour"/>
+          <div>
+          <button @click="afterTour()" class="border-2 border-gray-900 bg-gray-800 text-white block rounded-sm font-bold py-4 px-6 ml-2">
+              <svg viewBox="0 0 32 32" class="inline w-4 fill-current text-white" aria-hidden="true"><path d="M5.975 17.504l14.287.001-6.367 6.366L16.021 26l10.004-10.003L16.029 6l-2.128 2.129 6.367 6.366H5.977z"/></svg>
+          </button>
+          </div>
+        </div>
         <p class="text-white">
           Camp du Mal ({{nbPlayerMordor + nbPlayerIsengard + nbPlayerGobelin + nbPlayerAngmar}} Joueurs -
           {{nbTerritoireMordor + nbTerritoireIsengard + nbTerritoireGobelin + nbTerritoireAngmar}} Territoires -
@@ -55,6 +46,11 @@
 
 
 <div class="flex">
+  <!-- <div class="flex-none w-16 justify-center content-center">
+    <button @click="beforeTour()" class="flex bg-blue-500 rounded-full font-bold text-white px-4 py-4 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">
+        <svg viewBox="0 0 32 32" class="inline w-6 fill-current text-white" aria-hidden="true"><path d="M26.025 14.496l-14.286-.001 6.366-6.366L15.979 6 5.975 16.003 15.971 26l2.129-2.129-6.367-6.366h14.29z"/></svg>
+    </button>
+  </div> -->
   <div class="flex-grow">
         <div id="svg-container" class="map" :style="btnStyles">
       <ModalGDE
@@ -9478,10 +9474,11 @@
       </svg>
     </div>
   </div>
-  <!-- <div class="flex-none w-1/3"> -->
-    <!-- <Matchs/> -->
-    <!-- <img class="h-full mx-auto text-center" alt="Planning" src="~assets/planning.png"> -->
-  <!-- </div> -->
+  <!-- <div class="flex-none w-16 justify-center content-center">
+    <button @click="afterTour()" class="flex bg-blue-500 rounded-full font-bold text-white px-4 py-4 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">
+        <svg viewBox="0 0 32 32" class="inline w-6 fill-current text-white" aria-hidden="true"><path d="M5.975 17.504l14.287.001-6.367 6.366L16.021 26l10.004-10.003L16.029 6l-2.128 2.129 6.367 6.366H5.977z"/></svg>
+    </button>
+  </div> -->
 </div>
 
 
@@ -9491,7 +9488,32 @@
     <br /><br />
     <br /><br />
 
-     <img class="w-full md:w-1/3 mx-auto text-center" alt="Planning" src="~assets/planning.png">
+     <div class="flex text-center justify-between  items-center gap-2 pb-4">
+          <a
+        href="https://drive.google.com/drive/folders/1OPe3oMYnwVQCA3X3pBnF8rTWtryAa7ej?usp=sharing"
+        target="_blank"
+        class="
+          flex
+          mx-auto-
+          text-orange-400
+          bg-gray-900
+          border-2
+          py-2
+          px-8
+          focus:outline-none
+          hover:bg-gray-800
+          rounded
+          text-lg
+          transform
+          transition
+          duration-500
+          hover:scale-110
+          border-orange-400
+        "
+        >Télécharger toutes les cartes</a
+      >
+
+     </div>
 
     <br /><br />
     <br /><br />
@@ -9726,6 +9748,8 @@ export default {
   },
   data() {
     return {
+      tour: [],
+      npoint: "",
       nbMap: 0,
       title: "",
       region: "",
@@ -9809,6 +9833,31 @@ export default {
     },
   },
   methods: {
+    beforeTour(){
+      console.log("jdiejdie", this.tour)
+      if(this.tour > 0){
+        this.tour--
+        try {
+          this.map = require(`~/assets/gde/tours/beforemoves-end-turn-${this.tour}.json`)
+        }
+        catch (e) {
+          console.log('oh no big error')
+          console.log(e)
+        }
+      }
+    },
+    afterTour(){
+        try {
+          this.map = require(`~/assets/gde/tours/beforemoves-end-turn-${this.tour + 1}.json`)
+          this.tour++
+        }
+        catch (e) {
+          console.log('oh no big error')
+          console.log(e)
+          this.map = this.currentMap
+          this.tour = this.currentTour
+        }
+    },
     storeCheckHUD(v) {
       this.$cookies.set('checkHUD', v, {
         path: '/',
@@ -9967,10 +10016,19 @@ export default {
     this.map = await this.$http.$get(
       "https://api.npoint.io/2eeb1bea715cd907d7bc"
     );
+
+    this.currentMap = this.map
+
     let factions = await this.$http.$get(
       "https://api.npoint.io/2eeb1bea715cd907d7bc/factions"
     ); //API
 
+    let time = await this.$http.$get(
+      "https://api.npoint.io/2eeb1bea715cd907d7bc/time"
+    ); //API
+
+    this.tour = time.tour;
+    this.currentTour = this.tour
 
     // TEST
 

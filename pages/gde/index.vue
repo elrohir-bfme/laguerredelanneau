@@ -9954,12 +9954,23 @@ export default {
     this.displayHUDValue = this.$cookies.get('checkHUD');
     this.loading = true;
 
+    // this.map = await this.$http.$get(
+    //   "https://api.npoint.io/2eeb1bea715cd907d7bc"
+    // );
+    // let factions = await this.$http.$get(
+    //   "https://api.npoint.io/2eeb1bea715cd907d7bc/factions"
+    // ); //API
+
+
+    //TEST
+
     this.map = await this.$http.$get(
-      "https://api.npoint.io/2eeb1bea715cd907d7bc"
+      "https://api.npoint.io/900d4d348871ff3c6841"
     );
     let factions = await this.$http.$get(
-      "https://api.npoint.io/2eeb1bea715cd907d7bc/factions"
+      "https://api.npoint.io/900d4d348871ff3c6841/factions"
     ); //API
+
 
 
     let objArray = []

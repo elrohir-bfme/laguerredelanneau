@@ -9488,12 +9488,13 @@
     <br /><br />
     <br /><br />
 
-     <div class="flex text-center justify-between  items-center gap-2 pb-4">
+     <div class="flex text-center justify-center  items-center gap-2 pb-4">
           <a
         href="https://drive.google.com/drive/folders/1OPe3oMYnwVQCA3X3pBnF8rTWtryAa7ej?usp=sharing"
         target="_blank"
         class="
           flex
+          text-center
           mx-auto-
           text-orange-400
           bg-gray-900

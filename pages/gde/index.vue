@@ -9548,7 +9548,7 @@
               :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
               class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
             >
-              {{ faction.capital }}
+              {{ faction.faction.capital }}
               <svg
                 :class="`text-${color(faction.id).color}-400`"
                 class="ml-2 stroke-current h-5 w-5"
@@ -9570,7 +9570,7 @@
             <span
               :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
               class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
-              >{{ faction.money }}
+              >{{ faction.faction.money }}
               <svg
                 :class="`text-${color(faction.id).color}-400`"
                 class="ml-2 stroke-current h-5 w-5"
@@ -9586,6 +9586,16 @@
                   d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
+            </span>
+          </li>
+        </ul>
+        <ul class="flex flex-row mt-4 space-x-1 font-sans">
+          <li>
+            <span
+              :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
+              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
+            >
+              Score : {{ faction.faction.total }}
             </span>
           </li>
         </ul>
@@ -9962,7 +9972,7 @@ export default {
     ); //API
 
 
-    //TEST
+    // TEST
 
     // this.map = await this.$http.$get(
     //   "https://api.npoint.io/900d4d348871ff3c6841"

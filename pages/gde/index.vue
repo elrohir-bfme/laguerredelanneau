@@ -10018,20 +10018,13 @@ export default {
       "https://api.npoint.io/2eeb1bea715cd907d7bc"
     );
 
-    this.currentMap = this.map
+
 
     let factions = await this.$http.$get(
       "https://api.npoint.io/2eeb1bea715cd907d7bc/factions"
     ); //API
 
-    let time = await this.$http.$get(
-      "https://api.npoint.io/2eeb1bea715cd907d7bc/time"
-    ); //API
-
-    this.tour = time.tour;
-    this.currentTour = this.tour
-
-    // TEST
+     // TEST
 
     // this.map = await this.$http.$get(
     //   "https://api.npoint.io/900d4d348871ff3c6841"
@@ -10039,6 +10032,21 @@ export default {
     // let factions = await this.$http.$get(
     //   "https://api.npoint.io/900d4d348871ff3c6841/factions"
     // ); //API
+
+    let time = await this.$http.$get(
+      "https://api.npoint.io/2eeb1bea715cd907d7bc/time"
+    ); //API
+
+
+    this.tour = time.tour;
+    this.currentMap = this.map
+    this.currentTour = this.tour
+
+   
+
+
+
+    
 
 
 

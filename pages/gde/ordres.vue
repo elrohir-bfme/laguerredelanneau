@@ -127,6 +127,7 @@ layout: "gde",
         playerGobelin: [],
         playerAngmar: [],
         selectedFaction: null,
+        factions: [],
         options: [
             { faction: 'Arnor', 'value': 1 },
             { faction: 'Gondor', 'value': 2 },
@@ -213,6 +214,11 @@ layout: "gde",
         for (const key in this.players) {
 
             const obj = this.players[key];
+
+            if(key == "factions"){
+                console.log(obj, "JDJEIDI OBJ")
+                this.factions = obj;
+            }
         
             if (true
             && key!== "riviere"

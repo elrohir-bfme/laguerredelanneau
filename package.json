@@ -16,10 +16,11 @@
     "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/strapi": "^0.3.1",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
     "cookie-universal-nuxt": "^2.1.5",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
-    "@tailwindcss/aspect-ratio": "^0.4.0"
+    "nuxt-highcharts": "^2.0.3"
   },
   "devDependencies": {
     "@nuxt/image": "^0.6.0",

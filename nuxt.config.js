@@ -126,7 +126,8 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/strapi',
     '@nuxt/image',
-    ['cookie-universal-nuxt', { alias: 'cookiz' }]
+    ['cookie-universal-nuxt', { alias: 'cookiz' }],
+    'nuxt-highcharts',
   ],
 
   /* url: 'http://api.laterredumilieu.fr' */
@@ -188,5 +189,9 @@ robots: {
       'laguerredelanneau.vercel.app'
     ]
   },
+
+  highcharts: {
+    /* module options */
+  }
 
 }

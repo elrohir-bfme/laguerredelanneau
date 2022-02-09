@@ -19,14 +19,14 @@
         
         <div class="flex items-center">
           <div>
-          <button @click="beforeTour()" class="border-2 border-gray-900 bg-gray-800 text-white block rounded-sm font-bold py-4 px-6 ml-2 flex items-center">
-              <svg viewBox="0 0 32 32" class="inline w-4 fill-current text-white" aria-hidden="true"><path d="M26.025 14.496l-14.286-.001 6.366-6.366L15.979 6 5.975 16.003 15.971 26l2.129-2.129-6.367-6.366h14.29z"/></svg>
+          <button @click="beforeTour()" class="border-2 border-gray-900 bg-gray-800 text-white block rounded-sm font-bold py-2 px-4 mr-2 hover:bg-gray-900 hover:border-orange-500 transition duration-500">
+              <svg viewBox="0 0 32 32" class="inline w-6 fill-current text-white" aria-hidden="true"><path d="M26.025 14.496l-14.286-.001 6.366-6.366L15.979 6 5.975 16.003 15.971 26l2.129-2.129-6.367-6.366h14.29z"/></svg>
           </button>
           </div>
           <TimerGDE :tour="this.tour"/>
           <div>
-          <button @click="afterTour()" class="border-2 border-gray-900 bg-gray-800 text-white block rounded-sm font-bold py-4 px-6 ml-2">
-              <svg viewBox="0 0 32 32" class="inline w-4 fill-current text-white" aria-hidden="true"><path d="M5.975 17.504l14.287.001-6.367 6.366L16.021 26l10.004-10.003L16.029 6l-2.128 2.129 6.367 6.366H5.977z"/></svg>
+          <button @click="afterTour()" class="border-2 border-gray-900 bg-gray-800 text-white block rounded-sm font-bold py-2 px-4 ml-2 hover:bg-gray-900 hover:border-orange-500 transition duration-500">
+              <svg viewBox="0 0 32 32" class="inline w-6 fill-current text-white" aria-hidden="true"><path d="M5.975 17.504l14.287.001-6.367 6.366L16.021 26l10.004-10.003L16.029 6l-2.128 2.129 6.367 6.366H5.977z"/></svg>
           </button>
           </div>
         </div>
@@ -9839,7 +9839,7 @@ export default {
       if(this.tour > 0){
         this.tour--
         try {
-          this.map = require(`~/assets/gde/tours/beforemoves-end-turn-${this.tour}.json`)
+          this.map = require(`~/static/gde/beforemoves-end-turn-${this.tour}.json`)
         }
         catch (e) {
           console.log('oh no big error')
@@ -9849,7 +9849,7 @@ export default {
     },
     afterTour(){
         try {
-          this.map = require(`~/assets/gde/tours/beforemoves-end-turn-${this.tour + 1}.json`)
+          this.map = require(`~/static/gde/beforemoves-end-turn-${this.tour + 1}.json`)
           this.tour++
         }
         catch (e) {

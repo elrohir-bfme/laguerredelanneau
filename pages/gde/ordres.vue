@@ -234,6 +234,7 @@ layout: "gde",
                     "conquete": this.findFaction(obj.color),
                     "fortress" : obj.hasOwnProperty("fortress"),
                     "citadel": obj.hasOwnProperty("citadel"),
+                    "color": obj.color
                 }
                 this.regions.push(newRegion);
             }

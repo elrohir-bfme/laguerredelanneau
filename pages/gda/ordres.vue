@@ -359,6 +359,7 @@ export default {
                             "conquete": this.findFaction(obj.color),
                             "fortress" : obj.hasOwnProperty("fortress"),
                             "citadel": obj.hasOwnProperty("citadel"),
+                            "faction": obj.color
                         }
                         this.regions.push(newRegion);
                         break;

@@ -29,6 +29,25 @@
 
 <script>
 export default {
+    data() {
+        return {
+            alliances: [
+            [
+                "#ff85ee",
+                "#093aff",
+                "#0bff00",
+                "#00e3ff",
+                "#fffc00"
+            ],
+            [
+                "#ff3636",
+                "#ffffff",
+                "#ff6f00",
+                "#c500ff"
+            ]
+        ]
+        }
+    },
     methods: {
         handleClose() {
             this.$emit("close");
@@ -41,6 +60,15 @@ export default {
                 }
             }
         },
+        areAllied(factionA, factionB){
+            let res = false;
+            this.alliances.forEach(e => {
+                if(e.includes(factionA) && e.includes(factionB)) {
+                    res = true
+                }
+            });
+            return res
+        }
     },
     props: {
         player: {
@@ -56,43 +84,19 @@ export default {
         orderedRegions: function () {
             let regionsAdjacents = [];
 
-            if(this.player.region !== "Nouveau_joueur") {
+            const adj = this.player
+                .adjacents
+                .map(region => this.findRegion(region));
 
-                const adj = this.player
-                    .adjacents
-                    .map(region => this.findRegion(region));
+            const adj2 = adj
+                .filter(region => this.areAllied(this.player.faction, region.color))
+                .map(region => region.adjacents)
+                .flat(Infinity)
+                .map(region => this.findRegion(region))
+                .filter(region => this.areAllied(this.player.faction, region.color))
 
-                const adj2 = adj
-                    .filter(region => region.conquete === this.player.faction)
-                    .map(region => region.adjacents)
-                    .flat(Infinity)
-                    .map(region => this.findRegion(region))
-                    .filter(region => region.conquete === this.player.faction);
+            regionsAdjacents = [... [this.findRegion(this.player.code)], ... adj, ... adj2];
 
-                regionsAdjacents = [... adj, ... adj2];
-                    
-            } else {
-
-                const citForto = this.regions
-                    .filter(region => region.conquete === this.player.faction)
-                    .filter(region => region.citadel || region.fortress);
-
-                const adj = citForto
-                    .map(region => region.adjacents)
-                    .flat(Infinity)
-                    .map(region => this.findRegion(region))
-                    .filter(region => region.conquete === this.player.faction);
-
-                const adj2 = adj
-                    .filter(region => region.conquete === this.player.faction)
-                    .map(region => region.adjacents)
-                    .flat(Infinity)
-                    .map(region => this.findRegion(region))
-                    .filter(region => region.conquete === this.player.faction);
-
-                regionsAdjacents = [... citForto, ... adj, ... adj2];
-
-            }
             return regionsAdjacents
                 .filter((region, i, a) => i === a.findIndex(f => f.code === region.code))
                 .map(region => ({name: region.name, code: region.code}))

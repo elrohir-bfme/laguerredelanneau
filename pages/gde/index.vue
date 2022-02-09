@@ -14,7 +14,7 @@
           <p class="text-white">
             Camp du Bien - {{nbPlayerArnor + nbPlayerRohan + nbPlayerElfe +nbPlayerGondor + nbPlayerNain}} joueurs - 
             {{nbTerritoireArnor + nbTerritoireRohan + nbTerritoireElfe + nbTerritoireGondor + nbTerritoireNain}} Territoires -
-            (V: {{winArnor + winGondor + winRohan + winElfe + winNain}} / D: {{loseArnor + loseGondor  + loseRohan + loseElfe + loseNain}})
+            (V: {{result && result.bien && result.bien.wins}} / D: {{result && result.bien && result.bien.losses}})
             </p>
         
         <div class="flex items-center">
@@ -33,7 +33,7 @@
         <p class="text-white">
           Camp du Mal ({{nbPlayerMordor + nbPlayerIsengard + nbPlayerGobelin + nbPlayerAngmar}} Joueurs -
           {{nbTerritoireMordor + nbTerritoireIsengard + nbTerritoireGobelin + nbTerritoireAngmar}} Territoires -
-          (V: {{winMordor + winIsengard + winGobelin + winAngmar}} / D: {{loseMordor + loseIsengard + loseGobelin + loseAngmar}}) 
+          (V: {{result && result.bien && result.mal.wins}} / D: {{result && result.bien && result.bien.losses}}) 
         </p>
         <img
           src="~/assets/gde/mal.png"
@@ -9618,6 +9618,14 @@
               :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
               class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
             >
+              Argent : {{ faction.faction.money }}
+            </span>
+          </li>
+          <li>
+            <span
+              :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
+              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
+            >
               Score : {{ faction.faction.total }}
             </span>
           </li>
@@ -9665,6 +9673,24 @@
                   d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 /></svg
             ></span>
+          </li>
+        </ul>
+        <ul class="flex flex-row mt-4 space-x-1 font-sans">
+          <li>
+            <span
+              :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
+              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
+            >
+              Victoire : {{ faction.faction.win }}
+            </span>
+          </li>
+          <li>
+              <span
+                :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
+                class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
+              >
+                Défaite : {{ faction.faction.loose }}
+              </span>
           </li>
         </ul>
       </div>
@@ -9749,7 +9775,7 @@ export default {
   },
   data() {
     return {
-      tour: [],
+      tour: 0,
       npoint: "",
       nbMap: 0,
       title: "",
@@ -9799,6 +9825,8 @@ export default {
       loseGobelin: 0,
       loseAngmar: 0,
       nbPlayers: 0,
+
+      result: {},
 
       factions: null,
       loading: false,
@@ -9920,7 +9948,7 @@ export default {
         case 2:
           return { color: "blue", code: "600", codeHover: "700", codeHover2: "800"};
         case 3:
-          return { color: "green", code: "700", codeHover: "800", codeHover2: "900"};
+          return { color: "green", code: "600", codeHover: "700", codeHover2: "800"};
         case 4:
           return { color: "teal", code: "600", codeHover: "700", codeHover2: "800"};
         case 5:
@@ -9932,7 +9960,7 @@ export default {
         case 8:
           return { color: "orange", code: "600", codeHover: "700", codeHover2: "800"};
         case 9:
-          return { color: "purple", code: "700", codeHover: "800", codeHover2: "900"};
+          return { color: "purple", code: "600", codeHover: "700", codeHover2: "800"};
         default:
           return { color: "black", code: "700", codeHover: "800", codeHover2: "900"};
       }
@@ -10037,17 +10065,14 @@ export default {
       "https://api.npoint.io/2eeb1bea715cd907d7bc/time"
     ); //API
 
+    this.result = await this.$http.$get(
+      "https://api.npoint.io/2eeb1bea715cd907d7bc/results"
+    ); //API
+
 
     this.tour = time.tour;
     this.currentMap = this.map
     this.currentTour = this.tour
-
-   
-
-
-
-    
-
 
 
     let objArray = []

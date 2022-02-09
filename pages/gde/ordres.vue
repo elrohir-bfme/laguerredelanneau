@@ -186,9 +186,30 @@ layout: "gde",
         newLink.click(); 
         
     },
-
-    findFaction(color) {
-        return ["ff85ee", "#00bfff", "#0bff00", "#1e90ff", "#fffc00", "#db5461", "#ffffff", "#ff6f00", "#c500ff"].indexOf(color) + 1;
+    color(id) {
+        switch (id) {
+            case 1:
+            return "#ff85ee"
+            case 2:
+            return "#093aff"
+            case 3:
+            return "#0bff00"
+            case 4:
+            return "#00e3ff"
+            case 5:
+            return "#fffc00"
+            case 6:
+            return "#ff3636"
+            case 7:
+            return "#ffffff"
+            case 8:
+            return "#ff6f00"
+            case 9:
+            return "#c500ff"
+            default:
+            return "#c500ff"
+            break;
+        }
     },
 
     addPlayerMethod() {
@@ -231,7 +252,6 @@ layout: "gde",
                     "name": obj.name,
                     "code": key,
                     "adjacents": obj.adjacents,
-                    "conquete": this.findFaction(obj.color),
                     "fortress" : obj.hasOwnProperty("fortress"),
                     "citadel": obj.hasOwnProperty("citadel"),
                     "color": obj.color
@@ -250,7 +270,7 @@ layout: "gde",
                         "region": obj.name,
                         "code": key,
                         "adjacents":obj.adjacents,
-                        "faction":obj2[player]['faction']
+                        "faction":this.color(obj2[player]['faction'])
                     };
                     switch (obj2[player]['faction']) {
                         case 1:

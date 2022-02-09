@@ -4,18 +4,30 @@
 
     </div>
 
-    <div class="flex text-center justify-between  items-center gap-2 pb-4">
-      <!-- <img href="~assets/gde/bien.png"/> -->
-          <img
-            src="~/assets/gde/bien.png"
-            alt=""
-            class="h-12 w-12"
-          />
-          <p class="text-white">
-            Camp du Bien - {{nbPlayerArnor + nbPlayerRohan + nbPlayerElfe +nbPlayerGondor + nbPlayerNain}} joueurs - 
-            {{nbTerritoireArnor + nbTerritoireRohan + nbTerritoireElfe + nbTerritoireGondor + nbTerritoireNain}} Territoires -
-            (V: {{result && result.bien && result.bien.wins}} / D: {{result && result.bien && result.bien.losses}})
-            </p>
+    <div class="flex flex-wrap text-center justify-evenly  items-center gap-2 pb-4">
+          <div class="text-blue-400 bg-gray-900 border-2 py-2 px-8 focus:outline-none hover:bg-gray-800
+          rounded text-lg transform transition duration-500 hover:scale-110 border-blue-400">
+            <p class="underline">Camp du Bien  </p>
+            <img
+              src="~/assets/gde/bien.png"
+              alt=""
+              class="h-12 w-12 mx-auto my-2"
+            />
+            <div  class="text-xs text-center flex w-full items-center justify-center">
+              <div class="w-auto mx-1 p-2 text-blue-500 rounded-lg border-2 border-blue-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{nbPlayerArnor + nbPlayerRohan + nbPlayerElfe +nbPlayerGondor + nbPlayerNain}}</span> Joueurs</div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-blue-500 rounded-lg border-2 border-blue-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{nbTerritoireArnor + nbTerritoireRohan + nbTerritoireElfe + nbTerritoireGondor + nbTerritoireNain}}</span> Territoires</div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-blue-500 rounded-lg border-2 border-blue-400 bg-gray-900">
+                  <div class="font-mono leading-none">Score : <span class="text-base">{{scoreBien}}</span></div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-blue-500 rounded-lg border-2 border-blue-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{result && result.bien && result.bien.wins}}</span>v / <span class="text-base">{{result && result.bien && result.bien.losses}}</span>d</div>
+              </div>
+            </div>
+          </div>
         
         <div class="flex items-center">
           <div>
@@ -30,16 +42,30 @@
           </button>
           </div>
         </div>
-        <p class="text-white">
-          Camp du Mal ({{nbPlayerMordor + nbPlayerIsengard + nbPlayerGobelin + nbPlayerAngmar}} Joueurs -
-          {{nbTerritoireMordor + nbTerritoireIsengard + nbTerritoireGobelin + nbTerritoireAngmar}} Territoires -
-          (V: {{result && result.bien && result.mal.wins}} / D: {{result && result.bien && result.bien.losses}}) 
-        </p>
-        <img
-          src="~/assets/gde/mal.png"
-          alt=""
-          class="h-12 w-12"
-        />
+
+                  <div class="text-red-400 bg-gray-900 border-2 py-2 px-8 focus:outline-none hover:bg-gray-800
+          rounded text-lg transform transition duration-500 hover:scale-110 border-red-400">
+            <p class="underline">Camp du Mal</p>
+            <img
+              src="~/assets/gde/mal.png"
+              alt=""
+              class="h-12 w-12 mx-auto my-2"
+            />
+            <div  class="text-xs text-center flex w-full items-center justify-center">
+              <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{nbPlayerMordor + nbPlayerIsengard + nbPlayerGobelin + nbPlayerAngmar}}</span> Joueurs</div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{nbTerritoireMordor + nbTerritoireIsengard + nbTerritoireGobelin + nbTerritoireAngmar}}</span> Territoires</div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
+                  <div class="font-mono leading-none">Score : <span class="text-base">{{scoreMal}}</span></div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{result && result.bien && result.mal.wins}}</span>v / <span class="text-base">{{result && result.bien && result.bien.losses}}</span>d</div>
+              </div>
+            </div>
+          </div>
           
       
     </div>
@@ -9826,6 +9852,9 @@ export default {
       loseAngmar: 0,
       nbPlayers: 0,
 
+      scoreBien: 0,
+      scoreMal: 0,
+
       result: {},
 
       factions: null,
@@ -10076,11 +10105,22 @@ export default {
 
 
     let objArray = []
-    Object.keys(factions).forEach(key => objArray.push({
-      name: key,
-      faction: factions[key],
-      id: factions[key].id
-    }));
+    Object.keys(factions).forEach(key =>  {
+      console.log(factions[key].id)
+      if(factions[key].id == 5 || factions[key].id == 6 || factions[key].id == 7 || factions[key].id == 8)
+      {
+        this.scoreMal += factions[key].total 
+        } else {
+        this.scoreBien += factions[key].total 
+       }
+
+        objArray.push({
+        name: key,
+        faction: factions[key],
+        id: factions[key].id
+      })
+    
+    });
 
     this.factions = objArray.sort((a, b) => a.id - b.id);
 

@@ -1,41 +1,61 @@
 <template>
-    <highchart v-if="!loading && territory.length > 0" :options="chartOptions" />
+  <div>
+    <highchart
+      v-if="!loading && territory.length > 0"
+      :options="chartOptions"
+    />
+    <highchart
+      v-if="!loading && territory.length > 0"
+      :options="chartOptions2"
+    />
+    <highchart
+      v-if="!loading && territory.length > 0"
+      :options="chartOptions3"
+    />
+    <highchart
+      v-if="!loading && territory.length > 0"
+      :options="chartOptions4"
+    />
+  </div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-        loading: true,
-        map: [],
-        territory: [],
-        nbTerritoireArnor: 0,
-        nbTerritoireRohan: 0,
-        nbTerritoireElfe: 0,
-        nbTerritoireGondor: 0,
-        nbTerritoireNain: 0,
-        nbTerritoireMordor: 0,
-        nbTerritoireIsengard: 0,
-        nbTerritoireGobelin: 0,
-        nbTerritoireAngmar: 0,
-        nbPlayerArnor: 0,
-        nbPlayerRohan: 0,
-        nbPlayerElfe: 0,
-        nbPlayerGondor: 0,
-        nbPlayerNain: 0,
-        nbPlayerMordor: 0,
-        nbPlayerIsengard: 0,
-        nbPlayerGobelin: 0,
-        nbPlayerAngmar: 0,
-        chartOptions: {}
+      loading: true,
+      map: [],
+      territory: [],
+      territoryAlliance: [],
+      players: [],
+      playersAlliance: [],
+      nbTerritoireArnor: 0,
+      nbTerritoireRohan: 0,
+      nbTerritoireElfe: 0,
+      nbTerritoireGondor: 0,
+      nbTerritoireNain: 0,
+      nbTerritoireMordor: 0,
+      nbTerritoireIsengard: 0,
+      nbTerritoireGobelin: 0,
+      nbTerritoireAngmar: 0,
+      nbPlayerArnor: 0,
+      nbPlayerRohan: 0,
+      nbPlayerElfe: 0,
+      nbPlayerGondor: 0,
+      nbPlayerNain: 0,
+      nbPlayerMordor: 0,
+      nbPlayerIsengard: 0,
+      nbPlayerGobelin: 0,
+      nbPlayerAngmar: 0,
+      chartOptions: {},
+      chartOptions2: {},
     };
   },
-    async fetch() {
+  async fetch() {
     this.loading = true;
     this.map = await this.$http.$get(
       "https://api.npoint.io/2eeb1bea715cd907d7bc"
     );
-    
 
     for (var key in this.map) {
       var obj = this.map[key];
@@ -99,56 +119,38 @@ export default {
             case 1:
               this.nbPlayerArnor += 1;
               this.nbPlayers += 1;
-              this.winArnor += obj2[player]["win"];
-              this.loseArnor += obj2[player]["lose"];
               break;
             case 2:
               this.nbPlayerGondor += 1;
               this.nbPlayers += 1;
-              this.winGondor += obj2[player]["win"];
-              this.loseGondor += obj2[player]["lose"];
               break;
             case 3:
               this.nbPlayerRohan += 1;
               this.nbPlayers += 1;
-              this.winRohan += obj2[player]["win"];
-              this.loseRohan += obj2[player]["lose"];
               break;
             case 4:
               this.nbPlayerElfe += 1;
               this.nbPlayers += 1;
-              this.winElfe += obj2[player]["win"];
-              this.loseElfe += obj2[player]["lose"];
               break;
             case 5:
               this.nbPlayerNain += 1;
               this.nbPlayers += 1;
-              this.winNain += obj2[player]["win"];
-              this.loseNain += obj2[player]["lose"];
               break;
             case 6:
               this.nbPlayerMordor += 1;
               this.nbPlayers += 1;
-              this.winMordor += obj2[player]["win"];
-              this.loseMordor += obj2[player]["lose"];
               break;
             case 7:
               this.nbPlayerIsengard += 1;
               this.nbPlayers += 1;
-              this.winIsengard += obj2[player]["win"];
-              this.loseIsengard += obj2[player]["lose"];
               break;
             case 8:
               this.nbPlayerGobelin += 1;
               this.nbPlayers += 1;
-              this.winGobelin += obj2[player]["win"];
-              this.loseGobelin += obj2[player]["lose"];
               break;
             case 9:
               this.nbPlayerAngmar += 1;
               this.nbPlayers += 1;
-              this.winAngmar += obj2[player]["win"];
-              this.loseAngmar += obj2[player]["lose"];
               break;
             default:
               break;
@@ -157,80 +159,273 @@ export default {
       }
     }
 
-
-
     this.territory = [
-        {
-            name: "Arnor",
-            y: this.nbTerritoireArnor
-        },
-        {
-            name: "Rohan",
-            y: this.nbTerritoireRohan
-        },
-        {
-            name: "Gondor",
-            y: this.nbTerritoireGondor
-        },
-        {
-            name: "Elfe",
-            y: this.nbTerritoireElfe
-        },
-        {
-            name: "Nain",
-            y: this.nbTerritoireNain
-        },
-        {
-            name: "Mordor",
-            y: this.nbTerritoireMordor
-        },
-        {
-            name: "Isengard",
-            y: this.nbTerritoireIsengard
-        },
-        {
-            name: "Gobelin",
-            y: this.nbTerritoireGobelin
-        },
-        {
-            name: "Angmar",
-            y: this.nbTerritoireAngmar
-        },
-    ]
+      {
+        name: "Arnor",
+        y: this.nbTerritoireArnor,
+      },
+      {
+        name: "Rohan",
+        y: this.nbTerritoireRohan,
+      },
+      {
+        name: "Gondor",
+        y: this.nbTerritoireGondor,
+      },
+      {
+        name: "Elfe",
+        y: this.nbTerritoireElfe,
+      },
+      {
+        name: "Nain",
+        y: this.nbTerritoireNain,
+      },
+      {
+        name: "Mordor",
+        y: this.nbTerritoireMordor,
+      },
+      {
+        name: "Isengard",
+        y: this.nbTerritoireIsengard,
+      },
+      {
+        name: "Gobelin",
+        y: this.nbTerritoireGobelin,
+      },
+      {
+        name: "Angmar",
+        y: this.nbTerritoireAngmar,
+      },
+    ];
     this.chartOptions = {
-           chart: {
+      chart: {
         plotBackgroundColor: null,
         plotBorderWidth: null,
         plotShadow: false,
-        type: 'pie'
-    },
-    title: {
-        text: 'Territoires'
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    accessibility: {
+        type: "pie",
+      },
+      title: {
+        text: "Territoires",
+      },
+      tooltip: {
+        pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+      },
+      accessibility: {
         point: {
-            valueSuffix: '%'
-        }
-    },
-    plotOptions: {
+          valueSuffix: "%",
+        },
+      },
+      plotOptions: {
         pie: {
-            allowPointSelect: true,
-            cursor: 'pointer',
-            dataLabels: {
-                enabled: true,
-                format: '<b>{point.name}</b>: {point.percentage:.1f} %'
-            }
-        }
-    },
-    series: [{
-        name: 'Brands',
-        colorByPoint: true,
-        data: this.territory
-        }]
-      }
+          allowPointSelect: true,
+          cursor: "pointer",
+          dataLabels: {
+            enabled: true,
+            format: "<b>{point.name}</b>: {point.percentage:.1f} %",
+          },
+        },
+      },
+      series: [
+        {
+          name: "Brands",
+          colorByPoint: true,
+          data: this.territory,
+        },
+      ],
+    };
+
+    this.territoryAlliance = [
+      {
+        name: "BIEN",
+        y:
+          this.nbTerritoireArnor +
+          this.nbTerritoireGondor +
+          this.nbTerritoireRohan +
+          this.nbTerritoireNain +
+          this.nbTerritoireElfe,
+      },
+      {
+        name: "MAL",
+        y:
+          this.nbTerritoireMordor +
+          this.nbTerritoireIsengard +
+          this.nbTerritoireGobelin +
+          this.nbTerritoireAngmar,
+      },
+    ];
+
+    this.chartOptions2 = {
+      chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: "pie",
+      },
+      title: {
+        text: "Territoires",
+      },
+      tooltip: {
+        pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+      },
+      accessibility: {
+        point: {
+          valueSuffix: "%",
+        },
+      },
+      plotOptions: {
+        pie: {
+          allowPointSelect: true,
+          cursor: "pointer",
+          dataLabels: {
+            enabled: true,
+            format: "<b>{point.name}</b>: {point.percentage:.1f} %",
+          },
+        },
+      },
+      series: [
+        {
+          name: "Brands",
+          colorByPoint: true,
+          data: this.territoryAlliance,
+        },
+      ],
+    };
+
+
+
+    this.players = [
+      {
+        name: "Arnor",
+        y: this.nbPlayerArnor
+      },
+            {
+        name: "Gondor",
+        y: this.nbPlayerGondor
+      },
+    {
+        name: "Rohan",
+        y: this.nbPlayerRohan
+      },
+    {
+        name: "Elfe",
+        y: this.nbPlayerElfe
+      },
+    {
+        name: "Nain",
+        y:this.nbPlayerNain,
+      },
+      {
+        name: "Mordor",
+        y: this.nbPlayerMordor
+      },
+      {
+        name: "Isengard",
+        y: this.nbPlayerIsengard
+      },
+      {
+        name: "Gobelin",
+        y: this.nbPlayerGobelin
+      },
+      {
+        name: "Angmar",
+        y: this.nbPlayerAngmar,
+      },
+    ];
+
+        this.chartOptions3 = {
+      chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: "pie",
+      },
+      title: {
+        text: "Joueurs",
+      },
+      tooltip: {
+        pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+      },
+      accessibility: {
+        point: {
+          valueSuffix: "%",
+        },
+      },
+      plotOptions: {
+        pie: {
+          allowPointSelect: true,
+          cursor: "pointer",
+          dataLabels: {
+            enabled: true,
+            format: "<b>{point.name}</b>: {point.percentage:.1f} %",
+          },
+        },
+      },
+      series: [
+        {
+          name: "Brands",
+          colorByPoint: true,
+          data: this.players,
+        },
+      ],
+    };
+
+    this.playersAlliance = [
+      {
+        name: "BIEN",
+        y:
+          this.nbPlayerArnor +
+          this.nbPlayerGondor +
+          this.nbPlayerRohan +
+          this.nbPlayerElfe +
+          this.nbPlayerNain,
+      },
+      {
+        name: "MAL",
+        y:
+          this.nbPlayerMordor +
+          this.nbPlayerIsengard +
+          this.nbPlayerGobelin +
+          this.nbPlayerAngmar,
+      },
+    ];
+
+    this.chartOptions4 = {
+      chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: "pie",
+      },
+      title: {
+        text: "Joueurs Alliances",
+      },
+      tooltip: {
+        pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+      },
+      accessibility: {
+        point: {
+          valueSuffix: "%",
+        },
+      },
+      plotOptions: {
+        pie: {
+          allowPointSelect: true,
+          cursor: "pointer",
+          dataLabels: {
+            enabled: true,
+            format: "<b>{point.name}</b>: {point.percentage:.1f} %",
+          },
+        },
+      },
+      series: [
+        {
+          name: "Brands",
+          colorByPoint: true,
+          data: this.playersAlliance,
+        },
+      ],
+    };
+
     this.loading = false;
   },
 };

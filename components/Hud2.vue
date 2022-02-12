@@ -1,9 +1,9 @@
 <template>
-    <div class="fixed left-0 top-0 text-white text-center">
+    <div class="fixed right-0 bottom-0 text-white text-center">
         <div v-if="map[region]" class="flex flex-col p-4">
-            <div v-for="index in 8" :key="index">
-                <div v-if="occurences(map[region].players, index) !== 0" class="m-1">
-                    <span :class="colors(index)" class="px-2 py-1 text-lg font-bold leading-none text-white transform rounded-full">
+            <div v-for="index in 9" :key="index">
+                <div v-if="occurences(map[region].players, index) !== 0" class="m-4">
+                    <span :class="colors(index)" class="px-4 py-2 text-lg font-bold leading-none text-white transform rounded-full">
                         {{occurences(map[region].players, index)}}
                     </span>
                 </div>
@@ -35,28 +35,31 @@ export default {
             let info = "";
             switch(value) {
                 case 1:
-                    info = "bg-teal-600"
+                    info = "bg-indigo-600"
                 break;
                 case 2:
-                    info = "bg-green-800"
+                    info = "bg-blue-600"
                 break;
                 case 3:
-                    info = "bg-green-800"
+                    info = "bg-green-600"
                 break;
                 case 4:
-                    info = "bg-green-800"
+                    info = "bg-teal-600"
                 break;
                 case 5:
-                    info = "bg-red-800"
+                    info = "bg-yellow-600"
                 break;
                 case 6:
-                    info = "bg-green-800"
+                    info = "bg-red-600"
                 break;
                 case 7:
-                    info = "bg-green-800"
+                    info = "bg-gray-700"
                 break;
                 case 8:
-                    info = "bg-green-800"
+                    info = "bg-orange-600"
+                break;
+                case 9:
+                    info = "bg-purple-600"
                 break;
             }
             return info

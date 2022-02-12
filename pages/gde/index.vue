@@ -106,6 +106,8 @@
           <div class="select-none text-white text-xs md:text-lg">Afficher les régions</div>
         </label>
 
+        
+
       </div>
 
       <div class="absolute w-6 h-6 -bottom-10 md:bottom-24 left-2" v-if="!displayHUDValue" :class="isShowModal && 'hidden lg:block md:block'">
@@ -9508,7 +9510,9 @@
 </div>
 
 
+    <Hud class="hidden lg:block" v-if="!loading && !displayHUDValue" :map="map" :region="region" />
 
+    <Hud2 class="hidden lg:block" v-if="!loading && !displayHUDValue" :map="map" :region="region" />
 
 
     <br /><br />

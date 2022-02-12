@@ -1,13 +1,13 @@
 <template>
     <div class="fixed left-0 bottom-0 text-white text-center">
         <div class="pngcontainer1">
-            <img id="region_img" :src="map[region] ? map[region].img : 'https://wallup.net/wp-content/uploads/2018/09/28/960672-art-artwork-fantasy-artistic-original-lord-rings-lotr.jpg'" />
+            <img class="object-cover" id="region_img" :src="map[region] ? map[region].img : 'https://wallup.net/wp-content/uploads/2018/09/28/960672-art-artwork-fantasy-artistic-original-lord-rings-lotr.jpg'" />
             <img id="region_bg" src="~assets/bg.webp" />
-            <img v-if="map[region]" id="region_faction" :src="`https://laguerredelanneau.vercel.appfactions/${factions(map[region].color)}`"/>  
+            <img v-if="map[region] && map[region].color && map[region].color !== '#3300000'" id="region_faction" :src="require(`~/assets/gde/factions/${factions(map[region].color)}.webp`)"/>  
             <img src="~assets/palantir.png" />
-            <p id="region_player"> {{map[region] ? map[region].map ? `Map ${map[region].map} Joueurs` : "" : ""}}</p>
+            <p id="region_player" class="text-xs"> {{map[region] ? map[region].map ? `Map ${map[region].map} Joueurs` : "" : ""}}</p>
             <div id="region_txt">
-                    <p id="region_name">{{map[region] ? map[region].name : "Région inconnue"}}</p>
+                <p id="region_name">{{map[region] ? map[region].name : "Région inconnue"}}</p>
             </div>
         </div>
     </div>
@@ -31,48 +31,51 @@ export default {
         factions(color) {
             let faction = "";
             switch (color) {
-                case '#0bff00':
-                case '#0BFF00':
-                    faction = "rohan.png"
-                break;
+          case "#ff85ee":
+          case "#FF85EE":
+            faction = "arnor";
+            break;
+          case "#0bff00":
+          case "#0BFF00":
+            faction = "rohan";
+            break;
 
-                case '#00bfff':
-                case '#00BFFF':
-                    faction = "elfe.png"
-                break;
+          case "#00e3ff":
+          case "#00E3FF":
+            faction = "elfe";
+            break;
 
-                case '#1e90ff':
-                case '#1E90FF':
-                    faction = "gondor.png"
-                break;
+          case "#093aff":
+          case "#093AFF":
+            faction = "gondor";
+            break;
 
-                case '#fffc00':
-                case '#FFFC00':
-                    faction = "nain.png"
-                break;
+          case "#fffc00":
+          case "#FFFC00":
+            faction = "nain";
+            break;
 
-                case '#db5461':
-                case '#DB5461':
-                    faction = "mordor.png"
-                break;
+          case "#ff3636":
+          case "#FF3636":
+            faction = "mordor";
+            break;
 
-                case '#ffffff':
-                case '#FFFFFF':
-                    faction = "isengard.png"
-                break;
+          case "#ffffff":
+          case "#FFFFFF":
+            faction = "isengard";
+            break;
 
-                case '#ff6f00':
-                case '#FF6F00':
-                    faction = "gobelin.png"
-                break;
+          case "#ff6f00":
+          case "#FF6F00":
+            faction = "gobelin";
+            break;
 
-                case '#c500ff':
-                case '#C500FF':
-                    faction = "angmar.png"
-                break;
-                default:
-                    faction = "bg.webp"
-                break;
+          case "#c500ff":
+          case "#C500FF":
+            faction = "angmar";
+            break;
+          default:
+            break;
           }
           return faction;
         }
@@ -124,7 +127,7 @@ export default {
 
 .pngcontainer1 #region_player {
     position: absolute;
-    bottom: 9.2%;
+    bottom: 11%;
     left: 0%;
     right: 50%;
     z-index: 105;

@@ -1,13 +1,25 @@
 <template>
     <div class="fixed left-0 bottom-0 text-white text-center">
-        <div class="pngcontainer1">
-            <img class="object-cover" id="region_img" :src="map[region] ? map[region].img : 'https://wallup.net/wp-content/uploads/2018/09/28/960672-art-artwork-fantasy-artistic-original-lord-rings-lotr.jpg'" />
-            <img id="region_bg" src="~assets/bg.webp" />
-            <img v-if="map[region] && map[region].color && map[region].color !== '#3300000'" id="region_faction" :src="require(`~/assets/gde/factions/${factions(map[region].color)}.webp`)"/>  
-            <img src="~assets/palantir.png" />
-            <p id="region_player" class="text-xs"> {{map[region] ? map[region].map ? `Map ${map[region].map} Joueurs` : "" : ""}}</p>
-            <div id="region_txt">
-                <p id="region_name">{{map[region] ? map[region].name : "Région inconnue"}}</p>
+        <div class="flex flex-row flex-nowrap">
+            <div class="pngcontainer1">
+                <img class="object-cover" id="region_img" :src="map[region] ? map[region].img : 'https://wallup.net/wp-content/uploads/2018/09/28/960672-art-artwork-fantasy-artistic-original-lord-rings-lotr.jpg'" />
+                <img id="region_bg" src="~assets/bg.webp" />
+                <img v-if="map[region] && map[region].color && map[region].color !== '#3300000'" id="region_faction" :src="require(`~/assets/gde/factions/${factions(map[region].color)}.webp`)"/>  
+                <img src="~assets/palantir.png" />
+                <p  class="text-base absolute text-center bottom-4 z-50 text-yellow-400"> {{map[region] ? map[region].map ? `Map ${map[region].map} Joueurs` : "" : ""}}</p>
+                <div id="region_txt">
+                    <p id="region_name">{{map[region] ? map[region].name : "Région inconnue"}}</p>
+                </div>
+            </div>
+
+            
+            <div class="text-center place-self-end">
+                <div v-if="map[region]" class="flex flex-wrap-reverse gap-4">
+                    <div v-for="(player, index) in map[region].players" :key="index">
+                        <img class="border-2 rounded-full w-14 h-14 object-cover" :class="colors(player.faction)" :src="player.img ? player.img : require(`~/assets/gde/icons/${icons(player.faction)}.png`)" :alt="player.name">
+                        <span class="text-sm">{{player.name}}</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -28,6 +40,72 @@ export default {
         },
     },
     methods: {
+        icons(value) {
+            let info = "";
+            switch(value) {
+                case 1:
+                    info = "arnor"
+                break;
+                case 2:
+                    info = "gondor"
+                break;
+                case 3:
+                    info = "rohan"
+                break;
+                case 4:
+                    info = "elfe"
+                break;
+                case 5:
+                    info = "nain"
+                break;
+                case 6:
+                    info = "mordor"
+                break;
+                case 7:
+                    info = "isengard"
+                break;
+                case 8:
+                    info = "gobelin"
+                break;
+                case 9:
+                    info = "angmar"
+                break;
+            }
+            return info
+        },
+        colors(value) {
+            let info = "";
+            switch(value) {
+                case 1:
+                    info = "border-indigo-600"
+                break;
+                case 2:
+                    info = "border-blue-600"
+                break;
+                case 3:
+                    info = "border-green-600"
+                break;
+                case 4:
+                    info = "border-teal-600"
+                break;
+                case 5:
+                    info = "border-yellow-600"
+                break;
+                case 6:
+                    info = "border-red-600"
+                break;
+                case 7:
+                    info = "border-gray-900"
+                break;
+                case 8:
+                    info = "border-orange-600"
+                break;
+                case 9:
+                    info = "border-purple-600"
+                break;
+            }
+            return info
+        },
         factions(color) {
             let faction = "";
             switch (color) {
@@ -84,10 +162,10 @@ export default {
 </script>
 
 <style scoped>
-.pngcontainer1, .pngcontainer1 img , .descriptionContainer{
+.pngcontainer1, .pngcontainer1 img {
     position: relative;
 }
-.pngcontainer1 img , .descriptionContainer {
+.pngcontainer1 img {
     z-index: 101;
 }
 .pngcontainer1 #region_img {
@@ -127,11 +205,11 @@ export default {
 
 .pngcontainer1 #region_player {
     position: absolute;
-    bottom: 11%;
+    bottom: 10%;
     left: 0%;
     right: 50%;
     z-index: 105;
-    font-size: 1.0vw;
+    /* font-size: 1.0vw; */
     color: #eada24;
 }
 
@@ -139,7 +217,7 @@ export default {
     position: absolute;
     top: 30%;
     left: -2%;
-    right: 57%;
+    right: 40%;
     bottom: 54%;
     margin: 19px 11px 16px 39px;
     z-index: 117;
@@ -150,32 +228,6 @@ export default {
 .responsive {
   width: 100%;
   height: auto;
-}
-
-.descriptionContainer{
-    position : absolute;
-    width : 170%;
-    top: 50px;
-    left: 330px;
-    z-index: 98;
-}
-
-.descriptionContainer #territoryText{
-    position : absolute;
-    top:12px;
-    left:153px;
-}
-
-.descriptionContainer #structureText{
-    position : absolute;
-    top:12px;
-    left:420px;
-}
-
-.descriptionContainer #armyText{
-    position : absolute;
-    top:12px;
-    left:687px;
 }
 
 .territoryContainer{

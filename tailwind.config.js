@@ -27,6 +27,14 @@ module.exports = {
         lime: colors.lime,
         orange: colors.orange,
       },
+      borderColor: {
+        rose: colors.rose,
+        fuchsia: colors.fuchsia,
+        indigo: colors.indigo,
+        teal: colors.teal,
+        lime: colors.lime,
+        orange: colors.orange,
+      }
     },
   },
   plugins: [

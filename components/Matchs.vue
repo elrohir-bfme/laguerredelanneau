@@ -50,7 +50,7 @@
                   <div class="flex-1">
                     <p class="text-white title-font font-medium text-center">{{game.territory}}</p>
                     <div class="justify-center flex">
-                        <img alt="minimap" class="w-auto mr-4 ml-2 transform transition duration-500 hover:scale-110"  :src="game.img">
+                        <img alt="minimap" class="w-auto mr-4 ml-2 transform transition duration-500 hover:scale-110"  :src="game.minimap">
                     </div>
                     <p class="text-white title-font font-medium text-center mt-*">Résulat</p>
                     <div class="justify-center flex">

@@ -6,7 +6,7 @@
                 <img id="region_bg" src="~assets/bg.webp" />
                 <img v-if="map[region] && map[region].color && map[region].color !== '#3300000'" id="region_faction" :src="require(`~/assets/gde/factions/${factions(map[region].color)}.webp`)"/>  
                 <img src="~assets/palantir.png" />
-                <p  class="text-base absolute text-center bottom-4 z-50 text-yellow-400"> {{map[region] ? map[region].map ? `Map ${map[region].map} Joueurs` : "" : ""}}</p>
+                <p id="region_player"  class="text-base absolute text-center bottom-6 left-1/4 text-yellow-400"> {{map[region] ? map[region].map ? `Map ${map[region].map} Joueurs` : "" : ""}}</p>
                 <div id="region_txt">
                     <p id="region_name">{{map[region] ? map[region].name : "Région inconnue"}}</p>
                 </div>
@@ -204,13 +204,13 @@ export default {
 }
 
 .pngcontainer1 #region_player {
-    position: absolute;
+    /* position: absolute;
     bottom: 10%;
     left: 0%;
-    right: 50%;
+    right: 50%; */
     z-index: 105;
     /* font-size: 1.0vw; */
-    color: #eada24;
+    /* color: #eada24; */
 }
 
 .pngcontainer1 #region_txt {

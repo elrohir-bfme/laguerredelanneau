@@ -63,8 +63,8 @@
             <div class="shadow-lg rounded-2xl p-2"
               :class="`bg-${color(player.faction).color}-${color(player.faction).code} hover:bg-${color(player.faction).color}-${color(player.faction).codeHover}`" >
                 <div class="flex-row gap-4 flex justify-center items-center">
-                    <div v-if="player.img" class="flex-shrink-0">
-                      <img  :alt="player.name" :src="player.img" 
+                    <div class="flex-shrink-0">
+                      <img :alt="player.name" :src="player.img ? player.img : require(`~/assets/gde/icons/${icons(player.faction)}.png`)"
                       class="mx-auto object-cover rounded-full h-12 w-12"/>
                     </div>
                     <div class="flex flex-col">
@@ -113,6 +113,39 @@
       ActionAdjacent(value) {
         this.$emit("close");
         this.$emit('update-info', value);
+      },
+      icons(value) {
+        let info = "";
+        switch(value) {
+            case 1:
+                info = "arnor"
+            break;
+            case 2:
+                info = "gondor"
+            break;
+            case 3:
+                info = "rohan"
+            break;
+            case 4:
+                info = "elfe"
+            break;
+            case 5:
+                info = "nain"
+            break;
+            case 6:
+                info = "mordor"
+            break;
+            case 7:
+                info = "isengard"
+            break;
+            case 8:
+                info = "gobelin"
+            break;
+            case 9:
+                info = "angmar"
+            break;
+        }
+        return info
       },
       color(id) {
         switch (id) {

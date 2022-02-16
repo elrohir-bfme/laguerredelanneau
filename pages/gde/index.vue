@@ -43,7 +43,7 @@
           </div>
         </div>
 
-                  <div class="text-red-400 bg-gray-900 border-2 py-2 px-8 focus:outline-none hover:bg-gray-800
+        <div class="text-red-400 bg-gray-900 border-2 py-2 px-8 focus:outline-none hover:bg-gray-800
           rounded text-lg transform transition duration-500 hover:scale-110 border-red-400">
             <p class="underline">Camp du Mal</p>
             <img
@@ -71,7 +71,7 @@
     </div>
 
 
-<div class="flex">
+<div class="flex flex-wrap">
   <!-- <div class="flex-none w-16 justify-center content-center">
     <button @click="beforeTour()" class="flex bg-blue-500 rounded-full font-bold text-white px-4 py-4 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">
         <svg viewBox="0 0 32 32" class="inline w-6 fill-current text-white" aria-hidden="true"><path d="M26.025 14.496l-14.286-.001 6.366-6.366L15.979 6 5.975 16.003 15.971 26l2.129-2.129-6.367-6.366h14.29z"/></svg>
@@ -104,6 +104,14 @@
             <svg class="fill-current hidden w-4 h-4 text-orange-500 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
           </div>
           <div class="select-none text-white text-xs md:text-lg">Afficher les régions</div>
+        </label>
+
+        <label class="justify-start items-start pt-2 xl:flex hidden" v-if="!displayHUDValue">
+          <div class="bg-gray-900 border-2 rounded border-orange-400 w-4 h-4 md:w-6 md:h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-orange-500">
+            <input  v-model="combats" type="checkbox" class="opacity-0 absolute">
+            <svg class="fill-current hidden w-4 h-4 text-orange-500 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+          </div>
+          <div class="select-none text-white text-xs md:text-lg">Afficher les combats</div>
         </label>
 
         
@@ -9502,11 +9510,9 @@
       </svg>
     </div>
   </div>
-  <!-- <div class="flex-none w-16 justify-center content-center">
-    <button @click="afterTour()" class="flex bg-blue-500 rounded-full font-bold text-white px-4 py-4 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">
-        <svg viewBox="0 0 32 32" class="inline w-6 fill-current text-white" aria-hidden="true"><path d="M5.975 17.504l14.287.001-6.367 6.366L16.021 26l10.004-10.003L16.029 6l-2.128 2.129 6.367 6.366H5.977z"/></svg>
-    </button>
-  </div> -->
+  <div v-if="combats" class="mr-2 flex-none w-1/2 h-screen justify-center content-center overflow-auto scrollbar:!w-1.5 scrollbar:!h-1.5 scrollbar:bg-transparent scrollbar-track:!bg-slate-100 scrollbar-thumb:!rounded scrollbar-thumb:!bg-slate-300 scrollbar-track:!rounded">
+    <Matchs :tour="this.tour"/>
+  </div>
 </div>
 
 
@@ -9858,6 +9864,7 @@ export default {
 
       scoreBien: 0,
       scoreMal: 0,
+      combats: false,
 
       result: {},
 
@@ -10309,4 +10316,36 @@ input:checked + svg {
     --tw-bg-opacity: 1;
     background-color: rgba(194, 65, 12, var(--tw-bg-opacity));
 }
+
+.scrollbar-track\:\!rounded::-webkit-scrollbar-track {
+    border-radius: 15rem!important;
+}
+
+.scrollbar-track\:\!bg-slate-100::-webkit-scrollbar-track {
+    --tw-bg-opacity: 1!important;
+    background-color: #18191c!important;
+}
+
+.scrollbar-thumb\:\!rounded::-webkit-scrollbar-thumb {
+    border-radius: .25rem!important;
+}
+
+.scrollbar-thumb\:\!bg-slate-300::-webkit-scrollbar-thumb {
+    --tw-bg-opacity: 1!important;
+    background-color: tomato!important;
+}
+
+.scrollbar\:\!h-1\.5::-webkit-scrollbar {
+    height: .25rem!important;
+}
+
+.scrollbar\:\!w-1\.5::-webkit-scrollbar {
+    width: .25rem!important;
+}
+
+.scrollbar\:bg-transparent::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+
 </style>

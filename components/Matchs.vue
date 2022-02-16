@@ -1,8 +1,8 @@
 <template>
 <section class="text-gray-500 container mx-auto bg-lotr rounded-lg body-font overflow-hidden border-2 border-red-500">
   <div class="container px-5 py-24 mx-auto">
-    <div class="-my-8">
-      <div v-for="(match, index) in matchs" :key="index" class="p-8 flex flex-wrap md:flex-no-wrap border-b-2 border-gray-800  hover:bg-gray-900">
+    <div v-for="(match, index) in matchs" :key="index" class="-my-8">
+      <div v-if="tour ? Boolean(match.turn === tour) : true" class="p-8 flex flex-wrap md:flex-no-wrap border-b-2 border-gray-800  hover:bg-gray-900">
         <div class="md:w-32 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
           <span class="tracking-widest font-medium title-font text-white">TOUR {{match.turn}}</span>
           <span class="mt-1 text-gray-600 text-sm">{{match.date}}</span>
@@ -35,7 +35,7 @@
                               <div class="flex items-center">
                                   <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" :src="require(`~/assets/gde/factions/${players1.faction}.webp`)" width="40" height="40" :alt="players1.faction"></div>
                                   <div class="font-medium text-gray-200">{{players1.name}}</div>
-                                  <div v-if="players1.img" class="w-10 h-10 flex-shrink-0 ml-2 sm:ml-3"><img class="rounded-full w-10 h-10" :src="players1.img" width="40" height="40" :alt="players1.name"></div>
+                                  <div class="w-10 h-10 flex-shrink-0 ml-2 sm:ml-3"><img class="rounded-full w-10 h-10 object-cover" :src="players1.img ? players1.img : require(`~/assets/gde/icons/${players1.faction}.png`)" width="40" height="40" :alt="players1.name"></div>
                               </div>
                           </td>
                         </tr>
@@ -84,7 +84,7 @@
                               <div class="flex items-center">
                                   <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" :src="require(`~/assets/gde/factions/${players2.faction}.webp`)" width="40" height="40" :alt="players2.faction"></div>
                                   <div class="font-medium text-base text-gray-200">{{players2.name}}</div>
-                                  <div v-if="players2.img" class="w-10 h-10 flex-shrink-0 ml-2 sm:ml-3"><img class="rounded-full w-10 h-10" :src="players2.img" width="40" height="40" :alt="players2.name"></div>
+                                  <div class="w-10 h-10 flex-shrink-0 ml-2 sm:ml-3"><img class="rounded-full w-10 h-10 object-cover" :src="players2.img ? players2.img : require(`~/assets/gde/icons/${players2.faction}.png`)" width="40" height="40" :alt="players2.name"></div>
                               </div>
                           </td>
                         </tr>
@@ -107,7 +107,7 @@
           </a>
         </div>
       </div>
-    </div>
+      </div>
   </div>
 </section>
 </template>
@@ -119,11 +119,17 @@ export default {
       matchs: []
     }
   },
+  props: {
+        tour: {
+            type: Number,
+            required: false
+        },
+    },
   async fetch() {
 	  this.matchs = await this.$http.$get(
       "https://api.npoint.io/eb3c4e4f5efb9610e414"
     );
-	}
+	},
 }
 </script>
 

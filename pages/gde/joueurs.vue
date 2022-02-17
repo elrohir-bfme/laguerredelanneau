@@ -8,7 +8,7 @@
     <div v-if="!loading" class="flex flex-wrap -m-2">
       <div v-for="player in players" v-bind:key="player.name" class="p-2 lg:w-1/4 md:w-1/2 w-full transform transition duration-500 hover:scale-110 hover:drop-shadow-xl">
         <div class="h-full flex items-center border p-4 rounded-lg bg-gray-900" :class="`border-${color(player.faction)}-700`">
-          <img v-if="player.img" :alt="player.name" class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform transition duration-500 hover:scale-110 hover:drop-shadow-xl" :src="player.img ? player.img : 'https://dummyimage.com/80x80'">
+          <img :alt="player.name" class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform transition duration-500 hover:scale-110 hover:drop-shadow-xl" :src="player.img ? player.img : require(`~/assets/gde/icons/${icons(player.faction)}.png`)">
           <div class="flex-grow">
             <h2 class="text-white title-font font-medium text-3xl" :class="!player.img && 'text-center'">{{player.name}}</h2>
             <p class="text-gray-500" :class="!player.img && 'text-center'">Victoire : {{player.win}}</p>
@@ -32,6 +32,39 @@ export default {
         }
     },
     methods: {
+          icons(value) {
+            let info = "";
+            switch(value) {
+                case 1:
+                    info = "arnor"
+                break;
+                case 2:
+                    info = "gondor"
+                break;
+                case 3:
+                    info = "rohan"
+                break;
+                case 4:
+                    info = "elfe"
+                break;
+                case 5:
+                    info = "nain"
+                break;
+                case 6:
+                    info = "mordor"
+                break;
+                case 7:
+                    info = "isengard"
+                break;
+                case 8:
+                    info = "gobelin"
+                break;
+                case 9:
+                    info = "angmar"
+                break;
+            }
+            return info
+        },
         color(id) {
             switch (id) {
                 case 1:

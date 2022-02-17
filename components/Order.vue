@@ -84,18 +84,22 @@ export default {
         orderedRegions: function () {
             let regionsAdjacents = [];
 
-            const adj = this.player
-                .adjacents
-                .map(region => this.findRegion(region));
+            if(!this.player.withdrew) {
+                const adj = this.player
+                    .adjacents
+                    .map(region => this.findRegion(region));
 
-            const adj2 = adj
-                .filter(region => this.areAllied(this.player.faction, region.color))
-                .map(region => region.adjacents)
-                .flat(Infinity)
-                .map(region => this.findRegion(region))
-                .filter(region => this.areAllied(this.player.faction, region.color))
+                const adj2 = adj
+                    .filter(region => this.areAllied(this.player.faction, region.color))
+                    .map(region => region.adjacents)
+                    .flat(Infinity)
+                    .map(region => this.findRegion(region))
+                    .filter(region => this.areAllied(this.player.faction, region.color))
 
-            regionsAdjacents = [... [this.findRegion(this.player.code)], ... adj, ... adj2];
+                regionsAdjacents = [... [this.findRegion(this.player.code)], ... adj, ... adj2];
+            } else {
+                regionsAdjacents = [this.findRegion(this.player.code)]
+            }
 
             return regionsAdjacents
                 .filter((region, i, a) => i === a.findIndex(f => f.code === region.code))

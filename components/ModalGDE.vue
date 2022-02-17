@@ -69,11 +69,13 @@
                     </div>
                     <div class="flex flex-col">
                         <span class="text-center text-white" >
-                            {{player.name}}
+                            {{player.name}} <img v-if="player.chef" alt="Chef" class="w-4 h-4 inline-block align-baseline" src="~assets/svg/crown.svg">
                         </span>
                         <span class="text-xs text-white">
                             {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/svg/trophy.svg">
                             {{player.lose}} <img alt="Défaite" class="w-4 h-4 inline-block" src="~assets/svg/skull.svg">
+                            <img v-if="player.withdrew" alt="Repli" class="w-6 h-6 inline-block" src="~assets/gde/icons/stop.png">
+                            
                             <span v-if="player.handicap > 0">{{player.handicap == 1 ? "15" : "30"}} %<img alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sang.svg"></span>
                         </span>
                         

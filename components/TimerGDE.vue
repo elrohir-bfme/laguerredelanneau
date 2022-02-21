@@ -2,6 +2,7 @@
 <div class="text-orange-400 bg-gray-900 border-2 py-2 px-8 focus:outline-none hover:bg-gray-800
           rounded text-lg transform transition duration-500 hover:scale-110 border-orange-400">
   <p>TOUR {{ tour }} </p>
+  <p v-if="type !== 0">COMBATS</p>
   <p v-if="message.length == 0">Prochain tour dans</p>
   <div v-if="message.length == 0" class="text-xs text-center flex w-full items-center justify-center">
     <div class="w-auto mx-1 p-2 text-yellow-500 rounded-lg border-2 border-orange-400 bg-gray-900">
@@ -52,6 +53,10 @@ export default {
       type: Number,
       required: true
     },
+    type: {
+      type: Number,
+      required: true
+    }
   },
   methods: {
     timerCount(start, end){

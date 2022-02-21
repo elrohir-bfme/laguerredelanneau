@@ -35,7 +35,7 @@
               <svg viewBox="0 0 32 32" class="inline w-6 fill-current text-white" aria-hidden="true"><path d="M26.025 14.496l-14.286-.001 6.366-6.366L15.979 6 5.975 16.003 15.971 26l2.129-2.129-6.367-6.366h14.29z"/></svg>
           </button>
           </div>
-          <TimerGDE :tour="this.tour"/>
+          <TimerGDE :tour="this.tour" :type="typeJson"/>
           <div>
           <button @click="afterTour()" class="border-2 border-gray-900 bg-gray-800 text-white block rounded-sm font-bold py-2 px-4 ml-2 hover:bg-gray-900 hover:border-orange-500 transition duration-500">
               <svg viewBox="0 0 32 32" class="inline w-6 fill-current text-white" aria-hidden="true"><path d="M5.975 17.504l14.287.001-6.367 6.366L16.021 26l10.004-10.003L16.029 6l-2.128 2.129 6.367 6.366H5.977z"/></svg>
@@ -9812,6 +9812,7 @@ export default {
   data() {
     return {
       tour: 0,
+      typeJson: 0,
       npoint: "",
       nbMap: 0,
       title: "",
@@ -9903,11 +9904,29 @@ export default {
   },
   methods: {
     beforeTour(){
-      console.log("jdiejdie", this.tour)
+      console.log("BEFORE TOUR", this.tour, this.typeJson)
       if(this.tour > 0){
-        this.tour--
         try {
-          this.map = require(`~/static/gde/beforemoves-end-turn-${this.tour}.json`)
+          switch (this.typeJson) {
+            case 0:
+              try {
+                this.typeJson = 1
+                this.map = require(`~/static/gde/before-resources-turn-${this.tour}.json`)
+              } 
+              catch (e) {
+                this.typeJson = 1
+                this.beforeTour()
+              }
+              break;
+            case 1:
+              this.tour--
+              this.typeJson = 0
+              this.map = require(`~/static/gde/beforemoves-end-turn-${this.tour}.json`)
+              break;
+            default:
+              break;
+          }
+          
         }
         catch (e) {
           console.log('oh no big error')
@@ -9916,9 +9935,26 @@ export default {
       }
     },
     afterTour(){
+      console.log("BEFORE TOUR", this.tour, this.typeJson)
         try {
-          this.map = require(`~/static/gde/beforemoves-end-turn-${this.tour + 1}.json`)
-          this.tour++
+          switch (this.typeJson) {
+            case 0:
+              try {
+                this.typeJson = 1
+                this.map = require(`~/static/gde/before-resources-turn-${this.tour + 1}.json`)
+                this.tour++   
+              } catch(e) {
+                this.afterTour()
+              }
+              break;
+            case 1:
+              this.typeJson = 0
+              this.map = require(`~/static/gde/beforemoves-end-turn-${this.tour + 1}.json`)
+              this.tour++
+              break;
+            default:
+              break;
+          }
         }
         catch (e) {
           console.log('oh no big error')

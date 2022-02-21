@@ -62,7 +62,7 @@
                   <div class="font-mono leading-none">Score : <span class="text-base">{{scoreMal}}</span></div>
               </div>
               <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
-                  <div class="font-mono leading-none"><span class="text-base">{{result && result.bien && result.mal.wins}}</span>v / <span class="text-base">{{result && result.bien && result.bien.losses}}</span>d</div>
+                  <div class="font-mono leading-none"><span class="text-base">{{result && result.mal && result.mal.wins}}</span>v / <span class="text-base">{{result && result.mal && result.mal.losses}}</span>d</div>
               </div>
             </div>
           </div>
@@ -10120,7 +10120,7 @@ export default {
       console.log(factions[key].id)
       if(factions[key].id == 5 || factions[key].id == 6 || factions[key].id == 7 || factions[key].id == 8)
       {
-        this.scoreMal += factions[key].total 
+        this.scoreMal += factions[key].total
         } else {
         this.scoreBien += factions[key].total 
        }

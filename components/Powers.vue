@@ -21,7 +21,7 @@
         </div>
 
         <div v-if="power.length > 0 && power[0].name == 'taintedland'" class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
-            <div v-if="taintedlandInfo">
+            <div>
             <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="index+'taintedland'">    
                 <option v-for="region in taintedLand" :value="region.code" v-bind:key="region.name">{{region.name}}</option>
             </select>
@@ -29,15 +29,15 @@
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
             </div>
             </div>
-            <div v-else class="text-center">
+            <!-- <div v-else class="text-center">
                 <span class="h-10 px-5 text-base sm:text-xl text-gray-500 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-900 hover:text-gray-300">    
                     Impossible supprimez-moi (Prix)
                 </span>
-            </div>
+            </div> -->
         </div>
 
         <div v-if="power.length > 0 && power[0].name == 'heal'" class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
-            <div v-if="healInfo">
+            <div >
                 <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="index+'heal'">    
                     <option v-for="player in heal" :value="player.name" v-bind:key="player.name">{{player.name}}</option>
                 </select>
@@ -45,15 +45,15 @@
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
                 </div>
             </div>
-            <div v-else class="text-center">
+            <!-- <div v-else class="text-center">
                 <span class="h-10 px-5 text-base sm:text-xl text-gray-500 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-900 hover:text-gray-300">    
                     Impossible supprimez-moi (Aucun joueur dans la forteresse et avec un handicap)
                 </span>
-            </div>
+            </div> -->
         </div>
 
         <div v-if="power.length > 0 && power[0].name == 'banner'" class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
-            <div v-if="bannerInfo">
+            <div>
                 <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="index+'banner'">    
                     <option v-for="player in banner" :value="player.name" v-bind:key="player.name">{{player.name}}</option>
                 </select>
@@ -61,15 +61,15 @@
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
                 </div>
             </div>
-            <div v-else class="text-center">
+            <!-- <div v-else class="text-center">
                 <span class="h-10 px-5 text-base sm:text-xl text-gray-500 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-900 hover:text-gray-300">    
                     Impossible supprimez-moi (Aucun joueur dans la forteresse)
                 </span>
-            </div>
+            </div> -->
         </div>
 
         <div v-if="power.length > 0 && power[0].name == 'velocity'" class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
-            <div v-if="velocityInfo">
+            <div>
                 <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="index+'velocity'">    
                     <option v-for="player in velocity" :value="player.name" v-bind:key="player.name">{{player.name}}</option>
                 </select>
@@ -77,11 +77,11 @@
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
                 </div>
             </div>
-            <div v-else class="text-center">
+            <!-- <div v-else class="text-center">
                 <span class="h-10 px-5 text-base sm:text-xl text-gray-500 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-900 hover:text-gray-300">    
                     Impossible supprimez-moi (Aucun joueur dans la forteresse)
                 </span>
-            </div>
+            </div> -->
         </div>
 
         <div v-if="!selectedPower" class="col-span-2 md:col-span-4">

@@ -191,10 +191,10 @@ export default {
                 .sort((a, b) => a.name.localeCompare(b.name));
             
             if(taintedLand.length > 0 && this.$props.money >= 3000){
-                this.taintedLandInfo = false
+                this.taintedLandInfo = true
                 this.$parent.updatePower("taintedLandInfo", this.taintedLandInfo);
             } else {
-                this.taintedLandInfo = true
+                this.taintedLandInfo = false
                 this.$parent.updatePower("taintedLandInfo", this.taintedLandInfo);
             }
             return taintedLand
@@ -207,10 +207,10 @@ export default {
                 .filter(player => player.factionNumber == this.$props.selectedFaction && player.handicap > 0 && player.code === forteresse[0].code)
 
             if(heal.length > 0){
-                this.healInfo = false
+                this.healInfo = true
                 this.$parent.updatePower("healInfo", this.healInfo);
             } else {
-                this.healInfo = true
+                this.healInfo = false
                 this.$parent.updatePower("healInfo", this.healInfo);
             }
             return heal
@@ -223,10 +223,10 @@ export default {
                 .filter(player => player.factionNumber == this.$props.selectedFaction && player.code === forteresse[0].code)
 
             if(banner.length > 0){
-                this.bannerInfo = false
+                this.bannerInfo = true
                 this.$parent.updatePower("banner", this.bannerInfo);
             } else {
-                this.bannerInfo = true
+                this.bannerInfo = false
                 this.$parent.updatePower("banner", this.bannerInfo);
             }
             return banner
@@ -239,10 +239,10 @@ export default {
                 .filter(player => player.factionNumber == this.$props.selectedFaction && player.code === forteresse[0].code)
 
             if(velocity.length > 0){
-                this.velocityInfo = false
+                this.velocityInfo = true
                 this.$parent.updatePower("velocityInfo", this.velocityInfo);
             } else {
-                this.velocityInfo = true
+                this.velocityInfo = false
                 this.$parent.updatePower("velocityInfo", this.velocityInfo);
             }
             return velocity

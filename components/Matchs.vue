@@ -36,6 +36,12 @@
                                   <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" :src="require(`~/assets/gde/factions/${players1.faction}.webp`)" width="40" height="40" :alt="players1.faction"></div>
                                   <div class="font-medium text-gray-200">{{players1.name}}</div>
                                   <div class="w-10 h-10 flex-shrink-0 ml-2 sm:ml-3"><img class="rounded-full w-10 h-10 object-cover" :src="players1.img ? players1.img : require(`~/assets/gde/icons/${players1.faction}.png`)" width="40" height="40" :alt="players1.name"></div>
+                                  <div 
+                                    v-if="(players1 && players1.won) || (players1 && players1.died)" 
+                                    class="font-medium ml-2" 
+                                    :class="players1 && players1.won ? 'text-green-400' : 'text-red-400'">
+                                    {{players1 && players1.won ? "Victorieux" : "Mort"}}
+                                  </div>
                               </div>
                           </td>
                         </tr>
@@ -85,6 +91,12 @@
                                   <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" :src="require(`~/assets/gde/factions/${players2.faction}.webp`)" width="40" height="40" :alt="players2.faction"></div>
                                   <div class="font-medium text-base text-gray-200">{{players2.name}}</div>
                                   <div class="w-10 h-10 flex-shrink-0 ml-2 sm:ml-3"><img class="rounded-full w-10 h-10 object-cover" :src="players2.img ? players2.img : require(`~/assets/gde/icons/${players2.faction}.png`)" width="40" height="40" :alt="players2.name"></div>
+                                  <div 
+                                    v-if="(players2 && players2.won) || (players2 && players2.died)" 
+                                    class="font-medium ml-2" 
+                                    :class="players2 && players2.won ? 'text-green-400' : 'text-red-400'">
+                                    {{players2 && players2.won ? "Victorieux" : "Mort"}}
+                                  </div>
                               </div>
                           </td>
                         </tr>

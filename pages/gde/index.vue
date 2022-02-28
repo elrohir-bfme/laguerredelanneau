@@ -7,7 +7,7 @@
     <div class="flex flex-wrap text-center justify-evenly  items-center gap-2 pb-4">
           <div class="text-blue-400 bg-gray-900 border-2 py-2 px-8 focus:outline-none hover:bg-gray-800
           rounded text-lg transform transition duration-500 hover:scale-110 border-blue-400">
-            <p class="underline">Camp du Bien  </p>
+            <p class="underline">{{ $t('gde.camp_bien') }}</p>
             <img
               src="~/assets/gde/bien.png"
               alt=""
@@ -15,13 +15,13 @@
             />
             <div  class="text-xs text-center flex w-full items-center justify-center">
               <div class="w-auto mx-1 p-2 text-blue-500 rounded-lg border-2 border-blue-400 bg-gray-900">
-                  <div class="font-mono leading-none"><span class="text-base">{{nbPlayerArnor + nbPlayerRohan + nbPlayerElfe +nbPlayerGondor + nbPlayerNain}}</span> Joueurs</div>
+                  <div class="font-mono leading-none"><span class="text-base">{{nbPlayerArnor + nbPlayerRohan + nbPlayerElfe +nbPlayerGondor + nbPlayerNain}}</span> {{ $t('layout_gde_joueur') }}</div>
               </div>
               <div class="w-auto mx-1 p-2 text-blue-500 rounded-lg border-2 border-blue-400 bg-gray-900">
-                  <div class="font-mono leading-none"><span class="text-base">{{nbTerritoireArnor + nbTerritoireRohan + nbTerritoireElfe + nbTerritoireGondor + nbTerritoireNain}}</span> Territoires</div>
+                  <div class="font-mono leading-none"><span class="text-base">{{nbTerritoireArnor + nbTerritoireRohan + nbTerritoireElfe + nbTerritoireGondor + nbTerritoireNain}}</span> {{ $t('gde.territoires') }}</div>
               </div>
               <div class="w-auto mx-1 p-2 text-blue-500 rounded-lg border-2 border-blue-400 bg-gray-900">
-                  <div class="font-mono leading-none">Score : <span class="text-base">{{scoreBien}}</span></div>
+                  <div class="font-mono leading-none">{{ $t('gde.score') }} : <span class="text-base">{{scoreBien}}</span></div>
               </div>
               <div class="w-auto mx-1 p-2 text-blue-500 rounded-lg border-2 border-blue-400 bg-gray-900">
                   <div class="font-mono leading-none"><span class="text-base">{{result && result.bien && result.bien.wins}}</span>v / <span class="text-base">{{result && result.bien && result.bien.losses}}</span>d</div>
@@ -45,7 +45,7 @@
 
         <div class="text-red-400 bg-gray-900 border-2 py-2 px-8 focus:outline-none hover:bg-gray-800
           rounded text-lg transform transition duration-500 hover:scale-110 border-red-400">
-            <p class="underline">Camp du Mal</p>
+            <p class="underline">{{ $t('gde.camp_mal') }}</p>
             <img
               src="~/assets/gde/mal.png"
               alt=""
@@ -53,13 +53,13 @@
             />
             <div  class="text-xs text-center flex w-full items-center justify-center">
               <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
-                  <div class="font-mono leading-none"><span class="text-base">{{nbPlayerMordor + nbPlayerIsengard + nbPlayerGobelin + nbPlayerAngmar}}</span> Joueurs</div>
+                  <div class="font-mono leading-none"><span class="text-base">{{nbPlayerMordor + nbPlayerIsengard + nbPlayerGobelin + nbPlayerAngmar}}</span> {{ $t('layout_gde_joueur') }}</div>
               </div>
               <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
-                  <div class="font-mono leading-none"><span class="text-base">{{nbTerritoireMordor + nbTerritoireIsengard + nbTerritoireGobelin + nbTerritoireAngmar}}</span> Territoires</div>
+                  <div class="font-mono leading-none"><span class="text-base">{{nbTerritoireMordor + nbTerritoireIsengard + nbTerritoireGobelin + nbTerritoireAngmar}}</span> {{ $t('layout_gde_joueur') }}</div>
               </div>
               <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
-                  <div class="font-mono leading-none">Score : <span class="text-base">{{scoreMal}}</span></div>
+                  <div class="font-mono leading-none">{{ $t('gde.score') }} : <span class="text-base">{{scoreMal}}</span></div>
               </div>
               <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
                   <div class="font-mono leading-none"><span class="text-base">{{result && result.mal && result.mal.wins}}</span>v / <span class="text-base">{{result && result.mal && result.mal.losses}}</span>d</div>
@@ -9547,7 +9547,7 @@
           hover:scale-110
           border-orange-400
         "
-        >Télécharger toutes les cartes</a
+        >{{ $t('gde.telecharger') }}</a
       >
 
      </div>
@@ -9597,7 +9597,7 @@
           :class="`text-${color(faction.id).color}-300`"
           class="mt-4 font-bold text-xl"
         >
-          Chef de la Faction du {{ faction.faction.name }}
+          {{ $t('gde.chef') }} {{ faction.faction.name }}
         </h2>
         <h6 class="mt-2 text-xl font-bold underline">{{ faction.faction.chef }}</h6>
 
@@ -9625,7 +9625,7 @@
               </svg>
             </span>
           </li>
-          <li>
+          <!-- <li>
             <span
               :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
               class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
@@ -9646,6 +9646,24 @@
                 />
               </svg>
             </span>
+          </li> -->
+        </ul>
+        <ul class="flex flex-row mt-4 space-x-1 font-sans">
+          <li>
+            <span
+              :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
+              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
+            >
+              {{ $t('gde.argent') }} : {{ faction.faction.money }}
+            </span>
+          </li>
+          <li>
+            <span
+              :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
+              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
+            >
+              {{ $t('gde.score') }} : {{ faction.faction.total }}
+            </span>
           </li>
         </ul>
         <ul class="flex flex-row mt-4 space-x-1 font-sans">
@@ -9654,25 +9672,7 @@
               :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
               class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
             >
-              Argent : {{ faction.faction.money }}
-            </span>
-          </li>
-          <li>
-            <span
-              :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
-              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
-            >
-              Score : {{ faction.faction.total }}
-            </span>
-          </li>
-        </ul>
-        <ul class="flex flex-row mt-4 space-x-1 font-sans">
-          <li>
-            <span
-              :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
-              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
-            >
-              Territoires {{territoires(faction.id)}}
+              {{ $t('gde.territoires') }} {{territoires(faction.id)}}
               <svg
                 :class="`text-${color(faction.id).color}-400`"
                 class="ml-2 stroke-current h-5 w-5"
@@ -9693,7 +9693,7 @@
               :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
               class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 font-medium items-center"
             >
-              Joueurs {{joueurs(faction.id)}}
+              {{ $t('layout_gde_joueur') }} {{joueurs(faction.id)}}
               <svg
                 :class="`text-${color(faction.id).color}-400`"
                 class="ml-2 stroke-current h-5 w-5"
@@ -9717,7 +9717,7 @@
               :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
               class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
             >
-              Victoire : {{ faction.faction.win }}
+              {{ $t('gde.victoire') }} : {{ faction.faction.win }}
             </span>
           </li>
           <li>
@@ -9725,7 +9725,7 @@
                 :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
                 class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
               >
-                Défaite : {{ faction.faction.loose }}
+                {{ $t('gde.defaite') }} : {{ faction.faction.loose }}
               </span>
           </li>
         </ul>

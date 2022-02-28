@@ -3,7 +3,7 @@
   <div class="container mx-auto flex flex-col px-5 justify-center items-center">
     <!-- <img class="w-full mb-10 object-cover object-center rounded" alt="hero" src="~assets/gde/fond.webp"> -->
     <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Les règles !</h1>
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">{{ $t('regles.title') }}</h1>
     </div>
       <div class="mt-8 w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
     	<div class="videoWrapper">

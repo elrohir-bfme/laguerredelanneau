@@ -1,7 +1,7 @@
 <template>
 <div class="text-orange-400 bg-gray-900 border-2 py-2 px-8 focus:outline-none hover:bg-gray-800
           rounded text-lg transform transition duration-500 hover:scale-110 border-orange-400">
-  <p>{{type ? "FIN" : "DEBUT"}} TOUR {{ tour }} </p>
+  <p>{{type ? $t('gde.fin') : $t('gde.debut') }} TOUR {{ tour }} </p>
   <!-- <p v-if="type !== 0">COMBATS</p> -->
   <p v-if="message.length == 0">Prochain tour dans</p>
   <div v-if="message.length == 0" class="text-xs text-center flex w-full items-center justify-center">

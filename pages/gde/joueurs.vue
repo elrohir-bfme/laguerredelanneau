@@ -2,8 +2,8 @@
 <section class="text-gray-100 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="sm:text-5xl text-4xl font-medium title-font mb-4 text-white">Listes des joueurs</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Si il y'a un souci veuillez contacter Elrohir sur le Discord de la Terre du Milieu merci</p>
+      <h1 class="sm:text-5xl text-4xl font-medium title-font mb-4 text-white">{{ $t('joueurs.title') }}</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">{{ $t('joueurs.info') }}</p>
     </div>
     <div v-if="!loading" class="flex flex-wrap -m-2">
       <div v-for="player in players" v-bind:key="player.name" class="p-2 lg:w-1/4 md:w-1/2 w-full transform transition duration-500 hover:scale-110 hover:drop-shadow-xl">
@@ -11,9 +11,9 @@
           <img :alt="player.name" class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform transition duration-500 hover:scale-110 hover:drop-shadow-xl" :src="player.img ? player.img : require(`~/assets/gde/icons/${icons(player.faction)}.png`)">
           <div class="flex-grow">
             <h2 class="text-white title-font font-medium text-3xl" :class="!player.img && 'text-center'">{{player.name}}</h2>
-            <p class="text-gray-500" :class="!player.img && 'text-center'">Victoire : {{player.win}}</p>
-            <p class="text-gray-500" :class="!player.img && 'text-center'">Défaite : {{player.lose}}</p>
-            <p class="text-gray-500" :class="!player.img && 'text-center'">Ratio : {{(player.win && player.win) ?(player.win / ((player.win + player.lose)) *100).toFixed(2) + '%' : "Aucune partie joué"}}</p>
+            <p class="text-gray-500" :class="!player.img && 'text-center'">{{ $t('joueurs.victoire') }} : {{player.win}}</p>
+            <p class="text-gray-500" :class="!player.img && 'text-center'">{{ $t('joueurs.defaite') }} : {{player.lose}}</p>
+            <p class="text-gray-500" :class="!player.img && 'text-center'">{{ $t('joueurs.ratio') }} : {{(player.win && player.win) ?(player.win / ((player.win + player.lose)) *100).toFixed(2) + '%' : "Aucune partie joué"}}</p>
           </div>
         </div>
       </div>

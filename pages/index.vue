@@ -1,6 +1,6 @@
 <template>
 <section class="text-gray-400 body-font">
-  <h1 class="text-center text-white text-3xl">Bienvenue sur les évènements de la Terre du Milieu 📅</h1>
+  <h1 class="text-center text-white text-3xl">{{ $t('welcome') }} 📅</h1>
   <div class="px-8 py-4 mx-auto flex flex-wrap">
     <div class="lg:w-full mx-auto">
         <div class="flex flex-wrap -mx-2">
@@ -13,17 +13,17 @@
               loading="lazy"
             />
             <div class="text-center relative z-10 w-full">
-              <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-blue-500 group-hover:bg-white inline p-2 rounded">Tournoi : Les Guerres du Nord</h2>
+              <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-blue-500 group-hover:bg-white inline p-2 rounded">{{ $t('gdn_menu') }}</h2>
               <br>
               <br>
-              <p class="text-2xl text-blue-300 leading-relaxed group-hover:text-white group-hover:bg-blue-500 inline p-2 rounded">Organisé par Elrohir qui a commencé le 19 Novembre 2021</p>
+              <p class="text-2xl text-blue-300 leading-relaxed group-hover:text-white group-hover:bg-blue-500 inline p-2 rounded">{{ $t('gdn_menu_info') }}</p>
               <br>
               <br>
               <button style="font-family: 'Albertus'" to="/third_age"  class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-400 dark:focus:bg-blue-700">
                 <svg class="w-5 h-5 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-                <span class="mx-1">Tournoi en cours</span>
+                <span class="mx-1">{{ $t('gdn_menu_button') }}</span>
               </button>
             </div>
           </nuxt-link>
@@ -38,16 +38,15 @@
               loading="lazy"
             />
             <div class="text-center relative z-10 w-full">
-              <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-indigo-500 group-hover:bg-white inline p-2 rounded">La Guerre pour l'Eriador</h2>
+              <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-indigo-500 group-hover:bg-white inline p-2 rounded">{{ $t('gde_menu') }}</h2>
               <br>
               <br>
-              <p class="text-2xl text-indigo-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">9 Factions pour la lutte de l'Eriador !</p>
+              <p class="text-2xl text-indigo-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">{{ $t('gde_menu_info') }}</p>
               <br>
               <br>
               <button
               class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md dark:bg-gray-800 hover:bg-indigo-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-indigo-500 dark:focus:bg-gray-700">
-                
-                <Timer/>
+                {{ $t('gde_menu_button') }} 
               </button>
             </div>
           </nuxt-link>
@@ -62,15 +61,15 @@
               loading="lazy"
             />
             <div class="text-center relative z-10 w-full">
-              <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-orange-500 inline p-2 rounded">La Bataille pour la Terre des Duo</h2>
+              <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-orange-500 inline p-2 rounded">{{ $t('bdd_menu') }}</h2>
               <br>
               <br>
-              <p class="text-2xl text-orange-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Tournoi sur le 1 et lancé le 13 janvier 2022</p>
+              <p class="text-2xl text-orange-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">{{ $t('bdd_menu_info') }}</p>
               <br>
               <br>
               <button
               class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-800 rounded-md dark:bg-gray-700 hover:bg-red-700 dark:hover:bg-gray-700 focus:outline-none focus:bg-red-500 dark:focus:bg-gray-700">
-                <span class="mx-1">Information sur le tournoi</span>
+                <span class="mx-1">{{ $t('bdd_menu_button') }}</span>
               </button>
             </div>
           </nuxt-link>

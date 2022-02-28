@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxt/http": "^0.6.4",
+    "@nuxtjs/i18n": "^7.2.0",
     "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/strapi": "^0.3.1",

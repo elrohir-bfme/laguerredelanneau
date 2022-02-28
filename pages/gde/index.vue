@@ -9910,14 +9910,17 @@ export default {
             try {
                 this.isEnd = false
                 this.map = require(`~/static/gde/before-resources-turn-${this.tour}.json`)
+                this.updateMap()
               } 
               catch (e) {
                 this.beforeTour()
+                this.updateMap()
               }
           } else {
             this.tour--
             this.isEnd = true
             this.map = require(`~/static/gde/beforemoves-end-turn-${this.tour}.json`)
+            this.updateMap()
           }
         }
         catch (e) {
@@ -9932,9 +9935,11 @@ export default {
             this.isEnd = false;
             this.tour++;
             this.map = require(`~/static/gde/before-resources-turn-${this.tour}.json`)
+            this.updateMap()
           } else {
             this.isEnd = true;
             this.map = require(`~/static/gde/beforemoves-end-turn-${this.tour}.json`)
+            this.updateMap()
           }
         }
         catch (e) {
@@ -9946,6 +9951,7 @@ export default {
             console.log(e)
             this.map = this.currentMap
             this.tour = this.currentTour
+            this.updateMap()
           }
         }
       console.log("AFTER TOUR FIN", this.tour, this.isEnd)
@@ -10100,10 +10106,169 @@ export default {
           return "black";
       }
     },
+    updateMap() {
+      console.log(this.map, "THIS MAP")
+
+      this.scoreBien = 0;
+      this.scoreMal = 0;
+
+      let objArray = []
+      Object.keys(this.map.factions).forEach(key =>  {
+        console.log(this.map.factions[key].id)
+        if(this.map.factions[key].id == 5 || this.map.factions[key].id == 6 || this.map.factions[key].id == 7 || this.map.factions[key].id == 8)
+        {
+          this.scoreMal += this.map.factions[key].total
+          } else {
+          this.scoreBien += this.map.factions[key].total 
+        }
+
+          objArray.push({
+          name: key,
+          faction: this.map.factions[key],
+          id: this.map.factions[key].id
+        })
+      
+      });
+
+      this.factions = objArray.sort((a, b) => a.id - b.id)
+
+      this.result = this.map.result;
+
+      this.nbTerritoireArnor= 0;
+      this.nbTerritoireRohan= 0;
+      this.nbTerritoireElfe= 0;
+      this.nbTerritoireGondor= 0;
+      this.nbTerritoireNain= 0;
+      this.nbTerritoireMordor= 0;
+      this.nbTerritoireIsengard= 0;
+      this.nbTerritoireGobelin= 0;
+      this.nbTerritoireAngmar= 0;
+      this.nbPlayerArnor= 0;
+      this.nbPlayerRohan= 0;
+      this.nbPlayerElfe= 0;
+      this.nbPlayerGondor= 0;
+      this.nbPlayerNain= 0;
+      this.nbPlayerMordor= 0;
+      this.nbPlayerIsengard= 0;
+      this.nbPlayerGobelin= 0;
+      this.nbPlayerAngmar= 0;
+
+      for (var key in this.map) {
+      var obj = this.map[key];
+
+      for (let prop in obj) {
+        if (!obj.hasOwnProperty(prop)) continue;
+
+        switch (obj[prop]) {
+          case "#ff85ee":
+          case "#FF85EE":
+            this.nbTerritoireArnor += 1;
+            break;
+          case "#0bff00":
+          case "#0BFF00":
+            this.nbTerritoireRohan += 1;
+            break;
+
+          case "#00e3ff":
+          case "#00E3FF":
+            this.nbTerritoireElfe += 1;
+            break;
+
+          case "#093aff":
+          case "#093AFF":
+            this.nbTerritoireGondor += 1;
+            break;
+
+          case "#fffc00":
+          case "#FFFC00":
+            this.nbTerritoireNain += 1;
+            break;
+
+          case "#ff3636":
+          case "#FF3636":
+            this.nbTerritoireMordor += 1;
+            break;
+
+          case "#ffffff":
+          case "#FFFFFF":
+            this.nbTerritoireIsengard += 1;
+            break;
+
+          case "#ff6f00":
+          case "#FF6F00":
+            this.nbTerritoireGobelin += 1;
+            break;
+
+          case "#c500ff":
+          case "#C500FF":
+            this.nbTerritoireAngmar += 1;
+            break;
+          default:
+            break;
+        }
+      }
+
+      if (obj.hasOwnProperty("players") && obj.players.length > 0) {
+        let obj2 = JSON.parse(JSON.stringify(obj["players"]));
+        for (var player in obj2) {
+          switch (obj2[player]["faction"]) {
+            case 1:
+              this.nbPlayerArnor += 1;
+              this.nbPlayers += 1;
+              break;
+            case 2:
+              this.nbPlayerGondor += 1;
+              this.nbPlayers += 1;
+              break;
+            case 3:
+              this.nbPlayerRohan += 1;
+              this.nbPlayers += 1;
+              break;
+            case 4:
+              this.nbPlayerElfe += 1;
+              this.nbPlayers += 1;
+              break;
+            case 5:
+              this.nbPlayerNain += 1;
+              this.nbPlayers += 1;
+              break;
+            case 6:
+              this.nbPlayerMordor += 1;
+              this.nbPlayers += 1;
+              break;
+            case 7:
+              this.nbPlayerIsengard += 1;
+              this.nbPlayers += 1;
+              break;
+            case 8:
+              this.nbPlayerGobelin += 1;
+              this.nbPlayers += 1;
+              break;
+            case 9:
+              this.nbPlayerAngmar += 1;
+              this.nbPlayers += 1;
+              break;
+            default:
+              break;
+          }
+        }
+      }
+    }
+
+    },
   },
   async fetch() {
     this.displayHUDValue = this.$cookies.get('checkHUD');
     this.loading = true;
+
+     // TEST
+
+    // this.map = await this.$http.$get(
+    //   "https://api.npoint.io/900d4d348871ff3c6841"
+    // );
+    // let factions = await this.$http.$get(
+    //   "https://api.npoint.io/900d4d348871ff3c6841/factions"
+    // ); //API
 
     this.map = await this.$http.$get(
       "https://api.npoint.io/2eeb1bea715cd907d7bc"
@@ -10115,14 +10280,7 @@ export default {
       "https://api.npoint.io/2eeb1bea715cd907d7bc/factions"
     ); //API
 
-     // TEST
 
-    // this.map = await this.$http.$get(
-    //   "https://api.npoint.io/900d4d348871ff3c6841"
-    // );
-    // let factions = await this.$http.$get(
-    //   "https://api.npoint.io/900d4d348871ff3c6841/factions"
-    // ); //API
 
     let time = await this.$http.$get(
       "https://api.npoint.io/2eeb1bea715cd907d7bc/time"
@@ -10222,56 +10380,38 @@ export default {
             case 1:
               this.nbPlayerArnor += 1;
               this.nbPlayers += 1;
-              this.winArnor += obj2[player]["win"];
-              this.loseArnor += obj2[player]["lose"];
               break;
             case 2:
               this.nbPlayerGondor += 1;
               this.nbPlayers += 1;
-              this.winGondor += obj2[player]["win"];
-              this.loseGondor += obj2[player]["lose"];
               break;
             case 3:
               this.nbPlayerRohan += 1;
               this.nbPlayers += 1;
-              this.winRohan += obj2[player]["win"];
-              this.loseRohan += obj2[player]["lose"];
               break;
             case 4:
               this.nbPlayerElfe += 1;
               this.nbPlayers += 1;
-              this.winElfe += obj2[player]["win"];
-              this.loseElfe += obj2[player]["lose"];
               break;
             case 5:
               this.nbPlayerNain += 1;
               this.nbPlayers += 1;
-              this.winNain += obj2[player]["win"];
-              this.loseNain += obj2[player]["lose"];
               break;
             case 6:
               this.nbPlayerMordor += 1;
               this.nbPlayers += 1;
-              this.winMordor += obj2[player]["win"];
-              this.loseMordor += obj2[player]["lose"];
               break;
             case 7:
               this.nbPlayerIsengard += 1;
               this.nbPlayers += 1;
-              this.winIsengard += obj2[player]["win"];
-              this.loseIsengard += obj2[player]["lose"];
               break;
             case 8:
               this.nbPlayerGobelin += 1;
               this.nbPlayers += 1;
-              this.winGobelin += obj2[player]["win"];
-              this.loseGobelin += obj2[player]["lose"];
               break;
             case 9:
               this.nbPlayerAngmar += 1;
               this.nbPlayers += 1;
-              this.winAngmar += obj2[player]["win"];
-              this.loseAngmar += obj2[player]["lose"];
               break;
             default:
               break;

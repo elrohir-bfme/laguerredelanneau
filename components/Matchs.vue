@@ -31,17 +31,17 @@
                       </thead>
                         <tbody class="text-sm divide-y divide-gray-400 text-gray-400 bg-gray-800">
                         <tr v-for="(players1, index) in game.players1" :key="index"  >
-                          <td class="p-2 whitespace-nowrap">
+                          <td class="p-2 whitespace-nowrap" :class="players1 && players1.won ? 'bg-green-600' : (players1 && players1.died) && 'bg-red-500'">
                               <div class="flex items-center">
                                   <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" :src="require(`~/assets/gde/factions/${players1.faction}.webp`)" width="40" height="40" :alt="players1.faction"></div>
                                   <div class="font-medium text-gray-200">{{players1.name}}</div>
                                   <div class="w-10 h-10 flex-shrink-0 ml-2 sm:ml-3"><img class="rounded-full w-10 h-10 object-cover" :src="players1.img ? players1.img : require(`~/assets/gde/icons/${players1.faction}.png`)" width="40" height="40" :alt="players1.name"></div>
-                                  <div 
+                                  <!-- <div 
                                     v-if="(players1 && players1.won) || (players1 && players1.died)" 
                                     class="font-medium ml-2" 
                                     :class="players1 && players1.won ? 'text-green-400' : 'text-red-400'">
                                     {{players1 && players1.won ? "Victorieux" : "Mort"}}
-                                  </div>
+                                  </div> -->
                               </div>
                           </td>
                         </tr>
@@ -86,17 +86,17 @@
                       </thead>
                         <tbody class="text-sm divide-y divide-gray-400 text-gray-400 bg-gray-800">
                         <tr v-for="(players2, index) in game.players2" :key="index"  >
-                          <td class="p-2 whitespace-nowrap">
+                          <td class="p-2 whitespace-nowrap" :class="players2 && players2.won ? 'bg-green-600' : (players2 && players2.died) && 'bg-red-500'">
                               <div class="flex items-center">
                                   <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" :src="require(`~/assets/gde/factions/${players2.faction}.webp`)" width="40" height="40" :alt="players2.faction"></div>
                                   <div class="font-medium text-base text-gray-200">{{players2.name}}</div>
                                   <div class="w-10 h-10 flex-shrink-0 ml-2 sm:ml-3"><img class="rounded-full w-10 h-10 object-cover" :src="players2.img ? players2.img : require(`~/assets/gde/icons/${players2.faction}.png`)" width="40" height="40" :alt="players2.name"></div>
-                                  <div 
+                                  <!-- <div 
                                     v-if="(players2 && players2.won) || (players2 && players2.died)" 
                                     class="font-medium ml-2" 
                                     :class="players2 && players2.won ? 'text-green-400' : 'text-red-400'">
                                     {{players2 && players2.won ? "Victorieux" : "Mort"}}
-                                  </div>
+                                  </div> -->
                               </div>
                           </td>
                         </tr>

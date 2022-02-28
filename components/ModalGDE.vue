@@ -16,6 +16,10 @@
                 <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
               <span>Télécharger</span>
             </a>
+            <span  v-if="map[region] && map[region].land" class="absolute bottom-2 left-2 text-white text-xl shadow-md underline inline-flex items-center">
+              <img  src="~assets/gde/img/terre.png">
+              Terre souillée activée
+            </span>
           </div>
         </div>
         <div class="px-6 py-3">
@@ -25,6 +29,7 @@
                 {{map[region].name}}
               </p>
             </div>
+
             <!-- <div v-if="map[region] && map[region]"
               class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-3 rounded-full text-base">
               Map {{map[region].map}} Joueurs

@@ -196,8 +196,16 @@ robots: {
   },
 
   i18n: {
+    parsePages: false,
     locales: ['fr', 'en'],
     defaultLocale: 'fr',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',  // recommended
+      alwaysRedirect: true,
+      cookieCrossOrigin: true
+    },
     vueI18n: {
       fallbackLocale: 'fr',
       messages: {

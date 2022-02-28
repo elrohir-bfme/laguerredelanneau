@@ -18,6 +18,8 @@
                     <div v-for="(player, index) in map[region].players" :key="index">
                         <img class="border-2 rounded-full w-14 h-14 object-cover" :class="colors(player.faction)" :src="player.img ? player.img : require(`~/assets/gde/icons/${icons(player.faction)}.png`)" :alt="player.name">
                         <span class="text-sm">{{player.name}}</span>
+                        <img v-if="player.handicap > 0 && player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sangjaune.svg"/>
+                        <img v-if="player.handicap > 0" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sang.svg"/>
                     </div>
                 </div>
             </div>

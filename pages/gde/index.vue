@@ -56,7 +56,7 @@
                   <div class="font-mono leading-none"><span class="text-base">{{nbPlayerMordor + nbPlayerIsengard + nbPlayerGobelin + nbPlayerAngmar}}</span> {{ $t('layout_gde_joueur') }}</div>
               </div>
               <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
-                  <div class="font-mono leading-none"><span class="text-base">{{nbTerritoireMordor + nbTerritoireIsengard + nbTerritoireGobelin + nbTerritoireAngmar}}</span> {{ $t('layout_gde_joueur') }}</div>
+                  <div class="font-mono leading-none"><span class="text-base">{{nbTerritoireMordor + nbTerritoireIsengard + nbTerritoireGobelin + nbTerritoireAngmar}}</span> {{ $t('gde.territoires') }}</div>
               </div>
               <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
                   <div class="font-mono leading-none">{{ $t('gde.score') }} : <span class="text-base">{{scoreMal}}</span></div>

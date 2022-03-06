@@ -24,6 +24,7 @@ export default {
   data() {
     return {
       loading: true,
+      matchs: [],
       map: [],
       territory: [],
       territoryAlliance: [],
@@ -55,6 +56,10 @@ export default {
     this.loading = true;
     this.map = await this.$http.$get(
       "https://api.npoint.io/2eeb1bea715cd907d7bc"
+    );
+
+    this.matchs = await this.$http.$get(
+      "https://api.npoint.io/eb3c4e4f5efb9610e414"
     );
 
     for (var key in this.map) {

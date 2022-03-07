@@ -315,22 +315,7 @@ layout: "gde",
         let faction = "";
         let playerArray = [];
 
-        switch (this.selectedFaction) {
-            case 1 : playerArray = this.playerArnor; faction = "arnor"; break;
-            case 2 : playerArray = this.playerGondor; faction = "gondor"; break;
-            case 3 : playerArray = this.playerRohan; faction = "rohan"; break;
-            case 4 : playerArray = this.playerElfe; faction = "elfe"; break;
-            case 5 : playerArray = this.playerNain; faction = "nain" ;break;
-            case 6 : playerArray = this.playerMordor; faction = "mordor"; break;
-            case 7 : playerArray = this.playerIsengard; faction = "isengard"; break;
-            case 8 : playerArray = this.playerGobelin; faction = "gobelin"; break;
-            case 9 : playerArray = this.playerAngmar; faction = "angmar"; break;
-            default : console.log("No faction selected");
-        }
-        //Get data
-        playerArray.forEach(element => {
-            data += `${element.name} ${element.code} ${document.getElementById(element.name + "arrive").value}\n`;
-        });
+
 
 
         if(this.nbPowers.length > 0) {
@@ -371,10 +356,27 @@ layout: "gde",
                 }
 
                 if(possible){
-                    data += `${pouvoir} ${action}`
+                    data += `${pouvoir} ${action}\n`
                 }
             });
         }
+
+        switch (this.selectedFaction) {
+            case 1 : playerArray = this.playerArnor; faction = "arnor"; break;
+            case 2 : playerArray = this.playerGondor; faction = "gondor"; break;
+            case 3 : playerArray = this.playerRohan; faction = "rohan"; break;
+            case 4 : playerArray = this.playerElfe; faction = "elfe"; break;
+            case 5 : playerArray = this.playerNain; faction = "nain" ;break;
+            case 6 : playerArray = this.playerMordor; faction = "mordor"; break;
+            case 7 : playerArray = this.playerIsengard; faction = "isengard"; break;
+            case 8 : playerArray = this.playerGobelin; faction = "gobelin"; break;
+            case 9 : playerArray = this.playerAngmar; faction = "angmar"; break;
+            default : console.log("No faction selected");
+        }
+        //Get data
+        playerArray.forEach(element => {
+            data += `${element.name} ${element.code} ${document.getElementById(element.name + "arrive").value}\n`;
+        });
 
         
 

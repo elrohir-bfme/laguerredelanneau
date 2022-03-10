@@ -81,7 +81,12 @@
                             {{player.lose}} <img alt="Défaite" class="w-4 h-4 inline-block" src="~assets/svg/skull.svg">
                             <img v-if="player.withdrew" alt="Repli" class="w-6 h-6 inline-block" src="~assets/gde/icons/stop.png">
                             
-                            <span v-if="player.handicap > 0">{{player.handicap == 1 ? "15" : "30"}} %<img alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sang.svg"></span>
+                            <span v-if="player.handicap > 0 || player.extrahandicap > 0">{{(player.handicap >= 2 ? 30 : player.handicap * 15) + (player.extrahandicap || 0)}} %
+                              <img v-if="player.handicap == 0 && player.extrahandicap > 0" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sangjaune.svg">
+                              <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sangorange.svg">
+                              <img v-if="player.handicap >= 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sang.svg">
+                              
+                            </span>
                         </span>
                         
                     </div>

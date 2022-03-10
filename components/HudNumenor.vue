@@ -2,25 +2,24 @@
     <div class="fixed left-0 bottom-0 text-white text-center">
         <div class="flex flex-row flex-nowrap">
             <div class="pngcontainer1">
-                <img class="object-cover" id="region_img" :src="map[region] ? map[region].img : 'https://wallup.net/wp-content/uploads/2018/09/28/960672-art-artwork-fantasy-artistic-original-lord-rings-lotr.jpg'" />
+                <img class="object-fill border-8 border-black border-solid shadow-lg" id="region_img" :src="region ? `https://api.laterredumilieu.fr${region.minimap.url}` : 'https://wallup.net/wp-content/uploads/2018/09/28/960672-art-artwork-fantasy-artistic-original-lord-rings-lotr.jpg'" />
                 <img id="region_bg" src="~assets/bg.webp" />
-                <img v-if="map[region] && map[region].color && map[region].color !== '#3300000'" id="region_faction" :src="require(`~/assets/gde/factions/${factions(map[region].color)}.webp`)"/>  
+                <img class="object-cover" id="region_faction" :src="region && `https://api.laterredumilieu.fr${region.img.url}`" />  
                 <img src="~assets/palantir.png" />
-                <p id="region_player" class="text-base absolute text-center bottom-6 text-yellow-400"> {{map[region] ? map[region].map ? `Map ${map[region].map} Joueurs` : "" : ""}}</p>
-                <div id="region_txt">
-                    <p id="region_name">{{map[region] ? map[region].name : "Région inconnue"}}</p>
-                </div>
+                <p id="region_player" class="text-base absolute text-center bottom-6 text-yellow-400">{{region && region.name}}</p>
+                <!-- <div id="region_txt">
+                    <p id="region_name">{{region ? region.name : "Région inconnue"}}</p>
+                </div> -->
             </div>
 
             
             <div class="text-center place-self-end">
-                <div v-if="map[region]" class="flex flex-wrap-reverse gap-4">
-                    <div v-for="(player, index) in map[region].players" :key="index">
+                <div v-if="region" class="flex flex-wrap-reverse gap-4">
+                    <div v-for="(player, index) in region.players" :key="index">
                         <img class="border-2 rounded-full w-14 h-14 object-cover" :class="colors(player.faction)" :src="player.img ? player.img : require(`~/assets/gde/icons/${icons(player.faction)}.png`)" :alt="player.name">
                         <span class="text-sm">{{player.name}}</span>
-                        <img v-if="player.handicap == 0 && player.extrahandicap > 0" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sangjaune.svg">
-                        <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sangorange.svg">
-                        <img v-if="player.handicap >= 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sang.svg">
+                        <img v-if="player.handicap > 0 && player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sangjaune.svg"/>
+                        <img v-if="player.handicap > 0 && player.handicap > 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sang.svg"/>
                     </div>
                 </div>
             </div>
@@ -32,19 +31,13 @@
 export default {
     name: 'Hud',
     props: {
-        map: {
-            type: Object,
-            required: true
-        },
         region: {
-            type: String,
-            required: true,
-            default: "montagne"
+            type: Object
         },
     },
     methods: {
         icons(value) {
-            let info = "";
+            let info = "arnor";
             switch(value) {
                 case 1:
                     info = "arnor"
@@ -73,6 +66,7 @@ export default {
                 case 9:
                     info = "angmar"
                 break;
+                
             }
             return info
         },

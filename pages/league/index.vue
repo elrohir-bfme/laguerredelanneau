@@ -88,7 +88,7 @@
                                     <div class="text-left text-gray-100">{{match.date}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-green-500">{{match.map}}</div>
+                                    <div class="text-left font-medium text-green-500">{{match.map.name}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-lg text-center">{{match.playerWin.name}}</div>

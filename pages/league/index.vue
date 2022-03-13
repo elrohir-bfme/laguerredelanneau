@@ -5,6 +5,9 @@
       <h1 class="font-medium mb-4 text-red-500 text-8xl">League de JLS</h1>
     </div>
 
+    <div class="flex">
+    <div class="flex-grow">
+
     <div class="flex flex-col justify-center h-full">
         <!-- Table -->
         <div class="w-full max-w-3xl mx-auto bg-gray-900 shadow-lg rounded-sm border border-orange-600">
@@ -13,10 +16,10 @@
                     <h2 class="font-semibold text-white">Joueurs</h2>
                 </div>
                 <div class="flex-none">
-                    <button class="text-red-100 ring-4 ring-red-800 bg-red-700 px-4 py-2 rounded-2xl">Cacher</button>
+                    <button @click="hide('player')" class="text-red-100 ring-4 ring-red-800 bg-red-700 px-4 py-2 rounded-2xl">Cacher</button>
                 </div>
             </header>
-            <div class="p-3">
+            <div class="p-3" v-if="showPlayers">
                 <div class="overflow-x-auto">
                     <table class="table-auto w-full">
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
@@ -39,7 +42,7 @@
                             </tr>
                         </thead>
                         <tbody class="text-sm divide-y divide-orange-500">
-                            <tr v-for="card in sortedData" v-bind:key="card.name">
+                            <tr v-for="card in sortedData" v-bind:key="card.name" class="hover-gray-800" @click="infoPlayer(card)">
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-left text-gray-100">{{card.rang}}</div>
                                 </td>
@@ -65,11 +68,16 @@
                 </div>
             </div>
 
-            <header class="px-5 py-4 border-b border-orange-500">
-                <h2 class="font-semibold text-white">Matchs</h2>
+            <header class="px-5 py-4 border-b border-orange-500 flex">
+                <div class="flex-grow">
+                    <h2 class="font-semibold text-white">Matchs</h2>
+                </div>
+                <div class="flex-none">
+                    <button @click="hide('match')" class="text-red-100 ring-4 ring-red-800 bg-red-700 px-4 py-2 rounded-2xl">Cacher</button>
+                </div>
             </header>
 
-            <div class="p-3">
+            <div class="p-3" v-if="showMatchs">
                 <div class="overflow-x-auto">
                     <table class="table-auto w-full">
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
@@ -118,11 +126,16 @@
             </div>
 
 
-            <header class="px-5 py-4 border-b border-orange-500">
-                <h2 class="font-semibold text-white">Factions</h2>
+            <header class="px-5 py-4 border-b border-orange-500 flex">
+                <div class="flex-grow">
+                    <h2 class="font-semibold text-white">Factions</h2>
+                </div>
+                <div class="flex-none">
+                    <button @click="hide('faction')" class="text-red-100 ring-4 ring-red-800 bg-red-700 px-4 py-2 rounded-2xl">Cacher</button>
+                </div>
             </header>
 
-            <div class="p-3">
+            <div class="p-3" v-if="showFactions">
                 <div class="overflow-x-auto">
                     <table class="table-auto w-full">
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
@@ -168,11 +181,16 @@
                 </div>
             </div>
 
-            <header class="px-5 py-4 border-b border-orange-500">
-                <h2 class="font-semibold text-white">Maps</h2>
+            <header class="px-5 py-4 border-b border-orange-500 flex">
+                <div class="flex-grow">
+                    <h2 class="font-semibold text-white">Maps</h2>
+                </div>
+                <div class="flex-none">
+                    <button @click="hide('map')" class="text-red-100 ring-4 ring-red-800 bg-red-700 px-4 py-2 rounded-2xl">Cacher</button>
+                </div>
             </header>
 
-            <div class="p-3">
+            <div class="p-3" v-if="showMaps">
                 <div class="overflow-x-auto">
                     <table class="table-auto w-full">
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
@@ -214,6 +232,76 @@
             </div>
         </div>
     </div>
+
+
+    </div>
+
+    <div v-if="info" class="flex-grow">
+            <div class="flex flex-col justify-top h-full">
+        <!-- Table -->
+        <div class="w-full max-w-3xl mx-auto bg-gray-900 shadow-lg rounded-sm border border-orange-600">
+                    <header class="px-5 py-4 border-b border-orange-500 flex">
+                <div class="flex-grow">
+                    <h2 class="font-semibold text-white">{{player && player.name}}</h2>
+                </div>
+                <div class="flex-none">
+                    <button @click="close" class="text-red-100 ring-4 ring-red-800 bg-red-700 px-4 py-2 rounded-2xl">Fermer</button>
+                </div>
+            </header>
+
+            <div class="p-3" v-if="showMatchs">
+                <div class="overflow-x-auto">
+                    <table class="table-auto w-full">
+                        <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
+                            <tr>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Date</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Map</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Victoire</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Défaite</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Replay</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm divide-y divide-orange-500">
+                            <tr v-for="match in sortedMatchPlayer" v-bind:key="match._id">
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left text-gray-100">{{match.date}}</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left font-medium text-green-500">{{match.mapUp && match.mapUp.name}}</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-lg text-center">{{match.playerWinUp && match.playerWinUp.name}}</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-lg text-center">{{match.playerLoseUp && match.playerLoseUp.name}}</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <a target="_blank" :href="`https://api.laterredumilieu.fr${replay.url}`" v-for="(replay, index) in match.replay" v-bind:key="replay._id"  class="bg-orange-900 hover:bg-orange-800 text-white font-bold py-2 px-4 mx-2 rounded inline-flex items-center">
+                                        <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                                        <span>Replay {{index +1}}</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>    
+                    </table>
+                </div>
+            </div> 
+            </div> 
+            </div> 
+    </div>
+
+    </div>
+
   </div>
 </section>
 </template>
@@ -224,32 +312,100 @@ export default {
     data() {
         return {
         loading: false,
-        cards: [],
+        players: [],
         matchs: [],
         maps: [],
         factions: [],
         isShowModal: false,
         data: [],
         showPlayers: true,
+        showMatchs: true,
+        showFactions: true,
+        showMaps: true,
+        player: [],
+        info: false,
+        block: [
+            {
+                id: 0, 
+                data: 0}, {id: 1, data: 1}, {id: 3, data: 3}, {id: 4, data: 4}]
         }
     },
     async fetch() {
       this.loading = false;
-      this.cards =  await this.$strapi.find('leagues')
+      this.players =  await this.$strapi.find('leagues')
       this.matchs =  await this.$strapi.find('league-matchs')
       this.factions =  await this.$strapi.find('league-factions')
       this.maps =  await this.$strapi.find('league-maps')
       this.loading = true;
     },
-    methods: {
-      toggleModal(value) {
-        this.data = value;
-        this.isShowModal = !this.isShowModal;
-      },
+    methods: {  
+        hide(block){
+            switch (block) {
+                case "player":
+                    this.showPlayers = !this.showPlayers
+                    break;
+                case "match":
+                    this.showMatchs = !this.showMatchs
+                    break;
+                case "faction":
+                    this.showFactions = !this.showFactions
+                    break;
+                case "map":
+                    this.showMaps = !this.showMaps
+                    break;
+            }
+        },
+        infoPlayer(player){
+            this.info = true
+            this.player = player
+        },
+        close(){
+            this.info = false
+            this.player = []
+        },
+        onDrop(dropResult) {
+            // console.log(dropResult, "dropRESULT")
+        this.block = this.applyDrag(this.block, dropResult);
+        }
     },
     computed:{
         sortedData() {
-            return this.cards.map(item=>item).sort((a,b)=> a.rang - b.rang)
+            return this.players.map(item=>item).sort((a,b)=> a.rang - b.rang)
+        },
+        sortedMatchPlayer() {
+            if(this.player){
+
+                let playerWin = this.player.win.map(p=> {
+                    console.log(p, "diejdiej")
+                let object = {
+                    mapUp: this.maps.find(x => x._id === p.map),
+                    playerWinUp: this.players.find(x => x._id === p.playerWin),
+                    playerLoseUp: this.players.find(x => x._id === p.playerLose),
+                    factionWinUp: this.factions.find(x => x._id === p.faction_win),
+                    factionLoseUp: this.factions.find(x => x._id === p.faction_lose),
+                }
+
+                
+                return Object.assign(p, object)
+            })
+
+            let playerLose = this.player.lose.map(p=> {
+                console.log(p, "diejdiej")
+                let object = {
+                    mapUp: this.maps.find(x => x._id === p.map),
+                    playerWinUp: this.players.find(x => x._id === p.playerWin),
+                    playerLoseUp: this.players.find(x => x._id === p.playerLose),
+                    factionWinUp: this.factions.find(x => x._id === p.faction_win),
+                    factionLoseUp: this.factions.find(x => x._id === p.faction_lose),
+                }
+                return Object.assign(p, object)
+            })
+
+            let Newmatchs = [...playerWin, ...playerLose]
+            console.log(playerWin)
+
+            return Newmatchs.map(match=>match).sort((a,b)=> a.updatedAt - b.updatedAt)
+            }
         },
         sortedFaction() {
 

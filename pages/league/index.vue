@@ -60,6 +60,10 @@
                 </div>
             </div>
 
+            <header class="px-5 py-4 border-b border-orange-500">
+                <h2 class="font-semibold text-white">Matchs</h2>
+            </header>
+
             <div class="p-3">
                 <div class="overflow-x-auto">
                     <table class="table-auto w-full">
@@ -97,8 +101,61 @@
                                     <div class="text-lg text-center">{{match.playerLose.name}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
+                                    <a target="_blank" :href="`https://api.laterredumilieu.fr${replay.url}`" v-for="(replay, index) in match.replay" v-bind:key="replay._id"  class="bg-orange-900 hover:bg-orange-800 text-white font-bold py-2 px-4 mx-2 rounded inline-flex items-center">
+                                        <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                                        <span>Replay {{index +1}}</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
-                                    <div v-for="replay in match.replay" v-bind:key="replay._id" class="text-lg text-center">{{replay.name}}</div>
+
+            <header class="px-5 py-4 border-b border-orange-500">
+                <h2 class="font-semibold text-white">Factions</h2>
+            </header>
+
+            <div class="p-3">
+                <div class="overflow-x-auto">
+                    <table class="table-auto w-full">
+                        <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
+                            <tr>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Faction</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Victoire</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Défaite</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Ratio de victoires</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Nombre de Matchs</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm divide-y divide-orange-500">
+                            <tr v-for="faction in factions" v-bind:key="faction._id">
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left text-gray-100">{{faction.name}}</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left font-medium text-green-500">{{faction.matchs_win.length}}</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-lg text-center">{{faction.matchs_lose.length}}</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-lg text-center">{{faction.matchs_win.length > 0 || faction.matchs_lose.length > 0 ? `${((faction.matchs_win.length / (faction.matchs_lose.length + faction.matchs_win.length)) * 100).toFixed(2)}%`  : "Aucun Match"}}</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-lg text-center">{{faction.matchs_win.length + faction.matchs_lose.length}}</div>
+                                    
                                 </td>
                             </tr>
                         </tbody>
@@ -119,6 +176,8 @@ export default {
         loading: false,
         cards: [],
         matchs: [],
+        maps: [],
+        factions: [],
         isShowModal: false,
         data: []
         }
@@ -127,6 +186,8 @@ export default {
       this.loading = false;
       this.cards =  await this.$strapi.find('leagues')
       this.matchs =  await this.$strapi.find('league-matchs')
+      this.factions =  await this.$strapi.find('league-factions')
+      this.maps =  await this.$strapi.find('league-maps')
       this.loading = true;
     },
     methods: {
@@ -138,6 +199,23 @@ export default {
     computed:{
         sortedData() {
             return this.cards.map(item=>item).sort((a,b)=> a.rang - b.rang)
+        },
+        sortedFaction() {
+
+            return this.matchs.reduce(function(obj, v) {
+                obj[v.factionLose] = { lose: (obj[v.factionLose] || 0) + 1};
+                obj[v.factionWin] = { win: (obj[v.factionWin] || 0) + 1};
+                return obj;
+            }, {})
+
+            // {
+            //     name: "nain",
+            //     win: 42,
+            //     lose: 40,
+            // }
+            // return this.matchs.map(match=> {
+            //     match
+            // })
         }
     },
 }

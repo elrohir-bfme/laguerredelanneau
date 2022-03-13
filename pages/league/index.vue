@@ -1,15 +1,15 @@
 <template>
   <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="font-medium mb-4 text-green-200 text-8xl">League de JLS</h1>
+  <div class="container px-5 py-4 mx-auto">
+    <div class="flex flex-col text-center w-full mb-5">
+      <h1 class="font-medium mb-4 text-red-500 text-8xl">League de JLS</h1>
     </div>
 
     <div class="flex flex-col justify-center h-full">
         <!-- Table -->
-        <div class="w-full max-w-2xl mx-auto bg-gray-900 shadow-lg rounded-sm border border-orange-600">
+        <div class="w-full max-w-3xl mx-auto bg-gray-900 shadow-lg rounded-sm border border-orange-600">
             <header class="px-5 py-4 border-b border-orange-500">
-                <h2 class="font-semibold text-white">La ligue de JLS</h2>
+                <h2 class="font-semibold text-white">Joueurs</h2>
             </header>
             <div class="p-3">
                 <div class="overflow-x-auto">
@@ -156,6 +156,51 @@
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-lg text-center">{{faction.matchs_win.length + faction.matchs_lose.length}}</div>
                                     
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <header class="px-5 py-4 border-b border-orange-500">
+                <h2 class="font-semibold text-white">Maps</h2>
+            </header>
+
+            <div class="p-3">
+                <div class="overflow-x-auto">
+                    <table class="table-auto w-full">
+                        <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
+                            <tr>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Nom</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Description</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Image</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Nombres de Matchs</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm divide-y divide-orange-500">
+                            <tr v-for="map in maps" v-bind:key="map._id">
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left text-gray-100">{{map.name}}</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left text-gray-100">{{map.description}}</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <!-- <div class="text-left font-medium text-green-500"> -->
+                                        <img class="object-contain" :src="map.minimap && `https://api.laterredumilieu.fr${map.minimap.url}`">
+                                    <!-- </div> -->
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-lg text-center">{{map.league_matches.length}}</div>
                                 </td>
                             </tr>
                         </tbody>

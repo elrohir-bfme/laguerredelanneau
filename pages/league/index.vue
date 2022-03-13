@@ -215,7 +215,7 @@
 
 <script>
 export default {
-  layout: "gde",
+  layout: "league",
     data() {
         return {
         loading: false,

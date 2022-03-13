@@ -8,8 +8,13 @@
     <div class="flex flex-col justify-center h-full">
         <!-- Table -->
         <div class="w-full max-w-3xl mx-auto bg-gray-900 shadow-lg rounded-sm border border-orange-600">
-            <header class="px-5 py-4 border-b border-orange-500">
-                <h2 class="font-semibold text-white">Joueurs</h2>
+            <header class="px-5 py-4 border-b border-orange-500 flex">
+                <div class="flex-grow">
+                    <h2 class="font-semibold text-white">Joueurs</h2>
+                </div>
+                <div class="flex-none">
+                    <button class="text-red-100 ring-4 ring-red-800 bg-red-700 px-4 py-2 rounded-2xl">Cacher</button>
+                </div>
             </header>
             <div class="p-3">
                 <div class="overflow-x-auto">
@@ -224,7 +229,8 @@ export default {
         maps: [],
         factions: [],
         isShowModal: false,
-        data: []
+        data: [],
+        showPlayers: true,
         }
     },
     async fetch() {

@@ -9599,7 +9599,7 @@
         >
           {{ $t('gde.chef') }} {{ faction.faction.name }}
         </h2>
-        <h3 v-if="faction.dead"  :class="`text-${color(faction.id).color}-300`"
+        <h3 v-if="faction.faction.dead"  :class="`text-${color(faction.id).color}-300`"
           class="mt-4 font-bold text-xl">
             La Faction a été vaincu à Fornost le 13 Mars 2022
         </h3>

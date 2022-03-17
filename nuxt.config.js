@@ -197,7 +197,16 @@ robots: {
 
   i18n: {
     parsePages: false,
-    locales: ['fr', 'en'],
+    locales: [
+      {
+        code: 'en',
+        name: 'English'
+      },
+      {
+        code: 'fr',
+        name: 'Français'
+      }
+    ],
     defaultLocale: 'fr',
     detectBrowserLanguage: {
       useCookie: true,
@@ -328,6 +337,9 @@ robots: {
             resulat: "Players",
             aucun: "No Combat for the moment!",
             participer: "If you want to participate in the event just join the Discord and take a faction. For more information see the rules.",
+          },
+          league: {
+            title: "League of JLS"
           }
         },
         fr: {
@@ -449,6 +461,9 @@ robots: {
             resulat: "Résulat",
             aucun: "Aucun Combat pour le moment !",
             participer: "Si vous voulez participer à l'évènement suffit de rejoindre le Discord et de prendre une faction. Pour plus d'informations aller voir les règles.",
+          },
+          league: {
+            title: "League de JLS"
           }
         }
       }

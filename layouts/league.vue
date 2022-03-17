@@ -18,12 +18,42 @@
               </defs>
             </svg>
           </a>
+          <select @change="switchLang(lang)" v-model="lang" 
+            class="form-select appearance-none px-3 py-1.5 mr-4 text-base font-normal focus-within:text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 text-gray-600 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example">
+              <option 
+                v-for="(locale, index) in this.$i18n.locales" 
+                :key="index"
+                :value="locale.code">
+                <!-- <img :alt="locale.code" :src="require(`~/assets/lang/${locale.code}.svg`)"
+                  class="mx-auto object-cover rounded-full h-12 w-12"/> -->
+                {{ locale.name }}
+              </option>
+          </select>
         </nav>
       </div>
     </header>
     <Nuxt />
   </div>
 </template>
+
+<script>
+export default {
+  
+  data() {
+    return {
+      lang: ""
+    }
+  },
+  created() {
+    this.lang = this.$i18n.locale;
+  },
+  methods: {
+    switchLang(lang) {
+      this.$router.replace(this.switchLocalePath(lang));
+    },
+  },
+}
+</script>
 
 <style>
 

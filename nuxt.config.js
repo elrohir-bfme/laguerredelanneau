@@ -339,7 +339,11 @@ robots: {
             participer: "If you want to participate in the event just join the Discord and take a faction. For more information see the rules.",
           },
           league: {
-            title: "League of JLS"
+            title: "League ROTWK",
+            maps: "Maps",
+            player: "Players",
+            matchs: "Games",
+            factions: "Factions"
           }
         },
         fr: {
@@ -463,7 +467,11 @@ robots: {
             participer: "Si vous voulez participer à l'évènement suffit de rejoindre le Discord et de prendre une faction. Pour plus d'informations aller voir les règles.",
           },
           league: {
-            title: "League de JLS"
+            title: "League ROTWK",
+            maps: "Maps",
+            player: "Joueurs",
+            matchs: "Parties",
+            factions: "Factions"
           }
         }
       }

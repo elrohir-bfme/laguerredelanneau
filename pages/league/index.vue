@@ -34,31 +34,19 @@
                                     <div class="font-semibold text-left">Main</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Match joué</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">Ratio de victoires</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Homme</div>
+                                    <div class="font-semibold text-left">Victoires</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Elfe</div>
+                                    <div class="font-semibold text-left">Défaites</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Nain</div>
+                                    <div class="font-semibold text-left">Match joué</div>
                                 </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Mordor</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Isengard</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Gobelin</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Angmar</div>
+                                <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
+                                    <div class="font-semibold text-left">{{fac.name}}</div>
                                 </th>
                             </tr>
                         </thead>
@@ -75,220 +63,38 @@
                                 </td>
                                 
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-green-500">{{player.main}}</div>
+                                    <div class="text-left font-medium text-gray-300">{{player.main}}</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap bg-gray-800">
+                                    <div class="text-lg text-left from-blue-500 to-blue-700 text-gray-100 p-2 m-1" 
+                                    :style="`width: ${player.win.length > 0 || player.lose.length > 0 ? ((player.win.length / (player.lose.length + player.win.length)) * 100).toFixed(2) : 0}%;`"
+                                    :class="player.win.length > 0 || player.lose.length > 0 ? 'bg-gradient-to-r' : ''"
+                                    >
+                                        {{player.win.length > 0 || player.lose.length > 0 ? `${((player.win.length / (player.lose.length + player.win.length)) * 100).toFixed(0)}%`  : "Aucun Match"}}
+                                    </div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{player.win.length + player.lose.length}}</div>
+                                    <div class="text-lg text-left text-green-400">{{player.win.length}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{player.win.length > 0 || player.lose.length > 0 ? `${((player.win.length / (player.lose.length + player.win.length)) * 100).toFixed(0)}%`  : "Aucun Match"}}</div>
+                                    <div class="text-lg text-left text-red-400">{{player.lose.length}}</div>
                                 </td>
-                                                                <td class="p-2 whitespace-nowrap border-t border-blue-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(player.statsFactionLose).length > 0 && Object.keys(player.statsFactionWin).length > 0 ?
-                                            player.statsFactionLose.Homme || player.statsFactionWin.Homme ?
-                                            `(${player.statsFactionWin.Homme ? player.statsFactionWin.Homme : 0}
-                                            /
-                                            ${player.statsFactionLose.Homme ? player.statsFactionLose.Homme : 0}) 
-                                            ${((player.statsFactionWin.Homme ? player.statsFactionWin.Homme : 0 / (player.statsFactionLose.Homme ? player.statsFactionLose.Homme : 0 + player.statsFactionWin.Homme ? player.statsFactionWin.Homme : 0)) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(player.statsFactionLose).length > 0 ? 
-                                            player.statsFactionLose.Homme ?
-                                            `${player.statsFactionLose.Homme ? player.statsFactionLose.Homme : 0}
-                                            Victoire${player.statsFactionLose.Homme && player.statsFactionLose.Homme.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(player.statsFactionWin).length > 0 ? 
-                                            player.statsFactionLose.Homme ?
-                                            `${player.statsFactionWin.Homme ? player.statsFactionWin.Homme : 0}
-                                            Défaite${player.statsFactionWin.Homme && player.statsFactionWin.Homme.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-lg text-left text-gray-400">{{player.win.length + player.lose.length}}</div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border-t border-green-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(player.statsFactionLose).length > 0 && Object.keys(player.statsFactionWin).length > 0 ?
-                                            player.statsFactionLose.Elfe || player.statsFactionWin.Elfe ?
-                                            `(${player.statsFactionWin.Elfe ? player.statsFactionWin.Elfe : 0}
+                                <td v-for="fac in factionList" v-bind:key="fac" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
+                                    <div class="text-lg text-left  text-gray-100 p-2 m-1" 
+                                    :style="`width: ${Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0 ? (((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`"
+                                    :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0) && (player.statsFactionLose[fac.name] || player.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
+                                    >
+                                        {{Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0 ?
+                                            player.statsFactionLose[fac.name] && player.statsFactionWin[fac.name] ?
+                                            `(${player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0}
                                             /
-                                            ${player.statsFactionLose.Elfe ? player.statsFactionLose.Elfe : 0}) 
-                                            ${((player.statsFactionWin.Elfe ? player.statsFactionWin.Elfe : 0 / (player.statsFactionLose.Elfe ? player.statsFactionLose.Elfe : 0 + player.statsFactionWin.Elfe ? player.statsFactionWin.Elfe : 0)) * 100).toFixed(0)}%
+                                            ${player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0}) 
+                                            ${(((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)}%
                                             `
-                                            : ""
-                                        : 
-                                        Object.keys(player.statsFactionLose).length > 0 ? 
-                                            player.statsFactionLose.Elfe ?
-                                            `${player.statsFactionLose.Elfe ? player.statsFactionLose.Elfe : 0}
-                                            Victoire${player.statsFactionLose.Elfe && player.statsFactionLose.Elfe.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(player.statsFactionWin).length > 0 ? 
-                                            player.statsFactionLose.Elfe ?
-                                            `${player.statsFactionWin.Elfe ? player.statsFactionWin.Elfe : 0}
-                                            Défaite${player.statsFactionWin.Elfe && player.statsFactionWin.Elfe.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-yellow-300">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(player.statsFactionLose).length > 0 && Object.keys(player.statsFactionWin).length > 0 ?
-                                            player.statsFactionLose.Nain || player.statsFactionWin.Nain ?
-                                            `(${player.statsFactionWin.Nain ? player.statsFactionWin.Nain : 0}
-                                            /
-                                            ${player.statsFactionLose.Nain ? player.statsFactionLose.Nain : 0}) 
-                                            ${((player.statsFactionWin.Nain ? player.statsFactionWin.Nain : 0 / (player.statsFactionLose.Nain ? player.statsFactionLose.Nain : 0 + player.statsFactionWin.Nain ? player.statsFactionWin.Nain : 0)) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(player.statsFactionLose).length > 0 ? 
-                                            player.statsFactionLose.Nain ?
-                                            `${player.statsFactionLose.Nain ? player.statsFactionLose.Nain : 0}
-                                            Victoire${player.statsFactionLose.Nain && player.statsFactionLose.Nain.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(player.statsFactionWin).length > 0 ? 
-                                            player.statsFactionLose.Nain ?
-                                            `${player.statsFactionWin.Nain ? player.statsFactionWin.Nain : 0}
-                                            Défaite${player.statsFactionWin.Nain && player.statsFactionWin.Nain.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-red-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(player.statsFactionLose).length > 0 && Object.keys(player.statsFactionWin).length > 0 ?
-                                            player.statsFactionLose.Mordor || player.statsFactionWin.Mordor ?
-                                            `(${player.statsFactionWin.Mordor ? player.statsFactionWin.Mordor : 0}
-                                            /
-                                            ${player.statsFactionLose.Mordor ? player.statsFactionLose.Mordor : 0}) 
-                                            ${((player.statsFactionWin.Mordor ? player.statsFactionWin.Mordor : 0 / (player.statsFactionLose.Mordor ? player.statsFactionLose.Mordor : 0 + player.statsFactionWin.Mordor ? player.statsFactionWin.Mordor : 0)) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(player.statsFactionLose).length > 0 ? 
-                                            player.statsFactionLose.Mordor ?
-                                            `${player.statsFactionLose.Mordor ? player.statsFactionLose.Mordor : 0}
-                                            Victoire${player.statsFactionLose.Mordor && player.statsFactionLose.Mordor.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(player.statsFactionWin).length > 0 ? 
-                                            player.statsFactionLose.Mordor ?
-                                            `${player.statsFactionWin.Mordor ? player.statsFactionWin.Mordor : 0}
-                                            Défaite${player.statsFactionWin.Mordor && player.statsFactionWin.Mordor.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-white">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(player.statsFactionLose).length > 0 && Object.keys(player.statsFactionWin).length > 0 ?
-                                            player.statsFactionLose.Isengard || player.statsFactionWin.Isengard ?
-                                            `(${player.statsFactionWin.Isengard ? player.statsFactionWin.Isengard : 0}
-                                            /
-                                            ${player.statsFactionLose.Isengard ? player.statsFactionLose.Isengard : 0}) 
-                                            ${((player.statsFactionWin.Isengard ? player.statsFactionWin.Isengard : 0 / (player.statsFactionLose.Isengard ? player.statsFactionLose.Isengard : 0 + player.statsFactionWin.Isengard ? player.statsFactionWin.Isengard : 0)) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(player.statsFactionLose).length > 0 ? 
-                                            player.statsFactionLose.Isengard ?
-                                            `${player.statsFactionLose.Isengard ? player.statsFactionLose.Isengard : 0}
-                                            Victoire${player.statsFactionLose.Isengard && player.statsFactionLose.Isengard.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(player.statsFactionWin).length > 0 ? 
-                                            player.statsFactionLose.Isengard ?
-                                            `${player.statsFactionWin.Isengard ? player.statsFactionWin.Isengard : 0}
-                                            Défaite${player.statsFactionWin.Isengard && player.statsFactionWin.Isengard.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-orange-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(player.statsFactionLose).length > 0 && Object.keys(player.statsFactionWin).length > 0 ?
-                                            player.statsFactionLose.Gobelin || player.statsFactionWin.Gobelin ?
-                                            `(${player.statsFactionWin.Gobelin ? player.statsFactionWin.Gobelin : 0}
-                                            /
-                                            ${player.statsFactionLose.Gobelin ? player.statsFactionLose.Gobelin : 0}) 
-                                            ${((player.statsFactionWin.Gobelin ? player.statsFactionWin.Gobelin : 0 / (player.statsFactionLose.Gobelin ? player.statsFactionLose.Gobelin : 0 + player.statsFactionWin.Gobelin ? player.statsFactionWin.Gobelin : 0)) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(player.statsFactionLose).length > 0 ? 
-                                            player.statsFactionLose.Gobelin ?
-                                            `${player.statsFactionLose.Gobelin ? player.statsFactionLose.Gobelin : 0}
-                                            Victoire${player.statsFactionLose.Gobelin && player.statsFactionLose.Gobelin.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(player.statsFactionWin).length > 0 ? 
-                                            player.statsFactionLose.Gobelin ?
-                                            `${player.statsFactionWin.Gobelin ? player.statsFactionWin.Gobelin : 0}
-                                            Défaite${player.statsFactionWin.Gobelin && player.statsFactionWin.Gobelin.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-purple-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(player.statsFactionLose).length > 0 && Object.keys(player.statsFactionWin).length > 0 ?
-                                            player.statsFactionLose.Angmar || player.statsFactionWin.Angmar ?
-                                            `(${player.statsFactionWin.Angmar ? player.statsFactionWin.Angmar : 0}
-                                            /
-                                            ${player.statsFactionLose.Angmar ? player.statsFactionLose.Angmar : 0}) 
-                                            ${((player.statsFactionWin.Angmar ? player.statsFactionWin.Angmar : 0 / (player.statsFactionLose.Angmar ? player.statsFactionLose.Angmar : 0 + player.statsFactionWin.Angmar ? player.statsFactionWin.Angmar : 0)) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(player.statsFactionLose).length > 0 ? 
-                                            player.statsFactionLose.Angmar ?
-                                            `${player.statsFactionLose.Angmar ? player.statsFactionLose.Angmar : 0}
-                                            Victoire${player.statsFactionLose.Angmar && player.statsFactionLose.Angmar.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(player.statsFactionWin).length > 0 ? 
-                                            player.statsFactionLose.Angmar ?
-                                            `${player.statsFactionWin.Angmar ? player.statsFactionWin.Angmar : 0}
-                                            Défaite${player.statsFactionWin.Angmar && player.statsFactionWin.Angmar.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
+                                            : player.statsFactionLose[fac.name] ? `${player.statsFactionLose[fac.name]} Défaite${player.statsFactionLose[fac.name] == 1 ? '' : 's'}` : player.statsFactionWin[fac.name] ? `${player.statsFactionWin[fac.name]} Victoire${player.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
                                         : ""
                                         }}
                                     </div>
@@ -386,26 +192,8 @@
                                 <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">Nombre de Matchs</div>
                                 </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Homme</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Elfe</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Nain</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Mordor</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Isengard</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Gobelin</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Angmar</div>
+                                <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
+                                    <div class="font-semibold text-left">{{fac.name}}</div>
                                 </th>
                             </tr>
                         </thead>
@@ -431,212 +219,19 @@
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-lg text-left">{{faction.matchs_win.length + faction.matchs_lose.length}}</div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border-t border-blue-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(faction.statsFactionLose).length > 0 && Object.keys(faction.statsFactionWin).length > 0 ?
-                                            faction.statsFactionLose.Homme || faction.statsFactionWin.Homme ?
-                                            `(${faction.statsFactionWin.Homme ? faction.statsFactionWin.Homme : 0}
+                                <td v-for="fac in factionList" v-bind:key="fac" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
+                                    <div class="text-lg text-left  text-gray-100 p-2 m-1" 
+                                    :style="`width: ${Object.keys(faction.statsFactionLose).length > 0 || Object.keys(faction.statsFactionWin).length > 0 ? (((faction.statsFactionWin[fac.name] ? faction.statsFactionWin[fac.name] : 0) / ((faction.statsFactionLose[fac.name] ? faction.statsFactionLose[fac.name] : 0) + (faction.statsFactionWin[fac.name] ? faction.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`"
+                                    :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(faction.statsFactionLose).length > 0 || Object.keys(faction.statsFactionWin).length > 0) && (faction.statsFactionLose[fac.name] || faction.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
+                                    >
+                                        {{Object.keys(faction.statsFactionLose).length > 0 || Object.keys(faction.statsFactionWin).length > 0 ?
+                                            faction.statsFactionLose[fac.name] && faction.statsFactionWin[fac.name] ?
+                                            `(${faction.statsFactionWin[fac.name] ? faction.statsFactionWin[fac.name] : 0}
                                             /
-                                            ${faction.statsFactionLose.Homme ? faction.statsFactionLose.Homme : 0}) 
-                                            ${((faction.statsFactionWin.Homme ? faction.statsFactionWin.Homme : 0 / (faction.statsFactionLose.Homme ? faction.statsFactionLose.Homme : 0 + faction.statsFactionWin.Homme ? faction.statsFactionWin.Homme : 0)) * 100).toFixed(0)}%
+                                            ${faction.statsFactionLose[fac.name] ? faction.statsFactionLose[fac.name] : 0}) 
+                                            ${(((faction.statsFactionWin[fac.name] ? faction.statsFactionWin[fac.name] : 0) / ((faction.statsFactionLose[fac.name] ? faction.statsFactionLose[fac.name] : 0) + (faction.statsFactionWin[fac.name] ? faction.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)}%
                                             `
-                                            : ""
-                                        : 
-                                        Object.keys(faction.statsFactionLose).length > 0 ? 
-                                            faction.statsFactionLose.Homme ?
-                                            `${faction.statsFactionLose.Homme ? faction.statsFactionLose.Homme : 0}
-                                            Victoire${faction.statsFactionLose.Homme && faction.statsFactionLose.Homme.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(faction.statsFactionWin).length > 0 ? 
-                                            faction.statsFactionLose.Homme ?
-                                            `${faction.statsFactionWin.Homme ? faction.statsFactionWin.Homme : 0}
-                                            Défaite${faction.statsFactionWin.Homme && faction.statsFactionWin.Homme.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-green-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(faction.statsFactionLose).length > 0 && Object.keys(faction.statsFactionWin).length > 0 ?
-                                            faction.statsFactionLose.Elfe || faction.statsFactionWin.Elfe ?
-                                            `(${faction.statsFactionWin.Elfe ? faction.statsFactionWin.Elfe : 0}
-                                            /
-                                            ${faction.statsFactionLose.Elfe ? faction.statsFactionLose.Elfe : 0}) 
-                                            ${((faction.statsFactionWin.Elfe ? faction.statsFactionWin.Elfe : 0 / (faction.statsFactionLose.Elfe ? faction.statsFactionLose.Elfe : 0 + faction.statsFactionWin.Elfe ? faction.statsFactionWin.Elfe : 0)) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(faction.statsFactionLose).length > 0 ? 
-                                            faction.statsFactionLose.Elfe ?
-                                            `${faction.statsFactionLose.Elfe ? faction.statsFactionLose.Elfe : 0}
-                                            Victoire${faction.statsFactionLose.Elfe && faction.statsFactionLose.Elfe.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(faction.statsFactionWin).length > 0 ? 
-                                            faction.statsFactionLose.Elfe ?
-                                            `${faction.statsFactionWin.Elfe ? faction.statsFactionWin.Elfe : 0}
-                                            Défaite${faction.statsFactionWin.Elfe && faction.statsFactionWin.Elfe.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-yellow-300">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(faction.statsFactionLose).length > 0 && Object.keys(faction.statsFactionWin).length > 0 ?
-                                            faction.statsFactionLose.Nain || faction.statsFactionWin.Nain ?
-                                            `(${faction.statsFactionWin.Nain ? faction.statsFactionWin.Nain : 0}
-                                            /
-                                            ${faction.statsFactionLose.Nain ? faction.statsFactionLose.Nain : 0}) 
-                                            ${((faction.statsFactionWin.Nain ? faction.statsFactionWin.Nain : 0 / (faction.statsFactionLose.Nain ? faction.statsFactionLose.Nain : 0 + faction.statsFactionWin.Nain ? faction.statsFactionWin.Nain : 0)) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(faction.statsFactionLose).length > 0 ? 
-                                            faction.statsFactionLose.Nain ?
-                                            `${faction.statsFactionLose.Nain ? faction.statsFactionLose.Nain : 0}
-                                            Victoire${faction.statsFactionLose.Nain && faction.statsFactionLose.Nain.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(faction.statsFactionWin).length > 0 ? 
-                                            faction.statsFactionLose.Nain ?
-                                            `${faction.statsFactionWin.Nain ? faction.statsFactionWin.Nain : 0}
-                                            Défaite${faction.statsFactionWin.Nain && faction.statsFactionWin.Nain.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-red-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(faction.statsFactionLose).length > 0 && Object.keys(faction.statsFactionWin).length > 0 ?
-                                            faction.statsFactionLose.Mordor || faction.statsFactionWin.Mordor ?
-                                            `(${faction.statsFactionWin.Mordor ? faction.statsFactionWin.Mordor : 0}
-                                            /
-                                            ${faction.statsFactionLose.Mordor ? faction.statsFactionLose.Mordor : 0}) 
-                                            ${((faction.statsFactionWin.Mordor ? faction.statsFactionWin.Mordor : 0 / (faction.statsFactionLose.Mordor ? faction.statsFactionLose.Mordor : 0 + faction.statsFactionWin.Mordor ? faction.statsFactionWin.Mordor : 0)) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(faction.statsFactionLose).length > 0 ? 
-                                            faction.statsFactionLose.Mordor ?
-                                            `${faction.statsFactionLose.Mordor ? faction.statsFactionLose.Mordor : 0}
-                                            Victoire${faction.statsFactionLose.Mordor && faction.statsFactionLose.Mordor.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(faction.statsFactionWin).length > 0 ? 
-                                            faction.statsFactionLose.Mordor ?
-                                            `${faction.statsFactionWin.Mordor ? faction.statsFactionWin.Mordor : 0}
-                                            Défaite${faction.statsFactionWin.Mordor && faction.statsFactionWin.Mordor.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-white">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(faction.statsFactionLose).length > 0 && Object.keys(faction.statsFactionWin).length > 0 ?
-                                            faction.statsFactionLose.Isengard || faction.statsFactionWin.Isengard ?
-                                            `(${faction.statsFactionWin.Isengard ? faction.statsFactionWin.Isengard : 0}
-                                            /
-                                            ${faction.statsFactionLose.Isengard ? faction.statsFactionLose.Isengard : 0}) 
-                                            ${((faction.statsFactionWin.Isengard ? faction.statsFactionWin.Isengard : 0 / (faction.statsFactionLose.Isengard ? faction.statsFactionLose.Isengard : 0 + faction.statsFactionWin.Isengard ? faction.statsFactionWin.Isengard : 0)) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(faction.statsFactionLose).length > 0 ? 
-                                            faction.statsFactionLose.Isengard ?
-                                            `${faction.statsFactionLose.Isengard ? faction.statsFactionLose.Isengard : 0}
-                                            Victoire${faction.statsFactionLose.Isengard && faction.statsFactionLose.Isengard.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(faction.statsFactionWin).length > 0 ? 
-                                            faction.statsFactionLose.Isengard ?
-                                            `${faction.statsFactionWin.Isengard ? faction.statsFactionWin.Isengard : 0}
-                                            Défaite${faction.statsFactionWin.Isengard && faction.statsFactionWin.Isengard.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-orange-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(faction.statsFactionLose).length > 0 && Object.keys(faction.statsFactionWin).length > 0 ?
-                                            faction.statsFactionLose.Gobelin || faction.statsFactionWin.Gobelin ?
-                                            `(${faction.statsFactionWin.Gobelin ? faction.statsFactionWin.Gobelin : 0}
-                                            /
-                                            ${faction.statsFactionLose.Gobelin ? faction.statsFactionLose.Gobelin : 0}) 
-                                            ${((faction.statsFactionWin.Gobelin ? faction.statsFactionWin.Gobelin : 0 / (faction.statsFactionLose.Gobelin ? faction.statsFactionLose.Gobelin : 0 + faction.statsFactionWin.Gobelin ? faction.statsFactionWin.Gobelin : 0)) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(faction.statsFactionLose).length > 0 ? 
-                                            faction.statsFactionLose.Gobelin ?
-                                            `${faction.statsFactionLose.Gobelin ? faction.statsFactionLose.Gobelin : 0}
-                                            Victoire${faction.statsFactionLose.Gobelin && faction.statsFactionLose.Gobelin.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(faction.statsFactionWin).length > 0 ? 
-                                            faction.statsFactionLose.Gobelin ?
-                                            `${faction.statsFactionWin.Gobelin ? faction.statsFactionWin.Gobelin : 0}
-                                            Défaite${faction.statsFactionWin.Gobelin && faction.statsFactionWin.Gobelin.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-purple-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(faction.statsFactionLose).length > 0 && Object.keys(faction.statsFactionWin).length > 0 ?
-                                            faction.statsFactionLose.Angmar || faction.statsFactionWin.Angmar ?
-                                            `(${faction.statsFactionWin.Angmar ? faction.statsFactionWin.Angmar : 0}
-                                            /
-                                            ${faction.statsFactionLose.Angmar ? faction.statsFactionLose.Angmar : 0}) 
-                                            ${((faction.statsFactionWin.Angmar ? faction.statsFactionWin.Angmar : 0 / (faction.statsFactionLose.Angmar ? faction.statsFactionLose.Angmar : 0 + faction.statsFactionWin.Angmar ? faction.statsFactionWin.Angmar : 0)) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(faction.statsFactionLose).length > 0 ? 
-                                            faction.statsFactionLose.Angmar ?
-                                            `${faction.statsFactionLose.Angmar ? faction.statsFactionLose.Angmar : 0}
-                                            Victoire${faction.statsFactionLose.Angmar && faction.statsFactionLose.Angmar.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(faction.statsFactionWin).length > 0 ? 
-                                            faction.statsFactionLose.Angmar ?
-                                            `${faction.statsFactionWin.Angmar ? faction.statsFactionWin.Angmar : 0}
-                                            Défaite${faction.statsFactionWin.Angmar && faction.statsFactionWin.Angmar.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
+                                            : faction.statsFactionLose[fac.name] ? `${faction.statsFactionLose[fac.name]} Défaite${faction.statsFactionLose[fac.name] == 1 ? '' : 's'}` : faction.statsFactionWin[fac.name] ? `${faction.statsFactionWin[fac.name]} Victoire${faction.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
                                         : ""
                                         }}
                                     </div>
@@ -673,26 +268,8 @@
                                 <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">Nombres de Matchs</div>
                                 </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Homme</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Elfe</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Nain</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Mordor</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Isengard</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Gobelin</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Angmar</div>
+                                <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
+                                    <div class="font-semibold text-left">{{fac.name}}</div>
                                 </th>
                             </tr>
                         </thead>
@@ -712,212 +289,19 @@
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-lg text-left">{{map.league_matches.length}}</div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border-t border-blue-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(map.statsFactionLose).length > 0 && Object.keys(map.statsFactionWin).length > 0 ?
-                                            map.statsFactionLose.Homme || map.statsFactionWin.Homme ?
-                                            `(${map.statsFactionWin.Homme ? map.statsFactionWin.Homme : 0}
+                                <td v-for="fac in factionList" v-bind:key="fac" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
+                                    <div class="text-lg text-left  text-gray-100 p-2 m-1" 
+                                    :style="`width: ${Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0 ? (((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`"
+                                    :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0) && (map.statsFactionLose[fac.name] || map.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
+                                    >
+                                        {{Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0 ?
+                                            map.statsFactionLose[fac.name] && map.statsFactionWin[fac.name] ?
+                                            `(${map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0}
                                             /
-                                            ${map.statsFactionLose.Homme ? map.statsFactionLose.Homme : 0}) 
-                                            ${(((map.statsFactionWin.Homme ? map.statsFactionWin.Homme : 0) / ((map.statsFactionLose.Homme ? map.statsFactionLose.Homme : 0 )+ (map.statsFactionWin.Homme ? map.statsFactionWin.Homme : 0))) * 100).toFixed(0)}%
+                                            ${map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0}) 
+                                            ${(((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)}%
                                             `
-                                            : ""
-                                        : 
-                                        Object.keys(map.statsFactionLose).length > 0 ? 
-                                            map.statsFactionLose.Homme ?
-                                            `${map.statsFactionLose.Homme ? map.statsFactionLose.Homme : 0}
-                                            Victoire${map.statsFactionLose.Homme && map.statsFactionLose.Homme.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(map.statsFactionWin).length > 0 ? 
-                                            map.statsFactionLose.Homme ?
-                                            `${map.statsFactionWin.Homme ? map.statsFactionWin.Homme : 0}
-                                            Défaite${map.statsFactionWin.Homme && map.statsFactionWin.Homme.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-green-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(map.statsFactionLose).length > 0 && Object.keys(map.statsFactionWin).length > 0 ?
-                                            map.statsFactionLose.Elfe || map.statsFactionWin.Elfe ?
-                                            `(${map.statsFactionWin.Elfe ? map.statsFactionWin.Elfe : 0}
-                                            /
-                                            ${map.statsFactionLose.Elfe ? map.statsFactionLose.Elfe : 0}) 
-                                            ${(((map.statsFactionWin.Elfe ? map.statsFactionWin.Elfe : 0) / ((map.statsFactionLose.Elfe ? map.statsFactionLose.Elfe : 0) + (map.statsFactionWin.Elfe ? map.statsFactionWin.Elfe : 0))) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(map.statsFactionLose).length > 0 ? 
-                                            map.statsFactionLose.Elfe ?
-                                            `${map.statsFactionLose.Elfe ? map.statsFactionLose.Elfe : 0}
-                                            Victoire${map.statsFactionLose.Elfe && map.statsFactionLose.Elfe.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(map.statsFactionWin).length > 0 ? 
-                                            map.statsFactionLose.Elfe ?
-                                            `${map.statsFactionWin.Elfe ? map.statsFactionWin.Elfe : 0}
-                                            Défaite${map.statsFactionWin.Elfe && map.statsFactionWin.Elfe.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-yellow-300">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(map.statsFactionLose).length > 0 && Object.keys(map.statsFactionWin).length > 0 ?
-                                            map.statsFactionLose.Nain || map.statsFactionWin.Nain ?
-                                            `(${map.statsFactionWin.Nain ? map.statsFactionWin.Nain : 0}
-                                            /
-                                            ${map.statsFactionLose.Nain ? map.statsFactionLose.Nain : 0}) 
-                                            ${(((map.statsFactionWin.Nain ? map.statsFactionWin.Nain : 0) / ((map.statsFactionLose.Nain ? map.statsFactionLose.Nain : 0) + (map.statsFactionWin.Nain ? map.statsFactionWin.Nain : 0))) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(map.statsFactionLose).length > 0 ? 
-                                            map.statsFactionLose.Nain ?
-                                            `${map.statsFactionLose.Nain ? map.statsFactionLose.Nain : 0}
-                                            Victoire${map.statsFactionLose.Nain && map.statsFactionLose.Nain.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(map.statsFactionWin).length > 0 ? 
-                                            map.statsFactionLose.Nain ?
-                                            `${map.statsFactionWin.Nain ? map.statsFactionWin.Nain : 0}
-                                            Défaite${map.statsFactionWin.Nain && map.statsFactionWin.Nain.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-red-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(map.statsFactionLose).length > 0 && Object.keys(map.statsFactionWin).length > 0 ?
-                                            map.statsFactionLose.Mordor || map.statsFactionWin.Mordor ?
-                                            `(${map.statsFactionWin.Mordor ? map.statsFactionWin.Mordor : 0}
-                                            /
-                                            ${map.statsFactionLose.Mordor ? map.statsFactionLose.Mordor : 0}) 
-                                            ${(((map.statsFactionWin.Mordor ? map.statsFactionWin.Mordor : 0) / ((map.statsFactionLose.Mordor ? map.statsFactionLose.Mordor : 0) + (map.statsFactionWin.Mordor ? map.statsFactionWin.Mordor : 0))) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(map.statsFactionLose).length > 0 ? 
-                                            map.statsFactionLose.Mordor ?
-                                            `${map.statsFactionLose.Mordor ? map.statsFactionLose.Mordor : 0}
-                                            Victoire${map.statsFactionLose.Mordor && map.statsFactionLose.Mordor.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(map.statsFactionWin).length > 0 ? 
-                                            map.statsFactionLose.Mordor ?
-                                            `${map.statsFactionWin.Mordor ? map.statsFactionWin.Mordor : 0}
-                                            Défaite${map.statsFactionWin.Mordor && map.statsFactionWin.Mordor.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-white">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(map.statsFactionLose).length > 0 && Object.keys(map.statsFactionWin).length > 0 ?
-                                            map.statsFactionLose.Isengard || map.statsFactionWin.Isengard ?
-                                            `(${map.statsFactionWin.Isengard ? map.statsFactionWin.Isengard : 0}
-                                            /
-                                            ${map.statsFactionLose.Isengard ? map.statsFactionLose.Isengard : 0}) 
-                                            ${(((map.statsFactionWin.Isengard ? map.statsFactionWin.Isengard : 0) / ((map.statsFactionLose.Isengard ? map.statsFactionLose.Isengard : 0) + (map.statsFactionWin.Isengard ? map.statsFactionWin.Isengard : 0))) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(map.statsFactionLose).length > 0 ? 
-                                            map.statsFactionLose.Isengard ?
-                                            `${map.statsFactionLose.Isengard ? map.statsFactionLose.Isengard : 0}
-                                            Victoire${map.statsFactionLose.Isengard && map.statsFactionLose.Isengard.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(map.statsFactionWin).length > 0 ? 
-                                            map.statsFactionLose.Isengard ?
-                                            `${map.statsFactionWin.Isengard ? map.statsFactionWin.Isengard : 0}
-                                            Défaite${map.statsFactionWin.Isengard && map.statsFactionWin.Isengard.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-orange-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(map.statsFactionLose).length > 0 && Object.keys(map.statsFactionWin).length > 0 ?
-                                            map.statsFactionLose.Gobelin || map.statsFactionWin.Gobelin ?
-                                            `(${map.statsFactionWin.Gobelin ? map.statsFactionWin.Gobelin : 0}
-                                            /
-                                            ${map.statsFactionLose.Gobelin ? map.statsFactionLose.Gobelin : 0}) 
-                                            ${(((map.statsFactionWin.Gobelin ? map.statsFactionWin.Gobelin : 0) / ((map.statsFactionLose.Gobelin ? map.statsFactionLose.Gobelin : 0) + (map.statsFactionWin.Gobelin ? map.statsFactionWin.Gobelin : 0))) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(map.statsFactionLose).length > 0 ? 
-                                            map.statsFactionLose.Gobelin ?
-                                            `${map.statsFactionLose.Gobelin ? map.statsFactionLose.Gobelin : 0}
-                                            Victoire${map.statsFactionLose.Gobelin && map.statsFactionLose.Gobelin.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(map.statsFactionWin).length > 0 ? 
-                                            map.statsFactionLose.Gobelin ?
-                                            `${map.statsFactionWin.Gobelin ? map.statsFactionWin.Gobelin : 0}
-                                            Défaite${map.statsFactionWin.Gobelin && map.statsFactionWin.Gobelin.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
-                                        : ""
-                                        }}
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap border-t border-purple-600">
-                                    <div class="text-sm text-left">
-                                        {{Object.keys(map.statsFactionLose).length > 0 && Object.keys(map.statsFactionWin).length > 0 ?
-                                            map.statsFactionLose.Angmar || map.statsFactionWin.Angmar ?
-                                            `(${map.statsFactionWin.Angmar ? map.statsFactionWin.Angmar : 0}
-                                            /
-                                            ${map.statsFactionLose.Angmar ? map.statsFactionLose.Angmar : 0}) 
-                                            ${(((map.statsFactionWin.Angmar ? map.statsFactionWin.Angmar : 0) / ((map.statsFactionLose.Angmar ? map.statsFactionLose.Angmar : 0) + (map.statsFactionWin.Angmar ? map.statsFactionWin.Angmar : 0))) * 100).toFixed(0)}%
-                                            `
-                                            : ""
-                                        : 
-                                        Object.keys(map.statsFactionLose).length > 0 ? 
-                                            map.statsFactionLose.Angmar ?
-                                            `${map.statsFactionLose.Angmar ? map.statsFactionLose.Angmar : 0}
-                                            Victoire${map.statsFactionLose.Angmar && map.statsFactionLose.Angmar.length > 1 ? 's' : ''}
-                                            `
-                                            :
-                                            ""
-                                        :
-                                        Object.keys(map.statsFactionWin).length > 0 ? 
-                                            map.statsFactionLose.Angmar ?
-                                            `${map.statsFactionWin.Angmar ? map.statsFactionWin.Angmar : 0}
-                                            Défaite${map.statsFactionWin.Angmar && map.statsFactionWin.Angmar.length > 1 ? 's' : ''}`
-                                            :
-                                            ""
-
+                                            : map.statsFactionLose[fac.name] ? `${map.statsFactionLose[fac.name]} Défaite${map.statsFactionLose[fac.name] == 1 ? '' : 's'}` : map.statsFactionWin[fac.name] ? `${map.statsFactionWin[fac.name]} Victoire${map.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
                                         : ""
                                         }}
                                     </div>
@@ -1021,6 +405,15 @@ export default {
         showMaps: true,
         player: [],
         info: false,
+        factionList: [
+            {name: "Homme", color: "blue"}, 
+            {name: "Elfe", color: "green"}, 
+            {name: "Nain", color: "yellow"}, 
+            {name: "Mordor", color: "red"},
+            {name: "Isengard", color: "gray"},
+            {name: "Gobelin", color: "orange"},
+            {name: "Angmar", color: "purple"}
+        ],
         block: [
             {
                 id: 0, 
@@ -1079,19 +472,19 @@ export default {
 
                     if(f.lose.length > 0){
                         f.lose.map(m => {
-                            let faction = this.factions.find(x => x._id === m.faction_win)
-                            typeof newObject.statsFactionWin[faction && faction.name] === 'undefined' ? 
-                            newObject.statsFactionWin[faction && faction.name] = 1 : 
-                            newObject.statsFactionWin[faction && faction.name]++;
+                            let faction = this.factions.find(x => x._id === m.faction_lose)
+                            typeof newObject.statsFactionLose[faction && faction.name] === 'undefined' ? 
+                            newObject.statsFactionLose[faction && faction.name] = 1 : 
+                            newObject.statsFactionLose[faction && faction.name]++;
                         })
                     }
 
                     if(f.win.length > 0){
                         f.win.map(m => {
-                            let faction = this.factions.find(x => x._id === m.faction_lose)
-                            typeof newObject.statsFactionLose[faction && faction.name] === 'undefined' ? 
-                            newObject.statsFactionLose[faction && faction.name] = 1 : 
-                            newObject.statsFactionLose[faction && faction.name]++;
+                            let faction = this.factions.find(x => x._id === m.faction_win)
+                            typeof newObject.statsFactionWin[faction && faction.name] === 'undefined' ? 
+                            newObject.statsFactionWin[faction && faction.name] = 1 : 
+                            newObject.statsFactionWin[faction && faction.name]++;
                         })
                     }
                     return Object.assign(f, newObject)
@@ -1112,17 +505,19 @@ export default {
 
                     if(f.matchs_lose.length > 0){
                         f.matchs_lose.map(m => {
-                            typeof newObject.statsFactionWin[this.factions.find(x => x._id === m.faction_win).name] === 'undefined' ? 
-                            newObject.statsFactionWin[this.factions.find(x => x._id === m.faction_win).name] = 1 : 
-                            newObject.statsFactionWin[this.factions.find(x => x._id === m.faction_win).name]++;
+                            let faction = this.factions.find(x => x._id === m.faction_win)
+                            typeof newObject.statsFactionLose[faction && faction.name] === 'undefined' ? 
+                            newObject.statsFactionLose[faction && faction.name] = 1 : 
+                            newObject.statsFactionLose[faction && faction.name]++;
                         })
                     }
 
                     if(f.matchs_win.length > 0){
                         f.matchs_win.map(m => {
-                            typeof newObject.statsFactionLose[this.factions.find(x => x._id === m.faction_lose).name] === 'undefined' ? 
-                            newObject.statsFactionLose[this.factions.find(x => x._id === m.faction_lose).name] = 1 : 
-                            newObject.statsFactionLose[this.factions.find(x => x._id === m.faction_lose).name]++;
+                            let faction = this.factions.find(x => x._id === m.faction_lose)
+                            typeof newObject.statsFactionWin[faction && faction.name] === 'undefined' ? 
+                            newObject.statsFactionWin[faction && faction.name] = 1 : 
+                            newObject.statsFactionWin[faction && faction.name]++;
                         })
                     }
                     return Object.assign(f, newObject)

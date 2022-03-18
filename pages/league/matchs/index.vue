@@ -24,41 +24,54 @@
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
                             <tr>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Date</div>
+                                    <div class="font-semibold text-left">Nom</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Map</div>
+                                    <div class="font-semibold text-left">Description</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Victoire</div>
+                                    <div class="font-semibold text-left">Image</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Défaite</div>
+                                    <div class="font-semibold text-left">Nombres de Matchs</div>
                                 </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Replay</div>
+                                <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
+                                    <div class="font-semibold text-left">{{fac.name}}</div>
                                 </th>
                             </tr>
                         </thead>
                         <tbody class="text-sm divide-y divide-orange-500">
-                            <tr v-for="match in matchs" v-bind:key="match._id">
+                            <tr v-for="map in sortedMaps" v-bind:key="map._id">
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left text-gray-100">{{match.date}}</div>
+                                    <div class="text-left text-gray-100">{{map.name}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-orange-500">{{match.map.name}}</div>
+                                    <div class="text-left text-gray-100">{{map.description}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{match.playerWin.name}}</div>
+                                    <!-- <div class="text-left font-medium text-green-500"> -->
+                                        <img class="object-contain" :src="map.minimap && `https://api.laterredumilieu.fr${map.minimap.url}`">
+                                    <!-- </div> -->
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{match.playerLose.name}}</div>
+                                    <div class="text-lg text-left">{{map.league_matches.length}}</div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <a target="_blank" :href="`https://api.laterredumilieu.fr${replay.url}`" v-for="(replay, index) in match.replay" v-bind:key="replay._id"  class="bg-orange-900 hover:bg-orange-800 text-white font-bold py-2 px-4 mx-2 rounded inline-flex items-center">
-                                        <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-                                        <span>Replay {{index +1}}</span>
-                                    </a>
+                                <td v-for="fac in factionList" v-bind:key="fac" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
+                                    <div class="text-lg text-left  text-gray-100 p-2 m-1" 
+                                    :style="`width: ${Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0 ? (((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`"
+                                    :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0) && (map.statsFactionLose[fac.name] || map.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
+                                    >
+                                        {{Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0 ?
+                                            map.statsFactionLose[fac.name] && map.statsFactionWin[fac.name] ?
+                                            `(${map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0}
+                                            /
+                                            ${map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0}) 
+                                            ${(((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)}%
+                                            `
+                                            : map.statsFactionLose[fac.name] ? `${map.statsFactionLose[fac.name]} Défaite${map.statsFactionLose[fac.name] == 1 ? '' : 's'}` : map.statsFactionWin[fac.name] ? `${map.statsFactionWin[fac.name]} Victoire${map.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
+                                        : ""
+                                        }}
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -85,13 +98,50 @@ export default {
     data() {
         return {
             loading: false,
-            matchs: []
+            matchs: [],
+            factionList: [
+                {name: "Homme", color: "blue"}, 
+                {name: "Elfe", color: "green"}, 
+                {name: "Nain", color: "yellow"}, 
+                {name: "Mordor", color: "red"},
+                {name: "Isengard", color: "gray"},
+                {name: "Gobelin", color: "orange"},
+                {name: "Angmar", color: "purple"}
+            ],
         }
     },
     async fetch() {
       this.loading = false;
       this.matchs =  await this.$strapi.find('league-matchs')
       this.loading = true;
+    },
+        computed:{
+            sortedMaps() {
+                if(this.maps){
+
+                    let newMaps = this.maps.map(f => {
+                        let newObject = {
+                            statsFactionWin: {},
+                            statsFactionLose: {}
+                        }
+
+                        if(f.league_matches.length > 0){
+                            f.league_matches.map(m => {
+                                typeof newObject.statsFactionWin[this.factions.find(x => x._id === m.faction_win).name] === 'undefined' ? 
+                                newObject.statsFactionWin[this.factions.find(x => x._id === m.faction_win).name] = 1 : 
+                                newObject.statsFactionWin[this.factions.find(x => x._id === m.faction_win).name]++;
+
+                                typeof newObject.statsFactionLose[this.factions.find(x => x._id === m.faction_lose).name] === 'undefined' ? 
+                                newObject.statsFactionLose[this.factions.find(x => x._id === m.faction_lose).name] = 1 : 
+                                newObject.statsFactionLose[this.factions.find(x => x._id === m.faction_lose).name]++;
+                            })
+                        }
+
+                        return Object.assign(f, newObject)
+                    })
+                    return newMaps;
+                }
+            },
     },
 }
 </script>

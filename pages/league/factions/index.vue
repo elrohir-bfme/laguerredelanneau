@@ -379,7 +379,16 @@ export default {
     data() {
         return {
             loading: false,
-            factions: []
+            factions: [],
+            factionList: [
+                {name: "Homme", color: "blue"}, 
+                {name: "Elfe", color: "green"}, 
+                {name: "Nain", color: "yellow"}, 
+                {name: "Mordor", color: "red"},
+                {name: "Isengard", color: "gray"},
+                {name: "Gobelin", color: "orange"},
+                {name: "Angmar", color: "purple"}
+            ],
         }
     },
     async fetch() {

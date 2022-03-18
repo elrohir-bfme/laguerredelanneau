@@ -31,10 +31,19 @@
                                     <div class="font-semibold text-left">Main</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Match joué</div>
+                                    <div class="font-semibold text-left">Ratio de victoires</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Ratio de victoires</div>
+                                    <div class="font-semibold text-left">Victoires</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Défaites</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Match joué</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
+                                    <div class="font-semibold text-left">{{fac.name}}</div>
                                 </th>
                             </tr>
                         </thead>
@@ -51,13 +60,41 @@
                                 </td>
                                 
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-green-500">{{player.main}}</div>
+                                    <div class="text-left font-medium text-gray-300">{{player.main}}</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap bg-gray-800">
+                                    <div class="text-lg text-left from-blue-500 to-blue-700 text-gray-100 p-2 m-1" 
+                                    :style="`width: ${player.win.length > 0 || player.lose.length > 0 ? ((player.win.length / (player.lose.length + player.win.length)) * 100).toFixed(2) : 0}%;`"
+                                    :class="player.win.length > 0 || player.lose.length > 0 ? 'bg-gradient-to-r' : ''"
+                                    >
+                                        {{player.win.length > 0 || player.lose.length > 0 ? `${((player.win.length / (player.lose.length + player.win.length)) * 100).toFixed(0)}%`  : "Aucun Match"}}
+                                    </div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{player.win.length + player.lose.length}}</div>
+                                    <div class="text-lg text-left text-green-400">{{player.win.length}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{player.win.length > 0 || player.lose.length > 0 ? `${((player.win.length / (player.lose.length + player.win.length)) * 100).toFixed(0)}%`  : "Aucun Match"}}</div>
+                                    <div class="text-lg text-left text-red-400">{{player.lose.length}}</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-lg text-left text-gray-400">{{player.win.length + player.lose.length}}</div>
+                                </td>
+                                <td v-for="fac in factionList" v-bind:key="fac" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
+                                    <div class="text-lg text-left  text-gray-100 p-2 m-1" 
+                                    :style="`width: ${Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0 ? (((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`"
+                                    :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0) && (player.statsFactionLose[fac.name] || player.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
+                                    >
+                                        {{Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0 ?
+                                            player.statsFactionLose[fac.name] && player.statsFactionWin[fac.name] ?
+                                            `(${player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0}
+                                            /
+                                            ${player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0}) 
+                                            ${(((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)}%
+                                            `
+                                            : player.statsFactionLose[fac.name] ? `${player.statsFactionLose[fac.name]} Défaite${player.statsFactionLose[fac.name] == 1 ? '' : 's'}` : player.statsFactionWin[fac.name] ? `${player.statsFactionWin[fac.name]} Victoire${player.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
+                                        : ""
+                                        }}
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -151,7 +188,16 @@ export default {
             maps: [],
             factions: [],
             player: [],
-            info: false
+            info: false,
+            factionList: [
+                {name: "Homme", color: "blue"}, 
+                {name: "Elfe", color: "green"}, 
+                {name: "Nain", color: "yellow"}, 
+                {name: "Mordor", color: "red"},
+                {name: "Isengard", color: "gray"},
+                {name: "Gobelin", color: "orange"},
+                {name: "Angmar", color: "purple"}
+            ],
         }
     },
     async fetch() {
@@ -173,7 +219,39 @@ export default {
     },
     computed:{
         sortedPlayers() {
-            return this.players.map(item=>item).sort((a,b)=> a.rang - b.rang)
+            if(this.players && this.factions){
+
+                let newPlayers= this.players.map(f => {
+                    let newObject = {
+                        statsFactionWin: {},
+                        statsFactionLose: {}
+                    }
+
+                    console.log(f, "FFFF")
+
+                    if(f.lose.length > 0){
+                        f.lose.map(m => {
+                            let faction = this.factions.find(x => x._id === m.faction_lose)
+                            typeof newObject.statsFactionLose[faction && faction.name] === 'undefined' ? 
+                            newObject.statsFactionLose[faction && faction.name] = 1 : 
+                            newObject.statsFactionLose[faction && faction.name]++;
+                        })
+                    }
+
+                    if(f.win.length > 0){
+                        f.win.map(m => {
+                            let faction = this.factions.find(x => x._id === m.faction_win)
+                            typeof newObject.statsFactionWin[faction && faction.name] === 'undefined' ? 
+                            newObject.statsFactionWin[faction && faction.name] = 1 : 
+                            newObject.statsFactionWin[faction && faction.name]++;
+                        })
+                    }
+                    return Object.assign(f, newObject)
+                })
+                return newPlayers.map(item=>item).sort((a,b)=> a.rang - b.rang)
+            }
+
+            
         },
         sortedMatchPlayer() {
             if(this.player){

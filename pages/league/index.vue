@@ -39,6 +39,27 @@
                                 <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">Ratio de victoires</div>
                                 </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Homme</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Elfe</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Nain</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Mordor</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Isengard</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Gobelin</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Angmar</div>
+                                </th>
                             </tr>
                         </thead>
                         <tbody class="text-sm divide-y divide-orange-500">
@@ -61,6 +82,216 @@
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-lg text-left">{{player.win.length > 0 || player.lose.length > 0 ? `${((player.win.length / (player.lose.length + player.win.length)) * 100).toFixed(0)}%`  : "Aucun Match"}}</div>
+                                </td>
+                                                                <td class="p-2 whitespace-nowrap border-t border-blue-600">
+                                    <div class="text-sm text-left">
+                                        {{Object.keys(player.statsFactionLose).length > 0 && Object.keys(player.statsFactionWin).length > 0 ?
+                                            player.statsFactionLose.Homme || player.statsFactionWin.Homme ?
+                                            `(${player.statsFactionWin.Homme ? player.statsFactionWin.Homme : 0}
+                                            /
+                                            ${player.statsFactionLose.Homme ? player.statsFactionLose.Homme : 0}) 
+                                            ${((player.statsFactionWin.Homme ? player.statsFactionWin.Homme : 0 / (player.statsFactionLose.Homme ? player.statsFactionLose.Homme : 0 + player.statsFactionWin.Homme ? player.statsFactionWin.Homme : 0)) * 100).toFixed(0)}%
+                                            `
+                                            : ""
+                                        : 
+                                        Object.keys(player.statsFactionLose).length > 0 ? 
+                                            player.statsFactionLose.Homme ?
+                                            `${player.statsFactionLose.Homme ? player.statsFactionLose.Homme : 0}
+                                            Victoire${player.statsFactionLose.Homme && player.statsFactionLose.Homme.length > 1 ? 's' : ''}
+                                            `
+                                            :
+                                            ""
+                                        :
+                                        Object.keys(player.statsFactionWin).length > 0 ? 
+                                            player.statsFactionLose.Homme ?
+                                            `${player.statsFactionWin.Homme ? player.statsFactionWin.Homme : 0}
+                                            Défaite${player.statsFactionWin.Homme && player.statsFactionWin.Homme.length > 1 ? 's' : ''}`
+                                            :
+                                            ""
+
+                                        : ""
+                                        }}
+                                    </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap border-t border-green-600">
+                                    <div class="text-sm text-left">
+                                        {{Object.keys(player.statsFactionLose).length > 0 && Object.keys(player.statsFactionWin).length > 0 ?
+                                            player.statsFactionLose.Elfe || player.statsFactionWin.Elfe ?
+                                            `(${player.statsFactionWin.Elfe ? player.statsFactionWin.Elfe : 0}
+                                            /
+                                            ${player.statsFactionLose.Elfe ? player.statsFactionLose.Elfe : 0}) 
+                                            ${((player.statsFactionWin.Elfe ? player.statsFactionWin.Elfe : 0 / (player.statsFactionLose.Elfe ? player.statsFactionLose.Elfe : 0 + player.statsFactionWin.Elfe ? player.statsFactionWin.Elfe : 0)) * 100).toFixed(0)}%
+                                            `
+                                            : ""
+                                        : 
+                                        Object.keys(player.statsFactionLose).length > 0 ? 
+                                            player.statsFactionLose.Elfe ?
+                                            `${player.statsFactionLose.Elfe ? player.statsFactionLose.Elfe : 0}
+                                            Victoire${player.statsFactionLose.Elfe && player.statsFactionLose.Elfe.length > 1 ? 's' : ''}
+                                            `
+                                            :
+                                            ""
+                                        :
+                                        Object.keys(player.statsFactionWin).length > 0 ? 
+                                            player.statsFactionLose.Elfe ?
+                                            `${player.statsFactionWin.Elfe ? player.statsFactionWin.Elfe : 0}
+                                            Défaite${player.statsFactionWin.Elfe && player.statsFactionWin.Elfe.length > 1 ? 's' : ''}`
+                                            :
+                                            ""
+
+                                        : ""
+                                        }}
+                                    </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap border-t border-yellow-300">
+                                    <div class="text-sm text-left">
+                                        {{Object.keys(player.statsFactionLose).length > 0 && Object.keys(player.statsFactionWin).length > 0 ?
+                                            player.statsFactionLose.Nain || player.statsFactionWin.Nain ?
+                                            `(${player.statsFactionWin.Nain ? player.statsFactionWin.Nain : 0}
+                                            /
+                                            ${player.statsFactionLose.Nain ? player.statsFactionLose.Nain : 0}) 
+                                            ${((player.statsFactionWin.Nain ? player.statsFactionWin.Nain : 0 / (player.statsFactionLose.Nain ? player.statsFactionLose.Nain : 0 + player.statsFactionWin.Nain ? player.statsFactionWin.Nain : 0)) * 100).toFixed(0)}%
+                                            `
+                                            : ""
+                                        : 
+                                        Object.keys(player.statsFactionLose).length > 0 ? 
+                                            player.statsFactionLose.Nain ?
+                                            `${player.statsFactionLose.Nain ? player.statsFactionLose.Nain : 0}
+                                            Victoire${player.statsFactionLose.Nain && player.statsFactionLose.Nain.length > 1 ? 's' : ''}
+                                            `
+                                            :
+                                            ""
+                                        :
+                                        Object.keys(player.statsFactionWin).length > 0 ? 
+                                            player.statsFactionLose.Nain ?
+                                            `${player.statsFactionWin.Nain ? player.statsFactionWin.Nain : 0}
+                                            Défaite${player.statsFactionWin.Nain && player.statsFactionWin.Nain.length > 1 ? 's' : ''}`
+                                            :
+                                            ""
+
+                                        : ""
+                                        }}
+                                    </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap border-t border-red-600">
+                                    <div class="text-sm text-left">
+                                        {{Object.keys(player.statsFactionLose).length > 0 && Object.keys(player.statsFactionWin).length > 0 ?
+                                            player.statsFactionLose.Mordor || player.statsFactionWin.Mordor ?
+                                            `(${player.statsFactionWin.Mordor ? player.statsFactionWin.Mordor : 0}
+                                            /
+                                            ${player.statsFactionLose.Mordor ? player.statsFactionLose.Mordor : 0}) 
+                                            ${((player.statsFactionWin.Mordor ? player.statsFactionWin.Mordor : 0 / (player.statsFactionLose.Mordor ? player.statsFactionLose.Mordor : 0 + player.statsFactionWin.Mordor ? player.statsFactionWin.Mordor : 0)) * 100).toFixed(0)}%
+                                            `
+                                            : ""
+                                        : 
+                                        Object.keys(player.statsFactionLose).length > 0 ? 
+                                            player.statsFactionLose.Mordor ?
+                                            `${player.statsFactionLose.Mordor ? player.statsFactionLose.Mordor : 0}
+                                            Victoire${player.statsFactionLose.Mordor && player.statsFactionLose.Mordor.length > 1 ? 's' : ''}
+                                            `
+                                            :
+                                            ""
+                                        :
+                                        Object.keys(player.statsFactionWin).length > 0 ? 
+                                            player.statsFactionLose.Mordor ?
+                                            `${player.statsFactionWin.Mordor ? player.statsFactionWin.Mordor : 0}
+                                            Défaite${player.statsFactionWin.Mordor && player.statsFactionWin.Mordor.length > 1 ? 's' : ''}`
+                                            :
+                                            ""
+
+                                        : ""
+                                        }}
+                                    </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap border-t border-white">
+                                    <div class="text-sm text-left">
+                                        {{Object.keys(player.statsFactionLose).length > 0 && Object.keys(player.statsFactionWin).length > 0 ?
+                                            player.statsFactionLose.Isengard || player.statsFactionWin.Isengard ?
+                                            `(${player.statsFactionWin.Isengard ? player.statsFactionWin.Isengard : 0}
+                                            /
+                                            ${player.statsFactionLose.Isengard ? player.statsFactionLose.Isengard : 0}) 
+                                            ${((player.statsFactionWin.Isengard ? player.statsFactionWin.Isengard : 0 / (player.statsFactionLose.Isengard ? player.statsFactionLose.Isengard : 0 + player.statsFactionWin.Isengard ? player.statsFactionWin.Isengard : 0)) * 100).toFixed(0)}%
+                                            `
+                                            : ""
+                                        : 
+                                        Object.keys(player.statsFactionLose).length > 0 ? 
+                                            player.statsFactionLose.Isengard ?
+                                            `${player.statsFactionLose.Isengard ? player.statsFactionLose.Isengard : 0}
+                                            Victoire${player.statsFactionLose.Isengard && player.statsFactionLose.Isengard.length > 1 ? 's' : ''}
+                                            `
+                                            :
+                                            ""
+                                        :
+                                        Object.keys(player.statsFactionWin).length > 0 ? 
+                                            player.statsFactionLose.Isengard ?
+                                            `${player.statsFactionWin.Isengard ? player.statsFactionWin.Isengard : 0}
+                                            Défaite${player.statsFactionWin.Isengard && player.statsFactionWin.Isengard.length > 1 ? 's' : ''}`
+                                            :
+                                            ""
+
+                                        : ""
+                                        }}
+                                    </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap border-t border-orange-600">
+                                    <div class="text-sm text-left">
+                                        {{Object.keys(player.statsFactionLose).length > 0 && Object.keys(player.statsFactionWin).length > 0 ?
+                                            player.statsFactionLose.Gobelin || player.statsFactionWin.Gobelin ?
+                                            `(${player.statsFactionWin.Gobelin ? player.statsFactionWin.Gobelin : 0}
+                                            /
+                                            ${player.statsFactionLose.Gobelin ? player.statsFactionLose.Gobelin : 0}) 
+                                            ${((player.statsFactionWin.Gobelin ? player.statsFactionWin.Gobelin : 0 / (player.statsFactionLose.Gobelin ? player.statsFactionLose.Gobelin : 0 + player.statsFactionWin.Gobelin ? player.statsFactionWin.Gobelin : 0)) * 100).toFixed(0)}%
+                                            `
+                                            : ""
+                                        : 
+                                        Object.keys(player.statsFactionLose).length > 0 ? 
+                                            player.statsFactionLose.Gobelin ?
+                                            `${player.statsFactionLose.Gobelin ? player.statsFactionLose.Gobelin : 0}
+                                            Victoire${player.statsFactionLose.Gobelin && player.statsFactionLose.Gobelin.length > 1 ? 's' : ''}
+                                            `
+                                            :
+                                            ""
+                                        :
+                                        Object.keys(player.statsFactionWin).length > 0 ? 
+                                            player.statsFactionLose.Gobelin ?
+                                            `${player.statsFactionWin.Gobelin ? player.statsFactionWin.Gobelin : 0}
+                                            Défaite${player.statsFactionWin.Gobelin && player.statsFactionWin.Gobelin.length > 1 ? 's' : ''}`
+                                            :
+                                            ""
+
+                                        : ""
+                                        }}
+                                    </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap border-t border-purple-600">
+                                    <div class="text-sm text-left">
+                                        {{Object.keys(player.statsFactionLose).length > 0 && Object.keys(player.statsFactionWin).length > 0 ?
+                                            player.statsFactionLose.Angmar || player.statsFactionWin.Angmar ?
+                                            `(${player.statsFactionWin.Angmar ? player.statsFactionWin.Angmar : 0}
+                                            /
+                                            ${player.statsFactionLose.Angmar ? player.statsFactionLose.Angmar : 0}) 
+                                            ${((player.statsFactionWin.Angmar ? player.statsFactionWin.Angmar : 0 / (player.statsFactionLose.Angmar ? player.statsFactionLose.Angmar : 0 + player.statsFactionWin.Angmar ? player.statsFactionWin.Angmar : 0)) * 100).toFixed(0)}%
+                                            `
+                                            : ""
+                                        : 
+                                        Object.keys(player.statsFactionLose).length > 0 ? 
+                                            player.statsFactionLose.Angmar ?
+                                            `${player.statsFactionLose.Angmar ? player.statsFactionLose.Angmar : 0}
+                                            Victoire${player.statsFactionLose.Angmar && player.statsFactionLose.Angmar.length > 1 ? 's' : ''}
+                                            `
+                                            :
+                                            ""
+                                        :
+                                        Object.keys(player.statsFactionWin).length > 0 ? 
+                                            player.statsFactionLose.Angmar ?
+                                            `${player.statsFactionWin.Angmar ? player.statsFactionWin.Angmar : 0}
+                                            Défaite${player.statsFactionWin.Angmar && player.statsFactionWin.Angmar.length > 1 ? 's' : ''}`
+                                            :
+                                            ""
+
+                                        : ""
+                                        }}
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -200,7 +431,7 @@
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-lg text-left">{{faction.matchs_win.length + faction.matchs_lose.length}}</div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border border-blue-600">
+                                <td class="p-2 whitespace-nowrap border-t border-blue-600">
                                     <div class="text-sm text-left">
                                         {{Object.keys(faction.statsFactionLose).length > 0 && Object.keys(faction.statsFactionWin).length > 0 ?
                                             faction.statsFactionLose.Homme || faction.statsFactionWin.Homme ?
@@ -230,7 +461,7 @@
                                         }}
                                     </div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border border-green-600">
+                                <td class="p-2 whitespace-nowrap border-t border-green-600">
                                     <div class="text-sm text-left">
                                         {{Object.keys(faction.statsFactionLose).length > 0 && Object.keys(faction.statsFactionWin).length > 0 ?
                                             faction.statsFactionLose.Elfe || faction.statsFactionWin.Elfe ?
@@ -260,7 +491,7 @@
                                         }}
                                     </div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border border-yellow-300">
+                                <td class="p-2 whitespace-nowrap border-t border-yellow-300">
                                     <div class="text-sm text-left">
                                         {{Object.keys(faction.statsFactionLose).length > 0 && Object.keys(faction.statsFactionWin).length > 0 ?
                                             faction.statsFactionLose.Nain || faction.statsFactionWin.Nain ?
@@ -290,7 +521,7 @@
                                         }}
                                     </div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border border-red-600">
+                                <td class="p-2 whitespace-nowrap border-t border-red-600">
                                     <div class="text-sm text-left">
                                         {{Object.keys(faction.statsFactionLose).length > 0 && Object.keys(faction.statsFactionWin).length > 0 ?
                                             faction.statsFactionLose.Mordor || faction.statsFactionWin.Mordor ?
@@ -320,7 +551,7 @@
                                         }}
                                     </div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border border-white">
+                                <td class="p-2 whitespace-nowrap border-t border-white">
                                     <div class="text-sm text-left">
                                         {{Object.keys(faction.statsFactionLose).length > 0 && Object.keys(faction.statsFactionWin).length > 0 ?
                                             faction.statsFactionLose.Isengard || faction.statsFactionWin.Isengard ?
@@ -350,7 +581,7 @@
                                         }}
                                     </div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border border-orange-600">
+                                <td class="p-2 whitespace-nowrap border-t border-orange-600">
                                     <div class="text-sm text-left">
                                         {{Object.keys(faction.statsFactionLose).length > 0 && Object.keys(faction.statsFactionWin).length > 0 ?
                                             faction.statsFactionLose.Gobelin || faction.statsFactionWin.Gobelin ?
@@ -380,7 +611,7 @@
                                         }}
                                     </div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border border-purple-600">
+                                <td class="p-2 whitespace-nowrap border-t border-purple-600">
                                     <div class="text-sm text-left">
                                         {{Object.keys(faction.statsFactionLose).length > 0 && Object.keys(faction.statsFactionWin).length > 0 ?
                                             faction.statsFactionLose.Angmar || faction.statsFactionWin.Angmar ?
@@ -481,7 +712,7 @@
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-lg text-left">{{map.league_matches.length}}</div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border border-blue-600">
+                                <td class="p-2 whitespace-nowrap border-t border-blue-600">
                                     <div class="text-sm text-left">
                                         {{Object.keys(map.statsFactionLose).length > 0 && Object.keys(map.statsFactionWin).length > 0 ?
                                             map.statsFactionLose.Homme || map.statsFactionWin.Homme ?
@@ -511,7 +742,7 @@
                                         }}
                                     </div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border border-green-600">
+                                <td class="p-2 whitespace-nowrap border-t border-green-600">
                                     <div class="text-sm text-left">
                                         {{Object.keys(map.statsFactionLose).length > 0 && Object.keys(map.statsFactionWin).length > 0 ?
                                             map.statsFactionLose.Elfe || map.statsFactionWin.Elfe ?
@@ -541,7 +772,7 @@
                                         }}
                                     </div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border border-yellow-300">
+                                <td class="p-2 whitespace-nowrap border-t border-yellow-300">
                                     <div class="text-sm text-left">
                                         {{Object.keys(map.statsFactionLose).length > 0 && Object.keys(map.statsFactionWin).length > 0 ?
                                             map.statsFactionLose.Nain || map.statsFactionWin.Nain ?
@@ -571,7 +802,7 @@
                                         }}
                                     </div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border border-red-600">
+                                <td class="p-2 whitespace-nowrap border-t border-red-600">
                                     <div class="text-sm text-left">
                                         {{Object.keys(map.statsFactionLose).length > 0 && Object.keys(map.statsFactionWin).length > 0 ?
                                             map.statsFactionLose.Mordor || map.statsFactionWin.Mordor ?
@@ -601,7 +832,7 @@
                                         }}
                                     </div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border border-white">
+                                <td class="p-2 whitespace-nowrap border-t border-white">
                                     <div class="text-sm text-left">
                                         {{Object.keys(map.statsFactionLose).length > 0 && Object.keys(map.statsFactionWin).length > 0 ?
                                             map.statsFactionLose.Isengard || map.statsFactionWin.Isengard ?
@@ -631,7 +862,7 @@
                                         }}
                                     </div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border border-orange-600">
+                                <td class="p-2 whitespace-nowrap border-t border-orange-600">
                                     <div class="text-sm text-left">
                                         {{Object.keys(map.statsFactionLose).length > 0 && Object.keys(map.statsFactionWin).length > 0 ?
                                             map.statsFactionLose.Gobelin || map.statsFactionWin.Gobelin ?
@@ -661,7 +892,7 @@
                                         }}
                                     </div>
                                 </td>
-                                <td class="p-2 whitespace-nowrap border border-purple-600">
+                                <td class="p-2 whitespace-nowrap border-t border-purple-600">
                                     <div class="text-sm text-left">
                                         {{Object.keys(map.statsFactionLose).length > 0 && Object.keys(map.statsFactionWin).length > 0 ?
                                             map.statsFactionLose.Angmar || map.statsFactionWin.Angmar ?
@@ -836,7 +1067,39 @@ export default {
     },
     computed:{
         sortedPlayers() {
-            return this.players.map(item=>item).sort((a,b)=> a.rang - b.rang)
+            if(this.players && this.factions){
+
+                let newPlayers= this.players.map(f => {
+                    let newObject = {
+                        statsFactionWin: {},
+                        statsFactionLose: {}
+                    }
+
+                    console.log(f, "FFFF")
+
+                    if(f.lose.length > 0){
+                        f.lose.map(m => {
+                            let faction = this.factions.find(x => x._id === m.faction_win)
+                            typeof newObject.statsFactionWin[faction && faction.name] === 'undefined' ? 
+                            newObject.statsFactionWin[faction && faction.name] = 1 : 
+                            newObject.statsFactionWin[faction && faction.name]++;
+                        })
+                    }
+
+                    if(f.win.length > 0){
+                        f.win.map(m => {
+                            let faction = this.factions.find(x => x._id === m.faction_lose)
+                            typeof newObject.statsFactionLose[faction && faction.name] === 'undefined' ? 
+                            newObject.statsFactionLose[faction && faction.name] = 1 : 
+                            newObject.statsFactionLose[faction && faction.name]++;
+                        })
+                    }
+                    return Object.assign(f, newObject)
+                })
+                return newPlayers.map(item=>item).sort((a,b)=> a.rang - b.rang)
+            }
+
+            
         },
         sortedFactions() {
             if(this.factions){

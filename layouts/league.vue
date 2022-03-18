@@ -3,8 +3,12 @@
     <header class="text-white">
       <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-2xl justify-center bg-gray border-orange-500 border-2 border-opacity-75 hover:border-orange-600">
-           <nuxt-link to="/"><img alt="La Guerre de l'Eriador" title="La Guerre de l'Eriador" class="w-16 m-4" src="~assets/gde/logo.png"></nuxt-link>
-          <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/league">La League de JLS</nuxt-link>
+           <nuxt-link to="/"><img alt="League ROTWK" title="League ROTWK" class="w-16 m-4" src="~assets/league/logo.png"></nuxt-link>
+          <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/league">League</nuxt-link>
+          <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/league/matchs">Matchs</nuxt-link>
+          <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/league/players">Players</nuxt-link>
+          <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/league/factions">Factions</nuxt-link>
+          <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/league/maps">Maps</nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/league/regles">Règles</nuxt-link>
           <a rel="noopener noreferrer" style="font-family: 'Albertus'" class="p-4 text-gray-600 hover:text-white hover:bg-gray-900" target="_blank" href="http://bit.ly/LaTerreduMilieu">
             <svg class="h-10 w-10 animate-pulse" width="71" height="55" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">

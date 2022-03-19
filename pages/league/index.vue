@@ -13,7 +13,7 @@
         <div class="w-full  mx-auto bg-gray-900 shadow-lg rounded-sm border border-orange-600">
             <header class="px-5 py-4 border-b border-orange-500 flex">
                 <div class="flex-grow">
-                    <h2 class="font-semibold text-white">Joueurs</h2>
+                    <h2 class="font-semibold text-white">{{ $t('league.players') }}</h2>
                 </div>
                 <div class="flex-none">
                     <button @click="hide('player')" class="text-red-100 ring-4 ring-red-800 bg-red-700 px-4 py-2 rounded-2xl">{{showPlayers ? "Cacher" : "Afficher"}}</button>
@@ -21,32 +21,32 @@
             </header>
             <div class="p-3" v-if="showPlayers">
                 <div class="overflow-x-auto">
-                    <table class="table-auto w-full">
+                    <table class="table-auto w-full border-2 border-gray-800 rounded-xl">
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
                             <tr>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Rang</div>
+                                    <div class="font-semibold text-left">{{ $t('league.rang') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Joueur</div>
+                                    <div class="font-semibold text-left">{{ $t('league.players') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Main</div>
+                                    <div class="font-semibold text-left">{{ $t('league.main') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Ratio de victoires</div>
+                                    <div class="font-semibold text-left">{{ $t('league.winRatio') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Victoires</div>
+                                    <div class="font-semibold text-left">{{ $t('league.win') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Défaites</div>
+                                    <div class="font-semibold text-left">{{ $t('league.lose') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Match joué</div>
+                                    <div class="font-semibold text-left">{{ $t('league.games') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
-                                    <div class="font-semibold text-left">{{fac.name}}</div>
+                                    <div class="font-semibold text-left">{{$t(fac.name)}}</div>
                                 </th>
                             </tr>
                         </thead>
@@ -82,7 +82,7 @@
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-lg text-left text-gray-400">{{player.win.length + player.lose.length}}</div>
                                 </td>
-                                <td v-for="fac in factionList" v-bind:key="fac" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
+                                <td v-for="fac in factionList" v-bind:key="fac.name" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
                                     <div class="text-lg text-left  text-gray-100 p-2 m-1" 
                                     :style="`width: ${Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0 ? (((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`"
                                     :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0) && (player.statsFactionLose[fac.name] || player.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
@@ -94,7 +94,7 @@
                                             ${player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0}) 
                                             ${(((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)}%
                                             `
-                                            : player.statsFactionLose[fac.name] ? `${player.statsFactionLose[fac.name]} Défaite${player.statsFactionLose[fac.name] == 1 ? '' : 's'}` : player.statsFactionWin[fac.name] ? `${player.statsFactionWin[fac.name]} Victoire${player.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
+                                            : player.statsFactionLose[fac.name] ? `${player.statsFactionLose[fac.name]} ${$t('league.lose')}${player.statsFactionLose[fac.name] == 1 ? '' : 's'}` : player.statsFactionWin[fac.name] ? `${player.statsFactionWin[fac.name]} ${$t('league.win')}${player.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
                                         : ""
                                         }}
                                     </div>
@@ -116,23 +116,23 @@
 
             <div class="p-3" v-if="showMatchs">
                 <div class="overflow-x-auto">
-                    <table class="table-auto w-full">
+                    <table class="table-auto w-full border-2 border-gray-800 rounded-xl">
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
                             <tr>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Date</div>
+                                    <div class="font-semibold text-left">{{ $t('league.date') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Map</div>
+                                    <div class="font-semibold text-left">{{ $t('league.map') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Victoire</div>
+                                    <div class="font-semibold text-left">{{ $t('league.win') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Défaite</div>
+                                    <div class="font-semibold text-left">{{ $t('league.lose') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Replay</div>
+                                    <div class="font-semibold text-left">{{ $t('league.replay') }}</div>
                                 </th>
                             </tr>
                         </thead>
@@ -153,7 +153,7 @@
                                 <td class="p-2 whitespace-nowrap">
                                     <a target="_blank" :href="`https://api.laterredumilieu.fr${replay.url}`" v-for="(replay, index) in match.replay" v-bind:key="replay._id"  class="bg-orange-900 hover:bg-orange-800 text-white font-bold py-2 px-4 mx-2 rounded inline-flex items-center">
                                         <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-                                        <span>Replay {{index +1}}</span>
+                                        <span>{{ $t('league.replay') }} {{index +1}}</span>
                                     </a>
                                 </td>
                             </tr>
@@ -174,26 +174,26 @@
 
             <div class="p-3" v-if="showFactions">
                 <div class="overflow-x-auto">
-                    <table class="table-auto w-full">
+                    <table class="table-auto w-full border-2 border-gray-800 rounded-xl">
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
                             <tr>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Faction</div>
+                                    <div class="font-semibold text-left">{{ $t('league.faction') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Victoire</div>
+                                    <div class="font-semibold text-left">{{ $t('league.win') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Défaite</div>
+                                    <div class="font-semibold text-left">{{ $t('league.lose') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Ratio de victoires</div>
+                                    <div class="font-semibold text-left">{{ $t('league.winRatio') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Nombre de Matchs</div>
+                                    <div class="font-semibold text-left">{{ $t('league.nbMatchs') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
-                                    <div class="font-semibold text-left">{{fac.name}}</div>
+                                    <div class="font-semibold text-left">{{$t(fac.name)}}</div>
                                 </th>
                             </tr>
                         </thead>
@@ -219,7 +219,7 @@
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-lg text-left">{{faction.matchs_win.length + faction.matchs_lose.length}}</div>
                                 </td>
-                                <td v-for="fac in factionList" v-bind:key="fac" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
+                                <td v-for="fac in factionList" v-bind:key="fac.name" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
                                     <div class="text-lg text-left  text-gray-100 p-2 m-1" 
                                     :style="`width: ${Object.keys(faction.statsFactionLose).length > 0 || Object.keys(faction.statsFactionWin).length > 0 ? (((faction.statsFactionWin[fac.name] ? faction.statsFactionWin[fac.name] : 0) / ((faction.statsFactionLose[fac.name] ? faction.statsFactionLose[fac.name] : 0) + (faction.statsFactionWin[fac.name] ? faction.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`"
                                     :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(faction.statsFactionLose).length > 0 || Object.keys(faction.statsFactionWin).length > 0) && (faction.statsFactionLose[fac.name] || faction.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
@@ -231,7 +231,7 @@
                                             ${faction.statsFactionLose[fac.name] ? faction.statsFactionLose[fac.name] : 0}) 
                                             ${(((faction.statsFactionWin[fac.name] ? faction.statsFactionWin[fac.name] : 0) / ((faction.statsFactionLose[fac.name] ? faction.statsFactionLose[fac.name] : 0) + (faction.statsFactionWin[fac.name] ? faction.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)}%
                                             `
-                                            : faction.statsFactionLose[fac.name] ? `${faction.statsFactionLose[fac.name]} Défaite${faction.statsFactionLose[fac.name] == 1 ? '' : 's'}` : faction.statsFactionWin[fac.name] ? `${faction.statsFactionWin[fac.name]} Victoire${faction.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
+                                            : faction.statsFactionLose[fac.name] ? `${faction.statsFactionLose[fac.name]} ${$t('league.lose')}${faction.statsFactionLose[fac.name] == 1 ? '' : 's'}` : faction.statsFactionWin[fac.name] ? `${faction.statsFactionWin[fac.name]} ${$t('league.win')}${faction.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
                                         : ""
                                         }}
                                     </div>
@@ -244,7 +244,7 @@
 
             <header class="px-5 py-4 border-b border-orange-500 flex">
                 <div class="flex-grow">
-                    <h2 class="font-semibold text-white">Maps</h2>
+                    <h2 class="font-semibold text-white">{{ $t('league.maps') }}</h2>
                 </div>
                 <div class="flex-none">
                     <button @click="hide('map')" class="text-red-100 ring-4 ring-red-800 bg-red-700 px-4 py-2 rounded-2xl">{{showMaps ? "Cacher" : "Afficher"}}</button>
@@ -253,23 +253,23 @@
 
             <div class="p-3" v-if="showMaps">
                 <div class="overflow-x-auto">
-                    <table class="table-auto w-full">
+                    <table class="table-auto w-full border-2 border-gray-800 rounded-xl">
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
                             <tr>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Nom</div>
+                                    <div class="font-semibold text-left">{{ $t('league.name') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Description</div>
+                                    <div class="font-semibold text-left">{{ $t('league.description') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Image</div>
+                                    <div class="font-semibold text-left">{{ $t('league.img') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Nombres de Matchs</div>
+                                    <div class="font-semibold text-left">{{ $t('league.nbMatchs') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
-                                    <div class="font-semibold text-left">{{fac.name}}</div>
+                                    <div class="font-semibold text-left">{{$t(fac.name)}}</div>
                                 </th>
                             </tr>
                         </thead>
@@ -289,7 +289,7 @@
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-lg text-left">{{map.league_matches.length}}</div>
                                 </td>
-                                <td v-for="fac in factionList" v-bind:key="fac" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
+                                <td v-for="fac in factionList" v-bind:key="fac.name" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
                                     <div class="text-lg text-left  text-gray-100 p-2 m-1" 
                                     :style="`width: ${Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0 ? (((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`"
                                     :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0) && (map.statsFactionLose[fac.name] || map.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
@@ -301,7 +301,7 @@
                                             ${map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0}) 
                                             ${(((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)}%
                                             `
-                                            : map.statsFactionLose[fac.name] ? `${map.statsFactionLose[fac.name]} Défaite${map.statsFactionLose[fac.name] == 1 ? '' : 's'}` : map.statsFactionWin[fac.name] ? `${map.statsFactionWin[fac.name]} Victoire${map.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
+                                            : map.statsFactionLose[fac.name] ? `${map.statsFactionLose[fac.name]} ${$t('league.lose')}${map.statsFactionLose[fac.name] == 1 ? '' : 's'}` : map.statsFactionWin[fac.name] ? `${map.statsFactionWin[fac.name]} ${$t('league.win')}${map.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
                                         : ""
                                         }}
                                     </div>
@@ -332,23 +332,23 @@
 
             <div class="p-3" v-if="showMatchs">
                 <div class="overflow-x-auto">
-                    <table class="table-auto w-full">
+                    <table class="table-auto w-full border-2 border-gray-800 rounded-xl">
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
                             <tr>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Date</div>
+                                    <div class="font-semibold text-left">{{ $t('league.date') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Map</div>
+                                    <div class="font-semibold text-left">{{ $t('league.map') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Victoire</div>
+                                    <div class="font-semibold text-left">{{ $t('league.win') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Défaite</div>
+                                    <div class="font-semibold text-left">{{ $t('league.lose') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Replay</div>
+                                    <div class="font-semibold text-left">{{ $t('league.replay') }}</div>
                                 </th>
                             </tr>
                         </thead>
@@ -369,7 +369,7 @@
                                 <td class="p-2 whitespace-nowrap">
                                     <a target="_blank" :href="`https://api.laterredumilieu.fr${replay.url}`" v-for="(replay, index) in match.replay" v-bind:key="replay._id"  class="bg-orange-900 hover:bg-orange-800 text-white font-bold py-2 px-4 mx-2 rounded inline-flex items-center">
                                         <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-                                        <span>Replay {{index +1}}</span>
+                                        <span>{{ $t('league.replay') }} {{index +1}}</span>
                                     </a>
                                 </td>
                             </tr>

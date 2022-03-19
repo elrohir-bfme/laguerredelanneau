@@ -46,7 +46,7 @@
                                     <div class="font-semibold text-left">{{ $t('league.games') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
-                                    <div class="font-semibold text-left">{{$t(fac.name)}}</div>
+                                    <div class="font-semibold text-left">{{$t(`league.${fac.name}`)}}</div>
                                 </th>
                             </tr>
                         </thead>
@@ -139,7 +139,10 @@
                         <tbody class="text-sm divide-y divide-orange-500">
                             <tr v-for="match in matchs" v-bind:key="match._id">
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left text-gray-100">{{match.date}}</div>
+                                    <div class="text-left text-gray-100">
+                                        {{ $moment(match.date).lang($i18n.locale).format('MMMM Do YYYY, h:mm:ss a') }}
+                                        ({{ $moment(match.date).lang($i18n.locale).fromNow()}})
+                                    </div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-left font-medium text-orange-500">{{match.map.name}}</div>
@@ -193,7 +196,7 @@
                                     <div class="font-semibold text-left">{{ $t('league.nbMatchs') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
-                                    <div class="font-semibold text-left">{{$t(fac.name)}}</div>
+                                    <div class="font-semibold text-left">{{$t(`league.${fac.name}`)}}</div>
                                 </th>
                             </tr>
                         </thead>
@@ -269,7 +272,7 @@
                                     <div class="font-semibold text-left">{{ $t('league.nbMatchs') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
-                                    <div class="font-semibold text-left">{{$t(fac.name)}}</div>
+                                    <div class="font-semibold text-left">{{$t(`league.${fac.name}`)}}</div>
                                 </th>
                             </tr>
                         </thead>
@@ -355,7 +358,10 @@
                         <tbody class="text-sm divide-y divide-orange-500">
                             <tr v-for="match in sortedMatchPlayer" v-bind:key="match._id">
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left text-gray-100">{{match.date}}</div>
+                                    <div class="text-left text-gray-100">
+                                        {{ $moment(match.date).lang($i18n.locale).format('MMMM Do YYYY, h:mm:ss a') }}
+                                        ({{ $moment(match.date).lang($i18n.locale).fromNow()}})
+                                    </div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-left font-medium text-green-500">{{match.mapUp && match.mapUp.name}}</div>

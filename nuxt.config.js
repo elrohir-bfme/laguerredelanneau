@@ -110,8 +110,13 @@ export default {
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
-      '@nuxtjs/tailwindcss'
+      '@nuxtjs/tailwindcss',
+      '@nuxtjs/moment',
     ],
+
+    moment: {
+      locales: ['fr']
+    },
 
     tailwindcss: {
       // jit: true,
@@ -346,7 +351,7 @@ robots: {
             matchs: "Games",
             factions: "Factions",
             win: "Win",
-            win: "Lose",
+            win: "Win",
             lose: "Lose",
             loses: "Lose",
             rang: "Rank",

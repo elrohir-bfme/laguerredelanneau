@@ -10136,7 +10136,7 @@ export default {
 
       this.factions = objArray.sort((a, b) => a.id - b.id)
 
-      this.result = this.map.result;
+      this.result = this.map.results;
 
       this.nbTerritoireArnor= 0;
       this.nbTerritoireRohan= 0;

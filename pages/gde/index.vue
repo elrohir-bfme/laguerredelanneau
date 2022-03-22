@@ -9601,7 +9601,7 @@
         </h2>
         <h3 v-if="faction.faction.dead"  :class="`text-${color(faction.id).color}-300`"
           class="mt-4 font-bold text-xl">
-            La Faction a été vaincu à Fornost le 13 Mars 2022
+            {{faction.faction.name == "gondor" ? "La Faction a été vaincu à Fornost le 13 Mars 2022" : "La Faction a été vaincu au Palais de Thorin le 21 Mars 2022"
         </h3>
         <h6 class="mt-2 text-xl font-bold underline">{{ faction.faction.chef }}</h6>
 

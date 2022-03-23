@@ -9601,7 +9601,7 @@
         </h2>
         <h3 v-if="faction.faction.dead"  :class="`text-${color(faction.id).color}-300`"
           class="mt-4 font-bold text-xl">
-            {{faction.faction.name == "gondor" ? "La Faction a été vaincu à Fornost le 13 Mars 2022" : "La Faction a été vaincu au Palais de Thorin le 21 Mars 2022"
+            {{faction.faction.name == "gondor" ? "La Faction a été vaincu à Fornost le 13 Mars 2022" : "La Faction a été vaincu au Palais de Thorin le 21 Mars 2022"}}
         </h3>
         <h6 class="mt-2 text-xl font-bold underline">{{ faction.faction.chef }}</h6>
 
@@ -10119,7 +10119,7 @@ export default {
       let objArray = []
       Object.keys(this.map.factions).forEach(key =>  {
         console.log(this.map.factions[key].id)
-        if(this.map.factions[key].id == 5 || this.map.factions[key].id == 6 || this.map.factions[key].id == 7 || this.map.factions[key].id == 8)
+        if(this.map.factions[key].id == 6 || this.map.factions[key].id == 7 || this.map.factions[key].id == 8 || this.map.factions[key].id == 9)
         {
           this.scoreMal += this.map.factions[key].total
           } else {
@@ -10303,7 +10303,7 @@ export default {
     let objArray = []
     Object.keys(factions).forEach(key =>  {
       console.log(factions[key].id)
-      if(factions[key].id == 5 || factions[key].id == 6 || factions[key].id == 7 || factions[key].id == 8)
+      if(factions[key].id == 6 || factions[key].id == 7 || factions[key].id == 8 || factions[key].id == 9)
       {
         this.scoreMal += factions[key].total
         } else {

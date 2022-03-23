@@ -18,7 +18,7 @@
 
         <div class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
             <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="player.name+'arrive'">    
-                <option v-for="region in orderedRegions" :value="region.code" v-bind:key="region.name">{{region.name}}</option>
+                <option :id="player.name+region.velocity" v-for="region in orderedRegions" :value="region.code" v-bind:key="region.name">{{region.name}} {{region.velocity ? "- Sort de Vélocité" : ""}}</option>
             </select>
             <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -96,15 +96,51 @@ export default {
                     .map(region => this.findRegion(region))
                     .filter(region => this.areAllied(this.player.faction, region.color))
 
-                regionsAdjacents = [... [this.findRegion(this.player.code)], ... adj, ... adj2];
+
+                // if()
+
+                console.log(this.player, "PLAYER")
+
+                if(this.player.fortress) {
+                    const adj3 = adj2
+                        .filter(region => this.areAllied(this.player.faction, region.color))
+                        .map(region => region.adjacents)
+                        .flat(Infinity)
+                        .map(region => this.findRegion(region))
+                        .filter(region => this.areAllied(this.player.faction, region.color))
+                        .map(region => ({ ...region, velocity: true}))
+
+                    console.log(adj3, "ADJ3")
+
+                    let array = [... [this.findRegion(this.player.code)], ... adj, ... adj2];
+
+
+                    function getDifference(array1, array2) {
+                    return array1.filter(object1 => {
+                        return !array2.some(object2 => {
+                        return object1.name === object2.name;
+                        });
+                    });
+                    }
+
+                    console.log(array, adj3)
+
+                    console.log(getDifference(adj3, array), "GET DIFFERENCE");
+                    regionsAdjacents = [... [this.findRegion(this.player.code)], ... adj, ... adj2, ... adj3];
+                } else {
+                    regionsAdjacents = [... [this.findRegion(this.player.code)], ... adj, ... adj2];
+                }
+
+                
             } else {
                 regionsAdjacents = [this.findRegion(this.player.code)]
             }
 
             return regionsAdjacents
                 .filter((region, i, a) => i === a.findIndex(f => f.code === region.code))
-                .map(region => ({name: region.name, code: region.code}))
-                .sort((a, b) => a.name.localeCompare(b.name));
+                .map(region => ({name: region.name, code: region.code, velocity: region.velocity ? true : false}))
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .sort((a, b) => Number(a.velocity) - Number(b.velocity));
         }
     }
 }

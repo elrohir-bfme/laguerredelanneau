@@ -87,7 +87,7 @@
                 Les Pouvoirs - Vous avez ({{factionsSelected(selectedFaction).money}} de ressources)
             </h3>
 
-            <div v-if="factionsSelected(selectedFaction).money >= 300 || (taintedLandInfo && velocityInfo && bannerInfo && healInfo)">
+            <div v-if="factionsSelected(selectedFaction).money >= 300 || (taintedLandInfo && bannerInfo && healInfo)">
 
 
                 <button @click="addPower" class="inline-flex text-xl items-center border-2 border-orange-400 h-10 px-40 text-orange-400 transition-colors duration-150 bg-gray-800 rounded-lg focus:outline-none  focus:shadow-outline hover:bg-gray-900 " id="btncreateFile" v-if="selectedFaction != null">
@@ -304,13 +304,14 @@ layout: "gde",
         ],
         nbPowers: [],
         taintedLandInfo: false,
-        velocityInfo: false,
+        // velocityInfo: false,
         bannerInfo: false,
         healInfo: false
     }
   },
   methods : {
     generateText() {
+        let power = "";
         let data = "";
         let faction = "";
         let playerArray = [];
@@ -332,13 +333,13 @@ layout: "gde",
                             possible = false
                         }
                         break;
-                    case "velocity":
-                        if(document.getElementById(element + "velocity") && document.getElementById(element + "velocity").value){
-                            action = document.getElementById(element + "velocity").value
-                        } else {
-                            possible = false
-                        }
-                        break;
+                    // case "velocity":
+                    //     if(document.getElementById(element + "velocity") && document.getElementById(element + "velocity").value){
+                    //         action = document.getElementById(element + "velocity").value
+                    //     } else {
+                    //         possible = false
+                    //     }
+                    //     break;
                     case "banner":
                         if(document.getElementById(element + "banner") && document.getElementById(element + "banner").value){
                             action = document.getElementById(element + "banner").value
@@ -356,7 +357,7 @@ layout: "gde",
                 }
 
                 if(possible){
-                    data += `${pouvoir} ${action}\n`
+                    power += `${pouvoir} ${action}\n`
                 }
             });
         }
@@ -375,6 +376,10 @@ layout: "gde",
         }
         //Get data
         playerArray.forEach(element => {
+            let velocity = document.getElementById(element.name + "true")
+            if(velocity){
+                power += `velocity ${element.name}\n`;
+            }
             data += `${element.name} ${element.code} ${document.getElementById(element.name + "arrive").value}\n`;
         });
 
@@ -386,7 +391,7 @@ layout: "gde",
             
         //convert the text to BLOB
         
-        const textToBLOB = new Blob([data], { type: "text/plain" });
+        const textToBLOB = new Blob([power + data], { type: "text/plain" });
         const sFileName = `orders${faction}.txt`;	   // The file to save the data.
 
         let newLink = document.createElement("a");
@@ -516,6 +521,7 @@ layout: "gde",
                     let _player = {
                         "name": obj2[player]['name'],
                         "region": obj.name,
+                        "fortress": obj.fortress,
                         "code": key,
                         "adjacents":obj.adjacents,
                         "factionNumber": obj2[player]['faction'],

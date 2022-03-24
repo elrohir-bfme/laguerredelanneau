@@ -9,51 +9,48 @@
     <div class="flex-grow">
 
     <div class="flex flex-col justify-center h-full">
-        <!-- Table -->
         <div class="w-full  mx-auto bg-gray-900 shadow-lg rounded-sm border border-orange-600">
             <header class="px-5 py-4 border-b border-orange-500 flex">
                 <div class="flex-grow">
-                    <h2 class="font-semibold text-white">Maps</h2>
+                    <h2 class="font-semibold text-white">{{ $t('league.maps') }}</h2>
                 </div>
             </header>
 
             <div class="p-3">
                 <div class="overflow-x-auto">
-                    <table class="table-auto w-full">
+                    <table class="table-auto w-full border-2 border-gray-800 rounded-xl">
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
                             <tr>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Nom</div>
+                                    <div class="font-semibold text-left">{{ $t('league.name') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Description</div>
+                                    <div class="font-semibold text-left">{{ $t('league.description') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Image</div>
+                                    <div class="font-semibold text-left">{{ $t('league.img') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Nombres de Matchs</div>
+                                    <div class="font-semibold text-left">{{ $t('league.nbMatchs') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
-                                    <div class="font-semibold text-left">{{fac.name}}</div>
+                                    <div class="font-semibold text-left">{{$t(`league.${fac.name}`)}}</div>
                                 </th>
                             </tr>
                         </thead>
                         <tbody class="text-sm divide-y divide-orange-500">
                             <tr v-for="map in sortedMaps" v-bind:key="map._id">
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left text-gray-100">{{map.name}}</div>
+                                    <div class="text-left text-gray-100">{{map.attributes.name}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left text-gray-100">{{map.description}}</div>
+                                    <div class="text-left text-gray-100">{{map.attributes.description}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <!-- <div class="text-left font-medium text-green-500"> -->
-                                        <img class="object-contain" :src="map.minimap && `https://api.laterredumilieu.fr${map.minimap.url}`">
-                                    <!-- </div> -->
+                                        <img class="object-contain" :src="map.attributes.minimap && `https://api.laterredumilieu.fr${map.attributes.minimap.data.attributes.url}`">
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{map.league_matches.length}}</div>
+                                    <div class="text-lg text-left">{{map.attributes.games.data.length}}</div>
                                 </td>
                                 <td v-for="fac in factionList" v-bind:key="fac.name" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
                                     <div class="text-lg text-left  text-gray-100 p-2 m-1" 
@@ -67,7 +64,7 @@
                                             ${map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0}) 
                                             ${(((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)}%
                                             `
-                                            : map.statsFactionLose[fac.name] ? `${map.statsFactionLose[fac.name]} Défaite${map.statsFactionLose[fac.name] == 1 ? '' : 's'}` : map.statsFactionWin[fac.name] ? `${map.statsFactionWin[fac.name]} Victoire${map.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
+                                            : map.statsFactionLose[fac.name] ? `${map.statsFactionLose[fac.name]} ${$t('league.lose')}${map.statsFactionLose[fac.name] == 1 ? '' : 's'}` : map.statsFactionWin[fac.name] ? `${map.statsFactionWin[fac.name]} ${$t('league.win')}${map.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
                                         : ""
                                         }}
                                     </div>
@@ -108,31 +105,36 @@ export default {
         ],
         }
     },
-    async fetch() {
-      this.loading = false;
-      this.factions =  await this.$strapi.find('league-factions')
-      this.maps =  await this.$strapi.find('league-maps')
-      this.loading = true;
+    async asyncData({ $strapi }) {
+        let maps = await $strapi.find('maps', { populate: '*'})
+        let games = await $strapi.find('games', { populate: '*'}) 
+
+        return { maps, games }
     },
     computed:{
         sortedMaps() {
             if(this.maps){
 
-                let newMaps = this.maps.map(f => {
+                
+
+
+                let newMaps = this.maps.data.map(f => {
                     let newObject = {
                         statsFactionWin: {},
                         statsFactionLose: {}
                     }
 
-                    if(f.league_matches.length > 0){
-                        f.league_matches.map(m => {
-                            typeof newObject.statsFactionWin[this.factions.find(x => x._id === m.faction_win).name] === 'undefined' ? 
-                            newObject.statsFactionWin[this.factions.find(x => x._id === m.faction_win).name] = 1 : 
-                            newObject.statsFactionWin[this.factions.find(x => x._id === m.faction_win).name]++;
 
-                            typeof newObject.statsFactionLose[this.factions.find(x => x._id === m.faction_lose).name] === 'undefined' ? 
-                            newObject.statsFactionLose[this.factions.find(x => x._id === m.faction_lose).name] = 1 : 
-                            newObject.statsFactionLose[this.factions.find(x => x._id === m.faction_lose).name]++;
+                    if(f.attributes.games.data.length > 0){
+                        f.attributes.games.data.map(m => {
+                            typeof newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name] === 'undefined' ? 
+                            newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name] = 1 : 
+                            newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name]++;
+
+
+                            typeof newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name] === 'undefined' ? 
+                            newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name] = 1 : 
+                            newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name]++;
                         })
                     }
 

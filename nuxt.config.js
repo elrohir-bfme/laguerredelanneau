@@ -112,6 +112,7 @@ export default {
     buildModules: [
       '@nuxtjs/tailwindcss',
       '@nuxtjs/moment',
+      '@nuxtjs/device'
     ],
 
     moment: {
@@ -138,11 +139,11 @@ export default {
 
   /* url: 'http://api.laterredumilieu.fr' */
   strapi: {
-    url: "https://api.laterredumilieu.fr/"
+    url: "https://api.laterredumilieu.fr/api"
   },
 
   env: {
-    strapiBaseUri: "https://api.laterredumilieu.fr"
+    strapiBaseUri: "https://api.laterredumilieu.fr/api"
   },
 
 sitemap: {
@@ -366,12 +367,12 @@ robots: {
             description: "Description",
             img: "Map",
             nbMatchs: "Game",
-            Homme: "Men",
-            Elfe: "Elves",
-            Nain: "Dwarves",
+            Men: "Men",
+            Elves: "Elves",
+            Dwarves: "Dwarves",
             Mordor: "Mordor",
             Isengard: "Isengard",
-            Gobelin: "Goblins",
+            Goblins: "Goblins",
             Angmar: "Angmar"
           }
         },
@@ -518,12 +519,12 @@ robots: {
             description: "Description",
             img: "Carte",
             nbMatchs: "Parties",
-            Homme: "Homme",
-            Elfe: "Elfe",
-            Nain: "Nain",
+            Men: "Homme",
+            Elves: "Elfe",
+            Dwarves: "Nain",
             Mordor: "Mordor",
             Isengard: "Isengard",
-            Gobelin: "Gobelin",
+            Goblins: "Gobelin",
             Angmar: "Angmar"
           }
         }

@@ -376,11 +376,14 @@ layout: "gde",
         }
         //Get data
         playerArray.forEach(element => {
-            let velocity = document.getElementById(element.name + "true")
-            if(velocity){
+            
+            let select = document.getElementById(element.name + "arrive");
+            let option = select.options[select.selectedIndex];
+            
+            if(option.text.includes("Sort de Vélocité")){
                 power += `velocity ${element.name}\n`;
             }
-            data += `${element.name} ${element.code} ${document.getElementById(element.name + "arrive").value}\n`;
+            data += `${element.name} ${element.code}  ${option.value}\n`;
         });
 
         

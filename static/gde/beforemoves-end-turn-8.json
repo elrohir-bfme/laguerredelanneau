@@ -1,0 +1,2658 @@
+{
+  "Bree": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127013/La%20Guerre%20de%20l%27Eriador/Bree_woawi7.jpg",
+    "map": 4,
+    "east": [
+      3,
+      4
+    ],
+    "name": "Bree",
+    "west": [
+      1,
+      2
+    ],
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/14U_9s9YvQ30sU0-X4PUz55hzTlJEpKkg?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "arthedain",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1644061769/La%20Guerre%20de%20l%27Eriador/bree_minimap_gx95hy.png",
+    "players": [
+      {
+        "img": "https://i.goopics.net/xw9x34.png",
+        "win": 0,
+        "lose": 0,
+        "name": "demonsdark",
+        "faction": 8,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Tulkas",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/eme7jw.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Leitdorf",
+        "faction": 7,
+        "handicap": 0
+      }
+    ],
+    "adjacents": [
+      "Galgals",
+      "Champs_Verts",
+      "Champs_Fornost",
+      "Amon_Sul"
+    ],
+    "description": "Le village de Brie se situait à l'intersection du Chemin Vert et de la Grande Route de l’Est, au centre de l'Eriador."
+  },
+  "time": {
+    "end": "2022-02-14 00:00:00",
+    "tour": 8,
+    "start": "2022-02-09 13:56:00"
+  },
+  "Angle": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639131229/La%20Guerre%20de%20l%27Eriador/angle_gdf237.jpg",
+    "map": 6,
+    "east": [
+      4,
+      5,
+      6
+    ],
+    "name": "The Angle",
+    "west": [
+      1,
+      2,
+      3
+    ],
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1bkes8-pSTR682vZgpHKqYYWac6LcWRul?usp=sharing",
+    "north": [],
+    "south": [],
+    "region": "cardolan",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/angle_minimap_khvo3p.png",
+    "players": [],
+    "adjacents": [
+      "Ost_in_Edhil",
+      "Fontgrise",
+      "Hollin",
+      "Trouee_Trolls"
+    ],
+    "description": "Bordant le pays de Dun et l’Eregion, l’angle a été le pays d’accueil du groupe de Hobbit Fortauds entre les année 1150 et 1356. Il est dit que l’Angle appartenait au pays de Dun autrefois. On ignore toutefois si l’Angle fut connu par un autre fait historique. Il est fort probable que des homme sauvage habite cette région, alors attention à qui y pénètre."
+  },
+  "Moria": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127011/La%20Guerre%20de%20l%27Eriador/Moria_ubr4af.png",
+    "map": 4,
+    "east": [
+      2,
+      3
+    ],
+    "name": "Moria",
+    "west": [
+      1,
+      4
+    ],
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1-KC65KNwGBq1BfK4XcRx7lA0xECp7OBx?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "brumeux",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/moria_minimap_wd23h3.png",
+    "players": [],
+    "adjacents": [
+      "Zagh_Kala",
+      "Eregion"
+    ],
+    "description": "Le nom de Moria fut donné à la cité naine de Khazad-dûm par les Elfes."
+  },
+  "Hollin": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639131229/La%20Guerre%20de%20l%27Eriador/hollin_ldqhox.jpg",
+    "map": 2,
+    "east": [
+      2
+    ],
+    "name": "Hollin",
+    "west": [
+      1
+    ],
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1yhdM4Mp6z8xskBp3DENT2EL6j-bRTcin?usp=sharing",
+    "north": [
+      1
+    ],
+    "south": [
+      2
+    ],
+    "region": "rhudaur",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/hollin_minimap_tjdkbk.png",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Inconnu",
+        "faction": 6,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/1r0usy.png",
+        "win": 0,
+        "lose": 1,
+        "name": "Aran_ancalima",
+        "faction": 6,
+        "handicap": 1
+      }
+    ],
+    "adjacents": [
+      "Vieille_Foret",
+      "Nain_Enidh",
+      "Collines_Vent",
+      "Trouee_Trolls",
+      "Angle",
+      "Fontgrise",
+      "Haut_Sud"
+    ],
+    "description": "Surnommé pays du houx en langue commune, il se situe au sein de l'Eregion qui connue la terrible campagne de Sauron contre les elfes du royaume de Celebrimbor"
+  },
+  "Lindon": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126751/La%20Guerre%20de%20l%27Eriador/Lindon_vbdowi.jpg",
+    "map": 2,
+    "east": [
+      1
+    ],
+    "name": "Plaines du Lindon",
+    "west": [
+      2
+    ],
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1DFVhUOTmBaiNaEhbIHv4iH-F9-zwMwf6?usp=sharing",
+    "north": [
+      1
+    ],
+    "south": [
+      2
+    ],
+    "region": "lindon",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304377/La%20Guerre%20de%20l%27Eriador/plaine_lindon_miniamp_txu0pe.png",
+    "players": [
+      {
+        "img": "https://i.goopics.net/xbdfj9.jpg",
+        "win": 2,
+        "lose": 1,
+        "name": "Diablo",
+        "faction": 9,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/qzwda2.jpg",
+        "win": 4,
+        "lose": 0,
+        "name": "Gréhelfe",
+        "faction": 9,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/dva68p.png",
+        "win": 3,
+        "lose": 0,
+        "name": "Loken",
+        "faction": 8,
+        "handicap": 0
+      }
+    ],
+    "adjacents": [
+      "Forlindon",
+      "Hall_Thorin",
+      "Ered_Luin",
+      "Triste_Plaine",
+      "Rivière_Lune",
+      "Collines_Tours",
+      "Havres_Gris"
+    ],
+    "foundation": true,
+    "structures": [],
+    "description": "Le Lindon était la seule région du Beleriand qui survécut au cataclysme de la fin du Premier Âge. Il formait à l'origine une partie de l'Ossiriand, mais au Deuxième Âge, il devint une région côtière, où s'établit un grand nombre des Elfes qui ne souhaitaient pas encore aller ou retourner à Valinor."
+  },
+  "Cairill": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639131229/La%20Guerre%20de%20l%27Eriador/cairil_dqrxli.jpg",
+    "map": 2,
+    "east": [],
+    "name": "Cairill",
+    "west": [],
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/13_lwSRh_dS7aS4H39Er05WvIi08sYFC_?usp=sharing",
+    "north": [
+      1
+    ],
+    "south": [
+      2
+    ],
+    "region": "rohan",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/cairil_minimap_nmriis.png",
+    "players": [],
+    "adjacents": [
+      "Enedwaith",
+      "Tharbad",
+      "Isendale",
+      "Pays_Dun"
+    ],
+    "description": "Région très boisé au Second Age, elle y vit de grandes destructions causées par les numénoréens qui s'y installèrent pour le bois puis par Sauron lors de sa guerre contre les elfes d'Eregion. Elle est depuis lors devenue une région herbeuse longeant le Gwathló marquant la frontière avec l'Eriador"
+  },
+  "Egenyar": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126754/La%20Guerre%20de%20l%27Eriador/Egenyar_d7me5q.jpg",
+    "map": 2,
+    "east": [
+      1
+    ],
+    "name": "Egenyar",
+    "west": [
+      2
+    ],
+    "color": "#33000003300000",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1LQKuCw1xL6aM9ca4BOGGQ9O5Tpeuf85O?usp=sharing",
+    "north": [
+      1
+    ],
+    "south": [
+      2
+    ],
+    "region": "lindon",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/egenyar_minimap_hf7vy5.png",
+    "players": [],
+    "adjacents": [
+      "Montagnes_Bleues",
+      "Harlindon",
+      "Siragalë",
+      "Dol_Tinereb"
+    ],
+    "description": "Région d'Arthedain du sud à l'est des Montagnes Bleus du sud, est relativement peu habité. Riche en fer, les nains profitent abondamment de ses gisements pour leur commerce."
+  },
+  "Eregion": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127009/La%20Guerre%20de%20l%27Eriador/Eregion_wlam43.jpg",
+    "map": 4,
+    "east": [
+      2,
+      3
+    ],
+    "name": "Eregion",
+    "west": [
+      1,
+      4
+    ],
+    "color": "#ff3636",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1CAZbeS3aKb_Kx4KdnMytXAULQf0WYsQn?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "eregion",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/eregion_minimap_kutzqq.png",
+    "players": [],
+    "adjacents": [
+      "Trouee_Trolls",
+      "Glad_Ereg",
+      "Zagh_Kala",
+      "Moria",
+      "Sirannon"
+    ],
+    "description": "Région de plaine ayant en son centre l'ancienne cité d'Ost en Dehil place forte de Célébrimbor, elle fut rasé au second age par Sauron c'est la que les anneaux de pouvoirs furent forgé hormis l'unique . la région est limitée au nord-ouest par la Bruinen et à l'est par les Monts Brumeux et au sud par le Glanduin ."
+  },
+  "Fornost": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127014/La%20Guerre%20de%20l%27Eriador/Fornost_l3l13p.jpg",
+    "map": 6,
+    "name": "Fornost",
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1_xXMsTZFigrj1i2ujm1yaiUJHCnps5KS?usp=sharing",
+    "region": "arthedain",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/fornost_minimap_yq8nko.png",
+    "players": [
+      {
+        "img": null,
+        "win": 1,
+        "lose": 1,
+        "name": "mat",
+        "faction": 8,
+        "handicap": 3
+      }
+    ],
+    "fortress": true,
+    "adjacents": [
+      "Champs_Fornost",
+      "Haut_Nord"
+    ],
+    "description": "Fornost était la cité la plus importante de l'Arnor. Elle fut construite en 3320 du Deuxième Âge par Elendil et les Númenóréens, lorsqu'ils fondèrent les Royaumes en Exil."
+  },
+  "Galgals": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127012/La%20Guerre%20de%20l%27Eriador/Galgals_bbhgop.jpg",
+    "map": 2,
+    "east": [
+      2
+    ],
+    "name": "Hauts Galgals",
+    "west": [
+      1
+    ],
+    "color": "#ff85ee",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1ufc-_a1zmNJJbgTFMUnsBf91jvrPtn4v?usp=sharing",
+    "north": [
+      1
+    ],
+    "south": [
+      2
+    ],
+    "region": "arthedain",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/galgalg_minimap_swszey.png",
+    "players": [],
+    "adjacents": [
+      "Vieille_Foret",
+      "Champs_Verts",
+      "Bree",
+      "Amon_Sul"
+    ],
+    "description": "Situés à l'est de la Vieille Forêt et au sud-ouest de Brie, les Coteaux des Tertres étaient parsemés de nombreux tumulus1) où gisaient les ancêtres des Edain, enterrés là avant que ceux-ci n'entrassent en Beleriand."
+  },
+  "Gwathlo": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126749/La%20Guerre%20de%20l%27Eriador/Gwathlo_f068ee.jpg",
+    "map": 4,
+    "east": [
+      2,
+      3
+    ],
+    "name": "Gwathlo",
+    "west": [
+      1,
+      4
+    ],
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1kDVWxHY60x-w0wWOB_6kKBnckHU2DvsK?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "cardolan",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/gwathlo_minimap_pp0cql.png",
+    "players": [],
+    "adjacents": [
+      "Minhiriath",
+      "Metraith",
+      "Tharbad"
+    ],
+    "description": "Gwathló était le nom que prenait la Mitheithel après son confluent avec le Glanduin."
+  },
+  "Tharbad": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641562357/La%20Guerre%20de%20l%27Eriador/tharbad_ycy2ge.png",
+    "map": 6,
+    "east": [
+      4,
+      5,
+      6
+    ],
+    "name": "Tharbad",
+    "west": [
+      1,
+      2,
+      3
+    ],
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/147ambmxlymKIC-SJuRHjmhkUoo6G6oav?usp=sharing",
+    "north": [
+      1,
+      2,
+      3
+    ],
+    "south": [
+      4,
+      5,
+      6
+    ],
+    "region": "cardolan",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641562196/La%20Guerre%20de%20l%27Eriador/tharbad_minimap_keqldm.png",
+    "players": [
+      {
+        "img": "https://i.goopics.net/7vtbpe.png",
+        "win": 2,
+        "lose": 1,
+        "name": "Gimli",
+        "faction": 7,
+        "handicap": 0
+      }
+    ],
+    "adjacents": [
+      "Pays_Dun",
+      "Cairill",
+      "Gwathlo",
+      "Metraith",
+      "Fontgrise"
+    ],
+    "description": "L'emplacement de Tharbad était, au Deuxième Âge, occupé par les marécages du Nîn-in-Eilph et représentait le point le plus septentrional atteint par les Númenóréens sur le Gwathló. "
+  },
+  "results": {
+    "mal": {
+      "wins": 27,
+      "losses": 11
+    },
+    "bien": {
+      "wins": 11,
+      "losses": 27
+    }
+  },
+  "riviere": {
+    "img": "https://laguerredelanneau.vercel.app/Territories_img/riviere.jpg",
+    "name": "passage infranchissable",
+    "color": "#3300000",
+    "description": ""
+  },
+  "Alliance": [
+    [
+      "elfe",
+      "gondor",
+      "nain",
+      "rohan",
+      "arnor"
+    ],
+    [
+      "angmar",
+      "isengard",
+      "gobelin",
+      "mordor"
+    ]
+  ],
+  "Amon_Sul": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1644061762/La%20Guerre%20de%20l%27Eriador/amonsul_oirhzq.jpg",
+    "map": 4,
+    "east": [
+      3,
+      4
+    ],
+    "name": "Amon Sul",
+    "west": [
+      1,
+      2
+    ],
+    "color": "#ff3636",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/15nHqPccSJtCJjkW36UJGAiTXy1rI_4ni?usp=sharing",
+    "north": [
+      2,
+      3
+    ],
+    "south": [
+      1,
+      4
+    ],
+    "region": "arthedain",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1644061772/La%20Guerre%20de%20l%27Eriador/amon_sul_minimap_mvwv2p.png",
+    "players": [
+      {
+        "img": "https://i.goopics.net/47nqpb.jpg",
+        "win": 1,
+        "lose": 1,
+        "name": "Aragornanus",
+        "faction": 8,
+        "handicap": 0
+      }
+    ],
+    "adjacents": [
+      "Galgals",
+      "Bree",
+      "Haut_Nord",
+      "Nain_Enidh"
+    ],
+    "description": "Amon Sûl est le nom d'une colline d'Eriador. Au temps du royaume d'Arnor, la tour abritait un palantír. Les royaumes d'Arthedain, Cardolan et de Rhudaur, issus de l'ancien royaume d'Arnor, se battirent souvent pour la possession de cette tour qui était a la jnction des trois royaumes de plus elle abritait le seul palantír à leur portée. C’est en haut de cette tour que Elendil et Gil-Galad se rencontrèrent pour former la Dernière Alliance des Elfes et des Hommes au second age."
+  },
+  "Belegaer": {
+    "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Belegear.jpg",
+    "name": "Belegaer",
+    "description": "Belegaer, la Grande Mer, est le nom qui fut donné à l'océan qui séparait la côte est d'Aman de la Terre du Milieu. Au nord, elle était séparée des froides eaux d'Ekkaia par le détroit d'Helcaraxë, le Chaos des Glaces. Lors de la Guerre de la Colère, la Grande Mer gagna du terrain, engloutissant tout le Beleriand."
+  },
+  "Carn_Dum": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126753/La%20Guerre%20de%20l%27Eriador/Carn_Dum_prqw1o.jpg",
+    "map": 6,
+    "east": [],
+    "name": "Carn Dûm",
+    "west": [],
+    "color": "#c500ff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1NEA70z5NKijqrXxTYtNNhixaagh2ye44?usp=sharing",
+    "north": [],
+    "south": [],
+    "region": "angmar",
+    "citadel": "true",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/carn_dum_minimap_jeujzm.png",
+    "players": [],
+    "fortress": true,
+    "adjacents": [
+      "Forodwaith",
+      "Landes_Angmar",
+      "Ruines_Nord"
+    ],
+    "description": "Carn Dûm était le sommet montagneux à l'extrémité nord de l'Hithaeglir, qui portait au nord le nom de Montagnes d’Angmar."
+  },
+  "Forochel": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126755/La%20Guerre%20de%20l%27Eriador/Forochel_iw0v63.jpg",
+    "map": 4,
+    "east": [
+      2,
+      3
+    ],
+    "name": "Forochel",
+    "west": [
+      1,
+      4
+    ],
+    "color": "#c500ff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1g7udy99Tx09SfxbM1BaWIPbMOSNnBVYF?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "angmar",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/forochel_minimap_gqqzjm.png",
+    "players": [],
+    "adjacents": [
+      "Grand_Mur",
+      "Landes_Angmar",
+      "Baie_Forochel",
+      "Forodwaith"
+    ],
+    "description": "La vaste baie glaciale de Forochel s'étendait dans l'extrême nord de la Terre du Milieu. De forme circulaire, elle était limitée au sud par les côtes de l'Eriador, à l'est par le désert du Forodwaith et au nord et à l'ouest par le long cap Forochel."
+  },
+  "Haut_Sud": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639131229/La%20Guerre%20de%20l%27Eriador/cotaux_sud_kcb02f.jpg",
+    "map": 6,
+    "east": [
+      1,
+      2,
+      3
+    ],
+    "name": "Cotaux du Sud",
+    "west": [
+      4,
+      5,
+      6
+    ],
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1ZV3IjwP0bjz_aQzokTIy8AyaGlzT41gN?usp=sharing",
+    "north": [
+      1,
+      2,
+      3
+    ],
+    "south": [
+      4,
+      5,
+      6
+    ],
+    "region": "cardolan",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/cotaux_sud_minimap_txup9y.png",
+    "players": [
+      {
+        "img": "https://i.goopics.net/y6ma91.jpg",
+        "win": 0,
+        "lose": 1,
+        "name": "Sharku",
+        "faction": 7,
+        "handicap": 1
+      },
+      {
+        "img": "https://i.goopics.net/7gxl70.jpg",
+        "win": 0,
+        "lose": 1,
+        "name": "Thorin",
+        "faction": 7,
+        "handicap": 1
+      }
+    ],
+    "adjacents": [
+      "Fontgrise",
+      "Metraith",
+      "Dol_Tinereb",
+      "Siragalë",
+      "Vieille_Foret",
+      "Hollin"
+    ],
+    "description": "Les Coteaux du Sud étaient des collines positionnées au sud des Collines du Vent, sous la Grande Route de l’Est. Dans leur prolongement occidental, uniquement séparés par la portion sud du Chemin Vert, se trouvaient les Coteaux des Tertres."
+  },
+  "Isendale": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126749/La%20Guerre%20de%20l%27Eriador/Isendale_nljzhx.jpg",
+    "map": 4,
+    "east": [
+      3,
+      4
+    ],
+    "name": "Isendale",
+    "west": [
+      1,
+      2
+    ],
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1_2qK9omDWSb40--mdYpwSyxFsmukJMaD?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "rohan",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/isendale_minimap_afrroh.png",
+    "players": [],
+    "adjacents": [
+      "Isengard",
+      "Pays_Dun",
+      "Cairill",
+      "Enedwaith",
+      "Breche_Rohan"
+    ],
+    "description": "Branche du fleuve de l'Isen, prenant sa source en Isengard, s'étirant dans la Trouée du Rohan en traversant le Pays de Dun, marquant une frontière naturelle avec le Rohan."
+  },
+  "Isengard": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126750/La%20Guerre%20de%20l%27Eriador/Isengard_ewpimj.jpg",
+    "map": 6,
+    "name": "Isengard",
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1U_lfW661YE0zzKt_HplwiytFURLiezYh?usp=sharing",
+    "region": "rohan",
+    "citadel": "true",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/isengard_minimap_bkk6vj.png",
+    "players": [],
+    "fortress": true,
+    "adjacents": [
+      "Isendale",
+      "Pays_Dun",
+      "Breche_Rohan"
+    ],
+    "description": "Isengard, appelé Angrenost en sindarin, était constituée du Cercle d’Isengard, de puissantes fortifications qui ne possédaient qu'une porte, et d'Orthanc, la haute tour des Númenóréens, qui abritait un palantír."
+  },
+  "Metraith": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126751/La%20Guerre%20de%20l%27Eriador/Metraith_scfuey.jpg",
+    "map": 6,
+    "east": [
+      1,
+      2,
+      3
+    ],
+    "name": "Metraith",
+    "west": [
+      4,
+      5,
+      6
+    ],
+    "color": "#ff3636",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1UzY1PCjDwfdFwmsoTAdQCPfRFloqNeE1?usp=sharing",
+    "north": [
+      1,
+      2,
+      3
+    ],
+    "south": [
+      4,
+      5,
+      6
+    ],
+    "region": "cardolan",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/metraith_minimap_rorqb5.png",
+    "players": [
+      {
+        "img": null,
+        "win": 1,
+        "lose": 0,
+        "name": "Raugorn",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/vaqjvc.jpg",
+        "win": 2,
+        "lose": 0,
+        "name": "Biscuit|_KD",
+        "faction": 6,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 2,
+        "lose": 1,
+        "name": "SMZed",
+        "faction": 7,
+        "handicap": 0
+      }
+    ],
+    "adjacents": [
+      "Dol_Tinereb",
+      "Haut_Sud",
+      "Fontgrise",
+      "Tharbad",
+      "Gwathlo",
+      "Girithlin"
+    ],
+    "description": "Ville du Cardolan, fondée par Tarcil d'Arnor pour servir de résidence d'été, en 514 du Troisième Âge. Elle est encore un point de passage obligé du commerce du Chemin Vert."
+  },
+  "Pays_Dun": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126752/La%20Guerre%20de%20l%27Eriador/Pays_de_Dun_cka36f.jpg",
+    "map": 4,
+    "east": [
+      1,
+      2
+    ],
+    "name": "Pays de Dun",
+    "west": [
+      3,
+      4
+    ],
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1bH0KlqouyHu6DD1nBgrejJPUptmHKa2p?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "rohan",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304377/La%20Guerre%20de%20l%27Eriador/pays_dun_minimap_cdx73w.png",
+    "players": [],
+    "adjacents": [
+      "Tharbad",
+      "Ost_in_Edhil",
+      "Sirannon",
+      "Cairill",
+      "Isendale",
+      "Isengard"
+    ],
+    "foundation": true,
+    "structures": [
+      {
+        "name": "Ferme",
+        "build": true,
+        "level": 2
+      },
+      {
+        "name": "Ferme",
+        "build": true,
+        "level": 2
+      }
+    ],
+    "description": "La Dunlande était le pays des Dunlandais, un peuple d'Hommes venu des vallées des Montagnes Blanches."
+  },
+  "Sirannon": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639131230/La%20Guerre%20de%20l%27Eriador/sirannon_uys2xr.jpg",
+    "map": 2,
+    "east": [
+      2
+    ],
+    "name": "Sirannon",
+    "west": [
+      1
+    ],
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/16LqVSfg4X_XhKkts3KGhH7jTU_R_4W97?usp=sharing",
+    "north": [
+      1
+    ],
+    "south": [
+      2
+    ],
+    "region": "eregion",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304377/La%20Guerre%20de%20l%27Eriador/sirannon_minimap_vlgmhr.png",
+    "players": [],
+    "adjacents": [
+      "Ost_in_Edhil",
+      "Eregion",
+      "Pays_Dun"
+    ],
+    "description": "Le Sirannon coulait autrefois d'une source souterraine près du côté ouest de la Moria et longeait la route qui menait autrefois à Ost-in-Edhil. Il a été endigué à une date inconnue dans le dernier millénaire du troisième âge, fermant les portes de Durin aux terres voisines."
+  },
+  "factions": {
+    "elfe": {
+      "id": 4,
+      "win": 5,
+      "chef": "Lexa",
+      "name": "elfe",
+      "color": "#00e3ff",
+      "loose": 5,
+      "money": 3600,
+      "total": 5200,
+      "capital": "Havres Gris",
+      "tainted_count": 0
+    },
+    "nain": {
+      "id": 5,
+      "win": 2,
+      "chef": "Edvald",
+      "name": "nain",
+      "color": "#fffc00",
+      "loose": 4,
+      "money": 2100,
+      "total": 3300,
+      "capital": "Hall de Thorin",
+      "tainted_count": 0
+    },
+    "arnor": {
+      "id": 1,
+      "win": 4,
+      "chef": "Tar-Elendil",
+      "name": "arnor",
+      "color": "#ff85ee",
+      "loose": 10,
+      "money": 2150,
+      "total": 6200,
+      "capital": "Annuminas",
+      "tainted_count": 0
+    },
+    "rohan": {
+      "id": 3,
+      "win": 3,
+      "chef": "Aupif",
+      "name": "rohan",
+      "color": "#0bff00",
+      "loose": 8,
+      "money": 1350,
+      "total": 5050,
+      "capital": "Dol Tinereb",
+      "tainted_count": 0
+    },
+    "angmar": {
+      "id": 9,
+      "win": 8,
+      "chef": "Toinou",
+      "name": "angmar",
+      "color": "#c500ff",
+      "loose": 6,
+      "money": 4750,
+      "total": 8750,
+      "capital": "Carn Dum",
+      "tainted_count": 1
+    },
+    "gondor": {
+      "id": 2,
+      "win": 1,
+      "chef": "Chabacks",
+      "dead": true,
+      "name": "gondor",
+      "color": "#093aff",
+      "loose": 8,
+      "money": 800,
+      "total": 2800,
+      "capital": "Fornost",
+      "tainted_count": 0
+    },
+    "mordor": {
+      "id": 6,
+      "win": 7,
+      "chef": "Biscuit|_KD",
+      "name": "mordor",
+      "color": "#ff3636",
+      "loose": 1,
+      "money": 4275,
+      "total": 7275,
+      "capital": "Zagh Kala",
+      "tainted_count": 1
+    },
+    "gobelin": {
+      "id": 8,
+      "win": 12,
+      "chef": "R8sseauu",
+      "name": "gobelin",
+      "color": "#ff6f00",
+      "loose": 3,
+      "money": 8225,
+      "total": 11225,
+      "capital": "Gobelinville",
+      "tainted_count": 1
+    },
+    "isengard": {
+      "id": 7,
+      "win": 5,
+      "chef": "Gimli",
+      "name": "isengard",
+      "color": "#ffffff",
+      "loose": 2,
+      "money": 5525,
+      "total": 9325,
+      "capital": "Isengard",
+      "tainted_count": 1
+    }
+  },
+  "Annuminas": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127016/La%20Guerre%20de%20l%27Eriador/Annuminas_pqg5ou.jpg",
+    "map": 6,
+    "name": "Annuminas",
+    "color": "#ff85ee",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1tzqR2SeYC1GE0WfDK93VyzOLUNk1F3az?usp=sharing",
+    "region": "arthedain",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1642668076/La%20Guerre%20de%20l%27Eriador/annuminas_minimap_pplhsq.png",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 2,
+        "name": "Moltak",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": "https://cdn.discordapp.com/attachments/753506289627299940/936615186624831508/Fingolfin1.jpg",
+        "win": 0,
+        "lose": 2,
+        "name": "Fingolfin",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/4ysa19.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Froldoom",
+        "faction": 1,
+        "handicap": 3
+      },
+      {
+        "img": "https://i.goopics.net/5v43uf.jpg",
+        "win": 0,
+        "lose": 3,
+        "name": "Werbo45",
+        "faction": 1,
+        "handicap": 3
+      }
+    ],
+    "fortress": true,
+    "adjacents": [
+      "Champs_Verts",
+      "Evendim_Collines",
+      "Champs_Fornost"
+    ],
+    "description": "Les Collines du Crépuscule se trouvaient au nord de l'Eriador et bordaient le Lac du Crépuscule, formant un L partant du nord-ouest jusqu'au sud du lac."
+  },
+  "Arthedain": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126753/La%20Guerre%20de%20l%27Eriador/Arthedain_hyccyg.jpg",
+    "map": 4,
+    "east": [
+      2,
+      3
+    ],
+    "name": "Arthedain",
+    "west": [
+      1,
+      4
+    ],
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1dtD9XYCx5htFD9AWdus5J1p2Ex9QnvwW?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "angmar",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/arthedain_tedgze.png",
+    "players": [
+      {
+        "img": "https://i.goopics.net/gn4d92.png",
+        "win": 1,
+        "lose": 0,
+        "name": "Thieuthieu",
+        "faction": 8,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/drxdre.jpg",
+        "win": 3,
+        "lose": 0,
+        "name": "GconQ",
+        "faction": 6,
+        "handicap": 0
+      }
+    ],
+    "adjacents": [
+      "Ered_Luin",
+      "Triste_Plaine",
+      "Evendim_Collines",
+      "Grand_Mur",
+      "Baie_Forochel"
+    ],
+    "description": "L’Arthedain naquit de la division de l'Arnor, en l'an 861 du Troisième âge, suite aux dissensions entre les trois fils d'Eärendur. Le royaume était le plus puissant des trois, du fait de sa population importante et de la présence, sur son territoire, de toutes les Palantíri d'Arnor."
+  },
+  "Enedwaith": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126755/La%20Guerre%20de%20l%27Eriador/enedwaith_d89a7v.jpg",
+    "map": 6,
+    "east": [],
+    "name": "Enedwaith",
+    "west": [],
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1eEmzc0Gj45McG80qZSoQN-oXsjSFAHsf?usp=sharing",
+    "north": [
+      1,
+      2,
+      3
+    ],
+    "south": [
+      4,
+      5,
+      6
+    ],
+    "region": "rohan",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/enedwaith_minimap_ukmk5h.png",
+    "players": [],
+    "adjacents": [
+      "Breche_Rohan",
+      "Isendale",
+      "Cairill"
+    ],
+    "description": "L'Enedwaith était situé entre le Gwathló, le Glanduin, les Montagnes de Brume et l'Isen."
+  },
+  "Ered_Luin": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126754/La%20Guerre%20de%20l%27Eriador/Ered_Luin_w48jpu.jpg",
+    "map": 2,
+    "east": [
+      2
+    ],
+    "name": "Ered Luin",
+    "west": [
+      1
+    ],
+    "color": "#c500ff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1jvvZzN_sqfK-BrvYH_pM1nxT2SvJ6jmH?usp=sharing",
+    "north": [],
+    "south": [],
+    "region": "lindon",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/ered_luin_minimap_fpdfpn.png",
+    "outpost": true,
+    "players": [],
+    "adjacents": [
+      "Hall_Thorin",
+      "Forlindon",
+      "Lindon",
+      "Triste_Plaine",
+      "Arthedain"
+    ],
+    "structures": [
+      {
+        "name": "Ferme",
+        "level": 3
+      }
+    ],
+    "description": "Formées après la chute des Lampes des Valar, les Montagnes Bleues étaient une grande chaîne de montagnes qui séparait l'Eriador du Beleriand, puis, après la submersion de celui-ci, le Lindon de l'Eriador. Les cités naines de Nogrod et Belegost y étaient sises, plus précisément sous le Mont Dolmed, mais les Montagnes entières avaient dû être explorées par les Nains : en effet, le roi d'Arthedain Arvedui se réfugia, en 1974 3A, dans des galeries naines à l'extrêmité nord de la chaîne, tandis que les halles de Thorin, où celui-ci vécut jusqu'à l'Expédition d’Erebor, se trouvaient bien plus au sud."
+  },
+  "Fondcombe": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639131228/La%20Guerre%20de%20l%27Eriador/imladris_ir0fo7.jpg",
+    "map": 6,
+    "name": "Fondcombe",
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1-InsFIwSQQVfzvIyIIX14CiaMT6mO_-i?usp=sharing",
+    "region": "eregion",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/imladris_minimap_qi4jkt.png",
+    "nbmatch": 1,
+    "players": [],
+    "fortress": true,
+    "adjacents": [
+      "Gobelinville",
+      "Gue_Bruinen",
+      "Glad_Ereg"
+    ],
+    "description": "Fondcombe, aussi connue sous le nom d'Imladris, est une vallée des Monts Brumeux fondée par Elrond en l'an 1697 du Deuxième Âge qui en fut sa demeure, comme refuge et place forte face à Sauron en Eriador à la suite de la chute de l'Eregion.Elle est la dernière maison simple a l'est de la mer ."
+  },
+  "Fontgrise": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639131229/La%20Guerre%20de%20l%27Eriador/fontgrise_xx3xb5.jpg",
+    "map": 2,
+    "east": [
+      1
+    ],
+    "name": "Fontgrise",
+    "west": [
+      2
+    ],
+    "color": "#ff3636",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1Vq6TVycX8hkJd6QXP5czTLx2s77JShTp?usp=sharing",
+    "north": [
+      1
+    ],
+    "south": [
+      2
+    ],
+    "region": "cardolan",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/fontgrise_map_bcsyuy.png",
+    "outpost": true,
+    "players": [],
+    "adjacents": [
+      "Angle",
+      "Hollin",
+      "Haut_Sud",
+      "Metraith",
+      "Tharbad"
+    ],
+    "description": "Région sauvage avec un ancien chemin utilisé autrefois !"
+  },
+  "Forlindon": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126754/La%20Guerre%20de%20l%27Eriador/Forlindon_etsh6d.jpg",
+    "map": 4,
+    "east": [],
+    "name": "Forlindon",
+    "west": [],
+    "color": "#3300000",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1pf-2Se7IdMtMbe4mPWWrRSbyuVZfA-ie?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "lindon",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/forlindon_minimap_kyxevp.png",
+    "players": [],
+    "adjacents": [
+      "Hall_Thorin",
+      "Lindon",
+      "Ered_Luin"
+    ],
+    "description": "Le Forlindon était la partie du Lindon située au nord du Golfe du Loune, entre les Montagnes Bleues et la mer."
+  },
+  "Girithlin": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126749/La%20Guerre%20de%20l%27Eriador/Girithlin_jzqqnu.jpg",
+    "map": 4,
+    "east": [],
+    "name": "Girithlin",
+    "west": [],
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1WezSiZYBy00yJxVcMwAC_GFnIOAxXkuP?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "cardolan",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1646820269/La%20Guerre%20de%20l%27Eriador/minimap_girithlin_ynhrlj.png",
+    "outpost": true,
+    "players": [
+      {
+        "img": null,
+        "win": 2,
+        "lose": 0,
+        "name": "Kyagara",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 1,
+        "lose": 0,
+        "name": "Illünt",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 1,
+        "lose": 0,
+        "name": "Gammaction",
+        "faction": 7,
+        "handicap": 0
+      }
+    ],
+    "adjacents": [
+      "Dol_Tinereb",
+      "Metraith",
+      "Minhiriath"
+    ],
+    "structures": [
+      {
+        "name": "Comptoir commercial"
+      }
+    ],
+    "description": "Autrefois une petite citadelle du royaume de Cardolan dans le Minhiriath, elle fut une résidence royale, jouant le rôle de capitale à certaines époques. C'est une des rares petites villes encore debout lors du Troisième Age."
+  },
+  "Glad_Ereg": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127009/La%20Guerre%20de%20l%27Eriador/Glad_Ereg_swcmcp.jpg",
+    "map": 6,
+    "east": [
+      4,
+      5,
+      6
+    ],
+    "name": "Glad Ereg",
+    "west": [
+      1,
+      2,
+      3
+    ],
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/14LJP32K2ns4f5Lg0i4bNcuu8ODQDC6jU?usp=sharing",
+    "north": [],
+    "south": [],
+    "region": "eregion",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/glad_ereg_minimap_okyqus.png",
+    "players": [],
+    "adjacents": [
+      "Trouee_Trolls",
+      "Fondcombe",
+      "Zagh_Kala",
+      "Eregion"
+    ],
+    "description": "Situé dans l'Eregion entre le Rhudhaur au nord ouest et les Monts Brumeux à l'est, est une petite région boisée et montagneuse. Elle fut le témoin de la guerre entre les Elfes et Sauron au 2ème Age lorsque l'Eregion fut ravagée."
+  },
+  "Grand_Mur": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126752/La%20Guerre%20de%20l%27Eriador/mur_nord_walv9s.jpg",
+    "map": 4,
+    "east": [
+      2,
+      3
+    ],
+    "name": "Grand Mur du Nord",
+    "west": [
+      1,
+      4
+    ],
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1NSFW7IwMVasvLT38w3brKL69H-3m2bhC?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "angmar",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/mur_minimap_xk57lr.png",
+    "players": [],
+    "adjacents": [
+      "Haut_Nord",
+      "Arthedain",
+      "Forochel",
+      "Landes_Etten"
+    ],
+    "description": "Situé au nord des collines Haut du Nord elle forme une frontière naturelle entre l'Arthedain et les territoires gelées d'Angmar."
+  },
+  "Harlindon": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126749/La%20Guerre%20de%20l%27Eriador/Harlindon_dswg2y.jpg",
+    "map": 2,
+    "east": [
+      2
+    ],
+    "name": "Harlindon",
+    "west": [
+      1
+    ],
+    "color": "#33000003300000",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1oi3UWtbzPddGazFnoxWx8dbZeBubHe4Z?usp=sharing",
+    "north": [
+      1
+    ],
+    "south": [
+      2
+    ],
+    "region": "lindon",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/harlindon_minimap_cj4phi.png",
+    "players": [],
+    "adjacents": [
+      "Havres_Gris",
+      "Montagnes_Bleues",
+      "Egenyar"
+    ],
+    "description": "Le Harlindon était la partie du Lindon située au sud du Golfe du Lhûn dirigé par Cirdan, entre les Montagnes Bleues et la mer."
+  },
+  "Haut_Nord": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641144385/La%20Guerre%20de%20l%27Eriador/hauts_du_nord_ay6zce.png",
+    "map": 4,
+    "east": [
+      2,
+      3
+    ],
+    "name": "Les Hauts du Nord",
+    "west": [
+      1,
+      4
+    ],
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1-q7uc4LaPm_dKSSpz5-5musQ8VCOM8wd?usp=sharing",
+    "north": [],
+    "south": [],
+    "region": "arthedain",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/hauts_nord_minimap_hcz4kz.png",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 1,
+        "name": "Nico_-",
+        "faction": 9,
+        "handicap": 1
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 1,
+        "name": "lijert",
+        "faction": 9,
+        "handicap": 1
+      },
+      {
+        "img": "https://i.goopics.net/vum4f0.png",
+        "win": 2,
+        "lose": 0,
+        "name": "Utharlok",
+        "faction": 8,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 3,
+        "lose": 0,
+        "name": "Giax",
+        "faction": 6,
+        "handicap": 0
+      }
+    ],
+    "adjacents": [
+      "Champs_Fornost",
+      "Fornost",
+      "Grand_Mur",
+      "Evendim_Collines",
+      "Landes_Sauvages",
+      "Amon_Sul"
+    ],
+    "description": "Région vallonnée d'Arnor se trouvant au nord de Bree et d'Amon Sûl."
+  },
+  "Pays_Bouc": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127012/La%20Guerre%20de%20l%27Eriador/Pays_Bouc_fkltgh.jpg",
+    "map": 6,
+    "east": [],
+    "name": "Pays de Bouc",
+    "west": [],
+    "color": "#ff85ee",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1368_rUNb5Tm4kbcFxBJTtbaEkzh7phKA?usp=sharing",
+    "north": [
+      1,
+      2,
+      3
+    ],
+    "south": [
+      4,
+      5,
+      6
+    ],
+    "region": "arthedain",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304377/La%20Guerre%20de%20l%27Eriador/pays_bouc_minimap_cwqksy.png",
+    "players": [],
+    "adjacents": [
+      "Hobbitbourg",
+      "Siragalë",
+      "Pays_Touque",
+      "Champs_Verts",
+      "Vieille_Foret"
+    ],
+    "description": "Sept cent quarante ans après la fondation du Comté, Gorhendad Vieilbouc traversa le Brandivin, fonda Castel Brandy et s'y installa pour vivre avec sa famille, qui prit le nom de Brandibouc."
+  },
+  "Rhovanion": {
+    "img": "https://i.pinimg.com/originals/17/a0/2d/17a02d83d240e9dd5e8161a6d6acfe8b.jpg",
+    "name": "Rhovanion",
+    "description": "Le Rhovanion était une région de la Terre du Milieu, à l'est des Montagnes de Brume et au nord du Mordor. Peu de reliefs marquaient cette région : on peut citer l'Ered Mithrin, les Collines de Fer et la Montagne Solitaire au nord. L'élément le plus marquant du Rhovanion était en fait la vaste Grand’Peur qui en couvrait le centre."
+  },
+  "Siragalë": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127011/La%20Guerre%20de%20l%27Eriador/Siragale_b1xeuz.jpg",
+    "map": 4,
+    "east": [
+      1,
+      2
+    ],
+    "name": "Siragalë",
+    "west": [
+      3,
+      4
+    ],
+    "color": "#ff3636",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1vTfDzrP9twS-mwWVPySon4bVYNcTQcBm?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "lindon",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304377/La%20Guerre%20de%20l%27Eriador/siragale_minimap_qqf1dn.png",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Skyzomyke",
+        "faction": 8,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Alpha",
+        "faction": 8,
+        "handicap": 0,
+        "extrahandicap": 10
+      },
+      {
+        "img": "https://i.goopics.net/l4a55s.jpg",
+        "win": 1,
+        "lose": 0,
+        "name": "Concombre_Masqué",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/o8xpnl.jpg",
+        "win": 2,
+        "lose": 0,
+        "name": "Biscuit|_LB",
+        "faction": 6,
+        "handicap": 0,
+        "extrahandicap": 5
+      }
+    ],
+    "adjacents": [
+      "Egenyar",
+      "Montagnes_Bleues",
+      "Collines_Tours",
+      "Dol_Tinereb",
+      "Pays_Touque",
+      "Pays_Bouc",
+      "Vieille_Foret",
+      "Haut_Sud"
+    ],
+    "description": "Ancienne province elfique du royaume d'Arnor. Il s'étend du Baranduin à l'Aerossîr et au Harered Luin. La Comté est taillée dans la partie nord-est . Elle perd sa population elfique tout au long du Troisième âge, laissant place en 1601 T.A. à la colonisation des Hobbits et à la fondation de la Comté"
+  },
+  "Zagh_Kala": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127009/La%20Guerre%20de%20l%27Eriador/Zagh_Kala_ko9pta.jpg",
+    "map": 6,
+    "name": "Zagh Kala",
+    "color": "#ff3636",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1KUQdXw0lFv4E4A2Z1mGi4QQwQxv0VNlb?usp=sharing",
+    "region": "brumeux",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1642668077/La%20Guerre%20de%20l%27Eriador/zahkala_minimap_muldj8.png",
+    "outpost": true,
+    "players": [],
+    "fortress": true,
+    "adjacents": [
+      "Eregion",
+      "Glad_Ereg",
+      "Moria"
+    ],
+    "description": "Situé dans les Monts Brumeux sur l'un des passages accessibles aux voyageurs, il devait être un avant-poste nain durant l'ère de Khazad-dûm avant de tomber progressivement en ruine lors de sa chute et de l'abandon des Monts Brumeux par les nains lors du Troisième Age."
+  },
+  "Forodwaith": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126749/La%20Guerre%20de%20l%27Eriador/Forodwaith_erdiwq.jpg",
+    "map": 4,
+    "east": [
+      2,
+      3
+    ],
+    "name": "Forodwaith",
+    "west": [
+      1,
+      4
+    ],
+    "color": "#c500ff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1QQ94__9psbRHwj3hZFDO3_RQIGHBsi20?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "angmar",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/forodwaith_minimap_f6jmsn.png",
+    "players": [],
+    "adjacents": [
+      "Baie_Forochel",
+      "Forochel",
+      "Carn_Dum"
+    ],
+    "description": "Grand désert glacé, le Forodwaith se situe au Septentrion. Il commence au-dessus des Hauts du Nord et se poursuit au-dessus de l'Angmar."
+  },
+  "Minhiriath": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126750/La%20Guerre%20de%20l%27Eriador/Minhiriath_xnj6na.jpg",
+    "map": 4,
+    "east": [
+      2,
+      3
+    ],
+    "name": "Minhiriath",
+    "west": [
+      1,
+      4
+    ],
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1aJAzHsethlZnqjVmb4C0fF0Ohg6_btOP?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "cardolan",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/miniriath_minimap_rba3ft.png",
+    "outpost": true,
+    "players": [],
+    "adjacents": [
+      "Girithlin",
+      "Gwathlo"
+    ],
+    "structures": [
+      {
+        "name": "Comptoir commercial"
+      }
+    ],
+    "description": "Le Minhiriath était le nom que donnèrent les Númenóréens à la région située entre le Baranduin et la Gwathló."
+  },
+  "Mont_Gräm": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639131230/La%20Guerre%20de%20l%27Eriador/gram_pob25g.jpg",
+    "map": 2,
+    "east": [
+      2
+    ],
+    "name": "Mont Gräm",
+    "west": [
+      1
+    ],
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1xOO_0U83b3v013npGZbNc_LTTZSMUd_I?usp=sharing",
+    "north": [
+      1
+    ],
+    "south": [
+      2
+    ],
+    "region": "angmar",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/mont_gram_minimap_ezffig.png",
+    "players": [],
+    "adjacents": [
+      "Ruines_Nord",
+      "Cameth_Brin"
+    ],
+    "description": "Branche de montagnes situé dans le nord-ouest des Mont Brumeux, fermant l'accès d'Angmar. En l'an 2747 du Troisième Âge les Gobelins du Mont Gram firent un raid sur la Comté menés par leur chef Golfimbul qui se solda par leur défaite à la Bataille des Champs Verts."
+  },
+  "Nain_Enidh": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127011/La%20Guerre%20de%20l%27Eriador/Nain_Enidh_cmttcu.jpg",
+    "map": 6,
+    "east": [
+      1,
+      2,
+      3
+    ],
+    "name": "Nain Enidh",
+    "west": [
+      4,
+      5,
+      6
+    ],
+    "color": "#ff3636",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1v4txFO6p_2qFrReNtsszK_BQ4sHdNMrk?usp=sharing",
+    "north": [],
+    "south": [],
+    "region": "rhudaur",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/nain_enidth_minimap_fq76io.png",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "LurtZ-GloR",
+        "faction": 7,
+        "handicap": 0
+      }
+    ],
+    "adjacents": [
+      "Landes_Sauvages",
+      "Amon_Sul",
+      "Collines_Vent",
+      "Hollin"
+    ],
+    "description": "Les Collines des Tours, ou Emyn Beraid en sindarin, sont trois collines vertes situées dans l'ouest de l'Eriador, entre les Coteaux du Lointain et les Havres Gris. Elles doivent leur nom aux Tours Blanches qui les surmontaient, construites à la fin du Deuxième âge par Gil-Galad pour le roi d'Arnor : Elendil."
+  },
+  "Cameth_Brin": {
+    "img": "https://cdn.discordapp.com/attachments/877150946562551808/878991075799347230/cameth_brin-alex.jpg",
+    "map": 4,
+    "east": [
+      2,
+      3
+    ],
+    "name": "Cameth Brin",
+    "west": [
+      1,
+      4
+    ],
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1RErswjrO55O7-A8Gw52W_PccLw4rmjjW?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "rhudaur",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/cameth_brin_minimap_zfljsv.png",
+    "players": [],
+    "adjacents": [
+      "Trouee_Trolls",
+      "Collines_Vent",
+      "Landes_Etten",
+      "Mont_Gräm",
+      "Gue_Bruinen",
+      "Gobelinville"
+    ],
+    "description": "Prise en l’année 162 du TA par les Dùnedain, cette citadelle du Rhudaur sert de siège au roi Broggha des Hommes des Collines. La citadelle comprend une tour et un système de tunnels construits par les Dùnedain d'Arnor dans le flanc de la Colline Tordue. C'est une forteresse quasi imprenable. C'est l'une des rares agglomérations permanentes des Hommes des Collines semi-nomades ; et elle sert de base pour les attaques contre l'Arthedain et le Cardolan."
+  },
+  "Dol_Tinereb": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126754/La%20Guerre%20de%20l%27Eriador/Dol_Tinereb_f9e3ki.jpg",
+    "map": 4,
+    "name": "Dol Tinereb",
+    "color": "#0bff00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1nQusWYj4zNgJfZXuJ3KFLNM2R7aYkbO1?usp=sharing",
+    "region": "cardolan",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/dol_tinered_minimap_wmkjwm.png",
+    "outpost": true,
+    "players": [
+      {
+        "img": "https://i.goopics.net/qg9wae.jpg",
+        "win": 2,
+        "lose": 1,
+        "name": "Styg",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/tqh7l1.jpg",
+        "win": 0,
+        "lose": 1,
+        "name": "Khal",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/3o31tj.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Woopsie",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/lmthyi.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Thrór",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/kfdvxk.png",
+        "win": 0,
+        "lose": 0,
+        "name": "ChacalusMordiKus",
+        "faction": 3,
+        "handicap": 3
+      },
+      {
+        "img": null,
+        "win": 1,
+        "lose": 2,
+        "name": "Nitneuq76",
+        "faction": 3,
+        "handicap": 3
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 2,
+        "name": "Maxence",
+        "faction": 3,
+        "handicap": 3
+      },
+      {
+        "img": "https://i.goopics.net/wwo5sa.png",
+        "win": 0,
+        "lose": 2,
+        "name": "Jaque",
+        "faction": 3,
+        "handicap": 3,
+        "extrahandicap": 5
+      }
+    ],
+    "fortress": true,
+    "adjacents": [
+      "Haut_Sud",
+      "Metraith",
+      "Girithlin",
+      "Egenyar",
+      "Siragalë"
+    ],
+    "description": "Appelé aussi la Colline de la Tour Solitaire, se situant au nord est du Minhiriath en Cardolan, elle gardait les frontières entre les deux anciens royaumes de Cardolan et d'Arthedain et fut épargné par les armées du roi-sorcier avant de tomber en ruine avec la disparition du royaume."
+  },
+  "Gue_Bruinen": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127010/La%20Guerre%20de%20l%27Eriador/Gue_Bruinen_yzesql.jpg",
+    "map": 4,
+    "east": [],
+    "name": "Gue Bruinen",
+    "west": [],
+    "color": "#c500ff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1trzXLd0M3du-giZeDnQ_2efLcnJgNcs-?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "eregion",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/gue_bruinen_minimap_kueugl.png",
+    "players": [],
+    "adjacents": [
+      "Cameth_Brin",
+      "Gobelinville",
+      "Fondcombe"
+    ],
+    "description": "La Bruinen prenait sa source dans les Montagnes de Brume, au nord de Fondcombe."
+  },
+  "Hall_Thorin": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126749/La%20Guerre%20de%20l%27Eriador/Hall_Thorin_smefwt.jpg",
+    "map": 6,
+    "name": "Hall de Thorin",
+    "color": "#c500ff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1j20SPgl5z3s6bWuxrEv-qBovP6d8BOI5?usp=sharing",
+    "region": "lindon",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304377/La%20Guerre%20de%20l%27Eriador/palais_thorin_minimap_abbuzy.png",
+    "players": [
+      {
+        "img": "https://i.goopics.net/xr6o82.jpg",
+        "win": 1,
+        "lose": 1,
+        "name": "oxibou",
+        "faction": 9,
+        "handicap": 3
+      }
+    ],
+    "fortress": true,
+    "adjacents": [
+      "Forlindon",
+      "Lindon",
+      "Ered_Luin"
+    ],
+    "description": "Le palais a été fondé par le père de Thorin, Thráin II, en 2802, après que celui-ci et son peuple quitté le Pays de Dun."
+  },
+  "Havres_Gris": {
+    "img": "https://laguerredelanneau.vercel.app/Territories_img/Havres_Gris.jpg",
+    "map": 6,
+    "name": "Les Havres Gris",
+    "color": "#ff3636",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1BSjEQHETO2Ga9rxrCBX8MvA6gdbV0KkP?usp=sharing",
+    "region": "lindon",
+    "citadel": "true",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641562196/La%20Guerre%20de%20l%27Eriador/havres_gris_minimap_whcxqu.png",
+    "players": [
+      {
+        "img": null,
+        "win": 2,
+        "lose": 1,
+        "name": "Oknar",
+        "faction": 9,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 2,
+        "lose": 1,
+        "name": "Ragzus",
+        "faction": 9,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/e5w4eq.jpg",
+        "win": 1,
+        "lose": 0,
+        "name": "Orgash",
+        "faction": 6,
+        "handicap": 0
+      }
+    ],
+    "fortress": true,
+    "adjacents": [
+      "Collines_Tours",
+      "Lindon",
+      "Harlindon",
+      "Montagnes_Bleues"
+    ],
+    "description": "Les Havres Gris ont été fondés par Círdan en l'an 1 du Deuxième Âge. Ils étaient situés sur l'estuaire de la Lune, en Lindon, à l'ouest du Comté. Nommés Mithlond en sindarin, les Havres Gris étaient le lieu où se rendaient les Elfes qui voulaient faire voile vers l'Ouest, en Aman."
+  },
+  "Hobbitbourg": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127012/La%20Guerre%20de%20l%27Eriador/Hobbitbourg_ortukv.jpg",
+    "map": 4,
+    "east": [
+      1,
+      2
+    ],
+    "name": "Hobbitbourg",
+    "west": [
+      3,
+      4
+    ],
+    "color": "#3300000",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1q20zBIN5yyNHhYgeFnq16a3DAFKAGFa-?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "arthedain",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/hobbitbourg_minimap_wpzmnz.png",
+    "players": [],
+    "adjacents": [
+      "Pays_Touque",
+      "Pays_Bouc",
+      "Collines_Tours",
+      "Evendim_Collines",
+      "Champs_Verts"
+    ],
+    "description": "La Comté est la patrie des Hobbits. Fondée par les Hobbits Blancon et Marchon, elle est située dans le nord-ouest de la Terre du Milieu, dans la région de l'Eriador et au sein du l’ancien Royaume d'Arnor. Durant le Troisième âge, elle est l'une des dernière zones fortement peuplées d'Eriador et reste défendu fortement par les derniers dúnedain d’Arnor."
+  },
+  "Pays_Touque": {
+    "img": "https://cdn.discordapp.com/attachments/877150946562551808/885968817505833060/EMRAH_ELMASLI.jpg",
+    "map": 4,
+    "east": [],
+    "name": "Pays de Touque",
+    "west": [],
+    "color": "#3300000",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1AQH8GzW9m0MUVLlsPqXuZguJrPw_hqCn?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "arthedain",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304377/La%20Guerre%20de%20l%27Eriador/pays_touc_minimap_bosdbc.png",
+    "players": [],
+    "adjacents": [
+      "Pays_Bouc",
+      "Siragalë",
+      "Collines_Tours",
+      "Hobbitbourg"
+    ],
+    "description": "La Comté est la patrie des Hobbits. Fondée par les Hobbits Blancon et Marchon, elle est située dans le nord-ouest de la Terre du Milieu, dans la région de l'Eriador et au sein du l’ancien Royaume d'Arnor. Durant le Troisième âge, elle est l'une des dernière zones fortement peuplées d'Eriador et reste défendu fortement par les derniers dúnedain d’Arnor."
+  },
+  "Ruines_Nord": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126753/La%20Guerre%20de%20l%27Eriador/Ruines_Nord_cc7ged.jpg",
+    "map": 4,
+    "east": [
+      3,
+      4
+    ],
+    "name": "Ruines du Nord",
+    "west": [
+      1,
+      2
+    ],
+    "color": "#ff3636",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1jjwIK6yE61CSICGJGQzXlhgA1MhB7kyz?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "angmar",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304377/La%20Guerre%20de%20l%27Eriador/ruines_nord_minimap_hgauxb.png",
+    "players": [],
+    "adjacents": [
+      "Landes_Angmar",
+      "Carn_Dum",
+      "Mont_Gräm"
+    ],
+    "description": "Situé dans le sud est de Carn Dum, elles sont le résultats de bien des luttes dans les terres gelées du Nord. Que ce soit entre les orques, les loups, les hommes sauvages, les numénoréens noirs, les trolls, et les interventions d'Arnor, résultant d'un paysage dévasté."
+  },
+  "Breche_Rohan": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126753/La%20Guerre%20de%20l%27Eriador/Breche_Rohan_u3jvns.jpg",
+    "map": 4,
+    "east": [
+      3,
+      4
+    ],
+    "name": "Trouée du Rohan",
+    "west": [
+      1,
+      2
+    ],
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1bOgJRwyxLdMRGZfJWqIKviXRl7PsuILs?usp=sharing",
+    "north": [],
+    "south": [],
+    "region": "rohan",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304377/La%20Guerre%20de%20l%27Eriador/trouee_rohan_minimap_bfrq6g.png",
+    "players": [],
+    "adjacents": [
+      "Enedwaith",
+      "Isendale",
+      "Isengard"
+    ],
+    "description": "Terre plate située entre 2 chaines de montagne : Les monts Brumeux et l’Isengard au Nord, Les Montagne Blanche au Sud. Boromir utilise la troué du Rohan pour se rendre à Foncombe. La communauté de l’anneau refuse de passer par là à cause de sa proximité avec l’Isengard, qui agit désormais pour le Mordor. Pour rentrer chez eux, les Hobbit passe par la troué du Rohan."
+  },
+  "Champs_Verts": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641162930/800px-Lopin_Du_Taureau_Mugissant_ii6cxp.jpg",
+    "map": 4,
+    "east": [],
+    "name": "Champs Verts",
+    "west": [],
+    "color": "#ff85ee",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/10oYEPBh7bSR9w32NbwwdmbA6Rruuqc6m?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "arthedain",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/champs_verts_minimap_il90cc.png",
+    "players": [
+      {
+        "img": "https://i.goopics.net/o84p90.jpg",
+        "win": 1,
+        "lose": 1,
+        "name": "Aupif",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/rnox15.jpg",
+        "win": 1,
+        "lose": 1,
+        "name": "Solor",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 1,
+        "name": "tothor",
+        "faction": 1,
+        "handicap": 0
+      }
+    ],
+    "adjacents": [
+      "Annuminas",
+      "Hobbitbourg",
+      "Evendim_Collines",
+      "Pays_Bouc",
+      "Champs_Fornost",
+      "Bree",
+      "Galgals"
+    ],
+    "description": "En 2747 3A, une horde d'Orques venue du Mont Gram et conduite par Golfimbul attaqua le Comté par le Quartier Nord. Bandobras Touc, dit Fiertaureau, arrêta cette invasion en chargeant les Orques et en décapitant leur chef d'un coup de gourdin, inventant le golf au passage (selon la légende). La Bataille des Champs-Verts fut la première bataille qui se déroula à l'intérieur du Comté et la dernière avant celle de Bataille de Belleau à la fin du Troisième Âge."
+  },
+  "Gobelinville": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127010/La%20Guerre%20de%20l%27Eriador/Gobelinville_tcliy2.png",
+    "map": 6,
+    "name": "Gobelinville",
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/10QBeXcUtQnQzIYrORyjDP1Eoe1kSuvZG?usp=sharing",
+    "region": "brumeux",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1642668076/La%20Guerre%20de%20l%27Eriador/gobelinville_minimap_a2s9ie.png",
+    "outpost": true,
+    "players": [],
+    "fortress": true,
+    "adjacents": [
+      "Cameth_Brin",
+      "Gue_Bruinen",
+      "Fondcombe"
+    ],
+    "description": "Appelé également Porte des Gobelins par les Elfes. Elle n'est pas à proprement parlé une ville, mais plutôt une des nombreuses petites forteresses dispersées dans les Mont Brumeux, d'où le Grand Gobelin dirige ses forces."
+  },
+  "Landes_Etten": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126758/La%20Guerre%20de%20l%27Eriador/Landes_Etten_ka38l7.png",
+    "map": 2,
+    "east": [
+      2
+    ],
+    "name": "Landes d'Etten",
+    "west": [
+      1
+    ],
+    "color": "#c500ff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1OPjirwAQDdZCcZdJnt7kLjLA1IPclBi8?usp=sharing",
+    "north": [
+      1
+    ],
+    "south": [
+      2
+    ],
+    "region": "rhudaur",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/lande_etten_minimap_epffxp.png",
+    "outpost": true,
+    "players": [
+      {
+        "img": "https://i.goopics.net/ywrb4g.jpg",
+        "win": 0,
+        "lose": 1,
+        "name": "Buulia",
+        "faction": 9,
+        "handicap": 2
+      }
+    ],
+    "adjacents": [
+      "Landes_Angmar",
+      "Grand_Mur",
+      "Landes_Sauvages",
+      "Collines_Vent",
+      "Cameth_Brin"
+    ],
+    "description": "Les Landes d'Etten étaient une région montagneuse sur les contreforts des Montagnes de Brume, située au nord de Fendeval, dans l'est de l'Eriador. La rivière Fongrège les traversait."
+  },
+  "Ost_in_Edhil": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127015/La%20Guerre%20de%20l%27Eriador/Ost_Edhil_od9j1n.jpg",
+    "map": 4,
+    "east": [
+      2,
+      3
+    ],
+    "name": "Ost-in-Edhil",
+    "west": [
+      1,
+      4
+    ],
+    "color": "#ffffff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/11pKs8TuVeIEc-7S0B-9wSEZ72VywKSYK?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "eregion",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/ost_in_minimap_va30of.png",
+    "players": [],
+    "adjacents": [
+      "Sirannon",
+      "Pays_Dun",
+      "Angle",
+      "Trouee_Trolls"
+    ],
+    "description": "Vers 750 2A, le royaume d'Eregion fut fondé par des Elfes en majorité Noldor, sous l'impulsion de Galadriel et Celeborn. Ils bâtirent une capitale, Ost-in-Edhil, qui accueillit les activités de la guilde des forgerons orfèvres, le Gwaith-i-Mírdain."
+  },
+  "Baie_Forochel": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126753/La%20Guerre%20de%20l%27Eriador/Baie_Forochel_elo6xt.jpg",
+    "map": 6,
+    "east": [],
+    "name": "La Baie de Forochel",
+    "west": [],
+    "color": "#c500ff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1N1s7ieP3Zy4PpG-P1JDqO1Yv53JWhfJN?usp=sharing",
+    "north": [
+      1,
+      2,
+      3
+    ],
+    "south": [
+      4,
+      5,
+      6
+    ],
+    "region": "angmar",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/baie_forochel_minimap_rycqgj.png",
+    "players": [],
+    "adjacents": [
+      "Arthedain",
+      "Forochel",
+      "Forodwaith"
+    ],
+    "description": "Vaste baie glaciale s'étendant à l'extrême nord, limitée au sud par les côtes de l'Eriador, à l'est par le désert du Forodwaith et au nord et à l'ouest par le long cap Forochel. Peuplé uniquement par le peuple Lossoth, c'est sur ces rives que périt Arvedui, le dernier roi d'Arthedain en 1975 du T.A."
+  },
+  "Collines_Vent": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127011/La%20Guerre%20de%20l%27Eriador/Collines_Vent_ekurkm.jpg",
+    "map": 2,
+    "east": [
+      1
+    ],
+    "name": "Collines du Vent",
+    "west": [
+      2
+    ],
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1M-dk19U28HUmJNYGF0HpG-RpdRd-KnDI?usp=sharing",
+    "north": [
+      1
+    ],
+    "south": [
+      2
+    ],
+    "region": "rhudaur",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/collines_vents_minimap_ogv0ip.png",
+    "players": [],
+    "adjacents": [
+      "Nain_Enidh",
+      "Landes_Etten",
+      "Cameth_Brin",
+      "Trouee_Trolls",
+      "Hollin"
+    ],
+    "description": "Les Collines du Vent se trouvaient au centre de l'Eriador, à mi-chemin entre Brie et le Dernier Pont."
+  },
+  "La_Grande_Mer": {
+    "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Enedwaith.jpg",
+    "name": "Belegear",
+    "description": "Belegaer, la Grande Mer, est le nom qui fut donné à l'océan qui séparait la côte est d'Aman de la Terre du Milieu. Au nord, elle était séparée des froides eaux d'Ekkaia par le détroit d'Helcaraxë, le Chaos des Glaces. Lors de la Guerre de la Colère, la Grande Mer gagna du terrain, engloutissant tout le Beleriand."
+  },
+  "Landes_Angmar": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126753/La%20Guerre%20de%20l%27Eriador/Angmar_niwmwq.jpg",
+    "map": 6,
+    "east": [
+      4,
+      5,
+      6
+    ],
+    "name": "Landes d'Angmar",
+    "west": [
+      1,
+      2,
+      3
+    ],
+    "color": "#c500ff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/12altHlpRxKdH4CxZ7fNtfVm-OIM3G-KT?usp=sharing",
+    "north": [],
+    "south": [],
+    "region": "angmar",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/landes_angmar_minimap_osub6s.png",
+    "players": [],
+    "adjacents": [
+      "Forochel",
+      "Carn_Dum",
+      "Landes_Etten",
+      "Ruines_Nord"
+    ],
+    "description": "Territoire corrompu et gelé s'étendant au sud de Carn Dum. Ces terres renferment la désolation, l'empreinte néfaste du roi-sorcier et toutes sortes de créatures corrompues."
+  },
+  "Rivière_Lune": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127012/La%20Guerre%20de%20l%27Eriador/Rivi%C3%A8re_Lune_pfywug.jpg",
+    "map": 2,
+    "east": [],
+    "name": "Rivière de la Lune",
+    "west": [],
+    "color": "#3300000",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1h1jFTm-mVVlEPbimccB9L_LfmB02E9-G?usp=sharing",
+    "north": [],
+    "south": [],
+    "region": "lindon",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1642694495/La%20Guerre%20de%20l%27Eriador/lune_minimap_nnvxej.png",
+    "players": [],
+    "adjacents": [
+      "Triste_Plaine",
+      "Lindon",
+      "Collines_Tours",
+      "Evendim_Collines"
+    ],
+    "description": "La Lhûn ou Lune est une rivière située entre l'Arthedain et le Lindon, prenant sa source dans les Ered Luin et se jetant dans le golfe de la Lune."
+  },
+  "Triste_Plaine": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127013/La%20Guerre%20de%20l%27Eriador/Triste_Plaine_emn6sc.jpg",
+    "map": 4,
+    "east": [
+      2,
+      3
+    ],
+    "name": "Triste Plaine",
+    "west": [
+      1,
+      4
+    ],
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1a6LnzELk4nRmQ8jDhebUBzjr71RTSQ2q?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "lindon",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304377/La%20Guerre%20de%20l%27Eriador/triste_plaine_minimap_pvqcj6.png",
+    "players": [
+      {
+        "img": null,
+        "win": 1,
+        "lose": 0,
+        "name": "Gopik",
+        "faction": 9,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/sq9ov4.png",
+        "win": 3,
+        "lose": 0,
+        "name": "Pippin",
+        "faction": 8,
+        "handicap": 0
+      }
+    ],
+    "adjacents": [
+      "Lindon",
+      "Ered_Luin",
+      "Arthedain",
+      "Collines_Tours",
+      "Rivière_Lune",
+      "Evendim_Collines"
+    ],
+    "description": "Terres fertiles et boisés, situés au nord ouest d'Arthedain et à l'est du fleuve de la Lune. Peu peuplé à l'origine du royaume d'Arnor, cela s'aggrava au fil des siècles avec la Grande Peste lors du 3ème Age suivit de la chute des 3 royaumes dunedains."
+  },
+  "Trouee_Trolls": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127011/La%20Guerre%20de%20l%27Eriador/Trouee_Troll_sd9pnc.jpg",
+    "map": 4,
+    "east": [],
+    "name": "Trouée des Trolls",
+    "west": [],
+    "color": "#ff3636",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1mJIXj8jeizGxK5d-aK2l66nCxbYLNiSF?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "rhudaur",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/trouee_troll_minimap_mhjm7u.png",
+    "outpost": true,
+    "players": [],
+    "adjacents": [
+      "Hollin",
+      "Collines_Vent",
+      "Cameth_Brin",
+      "Glad_Ereg",
+      "Eregion",
+      "Angle",
+      "Ost_in_Edhil"
+    ],
+    "structures": [
+      {
+        "name": "Ferme",
+        "build": true,
+        "level": 2
+      }
+    ],
+    "description": "Non ! dit Grands-Pas. Les trolls ne construisent pas. Personne ne vit ici. Des Hommes y ont jadis demeuré ; mais il n'en reste plus aucun aujourd'hui. Ils étaient devenus mauvais, à ce que rapporte la légende, car ils étaient tombés dans l'ombre d'Angmar. Mais ils furent tous détruits dans la guerre qui amena la fin du Royaume du Nord."
+  },
+  "Vieille_Foret": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639128360/La%20Guerre%20de%20l%27Eriador/Vieille_Foret_izywkl.jpg",
+    "map": 2,
+    "east": [
+      2
+    ],
+    "name": "Vieille Forêt",
+    "west": [
+      1
+    ],
+    "color": "#0bff00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1cXcB_ADgqwPBov-o7ROeM5uZJHuXz2-r?usp=sharing",
+    "north": [
+      1
+    ],
+    "south": [
+      2
+    ],
+    "region": "arthedain",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/veille_foret_minimap_dnl2im.png",
+    "players": [],
+    "adjacents": [
+      "Siragalë",
+      "Pays_Bouc",
+      "Galgals",
+      "Haut_Sud",
+      "Hollin"
+    ],
+    "description": "La Vieille Forêt est comprise entre la Haute Haie à l'ouest, la Grande Route de l’Est au nord et les Coteaux des Tertres à l'est."
+  },
+  "Champs_Fornost": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639131228/La%20Guerre%20de%20l%27Eriador/champs_fornost_ovw1vm.jpg",
+    "map": 4,
+    "east": [],
+    "name": "Champs de Fornost",
+    "west": [],
+    "color": "#c500ff",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/100HA8NmbIhxrNWPRnwmYHn7PN5X0fJ1T?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "arthedain",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/champs_fornost_minimap_g8tkrt.png",
+    "players": [
+      {
+        "img": null,
+        "win": 3,
+        "lose": 0,
+        "name": "R8sseauu",
+        "faction": 8,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/jmk7lw.jpg",
+        "win": 4,
+        "lose": 0,
+        "name": "ErwannWerty",
+        "faction": 8,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/12dsoh.jpg",
+        "win": 5,
+        "lose": 0,
+        "name": "Exorcisst",
+        "faction": 8,
+        "handicap": 0
+      }
+    ],
+    "adjacents": [
+      "Annuminas",
+      "Bree",
+      "Champs_Verts",
+      "Haut_Nord",
+      "Fornost"
+    ],
+    "description": "Situés à l'est de la Vieille Forêt et au sud-ouest de Brie, les Coteaux des Tertres étaient parsemés de nombreux tumulus1) où gisaient les ancêtres des Edain, enterrés là avant que ceux-ci n'entrassent en Beleriand."
+  },
+  "Collines_Tours": {
+    "img": "https://laguerredelanneau.vercel.app/Territories_img/Collines_Tours.jpg",
+    "map": 4,
+    "east": [
+      2,
+      3
+    ],
+    "name": "Collines de la Tour",
+    "west": [
+      1,
+      4
+    ],
+    "color": "#0bff00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1-KbtRhUwDpKRP1bti6YoQSlCGckoCQlB?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "lindon",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/collines_tours_minimap_ja5pmy.png",
+    "players": [
+      {
+        "img": "https://i.goopics.net/iiiupm.jpg",
+        "win": 1,
+        "lose": 1,
+        "name": "Tar-Elendil",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 2,
+        "name": "Tequitous",
+        "faction": 3,
+        "handicap": 0
+      }
+    ],
+    "adjacents": [
+      "Lindon",
+      "Rivière_Lune",
+      "Hobbitbourg",
+      "Pays_Touque",
+      "Siragalë",
+      "Havres_Gris",
+      "Triste_Plaine",
+      "Montagnes_Bleues"
+    ],
+    "description": "Les Collines des Tours, ou Emyn Beraid en sindarin, sont trois collines vertes situées dans l'ouest de l'Eriador, entre les Coteaux du Lointain et les Havres Gris. Elles doivent leur nom aux Tours Blanches qui les surmontaient, construites à la fin du Deuxième âge par Gil-Galad pour le roi d'Arnor : Elendil."
+  },
+  "Landes_Sauvages": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641299118/La%20Guerre%20de%20l%27Eriador/landes_sauvages_njgcgl.jpg",
+    "map": 6,
+    "east": [],
+    "name": "Landes Sauvages",
+    "west": [],
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1_kQyTOuv4ALm0_2rrUo4yBQDA1KS7y1F?usp=sharing",
+    "north": [
+      1,
+      2,
+      3
+    ],
+    "south": [
+      4,
+      5,
+      6
+    ],
+    "imgmap": "https://cdn.discordapp.com/attachments/766584396429262869/766585058831499265/unknown.png",
+    "region": "rhudaur",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/landes_sauvages_minimap_yph1hs.png",
+    "players": [
+      {
+        "img": "https://i.goopics.net/ctf85g.png",
+        "win": 2,
+        "lose": 1,
+        "name": "Toinou",
+        "faction": 9,
+        "handicap": 2
+      }
+    ],
+    "adjacents": [
+      "Landes_Etten",
+      "Haut_Nord",
+      "Nain_Enidh"
+    ],
+    "description": "situé au nord d'Amon Sûl, c'est un lieu inhospitalier peuplé de petits campement d'orques sur les collines mais aussi de loups ou encore de wargs. Ils effectuent des raids sur les habitations peu défendues, semant mort et destructions."
+  },
+  "Evendim_Collines": {
+    "img": "https://laguerredelanneau.vercel.app/Territories_img/Evendim.jpg",
+    "map": 4,
+    "east": [
+      2,
+      3
+    ],
+    "name": "Les collines d'Evendim",
+    "west": [
+      1,
+      4
+    ],
+    "color": "#ff85ee",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1B2-_aylKPhqHF8W82R5i773dqIrNJlke?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "arthedain",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1642694495/La%20Guerre%20de%20l%27Eriador/collines_minimap_iht9bi.png",
+    "players": [
+      {
+        "img": "https://i.goopics.net/mz3gkp.jpg",
+        "win": 0,
+        "lose": 2,
+        "name": "The_legende_Doigbite",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/x9jnms.jpg",
+        "win": 3,
+        "lose": 1,
+        "name": "Elessar",
+        "faction": 1,
+        "handicap": 0
+      }
+    ],
+    "adjacents": [
+      "Champs_Verts",
+      "Hobbitbourg",
+      "Rivière_Lune",
+      "Annuminas",
+      "Triste_Plaine",
+      "Arthedain",
+      "Haut_Nord"
+    ],
+    "description": "Les Collines du Crépuscule se trouvaient au nord de l'Eriador et bordaient le Lac du Crépuscule, formant un L partant du nord-ouest jusqu'au sud du lac."
+  },
+  "Montagnes_Bleues": {
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127011/La%20Guerre%20de%20l%27Eriador/Montagnes_Bleues_nm2fmh.jpg",
+    "map": 4,
+    "east": [],
+    "name": "Les Montagnes Bleues",
+    "west": [],
+    "color": "#3300000",
+    "fight": "hidden",
+    "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+    "north": [
+      1,
+      2
+    ],
+    "south": [
+      3,
+      4
+    ],
+    "region": "lindon",
+    "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+    "players": [],
+    "adjacents": [
+      "Harlindon",
+      "Havres_Gris",
+      "Collines_Tours",
+      "Siragalë",
+      "Egenyar"
+    ],
+    "description": "Les Montagnes Bleues sont le paisible lieu où habitent les Nains des Montagnes Bleues, cousins des Nains des Monts du fer. Comme les autres peuples des Nains, les nains des Montagnes Bleues aiment grandement les métaux précieux, et une grande partie d'entre eux passent la plupart de leur temps dans de profondes mines."
+  },
+  "unblockable-frontiers": []
+}

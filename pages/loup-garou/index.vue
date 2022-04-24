@@ -33,7 +33,7 @@
       <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
         <div class="h-full text-center">
           <img alt="testimonial" class="w-28 h-28 mb-8 object-cover object-center rounded-full inline-block" src="~/assets/loup-garou/bien.jpg">
-          <p class="leading-relaxed text-indigo-400">Leur but est de trouver, démasquer et bannir les Nazguls et d'éventuelles menaces extérieures cachés dans le village afin de triompher du Mal. Étant infiltrés par les Nazguls, les membres du Village ne savent plus qui fait parti de ce dernier ou non, ils sont donc totalement au dépourvu et devront réussir à se faire confiance et à trouver les intrus.</p>
+          <p class="leading-relaxed text-indigo-400">Leur but est de trouver, démasquer  et bannir les Nazguls et d'éventuelles menaces extérieures cachés dans le village afin de triompher du Mal. Étant infiltrés par les Nazguls, les membres du Village ne savent plus qui fait parti de ce dernier ou non, ils sont donc totalement au dépourvu et devront réussir à se faire confiance et à trouver les intrus.</p>
           <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
           <h2 class="text-indigo-600 uppercase font-medium title-font tracking-wider text-2xl">Le camp du Bien (Village)</h2>
         </div>

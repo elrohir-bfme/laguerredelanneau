@@ -131,6 +131,7 @@ export default {
     '@nuxtjs/robots',
     '@nuxtjs/pwa',
     '@nuxtjs/strapi',
+    '@nuxtjs/axios',
     '@nuxt/image',
     ['cookie-universal-nuxt', { alias: 'cookiz' }],
     'nuxt-highcharts',

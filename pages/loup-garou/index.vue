@@ -60,7 +60,7 @@
 
     <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-purple-500 text-center underline my-4">Liste des cartes</h1>
     <div v-if="loading" class="flex flex-wrap m-4">
-      <div v-for="carte in cartes.data" v-bind:key="carte.id" class="xl:w-1/4 md:w-1/2 p-4">
+      <div v-for="carte in cartes" v-bind:key="carte.id" class="xl:w-1/4 md:w-1/2 p-4">
         <div class="bg-gray-900 hover:bg-gray-800 p-6 rounded-lg group">
             <img class="rounded w-full h-full mb-6" :src="`https://api.laterredumilieu.fr${carte.attributes.img.data.attributes.url}`" :alt="carte.attributes.title">
             <div class="flex mb-4">
@@ -83,6 +83,7 @@
 </template>
 
 <script>
+const qs = require('qs');
 export default {
     layout: "loup-garou",
     data() {
@@ -91,10 +92,27 @@ export default {
             cartes: []
         }
     },
-    async asyncData({ $strapi }) {
+    async asyncData({ $strapi, $axios }) {
         let loading = false;
-        let cartes = await $strapi.find('loup-garous', { populate: '*'})
+        // let cartes = await $strapi.find('loup-garous', { populate: '*', pagination: [{ pageSize: 5 }] })
+
+        const query = qs.stringify({
+          populate: '*',
+          pagination: {
+            page: 1,
+            pageSize: 50,
+          },
+        }, {
+        encodeValuesOnly: true,
+			  });
+
+        const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/loup-garous?${query}`); 
+			  console.log(cartes)
+
+        let cartes = data
+
         loading = true;
+        console.log(cartes, "cartes")
         return { cartes, loading }
     },
     head() {

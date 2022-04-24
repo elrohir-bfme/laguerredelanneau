@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxt/http": "^0.6.4",
+    "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/i18n": "^7.2.0",
     "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
@@ -21,7 +22,8 @@
     "cookie-universal-nuxt": "^2.1.5",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
-    "nuxt-highcharts": "^2.0.3"
+    "nuxt-highcharts": "^2.0.3",
+    "qs": "^6.10.3"
   },
   "devDependencies": {
     "@nuxt/image": "^0.6.0",

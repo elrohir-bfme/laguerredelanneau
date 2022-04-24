@@ -75,10 +75,11 @@
           </nuxt-link>
         </div>
 
-        <div class="w-full lg:w-1/2">
+        
+        <div class="w-full lg:w-1/2 mt-2">
           <nuxt-link title="Loup Garou en Terre du Milieu"  to="/loup-garou" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-purple-300 border-2 rounded-xl">
             <NuxtImg
-              src="img/loupgarouenterredumilieu.jpg"
+              src="img/louphome.png"
               class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
               alt="Loup Garou en Terre du Milieu"
               loading="lazy"

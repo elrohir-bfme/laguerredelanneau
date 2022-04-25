@@ -390,6 +390,7 @@
 </template>
 
 <script>
+const qs = require('qs');
 export default {
   layout: "league",
     data() {
@@ -422,12 +423,26 @@ export default {
                 data: 0}, {id: 1, data: 1}, {id: 3, data: 3}, {id: 4, data: 4}]
         }
     },
-    async asyncData({ $strapi }) {
+    async asyncData({ $strapi, $axios  }) {
         let maps = await $strapi.find('maps', { populate: '*'})
         let factions = await $strapi.find('factions', { populate: '*'})
         let games = await $strapi.find('games', { populate: '*'})
         let players = await $strapi.find('players', { populate: '*'})
         let loading = true;
+
+        const query = qs.stringify({
+          populate: '*',
+          pagination: {
+            page: 1,
+            pageSize: 50,
+          },
+        }, {
+        encodeValuesOnly: true,
+			  });
+
+        const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
+        console.log(data)
+
         return { maps, factions, games, players, loading }
     },
     methods: {  

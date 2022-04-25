@@ -6,9 +6,9 @@
       <p class="lg:w-2/3 mx-auto leading-relaxed text-2xl text-yellow-200">Voici l'ensemble des cartes de la Campagne des Gobelins</p>
     </div>
     <div class="flex flex-wrap -m-4" v-if="loading">
-      <div v-for="card in cards" v-bind:key="card.title" @click="toggleModal(card)" class="p-4 lg:w-1/4 md:w-1/2 transform transition duration-500 hover:scale-110 hover:drop-shadow-xl">
+      <div v-for="card in cards" v-bind:key="card.id" @click="toggleModal(card)" class="p-4 lg:w-1/4 md:w-1/2 transform transition duration-500 hover:scale-110 hover:drop-shadow-xl">
         <div class="h-full flex flex-col items-center text-center">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-full object-cover object-center mb-4" :src="`https://api.laterredumilieu.fr${card.img.url}`" >    
+          <img :alt="card.attributes.card_title" class="flex-shrink-0 rounded-lg w-full h-full object-cover object-center mb-4" :src="`https://api.laterredumilieu.fr${card.attributes.card_img.data.attributes.url}`" >    
         </div>
       </div>
     </div>
@@ -19,6 +19,7 @@
 </template>
 
 <script>
+const qs = require('qs');
 export default {
   layout: "gobelin",
     data() {
@@ -29,10 +30,27 @@ export default {
         data: []
         }
     },
-    async fetch() {
-      this.loading = false;
-      this.cards =  await this.$strapi.find('cards')
-      this.loading = true;
+    async asyncData({ $axios  }) {
+      let loading = false;
+
+      const query = qs.stringify({
+        populate: '*',
+        // pagination: {
+        //   page: 1,
+        //   pageSize: 50,
+        // },
+      }, {
+        encodeValuesOnly: true,
+      });
+
+      const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/card-gobelines?${query}`); 
+      console.log(data)
+
+      let cards;
+      cards = data
+
+      loading = true;
+      return { cards, loading }
     },
     methods: {
       toggleModal(value) {

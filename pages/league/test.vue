@@ -426,29 +426,30 @@ export default {
     async asyncData({ $strapi, $axios  }) {
         let maps = await $strapi.find('maps', { populate: '*'})
         let factions = await $strapi.find('factions', { populate: '*'})
-        let games = await $strapi.find('games', { populate: '*'})
+        // let games = await $strapi.find('games', { populate: '*'})
         let players = await $strapi.find('players', { populate: '*'})
         let loading = true;
 
-        // const query = qs.stringify({
-        //     // populate: '*',
-        //     fields: '*',
-        //     populate: {
-        //         replays: {
-        //             populate: '*',
-        //         },
-        //     },
-        //     pagination: {
-        //         page: 1,
-        //         pageSize: 50,
-        //     },
-        // }, {
-        // encodeValuesOnly: true,
-		// 	  });
+        const query = qs.stringify({
+            // populate: '*',
+            fields: '*',
+            populate: {
+                replays: {
+                    populate: '*',
+                },
+            },
+            pagination: {
+                page: 1,
+                pageSize: 50,
+            },
+        }, {
+        encodeValuesOnly: true,
+			  });
 
-        // const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
-        // console.log(data)
+        const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
+        let games = data
 
+        console.log(maps, factions, games, players, loading)
         return { maps, factions, games, players, loading }
     },
     methods: {  

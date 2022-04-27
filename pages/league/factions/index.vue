@@ -53,16 +53,16 @@
                                     </div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium">{{faction.attributes.games_win.data.length}}</div>
+                                    <div class="text-left font-medium">{{faction.wins}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{faction.attributes.games_lose.data.length}}</div>
+                                    <div class="text-lg text-left">{{faction.loses}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{faction.attributes.games_win.data.length > 0 || faction.attributes.games_lose.data.length > 0 ? `${((faction.attributes.games_win.data.length / (faction.attributes.games_lose.data.length + faction.attributes.games_win.data.length)) * 100).toFixed(0)}%`  : "Aucun Match"}}</div>
+                                    <div class="text-lg text-left">{{faction.wins > 0 || faction.loses > 0 ? `${((faction.wins / (faction.loses + faction.wins)) * 100).toFixed(0)}%`  : "Aucun Match"}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{faction.attributes.games_win.data.length + faction.attributes.games_lose.data.length}}</div>
+                                    <div class="text-lg text-left">{{faction.wins + faction.loses}}</div>
                                 </td>
                                 <td v-for="fac in factionList" v-bind:key="fac.name" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
                                     <div class="text-lg text-left  text-gray-100 p-2 m-1" 
@@ -100,6 +100,7 @@
 </template>
 
 <script>
+const qs = require('qs');
 export default {
   layout: "league",
     data() {
@@ -117,10 +118,34 @@ export default {
             ],
         }
     },
-    async asyncData({ $strapi }) {
+    async asyncData({ $strapi, $axios }) {
         let factions = await $strapi.find('factions', { populate: '*'})
-        let games = await $strapi.find('games', { populate: '*'})
+        // let games = await $strapi.find('games', { populate: '*'})
 
+                const query = qs.stringify({
+            // populate: '*',
+            fields: '*',
+            populate: {
+                populate: '*',
+                replays: {
+                    populate: '*',
+                    faction_win: {
+                        populate: '*'
+                    }
+                },
+            },
+            pagination: {
+                page: 1,
+                pageSize: 50,
+            },
+        }, {
+        encodeValuesOnly: true,
+			  });
+
+        const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
+        // console.log(data)
+
+        let games = data
         // maps = await JSON.parse(JSON.stringify(this.maps))
         // factions = await JSON.parse(JSON.stringify(this.factions))
 
@@ -133,24 +158,66 @@ export default {
                 let NewFaction = this.factions.data.map(f => {
                     let newObject = {
                         statsFactionWin: {},
-                        statsFactionLose: {}
+                        statsFactionLose: {},
+                        wins: 0,
+                        loses: 0
                     }
+
+                    this.games.map(g => {
+                        console.log(g, "g")
+                        if(g.attributes.replays && g.attributes.replays.length > 0){
+                            console.log(g.attributes.replays)
+                            g.attributes.replays.map(r => {
+                                // console.log(r, "r", r.faction_win.data)
+                                if(r.faction_win.data && r.faction_win.data.attributes && r.faction_win.data.attributes.name === f.attributes.name) {
+                                    let faction = r.faction_lose.data.attributes.name;
+                                    typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                                    newObject.statsFactionWin[faction] = 1 : 
+                                    newObject.statsFactionWin[faction]++;
+                                    newObject.wins++;
+                                }
+
+                                if(r.faction_lose.data && r.faction_lose.data.attributes && r.faction_lose.data.attributes.name === f.attributes.name) {
+                                    let faction = r.faction_win.data.attributes.name;
+                                    typeof newObject.statsFactionLose[faction] === 'undefined' ? 
+                                    newObject.statsFactionLose[faction] = 1 : 
+                                    newObject.statsFactionLose[faction]++;
+                                    newObject.loses++;
+                                }
+
+                                // if(r.faction_win.data && r.faction_win.data.attributes){
+                                //     console.log(r, "R")
+                                //     let faction = r.faction_win.data.attributes.name 
+                                //     typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                                //     newObject.statsFactionWin[faction] = 1 : 
+                                //     newObject.statsFactionWin[faction]++;
+                                // }
+                                // if(r.faction_lose.data && r.faction_lose.data.attributes){
+                                //     let faction = r.faction_win.data.attributes.name 
+                                //     typeof newObject.statsFactionLose[faction] === 'undefined' ? 
+                                //     newObject.statsFactionLose[faction] = 1 : 
+                                //     newObject.statsFactionLose[faction]++;
+                                // }
+                            })
+                        }
+                    })
 
                     if(f.attributes.games_lose.data.length > 0){
                         f.attributes.games_lose.data.map(m => {
-                            let faction = this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name
-                            typeof newObject.statsFactionLose[faction] === 'undefined' ? 
-                            newObject.statsFactionLose[faction] = 1 : 
-                            newObject.statsFactionLose[faction]++;
+                            // let faction = this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name
+                            // typeof newObject.statsFactionLose[faction] === 'undefined' ? 
+                            // newObject.statsFactionLose[faction] = 1 : 
+                            // newObject.statsFactionLose[faction]++;
                         })
                     }
 
                     if(f.attributes.games_win.data.length > 0){
                         f.attributes.games_win.data.map(m => {
-                            let faction = this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name
-                            typeof newObject.statsFactionWin[faction] === 'undefined' ? 
-                            newObject.statsFactionWin[faction] = 1 : 
-                            newObject.statsFactionWin[faction]++;
+                            // console.log(this.games)
+                            // let faction = this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name
+                            // typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                            // newObject.statsFactionWin[faction] = 1 : 
+                            // newObject.statsFactionWin[faction]++;
                         })
                     }
                     return Object.assign(f, newObject)

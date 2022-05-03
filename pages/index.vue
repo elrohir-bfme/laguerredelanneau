@@ -64,7 +64,7 @@
               <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-blue-500 inline p-2 rounded">Tournoi ROTWK 2.02</h2>
               <br>
               <br>
-              <p class="text-2xl text-blue-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Inscription du 06 Mars au Dimanche 13 Mars</p>
+              <p class="text-2xl text-blue-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Bientôt la Finale</p>
               <br>
               <br>
               <button
@@ -76,7 +76,7 @@
         </div>
 
         
-        <div class="w-full lg:w-1/2 mt-2">
+        <div class="w-full lg:w-1/2 px-2 mt-6">
           <nuxt-link title="Loup Garou en Terre du Milieu"  to="/loup-garou" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-purple-300 border-2 rounded-xl">
             <NuxtImg
               src="img/louphome.png"
@@ -97,6 +97,29 @@
                 </svg>
                 <span class="mx-1">Je veux jouer !</span>
             </button>
+            </div>
+          </nuxt-link>
+        </div>
+
+        <div class="w-full lg:w-1/2 px-2 mt-6">
+          <nuxt-link title="L'Avènement du Roi Sorcier"  to="/tournois/tournoi_2_02_cop" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
+            <NuxtImg
+              src="tournois/2_02_1vs1_cop.webp"
+              class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
+              alt="L'Avènement du Roi Sorcier"
+              loading="lazy"
+            />
+            <div class="text-center relative z-10 w-full">
+              <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-orange-500 inline p-2 rounded">Tournoi ROTWK 2.02</h2>
+              <br>
+              <br>
+              <p class="text-2xl text-orange-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Tournoi en coopération commence le 23 Mai 2022</p>
+              <br>
+              <br>
+              <button
+              class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-orange-800 rounded-md dark:bg-gray-700 hover:bg-orange-700 dark:hover:bg-gray-700 focus:outline-none focus:bg-orange-500 dark:focus:bg-gray-700">
+                <span class="mx-1">{{ $t('bdd_menu_button') }}</span>
+              </button>
             </div>
           </nuxt-link>
         </div>

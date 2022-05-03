@@ -42,7 +42,7 @@
                                 </th>
                             </tr>
                         </thead>
-                        <tbody class="text-sm divide-y divide-orange-500">
+                        <!-- <tbody class="text-sm divide-y divide-orange-500">
                             <tr v-for="faction in sortedFactions" v-bind:key="faction._id">
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="flex items-center">
@@ -53,7 +53,7 @@
                                     </div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium">{{faction.wins}}</div>
+y                                    <div class="text-left font-medium">{{faction.wins}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-lg text-left">{{faction.loses}}</div>
@@ -82,7 +82,7 @@
                                     </div>
                                 </td>
                             </tr>
-                        </tbody>
+                        </tbody> -->
                     </table>
                 </div>
             </div>

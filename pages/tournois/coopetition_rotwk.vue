@@ -68,11 +68,7 @@
                                 pas de héro custom <br>
                                 Anneau de pouvoir activé <br>
                                 Host Neutre <br>
-                                -Maps aux choix de l'host neutre (si tous les joueurs sont contre la map de l'host neutre, il est dans l'obligation de la changer 👍)<br>
-                                Faction aléatoire pour le premier match et l'host choisit la map<br>
-                                ensuite l'équipe perdante choisit la première faction d'un des adversaires (selon leur choix)<br>
-                                L'équipe gagnante choisit la Map (pas deux fois la même Map)<br>
-                                Puis l'équipe gagnante choisit une faction puis l'équipe perdante jusqu'à la dernière selection. (pas de doublons de factions)
+                                Maps aux choix de l'host neutre (si tous les joueurs sont contre la map de l'host neutre, il est dans l'obligation de la changer 👍)
                             </p>
                             <br><br>
                             <h5 class="text-lg leading-6 text-gray-100 dark:text-white font-bold">
@@ -115,7 +111,7 @@
         </div>
         <div class="mt-10 -mx-4 md:-mx-12 relative lg:mt-0 lg:col-start-1 p-10">
             <NuxtImg
-              src="tournois/2_02_1vs1_cop.webp"
+              src="tournois/coopetition_rotwk.webp"
               class="relative mx-auto shadow-lg rounded w-auto"
               alt="L'Avènement du Roi Sorcier"
               loading="lazy"
@@ -131,13 +127,13 @@ export default {
   layout: "home",
   head() {
     return {
-      title: "Tournoi 2vs2 sur ROTWK 2.02 v8.5",
+      title: "Coopération ROTWK",
       meta: [
         {
           hid: 'description',
           name: 'description',
           content:
-            "Tournoi organisé par Elrohir",
+            "Organisé Elrohir et Thieuthieu sur le Discord de la Terre du Milieu",
         },
         {
           hid: 'keywords',
@@ -153,13 +149,13 @@ export default {
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: "Tournoi 2vs2 sur ROTWK 2.02 v8.5",
+          content: "Coopération ROTWK",
         },
         {
           hid: 'twitter:description',
           name: 'twitter:description',
           content:
-            "Tournoi organisé par Elrohir",
+            "Organisé Elrohir et Thieuthieu sur le Discord de la Terre du Milieu",
         },
         {
           hid: 'twitter:creator',
@@ -170,26 +166,26 @@ export default {
           hid: 'twitter:image',
           name: 'twitter:image',
           content:
-            'https://laguerredelanneau.vercel.app/tournois/tournoi_rotwk_2vs2_2022.jpg',
+            'https://laguerredelanneau.vercel.app/tournois/coopetition_rotwk.webp',
         },
-        { hid: 'og:title', name: 'og:title', content: "L'Arène d'Arda ⚔️" },
+        { hid: 'og:title', name: 'og:title', content: "Coopération ROTWK" },
         { hid: 'og:type', name: 'og:type', content: 'website' },
         {
           hid: 'og:url',
           name: 'og:url',
-          content: 'https://laguerredelanneau.vercel.app/tournois/tournoi_rotwk_2vs2_2022',
+          content: 'https://laguerredelanneau.vercel.app/tournois/coopetition_rotwk',
         },
         {
           hid: 'og:image',
           name: 'og:image',
           content:
-            'https://laguerredelanneau.vercel.app/tournois/tournoi_rotwk_2vs2_2022.jpg',
+            'https://laguerredelanneau.vercel.app/tournois/coopetition_rotwk.webp',
         },
         {
           hid: 'og:description',
           name: 'og:description',
           content:
-            "Tournoi organisé par Elrohirn",
+            "Organisé Elrohir et Thieuthieu sur le Discord de la Terre du Milieun",
         },
       ],
     }

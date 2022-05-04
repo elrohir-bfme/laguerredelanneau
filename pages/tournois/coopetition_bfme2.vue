@@ -33,7 +33,7 @@
                     <div class="flex">
                         <div class="flex-shrink-0">
                             <div class="flex items-center justify-center h-12 w-12 rounded-md text-white">
-                                <img class="inline-block w-8" src="~assets/wars/rotwk.png" title="rotwk" alt="rotwk">
+                                <img class="inline-block w-8" src="~assets/wars/bfme2.png" title="rotwk" alt="rotwk">
                             </div>
                         </div>
                         <div class="ml-4">
@@ -41,7 +41,7 @@
                                 Présentation
                             </h5>
                             <p class="mt-2 text-base leading-6 text-gray-300 dark:text-gray-300">
-                                Tournoi sur ROTWK par team de 2 un peu spécial sous forme de 1v1 et de 2v2<br>
+                                Tournoi sur BFME2 par team de 2 un peu spécial sous forme de 1v1 et de 2v2<br>
                                 Il se fera en BO3 pour chaque tour sauf la finale qui sera en BO5
                             </p>
                         </div>

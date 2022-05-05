@@ -1,70 +1,51 @@
 <template>
     <div class="mt-8 bg-lotr container mx-auto rounded-3xl text-white">
-    <h1 class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Bande Annonce 💙</h1>
-    <h2 class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Incroyable réalisation d'Eternal !</h2>
+    <h1 class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">{{ $t('videos.title') }} 💙</h1>
+    <!-- <h2 class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Incroyable réalisation d'Eternal !</h2> -->
 
     <div class="videoWrapper m-8 z-0">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/XCe84pFT_SI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <!-- <div class="videoWrapper m-8 z-0">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/7e5LxENe88w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div> -->
-
-    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">BANDE ANNONCE DES ELFES</h3>
-    <div class="videoWrapper m-8 z-0">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/EjE0rTCj93g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/sfUly-xvu0A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">BANDE ANNONCE DE L'ANGMAR</h3>
+    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">{{ $t('videos.angmar') }}</h3>
     <div class="videoWrapper m-8 z-0">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/byFQ0Q9Ys0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <iframe src="https://drive.google.com/file/d/1Rq_INEqVf9sU6QOo22eoStnvmB-h83gW/preview" width="640" height="480" allow="autoplay"></iframe>
     </div>
 
+        <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">{{ $t('videos.gondor') }}</h3>
     <div class="videoWrapper m-8 z-0">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/valuTOJq6zo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/mHL-J8VPt2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+
+        <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">{{ $t('videos.arnor') }}</h3>
+    <div class="videoWrapper m-8 z-0">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/sS1AV8oia1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">{{ $t('videos.nain') }}</h3>
+    <div class="videoWrapper m-8 z-0">
+     <iframe src="https://drive.google.com/file/d/1D91xmfcpJUwYbwIkZjoiit7rTUzBmy8X/preview" width="640" height="480" allow="autoplay"></iframe>
+    </div>
+
+        <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">{{ $t('videos.nain') }}</h3>
+    <div class="videoWrapper m-8 z-0">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/eeM_J_lVN4s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">{{ $t('videos.isengard') }}</h3>
+    <div class="videoWrapper m-8 z-0">
+     <iframe src="https://drive.google.com/file/d/1-LglGZs2JXn_O7rn6uIojdO0EJ6-te9v/preview" width="640" height="480" allow="autoplay"></iframe>
+    </div>
+
 
     
 
-    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">BANDE ANNONCE DU GONDOR</h3>
-    <div class="videoWrapper m-8 z-0">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/3dzgilTe_H0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">BANDE ANNONCE DES NAINS</h3>
-    <div class="videoWrapper m-8 z-0">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/LzVyI4V4R8c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-
-    <div class="videoWrapper m-8 z-0">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/m1Uer6Ki_Q0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div class="videoWrapper m-8 z-0">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/OIHHOVdSym8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div class="videoWrapper m-8 z-0">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/_YywU1QGHOo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    
-    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">BANDE ANNONCE DES GOBELINS</h3>
-    <div class="videoWrapper m-8 z-0">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/08jagT__o00" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">BANDE ANNONCE DU ROHAN</h3>
-    <div class="videoWrapper m-8 z-0">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/7iQpc1kQfw8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    
     </div>
 </template>
 
 <script>
 export default {
-
+  layout: "gde"
 }
 </script>
 

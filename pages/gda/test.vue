@@ -1,7 +1,33 @@
 <template>
   <div>
+    <div class="container px-5 py-4 mx-auto flex">
+
+    </div>
 
     <div class="flex flex-wrap text-center justify-evenly  items-center gap-2 pb-4">
+          <div class="text-blue-400 bg-gray-900 border-2 py-2 px-8 focus:outline-none hover:bg-gray-800
+          rounded text-lg transform transition duration-500 hover:scale-110 border-blue-400">
+            <p class="underline">{{ $t('gde.camp_bien') }}</p>
+            <img
+              src="~/assets/gde/bien.png"
+              alt=""
+              class="h-12 w-12 mx-auto my-2"
+            />
+            <div  class="text-xs text-center flex w-full items-center justify-center">
+              <div class="w-auto mx-1 p-2 text-blue-500 rounded-lg border-2 border-blue-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{nbPlayerArnor + nbPlayerRohan + nbPlayerElfe +nbPlayerGondor + nbPlayerNain}}</span> {{ $t('layout_gde_joueur') }}</div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-blue-500 rounded-lg border-2 border-blue-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{nbTerritoireArnor + nbTerritoireRohan + nbTerritoireElfe + nbTerritoireGondor + nbTerritoireNain}}</span> {{ $t('gde.territoires') }}</div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-blue-500 rounded-lg border-2 border-blue-400 bg-gray-900">
+                  <div class="font-mono leading-none">{{ $t('gde.score') }} : <span class="text-base">{{scoreBien}}</span></div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-blue-500 rounded-lg border-2 border-blue-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{result && result.bien && result.bien.wins}}</span>v / <span class="text-base">{{result && result.bien && result.bien.losses}}</span>d</div>
+              </div>
+            </div>
+          </div>
         
         <div class="flex items-center">
           <div>
@@ -16,6 +42,32 @@
           </button>
           </div>
         </div>
+
+        <div class="text-red-400 bg-gray-900 border-2 py-2 px-8 focus:outline-none hover:bg-gray-800
+          rounded text-lg transform transition duration-500 hover:scale-110 border-red-400">
+            <p class="underline">{{ $t('gde.camp_mal') }}</p>
+            <img
+              src="~/assets/gde/mal.png"
+              alt=""
+              class="h-12 w-12 mx-auto my-2"
+            />
+            <div  class="text-xs text-center flex w-full items-center justify-center">
+              <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{nbPlayerMordor + nbPlayerIsengard + nbPlayerGobelin + nbPlayerAngmar}}</span> {{ $t('layout_gde_joueur') }}</div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{nbTerritoireMordor + nbTerritoireIsengard + nbTerritoireGobelin + nbTerritoireAngmar}}</span> {{ $t('gde.territoires') }}</div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
+                  <div class="font-mono leading-none">{{ $t('gde.score') }} : <span class="text-base">{{scoreMal}}</span></div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{result && result.mal && result.mal.wins}}</span>v / <span class="text-base">{{result && result.mal && result.mal.losses}}</span>d</div>
+              </div>
+            </div>
+          </div>
+          
+      
     </div>
 
 
@@ -9549,11 +9601,7 @@
         </h2>
         <h3 v-if="faction.faction.dead"  :class="`text-${color(faction.id).color}-300`"
           class="mt-4 font-bold text-xl">
-            {{faction.faction.name == "gondor" ? "La Faction a été vaincu à Fornost le 13 Mars 2022" :
-            faction.faction.name == "nain" ? "La Faction a été vaincu au Palais de Thorin le 21 Mars 2022" :
-            faction.faction.name == "elfe" ? "La Faction a été vaincu au Havres Gris le 27 Mars 2022" : 
-            faction.faction.name == "rohan" ? "La Faction a été vaincu à Tol Tinebeb le 04 avril 2022" : 
-            "La Faction a été vaincu à Annuminas le 04 Avril 2022"}}
+            {{faction.faction.name == "gondor" ? "La Faction a été vaincu à Fornost le 13 Mars 2022" : "La Faction a été vaincu au Palais de Thorin le 21 Mars 2022"}}
         </h3>
         <h6 class="mt-2 text-xl font-bold underline">{{ faction.faction.chef }}</h6>
 
@@ -9695,8 +9743,7 @@ export default {
   layout: "gde",
   head() {
     return {
-      title: "La Bataille pour la Terre du Milieu",
-      description: "Une grande Bataille",
+      title: "La Guerre de l'Eriador 🏔️",
       meta: [
         {
           hid: "description",
@@ -10089,7 +10136,7 @@ export default {
 
       this.factions = objArray.sort((a, b) => a.id - b.id)
 
-      this.result = this.map.results;
+      this.result = this.map.result;
 
       this.nbTerritoireArnor= 0;
       this.nbTerritoireRohan= 0;
@@ -10220,22 +10267,22 @@ export default {
 
      // TEST
 
-    // this.map = await this.$http.$get(
-    //   "https://api.npoint.io/900d4d348871ff3c6841"
-    // );
-    // let factions = await this.$http.$get(
-    //   "https://api.npoint.io/900d4d348871ff3c6841/factions"
-    // ); //API
-
     this.map = await this.$http.$get(
-      "https://api.npoint.io/2eeb1bea715cd907d7bc"
+      "https://api.npoint.io/900d4d348871ff3c6841"
     );
-
-
-
     let factions = await this.$http.$get(
-      "https://api.npoint.io/2eeb1bea715cd907d7bc/factions"
+      "https://api.npoint.io/900d4d348871ff3c6841/factions"
     ); //API
+
+    // this.map = await this.$http.$get(
+    //   "https://api.npoint.io/2eeb1bea715cd907d7bc"
+    // );
+
+
+
+    // let factions = await this.$http.$get(
+    //   "https://api.npoint.io/2eeb1bea715cd907d7bc/factions"
+    // ); //API
 
 
 

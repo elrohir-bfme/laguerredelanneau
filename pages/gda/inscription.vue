@@ -1,44 +1,79 @@
 <template>
-  <div class="container mx-auto divide-y-2 divide-purple-300 bg-gray-900 rounded-lg">
-        <div class="text-center py-4">
-            <h1 style="font-family: 'Albertus'" class="text-center text-4xl text-purple-600">Inscription</h1>
+  <section class="text-gray-600 body-font">
+     <SocialHead
+      title="Inscription: La Guerre de l'Eriador 🏔️"
+      description="L'heure de l'affrontement pour le contrôle de l'Eriador est arrivé ! Que vous soyez novice, chevronné ou vétéran des guerres précédentes, l'heure est venue pour vous, guerriers, de retourner vous battre au nom de votre faction !"
+      image="https://events.laterredumilieu.fr/gde.webp"
+    />
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero" src="https://cdn-longterm.mee6.xyz/plugins/reaction_roles/images/646686225737973770/9a7539ae39ada2acc4a0470d71fb62edd4e0968928a924fd2f0f26dafc2d74da.gif">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center bg p-4 rounded-2xl">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">{{ $t('inscription.title') }}
+          <br class="hidden lg:inline-block">{{ $t('inscription.info') }}
+        </h1>
+        <p class="mb-8 leading-loose text-gray-300">{{ $t('inscription.description') }}</p>
+        <p class="mb-8 leading-relaxed text-gray-200">{{ $t('inscription.attention') }}</p>
+        <div class="flex justify-center">
+          <a href="https://forms.gle/4ks9wa8th6zV44yR7" target="_blank" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">{{ $t('inscription.formulaire') }}</a>
         </div>
-        <div class="text-center py-4 my-4">
-            <h2 style="font-family: 'Albertus'" class="text-center text-2xl text-purple-500 py-6">Rejoindre le Discord de la Terre du Milieu</h2>
-            <a style="font-family: 'Albertus'" href="http://bit.ly/LaTerreduMilieu" target="_blank" class="bg-purple-600 hover:bg-purple-500 text-white font-bold my-4 py-4 px-4 border-b-4 border-purple-800 hover:border-purple-600 rounded">
-                Discord de la Terre du Milieu
-            </a>
-        </div>
-        <div class="text-center py-4">
-            <h3 style="font-family: 'Albertus'" class="text-center text-2xl text-green-400 p-4">Prendre le rôle GDA et</h3>
-            <h3 style="font-family: 'Albertus'" class="text-center text-2xl text-green-400 p-4">Prendre une des factions disponible sur le Discord</h3>
-            <img class="mx-auto" src="~assets/gda/msg.webp" alt="Inscriptions Discord">
-        </div>
-        <div class="text-center py-4">
-            <h4 style="font-family: 'Albertus'" class="text-center text-2xl text-indigo-300 p-4">
-                Vous allez débloquer un channel correspondant à votre faction. Une fois débloquer présentez-vous et votre chef de faction vous donnerez le Discord de la faction correspondante. Ce Discord de faction permettra de débattre des stratégies, demander des conseils auprès des membres mais surtout dire vos déplacements.
-            </h4>
-        </div>
-        <div class="text-center py-4">
-            <h5 style="font-family: 'Albertus'" class="text-center text-2xl text-teal-500 p-4">
-                Un Tour correspond à 1 semaine (Lundi au Dimanche). Si vous rencontrez des adversaires vous allez devoir combattres lors de cette semaine. Il va falloir s'organiser avec les joueurs concertés pour programmer et jouer votre match dans la semaine imposée.
-            </h5>
-        </div>
-        <div class="text-center py-4">
-            <h6 style="font-family: 'Albertus'" class="text-center text-2xl text-blue-500 p-4">
-                Une fois votre match joué, vous avez soit gagné donc vous remportez une victoire Soit vous perdez et donc vous allez avoir une défaite et retourner à la forteresse de votre choix Il faudra dire ou demander à votre chef de faction où il est mieux de réapparaitre.
-            </h6>
-        </div>
-</div>
+      </div>
+    </div>
+    
+    <div class="container mx-auto flex flex-col px-5 py-4 justify-center items-center">
+      <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">{{ $t('inscription.prerequis') }}</h1>
+      <p class="mb-8 leading-relaxed text-teal-500">{{ $t('inscription.need') }}</p>
+       <a href="https://www.laterredumilieu.fr/tuto/bfme2" target="_blank" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">{{ $t('inscription.tutoBFME') }}</a>
+       <br><br>
+       <a href="https://www.laterredumilieu.fr/tuto/rotwk" target="_blank" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">{{ $t('inscription.tutoROTWK') }}</a>
+      <p class="mb-8 leading-relaxed text-teal-600">{{ $t('inscription.gdn') }}</p>
+       <a href="https://www.laterredumilieu.fr/mods/lesguerresdunord" target="_blank" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">{{ $t('inscription.tutoGDN') }}</a>
+    </div>
+    <img class="w-full mb-10 object-cover object-center rounded" alt="hero" src="~assets/gde/fond.webp">
+    
+  </div>
+  </section>
+  
 </template>
 
 <script>
+export default {
+  layout: "gde",
+  
+  head() {
+    return {
+      title: "Inscription: La Guerre de l'Eriador 🏔️",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:"L'heure de l'affrontement pour le contrôle de l'Eriador est arrivé ! Que vous soyez novice, chevronné ou vétéran des guerres précédentes, l'heure est venue pour vous, guerriers, de retourner vous battre au nom de votre faction !",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content:
+            "La Guerre de l'Eriador, GDE, Mordor, Elfe, Nain, Rohan, Gondor, Isengard, Gobelin, Angmar, Arnor, Rohan, bfme, bfme2, rotwk, elrohir",
+        },
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: "https://events.laterredumilieu.fr/gde/inscription"
+        }
+      ],
+    }
+  }
+}
 
 </script>
 
 <style scoped>
 
-.bg-gray-900 {
+.bg {
     background-color: #18191c;
 }
 

@@ -42,7 +42,7 @@
                                 </th>
                             </tr>
                         </thead>
-                        <!-- <tbody class="text-sm divide-y divide-orange-500">
+                        <tbody class="text-sm divide-y divide-orange-500">
                             <tr v-for="faction in sortedFactions" v-bind:key="faction._id">
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="flex items-center">
@@ -82,7 +82,7 @@ y                                    <div class="text-left font-medium">{{factio
                                     </div>
                                 </td>
                             </tr>
-                        </tbody> -->
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -168,8 +168,8 @@ export default {
                         if(g.attributes.replays && g.attributes.replays.length > 0){
                             console.log(g.attributes.replays)
                             g.attributes.replays.map(r => {
-                                // console.log(r, "r", r.faction_win.data)
-                                if(r.faction_win.data && r.faction_win.data.attributes && r.faction_win.data.attributes.name === f.attributes.name) {
+                                console.log(r, "r", r.faction_win.data, f.attributes.name)
+                                if((r.faction_win.data && r.faction_win.data.attributes && r.faction_win.data.attributes.name) === f.attributes.name) {
                                     let faction = r.faction_lose.data.attributes.name;
                                     typeof newObject.statsFactionWin[faction] === 'undefined' ? 
                                     newObject.statsFactionWin[faction] = 1 : 
@@ -177,7 +177,7 @@ export default {
                                     newObject.wins++;
                                 }
 
-                                if(r.faction_lose.data && r.faction_lose.data.attributes && r.faction_lose.data.attributes.name === f.attributes.name) {
+                                if((r.faction_lose.data && r.faction_lose.data.attributes && r.faction_lose.data.attributes.name) === f.attributes.name) {
                                     let faction = r.faction_win.data.attributes.name;
                                     typeof newObject.statsFactionLose[faction] === 'undefined' ? 
                                     newObject.statsFactionLose[faction] = 1 : 
@@ -202,24 +202,24 @@ export default {
                         }
                     })
 
-                    if(f.attributes.games_lose.data.length > 0){
-                        f.attributes.games_lose.data.map(m => {
+                    // if(f.attributes.games_lose.data.length > 0){
+                    //     f.attributes.games_lose.data.map(m => {
                             // let faction = this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name
                             // typeof newObject.statsFactionLose[faction] === 'undefined' ? 
                             // newObject.statsFactionLose[faction] = 1 : 
                             // newObject.statsFactionLose[faction]++;
-                        })
-                    }
+                    //     })
+                    // }
 
-                    if(f.attributes.games_win.data.length > 0){
-                        f.attributes.games_win.data.map(m => {
+                    // if(f.attributes.games_win.data.length > 0){
+                    //     f.attributes.games_win.data.map(m => {
                             // console.log(this.games)
                             // let faction = this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name
                             // typeof newObject.statsFactionWin[faction] === 'undefined' ? 
                             // newObject.statsFactionWin[faction] = 1 : 
                             // newObject.statsFactionWin[faction]++;
-                        })
-                    }
+                    //     })
+                    // }
                     return Object.assign(f, newObject)
                 })
 

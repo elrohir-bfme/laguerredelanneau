@@ -42,45 +42,37 @@
                                 <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">{{ $t('league.games') }}</div>
                                 </th>
-                                <th v-if="$device.isDesktopOrTablet" 
-                                    class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
+                                <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
                                     <div  class="font-semibold text-left">{{$t(`league.${fac.name}`)}}</div>
                                 </th>
                             </tr>
                         </thead>
                         <tbody class="text-sm divide-y divide-orange-500">
-                            <tr v-for="player in sortedPlayers" v-bind:key="player.id" class="hover-gray-800" @click="infoPlayer(player)">
-                                <!-- <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left text-gray-100">{{player.attributes.rang}}</div>
-                                </td> -->
+                            <tr v-for="player in sortedPlayers" v-bind:key="player._id" class="hover-gray-800" @click="infoPlayer(player)">
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left text-gray-100">{{player.attributes.elo}}</div>
+                                </td>
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="flex items-center">
-                                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-05.jpg" width="40" height="40" alt="Alex Shatov"></div>
+                                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
+                                            <img class="rounded-full" :src="`https://api.laterredumilieu.fr${player.attributes.img.data.attributes.url}`" width="40" height="40" :alt="player.attributes.name">
+                                        </div>
                                         <div class="font-medium text-white">{{player.attributes.name}}</div>
                                     </div>
                                 </td>
-                                
-                                <!-- <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-gray-300">{{player.main}}</div>
-                                </td> -->
-                                <td class="p-2 whitespace-nowrap bg-gray-800">
-                                    <div class="text-lg text-left from-blue-500 to-blue-700 text-gray-100 p-2 m-1" 
-                                    :style="`width: ${player.attributes.games_wins.data.length > 0 || player.attributes.games_loses.data.length > 0 ? ((player.attributes.games_wins.data.length / (player.attributes.games_loses.data.length + player.attributes.games_wins.data.length)) * 100).toFixed(2) : 0}%;`"
-                                    :class="player.attributes.games_wins.data.length > 0 || player.attributes.games_loses.data.length > 0 ? 'bg-gradient-to-r' : ''"
-                                    >
-                                        {{player.attributes.games_wins.data.length > 0 || player.attributes.games_loses.data.length > 0 ? `${((player.attributes.games_wins.data.length / (player.attributes.games_loses.data.length + player.attributes.games_wins.data.length)) * 100).toFixed(0)}%`  : "Aucun Match"}}
-                                    </div>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-lg text-left">{{player.wins}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left text-green-400">{{player.attributes.games_wins.data.length}}</div>
+                                    <div class="text-lg text-left">{{player.loses}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left text-red-400">{{player.attributes.games_loses.data.length}}</div>
+                                    <div class="text-lg text-left">{{player.wins > 0 || player.loses > 0 ? `${((player.wins / (player.loses + player.wins)) * 100).toFixed(0)}%`  : "Aucun Match"}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left text-gray-400">{{player.attributes.games_wins.data.length + player.attributes.games_loses.data.length}}</div>
+                                    <div class="text-lg text-left">{{player.wins + player.loses}}</div>
                                 </td>
-                                <td v-if="$device.isDesktopOrTablet" v-for="fac in factionList" v-bind:key="fac.name" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
+                                <td v-for="fac in factionList" v-bind:key="fac.name" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
                                     <div class="text-lg text-left  text-gray-100 p-2 m-1" 
                                     :style="`width: ${Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0 ? (((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`"
                                     :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0) && (player.statsFactionLose[fac.name] || player.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
@@ -109,7 +101,7 @@
 
     </div>
 
-    <div v-if="info" class="flex-grow">
+    <!-- <div v-if="info" class="flex-grow">
             <div class="flex flex-col justify-top h-full">
         <div class="w-full max-w-3xl mx-auto bg-gray-900 shadow-lg rounded-sm border border-orange-600">
                     <header class="px-5 py-4 border-b border-orange-500 flex">
@@ -173,7 +165,7 @@
             </div> 
             </div> 
             </div> 
-    </div>
+    </div> -->
 
     </div>
 
@@ -182,14 +174,13 @@
 </template>
 
 <script>
+const qs = require('qs');
 export default {
   layout: "league",
     data() {
         return {
             loading: false,
             players: [],
-            maps: [],
-            factions: [],
             player: [],
             info: false,
             factionList: [
@@ -203,16 +194,31 @@ export default {
             ],
         }
     },
-    async asyncData({ $strapi }) {
-        let maps = await $strapi.find('maps', { populate: '*'})
-        let factions = await $strapi.find('factions', { populate: '*'})
-        let games = await $strapi.find('games', { populate: '*'})
+    async asyncData({ $strapi, $axios }) {
         let players = await $strapi.find('players', { populate: '*'})
+        const query = qs.stringify({
+            fields: '*',
+            populate: {
+                populate: '*',
+                replays: {
+                    populate: '*',
+                    faction_win: {
+                        populate: '*'
+                    }
+                },
+            },
+            pagination: {
+                page: 1,
+                pageSize: 50,
+            },
+        }, {
+        encodeValuesOnly: true,
+        });
 
-        // maps = await JSON.parse(JSON.stringify(this.maps))
-        // factions = await JSON.parse(JSON.stringify(this.factions))
+        const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
+        let games = data
 
-        return { maps, factions, games, players }
+        return { players, games }
     },
     methods: {  
         infoPlayer(player){
@@ -226,72 +232,101 @@ export default {
     },
     computed:{
         sortedPlayers() {
-            if(this.players && this.factions){
-
+            if(this.players){
+                console.log("dejidjeiijde")
                 let newPlayers= this.players.data.map(f => {
                     let newObject = {
                         statsFactionWin: {},
-                        statsFactionLose: {}
+                        statsFactionLose: {},
+                        wins: 0,
+                        loses: 0
                     }
 
+                    console.log("djiejdiejidejdeiji")
 
-                    if(f.attributes.games_loses.data.length > 0){
-                        f.attributes.games_loses.data.map(m => {
-                            let faction = this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name
-                            typeof newObject.statsFactionLose[faction] === 'undefined' ? 
-                            newObject.statsFactionLose[faction] = 1 : 
-                            newObject.statsFactionLose[faction]++;
-                        })
-                    }
+                    this.games.map(g => {
+                        if(g.attributes.replays && g.attributes.replays.length > 0){
+                            g.attributes.replays.map(r => {
+                                if((r.player_win.data && r.player_win.data.attributes && r.player_win.data.attributes.name) === f.attributes.name) {
+                                    let faction = r.faction_lose.data.attributes.name;
+                                    typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                                    newObject.statsFactionWin[faction] = 1 : 
+                                    newObject.statsFactionWin[faction]++;
+                                    newObject.wins++;
+                                }
 
-                    if(f.attributes.games_wins.data.length > 0){
-                        f.attributes.games_wins.data.map(m => {
-                            let faction = this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name
-                            typeof newObject.statsFactionWin[faction] === 'undefined' ? 
-                            newObject.statsFactionWin[faction] = 1 : 
-                            newObject.statsFactionWin[faction]++;
-                        })
-                    }
+                                if((r.player_lose.data && r.player_lose.data.attributes && r.player_lose.data.attributes.name) === f.attributes.name) {
+                                    let faction = r.faction_win.data.attributes.name;
+                                    typeof newObject.statsFactionLose[faction] === 'undefined' ? 
+                                    newObject.statsFactionLose[faction] = 1 : 
+                                    newObject.statsFactionLose[faction]++;
+                                    newObject.loses++;
+                                }
+                            })
+                        }
+                    })
+
                     return Object.assign(f, newObject)
                 })
+
+
+                //     if(f.attributes.games_loses.data.length > 0){
+                //         f.attributes.games_loses.data.map(m => {
+                //             let faction = this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name
+                //             typeof newObject.statsFactionLose[faction] === 'undefined' ? 
+                //             newObject.statsFactionLose[faction] = 1 : 
+                //             newObject.statsFactionLose[faction]++;
+                //         })
+                //     }
+
+                //     if(f.attributes.games_wins.data.length > 0){
+                //         f.attributes.games_wins.data.map(m => {
+                //             let faction = this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name
+                //             typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                //             newObject.statsFactionWin[faction] = 1 : 
+                //             newObject.statsFactionWin[faction]++;
+                //         })
+                //     }
+                //     return Object.assign(f, newObject)
+                // })
                 return newPlayers
             }
 
             
         },
-        sortedMatchPlayer() {
-            if(this.player){
-                console.log(this.player, "SORTED MATCHS PLAYER")
+        // sortedMatchPlayer() {
+        //     if(this.player){
+        //         console.log(this.player, "SORTED MATCHS PLAYER")
 
-                let playerWin = this.player.attributes.games_wins.data.map(m=> {
-                    let map = this.games.data.find(x => x.id === m.id)
-                    return Object.assign(m, map)
-                })
+        //         let playerWin = this.player.attributes.games_wins.data.map(m=> {
+        //             let map = this.games.data.find(x => x.id === m.id)
+        //             return Object.assign(m, map)
+        //         })
 
-                let playerLose = this.player.attributes.games_loses.data.map(m=> {
-                    let map = this.games.data.find(x => x.id === m.id)
-                    return Object.assign(m, map)
-                })
+        //         let playerLose = this.player.attributes.games_loses.data.map(m=> {
+        //             let map = this.games.data.find(x => x.id === m.id)
+        //             return Object.assign(m, map)
+        //         })
 
-                // let playerLose = this.player.lose.map(p=> {
-                //     console.log(p, "diejdiej")
-                //     let object = {
-                //         mapUp: this.maps.find(x => x._id === p.map),
-                //         playerWinUp: this.players.find(x => x._id === p.playerWin),
-                //         playerLoseUp: this.players.find(x => x._id === p.playerLose),
-                //         factionWinUp: this.factions.find(x => x._id === p.faction_win),
-                //         factionLoseUp: this.factions.find(x => x._id === p.faction_lose),
-                //     }
-                //     return Object.assign(p, object)
-                // })
+        //         // let playerLose = this.player.lose.map(p=> {
+        //         //     console.log(p, "diejdiej")
+        //         //     let object = {
+        //         //         mapUp: this.maps.find(x => x._id === p.map),
+        //         //         playerWinUp: this.players.find(x => x._id === p.playerWin),
+        //         //         playerLoseUp: this.players.find(x => x._id === p.playerLose),
+        //         //         factionWinUp: this.factions.find(x => x._id === p.faction_win),
+        //         //         factionLoseUp: this.factions.find(x => x._id === p.faction_lose),
+        //         //     }
+        //         //     return Object.assign(p, object)
+        //         // })
 
-            let Newmatchs = [...playerWin, ...playerLose]
-            // return Newmatchs
-            console.log(Newmatchs)
+        //     let Newmatchs = [...playerWin, ...playerLose]
+        //     // return Newmatchs
+        //     console.log(Newmatchs)
 
-            return Newmatchs.map(game=>game.attributes).sort((a,b)=> a.updatedAt - b.updatedAt)
-            }
-        },
+        //     return Newmatchs.map(game=>game.attributes).sort((a,b)=> a.updatedAt - b.updatedAt)
+        //     }
+        // },
     },
 }
 </script>

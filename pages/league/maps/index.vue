@@ -38,7 +38,7 @@
                                 </th>
                             </tr>
                         </thead>
-                        <!-- <tbody class="text-sm divide-y divide-orange-500">
+                        <tbody class="text-sm divide-y divide-orange-500">
                             <tr v-for="map in sortedMaps" v-bind:key="map._id">
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-left text-gray-100">{{map.attributes.name}}</div>
@@ -47,10 +47,10 @@
                                     <div class="text-left text-gray-100">{{map.attributes.description}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                        <img class="object-contain" :src="map.attributes.minimap && `https://api.laterredumilieu.fr${map.attributes.minimap.data.attributes.url}`">
+                                        <img class="object-contain transform transition duration-500 hover:scale-150 hover:drop-shadow-xl" :src="`https://api.laterredumilieu.fr${map.attributes.img.data.attributes.url}`">
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{map.attributes.games.data.length}}</div>
+                                    <div class="text-lg text-left">{{map.wins + map.loses}}</div>
                                 </td>
                                 <td v-for="fac in factionList" v-bind:key="fac.name" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
                                     <div class="text-lg text-left  text-gray-100 p-2 m-1" 
@@ -70,7 +70,7 @@
                                     </div>
                                 </td>
                             </tr>
-                        </tbody> -->
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -96,12 +96,12 @@ export default {
         maps: [],
         factions: [],
         factionList: [
-            {name: "Homme", color: "blue"}, 
-            {name: "Elfe", color: "green"}, 
-            {name: "Nain", color: "yellow"}, 
+            {name: "Men", color: "blue"}, 
+            {name: "Elves", color: "green"}, 
+            {name: "Dwarves", color: "yellow"}, 
             {name: "Mordor", color: "red"},
             {name: "Isengard", color: "gray"},
-            {name: "Gobelin", color: "orange"},
+            {name: "Goblins", color: "orange"},
             {name: "Angmar", color: "purple"}
         ],
         }
@@ -134,8 +134,8 @@ export default {
     computed:{
         sortedMaps() {
             if(this.maps){
-
-                let NewFaction = this.factions.data.map(f => {
+                console.log("DEBUT")
+                let newMaps = this.maps.data.map(f => {
                     let newObject = {
                         statsFactionWin: {},
                         statsFactionLose: {},
@@ -143,10 +143,15 @@ export default {
                         loses: 0
                     }
 
+                    console.log("deidjiedje")
+
                     this.games.map(g => {
+                        console.log(g, "dehudheud")
                         if(g.attributes.replays && g.attributes.replays.length > 0){
                             g.attributes.replays.map(r => {
+                                console.log(r.map, f, "fff")
                                 if((r.map.data && r.map.data.id) === f.id) {
+                                    console.log(r, "r")
                                     let faction = r.faction_lose.data.attributes.name;
                                     typeof newObject.statsFactionWin[faction] === 'undefined' ? 
                                     newObject.statsFactionWin[faction] = 1 : 
@@ -190,6 +195,7 @@ export default {
 
                 //     return Object.assign(f, newObject)
                 // })
+                console.log(newMaps)
                 return newMaps;
             }
         },

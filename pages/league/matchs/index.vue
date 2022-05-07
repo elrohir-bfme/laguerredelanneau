@@ -14,7 +14,7 @@
 
             <header class="px-5 py-4 border-b border-orange-500 flex">
                 <div class="flex-grow">
-                    <h2 class="font-semibold text-white">{{ $t('league.maps') }}</h2>
+                    <h2 class="font-semibold text-white">{{ $t('league.games') }}</h2>
                 </div>
             </header>
 
@@ -24,53 +24,83 @@
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
                             <tr>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.name') }}</div>
+                                    <!-- <div class="font-semibold text-left">{{ $t('league.name') }}</div> -->
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.description') }}</div>
+                                    <div class="font-semibold text-left">{{ $t('league.date') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.img') }}</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.nbMatchs') }}</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
-                                    <div class="font-semibold text-left">{{$t(`league.${fac.name}`)}}</div>
+                                    <div class="font-semibold text-left">{{ $t('league.bo') }}</div>
                                 </th>
                             </tr>
                         </thead>
-                        <tbody class="text-sm divide-y divide-orange-500">
-                            <tr v-for="map in sortedMaps" v-bind:key="map._id">
+                        <tbody v-for="game in games" v-bind:key="game.id" class="text-sm divide-y divide-orange-500">
+                            <tr>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left text-gray-100">{{map.attributes.name}}</div>
+                                    <svg class="fill-current text-green-600 h-8 w-8" @click="showReplays(game.id)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6l1.41-1.41z"/></svg>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left text-gray-100">{{map.attributes.description}}</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                        <img class="object-contain" :src="map.attributes.minimap && `https://api.laterredumilieu.fr${map.attributes.minimap.data.attributes.url}`">
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{map.attributes.games.data.length}}</div>
-                                </td>
-                                <td v-for="fac in factionList" v-bind:key="fac.name" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
-                                    <div class="text-lg text-left  text-gray-100 p-2 m-1" 
-                                    :style="`width: ${Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0 ? (((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`"
-                                    :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0) && (map.statsFactionLose[fac.name] || map.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
-                                    >
-                                        {{Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0 ?
-                                            map.statsFactionLose[fac.name] && map.statsFactionWin[fac.name] ?
-                                            `(${map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0}
-                                            /
-                                            ${map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0}) 
-                                            ${(((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)}%
-                                            `
-                                            : map.statsFactionLose[fac.name] ? `${map.statsFactionLose[fac.name]} ${$t('league.lose')}${map.statsFactionLose[fac.name] == 1 ? '' : 's'}` : map.statsFactionWin[fac.name] ? `${map.statsFactionWin[fac.name]} ${$t('league.win')}${map.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
-                                        : ""
-                                        }}
+                                    <div class="text-left text-gray-100">
+                                        {{ $moment(game.attributes.date).lang($i18n.locale).format('MMMM Do YYYY, h:mm:ss a') }}
+                                        ({{ $moment(game.attributes.date).lang($i18n.locale).fromNow()}})
                                     </div>
                                 </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left text-gray-100">
+                                        {{ game.attributes.bo}}
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr v-if="ids.length > 0 && ids.includes(game.id)">
+                                <table class="table-auto w-full border-2 border-gray-800 rounded-xl">
+                                    <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
+                                        <tr>
+                                            <th class="p-2 whitespace-nowrap">
+                                                <div class="font-semibold text-left">{{ $t('league.name') }}</div>
+                                            </th>
+                                            <th class="p-2 whitespace-nowrap">
+                                                <div class="font-semibold text-left">{{ $t('league.description') }}</div>
+                                            </th>
+                                            <th class="p-2 whitespace-nowrap">
+                                                <div class="font-semibold text-left">{{ $t('league.img') }}</div>
+                                            </th>
+                                            <th class="p-2 whitespace-nowrap">
+                                                <div class="font-semibold text-left">{{ $t('league.replay') }}</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-sm divide-y divide-orange-500">
+                                        <tr v-for="replay in game.attributes.replays" v-bind:key="replay.id">
+                                            <td class="p-2 whitespace-nowrap">
+                                                <div class="text-lg text-left text-white">
+                                                    {{replay.map.data && replay.map.data.attributes.name}}
+                                                </div>
+                                            </td>
+                                            <td class="p-2 whitespace-nowrap">
+                                                <div class="text-lg text-left text-white">
+                                                    {{replay.player_win.data && replay.player_win.data.attributes.name}}
+                                                    <span :class="`text-${factionList.find(o => o.name === (replay.faction_win.data && replay.faction_win.data.attributes.name)).color}-500`">
+                                                        {{replay.faction_win.data && replay.faction_win.data.attributes.name}}
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="p-2 whitespace-nowrap">
+                                                <div class="text-lg text-left text-white">
+                                                    {{replay.player_lose.data && replay.player_lose.data.attributes.name}}
+                                                    <span :class="`text-${factionList.find(o => o.name === (replay.faction_lose.data && replay.faction_lose.data.attributes.name)).color}-500`">
+                                                    {{replay.faction_lose.data && replay.faction_lose.data.attributes.name}}
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="p-2 whitespace-nowrap" v-if="replay.replay.data !== null">
+                                                <a target="_blank" :href="`https://api.laterredumilieu.fr${replay.replay.data.attributes.url}`" class="bg-orange-900 hover:bg-orange-800 text-white font-bold py-2 px-4 mx-2 rounded inline-flex items-center">
+                                                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                                                    <span>{{replay.replay.data.attributes.name}}</span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </tr>
                         </tbody>
                     </table>
@@ -91,12 +121,14 @@
 </template>
 
 <script>
+const qs = require('qs');
 export default {
   layout: "league",
     data() {
         return {
             loading: false,
             games: [],
+            ids: [],
             factionList: [
                 {name: "Men", color: "blue"}, 
                 {name: "Elves", color: "green"}, 
@@ -108,41 +140,53 @@ export default {
             ],
         }
     },
-    async asyncData({ $strapi }) {
-        let maps = await $strapi.find('maps', { populate: '*'})
-        let games = await $strapi.find('games', { populate: '*'})
+    async asyncData({ $axios }) {
+        const query = qs.stringify({
+            fields: '*',
+            populate: {
+                populate: '*',
+                replays: {
 
-        return { maps, games }
+                    populate: '*',
+                    faction_win: {
+                        populate: '*'
+                    },
+                    faction_lose: {
+                        populate: '*'
+                    },
+                    map: {
+                        populate: '*'
+                    },
+                    player_win: {
+                        populate: '*'
+                    },
+                },
+            },
+            pagination: {
+                page: 1,
+                pageSize: 50,
+            },
+        }, {
+        encodeValuesOnly: true,
+        });
+
+        const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
+        let games = data
+        return { games }
     },
         computed:{
-            sortedMaps() {
-                if(this.maps){
-                    let newMaps = this.maps.data.map(f => {
-                        let newObject = {
-                            statsFactionWin: {},
-                            statsFactionLose: {}
-                        }
 
-
-                        if(f.attributes.games.data.length > 0){
-                            f.attributes.games.data.map(m => {
-                                typeof newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name] === 'undefined' ? 
-                                newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name] = 1 : 
-                                newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name]++;
-
-
-                                typeof newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name] === 'undefined' ? 
-                                newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name] = 1 : 
-                                newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name]++;
-                            })
-                        }
-
-                        return Object.assign(f, newObject)
-                    })
-                    return newMaps;
-                }
         },
-    },
+        methods: {  
+            showReplays(id){
+                console.log(id, this.ids, "showREPLAY")
+                if(!this.ids.includes(id)){          //checking weather array contain the id
+                    this.ids.push(id);               //adding to array because value doesnt exists
+                }else{
+                    this.ids.splice(this.ids.indexOf(id), 1);  //deleting
+                }
+            }
+        },
 }
 </script>
 <style>

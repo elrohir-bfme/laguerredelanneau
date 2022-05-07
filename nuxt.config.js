@@ -106,7 +106,12 @@ export default {
     ]
   },
 
-  components: true,
+  components: {
+    dirs: [
+      '~/components',
+      '~/components/leagues'
+    ]
+  },
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [

@@ -38,7 +38,7 @@
                                 </th>
                             </tr>
                         </thead>
-                        <tbody class="text-sm divide-y divide-orange-500">
+                        <!-- <tbody class="text-sm divide-y divide-orange-500">
                             <tr v-for="map in sortedMaps" v-bind:key="map._id">
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-left text-gray-100">{{map.attributes.name}}</div>
@@ -70,7 +70,7 @@
                                     </div>
                                 </td>
                             </tr>
-                        </tbody>
+                        </tbody> -->
                     </table>
                 </div>
             </div>
@@ -87,6 +87,7 @@
 </template>
 
 <script>
+const qs = require('qs');
 export default {
   layout: "league",
     data() {
@@ -105,41 +106,90 @@ export default {
         ],
         }
     },
-    async asyncData({ $strapi }) {
+    async asyncData({ $strapi, $axios }) {
         let maps = await $strapi.find('maps', { populate: '*'})
-        let games = await $strapi.find('games', { populate: '*'}) 
+        const query = qs.stringify({
+            fields: '*',
+            populate: {
+                populate: '*',
+                replays: {
+                    populate: '*',
+                    faction_win: {
+                        populate: '*'
+                    }
+                },
+            },
+            pagination: {
+                page: 1,
+                pageSize: 50,
+            },
+        }, {
+        encodeValuesOnly: true,
+        });
 
+        const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
+        let games = data
         return { maps, games }
     },
     computed:{
         sortedMaps() {
             if(this.maps){
 
-                
-
-
-                let newMaps = this.maps.data.map(f => {
+                let NewFaction = this.factions.data.map(f => {
                     let newObject = {
                         statsFactionWin: {},
-                        statsFactionLose: {}
+                        statsFactionLose: {},
+                        wins: 0,
+                        loses: 0
                     }
 
+                    this.games.map(g => {
+                        if(g.attributes.replays && g.attributes.replays.length > 0){
+                            g.attributes.replays.map(r => {
+                                if((r.map.data && r.map.data.id) === f.id) {
+                                    let faction = r.faction_lose.data.attributes.name;
+                                    typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                                    newObject.statsFactionWin[faction] = 1 : 
+                                    newObject.statsFactionWin[faction]++;
+                                    newObject.wins++;
 
-                    if(f.attributes.games.data.length > 0){
-                        f.attributes.games.data.map(m => {
-                            typeof newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name] === 'undefined' ? 
-                            newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name] = 1 : 
-                            newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name]++;
-
-
-                            typeof newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name] === 'undefined' ? 
-                            newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name] = 1 : 
-                            newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name]++;
-                        })
-                    }
+                                    let faction2 = r.faction_win.data.attributes.name;
+                                    typeof newObject.statsFactionLose[faction2] === 'undefined' ? 
+                                    newObject.statsFactionLose[faction2] = 1 : 
+                                    newObject.statsFactionLose[faction2]++;
+                                    newObject.loses++;
+                                }
+                            })
+                        }
+                    })
 
                     return Object.assign(f, newObject)
                 })
+
+
+
+                // let newMaps = this.maps.data.map(f => {
+                //     let newObject = {
+                //         statsFactionWin: {},
+                //         statsFactionLose: {}
+                //     }
+
+
+                //     if(f.attributes.games.data.length > 0){
+                //         f.attributes.games.data.map(m => {
+                //             typeof newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name] === 'undefined' ? 
+                //             newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name] = 1 : 
+                //             newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name]++;
+
+
+                //             typeof newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name] === 'undefined' ? 
+                //             newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name] = 1 : 
+                //             newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name]++;
+                //         })
+                //     }
+
+                //     return Object.assign(f, newObject)
+                // })
                 return newMaps;
             }
         },

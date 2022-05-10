@@ -352,9 +352,11 @@ robots: {
           },
           league: {
             title: "League ROTWK",
+            league: "League",
             maps: "Maps",
             player: "Players",
             players: "Players",
+            rules: "Rules",
             matchs: "Games",
             factions: "Factions",
             win: "Win",
@@ -379,7 +381,8 @@ robots: {
             Mordor: "Mordor",
             Isengard: "Isengard",
             Goblins: "Goblins",
-            Angmar: "Angmar"
+            Angmar: "Angmar",
+            bo: "BO"
           }
         },
         fr: {
@@ -503,10 +506,12 @@ robots: {
             participer: "Si vous voulez participer à l'évènement suffit de rejoindre le Discord et de prendre une faction. Pour plus d'informations aller voir les règles.",
           },
           league: {
-            title: "League ROTWK",
+            title: "Ligue ROTWK",
+            league: "Ligue",
             maps: "Maps",
-            player: "Joueurs",
+            player: "Joueur",
             players: "Joueurs",
+            rules: "Règles",
             matchs: "Parties",
             factions: "Factions",
             win: "Victoire",
@@ -531,7 +536,8 @@ robots: {
             Mordor: "Mordor",
             Isengard: "Isengard",
             Goblins: "Gobelin",
-            Angmar: "Angmar"
+            Angmar: "Angmar",
+            bo: "BO"
           }
         }
       }

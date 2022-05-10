@@ -37,7 +37,7 @@
                         <tbody v-for="game in games" v-bind:key="game.id" class="text-sm divide-y divide-orange-500">
                             <tr>
                                 <td class="p-2 whitespace-nowrap">
-                                    <svg class="fill-current text-green-600 h-8 w-8" @click="showReplays(game.id)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6l1.41-1.41z"/></svg>
+                                    <svg class="fill-current text-orange-600 h-12 w-12" @click="showReplays(game.id)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6l1.41-1.41z"/></svg>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-left text-gray-100">
@@ -56,13 +56,13 @@
                                     <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
                                         <tr>
                                             <th class="p-2 whitespace-nowrap">
-                                                <div class="font-semibold text-left">{{ $t('league.name') }}</div>
+                                                <div class="font-semibold text-left">{{ $t('league.map') }}</div>
                                             </th>
                                             <th class="p-2 whitespace-nowrap">
-                                                <div class="font-semibold text-left">{{ $t('league.description') }}</div>
+                                                <div class="font-semibold text-left">{{ $t('league.win') }}</div>
                                             </th>
                                             <th class="p-2 whitespace-nowrap">
-                                                <div class="font-semibold text-left">{{ $t('league.img') }}</div>
+                                                <div class="font-semibold text-left">{{ $t('league.lose') }}</div>
                                             </th>
                                             <th class="p-2 whitespace-nowrap">
                                                 <div class="font-semibold text-left">{{ $t('league.replay') }}</div>
@@ -79,17 +79,17 @@
                                             <td class="p-2 whitespace-nowrap">
                                                 <div class="text-lg text-left text-white">
                                                     {{replay.player_win.data && replay.player_win.data.attributes.name}}
-                                                    <span :class="`text-${factionList.find(o => o.name === (replay.faction_win.data && replay.faction_win.data.attributes.name)).color}-500`">
+                                                    (<span :class="`text-${factionList.find(o => o.name === (replay.faction_win.data && replay.faction_win.data.attributes.name)).color}-500`">
                                                         {{replay.faction_win.data && replay.faction_win.data.attributes.name}}
-                                                    </span>
+                                                    </span>)
                                                 </div>
                                             </td>
                                             <td class="p-2 whitespace-nowrap">
                                                 <div class="text-lg text-left text-white">
                                                     {{replay.player_lose.data && replay.player_lose.data.attributes.name}}
-                                                    <span :class="`text-${factionList.find(o => o.name === (replay.faction_lose.data && replay.faction_lose.data.attributes.name)).color}-500`">
+                                                    (<span :class="`text-${factionList.find(o => o.name === (replay.faction_lose.data && replay.faction_lose.data.attributes.name)).color}-500`">
                                                     {{replay.faction_lose.data && replay.faction_lose.data.attributes.name}}
-                                                    </span>
+                                                    </span>)
                                                 </div>
                                             </td>
                                             <td class="p-2 whitespace-nowrap" v-if="replay.replay.data !== null">

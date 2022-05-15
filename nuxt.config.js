@@ -382,7 +382,8 @@ robots: {
             Isengard: "Isengard",
             Goblins: "Goblins",
             Angmar: "Angmar",
-            bo: "BO"
+            bo: "BO",
+            elo: "Elo"
           }
         },
         fr: {
@@ -537,7 +538,8 @@ robots: {
             Isengard: "Isengard",
             Goblins: "Gobelin",
             Angmar: "Angmar",
-            bo: "BO"
+            bo: "BO",
+            elo: "Elo"
           }
         }
       }

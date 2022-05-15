@@ -1,6 +1,6 @@
 <template>
   <section class="text-white body-font">
-  <div class="container px-5 py-4 mx-auto">
+  <div class="lg:container sm:m-0 lg:mx-auto lg:px-5 py-4 mx-auto">
     <div class="flex flex-col text-center w-full mb-5">
       <h1 class="font-medium mb-4 text-red-500 text-8xl">{{ $t('league.maps') }}</h1>
     </div>
@@ -27,35 +27,35 @@
                                 <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">{{ $t('league.img') }}</div>
                                 </th>
-                                <th class="p-2 whitespace-nowrap">
+                                <!-- <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">{{ $t('league.nbMatchs') }}</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
-                                    <div class="font-semibold text-left">{{$t(`league.${fac.name}`)}}</div>
+                                </th> -->
+                                <th class="p-2 whitespace-nowrap hidden md:table-cell" v-for="fac in factionList" v-bind:key="fac.name">
+                                    <div class="font-semibold text-center">{{$t(`league.${fac.name}`)}}</div>
                                 </th>
                             </tr>
                         </thead>
                         <tbody class="text-sm divide-y divide-orange-500">
                             <tr v-for="map in sortedMaps" v-bind:key="map._id">
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left text-gray-100 ml-4">{{map.attributes.name}}</div>
+                                <td class="p-2">
+                                    <div class="text-left text-gray-100 ml-4">
+                                    {{map.attributes.name}} ({{map.wins + map.loses}}) <br/><br/>
+                                    <span class="hidden sm:inline m-4 text-xs text-gray-300">{{map.attributes.description}}</span>
+                                    </div>
                                 </td>
                                 <!-- <td class="p-2 whitespace-nowrap">
                                     <div class="text-left text-gray-100">{{map.attributes.description}}</div>
                                 </td> -->
-                                <td class="p-2 whitespace-nowrap">
-                                    <img class="h-6 w-6 rounded-3xl" :src="`https://api.laterredumilieu.fr${map.attributes.img.data.attributes.url}`">
+                                <td class="p-2">
+                                    <img class="h-auto rounded-3xl" :src="`https://api.laterredumilieu.fr${map.attributes.minimap.data.attributes.url}`">
                                 </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{map.wins + map.loses}}</div>
-                                </td>
-                                <td v-for="fac in factionList" v-bind:key="fac.name" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
-                                    <div class="flex items-center justify-center text-white text-sm text-center">
+                                <td v-for="fac in factionList" v-bind:key="fac.name" class="hidden md:table-cell p-2 w-1/12 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
+                                    <div v-if="map.statsFactionWin[fac.name] || map.statsFactionWin[fac.name]" class="flex items-center justify-center text-white text-sm text-center">
                                         <p>
                                             {{`${(map.statsFactionWin[fac.name] >= 0 || map.statsFactionLose[fac.name] >= 0) ? ((((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)) : "0"}%`}}
                                         </p>
                                     </div>
-                                    <div class="w-full h-2 bg-indigo-100 rounded-full mb-4">
+                                    <div v-if="map.statsFactionWin[fac.name] || map.statsFactionWin[fac.name]" class="w-full h-2 bg-indigo-100 rounded-full mb-4">
                                         <div 
                                             :style="`width: ${Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0 ? (((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`" 
                                             class="h-full text-center text-xs rounded-full"
@@ -63,13 +63,16 @@
                                         >
                                         </div>
                                     </div>
-                                    <div class="flex items-center justify-between text-white text-sm">
+                                    <div v-if="map.statsFactionWin[fac.name] || map.statsFactionWin[fac.name]" class="flex items-center justify-between text-white text-sm">
                                         <p>
                                             {{map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0}}V
                                         </p>
                                         <p>
                                             {{map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0}}D
                                         </p>
+                                    </div>
+                                    <div v-else class=" text-white text-sm">
+                                        <p class="text-center">-</p>
                                     </div>
                                 </td>
                             </tr>

@@ -1,6 +1,6 @@
     <template>
-  <section class="text-gray-600 body-font">
-  <div class="container px-5 py-4 mx-auto">
+  <section class="text-white body-font">
+  <div class="lg:container sm:m-0 lg:mx-auto lg:px-5 py-4 mx-auto">
     <div class="flex flex-col text-center w-full mb-5">
       <h1 class="font-medium mb-4 text-red-500 text-8xl">{{ $t('league.players') }}</h1>
     </div>
@@ -21,17 +21,17 @@
                     <table class="table-auto w-full border-2 border-gray-800 rounded-xl">
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
                             <tr>
-                                <!-- <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.rang') }}</div>
-                                </th> -->
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.players') }}</div>
+                                    <div class="font-semibold text-left">{{ $t('league.rang') }}</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">{{ $t('league.elo') }}</div>
                                 </th>
                                 <!-- <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">{{ $t('league.main') }}</div>
                                 </th> -->
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.winRatio') }}</div>
+                                    <div class="font-semibold text-left">{{ $t('league.players') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">{{ $t('league.win') }}</div>
@@ -39,16 +39,22 @@
                                 <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">{{ $t('league.lose') }}</div>
                                 </th>
+                                <th class="p-2">
+                                    <div class="font-semibold text-left">{{ $t('league.winRatio') }}</div>
+                                </th>
                                 <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">{{ $t('league.games') }}</div>
                                 </th>
-                                <th class="p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
+                                <th class="hidden md:table-cell p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
                                     <div  class="font-semibold text-left">{{$t(`league.${fac.name}`)}}</div>
                                 </th>
                             </tr>
                         </thead>
                         <tbody class="text-sm divide-y divide-orange-500">
-                            <tr v-for="player in sortedPlayers" v-bind:key="player._id" class="hover-gray-800" @click="infoPlayer(player)">
+                            <tr v-for="(player, index) in sortedPlayers" v-bind:key="player._id" class="hover-gray-800" @click="infoPlayer(player)">
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center text-gray-100">{{index + 1}}</div>
+                                </td>
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-left text-gray-100">{{player.attributes.elo}}</div>
                                 </td>
@@ -61,32 +67,41 @@
                                     </div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{player.wins}}</div>
+                                    <div class="text-lg text-center">{{player.wins}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{player.loses}}</div>
+                                    <div class="text-lg text-center">{{player.loses}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{player.wins > 0 || player.loses > 0 ? `${((player.wins / (player.loses + player.wins)) * 100).toFixed(0)}%`  : "Aucun Match"}}</div>
+                                    <div class="text-lg text-center">{{player.wins > 0 || player.loses > 0 ? `${((player.wins / (player.loses + player.wins)) * 100).toFixed(0)}%`  : "Aucun Match"}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{player.wins + player.loses}}</div>
+                                    <div class="text-lg text-center">{{player.wins + player.loses}}</div>
                                 </td>
-                                <td v-for="fac in factionList" v-bind:key="fac.name" class="p-2 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
-                                    <div class="text-lg text-left  text-gray-100 p-2 m-1" 
-                                    :style="`width: ${Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0 ? (((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`"
-                                    :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0) && (player.statsFactionLose[fac.name] || player.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
-                                    >
-                                        {{Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0 ?
-                                            player.statsFactionLose[fac.name] && player.statsFactionWin[fac.name] ?
-                                            `(${player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0}
-                                            /
-                                            ${player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0}) 
-                                            ${(((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)}%
-                                            `
-                                            : player.statsFactionLose[fac.name] ? `${player.statsFactionLose[fac.name]} ${$t('league.lose')}${player.statsFactionLose[fac.name] == 1 ? '' : 's'}` : player.statsFactionWin[fac.name] ? `${player.statsFactionWin[fac.name]} ${$t('league.win')}${player.statsFactionWin[fac.name] == 1 ? '' : 's'}` : ""
-                                        : ""
-                                        }}
+                                <td v-for="fac in factionList" v-bind:key="fac.name" class="hidden md:table-cell p-2 w-1/12 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
+                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionWin[fac.name]" class="flex items-center justify-center text-white text-sm text-center">
+                                        <p>
+                                            {{`${(player.statsFactionWin[fac.name] >= 0 || player.statsFactionLose[fac.name] >= 0) ? ((((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)) : "0"}%`}}
+                                        </p>
+                                    </div>
+                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionWin[fac.name]" class="w-full h-2 bg-indigo-100 rounded-full mb-4">
+                                        <div 
+                                            :style="`width: ${Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0 ? (((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`" 
+                                            class="h-full text-center text-xs rounded-full"
+                                            :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0) && (player.statsFactionLose[fac.name] || player.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
+                                        >
+                                        </div>
+                                    </div>
+                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionWin[fac.name]" class="flex items-center justify-between text-white text-sm">
+                                        <p>
+                                            {{player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0}}V
+                                        </p>
+                                        <p>
+                                            {{player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0}}D
+                                        </p>
+                                    </div>
+                                    <div v-else class=" text-white text-sm">
+                                        <p class="text-center">-</p>
                                     </div>
                                 </td>
                             </tr>
@@ -198,6 +213,7 @@ export default {
         let players = await $strapi.find('players', { populate: '*'})
         const query = qs.stringify({
             fields: '*',
+            sort: ['elo'],
             populate: {
                 populate: '*',
                 replays: {
@@ -233,7 +249,6 @@ export default {
     computed:{
         sortedPlayers() {
             if(this.players){
-                console.log("dejidjeiijde")
                 let newPlayers= this.players.data.map(f => {
                     let newObject = {
                         statsFactionWin: {},
@@ -242,25 +257,29 @@ export default {
                         loses: 0
                     }
 
-                    console.log("djiejdiejidejdeiji")
-
                     this.games.map(g => {
                         if(g.attributes.replays && g.attributes.replays.length > 0){
                             g.attributes.replays.map(r => {
-                                if((r.player_win.data && r.player_win.data.attributes && r.player_win.data.attributes.name) === f.attributes.name) {
-                                    let faction = r.faction_lose.data.attributes.name;
-                                    typeof newObject.statsFactionWin[faction] === 'undefined' ? 
-                                    newObject.statsFactionWin[faction] = 1 : 
-                                    newObject.statsFactionWin[faction]++;
-                                    newObject.wins++;
+                                if(r.faction_lose && r.faction_lose.data?.attributes){
+                                    if((r.player_win.data && r.player_win.data.attributes && r.player_win.data.attributes.name) === f.attributes.name) {
+                                        let faction = r.faction_lose.data.attributes.name;
+                                        typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                                        newObject.statsFactionWin[faction] = 1 : 
+                                        newObject.statsFactionWin[faction]++;
+                                        newObject.wins++;
+                                    }
                                 }
 
-                                if((r.player_lose.data && r.player_lose.data.attributes && r.player_lose.data.attributes.name) === f.attributes.name) {
-                                    let faction = r.faction_win.data.attributes.name;
-                                    typeof newObject.statsFactionLose[faction] === 'undefined' ? 
-                                    newObject.statsFactionLose[faction] = 1 : 
-                                    newObject.statsFactionLose[faction]++;
-                                    newObject.loses++;
+                                if(r.faction_win && r.faction_win.data?.attributes){
+                                    if((r.player_lose.data && r.player_lose.data.attributes && r.player_lose.data.attributes.name) === f.attributes.name) {
+                                        if(r.faction_win.data.attributes !== null && r.faction_win.data.attributes.name){
+                                            let faction = r.faction_win.data.attributes.name;
+                                            typeof newObject.statsFactionLose[faction] === 'undefined' ? 
+                                            newObject.statsFactionLose[faction] = 1 : 
+                                            newObject.statsFactionLose[faction]++;
+                                            newObject.loses++;
+                                        }
+                                    }
                                 }
                             })
                         }
@@ -269,26 +288,6 @@ export default {
                     return Object.assign(f, newObject)
                 })
 
-
-                //     if(f.attributes.games_loses.data.length > 0){
-                //         f.attributes.games_loses.data.map(m => {
-                //             let faction = this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name
-                //             typeof newObject.statsFactionLose[faction] === 'undefined' ? 
-                //             newObject.statsFactionLose[faction] = 1 : 
-                //             newObject.statsFactionLose[faction]++;
-                //         })
-                //     }
-
-                //     if(f.attributes.games_wins.data.length > 0){
-                //         f.attributes.games_wins.data.map(m => {
-                //             let faction = this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name
-                //             typeof newObject.statsFactionWin[faction] === 'undefined' ? 
-                //             newObject.statsFactionWin[faction] = 1 : 
-                //             newObject.statsFactionWin[faction]++;
-                //         })
-                //     }
-                //     return Object.assign(f, newObject)
-                // })
                 return newPlayers
             }
 

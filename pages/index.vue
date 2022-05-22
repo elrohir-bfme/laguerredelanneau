@@ -78,7 +78,33 @@
 
         
         <div class="w-full px-2 mt-6 mb-4">
-          <nuxt-link title="Loup Garou en Terre du Milieu"  to="/loup-garou" class="group flex flex-wrap w-full bg-gray-800 sm:py-56 py-56 sm:px-10 px-6 relative border-purple-300 border-2 rounded-xl">
+          <nuxt-link title="Ligue français de l'Avènement du Roi Sorcier"  to="/league" class="group flex flex-wrap w-full bg-gray-800 sm:py-56 py-56 sm:px-10 px-6 relative border-purple-300 border-2 rounded-xl">
+            <NuxtImg
+              src="img/league.jpg"
+              class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
+              alt="Loup Garou en Terre du Milieu"
+              loading="lazy"
+            />
+            <div class="text-center relative z-10 w-full">
+              <h2 class="text-3xl text-white font-medium title-font mb-2 group-hover:text-purple-500 group-hover:bg-white inline p-2 rounded">Ligue français de l'Avènement du Roi Sorcier 🐲 (LFA)</h2>
+              <br>
+              <br>
+              <p class="text-2xl text-purple-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Joue pour être le meilleur de la Ligue !</p>
+              <br>
+              <br>      
+              <button style="font-family: 'Albertus'" to="/league" class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-purple-600 rounded-md dark:bg-gray-800 hover:bg-purple-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-purple-500 dark:focus:bg-gray-700">
+                <svg class="w-5 h-5 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+                <span class="mx-1">Hum hum hum</span>
+            </button>
+            </div>
+          </nuxt-link>
+        </div>
+        
+
+        <div class="w-full mt-5 lg:mt-0 px-2 lg:w-1/2">
+          <nuxt-link title="Loup Garou en Terre du Milieu"  to="/loup-garou" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-purple-300 border-2 rounded-xl">
             <NuxtImg
               src="img/louphome.png"
               class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
@@ -101,7 +127,6 @@
             </div>
           </nuxt-link>
         </div>
-        
 
         <div class="w-full mt-5 lg:mt-0 px-2 lg:w-1/2">
           <nuxt-link title="La Guerre pour l'Eriador"  :to="localePath('/gde')" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
@@ -126,7 +151,7 @@
           </nuxt-link>
         </div>
 
-        <div class="w-full mt-5 lg:mt-0 px-2 lg:w-1/2">
+        <!-- <div class="w-full mt-5 lg:mt-0 px-2 lg:w-1/2">
           <nuxt-link title="L'Avènement du Roi Sorcier"  to="/tournois/tournoi_2_02_2vs2" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
             <NuxtImg
               src="tournois/tournoi_rotwk_2vs2_2022.jpg"
@@ -147,7 +172,7 @@
               </button>
             </div>
           </nuxt-link>
-        </div>
+        </div> -->
 
         
         

@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <!-- <iframe src="https://challonge.com/fr/rotwk_2vs2_2022/module" width="100%" height="600" frameborder="0" scrolling="auto" allowtransparency="true"></iframe> -->
+        <iframe src="https://challonge.com/fr/n75fjz8n/module" width="100%" height="600" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
     </div>
 </div>
 

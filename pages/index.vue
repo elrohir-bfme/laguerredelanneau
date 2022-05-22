@@ -41,7 +41,7 @@
               <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-green-500 inline p-2 rounded">Tournoi BFME2 1.09</h2>
               <br>
               <br>
-              <p class="text-2xl text-green-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Tournoi en coopération commence le 23 Mai 2022</p>
+              <p class="text-2xl text-green-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Tournoi en coopération qui a débuté le 23 Mai 2022</p>
               <br>
               <br>
               <button
@@ -64,7 +64,7 @@
               <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-orange-500 inline p-2 rounded">Tournoi ROTWK 2.02</h2>
               <br>
               <br>
-              <p class="text-2xl text-orange-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Tournoi en coopération commence le 23 Mai 2022</p>
+              <p class="text-2xl text-orange-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Tournoi en coopération qui a débuté le 23 Mai 2022</p>
               <br>
               <br>
               <button

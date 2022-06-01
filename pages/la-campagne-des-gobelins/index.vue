@@ -34,7 +34,7 @@ Deux équipes vont s’affronter durant plusieurs semaines (5 sem. min., 10 sem.
           </p>
         </div>
         <div class="sm:w-1/3 text-center sm:pl-8 sm:py-8">
-          <img src="https://cdn.discordapp.com/attachments/826828771830005781/885594401047470130/TRA_morko_arrache_slip.jpg" class="ease-in-out transform transition duration-500 hover:scale-110 hover:drop-shadow-xl h-full rounded-lg inline-flex items-center justify-center bg-gray-200 text-gray-400">
+          <img src="~assets/campagne_gobelins/TRA_decret_royal.jpg" class="ease-in-out transform transition duration-500 hover:scale-110 hover:drop-shadow-xl h-full rounded-lg inline-flex items-center justify-center bg-gray-200 text-gray-400">
         </div>
       </div>
       <div class="flex flex-col sm:flex-row mt-10">
@@ -80,7 +80,79 @@ export default {
         this.data = value;
         this.isShowModal = !this.isShowModal;
       },
-    }
+    },
+    head() {
+    return {
+      title: "La Campagne des Gobelins",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "La Campagne des Gobelins est une nouvelle forme d’événement pour le STR BFME2, L'Avènement du Roi Sorcier. Basée sur des mécaniques empruntées à la fois aux jeux de plateau et aux jeux de cartes, la Campagne se veut un outil ludique permettant de modifier en profondeur le Gamplay des joueurs, et ainsi avoir l'impression de jouer à un tout nouveau jeu !",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content:
+            "Utharlok, La campagne des gobelins, gobelins",
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: "La Campagne des Gobelins",
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content:
+            "La Campagne des Gobelins est une nouvelle forme d’événement pour le STR BFME2, L'Avènement du Roi Sorcier. Basée sur des mécaniques empruntées à la fois aux jeux de plateau et aux jeux de cartes, la Campagne se veut un outil ludique permettant de modifier en profondeur le Gamplay des joueurs, et ainsi avoir l'impression de jouer à un tout nouveau jeu !",
+        },
+        {
+          hid: "twitter:creator",
+          name: "twitter:creator",
+          content: "@Elrohir_BFME",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://events.laterredumilieu.fr/img/CdG.jpg",
+        },
+        {
+          hid: "image",
+          property: "image",
+          content: "https://events.laterredumilieu.fr/img/CdG.jpg",
+        },
+        {
+          hid: "og:title",
+          name: "og:title",
+          content: "La Campagne des Gobelins",
+        },
+        { hid: "og:type", name: "og:type", content: "website" },
+        {
+          hid: "og:url",
+          name: "og:url",
+          content: "https://events.laterredumilieu.fr/la-campagne-des-gobelins",
+        },
+        {
+          hid: "og:image",
+          name: "og:image",
+          content: "https://events.laterredumilieu.fr/img/CdG.jpg",
+        },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content:
+            "La Campagne des Gobelins est une nouvelle forme d’événement pour le STR BFME2, L'Avènement du Roi Sorcier. Basée sur des mécaniques empruntées à la fois aux jeux de plateau et aux jeux de cartes, la Campagne se veut un outil ludique permettant de modifier en profondeur le Gamplay des joueurs, et ainsi avoir l'impression de jouer à un tout nouveau jeu !",
+        },
+      ],
+    };
+  },
 }
 </script>
 <style scoped>

@@ -22,8 +22,8 @@
         <h3 class="font-semibold text-lg">Détail</h3>
       </div> -->
       <div class="mx-auto flex flex-wrap">
-      <img alt="ecommerce" class="lg:w-1/2 w-full h-full object-cover object-center rounded transform transition duration-500 hover:scale-110 hover:drop-shadow-xl" :src="`https://api.laterredumilieu.fr${data.attributes.card_img.data.attributes.url}`">
-      <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+      <img alt="ecommerce" class="p-8 w-full h-full object-cover object-center rounded transform transition duration-500 hover:scale-110 hover:drop-shadow-xl" :src="`https://api.laterredumilieu.fr${data.attributes.card_img.data.attributes.url}`">
+      <!-- <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
         <h3 class="text-gray-200 uppercase text-3xl title-font font-medium mb-1">{{data.attributes.card_category}}</h3>
         <h4 class="text-2xl title-font text-white tracking-widest">{{data.attributes.card_title}}</h4>
         
@@ -32,7 +32,7 @@
           
         </div>
         <p class="leading-relaxed text-lg text-yellow-400">{{data.attributes.card_effect}}</p>
-      </div>
+      </div> -->
     </div>
       <!-- <div class="flex justify-end items-center w-100 border-t p-3">
         <button class="bg-red-600 hover:bg-red-700 px-3 py-1 rounded text-white mr-1 close-modal">Cancel</button>

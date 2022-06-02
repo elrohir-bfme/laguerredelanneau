@@ -140,7 +140,8 @@ export default {
     '@nuxt/image',
     ['cookie-universal-nuxt', { alias: 'cookiz' }],
     'nuxt-highcharts',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    'nuxt-vue-select'
   ],
 
   /* url: 'http://api.laterredumilieu.fr' */

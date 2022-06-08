@@ -33,12 +33,13 @@ export default {
   data() {
       return {
           informations: [
-            "La League sera basé sur un système de point (Elo).",
-            "BO5 pour les 3 premiers",
-            "BO3 pour les 4 à 15 premiers",
-            "BO1 à partir de la 16 ème place",
-            "Chaque Replay doit être déposé dans le Channel 🎁replay [LFA-Nom_A-Nom_B]",
-            "il faut annoncer son défi ici 🎌défis"
+            "La Ligue est basée sur un système de point (Elo).",
+            "BO5 pour affronter le premier",
+            "BO3 pour les 2 à 10 premiers",
+            "BO1 à partir de la 11e place",
+            "Chaque Replay doit être déposé dans le Channel 🎁replay [LFA-Nom_gagnant_faction-Nom_perdant_faction] (Pour les BO pensez à mettre tous les replays)",
+            "il faut annoncer son défi ici 🎌défis",
+            "On peut seulement défier que deux personnes au-dessus de votre rang"
           ],
           rules: [
             "💰 Ressources de départ : 1000",

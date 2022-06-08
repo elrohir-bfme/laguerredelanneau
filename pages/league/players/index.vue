@@ -288,7 +288,7 @@ export default {
                     return Object.assign(f, newObject)
                 })
 
-                return newPlayers.sort((a, b) => { return a.attributes.elo - a.attributes.elo; });
+                return newPlayers.sort((a, b) => { return b.attributes.elo - a.attributes.elo; });
             }
 
             

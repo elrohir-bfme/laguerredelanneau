@@ -158,13 +158,13 @@ export default {
                                 console.log(r.map, f, "fff")
                                 if((r.map.data && r.map.data.id) === f.id) {
                                     console.log(r, "r")
-                                    let faction = r.faction_lose.data.attributes.name;
+                                    let faction = r.faction_win.data.attributes.name;
                                     typeof newObject.statsFactionWin[faction] === 'undefined' ? 
                                     newObject.statsFactionWin[faction] = 1 : 
                                     newObject.statsFactionWin[faction]++;
                                     newObject.wins++;
 
-                                    let faction2 = r.faction_win.data.attributes.name;
+                                    let faction2 = r.faction_lose.data.attributes.name;
                                     typeof newObject.statsFactionLose[faction2] === 'undefined' ? 
                                     newObject.statsFactionLose[faction2] = 1 : 
                                     newObject.statsFactionLose[faction2]++;

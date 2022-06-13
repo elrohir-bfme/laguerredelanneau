@@ -260,26 +260,46 @@ export default {
                     this.games.map(g => {
                         if(g.attributes.replays && g.attributes.replays.length > 0){
                             g.attributes.replays.map(r => {
-                                if(r.faction_lose && r.faction_lose.data?.attributes){
-                                    if((r.player_win.data && r.player_win.data.attributes && r.player_win.data.attributes.name) === f.attributes.name) {
-                                        let faction = r.faction_lose.data.attributes.name;
-                                        typeof newObject.statsFactionWin[faction] === 'undefined' ? 
-                                        newObject.statsFactionWin[faction] = 1 : 
-                                        newObject.statsFactionWin[faction]++;
-                                        newObject.wins++;
-                                    }
+
+
+                                // if(r.faction_lose && r.faction_lose.data?.attributes){
+                                //     if((r.player_win.data && r.player_win.data.attributes && r.player_win.data.attributes.name) === f.attributes.name) {
+                                //         let faction = r.faction_lose.data.attributes.name;
+                                //         typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                                //         newObject.statsFactionWin[faction] = 1 : 
+                                //         newObject.statsFactionWin[faction]++;
+                                //         newObject.wins++;
+                                //     }
+                                // }
+
+                                // if(r.faction_win && r.faction_win.data?.attributes){
+                                //     if((r.player_win.data && r.player_win.data.attributes && r.player_win.data.attributes.name) === f.attributes.name) {
+                                //         if(r.faction_win.data.attributes !== null && r.faction_win.data.attributes.name){
+                                //             let faction = r.faction_lose.data.attributes.name;
+                                //             typeof newObject.statsFactionLose[faction] === 'undefined' ? 
+                                //             newObject.statsFactionLose[faction] = 1 : 
+                                //             newObject.statsFactionLose[faction]++;
+                                //             newObject.loses++;
+                                //         }
+                                //     }
+                                // }
+
+                                // console.log(r.faction_win, f)
+
+                                if(r.player_win.data && r.player_win.data.attributes && r.player_win.data.attributes.name === f.attributes.name){
+                                    let faction = r.faction_win.data.attributes.name;
+                                    typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                                    newObject.statsFactionWin[faction] = 1 : 
+                                    newObject.statsFactionWin[faction]++;
+                                    newObject.wins++;
                                 }
 
-                                if(r.faction_win && r.faction_win.data?.attributes){
-                                    if((r.player_lose.data && r.player_lose.data.attributes && r.player_lose.data.attributes.name) === f.attributes.name) {
-                                        if(r.faction_win.data.attributes !== null && r.faction_win.data.attributes.name){
-                                            let faction = r.faction_win.data.attributes.name;
-                                            typeof newObject.statsFactionLose[faction] === 'undefined' ? 
-                                            newObject.statsFactionLose[faction] = 1 : 
-                                            newObject.statsFactionLose[faction]++;
-                                            newObject.loses++;
-                                        }
-                                    }
+                                if(r.player_lose.data && r.player_lose.data.attributes && r.player_lose.data.attributes.name === f.attributes.name){
+                                    let faction = r.faction_lose.data.attributes.name;
+                                    typeof newObject.statsFactionLose[faction] === 'undefined' ? 
+                                    newObject.statsFactionLose[faction] = 1 : 
+                                    newObject.statsFactionLose[faction]++;
+                                    newObject.loses++;
                                 }
                             })
                         }

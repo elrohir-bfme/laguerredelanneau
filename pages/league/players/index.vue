@@ -51,7 +51,7 @@
                             </tr>
                         </thead>
                         <tbody class="text-sm divide-y divide-orange-500">
-                            <tr v-for="(player, index) in sortedPlayers" v-bind:key="player._id" class="hover-gray-800" @click="infoPlayer(player)">
+                            <tr v-for="(player, index) in sortedPlayers" v-bind:key="player._id" class="hover:opacity-80 hover:cursor-pointer" @click="infoPlayer(player)">
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-center text-gray-100">{{index + 1}}</div>
                                 </td>
@@ -238,8 +238,7 @@ export default {
     },
     methods: {  
         infoPlayer(player){
-            this.info = true
-            this.player = player
+            this.$router.push(`/league/players/${player.id}`)
         },
         close(){
             this.info = false

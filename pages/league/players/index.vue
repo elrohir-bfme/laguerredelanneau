@@ -348,3 +348,43 @@ export default {
     },
 }
 </script>
+
+<style>
+
+.bg-blue-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(30, 58, 138, var(--tw-bg-opacity));
+}
+
+.bg-green-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(6, 78, 59, var(--tw-bg-opacity));
+}
+
+.bg-yellow-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(120, 53, 15, var(--tw-bg-opacity));
+}
+
+.bg-red-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(127, 29, 29, var(--tw-bg-opacity));
+}
+
+.bg-gray-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+
+.bg-orange-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(124, 45, 18, var(--tw-bg-opacity));
+}
+
+.bg-purple-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(76, 29, 149, var(--tw-bg-opacity));
+}
+
+
+</style>

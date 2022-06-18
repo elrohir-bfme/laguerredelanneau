@@ -1,123 +1,104 @@
 <template>
   <section class="text-white body-font">
-  <div class="lg:container sm:m-0 lg:mx-auto lg:px-5 py-4 mx-auto">
-    <div class="flex flex-col text-center w-full mb-5">
-      <h1 class="font-medium mb-4 text-red-500 text-8xl">{{ $t('league.player') }}</h1>
+
+  <div v-if="newPlayer" class="container px-5 py-12 mx-auto flex flex-wrap bg-gray-900 shadow-lg rounded-sm border border-orange-600">
+    <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+      <div class="w-full sm:p-4 px-4 mb-6">
+        <h1 class="title-font font-medium text-xl mb-2 text-gray-900">Moon hashtag pop-up try-hard offal truffaut</h1>
+        <div class="leading-relaxed">Pour-over craft beer pug drinking vinegar live-edge gastropub, keytar neutra sustainable fingerstache kickstarter.</div>
+      </div>
+      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-indigo-600">{{newPlayer.elo}}</h2>
+        <p class="leading-relaxed">ELO</p>
+      </div>
+      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-green-600">{{newPlayer.wins}}</h2>
+        <p class="leading-relaxed">Victoire</p>
+      </div>
+      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-red-600">{{newPlayer.lose}}</h2>
+        <p class="leading-relaxed">Défaite</p>
+      </div>
+      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-yellow-600">{{newPlayer.wins + newPlayer.lose}}</h2>
+        <p class="leading-relaxed">Matchs</p>
+      </div>
+      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-yellow-600">{{newPlayer.statsFactionLose}}</h2>
+        <p class="leading-relaxed">LOSEFACTIONS</p>
+      </div>
+      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-yellow-600">{{newPlayer.statsFactionWin}}</h2>
+        <p class="leading-relaxed">statsFactionWin</p>
+      </div>
     </div>
+    <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+      <img v-if="newPlayer.img && newPlayer.img.data" class="object-cover object-center w-auto h-auto" :src="`https://api.laterredumilieu.fr${newPlayer.img.data.attributes.url}`" width="40" height="40" :alt="newPlayer.name">
+    </div>
+  </div>
 
-    <div class="flex">
-    <div class="flex-grow">
+    <highchart 
+    v-if="loading"
+    :options="chartOptions" 
+    />
 
-    <div class="flex flex-col justify-center h-full">
-        <!-- Table -->
-        <div class="w-full  mx-auto bg-gray-900 shadow-lg rounded-sm border border-orange-600">
-            <header class="px-5 py-4 border-b border-orange-500 flex">
-                <div class="flex-grow">
-                    <h2 class="font-semibold text-white">{{ $t('league.player') }}</h2>
-                </div>
-            </header>
-            <div class="p-3">
-                <div class="overflow-x-auto">
-                    <table class="table-auto w-full border-2 border-gray-800 rounded-xl">
-                        <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
-                            <tr>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.rang') }}</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.elo') }}</div>
-                                </th>
-                                <!-- <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.main') }}</div>
-                                </th> -->
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.players') }}</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.win') }}</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.lose') }}</div>
-                                </th>
-                                <th class="p-2">
-                                    <div class="font-semibold text-left">{{ $t('league.winRatio') }}</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.games') }}</div>
-                                </th>
-                                <th class="hidden md:table-cell p-2 whitespace-nowrap" v-for="fac in factionList" v-bind:key="fac.name">
-                                    <div  class="font-semibold text-left">{{$t(`league.${fac.name}`)}}</div>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-sm divide-y divide-orange-500">
-                            <tr class="hover-gray-800">
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left text-gray-100">{{player}}</div>
-                                </td>
-                                <!-- <tds -->
-                                <!-- <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left text-gray-100">{{player.attributes.elo}}</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
-                                            <img v-if="player.attributes.img && player.attributes.img.data" class="rounded-full" :src="`https://api.laterredumilieu.fr${player.attributes.img.data.attributes.url}`" width="40" height="40" :alt="player.attributes.name">
-                                        </div>
-                                        <div class="font-medium text-white">{{player.attributes.name}}</div>
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-center">{{player.wins}}</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-center">{{player.loses}}</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-center">{{player.wins > 0 || player.loses > 0 ? `${((player.wins / (player.loses + player.wins)) * 100).toFixed(0)}%`  : "Aucun Match"}}</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-center">{{player.wins + player.loses}}</div>
-                                </td>
-                                <td v-for="fac in factionList" v-bind:key="fac.name" class="hidden md:table-cell p-2 w-1/12 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
-                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionWin[fac.name]" class="flex items-center justify-center text-white text-sm text-center">
-                                        <p>
-                                            {{`${(player.statsFactionWin[fac.name] >= 0 || player.statsFactionLose[fac.name] >= 0) ? ((((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)) : "0"}%`}}
-                                        </p>
-                                    </div>
-                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionWin[fac.name]" class="w-full h-2 bg-indigo-100 rounded-full mb-4">
-                                        <div 
-                                            :style="`width: ${Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0 ? (((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`" 
-                                            class="h-full text-center text-xs rounded-full"
-                                            :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0) && (player.statsFactionLose[fac.name] || player.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
-                                        >
-                                        </div>
-                                    </div>
-                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionWin[fac.name]" class="flex items-center justify-between text-white text-sm">
-                                        <p>
-                                            {{player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0}}V
-                                        </p>
-                                        <p>
-                                            {{player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0}}D
-                                        </p>
-                                    </div>
-                                    <div v-else class=" text-white text-sm">
-                                        <p class="text-center">-</p>
-                                    </div>
-                                </td> -->
-                            </tr>
-                        </tbody>
-                    </table>
+
+
+  <div v-if="newPlayer" class="container px-5 py-24 mx-auto">
+    <div class="-my-8">
+
+
+
+      <div v-for="(replays, index) in newPlayer.replays" v-bind:key="index" class="py-8 flex flex-wrap md:flex-nowrap bg-gray-900 shadow-lg rounded-sm border border-orange-600">
+        <div v-if="replays" class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col ml-2">
+          <span class="font-semibold title-font text-white underline">PARTIE {{index +1}}</span>
+          <span class="mt-1 text-gray-100 text-sm">
+            {{ $moment(replays.date).lang($i18n.locale).format('MMMM Do YYYY, h:mm:ss a') }}
+            <br/>
+            ({{ $moment(replays.date).lang($i18n.locale).fromNow()}})</span>
+          <span class="mt-1 text-orange-500 text-sm">BO{{replays.bo}}</span>
+        </div>
+        <div class="md:flex-grow">
+
+            <div v-if="replays.replays" class="flex flex-wrap -mx-4 -my-8">
+                <div v-for="(replay, index) in replays.replays" v-bind:key="replay.id" class="py-8 px-4 lg:w-1/3">
+                    <div class="h-full flex items-start">
+                    <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                        <span class="text-gray-100 pb-2 mb-2 border-b-2 border-gray-200">Match</span>
+                        <span class="font-medium text-lg text-gray-200 title-font leading-none">{{index +1 }}</span>
+                    </div>
+                    <div class="flex-grow pl-6">
+                        <h2 class="tracking-widest text-xl title-font font-medium text-indigo-500 mb-1">{{replay.map.data ? replay.map.data.attributes.name : "Map inconnu"}}</h2>
+                        <div class="text-lg text-left text-white">
+                            Victoire : {{replay.player_win.data && replay.player_win.data.attributes.name}}
+                            (<span :class="`text-${factionList.find(o => o.name === (replay.faction_win.data && replay.faction_win.data.attributes.name)).color}-500`">
+                                {{replay.faction_win.data && replay.faction_win.data.attributes.name}}
+                            </span>)
+                        </div>
+
+                        <div class="text-lg text-left text-white">
+                            Défaite : {{replay.player_lose.data && replay.player_lose.data.attributes.name}}
+                            (<span :class="`text-${factionList.find(o => o.name === (replay.faction_lose.data && replay.faction_lose.data.attributes.name)).color}-500`">
+                            {{replay.faction_lose.data && replay.faction_lose.data.attributes.name}}
+                            </span>)
+                        </div>
+                        
+                        <div class="text-lg text-left text-white inline-block">
+                            Replay : 
+                            <a target="_blank" :href="`https://api.laterredumilieu.fr${replay.replay.data.attributes.url}`" class="bg-orange-900 hover:bg-orange-800 text-white font-bold py-2 px-2 rounded inline-flex items-center">
+                            <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                            </a>
+                        </div>
+                        
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </div>
+      </div>
 
 
     </div>
-    </div>
-
   </div>
 </section>
 </template>
@@ -130,6 +111,7 @@ export default {
         return {
             loading: false,
             player: [],
+            newPlayer: null,
             info: false,
             factionList: [
                 {name: "Men", color: "blue"}, 
@@ -140,10 +122,12 @@ export default {
                 {name: "Goblins", color: "orange"},
                 {name: "Angmar", color: "purple"}
             ],
+            chartOptions: {}
         }
     },
     async asyncData({ $strapi, $axios, params }) {
         let player = await $strapi.findOne('players', params.slug, { populate: '*'})
+        let loading = false;
         const query = qs.stringify({
             fields: '*',
             populate: {
@@ -168,25 +152,163 @@ export default {
 
         const slug = params.slug
 
-        return { slug, player, games }
-    },
-    computed:{
-        sortedGames() {
-            let p = this.player.data.attributes.name
-            let newPlayer = this.player.data.attributes;
-            newPlayer.replays = []
 
-            for (const g of this.games) {
-                if(p == g.attributes.elo[0].player_lose.name || 
-                p == g.attributes.elo[0].player_win.name) {
+        let p = player.data.attributes.name
+        let newPlayer = player.data.attributes;
+        newPlayer.replays = []
+        newPlayer.wins = 0
+        newPlayer.lose = 0
+        newPlayer.loses = 0
+        newPlayer.statsFactionWin = {};
+        newPlayer.statsFactionLose = {};
+        newPlayer.factions = [];
 
-                    newPlayer.replays.push(g.attributes)
-                    console.log(g.attributes)
+        for (const g of games) {
+            if(p == g.attributes.elo[0].player_lose.name || p == g.attributes.elo[0].player_win.name) {
+
+                newPlayer.replays.push(g.attributes)
+                newPlayer.lose += 1;
+                newPlayer.wins += 1;
+
+                for (const m of g.attributes.replays){
+                    console.log(m, "m")
+
+                    let faction = m.faction_win.data.attributes.name;
+                    console.log(faction, "factions", m.player_win.data.attributes.name == p)
+                    if(m.player_win.data.attributes.name == p) {
+                        typeof newPlayer.statsFactionWin[faction] === 'undefined' ? 
+                        newPlayer.statsFactionWin[faction] = 1 : 
+                        newPlayer.statsFactionWin[faction]++;
+                        newPlayer.wins++;
+                    } else {
+                        typeof newPlayer.statsFactionLose[faction] === 'undefined' ? 
+                        newPlayer.statsFactionLose[faction] = 1 : 
+                        newPlayer.statsFactionLose[faction]++;
+                        newPlayer.loses++;
+                    }
+                    
                 }
+                
+                console.log(g.attributes)
+
+               
+
+            }
+        }
+
+        let allFactions = ["Men", "Elves", "Dwarves", "Mordor", "Isengard", "Goblins", "Angmar"];
+
+        let series = []
+
+        for (const f of allFactions) {
+            console.log(f, "faction")
+
+            let serie = {
+                name: "victoire"
             }
 
-            return newPlayer
-        }
+            for(let [key, value] of Object.entries(newPlayer.statsFactionWin)){
+                console.log(`${key}: ${value}`);
+
+
+
+                if(f == key){
+                    
+                }
+
+
+            }
+
+
+        }   
+        
+
+
+
+        const chartOptions = {
+chart: {
+    type: 'bar'
+  },
+  title: {
+    text: 'Historic World Population by Region'
+  },
+  subtitle: {
+    text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+  },
+  xAxis: {
+    categories: ['Homme', 'Nain', 'Elfe', 'Mordor', 'Isengard', 'Gobelin', 'Angmar'],
+    title: {
+      text: null
+    }
+  },
+  yAxis: {
+    min: 0,
+    title: {
+      text: 'Population (millions)',
+      align: 'high'
+    },
+    labels: {
+      overflow: 'justify'
+    }
+  },
+  tooltip: {
+    valueSuffix: ' millions'
+  },
+  plotOptions: {
+    bar: {
+      dataLabels: {
+        enabled: true
+      }
+    }
+  },
+  legend: {
+    layout: 'vertical',
+    align: 'right',
+    verticalAlign: 'top',
+    x: -40,
+    y: 80,
+    floating: true,
+    borderWidth: 1,
+    backgroundColor: '#FFFFFF',
+    shadow: true
+  },
+  credits: {
+    enabled: false
+  },
+  series: [{
+    name: 'Year 1800',
+    data: [107, 31, 635, 203, 2]
+  }, {
+    name: 'Year 1900',
+    data: [133, 156, 947, 408, 6]
+  }, {
+    name: 'Year 2000',
+    data: [814, 841, 3714, 727, 31]
+  }, {
+    name: 'Year 2016',
+    data: [1216, 1001, 4436, 738, 40]
+  }]
+            }
+        loading = true;
+        return { slug, player, games, newPlayer, loading, chartOptions }
+    },
+    computed:{
+        // sortedGames() {
+        //     let p = this.player.data.attributes.name
+        //     let newPlayer = this.player.data.attributes;
+        //     newPlayer.replays = []
+
+        //     for (const g of this.games) {
+        //         if(p == g.attributes.elo[0].player_lose.name || 
+        //         p == g.attributes.elo[0].player_win.name) {
+
+        //             newPlayer.replays.push(g.attributes)
+        //             console.log(g.attributes)
+        //         }
+        //     }
+
+        //     return newPlayer
+        // }
     },
 }
 </script>

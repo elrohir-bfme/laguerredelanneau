@@ -79,12 +79,12 @@
                                     <div class="text-lg text-center">{{player.wins + player.loses}}</div>
                                 </td>
                                 <td v-for="fac in factionList" v-bind:key="fac.name" class="hidden md:table-cell p-2 w-1/12 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
-                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionWin[fac.name]" class="flex items-center justify-center text-white text-sm text-center">
+                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionLose[fac.name]" class="flex items-center justify-center text-white text-sm text-center">
                                         <p>
                                             {{`${(player.statsFactionWin[fac.name] >= 0 || player.statsFactionLose[fac.name] >= 0) ? ((((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)) : "0"}%`}}
                                         </p>
                                     </div>
-                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionWin[fac.name]" class="w-full h-2 bg-indigo-100 rounded-full mb-4">
+                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionLose[fac.name]" class="w-full h-2 bg-indigo-100 rounded-full mb-2">
                                         <div 
                                             :style="`width: ${Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0 ? (((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`" 
                                             class="h-full text-center text-xs rounded-full"
@@ -92,12 +92,12 @@
                                         >
                                         </div>
                                     </div>
-                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionWin[fac.name]" class="flex items-center justify-between text-white text-sm">
+                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionLose[fac.name]" class="flex items-center justify-around text-gray-200 text-xs">
                                         <p>
-                                            {{player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0}}V
+                                            {{player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0}}
                                         </p>
                                         <p>
-                                            {{player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0}}D
+                                            {{player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0}}
                                         </p>
                                     </div>
                                     <div v-else class=" text-white text-sm">

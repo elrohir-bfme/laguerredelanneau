@@ -43,6 +43,11 @@
             v-if="loading"
             :options="chartOptions"
           />
+
+          <highchart 
+            v-if="loading"
+            :options="chartOptions2"
+          />
         </div>
       </div>
     </div>
@@ -159,9 +164,10 @@ export default {
         newPlayer.replays = []
         newPlayer.wins = 0
         newPlayer.lose = 0
-        newPlayer.loses = 0
         newPlayer.statsFactionWin = {};
+        newPlayer.statsFactionWin2 = {};
         newPlayer.statsFactionLose = {};
+        newPlayer.statsFactionLose2 = {};
         newPlayer.factions = [];
 
         for (const g of games) {
@@ -174,17 +180,27 @@ export default {
                 for (const m of g.attributes.replays){
                     console.log(m, "m")
 
-                    let faction = m.faction_win.data.attributes.name;
-                    console.log(faction, "factions", m.player_win.data.attributes.name == p)
+                    let factionWin = m.faction_win.data.attributes.name;
+                    let factionLose = m.faction_lose.data.attributes.name;
+
                     if(m.player_win.data.attributes.name == p) {
-                        typeof newPlayer.statsFactionWin[faction] === 'undefined' ? 
-                        newPlayer.statsFactionWin[faction] = 1 : 
-                        newPlayer.statsFactionWin[faction]++;
+                        typeof newPlayer.statsFactionWin[factionWin] === 'undefined' ? 
+                        newPlayer.statsFactionWin[factionWin] = 1 : 
+                        newPlayer.statsFactionWin[factionWin]++;
+
+                        typeof newPlayer.statsFactionWin2[factionLose] === 'undefined' ? 
+                        newPlayer.statsFactionWin2[factionLose] = 1 : 
+                        newPlayer.statsFactionWin2[factionLose]++;
+
                         newPlayer.wins++;
                     } else {
-                        typeof newPlayer.statsFactionLose[faction] === 'undefined' ? 
-                        newPlayer.statsFactionLose[faction] = 1 : 
-                        newPlayer.statsFactionLose[faction]++;
+                        typeof newPlayer.statsFactionLose[factionLose] === 'undefined' ? 
+                        newPlayer.statsFactionLose[factionLose] = 1 : 
+                        newPlayer.statsFactionLose[factionLose]++;
+
+                        typeof newPlayer.statsFactionLose2[factionWin] === 'undefined' ? 
+                        newPlayer.statsFactionLose2[factionWin] = 1 : 
+                        newPlayer.statsFactionLose2[factionWin]++;
                         newPlayer.lose++;
                     }
                     
@@ -201,7 +217,9 @@ export default {
 
         let factions = []
         let victoires = []
+        let victoires2 = []
         let defaites = []
+        let defaites2 = []
 
         for (const f of allFactions) {
             console.log(f, "faction")
@@ -220,6 +238,17 @@ export default {
               defaites.push(0) 
             }
 
+            if(newPlayer.statsFactionWin2[f] !== undefined){
+              victoires2.push(newPlayer.statsFactionWin2[f]) 
+            } else {
+              victoires2.push(0) 
+            }
+
+            if(newPlayer.statsFactionLose2[f] !== undefined){
+              defaites2.push(newPlayer.statsFactionLose2[f]) 
+            } else {
+              defaites2.push(0) 
+            }
 
 
         }   
@@ -296,8 +325,76 @@ export default {
     data: victoires
   }]
 }
+
+const chartOptions2 = {
+  chart: {
+    type: 'bar',
+    backgroundColor: '#18191c',
+    borderColor: '#18191c'
+  },
+  labels: {
+    style: {
+        color: '#ffffff',
+        fontWeight: 'bold'
+    }
+  },
+  title: {
+    text: 'Informations contre les factions auxquelles tu as joué',
+    style: {
+        color: '#ffffff',
+        fontWeight: 'bold'
+    }
+  },
+  xAxis: {
+    color: "#ffffff",
+    labels: {
+            style: {
+                color: '#ffffff'
+            }
+        },
+    gridLineColor: "red",
+    categories: ['Homme', 'Elfe', 'Nain', 'Isengard', 'Mordor', 'Gobelin', 'Angmar']
+  },
+  yAxis: {
+    allowDecimals: false,
+    gridLineColor: "gray",
+    min: 0,
+    title: {
+      style: {
+        color: "#ffffff"
+      },
+      text: 'Nombre de Match'
+    },
+    labels: {
+            style: {
+                color: '#ffffff'
+            }
+        }
+  },
+  legend: {
+    reversed: true,
+    itemStyle: {
+        color: '#ffffff',
+        fontWeight: 'bold'
+    }
+  },
+  plotOptions: {
+    series: {
+      stacking: 'normal'
+    }
+  },
+  series: [{
+    name: 'Défaite',
+    color: "red",
+    data: defaites2
+  },{
+    name: 'Victoire',
+    color: "green",
+    data: victoires2
+  }]
+}
         loading = true;
-        return { slug, player, games, newPlayer, loading, chartOptions }
+        return { slug, player, games, newPlayer, loading, chartOptions, chartOptions2 }
     },
     computed:{
         // sortedGames() {

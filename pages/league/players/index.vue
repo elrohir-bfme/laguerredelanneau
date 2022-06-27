@@ -73,26 +73,26 @@
                                     <div class="text-lg text-center">{{player.loses}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-center">{{player.wins > 0 || player.loses > 0 ? `${((player.wins / (player.loses + player.wins)) * 100).toFixed(0)}%`  : "Aucun Match"}}</div>
+                                    <div class="text-lg text-center">{{player.wins > 0 || player.loses > 0 ? `${((player.wins / (player.loses + player.wins)) * 100).toFixed(0)}%`  : $t(`league.noMatch`)}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-lg text-center">{{player.wins + player.loses}}</div>
                                 </td>
-                                <td v-for="fac in factionList" v-bind:key="fac.name" class="hidden md:table-cell p-2 w-1/12 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
-                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionLose[fac.name]" class="flex items-center justify-center text-white text-sm text-center">
+                                <td v-for="fac in factionList" v-bind:key="fac.name" class="hidden md:table-cell p-2 w-1/12 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : fac.color == 'yellow' ? 400 : 900} border-${fac.color}-600`">
+                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionLose[fac.name]" class="flex items-center justify-center text-sm text-center" :class="fac.color == 'yellow' ? 'text-gray-600' : 'text-white'">
                                         <p>
                                             {{`${(player.statsFactionWin[fac.name] >= 0 || player.statsFactionLose[fac.name] >= 0) ? ((((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)) : "0"}%`}}
                                         </p>
                                     </div>
-                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionLose[fac.name]" class="w-full h-2 bg-indigo-100 rounded-full mb-2">
+                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionLose[fac.name]" class="w-full h-2 bg-indigo-100 rounded-full mb-2" :class="fac.color == 'yellow' ? 'ring-1 ring-gray-900' : 'border-0'">
                                         <div 
                                             :style="`width: ${Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0 ? (((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`" 
                                             class="h-full text-center text-xs rounded-full"
-                                            :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0) && (player.statsFactionLose[fac.name] || player.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
+                                            :class="`from-${fac.color}-${fac.color == 'yellow' ? '300' : '500'} to-${fac.color}-${fac.color == 'yellow' ? '500' : '700'} ${(Object.keys(player.statsFactionLose).length > 0 || Object.keys(player.statsFactionWin).length > 0) && (player.statsFactionLose[fac.name] || player.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
                                         >
                                         </div>
                                     </div>
-                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionLose[fac.name]" class="flex items-center justify-around text-gray-200 text-xs">
+                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionLose[fac.name]" class="flex items-center justify-around text-xs" :class="fac.color == 'yellow' ? 'text-gray-600' : 'text-gray-200'">
                                         <p>
                                             {{player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0}}
                                         </p>
@@ -100,7 +100,7 @@
                                             {{player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0}}
                                         </p>
                                     </div>
-                                    <div v-else class=" text-white text-sm">
+                                    <div v-else class="text-sm" :class="fac.color == 'yellow' ? 'text-gray-600' : 'text-white'">
                                         <p class="text-center">-</p>
                                     </div>
                                 </td>
@@ -238,7 +238,9 @@ export default {
     },
     methods: {  
         infoPlayer(player){
-            this.$router.push(`/league/players/${player.id}`)
+            // this.$router.push(`/league/players/${player.id}  `)
+            this.$router.push(this.localeLocation(`/league/players/${player.id}`))
+
         },
         close(){
             this.info = false
@@ -384,6 +386,60 @@ export default {
 .bg-purple-900 {
     --tw-bg-opacity: 1;
     background-color: rgba(76, 29, 149, var(--tw-bg-opacity));
+}
+
+.to-green-700 {
+    --tw-gradient-to: #047857;
+}
+
+.from-green-500 {
+    --tw-gradient-from: #10b981;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(16, 185, 129, 0));
+}
+
+.from-yellow-500 {
+    --tw-gradient-from: #f59e0b;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(245, 158, 11, 0));
+}
+
+.to-yellow-700 {
+    --tw-gradient-to: #b45309;
+}
+
+.to-red-700 {
+    --tw-gradient-to: #b91c1c;
+}
+
+.from-red-500 {
+    --tw-gradient-from: #ef4444;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(239, 68, 68, 0));
+}
+
+.to-gray-700 {
+    --tw-gradient-to: #374151;
+}
+
+.from-gray-500 {
+    --tw-gradient-from: #6b7280;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(107, 114, 128, 0));
+}
+
+.to-orange-700 {
+    --tw-gradient-to: #c2410c;
+}
+
+.from-orange-500 {
+    --tw-gradient-from: #f97316;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(249, 115, 22, 0));
+}
+
+.to-purple-700 {
+    --tw-gradient-to: #6d28d9;
+}
+
+.from-purple-500 {
+    --tw-gradient-from: #8b5cf6;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(139, 92, 246, 0));
 }
 
 

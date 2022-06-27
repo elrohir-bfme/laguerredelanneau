@@ -359,15 +359,17 @@ robots: {
             players: "Players",
             rules: "Rules",
             matchs: "Games",
+            match: "Match",
             factions: "Factions",
             win: "Win",
-            win: "Win",
+            wins: "Win",
             lose: "Lose",
             loses: "Lose",
             rang: "Rank",
             main: "Main",
             winRatio: "Win rate",
             games: "Games",
+            game: "Game",
             date: "Date",
             map: "Map",
             replay: "Replay",
@@ -384,7 +386,9 @@ robots: {
             Goblins: "Goblins",
             Angmar: "Angmar",
             bo: "BO",
-            elo: "Elo"
+            elo: "Elo",
+            noMatch: "No Match",
+            informationsPlayerTitle: "Information about the factions played"
           }
         },
         fr: {
@@ -515,15 +519,17 @@ robots: {
             players: "Joueurs",
             rules: "Règles",
             matchs: "Parties",
+            match: "Partie",
             factions: "Factions",
             win: "Victoire",
-            win: "Victoires",
+            wins: "Victoires",
             lose: "Défaite",
             loses: "Défaites",
             rang: "Rang",
             main: "Main",
             winRatio: "Taux de victoire",
             games: "Parties",
+            game: "Match",
             date: "Date",
             map: "Map",
             replay: "Replay",
@@ -540,7 +546,9 @@ robots: {
             Goblins: "Gobelin",
             Angmar: "Angmar",
             bo: "BO",
-            elo: "Elo"
+            elo: "Elo",
+            noMatch: "Aucun Match",
+            informationsPlayerTitle: "Informations sur les factions jouées"
           }
         }
       }

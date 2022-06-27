@@ -26,15 +26,15 @@
           </div>
           <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
             <h2 class="title-font font-medium text-3xl text-green-600">{{newPlayer.wins}}</h2>
-            <p class="leading-relaxed">Victoire(s)</p>
+            <p class="leading-relaxed">{{ $t('league.wins') }}</p>
           </div>
           <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
             <h2 class="title-font font-medium text-3xl text-red-600">{{newPlayer.lose}}</h2>
-            <p class="leading-relaxed">Défaite(s)</p>
+            <p class="leading-relaxed">{{ $t('league.loses') }}</p>
           </div>
           <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
             <h2 class="title-font font-medium text-3xl text-yellow-600">{{newPlayer.wins + newPlayer.lose}}</h2>
-            <p class="leading-relaxed">Match(s)</p>
+            <p class="leading-relaxed">{{ $t('league.matchs') }}</p>
           </div>
         </div>
         </div>
@@ -58,7 +58,7 @@
     <div class="-my-8">
       <div v-for="(replays, index) in newPlayer.replays" v-bind:key="index" class="py-8 flex flex-wrap md:flex-nowrap bg-gray-900 shadow-lg rounded-sm border border-orange-600">
         <div v-if="replays" class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col ml-2">
-          <span class="font-semibold title-font text-white underline">PARTIE {{index +1}}</span>
+          <span class="font-semibold title-font text-white underline uppercase">{{ $t('league.match') }} {{index +1}}</span>
           <span class="mt-1 text-gray-100 text-sm">
             {{ $moment(replays.date).lang($i18n.locale).format('MMMM Do YYYY, h:mm:ss a') }}
             <br/>
@@ -71,20 +71,20 @@
                 <div v-for="(replay, index) in replays.replays" v-bind:key="replay.id" class="py-8 px-4 lg:w-1/3">
                     <div class="h-full flex items-start">
                     <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-                        <span class="text-gray-100 pb-2 mb-2 border-b-2 border-gray-200">Match</span>
+                        <span class="text-gray-100 pb-2 mb-2 border-b-2 border-gray-200">{{ $t('league.game') }}</span>
                         <span class="font-medium text-lg text-gray-200 title-font leading-none">{{index +1 }}</span>
                     </div>
                     <div class="flex-grow pl-6">
                         <h2 class="tracking-widest text-xl title-font font-medium text-indigo-500 mb-1">{{replay.map.data ? replay.map.data.attributes.name : "Map inconnu"}}</h2>
                         <div class="text-lg text-left text-white">
-                            Victoire : {{replay.player_win.data && replay.player_win.data.attributes.name}}
+                            {{ $t('league.win') }} : {{replay.player_win.data && replay.player_win.data.attributes.name}}
                             (<span :class="`text-${factionList.find(o => o.name === (replay.faction_win.data && replay.faction_win.data.attributes.name)).color}-500`">
                                 {{replay.faction_win.data && replay.faction_win.data.attributes.name}}
                             </span>)
                         </div>
 
                         <div class="text-lg text-left text-white">
-                            Défaite : {{replay.player_lose.data && replay.player_lose.data.attributes.name}}
+                            {{ $t('league.lose') }} : {{replay.player_lose.data && replay.player_lose.data.attributes.name}}
                             (<span :class="`text-${factionList.find(o => o.name === (replay.faction_lose.data && replay.faction_lose.data.attributes.name)).color}-500`">
                             {{replay.faction_lose.data && replay.faction_lose.data.attributes.name}}
                             </span>)
@@ -131,7 +131,7 @@ export default {
             ]
         }
     },
-    async asyncData({ $strapi, $axios, params }) {
+    async asyncData({ $strapi, $axios, params,i18n }) {
         let player = await $strapi.findOne('players', params.slug, { populate: '*'})
         let loading = false;
         const query = qs.stringify({
@@ -213,6 +213,7 @@ export default {
             }
         }
 
+        
         let allFactions = ["Men", "Elves", "Dwarves", "Isengard", "Mordor", "Goblins", "Angmar"];
 
         let factions = []
@@ -271,7 +272,7 @@ export default {
     }
   },
   title: {
-    text: 'Informations sur les factions jouées',
+    text: i18n.locale == 'en' ? 'Information about the factions played' : 'Informations sur les factions jouées',
     style: {
         color: '#ffffff',
         fontWeight: 'bold'
@@ -285,7 +286,9 @@ export default {
             }
         },
     gridLineColor: "red",
-    categories: ['Homme', 'Elfe', 'Nain', 'Isengard', 'Mordor', 'Gobelin', 'Angmar']
+    categories: i18n.locale == 'en' ?
+    ["Men", "Elves", "Dwarves", "Isengard", "Mordor", "Goblins", "Angmar"] :
+    [`Homme`, 'Elfe', 'Nain', 'Isengard', 'Mordor', 'Gobelin', 'Angmar']
   },
   yAxis: {
     allowDecimals: false,
@@ -295,7 +298,7 @@ export default {
       style: {
         color: "#ffffff"
       },
-      text: 'Nombre de Match'
+      text: i18n.locale == 'en' ? 'Number of matches' : 'Nombre de Match'
     },
     labels: {
             style: {
@@ -316,11 +319,11 @@ export default {
     }
   },
   series: [{
-    name: 'Défaite',
+    name: i18n.locale == 'en' ? 'Defeat' : 'Défaite',
     color: "red",
     data: defaites
   },{
-    name: 'Victoire',
+    name: i18n.locale == 'en' ? 'Victory' : 'Victoire',
     color: "green",
     data: victoires
   }]
@@ -339,7 +342,7 @@ const chartOptions2 = {
     }
   },
   title: {
-    text: 'Informations contre les factions auxquelles tu as joué',
+    text: i18n.locale == 'en' ? 'Information against the factions you have played' : 'Informations contre les factions auxquelles tu as joué',
     style: {
         color: '#ffffff',
         fontWeight: 'bold'
@@ -353,7 +356,9 @@ const chartOptions2 = {
             }
         },
     gridLineColor: "red",
-    categories: ['Homme', 'Elfe', 'Nain', 'Isengard', 'Mordor', 'Gobelin', 'Angmar']
+    categories: i18n.locale == 'en' ?
+    ["Men", "Elves", "Dwarves", "Isengard", "Mordor", "Goblins", "Angmar"] :
+    [`Homme`, 'Elfe', 'Nain', 'Isengard', 'Mordor', 'Gobelin', 'Angmar']
   },
   yAxis: {
     allowDecimals: false,
@@ -363,7 +368,7 @@ const chartOptions2 = {
       style: {
         color: "#ffffff"
       },
-      text: 'Nombre de Match'
+      text: i18n.locale == 'en' ? 'Number of matches' : 'Nombre de Match'
     },
     labels: {
             style: {
@@ -384,35 +389,17 @@ const chartOptions2 = {
     }
   },
   series: [{
-    name: 'Défaite',
+    name: i18n.locale == 'en' ? 'Defeat' : 'Défaite',
     color: "red",
     data: defaites2
   },{
-    name: 'Victoire',
+    name: i18n.locale == 'en' ? 'Victory' : 'Victoire',
     color: "green",
     data: victoires2
   }]
 }
         loading = true;
-        return { slug, player, games, newPlayer, loading, chartOptions, chartOptions2 }
-    },
-    computed:{
-        // sortedGames() {
-        //     let p = this.player.data.attributes.name
-        //     let newPlayer = this.player.data.attributes;
-        //     newPlayer.replays = []
-
-        //     for (const g of this.games) {
-        //         if(p == g.attributes.elo[0].player_lose.name || 
-        //         p == g.attributes.elo[0].player_win.name) {
-
-        //             newPlayer.replays.push(g.attributes)
-        //             console.log(g.attributes)
-        //         }
-        //     }
-
-        //     return newPlayer
-        // }
+      return { slug, player, games, newPlayer, loading, chartOptions, chartOptions2 }
     },
 }
 </script>

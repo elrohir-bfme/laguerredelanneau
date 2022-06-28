@@ -49,13 +49,13 @@
                                 <td class="p-2">
                                     <img class="h-auto rounded-3xl" :src="`https://api.laterredumilieu.fr${map.attributes.minimap.data.attributes.url}`">
                                 </td>
-                                <td v-for="fac in factionList" v-bind:key="fac.name" class="hidden md:table-cell p-2 w-1/12 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : 900} border-${fac.color}-600`">
-                                    <div v-if="map.statsFactionWin[fac.name] || map.statsFactionWin[fac.name]" class="flex items-center justify-center text-white text-sm text-center">
+                                <td v-for="fac in factionList" v-bind:key="fac.name" class="hidden md:table-cell p-2 w-1/12 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : fac.color == 'yellow' ? 400 : 900} border-${fac.color}-600`">
+                                    <div v-if="map.statsFactionWin[fac.name] || map.statsFactionWin[fac.name]" class="flex items-center justify-center text-sm text-center" :class="fac.color == 'yellow' ? 'text-gray-800' : 'text-white'">
                                         <p>
                                             {{`${(map.statsFactionWin[fac.name] >= 0 || map.statsFactionLose[fac.name] >= 0) ? ((((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)) : "0"}%`}}
                                         </p>
                                     </div>
-                                    <div v-if="map.statsFactionWin[fac.name] || map.statsFactionWin[fac.name]" class="w-full h-2 bg-indigo-100 rounded-full mb-4">
+                                    <div v-if="map.statsFactionWin[fac.name] || map.statsFactionWin[fac.name]" class="w-full h-2 bg-indigo-100 rounded-full mb-2" :class="fac.color == 'yellow' ? 'ring-1 ring-gray-900' : 'border-0'">
                                         <div 
                                             :style="`width: ${Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0 ? (((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`" 
                                             class="h-full text-center text-xs rounded-full"
@@ -63,7 +63,7 @@
                                         >
                                         </div>
                                     </div>
-                                    <div v-if="map.statsFactionWin[fac.name] || map.statsFactionWin[fac.name]" class="flex items-center justify-between text-white text-sm">
+                                    <div v-if="map.statsFactionWin[fac.name] || map.statsFactionWin[fac.name]" class="flex items-center justify-between text-sm" :class="fac.color == 'yellow' ? 'text-gray-700' : 'text-gray-200'">
                                         <p>
                                             {{map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0}}V
                                         </p>
@@ -71,7 +71,7 @@
                                             {{map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0}}D
                                         </p>
                                     </div>
-                                    <div v-else class=" text-white text-sm">
+                                    <div v-else class="text-sm" :class="fac.color == 'yellow' ? 'text-gray-700' : 'text-white'">
                                         <p class="text-center">-</p>
                                     </div>
                                 </td>

@@ -79,7 +79,7 @@
                                     <div class="text-lg text-center">{{player.wins + player.loses}}</div>
                                 </td>
                                 <td v-for="fac in factionList" v-bind:key="fac.name" class="hidden md:table-cell p-2 w-1/12 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : fac.color == 'yellow' ? 400 : 900} border-${fac.color}-600`">
-                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionLose[fac.name]" class="flex items-center justify-center text-sm text-center" :class="fac.color == 'yellow' ? 'text-gray-600' : 'text-white'">
+                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionLose[fac.name]" class="flex items-center justify-center text-sm text-center" :class="fac.color == 'yellow' ? 'text-gray-800' : 'text-white'">
                                         <p>
                                             {{`${(player.statsFactionWin[fac.name] >= 0 || player.statsFactionLose[fac.name] >= 0) ? ((((player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0) / ((player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0) + (player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)) : "0"}%`}}
                                         </p>
@@ -92,7 +92,7 @@
                                         >
                                         </div>
                                     </div>
-                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionLose[fac.name]" class="flex items-center justify-around text-xs" :class="fac.color == 'yellow' ? 'text-gray-600' : 'text-gray-200'">
+                                    <div v-if="player.statsFactionWin[fac.name] || player.statsFactionLose[fac.name]" class="flex items-center justify-around text-xs" :class="fac.color == 'yellow' ? 'text-gray-700' : 'text-gray-200'">
                                         <p>
                                             {{player.statsFactionWin[fac.name] ? player.statsFactionWin[fac.name] : 0}}
                                         </p>
@@ -100,7 +100,7 @@
                                             {{player.statsFactionLose[fac.name] ? player.statsFactionLose[fac.name] : 0}}
                                         </p>
                                     </div>
-                                    <div v-else class="text-sm" :class="fac.color == 'yellow' ? 'text-gray-600' : 'text-white'">
+                                    <div v-else class="text-sm" :class="fac.color == 'yellow' ? 'text-gray-700' : 'text-white'">
                                         <p class="text-center">-</p>
                                     </div>
                                 </td>
@@ -442,5 +442,12 @@ export default {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(139, 92, 246, 0));
 }
 
+.to-yellow-500 {
+    --tw-gradient-to: #f59e0b;
+}
 
+.from-yellow-300 {
+    --tw-gradient-from: #fcd34d;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(252, 211, 77, 0));
+}
 </style>

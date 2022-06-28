@@ -1,5 +1,5 @@
 <template>
-  <section class="text-gray-600 body-font">
+  <section class="text-gray-400 body-font">
   <div class="container px-5 py-4 mx-auto">
     <div class="flex flex-col text-center w-full mb-5">
       <h1 class="font-medium mb-4 text-red-500 text-8xl">{{ $t('league.matchs') }}</h1>
@@ -114,6 +114,51 @@
     </div>
 
 
+    </div>
+
+
+    <div v-for="(game, index) in games" v-bind:key="index" class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto" :class="index == 0 && 'mt-10'">
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-900 rounded-sm pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-orange-600 text-white relative z-10 title-font font-medium text-sm">{{index+1}}</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <!-- <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </div> -->
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-white mb-1 text-xl">
+            {{ $moment(game.attributes.date).lang($i18n.locale).format('MMMM Do YYYY, h:mm:ss a') }} ({{ $moment(game.attributes.date).lang($i18n.locale).fromNow()}}) - BO{{game.attributes.bo}}
+          </h2>
+          <div v-for="(replay, index) in game.attributes.replays" v-bind:key="index" class="leading-relaxed">
+            <!-- Match `game.attributes.elo?[index]?.player_win?.gain ? 'llolo' : '' }} -->
+            Match {{index+1}}
+            {{replay.player_win.data && replay.player_win.data.attributes.name}}
+            {{game.attributes.elo[index] && game.attributes.elo[index].player_win && game.attributes.elo[index].player_win.gain ? `[+${game.attributes.elo[index].player_win.gain}]` : "" }}
+
+            <!-- ({{replay.faction_win.data.attributes.name}}) -->
+            (<span :class="`text-${factionList.find(o => o.name === (replay.faction_win.data && replay.faction_win.data.attributes.name)).color}-500`">
+                {{replay.faction_win.data && replay.faction_win.data.attributes.name}}
+            </span>) 
+            VS 
+            (<span :class="`text-${factionList.find(o => o.name === (replay.faction_lose.data && replay.faction_lose.data.attributes.name)).color}-500`">
+                {{replay.faction_lose.data && replay.faction_lose.data.attributes.name}}
+            </span>)
+            {{game.attributes.elo[index] && game.attributes.elo[index].player_lose && game.attributes.elo[index].player_lose.loss ? `[${game.attributes.elo[index].player_lose.loss}]` : "" }} 
+            {{replay.player_lose.data.attributes.name}}
+
+            <div class="p-2 inline-flex" v-if="replay.replay.data !== null">
+                <a target="_blank" :href="`https://api.laterredumilieu.fr${replay.replay.data.attributes.url}`" class="bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 mx-2 rounded inline-flex items-center">
+                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                    <span>{{replay.map.data && replay.map.data.attributes.name}}</span>
+                </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>

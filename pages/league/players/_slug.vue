@@ -272,7 +272,7 @@ export default {
     }
   },
   title: {
-    text: i18n.locale == 'en' ? 'Information about the factions played' : 'Informations sur les factions jouées',
+    text: i18n.locale == 'en' ? 'Win rate with the factions played' : 'Informations sur les factions jouées',
     style: {
         color: '#ffffff',
         fontWeight: 'bold'
@@ -342,7 +342,7 @@ const chartOptions2 = {
     }
   },
   title: {
-    text: i18n.locale == 'en' ? 'Information against the factions you have played' : 'Informations contre les factions auxquelles tu as joué',
+    text: i18n.locale == 'en' ? 'Win Rate against opponents factions' : 'Informations contre les factions auxquelles tu as joué',
     style: {
         color: '#ffffff',
         fontWeight: 'bold'

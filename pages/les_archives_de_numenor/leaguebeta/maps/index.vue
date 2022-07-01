@@ -1,0 +1,220 @@
+<template>
+  <section class="text-white body-font">
+  <div class="lg:container sm:m-0 lg:mx-auto lg:px-5 py-4 mx-auto">
+    <div class="flex flex-col text-center w-full mb-5">
+      <h1 class="font-medium mb-4 text-red-500 text-8xl">{{ $t('league.maps') }}</h1>
+    </div>
+
+    <div class="flex">
+    <div class="flex-grow">
+
+    <div class="flex flex-col justify-center h-full">
+        <div class="w-full  mx-auto bg-gray-900 shadow-lg rounded-sm border border-orange-600">
+            <header class="px-5 py-4 border-b border-orange-500 flex">
+                <div class="flex-grow">
+                    <h2 class="font-semibold text-white">{{ $t('league.maps') }}</h2>
+                </div>
+            </header>
+
+            <div class="p-3">
+                <div class="overflow-x-auto">
+                    <table class="table-auto w-full border-2 border-gray-800 rounded-xl">
+                        <thead class="text-xs font-semibold uppercase text-white bg-gray-800">
+                            <tr>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">{{ $t('league.name') }}</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">{{ $t('league.img') }}</div>
+                                </th>
+                                <!-- <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">{{ $t('league.nbMatchs') }}</div>
+                                </th> -->
+                                <th class="p-2 whitespace-nowrap hidden md:table-cell" v-for="fac in factionList" v-bind:key="fac.name">
+                                    <div class="font-semibold text-center">{{$t(`league.${fac.name}`)}}</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm divide-y divide-orange-500">
+                            <tr v-for="map in sortedLast" v-bind:key="map._id">
+                                <td class="p-2">
+                                    <div class="text-left text-gray-100 ml-4">
+                                    {{map.attributes.name}} ({{map.wins + map.loses}}) <br/><br/>
+                                    <span class="hidden sm:inline m-4 text-xs text-gray-300">{{map.attributes.description}}</span>
+                                    </div>
+                                </td>
+                                <!-- <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left text-gray-100">{{map.attributes.description}}</div>
+                                </td> -->
+                                <td class="p-2">
+                                    <img class="h-auto rounded-3xl" :src="`https://api.laterredumilieu.fr${map.attributes.minimap.data.attributes.url}`">
+                                </td>
+                                <td v-for="fac in factionList" v-bind:key="fac.name" class="hidden md:table-cell p-2 w-1/12 whitespace-nowrap border-t" :class="`bg-${fac.color}-${fac.color == 'gray' ? 800 : fac.color == 'yellow' ? 400 : 900} border-${fac.color}-600`">
+                                    <div v-if="map.statsFactionWin[fac.name] || map.statsFactionWin[fac.name]" class="flex items-center justify-center text-sm text-center" :class="fac.color == 'yellow' ? 'text-gray-800' : 'text-white'">
+                                        <p>
+                                            {{`${(map.statsFactionWin[fac.name] >= 0 || map.statsFactionLose[fac.name] >= 0) ? ((((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0)) : "0"}%`}}
+                                        </p>
+                                    </div>
+                                    <div v-if="map.statsFactionWin[fac.name] || map.statsFactionWin[fac.name]" class="w-full h-2 bg-indigo-100 rounded-full mb-2" :class="fac.color == 'yellow' ? 'ring-1 ring-gray-900' : 'border-0'">
+                                        <div 
+                                            :style="`width: ${Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0 ? (((map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0) / ((map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0) + (map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0))) * 100).toFixed(0) : 0}%;`" 
+                                            class="h-full text-center text-xs rounded-full"
+                                            :class="`from-${fac.color}-500 to-${fac.color}-700 ${(Object.keys(map.statsFactionLose).length > 0 || Object.keys(map.statsFactionWin).length > 0) && (map.statsFactionLose[fac.name] || map.statsFactionWin[fac.name]) ? 'bg-gradient-to-r' : ''}`"
+                                        >
+                                        </div>
+                                    </div>
+                                    <div v-if="map.statsFactionWin[fac.name] || map.statsFactionWin[fac.name]" class="flex items-center justify-between text-sm" :class="fac.color == 'yellow' ? 'text-gray-700' : 'text-gray-200'">
+                                        <p>
+                                            {{map.statsFactionWin[fac.name] ? map.statsFactionWin[fac.name] : 0}}V
+                                        </p>
+                                        <p>
+                                            {{map.statsFactionLose[fac.name] ? map.statsFactionLose[fac.name] : 0}}D
+                                        </p>
+                                    </div>
+                                    <div v-else class="text-sm" :class="fac.color == 'yellow' ? 'text-gray-700' : 'text-white'">
+                                        <p class="text-center">-</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    </div>
+
+  </div>
+</section>
+</template>
+
+<script>
+const qs = require('qs');
+export default {
+  layout: "leaguebeta",
+    data() {
+        return {
+        loading: false,
+        maps: [],
+        factions: [],
+        factionList: [
+            {name: "Men", color: "blue"}, 
+            {name: "Elves", color: "green"}, 
+            {name: "Dwarves", color: "yellow"}, 
+            {name: "Mordor", color: "red"},
+            {name: "Isengard", color: "gray"},
+            {name: "Goblins", color: "orange"},
+            {name: "Angmar", color: "purple"}
+        ],
+        sortedLast: [{"id":1,"attributes":{"name":"Jungles de L'Harad Lointain","description":"Une région à l'extrême sud de l'Harad densément boisée d'arbres et de buissons tropicaux.  Elle est alimentée en eau par des rivières qui finissent par se jeter dans la Grande Mer. \n\nTaille : 380 x 400\nAntres : 4x Antres Wargs, 2x Antres Trolls\nStructures neutres : 2 feux d'alarmes","createdAt":"2022-03-23T14:56:44.210Z","updatedAt":"2022-05-15T14:40:33.637Z","img":{"data":{"id":2,"attributes":{"name":"600px-Forochel.jpg","alternativeText":"600px-Forochel.jpg","caption":"600px-Forochel.jpg","width":600,"height":338,"formats":{"thumbnail":{"name":"thumbnail_600px-Forochel.jpg","hash":"thumbnail_600px_Forochel_7a549e3538","ext":".jpg","mime":"image/jpeg","path":null,"width":245,"height":138,"size":5.41,"url":"/uploads/thumbnail_600px_Forochel_7a549e3538.jpg"},"small":{"name":"small_600px-Forochel.jpg","hash":"small_600px_Forochel_7a549e3538","ext":".jpg","mime":"image/jpeg","path":null,"width":500,"height":282,"size":17.7,"url":"/uploads/small_600px_Forochel_7a549e3538.jpg"}},"hash":"600px_Forochel_7a549e3538","ext":".jpg","mime":"image/jpeg","size":23.71,"url":"/uploads/600px_Forochel_7a549e3538.jpg","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-03-23T14:56:40.534Z","updatedAt":"2022-03-23T14:56:40.534Z"}}},"minimap":{"data":{"id":112,"attributes":{"name":"jungles_map.jpg","alternativeText":"jungles_map.jpg","caption":"jungles_map.jpg","width":346,"height":260,"formats":{"thumbnail":{"name":"thumbnail_jungles_map.jpg","hash":"thumbnail_jungles_map_1288c12d6a","ext":".jpg","mime":"image/jpeg","path":null,"width":208,"height":156,"size":6.51,"url":"/uploads/thumbnail_jungles_map_1288c12d6a.jpg"}},"hash":"jungles_map_1288c12d6a","ext":".jpg","mime":"image/jpeg","size":13.04,"url":"/uploads/jungles_map_1288c12d6a.jpg","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-05-15T14:39:36.718Z","updatedAt":"2022-05-15T14:39:36.718Z"}}},"map":{"data":null}},"statsFactionWin":{"Mordor":1,"Isengard":2,"Men":3,"Dwarves":1},"statsFactionLose":{"Mordor":2,"Goblins":2,"Men":2,"Isengard":1},"wins":7,"loses":7},{"id":2,"attributes":{"name":"Sakura Forest","description":"Une forêt sacré au nord de la mer de Rhûn. C'est un lieu garnie de temples, qui furent construits pour cultiver et abriter les rares arbres sakura. \n\nTaille : 400x360\nAntres : 4x Antres de Wargs.\nStructures neutre : Aucune.","createdAt":"2022-03-24T08:45:44.505Z","updatedAt":"2022-05-15T14:41:26.758Z","img":{"data":{"id":14,"attributes":{"name":"Lindon.jpg","alternativeText":"Lindon.jpg","caption":"Lindon.jpg","width":1448,"height":925,"formats":{"thumbnail":{"name":"thumbnail_Lindon.jpg","hash":"thumbnail_Lindon_b7deb50f1f","ext":".jpg","mime":"image/jpeg","path":null,"width":244,"height":156,"size":9.73,"url":"/uploads/thumbnail_Lindon_b7deb50f1f.jpg"},"large":{"name":"large_Lindon.jpg","hash":"large_Lindon_b7deb50f1f","ext":".jpg","mime":"image/jpeg","path":null,"width":1000,"height":639,"size":137.26,"url":"/uploads/large_Lindon_b7deb50f1f.jpg"},"medium":{"name":"medium_Lindon.jpg","hash":"medium_Lindon_b7deb50f1f","ext":".jpg","mime":"image/jpeg","path":null,"width":750,"height":479,"size":82.62,"url":"/uploads/medium_Lindon_b7deb50f1f.jpg"},"small":{"name":"small_Lindon.jpg","hash":"small_Lindon_b7deb50f1f","ext":".jpg","mime":"image/jpeg","path":null,"width":500,"height":319,"size":38.24,"url":"/uploads/small_Lindon_b7deb50f1f.jpg"}},"hash":"Lindon_b7deb50f1f","ext":".jpg","mime":"image/jpeg","size":101.28,"url":"/uploads/Lindon_b7deb50f1f.jpg","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-03-24T08:45:17.717Z","updatedAt":"2022-03-24T08:45:17.717Z"}}},"minimap":{"data":{"id":113,"attributes":{"name":"Sakura_map.jpg","alternativeText":"Sakura_map.jpg","caption":"Sakura_map.jpg","width":347,"height":262,"formats":{"thumbnail":{"name":"thumbnail_Sakura_map.jpg","hash":"thumbnail_Sakura_map_ab131caa63","ext":".jpg","mime":"image/jpeg","path":null,"width":207,"height":156,"size":7.55,"url":"/uploads/thumbnail_Sakura_map_ab131caa63.jpg"}},
+        "hash":"Sakura_map_ab131caa63","ext":".jpg","mime":"image/jpeg","size":15.28,"url":"/uploads/Sakura_map_ab131caa63.jpg","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-05-15T14:41:23.826Z","updatedAt":"2022-05-15T14:41:23.826Z"}}},"map":{"data":null}},"statsFactionWin":{"Men":4,"Mordor":2,"Dwarves":2,"Angmar":2,"Elves":2},"statsFactionLose":{"Goblins":3,"Dwarves":2,"Isengard":2,"Elves":2,"Men":3},"wins":12,"loses":12},{"id":3,"attributes":{"name":"L'Ouestfold","description":"Une contré rocheuse, parsemé de forêts dans la région Ouest du Rohan.\n\nTaille : 375x325\nAntres : 4x Antres de Wargs, 1x Troll.\nStructures neutre : 2 feux d'alarmes","createdAt":"2022-05-15T14:42:11.937Z","updatedAt":"2022-05-15T14:42:11.937Z","img":{"data":null},"minimap":{"data":{"id":114,"attributes":{"name":"westfold_map.jpg","alternativeText":"westfold_map.jpg","caption":"westfold_map.jpg","width":346,"height":260,"formats":{"thumbnail":{"name":"thumbnail_westfold_map.jpg","hash":"thumbnail_westfold_map_c787c6055b","ext":".jpg","mime":"image/jpeg","path":null,"width":208,"height":156,"size":7.87,"url":"/uploads/thumbnail_westfold_map_c787c6055b.jpg"}},"hash":"westfold_map_c787c6055b","ext":".jpg","mime":"image/jpeg","size":15.69,"url":"/uploads/westfold_map_c787c6055b.jpg","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-05-15T14:42:07.969Z","updatedAt":"2022-05-15T14:42:07.969Z"}}},"map":{"data":null}},"statsFactionWin":{"Isengard":2,"Dwarves":3,"Angmar":2,"Mordor":3},"statsFactionLose":{"Dwarves":2,"Mordor":3,"Angmar":2,"Goblins":1,"Elves":1,"Men":1},"wins":10,"loses":10},{"id":4,"attributes":{"name":"Landes Etten II","description":"Les Landes d'Etten, également connus sous le nom du Mont des Trolls, étaient une région montagneuse de l'Eriador, qui était à l'ouest des Montagnes Brumeuses. La terre était sauvage, et beaucoup de mauvaise créatures y vivaient.","createdAt":"2022-06-09T17:23:35.588Z","updatedAt":"2022-06-09T17:23:35.588Z","img":{"data":null},"minimap":{"data":{"id":211,"attributes":{"name":"ettermoors ii.png","alternativeText":"ettermoors ii.png","caption":"ettermoors ii.png","width":212,"height":180,"formats":{"thumbnail":{"name":"thumbnail_ettermoors ii.png","hash":"thumbnail_ettermoors_ii_e3d8619866","ext":".png","mime":"image/png","path":null,"width":184,"height":156,"size":62.22,"url":"/uploads/thumbnail_ettermoors_ii_e3d8619866.png"}},"hash":"ettermoors_ii_e3d8619866","ext":".png","mime":"image/png","size":17.87,"url":"/uploads/ettermoors_ii_e3d8619866.png","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-06-09T17:23:33.881Z","updatedAt":"2022-06-09T17:23:33.881Z"}}},"map":{"data":null}},"statsFactionWin":{"Dwarves":1,"Elves":2,"Goblins":1,"Isengard":1,"Angmar":1},"statsFactionLose":{"Goblins":3,"Men":1,"Elves":1,"Isengard":1},"wins":6,"loses":6},{"id":5,"attributes":{"name":"Collines Brandy","description":"Castel Brandy, fondé par Gorhendad Vieilbouc, était la demeure ancestrale de la famille Brandibouc. C’était un smial profondément excavé dans la Colline de Bouc, près des berges occidentales du Brandivin, dans le Quartier Est du Comté.","createdAt":"2022-06-09T17:34:10.780Z","updatedAt":"2022-06-13T19:35:34.006Z","img":{"data":null},"minimap":{"data":{"id":212,"attributes":{"name":"minimappp.png","alternativeText":"minimappp.png","caption":"minimappp.png","width":224,"height":181,"formats":{"thumbnail":{"name":"thumbnail_minimappp.png","hash":"thumbnail_minimappp_8d097d5a6d","ext":".png","mime":"image/png","path":null,"width":193,"height":156,"size":62.62,"url":"/uploads/thumbnail_minimappp_8d097d5a6d.png"}},"hash":"minimappp_8d097d5a6d","ext":".png","mime":"image/png","size":18.05,"url":"/uploads/minimappp_8d097d5a6d.png","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-06-09T17:34:08.766Z","updatedAt":"2022-06-09T17:34:08.766Z"}}},"map":{"data":null}},"statsFactionWin":{"Angmar":1,"Isengard":3,"Goblins":4,"Mordor":3,"Dwarves":5,"Elves":4,"Men":1},"statsFactionLose":{"Isengard":4,"Men":3,"Angmar":3,"Elves":4,"Goblins":4,"Mordor":1,"Dwarves":2},"wins":21,"loses":21},{"id":6,"attributes":{"name":"Bois de Chet","description":"Le Bois de Chètes s'étendait au nord-est de la Colline de Brie. Il abritait le bourg d'Archètes et était bordé à l'est par les marais de l'Eau-à-Moucherons.","createdAt":"2022-06-09T18:23:20.463Z","updatedAt":"2022-06-09T18:23:20.463Z","img":{"data":null},"minimap":{"data":{"id":213,"attributes":{"name":"fore.png","alternativeText":"fore.png","caption":"fore.png","width":202,"height":180,"formats":{"thumbnail":{"name":"thumbnail_fore.png","hash":"thumbnail_fore_836b20e750","ext":".png","mime":"image/png","path":null,"width":175,"height":156,"size":54.74,"url":"/uploads/thumbnail_fore_836b20e750.png"}},"hash":"fore_836b20e750","ext":".png","mime":"image/png","size":16.21,"url":"/uploads/fore_836b20e750.png","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-06-09T18:23:18.462Z","updatedAt":"2022-06-09T18:23:18.462Z"}}},"map":{"data":null}},"statsFactionWin":{"Isengard":4,"Dwarves":2,"Mordor":1,"Elves":2,"Men":1},"statsFactionLose":{"Dwarves":3,"Men":2,"Isengard":2,"Mordor":1,"Elves":2},"wins":10,"loses":10},{"id":7,"attributes":{"name":"Sorow Island","description":"Un groupe d'îles dans la mer de Belfalas. Il est dit qu'il est hôte de deux esprits malveillants qui amène de naif visiteurs à la folie.","createdAt":"2022-06-12T15:27:21.825Z","updatedAt":"2022-06-12T19:31:25.389Z","img":{"data":{"id":235,"attributes":{"name":"Screenshot - 12_06_2022 , 21_20_35.jpg","alternativeText":"Screenshot - 12_06_2022 , 21_20_35.jpg","caption":"Screenshot - 12_06_2022 , 21_20_35.jpg","width":782,"height":711,"formats":{"thumbnail":{"name":"thumbnail_Screenshot - 12_06_2022 , 21_20_35.jpg","hash":"thumbnail_Screenshot_12_06_2022_21_20_35_9b896d54bc","ext":".jpg","mime":"image/jpeg","path":null,"width":172,"height":156,"size":5.76,"url":"/uploads/thumbnail_Screenshot_12_06_2022_21_20_35_9b896d54bc.jpg"},"medium":{"name":"medium_Screenshot - 12_06_2022 , 21_20_35.jpg","hash":"medium_Screenshot_12_06_2022_21_20_35_9b896d54bc","ext":".jpg","mime":"image/jpeg","path":null,"width":750,"height":682,"size":77.54,"url":"/uploads/medium_Screenshot_12_06_2022_21_20_35_9b896d54bc.jpg"},"small":{"name":"small_Screenshot - 12_06_2022 , 21_20_35.jpg","hash":"small_Screenshot_12_06_2022_21_20_35_9b896d54bc","ext":".jpg","mime":"image/jpeg","path":null,"width":500,"height":455,"size":37.57,"url":"/uploads/small_Screenshot_12_06_2022_21_20_35_9b896d54bc.jpg"}},"hash":"Screenshot_12_06_2022_21_20_35_9b896d54bc","ext":".jpg","mime":"image/jpeg","size":84.35,"url":"/uploads/Screenshot_12_06_2022_21_20_35_9b896d54bc.jpg","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-06-12T19:28:21.486Z","updatedAt":"2022-06-12T19:28:21.486Z"}}},"minimap":{"data":{"id":234,"attributes":{"name":"Screenshot - 12_06_2022 , 21_25_15.jpg","alternativeText":"Screenshot - 12_06_2022 , 21_25_15.jpg","caption":"Screenshot - 12_06_2022 , 21_25_15.jpg","width":175,"height":175,"formats":{"thumbnail":{"name":"thumbnail_Screenshot - 12_06_2022 , 21_25_15.jpg","hash":"thumbnail_Screenshot_12_06_2022_21_25_15_e444c3abde","ext":".jpg","mime":"image/jpeg","path":null,"width":156,"height":156,"size":6.03,"url":"/uploads/thumbnail_Screenshot_12_06_2022_21_25_15_e444c3abde.jpg"}},"hash":"Screenshot_12_06_2022_21_25_15_e444c3abde","ext":".jpg","mime":"image/jpeg","size":7.07,"url":"/uploads/Screenshot_12_06_2022_21_25_15_e444c3abde.jpg","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-06-12T19:28:12.816Z","updatedAt":"2022-06-12T19:28:12.816Z"}}},"map":{"data":null}},"statsFactionWin":{},"statsFactionLose":{},"wins":0,"loses":0},{"id":8,"attributes":{"name":"Belfalas Abyss","description":"Les merveilleuses profondeurs de la Mer de Belfalas","createdAt":"2022-06-13T12:37:04.205Z","updatedAt":"2022-06-13T12:37:04.205Z","img":{"data":{"id":242,"attributes":{"name":"post-222730-1655011621.jpg","alternativeText":"post-222730-1655011621.jpg","caption":"post-222730-1655011621.jpg","width":1000,"height":563,"formats":{"thumbnail":{"name":"thumbnail_post-222730-1655011621.jpg","hash":"thumbnail_post_222730_1655011621_4b53eb7740","ext":".jpg","mime":"image/jpeg","path":null,"width":245,"height":138,"size":8.77,"url":"/uploads/thumbnail_post_222730_1655011621_4b53eb7740.jpg"},"medium":{"name":"medium_post-222730-1655011621.jpg","hash":"medium_post_222730_1655011621_4b53eb7740","ext":".jpg","mime":"image/jpeg","path":null,"width":750,"height":422,"size":80.22,"url":"/uploads/medium_post_222730_1655011621_4b53eb7740.jpg"},"small":{"name":"small_post-222730-1655011621.jpg","hash":"small_post_222730_1655011621_4b53eb7740","ext":".jpg","mime":"image/jpeg","path":null,"width":500,"height":282,"size":35.93,"url":"/uploads/small_post_222730_1655011621_4b53eb7740.jpg"}},"hash":"post_222730_1655011621_4b53eb7740","ext":".jpg","mime":"image/jpeg","size":138.91,"url":"/uploads/post_222730_1655011621_4b53eb7740.jpg","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-06-13T12:35:09.685Z","updatedAt":"2022-06-13T12:35:09.685Z"}}},"minimap":{"data":{"id":243,"attributes":{"name":"Screenshot - 13_06_2022 , 14_31_14.jpg","alternativeText":"Screenshot - 13_06_2022 , 14_31_14.jpg","caption":"Screenshot - 13_06_2022 , 14_31_14.jpg","width":260,"height":199,"formats":{"thumbnail":{"name":"thumbnail_Screenshot - 13_06_2022 , 14_31_14.jpg","hash":"thumbnail_Screenshot_13_06_2022_14_31_14_26d95ba696",
+        "ext":".jpg","mime":"image/jpeg","path":null,"width":204,"height":156,"size":7.26,"url":"/uploads/thumbnail_Screenshot_13_06_2022_14_31_14_26d95ba696.jpg"}},"hash":"Screenshot_13_06_2022_14_31_14_26d95ba696","ext":".jpg","mime":"image/jpeg","size":10.04,"url":"/uploads/Screenshot_13_06_2022_14_31_14_26d95ba696.jpg","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-06-13T12:35:16.389Z","updatedAt":"2022-06-13T12:35:16.389Z"}}},"map":{"data":{"id":244,"attributes":{"name":"Belfalas_Abyss.zip","alternativeText":"Belfalas_Abyss.zip","caption":"Belfalas_Abyss.zip","width":null,"height":null,"formats":null,"hash":"Belfalas_Abyss_e547d9498e","ext":".zip","mime":"application/x-zip-compressed","size":970.5,"url":"/uploads/Belfalas_Abyss_e547d9498e.zip","previewUrl":null,"provider":null,"provider_metadata":null,"createdAt":"2022-06-13T12:35:42.207Z","updatedAt":"2022-06-13T12:35:42.207Z"}}}},"statsFactionWin":{"Mordor":1,"Angmar":1},"statsFactionLose":{"Goblins":1,"Mordor":1},"wins":2,"loses":2},{"id":9,"attributes":{"name":"Estfolde","description":"un map du Rohan","createdAt":"2022-06-15T11:43:36.143Z","updatedAt":"2022-06-15T11:43:36.143Z","img":{"data":null},"minimap":{"data":{"id":265,"attributes":{"name":"unique.png","alternativeText":"unique.png","caption":"unique.png","width":144,"height":144,"formats":null,"hash":"unique_89fe870d59","ext":".png","mime":"image/png","size":1.93,"url":"/uploads/unique_89fe870d59.png","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-06-15T11:43:33.107Z","updatedAt":"2022-06-15T11:43:33.107Z"}}},"map":{"data":null}},"statsFactionWin":{"Angmar":1,"Elves":1},"statsFactionLose":{"Isengard":2},"wins":2,"loses":2},{"id":10,"attributes":{"name":"Mer de Rhun","description":"il fait beau","createdAt":"2022-06-15T11:46:21.721Z","updatedAt":"2022-06-15T11:46:21.721Z","img":{"data":null},"minimap":{"data":{"id":268,"attributes":{"name":"2_objects.png","alternativeText":"2_objects.png","caption":"2_objects.png","width":36,"height":36,"formats":null,"hash":"2_objects_141ea01da0","ext":".png","mime":"image/png","size":0.54,"url":"/uploads/2_objects_141ea01da0.png","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-06-15T11:46:15.805Z","updatedAt":"2022-06-15T11:46:15.805Z"}}},"map":{"data":null}},"statsFactionWin":{"Isengard":1},"statsFactionLose":{"Men":1},"wins":1,"loses":1},{"id":11,"attributes":{"name":"tstff","description":"regerger","createdAt":"2022-07-01T11:36:30.907Z","updatedAt":"2022-07-01T11:36:30.907Z","img":{"data":null},"minimap":{"data":{"id":315,"attributes":{"name":"6aaa94bd4127f59d53a6c405d4a76b78.png","alternativeText":"6aaa94bd4127f59d53a6c405d4a76b78.png","caption":"6aaa94bd4127f59d53a6c405d4a76b78.png","width":220,"height":230,"formats":{"thumbnail":{"name":"thumbnail_6aaa94bd4127f59d53a6c405d4a76b78.png","hash":"thumbnail_6aaa94bd4127f59d53a6c405d4a76b78_f686206878","ext":".png","mime":"image/png","path":null,"width":149,"height":156,"size":16.44,"url":"/uploads/thumbnail_6aaa94bd4127f59d53a6c405d4a76b78_f686206878.png"}},"hash":"6aaa94bd4127f59d53a6c405d4a76b78_f686206878","ext":".png","mime":"image/png","size":4.89,"url":"/uploads/6aaa94bd4127f59d53a6c405d4a76b78_f686206878.png","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-07-01T11:36:28.657Z","updatedAt":"2022-07-01T11:36:28.657Z"}}},"map":{"data":null}},"statsFactionWin":{},"statsFactionLose":{},"wins":0,"loses":0}]
+        }
+    },
+//     async asyncData({ $strapi, $axios }) {
+//         let maps = await $strapi.find('maps', { populate: '*'})
+
+//         console.log(maps, "MAPS")
+//         const query = qs.stringify({
+//             fields: '*',
+//             populate: {
+//                 populate: '*',
+//                 replays: {
+//                     populate: '*',
+//                     faction_win: {
+//                         populate: '*'
+//                     }
+//                 },
+//             },
+//             pagination: {
+//                 page: 1,
+//                 pageSize: 150,
+//             },
+//         }, {
+//         encodeValuesOnly: true,
+//         });
+
+//         const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
+//         let games = data
+
+//         console.log("DEIDJEIDJIEJD JE PASSE ICI ALLOO")
+//         return { maps, games }
+//     },
+//     computed:{
+//         sortedMaps() {
+//             if(this.maps){
+//                 console.log("DEBUT")
+//                 let newMaps = this.maps.data.map(f => {
+//                     let newObject = {
+//                         statsFactionWin: {},
+//                         statsFactionLose: {},
+//                         wins: 0,
+//                         loses: 0
+//                     }
+
+//                     console.log("deidjiedje")
+
+//                     this.games.map(g => {
+//                         console.log(g, "dehudheud")
+//                         if(g.attributes.replays && g.attributes.replays.length > 0){
+//                             g.attributes.replays.map(r => {
+//                                 console.log(r.map, f, "fff")
+//                                 if((r.map.data && r.map.data.id) === f.id) {
+//                                     console.log(r, "r")
+//                                     let faction = r.faction_win.data.attributes.name;
+//                                     typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+//                                     newObject.statsFactionWin[faction] = 1 : 
+//                                     newObject.statsFactionWin[faction]++;
+//                                     newObject.wins++;
+
+//                                     let faction2 = r.faction_lose.data.attributes.name;
+//                                     typeof newObject.statsFactionLose[faction2] === 'undefined' ? 
+//                                     newObject.statsFactionLose[faction2] = 1 : 
+//                                     newObject.statsFactionLose[faction2]++;
+//                                     newObject.loses++;
+//                                 }
+//                             })
+//                         }
+//                     })
+
+//                     return Object.assign(f, newObject)
+//                 })
+
+
+
+//                 // let newMaps = this.maps.data.map(f => {
+//                 //     let newObject = {
+//                 //         statsFactionWin: {},
+//                 //         statsFactionLose: {}
+//                 //     }
+
+
+//                 //     if(f.attributes.games.data.length > 0){
+//                 //         f.attributes.games.data.map(m => {
+//                 //             typeof newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name] === 'undefined' ? 
+//                 //             newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name] = 1 : 
+//                 //             newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name]++;
+
+
+//                 //             typeof newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name] === 'undefined' ? 
+//                 //             newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name] = 1 : 
+//                 //             newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name]++;
+//                 //         })
+//                 //     }
+
+//                 //     return Object.assign(f, newObject)
+//                 // })
+//                 console.log(newMaps)
+//                 return newMaps;
+//             }
+//         },
+//     },
+}
+</script>
+<style>
+
+</style>

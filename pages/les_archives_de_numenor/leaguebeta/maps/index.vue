@@ -27,9 +27,6 @@
                                 <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">{{ $t('league.img') }}</div>
                                 </th>
-                                <!-- <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.nbMatchs') }}</div>
-                                </th> -->
                                 <th class="p-2 whitespace-nowrap hidden md:table-cell" v-for="fac in factionList" v-bind:key="fac.name">
                                     <div class="font-semibold text-center">{{$t(`league.${fac.name}`)}}</div>
                                 </th>
@@ -43,9 +40,6 @@
                                     <span class="hidden sm:inline m-4 text-xs text-gray-300">{{map.attributes.description}}</span>
                                     </div>
                                 </td>
-                                <!-- <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left text-gray-100">{{map.attributes.description}}</div>
-                                </td> -->
                                 <td class="p-2">
                                     <img class="h-auto rounded-3xl" :src="`https://api.laterredumilieu.fr${map.attributes.minimap.data.attributes.url}`">
                                 </td>
@@ -115,104 +109,6 @@ export default {
         "ext":".jpg","mime":"image/jpeg","path":null,"width":204,"height":156,"size":7.26,"url":"/uploads/thumbnail_Screenshot_13_06_2022_14_31_14_26d95ba696.jpg"}},"hash":"Screenshot_13_06_2022_14_31_14_26d95ba696","ext":".jpg","mime":"image/jpeg","size":10.04,"url":"/uploads/Screenshot_13_06_2022_14_31_14_26d95ba696.jpg","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-06-13T12:35:16.389Z","updatedAt":"2022-06-13T12:35:16.389Z"}}},"map":{"data":{"id":244,"attributes":{"name":"Belfalas_Abyss.zip","alternativeText":"Belfalas_Abyss.zip","caption":"Belfalas_Abyss.zip","width":null,"height":null,"formats":null,"hash":"Belfalas_Abyss_e547d9498e","ext":".zip","mime":"application/x-zip-compressed","size":970.5,"url":"/uploads/Belfalas_Abyss_e547d9498e.zip","previewUrl":null,"provider":null,"provider_metadata":null,"createdAt":"2022-06-13T12:35:42.207Z","updatedAt":"2022-06-13T12:35:42.207Z"}}}},"statsFactionWin":{"Mordor":1,"Angmar":1},"statsFactionLose":{"Goblins":1,"Mordor":1},"wins":2,"loses":2},{"id":9,"attributes":{"name":"Estfolde","description":"un map du Rohan","createdAt":"2022-06-15T11:43:36.143Z","updatedAt":"2022-06-15T11:43:36.143Z","img":{"data":null},"minimap":{"data":{"id":265,"attributes":{"name":"unique.png","alternativeText":"unique.png","caption":"unique.png","width":144,"height":144,"formats":null,"hash":"unique_89fe870d59","ext":".png","mime":"image/png","size":1.93,"url":"/uploads/unique_89fe870d59.png","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-06-15T11:43:33.107Z","updatedAt":"2022-06-15T11:43:33.107Z"}}},"map":{"data":null}},"statsFactionWin":{"Angmar":1,"Elves":1},"statsFactionLose":{"Isengard":2},"wins":2,"loses":2},{"id":10,"attributes":{"name":"Mer de Rhun","description":"il fait beau","createdAt":"2022-06-15T11:46:21.721Z","updatedAt":"2022-06-15T11:46:21.721Z","img":{"data":null},"minimap":{"data":{"id":268,"attributes":{"name":"2_objects.png","alternativeText":"2_objects.png","caption":"2_objects.png","width":36,"height":36,"formats":null,"hash":"2_objects_141ea01da0","ext":".png","mime":"image/png","size":0.54,"url":"/uploads/2_objects_141ea01da0.png","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-06-15T11:46:15.805Z","updatedAt":"2022-06-15T11:46:15.805Z"}}},"map":{"data":null}},"statsFactionWin":{"Isengard":1},"statsFactionLose":{"Men":1},"wins":1,"loses":1},{"id":11,"attributes":{"name":"tstff","description":"regerger","createdAt":"2022-07-01T11:36:30.907Z","updatedAt":"2022-07-01T11:36:30.907Z","img":{"data":null},"minimap":{"data":{"id":315,"attributes":{"name":"6aaa94bd4127f59d53a6c405d4a76b78.png","alternativeText":"6aaa94bd4127f59d53a6c405d4a76b78.png","caption":"6aaa94bd4127f59d53a6c405d4a76b78.png","width":220,"height":230,"formats":{"thumbnail":{"name":"thumbnail_6aaa94bd4127f59d53a6c405d4a76b78.png","hash":"thumbnail_6aaa94bd4127f59d53a6c405d4a76b78_f686206878","ext":".png","mime":"image/png","path":null,"width":149,"height":156,"size":16.44,"url":"/uploads/thumbnail_6aaa94bd4127f59d53a6c405d4a76b78_f686206878.png"}},"hash":"6aaa94bd4127f59d53a6c405d4a76b78_f686206878","ext":".png","mime":"image/png","size":4.89,"url":"/uploads/6aaa94bd4127f59d53a6c405d4a76b78_f686206878.png","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-07-01T11:36:28.657Z","updatedAt":"2022-07-01T11:36:28.657Z"}}},"map":{"data":null}},"statsFactionWin":{},"statsFactionLose":{},"wins":0,"loses":0}]
         }
     },
-//     async asyncData({ $strapi, $axios }) {
-//         let maps = await $strapi.find('maps', { populate: '*'})
-
-//         console.log(maps, "MAPS")
-//         const query = qs.stringify({
-//             fields: '*',
-//             populate: {
-//                 populate: '*',
-//                 replays: {
-//                     populate: '*',
-//                     faction_win: {
-//                         populate: '*'
-//                     }
-//                 },
-//             },
-//             pagination: {
-//                 page: 1,
-//                 pageSize: 150,
-//             },
-//         }, {
-//         encodeValuesOnly: true,
-//         });
-
-//         const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
-//         let games = data
-
-//         console.log("DEIDJEIDJIEJD JE PASSE ICI ALLOO")
-//         return { maps, games }
-//     },
-//     computed:{
-//         sortedMaps() {
-//             if(this.maps){
-//                 console.log("DEBUT")
-//                 let newMaps = this.maps.data.map(f => {
-//                     let newObject = {
-//                         statsFactionWin: {},
-//                         statsFactionLose: {},
-//                         wins: 0,
-//                         loses: 0
-//                     }
-
-//                     console.log("deidjiedje")
-
-//                     this.games.map(g => {
-//                         console.log(g, "dehudheud")
-//                         if(g.attributes.replays && g.attributes.replays.length > 0){
-//                             g.attributes.replays.map(r => {
-//                                 console.log(r.map, f, "fff")
-//                                 if((r.map.data && r.map.data.id) === f.id) {
-//                                     console.log(r, "r")
-//                                     let faction = r.faction_win.data.attributes.name;
-//                                     typeof newObject.statsFactionWin[faction] === 'undefined' ? 
-//                                     newObject.statsFactionWin[faction] = 1 : 
-//                                     newObject.statsFactionWin[faction]++;
-//                                     newObject.wins++;
-
-//                                     let faction2 = r.faction_lose.data.attributes.name;
-//                                     typeof newObject.statsFactionLose[faction2] === 'undefined' ? 
-//                                     newObject.statsFactionLose[faction2] = 1 : 
-//                                     newObject.statsFactionLose[faction2]++;
-//                                     newObject.loses++;
-//                                 }
-//                             })
-//                         }
-//                     })
-
-//                     return Object.assign(f, newObject)
-//                 })
-
-
-
-//                 // let newMaps = this.maps.data.map(f => {
-//                 //     let newObject = {
-//                 //         statsFactionWin: {},
-//                 //         statsFactionLose: {}
-//                 //     }
-
-
-//                 //     if(f.attributes.games.data.length > 0){
-//                 //         f.attributes.games.data.map(m => {
-//                 //             typeof newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name] === 'undefined' ? 
-//                 //             newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name] = 1 : 
-//                 //             newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name]++;
-
-
-//                 //             typeof newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name] === 'undefined' ? 
-//                 //             newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name] = 1 : 
-//                 //             newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name]++;
-//                 //         })
-//                 //     }
-
-//                 //     return Object.assign(f, newObject)
-//                 // })
-//                 console.log(newMaps)
-//                 return newMaps;
-//             }
-//         },
-//     },
 }
 </script>
 <style>

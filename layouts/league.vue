@@ -9,7 +9,7 @@
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/league/players')">{{ $t('league.players') }}</nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/league/factions')">{{ $t('league.factions') }}</nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/league/maps')">{{ $t('league.maps') }}</nuxt-link>
-          <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/league/regles')">{{ $t('league.rules') }}</nuxt-link>
+          <!-- <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/league/regles')">{{ $t('league.rules') }}</nuxt-link> -->
           <a rel="noopener noreferrer" style="font-family: 'Albertus'" class="p-4 text-gray-600 hover:text-white hover:bg-gray-900" target="_blank" href="http://bit.ly/LaTerreduMilieu">
             <svg class="h-10 w-10 animate-pulse" width="71" height="55" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">

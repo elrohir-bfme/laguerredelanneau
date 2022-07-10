@@ -388,7 +388,8 @@ robots: {
             bo: "BO",
             elo: "Elo",
             noMatch: "No Match",
-            informationsPlayerTitle: "Information about the factions played"
+            informationsPlayerTitle: "Information about the factions played",
+            sort: "Sort"
           }
         },
         fr: {
@@ -548,7 +549,8 @@ robots: {
             bo: "BO",
             elo: "Elo",
             noMatch: "Aucun Match",
-            informationsPlayerTitle: "Informations sur les factions jouées"
+            informationsPlayerTitle: "Informations sur les factions jouées",
+            sort: "Trier"
           }
         }
       }

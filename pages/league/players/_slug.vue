@@ -54,9 +54,15 @@
   </div>
 
 
-  <div v-if="newPlayer" class="container px-5 py-24 mx-auto">
+
+
+
+  <div v-if="replaysGame" class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center mb-5">
+      <button @click="sortGames()" class="flex-shrink-0 text-white bg-orange-500 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded text-lg mt-10 sm:mt-0">{{ $t('league.sort') }}</button>
+    </div>
     <div class="-my-8">
-      <div v-for="(replays, index) in newPlayer.replays" v-bind:key="index" class="py-8 flex flex-wrap md:flex-nowrap bg-gray-900 shadow-lg rounded-sm border border-orange-600">
+      <div v-for="(replays, index) in replaysGame" v-bind:key="index" class="py-8 flex flex-wrap md:flex-nowrap bg-gray-900 shadow-lg rounded-sm border border-orange-600">
         <div v-if="replays" class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col ml-2">
           <span class="font-semibold title-font text-white underline uppercase">{{ $t('league.match') }} {{index +1}}</span>
           <span class="mt-1 text-gray-100 text-sm">
@@ -117,7 +123,9 @@ export default {
     data() {
         return {
             loading: false,
+            sortType: true,
             player: [],
+            replaysGame: [],
             newPlayer: null,
             info: false,
             factionList: [
@@ -130,6 +138,34 @@ export default {
                 {name: "Angmar", color: "purple"}
             ]
         }
+    },
+    methods: {  
+        sortGames() {
+          console.log("sort")
+
+          // let test = this.games.sort(
+          //     (objA, objB) => objA.attributes.date - objB.attributes.date
+          // );
+
+          console.log(this.sortType, "djeidjei")
+
+          let sortyu = this.sortType;
+
+          let test = this.replaysGame.sort(function(a,b){
+              if(sortyu){
+                  return new Date(b.date) - new Date(a.date);
+              } else {
+                  return new Date(a.date) - new Date(b.date);
+              }
+          // Turn your strings into dates, and then subtract them
+          // to get a value that is either negative, positive, or zero.
+          });
+
+          console.log(test, "hdede")
+          this.sortType = !sortyu
+          this.replaysGame = test
+
+      },
     },
     async asyncData({ $strapi, $axios, params,i18n }) {
         let player = await $strapi.findOne('players', params.slug, { populate: '*'})
@@ -410,8 +446,10 @@ const chartOptions2 = {
     data: victoires2
   }]
 }
+        
+        let replaysGame = newPlayer.replays
         loading = true;
-      return { slug, player, games, newPlayer, loading, chartOptions, chartOptions2 }
+      return { slug, player, games, newPlayer, loading, chartOptions, chartOptions2, replaysGame }
     },
 }
 </script>

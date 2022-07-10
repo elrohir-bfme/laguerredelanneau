@@ -177,13 +177,13 @@ export default {
 
 
 
-                newPlayer.replays.push(g.attributes)
                 // newPlayer.lose += 1;
                 // newPlayer.wins += 1;
 
                 for (const m of g.attributes.replays){
                   console.log(m, "????")
                   if(p == m.player_lose.data.attributes.name || p == m.player_win.data.attributes.name) {
+                    newPlayer.replays.push(g.attributes)
                     console.log(m, "m")
 
                     let factionWin = m.faction_win.data.attributes.name;

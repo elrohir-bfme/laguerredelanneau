@@ -209,7 +209,7 @@ export default {
             },
             pagination: {
                 page: 1,
-                pageSize: 50,
+                pageSize: 500,
             },
         }, {
         encodeValuesOnly: true,

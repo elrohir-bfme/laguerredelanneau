@@ -145,13 +145,15 @@ export default {
                     populate: '*'
                 }
             },
-            pagination: {
-                page: 1,
-                pageSize: 50,
-            },
-        }, {
-        encodeValuesOnly: true,
-        });
+      pagination: {
+        page: 1,
+        pageSize: 500,
+      },
+    }, {
+      encodeValuesOnly: true, // prettify URL
+    });
+
+        
 
         const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
         let games = data
@@ -170,14 +172,18 @@ export default {
         newPlayer.statsFactionLose2 = {};
         newPlayer.factions = [];
 
-        for (const g of games) {
-            if(p == g.attributes.elo[0].player_lose.name || p == g.attributes.elo[0].player_win.name) {
+        for (const [index, g] of games.entries()) {
+          console.log(g, "djeidjeij")
+
+
 
                 newPlayer.replays.push(g.attributes)
                 // newPlayer.lose += 1;
                 // newPlayer.wins += 1;
 
                 for (const m of g.attributes.replays){
+                  console.log(m, "????")
+                  if(p == m.player_lose.data.attributes.name || p == m.player_win.data.attributes.name) {
                     console.log(m, "m")
 
                     let factionWin = m.faction_win.data.attributes.name;
@@ -204,13 +210,10 @@ export default {
                         newPlayer.lose++;
                     }
                     
+                  }
                 }
                 
                 console.log(g.attributes)
-
-               
-
-            }
         }
 
         

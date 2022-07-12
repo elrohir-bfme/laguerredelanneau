@@ -210,7 +210,7 @@ export default {
         }
     },
     async asyncData({ $strapi, $axios }) {
-        let players = await $strapi.find('players', { populate: '*'})
+        // let players = await $strapi.find('players', { populate: '*'})
         const query = qs.stringify({
             fields: '*',
             sort: ['elo'],
@@ -233,6 +233,21 @@ export default {
 
         const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
         let games = data
+
+        const queryPlayer = qs.stringify({
+            fields: '*',
+            populate: '*',
+            pagination: {
+                page: 1,
+                pageSize: 5000,
+            },
+        }, {
+        encodeValuesOnly: true,
+        });
+
+        const dataPlayer = await $axios.$get(`https://api.laterredumilieu.fr/api/players?${queryPlayer}`); 
+        
+        let players = dataPlayer
 
         return { players, games }
     },

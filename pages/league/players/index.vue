@@ -225,7 +225,7 @@ export default {
             },
             pagination: {
                 page: 1,
-                pageSize: 5000,
+                pageSize: 5000
             },
         }, {
         encodeValuesOnly: true,
@@ -302,24 +302,20 @@ export default {
 
                                 // console.log(r.faction_win, f)
 
-                                if(r.player_win.data && r.player_win.data.attributes && r.player_win.data.attributes.name && r.player_win.data.attributes.name === f.attributes.name){
-                                    if(f.attributes && r.player_win.data.attributes.name === f.attributes.name && r.faction_win && r.faction_win.data && r.faction_win.data.attributes && r.faction_win.data.attributes.name){
-                                        let faction = r.faction_win.data.attributes.name;
-                                        typeof newObject.statsFactionWin[faction] === 'undefined' ? 
-                                        newObject.statsFactionWin[faction] = 1 : 
-                                        newObject.statsFactionWin[faction]++;
-                                        newObject.wins++;
-                                    }
+                                if(r.player_win?.data?.attributes?.name === f.attributes.name){
+                                    let faction = r.faction_win.data.attributes.name;
+                                    typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                                    newObject.statsFactionWin[faction] = 1 : 
+                                    newObject.statsFactionWin[faction]++;
+                                    newObject.wins++;
                                 }
 
-                                if(r.player_lose.data && r.player_lose.data.attributes && r.player_lose.data.attributes.name){
-                                    if(f.attributes && r.player_lose.data.attributes.name === f.attributes.name && r.faction_lose && r.faction_lose.data && r.faction_lose.data.attributes && r.faction_lose.data.attributes.name){
-                                        let faction = r.faction_lose.data.attributes.name;
-                                        typeof newObject.statsFactionLose[faction] === 'undefined' ? 
-                                        newObject.statsFactionLose[faction] = 1 : 
-                                        newObject.statsFactionLose[faction]++;
-                                        newObject.loses++;
-                                    }
+                                if(r.player_lose?.data?.attributes?.name === f.attributes.name){
+                                    let faction = r.faction_lose.data.attributes.name;
+                                    typeof newObject.statsFactionLose[faction] === 'undefined' ? 
+                                    newObject.statsFactionLose[faction] = 1 : 
+                                    newObject.statsFactionLose[faction]++;
+                                    newObject.loses++;
                                 }
                             })
                         }

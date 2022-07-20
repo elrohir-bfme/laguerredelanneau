@@ -220,7 +220,7 @@ export default {
 
                 for (const m of g.attributes.replays){
                   console.log(m, "????")
-                  if(p == m.player_lose.data.attributes.name || p == m.player_win.data.attributes.name) {
+                  if(p == m.player_lose.data?.attributes?.name || p == m.player_win.data?.attributes?.name) {
                     console.log(m, "m")
 
                     test = true

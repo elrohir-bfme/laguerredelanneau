@@ -218,17 +218,17 @@ export default {
                 
                 let test = false
 
-                for (const m of g.attributes.replays){
+                for (const m of g.attributes?.replays){
                   console.log(m, "????")
-                  if(p == m.player_lose.data?.attributes?.name || p == m.player_win.data?.attributes?.name) {
+                  if(p == m.player_lose?.data?.attributes?.name || p == m.player_win?.data?.attributes?.name) {
                     console.log(m, "m")
 
                     test = true
 
-                    let factionWin = m.faction_win.data.attributes.name;
-                    let factionLose = m.faction_lose.data.attributes.name;
+                    let factionWin = m.faction_win?.data?.attributes?.name;
+                    let factionLose = m.faction_lose?.data?.attributes?.name;
 
-                    if(m.player_win.data.attributes.name == p) {
+                    if(m.player_win.data?.attributes?.name == p) {
                         typeof newPlayer.statsFactionWin[factionWin] === 'undefined' ? 
                         newPlayer.statsFactionWin[factionWin] = 1 : 
                         newPlayer.statsFactionWin[factionWin]++;

@@ -1,4 +1,9 @@
 {
+    "time": {
+      "end": "2022-02-14 00:00:00",
+      "tour": 9,
+      "start": "2022-02-09 13:56:00"
+    },
     "Bree": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127013/La%20Guerre%20de%20l%27Eriador/Bree_woawi7.jpg",
       "map": 4,
@@ -11,7 +16,7 @@
         1,
         2
       ],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/14U_9s9YvQ30sU0-X4PUz55hzTlJEpKkg?usp=sharing",
       "north": [
@@ -24,16 +29,7 @@
       ],
       "region": "arthedain",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1644061769/La%20Guerre%20de%20l%27Eriador/bree_minimap_gx95hy.png",
-      "players": [
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "LurtZ-GloR",
-          "faction": 7,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Galgals",
         "Champs_Verts",
@@ -41,11 +37,6 @@
         "Amon_Sul"
       ],
       "description": "Le village de Brie se situait à l'intersection du Chemin Vert et de la Grande Route de l’Est, au centre de l'Eriador."
-    },
-    "time": {
-      "end": "2022-02-14 00:00:00",
-      "tour": 9,
-      "start": "2022-02-09 13:56:00"
     },
     "Angle": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639131229/La%20Guerre%20de%20l%27Eriador/angle_gdf237.jpg",
@@ -61,7 +52,7 @@
         2,
         3
       ],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1bkes8-pSTR682vZgpHKqYYWac6LcWRul?usp=sharing",
       "north": [],
@@ -89,7 +80,7 @@
         1,
         4
       ],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1-KC65KNwGBq1BfK4XcRx7lA0xECp7OBx?usp=sharing",
       "north": [
@@ -105,7 +96,8 @@
       "players": [],
       "adjacents": [
         "Zagh_Kala",
-        "Eregion"
+        "Eregion",
+        "Azanulbizar"
       ],
       "description": "Le nom de Moria fut donné à la cité naine de Khazad-dûm par les Elfes."
     },
@@ -119,7 +111,7 @@
       "west": [
         1
       ],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1yhdM4Mp6z8xskBp3DENT2EL6j-bRTcin?usp=sharing",
       "north": [
@@ -152,7 +144,7 @@
       "west": [
         2
       ],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1DFVhUOTmBaiNaEhbIHv4iH-F9-zwMwf6?usp=sharing",
       "north": [
@@ -183,7 +175,7 @@
       "east": [],
       "name": "Cairill",
       "west": [],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/13_lwSRh_dS7aS4H39Er05WvIi08sYFC_?usp=sharing",
       "north": [
@@ -199,7 +191,8 @@
         "Enedwaith",
         "Tharbad",
         "Isendale",
-        "Pays_Dun"
+        "Pays_Dun",
+        "Vinyalonde"
       ],
       "description": "Région très boisé au Second Age, elle y vit de grandes destructions causées par les numénoréens qui s'y installèrent pour le bois puis par Sauron lors de sa guerre contre les elfes d'Eregion. Elle est depuis lors devenue une région herbeuse longeant le Gwathló marquant la frontière avec l'Eriador"
     },
@@ -213,7 +206,7 @@
       "west": [
         2
       ],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1LQKuCw1xL6aM9ca4BOGGQ9O5Tpeuf85O?usp=sharing",
       "north": [
@@ -224,16 +217,7 @@
       ],
       "region": "lindon",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/egenyar_minimap_hf7vy5.png",
-      "players": [
-        {
-          "img": "https://i.goopics.net/l4a55s.jpg",
-          "win": 2,
-          "lose": 0,
-          "name": "Concombre_Masqué",
-          "faction": 7,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Montagnes_Bleues",
         "Harlindon",
@@ -254,7 +238,7 @@
         1,
         4
       ],
-      "color": "#ff3636",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1CAZbeS3aKb_Kx4KdnMytXAULQf0WYsQn?usp=sharing",
       "north": [
@@ -281,7 +265,7 @@
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127014/La%20Guerre%20de%20l%27Eriador/Fornost_l3l13p.jpg",
       "map": 6,
       "name": "Fornost",
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1_xXMsTZFigrj1i2ujm1yaiUJHCnps5KS?usp=sharing",
       "region": "arthedain",
@@ -336,7 +320,7 @@
         1,
         4
       ],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1kDVWxHY60x-w0wWOB_6kKBnckHU2DvsK?usp=sharing",
       "north": [
@@ -371,7 +355,7 @@
         2,
         3
       ],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/147ambmxlymKIC-SJuRHjmhkUoo6G6oav?usp=sharing",
       "north": [
@@ -439,7 +423,7 @@
         1,
         2
       ],
-      "color": "#ff3636",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/15nHqPccSJtCJjkW36UJGAiTXy1rI_4ni?usp=sharing",
       "north": [
@@ -481,7 +465,7 @@
       "east": [],
       "name": "Carn Dûm",
       "west": [],
-      "color": "#c500ff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1NEA70z5NKijqrXxTYtNNhixaagh2ye44?usp=sharing",
       "north": [],
@@ -510,7 +494,7 @@
         1,
         4
       ],
-      "color": "#c500ff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1g7udy99Tx09SfxbM1BaWIPbMOSNnBVYF?usp=sharing",
       "north": [
@@ -546,7 +530,7 @@
         5,
         6
       ],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1ZV3IjwP0bjz_aQzokTIy8AyaGlzT41gN?usp=sharing",
       "north": [
@@ -561,32 +545,7 @@
       ],
       "region": "cardolan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/cotaux_sud_minimap_txup9y.png",
-      "players": [
-        {
-          "img": "https://i.goopics.net/y6ma91.jpg",
-          "win": 0,
-          "lose": 1,
-          "name": "Sharku",
-          "faction": 7,
-          "handicap": 0
-        },
-        {
-          "img": "https://i.goopics.net/7gxl70.jpg",
-          "win": 0,
-          "lose": 1,
-          "name": "Thorin",
-          "faction": 7,
-          "handicap": 0
-        },
-        {
-          "img": "https://i.goopics.net/1r0usy.png",
-          "win": 0,
-          "lose": 1,
-          "name": "Aran_ancalima",
-          "faction": 6,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Fontgrise",
         "Metraith",
@@ -609,7 +568,7 @@
         1,
         2
       ],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1_2qK9omDWSb40--mdYpwSyxFsmukJMaD?usp=sharing",
       "north": [
@@ -636,27 +595,19 @@
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126750/La%20Guerre%20de%20l%27Eriador/Isengard_ewpimj.jpg",
       "map": 6,
       "name": "Isengard",
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1U_lfW661YE0zzKt_HplwiytFURLiezYh?usp=sharing",
       "region": "rohan",
       "citadel": "true",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/isengard_minimap_bkk6vj.png",
-      "players": [
-        {
-          "img": null,
-          "win": 0,
-          "lose": 1,
-          "name": "Tulkas",
-          "faction": 7,
-          "handicap": 3
-        }
-      ],
+      "players": [],
       "fortress": true,
       "adjacents": [
         "Isendale",
         "Pays_Dun",
-        "Breche_Rohan"
+        "Gue_Isen",
+        "Pierreval"
       ],
       "description": "Isengard, appelé Angrenost en sindarin, était constituée du Cercle d’Isengard, de puissantes fortifications qui ne possédaient qu'une porte, et d'Orthanc, la haute tour des Númenóréens, qui abritait un palantír."
     },
@@ -689,32 +640,7 @@
       ],
       "region": "cardolan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/metraith_minimap_rorqb5.png",
-      "players": [
-        {
-          "img": "https://i.goopics.net/7vtbpe.png",
-          "win": 2,
-          "lose": 1,
-          "name": "Gimli",
-          "faction": 7,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 1,
-          "lose": 0,
-          "name": "Raugorn",
-          "faction": 7,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 2,
-          "lose": 0,
-          "name": "Kyagara",
-          "faction": 7,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Dol_Tinereb",
         "Haut_Sud",
@@ -737,7 +663,7 @@
         3,
         4
       ],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1bH0KlqouyHu6DD1nBgrejJPUptmHKa2p?usp=sharing",
       "north": [
@@ -760,18 +686,7 @@
         "Isengard"
       ],
       "foundation": true,
-      "structures": [
-        {
-          "name": "Ferme",
-          "build": true,
-          "level": 2
-        },
-        {
-          "name": "Ferme",
-          "build": true,
-          "level": 2
-        }
-      ],
+      "structures": [],
       "description": "La Dunlande était le pays des Dunlandais, un peuple d'Hommes venu des vallées des Montagnes Blanches."
     },
     "Sirannon": {
@@ -784,7 +699,7 @@
       "west": [
         1
       ],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/16LqVSfg4X_XhKkts3KGhH7jTU_R_4W97?usp=sharing",
       "north": [
@@ -830,32 +745,6 @@
         "capital": "Hall de Thorin",
         "tainted_count": 0
       },
-      "arnor": {
-        "id": 1,
-        "win": 5,
-        "chef": "Tar-Elendil",
-        "name": "arnor",
-        "color": "#ff85ee",
-        "loose": 12,
-        "dead": true,
-        "money": 2050,
-        "total": 6900,
-        "capital": "Annuminas",
-        "tainted_count": 0
-      },
-      "rohan": {
-        "id": 3,
-        "win": 3,
-        "chef": "Aupif",
-        "name": "rohan",
-        "color": "#0bff00",
-        "loose": 11,
-        "dead": true,
-        "money": 1750,
-        "total": 5450,
-        "capital": "Dol Tinereb",
-        "tainted_count": 0
-      },
       "angmar": {
         "id": 9,
         "win": 9,
@@ -868,7 +757,7 @@
         "capital": "Carn Dum",
         "tainted_count": 1
       },
-      "gondor": {
+      "men": {
         "id": 2,
         "win": 1,
         "chef": "Chabacks",
@@ -922,37 +811,12 @@
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127016/La%20Guerre%20de%20l%27Eriador/Annuminas_pqg5ou.jpg",
       "map": 6,
       "name": "Annuminas",
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1tzqR2SeYC1GE0WfDK93VyzOLUNk1F3az?usp=sharing",
       "region": "arthedain",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1642668076/La%20Guerre%20de%20l%27Eriador/annuminas_minimap_pplhsq.png",
-      "players": [
-        {
-          "img": null,
-          "win": 4,
-          "lose": 0,
-          "name": "R8sseauu",
-          "faction": 8,
-          "handicap": 0
-        },
-        {
-          "img": "https://i.goopics.net/jmk7lw.jpg",
-          "win": 5,
-          "lose": 0,
-          "name": "ErwannWerty",
-          "faction": 8,
-          "handicap": 0
-        },
-        {
-          "img": "https://i.goopics.net/12dsoh.jpg",
-          "win": 6,
-          "lose": 0,
-          "name": "Exorcisst",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "fortress": true,
       "adjacents": [
         "Champs_Verts",
@@ -973,7 +837,7 @@
         1,
         4
       ],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1dtD9XYCx5htFD9AWdus5J1p2Ex9QnvwW?usp=sharing",
       "north": [
@@ -1002,7 +866,7 @@
       "east": [],
       "name": "Enedwaith",
       "west": [],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1eEmzc0Gj45McG80qZSoQN-oXsjSFAHsf?usp=sharing",
       "north": [
@@ -1021,7 +885,9 @@
       "adjacents": [
         "Breche_Rohan",
         "Isendale",
-        "Cairill"
+        "Cairill",
+        "Vinyalonde",
+        "Druwaith_Iaur"
       ],
       "description": "L'Enedwaith était situé entre le Gwathló, le Glanduin, les Montagnes de Brume et l'Isen."
     },
@@ -1035,7 +901,7 @@
       "west": [
         1
       ],
-      "color": "#c500ff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1jvvZzN_sqfK-BrvYH_pM1nxT2SvJ6jmH?usp=sharing",
       "north": [],
@@ -1051,39 +917,26 @@
         "Triste_Plaine",
         "Arthedain"
       ],
-      "structures": [
-        {
-          "name": "Ferme",
-          "level": 3
-        }
-      ],
+      "structures": [],
       "description": "Formées après la chute des Lampes des Valar, les Montagnes Bleues étaient une grande chaîne de montagnes qui séparait l'Eriador du Beleriand, puis, après la submersion de celui-ci, le Lindon de l'Eriador. Les cités naines de Nogrod et Belegost y étaient sises, plus précisément sous le Mont Dolmed, mais les Montagnes entières avaient dû être explorées par les Nains : en effet, le roi d'Arthedain Arvedui se réfugia, en 1974 3A, dans des galeries naines à l'extrêmité nord de la chaîne, tandis que les halles de Thorin, où celui-ci vécut jusqu'à l'Expédition d’Erebor, se trouvaient bien plus au sud."
     },
     "Fondcombe": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639131228/La%20Guerre%20de%20l%27Eriador/imladris_ir0fo7.jpg",
       "map": 6,
       "name": "Fondcombe",
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1-InsFIwSQQVfzvIyIIX14CiaMT6mO_-i?usp=sharing",
       "region": "eregion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/imladris_minimap_qi4jkt.png",
       "nbmatch": 1,
-      "players": [
-        {
-          "img": "https://i.goopics.net/eme7jw.png",
-          "win": 0,
-          "lose": 1,
-          "name": "Leitdorf",
-          "faction": 7,
-          "handicap": 3
-        }
-      ],
+      "players": [],
       "fortress": true,
       "adjacents": [
         "Gobelinville",
         "Gue_Bruinen",
-        "Glad_Ereg"
+        "Glad_Ereg",
+        "Trouee_Trolls"
       ],
       "description": "Fondcombe, aussi connue sous le nom d'Imladris, est une vallée des Monts Brumeux fondée par Elrond en l'an 1697 du Deuxième Âge qui en fut sa demeure, comme refuge et place forte face à Sauron en Eriador à la suite de la chute de l'Eregion.Elle est la dernière maison simple a l'est de la mer ."
     },
@@ -1097,7 +950,7 @@
       "west": [
         2
       ],
-      "color": "#ff3636",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1Vq6TVycX8hkJd6QXP5czTLx2s77JShTp?usp=sharing",
       "north": [
@@ -1125,7 +978,7 @@
       "east": [],
       "name": "Forlindon",
       "west": [],
-      "color": "#c500ff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1pf-2Se7IdMtMbe4mPWWrRSbyuVZfA-ie?usp=sharing",
       "north": [
@@ -1138,16 +991,7 @@
       ],
       "region": "lindon",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/forlindon_minimap_kyxevp.png",
-      "players": [
-        {
-          "img": "https://i.goopics.net/xr6o82.jpg",
-          "win": 1,
-          "lose": 1,
-          "name": "oxibou",
-          "faction": 9,
-          "handicap": 2
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Hall_Thorin",
         "Lindon",
@@ -1161,7 +1005,7 @@
       "east": [],
       "name": "Girithlin",
       "west": [],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1WezSiZYBy00yJxVcMwAC_GFnIOAxXkuP?usp=sharing",
       "north": [
@@ -1175,26 +1019,13 @@
       "region": "cardolan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1646820269/La%20Guerre%20de%20l%27Eriador/minimap_girithlin_ynhrlj.png",
       "outpost": true,
-      "players": [
-        {
-          "img": null,
-          "win": 1,
-          "lose": 0,
-          "name": "Illünt",
-          "faction": 7,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Dol_Tinereb",
         "Metraith",
         "Minhiriath"
       ],
-      "structures": [
-        {
-          "name": "Comptoir commercial"
-        }
-      ],
+      "structures": [],
       "description": "Autrefois une petite citadelle du royaume de Cardolan dans le Minhiriath, elle fut une résidence royale, jouant le rôle de capitale à certaines époques. C'est une des rares petites villes encore debout lors du Troisième Age."
     },
     "Glad_Ereg": {
@@ -1211,7 +1042,7 @@
         2,
         3
       ],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/14LJP32K2ns4f5Lg0i4bNcuu8ODQDC6jU?usp=sharing",
       "north": [],
@@ -1239,7 +1070,7 @@
         1,
         4
       ],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1NSFW7IwMVasvLT38w3brKL69H-3m2bhC?usp=sharing",
       "north": [
@@ -1271,7 +1102,7 @@
       "west": [
         1
       ],
-      "color": "#c500ff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1oi3UWtbzPddGazFnoxWx8dbZeBubHe4Z?usp=sharing",
       "north": [
@@ -1311,7 +1142,7 @@
         1,
         4
       ],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1-q7uc4LaPm_dKSSpz5-5musQ8VCOM8wd?usp=sharing",
       "north": [],
@@ -1335,7 +1166,7 @@
       "east": [],
       "name": "Pays de Bouc",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1368_rUNb5Tm4kbcFxBJTtbaEkzh7phKA?usp=sharing",
       "north": [
@@ -1350,16 +1181,7 @@
       ],
       "region": "arthedain",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304377/La%20Guerre%20de%20l%27Eriador/pays_bouc_minimap_cwqksy.png",
-      "players": [
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Alpha",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Hobbitbourg",
         "Siragalë",
@@ -1368,11 +1190,6 @@
         "Vieille_Foret"
       ],
       "description": "Sept cent quarante ans après la fondation du Comté, Gorhendad Vieilbouc traversa le Brandivin, fonda Castel Brandy et s'y installa pour vivre avec sa famille, qui prit le nom de Brandibouc."
-    },
-    "Rhovanion": {
-      "img": "https://i.pinimg.com/originals/17/a0/2d/17a02d83d240e9dd5e8161a6d6acfe8b.jpg",
-      "name": "Rhovanion",
-      "description": "Le Rhovanion était une région de la Terre du Milieu, à l'est des Montagnes de Brume et au nord du Mordor. Peu de reliefs marquaient cette région : on peut citer l'Ered Mithrin, les Collines de Fer et la Montagne Solitaire au nord. L'élément le plus marquant du Rhovanion était en fait la vaste Grand’Peur qui en couvrait le centre."
     },
     "Siragalë": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127011/La%20Guerre%20de%20l%27Eriador/Siragale_b1xeuz.jpg",
@@ -1416,7 +1233,7 @@
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127009/La%20Guerre%20de%20l%27Eriador/Zagh_Kala_ko9pta.jpg",
       "map": 6,
       "name": "Zagh Kala",
-      "color": "#ff3636",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1KUQdXw0lFv4E4A2Z1mGi4QQwQxv0VNlb?usp=sharing",
       "region": "brumeux",
@@ -1427,7 +1244,9 @@
       "adjacents": [
         "Eregion",
         "Glad_Ereg",
-        "Moria"
+        "Moria",
+        "Champs_Iris",
+        "Azanulbizar"
       ],
       "description": "Situé dans les Monts Brumeux sur l'un des passages accessibles aux voyageurs, il devait être un avant-poste nain durant l'ère de Khazad-dûm avant de tomber progressivement en ruine lors de sa chute et de l'abandon des Monts Brumeux par les nains lors du Troisième Age."
     },
@@ -1443,7 +1262,7 @@
         1,
         4
       ],
-      "color": "#c500ff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1QQ94__9psbRHwj3hZFDO3_RQIGHBsi20?usp=sharing",
       "north": [
@@ -1476,7 +1295,7 @@
         1,
         4
       ],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1aJAzHsethlZnqjVmb4C0fF0Ohg6_btOP?usp=sharing",
       "north": [
@@ -1495,11 +1314,7 @@
         "Girithlin",
         "Gwathlo"
       ],
-      "structures": [
-        {
-          "name": "Comptoir commercial"
-        }
-      ],
+      "structures": [],
       "description": "Le Minhiriath était le nom que donnèrent les Númenóréens à la région située entre le Baranduin et la Gwathló."
     },
     "Mont_Gräm": {
@@ -1512,7 +1327,7 @@
       "west": [
         1
       ],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1xOO_0U83b3v013npGZbNc_LTTZSMUd_I?usp=sharing",
       "north": [
@@ -1544,23 +1359,14 @@
         5,
         6
       ],
-      "color": "#ff3636",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1v4txFO6p_2qFrReNtsszK_BQ4sHdNMrk?usp=sharing",
       "north": [],
       "south": [],
       "region": "rhudaur",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/nain_enidth_minimap_fq76io.png",
-      "players": [
-        {
-          "img": "https://i.goopics.net/ywrb4g.jpg",
-          "win": 0,
-          "lose": 1,
-          "name": "Buulia",
-          "faction": 9,
-          "handicap": 1
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Landes_Sauvages",
         "Amon_Sul",
@@ -1581,7 +1387,7 @@
         1,
         4
       ],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1RErswjrO55O7-A8Gw52W_PccLw4rmjjW?usp=sharing",
       "north": [
@@ -1609,47 +1415,13 @@
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126754/La%20Guerre%20de%20l%27Eriador/Dol_Tinereb_f9e3ki.jpg",
       "map": 4,
       "name": "Dol Tinereb",
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1nQusWYj4zNgJfZXuJ3KFLNM2R7aYkbO1?usp=sharing",
       "region": "cardolan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/dol_tinered_minimap_wmkjwm.png",
       "outpost": true,
-      "players": [
-        {
-          "img": null,
-          "win": 3,
-          "lose": 1,
-          "name": "SMZed",
-          "faction": 7,
-          "handicap": 0
-        },
-        {
-          "img": "https://i.goopics.net/vaqjvc.jpg",
-          "win": 3,
-          "lose": 0,
-          "name": "Biscuit|_KD",
-          "faction": 6,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 1,
-          "lose": 0,
-          "name": "Gammaction",
-          "faction": 7,
-          "handicap": 0
-        },
-        {
-          "img": "https://i.goopics.net/o8xpnl.jpg",
-          "win": 2,
-          "lose": 0,
-          "name": "Biscuit|_LB",
-          "faction": 6,
-          "handicap": 0,
-          "extrahandicap": 10
-        }
-      ],
+      "players": [],
       "fortress": true,
       "adjacents": [
         "Haut_Sud",
@@ -1666,7 +1438,7 @@
       "east": [],
       "name": "Gue Bruinen",
       "west": [],
-      "color": "#c500ff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1trzXLd0M3du-giZeDnQ_2efLcnJgNcs-?usp=sharing",
       "north": [
@@ -1691,7 +1463,7 @@
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126749/La%20Guerre%20de%20l%27Eriador/Hall_Thorin_smefwt.jpg",
       "map": 6,
       "name": "Hall de Thorin",
-      "color": "#c500ff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1j20SPgl5z3s6bWuxrEv-qBovP6d8BOI5?usp=sharing",
       "region": "lindon",
@@ -1709,30 +1481,13 @@
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Havres_Gris.jpg",
       "map": 6,
       "name": "Les Havres Gris",
-      "color": "#ff3636",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1BSjEQHETO2Ga9rxrCBX8MvA6gdbV0KkP?usp=sharing",
       "region": "lindon",
       "citadel": "true",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641562196/La%20Guerre%20de%20l%27Eriador/havres_gris_minimap_whcxqu.png",
-      "players": [
-        {
-          "img": "https://i.goopics.net/xbdfj9.jpg",
-          "win": 2,
-          "lose": 1,
-          "name": "Diablo",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 1,
-          "lose": 0,
-          "name": "Gopik",
-          "faction": 9,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "fortress": true,
       "adjacents": [
         "Collines_Tours",
@@ -1817,7 +1572,7 @@
         1,
         2
       ],
-      "color": "#ff3636",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1jjwIK6yE61CSICGJGQzXlhgA1MhB7kyz?usp=sharing",
       "north": [
@@ -1850,7 +1605,7 @@
         1,
         2
       ],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1bOgJRwyxLdMRGZfJWqIKviXRl7PsuILs?usp=sharing",
       "north": [],
@@ -1861,7 +1616,9 @@
       "adjacents": [
         "Enedwaith",
         "Isendale",
-        "Isengard"
+        "Gue_Isen",
+        "Gouffre_Helm",
+        "Druwaith_Iaur"
       ],
       "description": "Terre plate située entre 2 chaines de montagne : Les monts Brumeux et l’Isengard au Nord, Les Montagne Blanche au Sud. Boromir utilise la troué du Rohan pour se rendre à Foncombe. La communauté de l’anneau refuse de passer par là à cause de sa proximité avec l’Isengard, qui agit désormais pour le Mordor. Pour rentrer chez eux, les Hobbit passe par la troué du Rohan."
     },
@@ -1900,7 +1657,7 @@
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127010/La%20Guerre%20de%20l%27Eriador/Gobelinville_tcliy2.png",
       "map": 6,
       "name": "Gobelinville",
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/10QBeXcUtQnQzIYrORyjDP1Eoe1kSuvZG?usp=sharing",
       "region": "brumeux",
@@ -1911,7 +1668,8 @@
       "adjacents": [
         "Cameth_Brin",
         "Gue_Bruinen",
-        "Fondcombe"
+        "Fondcombe",
+        "Valee_Anduin"
       ],
       "description": "Appelé également Porte des Gobelins par les Elfes. Elle n'est pas à proprement parlé une ville, mais plutôt une des nombreuses petites forteresses dispersées dans les Mont Brumeux, d'où le Grand Gobelin dirige ses forces."
     },
@@ -1925,7 +1683,7 @@
       "west": [
         1
       ],
-      "color": "#c500ff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1OPjirwAQDdZCcZdJnt7kLjLA1IPclBi8?usp=sharing",
       "north": [
@@ -1959,7 +1717,7 @@
         1,
         4
       ],
-      "color": "#ffffff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/11pKs8TuVeIEc-7S0B-9wSEZ72VywKSYK?usp=sharing",
       "north": [
@@ -1987,7 +1745,7 @@
       "east": [],
       "name": "La Baie de Forochel",
       "west": [],
-      "color": "#c500ff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1N1s7ieP3Zy4PpG-P1JDqO1Yv53JWhfJN?usp=sharing",
       "north": [
@@ -2020,7 +1778,7 @@
       "west": [
         2
       ],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1M-dk19U28HUmJNYGF0HpG-RpdRd-KnDI?usp=sharing",
       "north": [
@@ -2060,7 +1818,7 @@
         2,
         3
       ],
-      "color": "#c500ff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/12altHlpRxKdH4CxZ7fNtfVm-OIM3G-KT?usp=sharing",
       "north": [],
@@ -2082,7 +1840,7 @@
       "east": [],
       "name": "Rivière de la Lune",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1h1jFTm-mVVlEPbimccB9L_LfmB02E9-G?usp=sharing",
       "north": [],
@@ -2119,7 +1877,7 @@
         1,
         4
       ],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1a6LnzELk4nRmQ8jDhebUBzjr71RTSQ2q?usp=sharing",
       "north": [
@@ -2149,7 +1907,7 @@
       "east": [],
       "name": "Trouée des Trolls",
       "west": [],
-      "color": "#ff3636",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1mJIXj8jeizGxK5d-aK2l66nCxbYLNiSF?usp=sharing",
       "north": [
@@ -2171,15 +1929,10 @@
         "Glad_Ereg",
         "Eregion",
         "Angle",
-        "Ost_in_Edhil"
+        "Ost_in_Edhil",
+        "Fondcombe"
       ],
-      "structures": [
-        {
-          "name": "Ferme",
-          "build": true,
-          "level": 2
-        }
-      ],
+      "structures": [],
       "description": "Non ! dit Grands-Pas. Les trolls ne construisent pas. Personne ne vit ici. Des Hommes y ont jadis demeuré ; mais il n'en reste plus aucun aujourd'hui. Ils étaient devenus mauvais, à ce que rapporte la légende, car ils étaient tombés dans l'ombre d'Angmar. Mais ils furent tous détruits dans la guerre qui amena la fin du Royaume du Nord."
     },
     "Vieille_Foret": {
@@ -2192,7 +1945,7 @@
       "west": [
         1
       ],
-      "color": "#ff3636",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1cXcB_ADgqwPBov-o7ROeM5uZJHuXz2-r?usp=sharing",
       "north": [
@@ -2203,16 +1956,7 @@
       ],
       "region": "arthedain",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/veille_foret_minimap_dnl2im.png",
-      "players": [
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Inconnu",
-          "faction": 6,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Siragalë",
         "Pays_Bouc",
@@ -2228,7 +1972,7 @@
       "east": [],
       "name": "Champs de Fornost",
       "west": [],
-      "color": "#c500ff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/100HA8NmbIhxrNWPRnwmYHn7PN5X0fJ1T?usp=sharing",
       "north": [
@@ -2241,40 +1985,7 @@
       ],
       "region": "arthedain",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/champs_fornost_minimap_g8tkrt.png",
-      "players": [
-        {
-          "img": null,
-          "win": 1,
-          "lose": 1,
-          "name": "mat",
-          "faction": 8,
-          "handicap": 2
-        },
-        {
-          "img": null,
-          "win": 1,
-          "lose": 1,
-          "name": "mat",
-          "faction": 8,
-          "handicap": 2
-        },
-        {
-          "img": "https://i.goopics.net/xw9x34.png",
-          "win": 0,
-          "lose": 0,
-          "name": "demonsdark",
-          "faction": 8,
-          "handicap": 0
-        },
-        {
-          "img": "https://i.goopics.net/47nqpb.jpg",
-          "win": 1,
-          "lose": 1,
-          "name": "Aragornanus",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Annuminas",
         "Bree",
@@ -2296,7 +2007,7 @@
         1,
         4
       ],
-      "color": "#ff3636",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1-KbtRhUwDpKRP1bti6YoQSlCGckoCQlB?usp=sharing",
       "north": [
@@ -2309,24 +2020,7 @@
       ],
       "region": "lindon",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/collines_tours_minimap_ja5pmy.png",
-      "players": [
-        {
-          "img": "https://i.goopics.net/qzwda2.jpg",
-          "win": 4,
-          "lose": 0,
-          "name": "Gréhelfe",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": "https://i.goopics.net/e5w4eq.jpg",
-          "win": 1,
-          "lose": 0,
-          "name": "Orgash",
-          "faction": 6,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Lindon",
         "Rivière_Lune",
@@ -2345,7 +2039,7 @@
       "east": [],
       "name": "Landes Sauvages",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1_kQyTOuv4ALm0_2rrUo4yBQDA1KS7y1F?usp=sharing",
       "north": [
@@ -2381,7 +2075,7 @@
         1,
         4
       ],
-      "color": "#c500ff",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1B2-_aylKPhqHF8W82R5i773dqIrNJlke?usp=sharing",
       "north": [
@@ -2394,65 +2088,7 @@
       ],
       "region": "arthedain",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1642694495/La%20Guerre%20de%20l%27Eriador/collines_minimap_iht9bi.png",
-      "players": [
-        {
-          "img": null,
-          "win": 0,
-          "lose": 1,
-          "name": "Nico_-",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 1,
-          "lose": 1,
-          "name": "lijert",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": "https://i.goopics.net/vum4f0.png",
-          "win": 2,
-          "lose": 0,
-          "name": "Utharlok",
-          "faction": 8,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 3,
-          "lose": 0,
-          "name": "Giax",
-          "faction": 6,
-          "handicap": 0,
-          "extrahandicap": 5
-        },
-        {
-          "img": "https://i.goopics.net/gn4d92.png",
-          "win": 2,
-          "lose": 0,
-          "name": "Thieuthieu",
-          "faction": 8,
-          "handicap": 0
-        },
-        {
-          "img": "https://i.goopics.net/drxdre.jpg",
-          "win": 3,
-          "lose": 0,
-          "name": "GconQ",
-          "faction": 6,
-          "handicap": 0
-        },
-        {
-          "img": "https://i.goopics.net/sq9ov4.png",
-          "win": 3,
-          "lose": 0,
-          "name": "Pippin",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Champs_Verts",
         "Hobbitbourg",
@@ -2470,7 +2106,7 @@
       "east": [],
       "name": "Les Montagnes Bleues",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2483,24 +2119,7 @@
       ],
       "region": "lindon",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Harlindon",
         "Havres_Gris",
@@ -2516,7 +2135,7 @@
       "east": [],
       "name": "Umbar",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2529,30 +2148,10 @@
       ],
       "region": "harad",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Harnedor",
+        "Mer_Umbar"
       ],
       "description": "Umbar était un petit royaume du nord de la région du Harad. Peuplé essentiellement par les Suderons et les Númenóréens Noirs, il était le plus proche royaume des Haradrim des frontières méridionales du Gondor lors de son apogée."
     },
@@ -2562,7 +2161,7 @@
       "east": [],
       "name": "Harondor",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2575,30 +2174,11 @@
       ],
       "region": "harad",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Harnedor",
+        "Sud_Ithilien",
+        "Pelargir"
       ],
       "description": "Le Harondor était une terre pratiquement déserte, intégrée au Gondor en 830 3A par le roi Tarannon Falastur. Mais depuis la chute d'Osgiliath la région  subit les convoitises des haradrims le territoire est donc en conflit permanent."
     },
@@ -2608,7 +2188,7 @@
       "east": [],
       "name": "Orocarni",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2621,30 +2201,10 @@
       ],
       "region": "harad",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Rhun5",
+        "Rhun7"
       ],
       "description": "L'Orocarni (aussi appelées les Montagnes rouges) étaient une chaîne de montagnes à l'extrême nord-est de la Terre du Milieu créé par les Valar après la destruction des Deux Lampes par Melkor."
     },
@@ -2654,7 +2214,7 @@
       "east": [],
       "name": "Mont du Fer",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2667,30 +2227,12 @@
       ],
       "region": "harad",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Rhun7",
+        "Carnen",
+        "Lande_Dessechee",
+        "Terre_Desolee"
       ],
       "description": "Ces montagnes se situent à l'Est du Rhovanion et au Nord de la mer de Rhûn. Elles sont ainsi nommées pour leur abondance en minerais de fer. La rivière Carnen prend sa source dans ces montagnes."
     },
@@ -2700,7 +2242,7 @@
       "east": [],
       "name": "Terre Déchu de l'Est",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2711,32 +2253,16 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Monts_Fer",
+        "Carnen",
+        "Valee_Celduin",
+        "Esgaroth",
+        "Erebor",
+        "Lande_Dessechee"
       ],
       "description": "Ces montagnes se situent à l'Est du Rhovanion et au Nord de la mer de Rhûn. Elles sont ainsi nommées pour leur abondance en minerais de fer. La rivière Carnen prend sa source dans ces montagnes."
     },
@@ -2746,7 +2272,7 @@
       "east": [],
       "name": "Carnen",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2757,32 +2283,15 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Monts_Fer",
+        "Rhun7",
+        "Rhun6",
+        "Dorwinion",
+        "Terre_Desolee"
       ],
       "description": "La Carnen était une rivière qui descendait des Collines de Fer et coulait sur environ 400 kilomètres avant de se jeter dans la Celduin."
     },
@@ -2792,7 +2301,7 @@
       "east": [],
       "name": "Les Lande Dessechee",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2803,32 +2312,15 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Monts_Fer",
+        "Terre_Desolee",
+        "Erebor",
+        "Nord_Foret_Noire",
+        "Montagnes_Grises"
       ],
       "description": "La Lande Desséchée était la bande de terre située entre les deux bras orientaux des Montagnes Grises."
     },
@@ -2836,9 +2328,9 @@
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Montagnes_Grises.jpg",
       "map": 2,
       "east": [],
-      "name": "Les Lande Dessechee",
+      "name": "Ered Mithrin",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2849,32 +2341,14 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Lande_Dessechee",
+        "Nord_Foret_Noire",
+        "rhovanion2",
+        "rhovanion5"
       ],
       "description": "Le nord de la plus grande forêt d'Arda est traversé par la grande route de l'est, cette dernière partant de l'Eriador pour se rendre a Erebor . Cette forêt serait hantée par des créatures sombres et étranges !"
     },
@@ -2882,9 +2356,9 @@
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Desert_Nord.jpg",
       "map": 2,
       "east": [],
-      "name": "Les Lande Dessechee",
+      "name": "Desert du Nord",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2897,24 +2371,7 @@
       ],
       "region": "harad",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Harlindon",
         "Havres_Gris",
@@ -2930,7 +2387,7 @@
       "east": [],
       "name": "Gundabad",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2941,32 +2398,12 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "rhovanion3",
+        "rhovanion4"
       ],
       "description": "Ce sommet septentrional réalisait la jonction entre les Montagnes d’Angmar à l'ouest, les Montagnes Grises à l'est et enfin les Montagnes de Brume au sud."
     },
@@ -2976,7 +2413,7 @@
       "east": [],
       "name": "Andrast",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2987,26 +2424,9 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "gondor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Harlindon",
         "Havres_Gris",

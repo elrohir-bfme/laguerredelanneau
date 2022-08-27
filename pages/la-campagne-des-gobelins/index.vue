@@ -23,8 +23,8 @@
 Deux équipes vont s’affronter durant plusieurs semaines (5 sem. min., 10 sem. max.) pour tenter de remporter un maximum de Points de Campagne. Pour y arriver, les cartes à jouer donneront un avantage certain à leurs possesseurs... pour peu qu'elles soient judicieusement jouées !</p>
         </div>
       </div>
-      <div class="flex flex-col sm:flex-row mt-10">
-        <div class="sm:w-2/3 sm:pr-8 sm:py-8 sm:border-r border-indigo-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-right">
+      <div class="flex flex-col xl:flex-row mt-10">
+        <div class="xl:w-2/3 sm:pr-8 sm:py-8 sm:border-r border-indigo-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-right">
           <p class="leading-relaxed text-xl mb-4 text-white">
           Scénario : La Guerre des Slips
 
@@ -33,7 +33,7 @@ Deux équipes vont s’affronter durant plusieurs semaines (5 sem. min., 10 sem.
           Voilà bien longtemps qu’un Gobelin, un certain Morko, voleur de slips ambulant, s’adonne à son passe-temps favori sans jamais avoir été inquiété. Pourtant, nombreux sont ceux parmi les Gobelins qui, du jour au lendemain, ont dû se résigner à faire traîner leurs précieux atours à même la roche. Les fautives – pensaient-ils – ne pouvaient être que les Termites des Tunnels qui, une fois le temps de se reposer arrivé, devaient profiter de l’instant pour venir grignoter pagnes et slips qui traînaient par-ci, par-là. 
           </p>
         </div>
-        <div class="sm:w-1/3 text-center sm:pl-8 sm:py-8">
+        <div class="xl:w-1/3 text-center sm:pl-8 sm:py-8">
           <img src="~assets/campagne_gobelins/TRA_decret_royal.jpg" class="ease-in-out transform transition duration-500 hover:scale-110 hover:drop-shadow-xl h-full rounded-lg inline-flex items-center justify-center bg-gray-200 text-gray-400">
         </div>
       </div>

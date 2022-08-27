@@ -60,7 +60,8 @@
           "
         >
           <nuxt-link class="text-4xl font-bold text-blue-200 hover:text-green-200 transition duration-500" to="/la-campagne-des-gobelins">La Campagne des Gobelins</nuxt-link>
-          <nuxt-link class="text-4xl font-bold text-blue-200 hover:text-green-200 transition duration-500" to="/la-campagne-des-gobelins/cartes">Cartes</nuxt-link>
+          <nuxt-link class="text-4xl font-bold text-blue-200 hover:text-green-200 transition duration-500" to="/la-campagne-des-gobelins/regles">Règles</nuxt-link>
+          <nuxt-link class="text-4xl font-bold text-blue-200 hover:text-green-200 transition duration-500" to="/la-campagne-des-gobelins/cartes">Decks</nuxt-link>
           <nuxt-link class="text-4xl font-bold text-blue-200 hover:text-green-200 transition duration-500" to="/la-campagne-des-gobelins/maps">Maps</nuxt-link>
           <nuxt-link class="text-4xl font-bold text-blue-200 hover:text-green-200 transition duration-500" to="/la-campagne-des-gobelins/donations">Donations</nuxt-link>
         </ul>

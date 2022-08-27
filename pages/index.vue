@@ -152,26 +152,26 @@
           </nuxt-link>
         </div> -->
         
-                <div class="w-full mt-5 lg:mt-0 px-2 lg:w-1/2">
-          <nuxt-link title="Ligue français de l'Avènement du Roi Sorcier"  to="/league" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
+                <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
+          <nuxt-link title="La Campagne des Gobelins"  to="/la-campagne-des-gobelins" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-green-300 border-2 rounded-xl">
             <NuxtImg
-              src="img/league.jpg"
+              src="img/CdG.jpg"
               class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
-              alt="La Bataille pour la Terre du Milieu 2"
+              alt="La Campagne des Gobelins"
               loading="lazy"
             />
             <div class="text-center relative z-10 w-full">
-              <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-purple-500 inline p-2 rounded">Ligue français de l'Avènement du Roi Sorcier 🐲 (LFA)</h2>
+              <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-green-500 inline p-2 rounded">La Campagne des Gobelins</h2>
               <br>
               <br>
-              <p class="text-2xl text-purple-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Joue pour être le meilleur de la Ligue !</p>
+              <p class="text-2xl text-green-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Démarre début septembre 2022</p>
               <br>
               <br>
-              <button style="font-family: 'Albertus'" to="/league" class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-purple-600 rounded-md dark:bg-gray-800 hover:bg-purple-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-purple-500 dark:focus:bg-gray-700">
+              <button style="font-family: 'Albertus'" to="/la-campagne-des-gobelins" class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-green-600 rounded-md dark:bg-gray-800 hover:bg-green-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-green-500 dark:focus:bg-gray-700">
                 <svg class="w-5 h-5 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-                <span class="mx-1">Hum hum hum</span>
+                <span class="mx-1">Préparez-vous au scénario de la Guerre des Slips</span>
               </button>
             </div>
           </nuxt-link>
@@ -203,8 +203,11 @@
           </nuxt-link> -->
 
 
+          
+
+
           <div class="w-full mt-5 lg:mt-0 px-2 lg:w-1/2 mb-5">
-          <nuxt-link title="Ligue français de l'Avènement du Roi Sorcier"  to="/league" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
+          <nuxt-link title="Ligue français de l'Avènement du Roi Sorcier"  to="/league" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-orange-300 border-2 rounded-xl">
             <NuxtImg
               src="tournois/tournoi_ainu.jpg"
               class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
@@ -227,6 +230,34 @@
             </div>
           </nuxt-link>
           </div>
+
+
+
+<div class="w-full mt-5 lg:mt-0 px-2 lg:w-1/2">
+          <nuxt-link title="Ligue français de l'Avènement du Roi Sorcier"  to="/league" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-indigo-300 border-2 rounded-xl">
+            <NuxtImg
+              src="img/league.jpg"
+              class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
+              alt="La Bataille pour la Terre du Milieu 2"
+              loading="lazy"
+            />
+            <div class="text-center relative z-10 w-full">
+              <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-purple-500 inline p-2 rounded">Ligue français de l'Avènement du Roi Sorcier 🐲 (LFA)</h2>
+              <br>
+              <br>
+              <p class="text-2xl text-purple-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Joue pour être le meilleur de la Ligue !</p>
+              <br>
+              <br>
+              <button style="font-family: 'Albertus'" to="/league" class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-purple-600 rounded-md dark:bg-gray-800 hover:bg-purple-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-purple-500 dark:focus:bg-gray-700">
+                <svg class="w-5 h-5 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+                <span class="mx-1">Hum hum hum</span>
+              </button>
+            </div>
+          </nuxt-link>
+          </div>
+
 
         <div class="w-full mt-5 lg:mt-0 px-2 lg:w-1/2">
           <nuxt-link title="Loup Garou en Terre du Milieu"  to="/loup-garou" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-purple-300 border-2 rounded-xl">

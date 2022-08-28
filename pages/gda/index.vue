@@ -1125,7 +1125,7 @@
 
 
                 <path :id="map.Andrast && map.Andrast.name"
-                  :title="map.Andrast && map.Andrast.name" aria-valuetext="Montagnes_Grises"
+                  :title="map.Andrast && map.Andrast.name" aria-valuetext="Andrast"
                   class="st" :class="[
                 map.Andrast && map.Andrast.color !== '#3300000'
                   ? 'opacity-25'

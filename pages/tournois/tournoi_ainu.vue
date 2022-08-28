@@ -7,12 +7,12 @@
                 Tournoi AINU
             </span>
             <span class="block text-xl text-orange-500 mt-4 mb-4">
-                Organisé Elrohir et Diablo sur le Discord de la Terre du Milieu
+                Organisé Elrohir et Illunt sur le Discord de la Terre du Milieu
             </span>
         </h2>
         <div class="lg:mt-0 lg:flex-shrink-0 mb-4">
             <div class="mt-12 inline-flex rounded-md shadow">
-                <a href="https://discord.gg/dZ6K2W8YHX" type="button" class="py-4 px-6  bg-orange-600 hover:bg-orange-700 focus:ring-orange-500 focus:ring-offset-orange-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                <a href="https://laterredumilieu.fr/Discord" type="button" class="py-4 px-6  bg-orange-600 hover:bg-orange-700 focus:ring-orange-500 focus:ring-offset-orange-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
                     Suivre la progression sur le Discord
                 </a>
             </div>
@@ -90,19 +90,19 @@ export default {
   layout: "home",
   head() {
     return {
-      title: "Tournoi forteresse ROTWK",
+      title: "Tournoi Ainu",
       meta: [
         {
           hid: 'description',
           name: 'description',
           content:
-            "Organisé Elrohir et Diablo sur le Discord de la Terre du Milieu",
+            "Organisé Elrohir et Illunt sur le Discord de la Terre du Milieu",
         },
         {
           hid: 'keywords',
           name: 'keywords',
           content:
-            'elrohir, tournoi bfme, rotwk, maps customs, bfme2, rotwk 2.02 v8.5',
+            'elrohir, tournoi bfme, ainu, maps customs, bfme2, rotwk',
         },
         {
           hid: 'twitter:card',
@@ -112,13 +112,13 @@ export default {
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: "Tournoi forteresse ROTWK",
+          content: "Tournoi Ainu",
         },
         {
           hid: 'twitter:description',
           name: 'twitter:description',
           content:
-            "Organisé Elrohir et Diablo sur le Discord de la Terre du Milieu",
+            "Organisé Elrohir et Illunt sur le Discord de la Terre du Milieu",
         },
         {
           hid: 'twitter:creator',
@@ -129,26 +129,26 @@ export default {
           hid: 'twitter:image',
           name: 'twitter:image',
           content:
-            'https://laguerredelanneau.vercel.app/tournois/fortos.jpg',
+            'https://laguerredelanneau.vercel.app/tournois/tournoi_ainu.jpg',
         },
-        { hid: 'og:title', name: 'og:title', content: "Tournoi forteresse ROTWK" },
+        { hid: 'og:title', name: 'og:title', content: "Tournoi Ainu" },
         { hid: 'og:type', name: 'og:type', content: 'website' },
         {
           hid: 'og:url',
           name: 'og:url',
-          content: 'https://laguerredelanneau.vercel.app/tournois/fortos_2_02',
+          content: 'https://laguerredelanneau.vercel.app/tournois/tournoi_ainu',
         },
         {
           hid: 'og:image',
           name: 'og:image',
           content:
-            'https://laguerredelanneau.vercel.app/tournois/fortos.jpg',
+            'https://laguerredelanneau.vercel.app/tournois/tournoi_ainu.jpg',
         },
         {
           hid: 'og:description',
           name: 'og:description',
           content:
-            "Organisé Elrohir et Diablo sur le Discord de la Terre du Milieun",
+            "Organisé Elrohir et Illunt sur le Discord de la Terre du Milieun",
         },
       ],
     }

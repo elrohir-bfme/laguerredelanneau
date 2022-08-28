@@ -12,7 +12,7 @@
         </h2>
         <div class="lg:mt-0 lg:flex-shrink-0 mb-4">
             <div class="mt-12 inline-flex rounded-md shadow">
-                <a href="https://discord.gg/dZ6K2W8YHX" type="button" class="py-4 px-6  bg-green-600 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                <a href="https://laterredumilieu.fr/Discord" type="button" class="py-4 px-6  bg-green-600 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
                     Suivre la progression sur le Discord
                 </a>
             </div>

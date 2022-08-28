@@ -203,11 +203,36 @@
           </nuxt-link> -->
 
 
+
+          <div class="w-full mt-5 lg:mt-0 px-2 lg:w-1/2 mb-5">
+          <nuxt-link title="Tournoi mystère 2vs2 ROTWK"  to="/tournois/tournoi_mystere_rotwk_2_02" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-blue-300 border-2 rounded-xl">
+            <NuxtImg
+              src="tournois/tournoi_rotwk_mystere_2vs2.jpg"
+              class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
+              alt="Tournoi mystère 2vs2 ROTWK"
+              loading="lazy"
+            />
+            <div class="text-center relative z-10 w-full">
+              <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-blue-500 inline p-2 rounded">Tournoi mystère 2vs2</h2>
+              <br>
+              <br>
+              <p class="text-2xl text-blue-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Organisé par Diablo</p>
+              <br>
+              <br>
+              <button style="font-family: 'Albertus'" to="/tournois/tournoi_mystere_rotwk_2_02" class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700">
+                <svg class="w-5 h-5 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+                <span class="mx-1">Place aux combats !</span>
+              </button>
+            </div>
+          </nuxt-link>
+          </div>
           
 
 
           <div class="w-full mt-5 lg:mt-0 px-2 lg:w-1/2 mb-5">
-          <nuxt-link title="Ligue français de l'Avènement du Roi Sorcier"  to="/league" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-orange-300 border-2 rounded-xl">
+          <nuxt-link title="Ligue français de l'Avènement du Roi Sorcier"  to="/tournois/tournoi_ainu" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-orange-300 border-2 rounded-xl">
             <NuxtImg
               src="tournois/tournoi_ainu.jpg"
               class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
@@ -221,7 +246,7 @@
               <p class="text-2xl text-orange-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Organisé par Illunt</p>
               <br>
               <br>
-              <button style="font-family: 'Albertus'" to="/league" class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-orange-600 rounded-md dark:bg-gray-800 hover:bg-orange-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-orange-500 dark:focus:bg-gray-700">
+              <button style="font-family: 'Albertus'" to="/tournois/tournoi_ainu" class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-orange-600 rounded-md dark:bg-gray-800 hover:bg-orange-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-orange-500 dark:focus:bg-gray-700">
                 <svg class="w-5 h-5 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>

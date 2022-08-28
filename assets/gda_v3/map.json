@@ -3245,9 +3245,9 @@
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Gue_Isen.jpg",
       "map": 2,
       "east": [],
-      "name": "Gouffre de Helm",
+      "name": "Gué de l'Isen",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3258,32 +3258,15 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rohan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Breche_Rohan",
+        "Gouffre_Helm",
+        "Ouestfolde",
+        "Pierreval",
+        "Isengard"
       ],
       "description": "Le fleuve Isen prenait sa source au sud des Montagnes de Brume, au niveau du Methedras."
     },
@@ -3293,7 +3276,7 @@
       "east": [],
       "name": "Avancee de Fangorn",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3304,32 +3287,14 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rohan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Fangorn",
+        "Ouestemnet",
+        "Grands_Arpents",
+        "Isengard"
       ],
       "description": "Les avancée de Fangorn est la région la plus proche du Rohan et l'entré de la Forêt de Fangorn"
     },
@@ -3337,9 +3302,9 @@
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Fangorn.png",
       "map": 2,
       "east": [],
-      "name": "Avancee de Fangorn",
+      "name": "Fangorn",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3350,42 +3315,24 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rohan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Ouestemnet",
+        "Avancee_Fangorn",
+        "Plateau",
+        "Celebrant"
       ],
       "description": "Fangorn était le nom de l'Ent plus communément appelé Barbebois. Il donna son nom à la forêt de Fangorn où il avait fait sa résidence."
     },
     "Celebrant": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Celebrant.jpg",
-      "map": 2,
+      "map": 6,
       "east": [],
       "name": "Celebrant",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3396,32 +3343,14 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "Celebrant",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Plateau",
+        "Fangorn",
+        "Azanulbizar",
+        "Lorien"
       ],
       "description": "La Celebrant était une rivière très froide qui prenait sa source dans les Montagnes de Brume, elle était l'effluent du Kheled-zâram1)."
     },
@@ -3429,9 +3358,9 @@
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Azanulbizar.jpg",
       "map": 2,
       "east": [],
-      "name": "Celebrant",
+      "name": "Azanulbizar",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3442,32 +3371,15 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Lorien",
+        "Celebrant",
+        "Moria",
+        "Zagh_Kala",
+        "Champs_Iris"
       ],
       "description": "Dans la vallée se trouvait le Lac du Miroir et au sud du Lac, de ses sources glacées jaillissait le Cours d'Argent. Les Nains se réjouissaient à la vue de cette vallée, de ce lac et de fleuve si chers à leur cœur."
     },
@@ -3477,7 +3389,7 @@
       "east": [],
       "name": "Champs aux Iris",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3488,32 +3400,14 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Carrock",
+        "Lorien",
+        "Azanulbizar",
+        "Zagh_Kala"
       ],
       "description": "C'est ici qu'eu lieu le massacre des Champs d'Iris qui vit la perte de l'Anneau Unique dans les eaux de l’Anduin ainsi que la mort du grand roi des Hommes : Isildur ainsi que ses fils au début du troisième âge."
     },
@@ -3523,7 +3417,7 @@
       "east": [],
       "name": "Lorien",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3534,32 +3428,14 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Rhosgobel",
+        "Celebrant",
+        "Azanulbizar",
+        "Champs_Iris"
       ],
       "description": "Entre l'Anduin et les Montagnes de Brume se trouvait la forêt de Lórien, un des royaumes des Elfes Sylvains."
     },
@@ -3569,7 +3445,7 @@
       "east": [],
       "name": "Les Terres Brunes",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3580,32 +3456,17 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Dol_Guldur",
+        "Baie_Est",
+        "Dagorlad",
+        "Marais_Morts",
+        "Emyn_Muil",
+        "Argonath",
+        "Rhosgobel"
       ],
       "description": "Les Terres Brunes étaient une région désolée sur les rives de l'Anduin, à hauteur des deux grands méandres que dessinait celui-ci à la latitude de la forêt de Fangorn."
     },
@@ -3615,7 +3476,7 @@
       "east": [],
       "name": "Argonath",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3626,32 +3487,15 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rohan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Terres_Brunes",
+        "Emyn_Muil",
+        "Estemnet",
+        "Est_Rohan",
+        "Months_Endwash"
       ],
       "description": "Les Argonath étaient constitués de deux statues imposantes d'Isildur et Anárion, premiers rois du Gondor, situées de part et d'autre de l'Anduin, juste avant que celui-ci ne forme le lac de Nen Hithoel. Ces statues furent érigées sous le règne de Rómendacil II, afin d'interdire à tout étranger de descendre l'Anduin en aval d'elles."
     },
@@ -3661,7 +3505,7 @@
       "east": [],
       "name": "Le Plateau",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3672,32 +3516,14 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rohan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Estemnet",
+        "Ouestemnet",
+        "Fangorn",
+        "Celebrant"
       ],
       "description": "The Wold était un plateau du Rohan, qui s'étirait entre la forêt de Fangorn et l’Anduin. Elle était bordée par la Limeclaire au nord et par l’Estemnet au sud."
     },
@@ -3707,7 +3533,7 @@
       "east": [],
       "name": "Estemnet",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3718,32 +3544,14 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rohan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Argonath",
+        "Plateau",
+        "Ouestemnet",
+        "Est_Rohan"
       ],
       "description": "L’Estemnet était la région la plus à l’est du Rohan."
     },
@@ -3753,7 +3561,7 @@
       "east": [],
       "name": "Ouestemnet",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3764,32 +3572,19 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rohan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Plateau",
+        "Estemnet",
+        "Est_Rohan",
+        "Fangorn",
+        "Avancee_Fangorn",
+        "Grands_Arpents",
+        "C_Rohan",
+        "Halifirien",
+        "Estfolde"
       ],
       "description": "L’Ouestemnet était la région située au nord-ouest du Rohan. Elle s’étendait entre l’Adorn et l’Isen à l’ouest, les Montagnes de Brume et Fangorn au nord, l’Entévière à l’est, et la Snawburna et l’Ouestfolde au sud."
     },
@@ -3799,7 +3594,7 @@
       "east": [],
       "name": "Emyn Muil",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3810,32 +3605,13 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rohan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Terres_Brunes",
+        "Marais_Morts",
+        "Argonath"
       ],
       "description": "L'Emyn Muil est une masse montagneuse couvrant un territoire de presque 80 par 120 km, située entre le fleuve Anduin et le Marais des Morts."
     },
@@ -3845,7 +3621,7 @@
       "east": [],
       "name": "Marais_Morts",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3856,32 +3632,15 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "gondor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Porte_Noire",
+        "Dagorlad",
+        "Terres_Brunes",
+        "Emyn_Muil",
+        "Nord_Ithilien"
       ],
       "description": "Les Marais Morts étaient une vaste région marécageuse située au nord-ouest du Mordor, entre l'Emyn Muil et la Morannon."
     },
@@ -3891,7 +3650,7 @@
       "east": [],
       "name": "La Porte Noire",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3902,32 +3661,15 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "mordor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Dagorlad",
+        "Marais_Morts",
+        "Nord_Ithilien",
+        "Udun",
+        "Ephel_Duath"
       ],
       "description": "Grande muraille sombre probablement construite par les numénoriens pour contrôler l’accès au Mordor. Donnant  sur le plateau de Moranon son autre nom en sindarin, Sauron s'en empara à ses propres fins pour dominier l'accès par le nord du Mordor."
     },
@@ -3937,7 +3679,7 @@
       "east": [],
       "name": "Nord de VeqzLétranger",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3948,32 +3690,14 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "gondor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Porte_Noire",
+        "Emyn_Muil",
+        "Carrefour",
+        "Cair_Andros"
       ],
       "description": "Régions où de perpétuelles affrontements entre gondoriens et haradrims se déroullent. La région fut reprise par Boromir durant un temps avant de sombrer à nouveau dans le chaos ! C'est ici au cœur des bois que se cache le lac interdit : un repaire de rôdeurs mené par Faramir."
     },
@@ -3983,7 +3707,7 @@
       "east": [],
       "name": "Cair Andros",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3994,32 +3718,14 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "gondor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Nord_Ithilien",
+        "Months_Endwash",
+        "Foret_Druadan",
+        "Pelennor"
       ],
       "description": "Cair Andros était une île gondorienne fortifiée d'une dizaine de miles de long située au milieu de l'Anduin, entre l'Anórien à l'ouest et l'Ithilien à l'est."
     },
@@ -4029,7 +3735,7 @@
       "east": [],
       "name": "Vallée de l'Entalluve",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4040,32 +3746,15 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "gondor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Argonath",
+        "Est_Rohan",
+        "Anorien",
+        "Foret_Druadan",
+        "Cair_Andros"
       ],
       "description": "La vallée de l'Entalluve possède le paysage le plus varié des plaines orientales, de buttes rocheuses dans le nord à des marécages couverts de roseaux dans le sud. Elle est traversée par l'Entalluve, appelée Onodló par les Elfes, qui prenait sa source dans la forêt de Fangorn."
     },
@@ -4075,7 +3764,7 @@
       "east": [],
       "name": "Est du Rohan",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4086,32 +3775,16 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rohan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Months_Endwash",
+        "Argonath",
+        "Estemnet",
+        "Ouestemnet",
+        "Estfolde",
+        "Anorien"
       ],
       "description": "La frontière Est du Rohan est une région fertile et verdoyante où sont implantés des fermes prospèrent."
     },
@@ -4121,7 +3794,7 @@
       "east": [],
       "name": "Vinyalondë",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4132,80 +3805,15 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rohan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Cairill",
+        "Enedwaith",
+        "Druwaith_Iaur"
       ],
       "description": "Le port de Vinyalondë fut fondé par le futur Tar-Aldarion à l'embouchure du Gwathló au cours de l'une de ses expéditions en Terre du Milieu, peu avant l'an 800 du Deuxième Âge."
-    },
-    "Enedwaith": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Enedwaith.png",
-      "map": 2,
-      "east": [],
-      "name": "Enedwaith",
-      "west": [],
-      "color": "#ff6f00",
-      "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-      "north": [
-        1,
-        2
-      ],
-      "south": [
-        3,
-        4
-      ],
-      "region": "harad",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
-      "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
-      ],
-      "description": "L'Enedwaith était situé entre le Gwathló, le Glanduin, les Montagnes de Brume et l'Isen."
     },
     "Druwaith_Iaur": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Enedwaith.png",
@@ -4213,7 +3821,7 @@
       "east": [],
       "name": "Drúwaith Iaur",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4224,32 +3832,14 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rohan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Andrast",
+        "Vinyalonde",
+        "Enedwaith",
+        "Breche_Rohan"
       ],
       "description": "Le Drúwaith Iaur était la région comprise entre les fleuves Isen et Lefnui, à l'ouest du Gondor."
     },
@@ -4259,7 +3849,7 @@
       "east": [],
       "name": "Erech",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4270,32 +3860,14 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rohan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Halifirien",
+        "Edoras",
+        "Dunharrow",
+        "Gondor3"
       ],
       "description": "La pierre noire d'Erech se dressait noire au sommet d'une colline, non loin du lieu où la rivière Morthond prenait sa source."
     },
@@ -4305,7 +3877,7 @@
       "east": [],
       "name": "Dol Guldur",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4316,32 +3888,14 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Sud_Foret_Noire",
+        "Baie_Est",
+        "Terres_Brunes",
+        "Rhosgobel"
       ],
       "description": "Au sud de Vert-bois-le-Grand, en face de la Lórien, se trouvait la sombre tour du Nécromancien, Dol Guldur, qui fut construite vers 1050 3A sur le site d'Amon Lanc, lieu de l'ancienne capitale du royaume d'Oropher."
     },
@@ -4351,7 +3905,7 @@
       "east": [],
       "name": "Sud de la Foret Noire",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4362,32 +3916,16 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Dol_Guldur",
+        "Baie_Est",
+        "Esgaroth",
+        "Emyn_Duir",
+        "rhovanion1",
+        "Rhosgobel"
       ],
       "description": "Morceau mystérieux de la foret de vert bois, de nombreux enchantements et sortilèges protègent ces vieux sentiers, quiconque le quitte ne le retrouvera pas ! depuis le milieu du troisième âge Sauron corromps les bois, des araignées y pullule les elfes toutefois se battent pour protéger leurs terres ancestrales."
     },
@@ -4395,9 +3933,9 @@
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Baie_Est.jpg",
       "map": 2,
       "east": [],
-      "name": "Sud de la Foret Noire",
+      "name": "Baie de l'est",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4408,32 +3946,14 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Sud_Foret_Noire",
+        "Dol_Guldur",
+        "Terres_Brunes",
+        "Valee_Celduin"
       ],
       "description": "La Brèche de l’Est est le nom par lequel était désignée la grande zone dépourvue d’arbres qui s’ouvrait dans la lisière est, au sud de la forêt de Grand’Peur. Cette curieuse dépression à l’orée de la forêt était de cause humaine. En effet, cette zone a été déforesté part des Hommes du Nord, ancêtres des Éothéod, qui, au Deuxième âge et début du Troisième âge, peuplaient les abords de Grand’Peur."
     },
@@ -4443,7 +3963,7 @@
       "east": [],
       "name": "Vallée du Celduin",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4454,32 +3974,13 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Dagorlad",
+        "Baie_Est",
+        "Terre_Desolee"
       ],
       "description": "La Celduin était un fleuve qui prenait sa source au pied d'Erebor, traversait le Long Lac et coulait vers le sud, puis vers l'est."
     },
@@ -4489,7 +3990,7 @@
       "east": [],
       "name": "Dorwinion",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4500,32 +4001,12 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Carnen",
+        "Dagorlad"
       ],
       "description": "Le Dorwinion ou Dor-Winion est une région de la Terre du Milieu située sur les rivages nord-ouest de la Mer de Rhûn, réputé pour son excellent vin très apprécier des elfes de Thranduil."
     },
@@ -4535,7 +4016,7 @@
       "east": [],
       "name": "Dagorlad",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4546,32 +4027,15 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Rhun3",
+        "Dorwinion",
+        "Valee_Celduin",
+        "Terres_Brunes",
+        "Marais_Morts"
       ],
       "description": "La plaine de Dagorlad s'étendait au nord-est du Mordor, devant la Morannon et à l'est de l'Emyn Muil."
     },
@@ -4581,7 +4045,7 @@
       "east": [],
       "name": "Esgaroth",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4592,32 +4056,15 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Terre_Desolee",
+        "Erebor",
+        "Hall_Thranduil",
+        "Emyn_Duir",
+        "Sud_Foret_Noire"
       ],
       "description": "La ville d'Esgaroth était bâtie sur des pilotis au cœur du Long Lac, non loin de l'embouchure de la Rivière de la Forêt."
     },
@@ -4627,7 +4074,7 @@
       "east": [],
       "name": "Erebor",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4638,32 +4085,15 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "rhovanion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Terre_Desolee",
+        "Lande_Dessechee",
+        "Nord_Foret_Noire",
+        "Hall_Thranduil",
+        "Esgaroth"
       ],
       "description": "Erebor est le mont situé entre les Montagnes Grises au nord, les Collines de Fer à l'est, le Long Lac au sud et la Grand’Peur à l'ouest."
     },
@@ -4673,7 +4103,7 @@
       "east": [],
       "name": "Lithlad",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4684,32 +4114,18 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "mordor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Ered_Glamhoth",
+        "Nurn",
+        "Nurnen",
+        "Plateau_Gorgoroth",
+        "Montagne_Destin",
+        "Barad_Dur",
+        "Khand",
+        "Rhun1"
       ],
       "description": "Le Lithlad était une région de plaines du Mordor. La position exacte de cette région reste cependant vague."
     },
@@ -4719,7 +4135,7 @@
       "east": [],
       "name": "Ered Glamhoth",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4730,32 +4146,14 @@
         3,
         4
       ],
-      "region": "harad",
+      "region": "mordor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Khand",
+        "Proche_Harad",
+        "Nurn",
+        "Lithlad"
       ],
       "description": "Ered signifie 'montagnes' en sindarin. Glamhoth était le terme en sindarin pour 'hôtes du mal' (Glam- apparaît dans 'Glamdring', qui signifie 'marteau'), ce qui en fait un lieu où les hommes de l'Est étaient loyaux à Sauron y auraient vécu"
     },
@@ -4765,7 +4163,7 @@
       "east": [],
       "name": "Mer de Rhun",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4778,30 +4176,11 @@
       ],
       "region": "harad",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Lithlad",
+        "Nurn",
+        "Plateau_Gorgoroth"
       ],
       "description": "La mer de Rhûn était une vaste mer intérieure qui se situait à l'est du Rhovanion, alimentée par les eaux de la rivière Celduin. Au nord-est, ses rives étaient densément boisées ; au sud-ouest se dressaient des collines. Au nord-ouest de la mer se trouvait la région du Dorwinion. À l'époque de l'apogée du Gondor, cette mer formait une partie de la frontière orientale du pays, mais avec le déclin des Dúnedain, les frontières de ce royaume reculèrent vers l'ouest."
     },
@@ -4811,7 +4190,7 @@
       "east": [],
       "name": "Hidar",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4824,30 +4203,11 @@
       ],
       "region": "harad",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Golfe_Harad",
+        "Proche_Harad",
+        "Lointain_Harad"
       ],
       "description": "La mer de Rhûn était une vaste mer intérieure qui se situait à l'est du Rhovanion, alimentée par les eaux de la rivière Celduin. Au nord-est, ses rives étaient densément boisées ; au sud-ouest se dressaient des collines. Au nord-ouest de la mer se trouvait la région du Dorwinion. À l'époque de l'apogée du Gondor, cette mer formait une partie de la frontière orientale du pays, mais avec le déclin des Dúnedain, les frontières de ce royaume reculèrent vers l'ouest."
     },
@@ -4857,7 +4217,7 @@
       "east": [],
       "name": "Golfe du Harad",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4870,30 +4230,11 @@
       ],
       "region": "harad",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Khand",
+        "Proche_Harad",
+        "Hidar"
       ],
       "description": "harad"
     },
@@ -4903,7 +4244,7 @@
       "east": [],
       "name": "Harnedor",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4916,30 +4257,12 @@
       ],
       "region": "harad",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Lointain_Harad",
+        "Sud_Ithilien",
+        "Harondor",
+        "Umbar"
       ],
       "description": "harad"
     },
@@ -4949,7 +4272,7 @@
       "east": [],
       "name": "Lointain Harad",
       "west": [],
-      "color": "#ff6f00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4962,30 +4285,13 @@
       ],
       "region": "harad",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Ragzus",
-          "faction": 9,
-          "handicap": 0
-        },
-        {
-          "img": null,
-          "win": 0,
-          "lose": 0,
-          "name": "Skyzomyke",
-          "faction": 8,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Golfe_Harad",
+        "Hidar",
+        "Proche_Harad",
+        "Sud_Ithilien",
+        "Harnedor"
       ],
       "description": "Territoire le plus au Sud de la terre du Milieu. Au Nord Est se trouve le port d’Umbar. A l’Est, la mer. A l’Ouest, le Kand. Et au Nord, le Proche Harad et l’Harondor. Se territoire fut si reculé qu’il ne subit pas les guerres, tout en participant à ces dernières. En effet, sa position lui permet de rester à l’abris des invasions toute en envoyant continuellement des Soldats sur les ligne de Front. Cette méthode fut certainement utilisé par Sauron ou les Haradrim. Le Lointain Harad fut vaincu lorsque les Haradrim se soumirent à Elessar."
     },
@@ -4995,7 +4301,7 @@
         "east": [],
         "name": "Tolfalas",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5006,32 +4312,13 @@
           3,
           4
         ],
-        "region": "harad",
+        "region": "gondor",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Mer_Pelargir",
+          "Mer_Umbar",
+          "Mer_Dol_Amroth"
         ],
         "description": "Tolfalas était une grande île, qui se trouvait au-delà de l'Ethir Anduin dans la baie de Belfalas."
       },
@@ -5041,7 +4328,7 @@
         "east": [],
         "name": "Mer de Pelargir",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5052,32 +4339,14 @@
           3,
           4
         ],
-        "region": "harad",
+        "region": "mer",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Pelargir",
+          "Tolfalas",
+          "Mer_Umbar",
+          "Mer_Dol_Amroth"
         ],
         "description": "« Regardez ! s’écria-t-il. Des mouettes ! Elles volent loin dans les terres, une merveille à mes yeux et un trouble pour mon cœur. Jamais de ma vie je ne les avais vues avant d’arriver à Pelargir ; et je les entendis là-bas crier dans l’air, tandis que nous allions à cheval vers la bataille des navires. Alors je restai coi, oubliant la guerre en Terre du Milieu, car leurs voix plaintives me parlaient de la Mer."
       },
@@ -5087,7 +4356,7 @@
         "east": [],
         "name": "Mer d'Umbar",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5098,32 +4367,14 @@
           3,
           4
         ],
-        "region": "harad",
+        "region": "mer",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Umbar",
+          "Mer_Pelargir",
+          "Tolfalas",
+          "Mer_Dol_Amroth"
         ],
         "description": "« Le long cap d’Umbar et sa grande rade étaient une possession númenóréenne de fort longue date ; mais elle servait de place forte aux Hommes du Roi, que l’on nomma plus tard les Númenóréens Noirs, corrompus par Sauron, et qui vouaient la plus grande haine aux suivants d’Elendil. » — Le Seigneur des Anneaux — Appendice A"
       },
@@ -5133,7 +4384,7 @@
         "east": [],
         "name": "Mer de Dol Amroth",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5144,80 +4395,17 @@
           3,
           4
         ],
-        "region": "harad",
+        "region": "mer",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Dol_Amroth",
+          "Tolfalas",
+          "Mer_Pelargir",
+          "Mer_Umbar",
+          "Belegaer"
         ],
         "description": "« Et au matin, la bannière de Dol Amroth, nef blanche comme un cygne sur une eau bleue, flottait au sommet de la Tour… » — Le Seigneur des Anneaux — Livre V — Chapitre 8"
-      },
-      "Belegaer": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Belegear.jpg",
-        "map": 2,
-        "east": [],
-        "name": "Belegaer",
-        "west": [],
-        "color": "#ff6f00",
-        "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-        "north": [
-          1,
-          2
-        ],
-        "south": [
-          3,
-          4
-        ],
-        "region": "harad",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
-        "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
-        ],
-        "description": "Belegaer, la Grande Mer, est le nom qui fut donné à l'océan qui séparait la côte est d'Aman de la Terre du Milieu. Au nord, elle était séparée des froides eaux d'Ekkaia par le détroit d'Helcaraxë, le Chaos des Glaces. Lors de la Guerre de la Colère, la Grande Mer gagna du terrain, engloutissant tout le Beleriand."
       },
       "Mer_Enedwaith": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Enedwaith.jpg",
@@ -5225,7 +4413,7 @@
         "east": [],
         "name": "Mer d'Enedwaith",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5236,32 +4424,13 @@
           3,
           4
         ],
-        "region": "harad",
+        "region": "mer",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Belegaer",
+          "Minhiriath",
+          "Mer_Havres_Gris"
         ],
         "description": "Mer à l'Ouest de l'Enedwaith."
       },
@@ -5271,7 +4440,7 @@
         "east": [],
         "name": "Mer des Havres Gris",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5282,32 +4451,15 @@
           3,
           4
         ],
-        "region": "harad",
+        "region": "mer",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
-          "Harlindon",
+          "Mer_Enedwaith",
           "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Tol_Fuin",
+          "Himling",
+          "Mer_Forochel"
         ],
         "description": "Mer qui permettait depuis les Havres Gris de se rendrent vers l'Ouest, en Aman."
       },
@@ -5317,7 +4469,7 @@
         "east": [],
         "name": "Mer de Forochel",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5328,32 +4480,14 @@
           3,
           4
         ],
-        "region": "harad",
+        "region": "mer",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Baie_Forochel",
+          "Himling",
+          "Tol_Fuin",
+          "Mer_Havres_Gris"
         ],
         "description": "« Même les marins de Círdan ne purent rien faire, et, à la nuit, la glace défonça la coque et le navire périt. Ainsi finit Arvedui le Dernier, et les palantirí s’abîmèrent avec lui dans la mer. Ce n’est que bien plus tard que l’on apprit des Hommes des Neiges la nouvelle du naufrage de Forochel. » — Seigneur des Anneaux — Appendice A"
       },
@@ -5363,7 +4497,7 @@
         "east": [],
         "name": "Himling",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5374,32 +4508,12 @@
           3,
           4
         ],
-        "region": "harad",
+        "region": "mer",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Mer_Forochel",
+          "Mer_Forochel"
         ],
         "description": "Cette petite île au large du Forlindon n'était autre que le sommet de la colline d'Himring, où Maedhros avait sa capitale au cours du Premier Âge. Avec Tol Morwen, Tol Fuin et le Lindon, Himling était le dernier vestige émergé du Beleriand."
       },
@@ -5409,7 +4523,7 @@
         "east": [],
         "name": "Tol Fuin",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5420,32 +4534,12 @@
           3,
           4
         ],
-        "region": "harad",
+        "region": "mer",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Mer_Havres_Gris",
+          "Mer_Forochel"
         ],
         "description": "Considérer comme la plus haute montagne du 1er Age, Tol Fuin survécu à la grande guerre et à la submersion du Beleriand. En effet, cette montagne était tellement haute que sont sommet resta à la surface de l’eau. Hélas, il est totalement impossible de débarquer sur l’île qui n’est rien d’autre qu’un immense rocher immergé."
       },
@@ -5455,53 +4549,7 @@
         "east": [],
         "name": "Pierreval",
         "west": [],
-        "color": "#ff6f00",
-        "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-        "north": [
-          1,
-          2
-        ],
-        "south": [
-          3,
-          4
-        ],
-        "region": "harad",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
-        "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
-        ],
-        "description": "Pierreval est l'endroit où les Rohirrim et les Hommes du Pays de Dun vivent en paix depuis longtemps. La majorité des Hommes du Pays de Dun dans le Rohan a été exilée dans ce qui se trouve aujourd'hui être le Pays de Dun ; mais ceux qui sont restés se sont établis dans le Pierreval."
-      },
-      "Ouestfold": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Ouestfold.jpg",
-        "map": 2,
-        "east": [],
-        "name": "L’Ouestfolde",
-        "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5514,30 +4562,40 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Grands_Arpents",
+          "Isengard",
+          "Gue_Isen",
+          "Ouestfolde"
+        ],
+        "description": "Pierreval est l'endroit où les Rohirrim et les Hommes du Pays de Dun vivent en paix depuis longtemps. La majorité des Hommes du Pays de Dun dans le Rohan a été exilée dans ce qui se trouve aujourd'hui être le Pays de Dun ; mais ceux qui sont restés se sont établis dans le Pierreval."
+      },
+      "Ouestfold": {
+        "img": "https://laguerredelanneau.vercel.app/Territories_img/Ouestfold.jpg",
+        "map": 2,
+        "east": [],
+        "name": "L’Ouestfolde",
+        "west": [],
+        "color": "#3300000",
+        "fight": "hidden",
+        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "north": [
+          1,
+          2
+        ],
+        "south": [
+          3,
+          4
+        ],
+        "region": "rohan",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "players": [],
+        "adjacents": [
+          "C_Rohan",
+          "Pierreval",
+          "Gue_Isen",
+          "Dunharrow"
         ],
         "description": "L’Ouestfolde était une région du Rohan, traversée par la Grande Route de l’Ouest, qui s'étirait entre les Gués de l’Isen et le Folde."
       },

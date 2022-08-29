@@ -15,7 +15,7 @@
           <div class="flex flex-col items-center text-center justify-center">
             <h2 class="font-medium title-font mt-4 text-green-200 text-6xl">Utharlok</h2>
             <div class="w-12 h-1 bg-indigo-200 rounded mt-2 mb-4"></div>
-            <p class="text-3xl">La chaîne des Gobelins</p>
+            <p class="text-3xl">La chaîne du Gobelin</p>
           </div>
         </div>
         <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-indigo-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">

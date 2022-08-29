@@ -14,8 +14,9 @@
 	<div class="flex md:w-1/2 justify-center py-10 items-center bg-gradient-to-tr from-teal-700 to-teal-600">
   <div>
     <h2 class="text-white font-bold text-2xl mb-1">Pour soutenir tout le travail fourni</h2>
-    <p class="text-sm font-normal text-gray-200 mb-7">4 mois de préparation</p>
-    <a href="https://www.youtube.com/user/Silmarillion321" class="block w-full bg-green-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-center">La Chaîne du Gobelin</a>
+    <p class="text-sm font-normal text-gray-200 mb-7">1 an de préparation</p>
+    <a href="https://www.youtube.com/user/Silmarillion321" class="block w-full bg-green-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-center">La Chaîne du Gobelin (Youtube)</a>
+    <a href="https://www.twitch.tv/utharlok" class="block w-full bg-green-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-center">Utharlok (Twitch)</a>
   </div>
 	</div>
 </div>

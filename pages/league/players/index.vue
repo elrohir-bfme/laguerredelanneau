@@ -274,8 +274,8 @@ export default {
                     }
 
                     this.games.map(g => {
-                        if(g.attributes.replays && g.attributes.replays.length > 0){
-                            g.attributes.replays.map(r => {
+                        if(g.attributes?.replays && g.attributes?.replays?.length > 0){
+                            g.attributes?.replays.map(r => {
 
 
                                 // if(r.faction_lose && r.faction_lose.data?.attributes){
@@ -302,16 +302,16 @@ export default {
 
                                 // console.log(r.faction_win, f)
 
-                                if(r.player_win?.data?.attributes?.name === f.attributes.name){
-                                    let faction = r.faction_win.data.attributes.name;
+                                if(r.player_win?.data?.attributes?.name === f.attributes?.name){
+                                    let faction = r.faction_win?.data?.attributes?.name;
                                     typeof newObject.statsFactionWin[faction] === 'undefined' ? 
                                     newObject.statsFactionWin[faction] = 1 : 
                                     newObject.statsFactionWin[faction]++;
                                     newObject.wins++;
                                 }
 
-                                if(r.player_lose?.data?.attributes?.name === f.attributes.name){
-                                    let faction = r.faction_lose.data.attributes.name;
+                                if(r.player_lose?.data?.attributes?.name === f.attributes?.name){
+                                    let faction = r.faction_lose?.data?.attributes?.name;
                                     typeof newObject.statsFactionLose[faction] === 'undefined' ? 
                                     newObject.statsFactionLose[faction] = 1 : 
                                     newObject.statsFactionLose[faction]++;
@@ -324,7 +324,7 @@ export default {
                     return Object.assign(f, newObject)
                 })
 
-                return newPlayers.sort((a, b) => { return b.attributes.elo - a.attributes.elo; });
+                return newPlayers.sort((a, b) => { return b.attributes?.elo - a.attributes?.elo; });
             }
 
             

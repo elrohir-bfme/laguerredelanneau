@@ -80,7 +80,7 @@
         1,
         4
       ],
-      "color": "#3300000",
+      "color": "#FF6F00",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1-KC65KNwGBq1BfK4XcRx7lA0xECp7OBx?usp=sharing",
       "north": [
@@ -265,7 +265,7 @@
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127014/La%20Guerre%20de%20l%27Eriador/Fornost_l3l13p.jpg",
       "map": 6,
       "name": "Fornost",
-      "color": "#3300000",
+      "color": "#0089F",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1_xXMsTZFigrj1i2ujm1yaiUJHCnps5KS?usp=sharing",
       "region": "arthedain",
@@ -456,7 +456,29 @@
     },
     "Belegaer": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Belegear.jpg",
+      "map": 2,
+      "east": [],
       "name": "Belegaer",
+      "west": [],
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "north": [
+        1,
+        2
+      ],
+      "south": [
+        3,
+        4
+      ],
+      "region": "mer",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "players": [],
+      "adjacents": [
+        "Belegaer",
+        "Minhiriath",
+        "Mer_Havres_Gris"
+      ],
       "description": "Belegaer, la Grande Mer, est le nom qui fut donné à l'océan qui séparait la côte est d'Aman de la Terre du Milieu. Au nord, elle était séparée des froides eaux d'Ekkaia par le détroit d'Helcaraxë, le Chaos des Glaces. Lors de la Guerre de la Colère, la Grande Mer gagna du terrain, engloutissant tout le Beleriand."
     },
     "Carn_Dum": {
@@ -465,7 +487,7 @@
       "east": [],
       "name": "Carn Dûm",
       "west": [],
-      "color": "#3300000",
+      "color": "#C500FF",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1NEA70z5NKijqrXxTYtNNhixaagh2ye44?usp=sharing",
       "north": [],
@@ -595,7 +617,7 @@
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126750/La%20Guerre%20de%20l%27Eriador/Isengard_ewpimj.jpg",
       "map": 6,
       "name": "Isengard",
-      "color": "#3300000",
+      "color": "#FFFFFF",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1U_lfW661YE0zzKt_HplwiytFURLiezYh?usp=sharing",
       "region": "rohan",
@@ -625,7 +647,7 @@
         5,
         6
       ],
-      "color": "#ff3636",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1UzY1PCjDwfdFwmsoTAdQCPfRFloqNeE1?usp=sharing",
       "north": [
@@ -724,7 +746,7 @@
         "win": 5,
         "chef": "Lexa",
         "name": "elfe",
-        "color": "#00e3ff",
+        "color": "#00ff7e",
         "loose": 5,
         "dead": true,
         "money": 3600,
@@ -763,7 +785,7 @@
         "chef": "Chabacks",
         "dead": true,
         "name": "gondor",
-        "color": "#093aff",
+        "color": "#0089f",
         "loose": 8,
         "money": 800,
         "total": 2800,
@@ -787,7 +809,7 @@
         "win": 14,
         "chef": "R8sseauu",
         "name": "gobelin",
-        "color": "#ff6f00",
+        "color": "#3300000",
         "loose": 3,
         "money": 13825,
         "total": 16825,
@@ -924,7 +946,7 @@
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639131228/La%20Guerre%20de%20l%27Eriador/imladris_ir0fo7.jpg",
       "map": 6,
       "name": "Fondcombe",
-      "color": "#3300000",
+      "color": "#00ff7e",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1-InsFIwSQQVfzvIyIIX14CiaMT6mO_-i?usp=sharing",
       "region": "eregion",
@@ -1463,7 +1485,7 @@
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126749/La%20Guerre%20de%20l%27Eriador/Hall_Thorin_smefwt.jpg",
       "map": 6,
       "name": "Hall de Thorin",
-      "color": "#3300000",
+      "color": "#FFFC00",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1j20SPgl5z3s6bWuxrEv-qBovP6d8BOI5?usp=sharing",
       "region": "lindon",
@@ -2106,7 +2128,7 @@
       "east": [],
       "name": "Les Montagnes Bleues",
       "west": [],
-      "color": "#3300000",
+      "color": "#FF6F00",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2135,7 +2157,7 @@
       "east": [],
       "name": "Umbar",
       "west": [],
-      "color": "#3300000",
+      "color": "#C500FF",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2188,7 +2210,7 @@
       "east": [],
       "name": "Orocarni",
       "west": [],
-      "color": "#3300000",
+      "color": "#FFFC00",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2387,7 +2409,7 @@
       "east": [],
       "name": "Gundabad",
       "west": [],
-      "color": "#3300000",
+      "color": "#FF3636",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -2466,7 +2488,7 @@
       "east": [],
       "name": "Minas Tirith",
       "west": [],
-      "color": "#3300000",
+      "color": "#0089F",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -3877,7 +3899,7 @@
       "east": [],
       "name": "Dol Guldur",
       "west": [],
-      "color": "#3300000",
+      "color": "#FFFFFF",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
@@ -4605,7 +4627,7 @@
         "east": [],
         "name": "Centre du Rohan",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -4651,7 +4673,7 @@
         "east": [],
         "name": "Grands-arpents",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -4697,7 +4719,7 @@
         "east": [],
         "name": "Hall de Thranduil",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#00ff7e",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -4743,7 +4765,7 @@
         "east": [],
         "name": "Rhosgobel",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -4789,7 +4811,7 @@
         "east": [],
         "name": "Carrock",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -4835,7 +4857,7 @@
         "east": [],
         "name": "Morthond",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -4881,7 +4903,7 @@
         "east": [],
         "name": "Pinath_Gellin",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -4927,7 +4949,7 @@
         "east": [],
         "name": "Erech",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -4973,7 +4995,7 @@
         "east": [],
         "name": "Emyn Duir",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5019,7 +5041,7 @@
         "east": [],
         "name": "Nord de la Foret Noire",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5065,7 +5087,7 @@
         "east": [],
         "name": "Barad Dur",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#FF3636",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5111,7 +5133,7 @@
         "east": [],
         "name": "Udûn",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5157,7 +5179,7 @@
         "east": [],
         "name": "Ephel Dúath",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5203,7 +5225,7 @@
         "east": [],
         "name": "Plateau de Gorgoroth",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5249,7 +5271,7 @@
         "east": [],
         "name": "Rhûn",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5295,7 +5317,7 @@
         "east": [],
         "name": "Steppes_Cendrees",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5341,7 +5363,7 @@
         "east": [],
         "name": "Mistrand",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5387,7 +5409,7 @@
         "east": [],
         "name": "Ered Lithui",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5433,7 +5455,7 @@
         "east": [],
         "name": "Kelepar",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5479,7 +5501,7 @@
         "east": [],
         "name": "Plaines d'Avari",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5525,7 +5547,7 @@
         "east": [],
         "name": "Agasha Dag",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5571,7 +5593,7 @@
         "east": [],
         "name": "Logathavuld",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5617,7 +5639,7 @@
         "east": [],
         "name": "Valée de l'Anduin",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5663,7 +5685,7 @@
         "east": [],
         "name": "Terre_Beornides",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5709,7 +5731,7 @@
         "east": [],
         "name": "Eryn_Lasgalen",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5755,7 +5777,7 @@
         "east": [],
         "name": "Greylin",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5801,7 +5823,7 @@
         "east": [],
         "name": "Haut_Anduin",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5847,7 +5869,7 @@
         "east": [],
         "name": "Pics_Gelees",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5893,7 +5915,7 @@
         "east": [],
         "name": "Tol Súlereb",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [
@@ -5985,7 +6007,7 @@
         "east": [],
         "name": "L’Ouestfolde",
         "west": [],
-        "color": "#ff6f00",
+        "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
         "north": [

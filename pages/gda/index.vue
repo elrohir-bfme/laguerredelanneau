@@ -485,7 +485,7 @@
                 bg-gray-900
                 border-2
                 rounded-md
-                border-orange-400
+                border-gray-400
                 h-4
                 w-4
                 md:h-8 md:w-8
@@ -493,14 +493,14 @@
                 justify-center
                 items-center
                 mr-2
-                focus-within:border-orange-500
+                focus-within:border-gray-500
               ">
                   <svg class="
                   fill-current
                   hidden
                   w-3
                   h-3
-                  text-orange-600
+                  text-gray-600
                   pointer-events-none
                 " version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
                     <g fill="none" fill-rule="evenodd">
@@ -511,7 +511,7 @@
                     </g>
                   </svg>
                 </div>
-                <label for="isengard" class="select-none text-orange-500 text-base md:text-lg">Isengard</label>
+                <label for="isengard" class="select-none text-gray-400 text-base md:text-lg">Isengard</label>
               </div>
 
               <div class="px-2 md:px-4">
@@ -10211,13 +10211,13 @@ export default {
             this.nbTerritoireRohan += 1;
             break;
 
-          case "#00e3ff":
-          case "#00E3FF":
+          case "#00ff7e":
+          case "#00FF7E":
             this.nbTerritoireElfe += 1;
             break;
 
-          case "#093aff":
-          case "#093AFF":
+          case "#0089f":
+          case "#0089F":
             this.nbTerritoireGondor += 1;
             break;
 
@@ -10388,13 +10388,13 @@ export default {
             this.nbTerritoireRohan += 1;
             break;
 
-          case "#00e3ff":
-          case "#00E3FF":
+          case "#00ff7e":
+          case "#00ff7e":
             this.nbTerritoireElfe += 1;
             break;
 
-          case "#093aff":
-          case "#093AFF":
+          case "#0089f":
+          case "#0089F":
             this.nbTerritoireGondor += 1;
             break;
 

@@ -2203,8 +2203,8 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
       "players": [],
       "adjacents": [
-        "Rhun5",
-        "Rhun7"
+        "Plaines_Avari",
+        "Logathavuld"
       ],
       "description": "L'Orocarni (aussi appelées les Montagnes rouges) étaient une chaîne de montagnes à l'extrême nord-est de la Terre du Milieu créé par les Valar après la destruction des Deux Lampes par Melkor."
     },
@@ -2229,7 +2229,7 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
       "players": [],
       "adjacents": [
-        "Rhun7",
+        "Logathavuld",
         "Carnen",
         "Lande_Dessechee",
         "Terre_Desolee"
@@ -2288,8 +2288,8 @@
       "players": [],
       "adjacents": [
         "Monts_Fer",
-        "Rhun7",
-        "Rhun6",
+        "Logathavuld",
+        "Agasha_Dag",
         "Dorwinion",
         "Terre_Desolee"
       ],
@@ -2347,8 +2347,8 @@
       "adjacents": [
         "Lande_Dessechee",
         "Nord_Foret_Noire",
-        "rhovanion2",
-        "rhovanion5"
+        "Eryn_Lasgalen",
+        "Pics_Gelees"
       ],
       "description": "Le nord de la plus grande forêt d'Arda est traversé par la grande route de l'est, cette dernière partant de l'Eriador pour se rendre a Erebor . Cette forêt serait hantée par des créatures sombres et étranges !"
     },
@@ -2402,8 +2402,8 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
       "players": [],
       "adjacents": [
-        "rhovanion3",
-        "rhovanion4"
+        "Greylin",
+        "Haut_Anduin"
       ],
       "description": "Ce sommet septentrional réalisait la jonction entre les Montagnes d’Angmar à l'ouest, les Montagnes Grises à l'est et enfin les Montagnes de Brume au sud."
     },
@@ -2455,8 +2455,8 @@
       "players": [],
       "adjacents": [
         "Andrast",
-        "Gondor2",
-        "Gondor1"
+        "Pinath_Gellin",
+        "Morthond"
       ],
       "description": "Anfalas était le nom donné à la côte du Gondor entre les embouchures du Lefnui et du Morthond."
     },
@@ -2843,7 +2843,7 @@
         "Lossarnach",
         "Lebennin",
         "Belfalas",
-        "Gondor1",
+        "Morthond",
         "Dol_Amroth"
       ],
       "description": "Le col de Tarlang était une arête rocheuse, empruntée par la route d'Erech à Pelargir, qui reliait les Montagnes Blanches au massif, composé de trois collines, qui séparait la plaine d'Erech du Lamedon."
@@ -3154,7 +3154,7 @@
         "Ouestemnet",
         "C_Rohan",
         "Edoras",
-        "Erech"
+        "Dimholt"
       ],
       "description": "La colline appelée Halifirien se dressait au cœur du Bois de Firien, non loin de la source du Glanhír, et était la plus élevée des sept Feux d’alarme du Gondor."
     },
@@ -3179,7 +3179,7 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
       "players": [],
       "adjacents": [
-        "Erech",
+        "Dimholt",
         "Halifirien",
         "C_Rohan",
         "Dunharrow"
@@ -3210,7 +3210,7 @@
         "Edoras",
         "Ouestfolde",
         "Gouffre_Helm",
-        "Erech"
+        "Dimholt"
       ],
       "description": "Dunharrow était une place forte du Rohan située sur le plateau du Firienfeld, dans les Montagnes Blanches au sud d'Edoras."
     },
@@ -3843,11 +3843,11 @@
       ],
       "description": "Le Drúwaith Iaur était la région comprise entre les fleuves Isen et Lefnui, à l'ouest du Gondor."
     },
-    "Erech": {
+    "Dimholt": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Erech.jpg",
       "map": 2,
       "east": [],
-      "name": "Erech",
+      "name": "Dimholt",
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
@@ -3867,7 +3867,7 @@
         "Halifirien",
         "Edoras",
         "Dunharrow",
-        "Gondor3"
+        "Erech"
       ],
       "description": "La pierre noire d'Erech se dressait noire au sommet d'une colline, non loin du lieu où la rivière Morthond prenait sa source."
     },
@@ -3924,7 +3924,7 @@
         "Baie_Est",
         "Esgaroth",
         "Emyn_Duir",
-        "rhovanion1",
+        "Terre_Beornides",
         "Rhosgobel"
       ],
       "description": "Morceau mystérieux de la foret de vert bois, de nombreux enchantements et sortilèges protègent ces vieux sentiers, quiconque le quitte ne le retrouvera pas ! depuis le milieu du troisième âge Sauron corromps les bois, des araignées y pullule les elfes toutefois se battent pour protéger leurs terres ancestrales."
@@ -4031,7 +4031,7 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
       "players": [],
       "adjacents": [
-        "Rhun3",
+        "Ered_Lithui",
         "Dorwinion",
         "Valee_Celduin",
         "Terres_Brunes",
@@ -4125,7 +4125,7 @@
         "Montagne_Destin",
         "Barad_Dur",
         "Khand",
-        "Rhun1"
+        "Steppes_Cendrees"
       ],
       "description": "Le Lithlad était une région de plaines du Mordor. La position exacte de cette région reste cependant vague."
     },
@@ -4829,11 +4829,11 @@
         ],
         "description": "Le Carroc était un immense rocher, sur l'Anduin, avec un grand escalier qui menait à l'espace plat au sommet et descendait jusqu'au fleuve où un gué permettait de le traverser du côté est."
       },
-      "Gondor1": {
+      "Morthond": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Carrock.jpg",
         "map": 2,
         "east": [],
-        "name": "Gondor1",
+        "name": "Morthond",
         "west": [],
         "color": "#ff6f00",
         "fight": "hidden",
@@ -4875,11 +4875,11 @@
         ],
         "description": "Le Carroc était un immense rocher, sur l'Anduin, avec un grand escalier qui menait à l'espace plat au sommet et descendait jusqu'au fleuve où un gué permettait de le traverser du côté est."
       },
-      "Gondor2": {
+      "Pinath_Gellin": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Carrock.jpg",
         "map": 2,
         "east": [],
-        "name": "Gondor2",
+        "name": "Pinath_Gellin",
         "west": [],
         "color": "#ff6f00",
         "fight": "hidden",
@@ -4921,11 +4921,11 @@
         ],
         "description": "Le Carroc était un immense rocher, sur l'Anduin, avec un grand escalier qui menait à l'espace plat au sommet et descendait jusqu'au fleuve où un gué permettait de le traverser du côté est."
       },
-      "Gondor3": {
+      "Erech": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Carrock.jpg",
         "map": 2,
         "east": [],
-        "name": "Gondor3",
+        "name": "Erech",
         "west": [],
         "color": "#ff6f00",
         "fight": "hidden",
@@ -5289,11 +5289,11 @@
         ],
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
       },
-      "Rhun1": {
+      "Steppes_Cendrees": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
         "map": 2,
         "east": [],
-        "name": "Rhûn1",
+        "name": "Steppes_Cendrees",
         "west": [],
         "color": "#ff6f00",
         "fight": "hidden",
@@ -5335,7 +5335,7 @@
         ],
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
       },
-      "Rhun2": {
+      "Mistrand": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
         "map": 2,
         "east": [],
@@ -5381,7 +5381,7 @@
         ],
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
       },
-      "Rhun3": {
+      "Ered_Lithui": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
         "map": 2,
         "east": [],
@@ -5427,7 +5427,7 @@
         ],
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
       },
-      "Rhun4": {
+      "Kelepar": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
         "map": 2,
         "east": [],
@@ -5473,7 +5473,7 @@
         ],
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
       },
-      "Rhun5": {
+      "Plaines_Avari": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
         "map": 2,
         "east": [],
@@ -5519,7 +5519,7 @@
         ],
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
       },
-      "Rhun6": {
+      "Agasha_Dag": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
         "map": 2,
         "east": [],
@@ -5565,7 +5565,7 @@
         ],
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
       },
-      "Rhun7": {
+      "Logathavuld": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
         "map": 2,
         "east": [],
@@ -5657,11 +5657,11 @@
         ],
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },
-      "rhovanion1": {
+      "Terre_Beornides": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",
         "map": 2,
         "east": [],
-        "name": "rhovanion1",
+        "name": "Terre_Beornides",
         "west": [],
         "color": "#ff6f00",
         "fight": "hidden",
@@ -5703,11 +5703,11 @@
         ],
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },
-      "rhovanion2": {
+      "Eryn_Lasgalen": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",
         "map": 2,
         "east": [],
-        "name": "rhovanion2",
+        "name": "Eryn_Lasgalen",
         "west": [],
         "color": "#ff6f00",
         "fight": "hidden",
@@ -5749,11 +5749,11 @@
         ],
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },
-      "rhovanion3": {
+      "Greylin": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",
         "map": 2,
         "east": [],
-        "name": "rhovanion3",
+        "name": "Greylin",
         "west": [],
         "color": "#ff6f00",
         "fight": "hidden",
@@ -5795,11 +5795,11 @@
         ],
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },
-      "rhovanion4": {
+      "Haut_Anduin": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",
         "map": 2,
         "east": [],
-        "name": "rhovanion4",
+        "name": "Haut_Anduin",
         "west": [],
         "color": "#ff6f00",
         "fight": "hidden",
@@ -5841,11 +5841,11 @@
         ],
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },
-      "rhovanion5": {
+      "Pics_Gelees": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",
         "map": 2,
         "east": [],
-        "name": "rhovanion5",
+        "name": "Pics_Gelees",
         "west": [],
         "color": "#ff6f00",
         "fight": "hidden",

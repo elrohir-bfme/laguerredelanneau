@@ -4760,7 +4760,7 @@
         "description": "Dans ces halls inspirés de ceux de Menegroth en Doriath règne le grand roi sylvestre Thranduil . Ils sont traversé par une rivière souterraine par laquelle s'échapperont la compagnie de Thorin Écu de chêne ."
       },
       "Rhosgobel": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Hall_Thranduil.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1662929337/La%20Guerre%20de%20l%27Eriador/unknown_1_qddoll.png",
         "map": 2,
         "east": [],
         "name": "Rhosgobel",
@@ -4990,7 +4990,7 @@
         "description": "Le Carroc était un immense rocher, sur l'Anduin, avec un grand escalier qui menait à l'espace plat au sommet et descendait jusqu'au fleuve où un gué permettait de le traverser du côté est."
       },
       "Emyn_Duir": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Carrock.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1662929306/La%20Guerre%20de%20l%27Eriador/unknown_fguaf0.png",
         "map": 2,
         "east": [],
         "name": "Emyn Duir",
@@ -5128,7 +5128,7 @@
         "description": "Vers l'an 1000 du Deuxième Âge, Sauron, soucieux de la puissance croissante de Númenor, se retrancha en Mordor et commença la construction de Barad-dûr, achevée six cents ans plus tard."
       },
       "Udun": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Barad_Dur.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1662928918/La%20Guerre%20de%20l%27Eriador/udun_nx3gvl.png",
         "map": 2,
         "east": [],
         "name": "Udûn",
@@ -5174,7 +5174,7 @@
         "description": "La vallée d'Udûn, très profonde et étroite, se trouvait au nord-ouest du Mordor, gardée au sud par la Gueule-de-Fer et Durthang et au nord par la Morannon. Elle fut probablement nommée ainsi par Sauron en l'honneur de la première forteresse de Morgoth, son ancien maître, Utumno, ou Udûn en sindarin."
       },
       "Ephel_Duath": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Barad_Dur.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1662928865/La%20Guerre%20de%20l%27Eriador/Ephel_Duath_lv08ac.webp",
         "map": 2,
         "east": [],
         "name": "Ephel Dúath",
@@ -5220,7 +5220,7 @@
         "description": "Rempart naturel pour le royaume de Sauron, l'Ephel Dúath était parsemé de forteresses jadis construites par les Gondoriens pour surveiller le pays"
       },
       "Plateau_Gorgoroth": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Barad_Dur.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1662929247/La%20Guerre%20de%20l%27Eriador/ayoub-ziani-mordor_jurq35.jpg",
         "map": 2,
         "east": [],
         "name": "Plateau de Gorgoroth",
@@ -5447,7 +5447,7 @@
           "Siragalë",
           "Egenyar"
         ],
-        "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
+        "description": "Ered Lithui étaient l'une des deux chaînes de montagnes qui bornaient le Mordor. Celle-ci formait la frontière nord et rejoignait Ephel Dúath à l'ouest, délimitant la Morannon, l'entrée du Mordor, et la région d'Udûn."
       },
       "Kelepar": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
@@ -5585,7 +5585,7 @@
           "Siragalë",
           "Egenyar"
         ],
-        "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
+        "description": "Agasha Dag est une région située à l'est de la Terre du Milieu , dans la région du Rhun . Il est traversé par de grandes forêts tempérées et des forêts de feuillus."
       },
       "Logathavuld": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
@@ -5772,7 +5772,7 @@
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },
       "Greylin": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1662928990/La%20Guerre%20de%20l%27Eriador/Greylin_simoi1.png",
         "map": 2,
         "east": [],
         "name": "Greylin",
@@ -5815,7 +5815,7 @@
           "Siragalë",
           "Egenyar"
         ],
-        "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
+        "description": "Le Greylin est une rivière à l'extrême nord-ouest du Rhovanion. Il prend sa source dans les Ered Mithrin et coule vers le sud à travers le Rhovanion.. L'ancienne capitale des Éothéod, Framsburg, a été construite au a proximité de cette rivière."
       },
       "Haut_Anduin": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",

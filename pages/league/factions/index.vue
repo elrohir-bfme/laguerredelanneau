@@ -133,6 +133,7 @@ export default {
 
         const query = qs.stringify({
             fields: '*',
+            sort: ['date:desc'],
             populate: {
                 populate: '*',
                 replays: {
@@ -170,7 +171,7 @@ export default {
                         if(g.attributes.replays && g.attributes.replays.length > 0){
                             g.attributes.replays.map(r => {
                                 if((r.faction_win.data && r.faction_win.data.attributes && r.faction_win.data.attributes.name) === f.attributes.name) {
-                                    let faction = r.faction_lose.data.attributes.name;
+                                    let faction = r.faction_lose?.data?.attributes?.name;
                                     typeof newObject.statsFactionWin[faction] === 'undefined' ? 
                                     newObject.statsFactionWin[faction] = 1 : 
                                     newObject.statsFactionWin[faction]++;
@@ -178,7 +179,7 @@ export default {
                                 }
 
                                 if((r.faction_lose.data && r.faction_lose.data.attributes && r.faction_lose.data.attributes.name) === f.attributes.name) {
-                                    let faction = r.faction_win.data.attributes.name;
+                                    let faction = r.faction_win.data?.attributes?.name;
                                     typeof newObject.statsFactionLose[faction] === 'undefined' ? 
                                     newObject.statsFactionLose[faction] = 1 : 
                                     newObject.statsFactionLose[faction]++;

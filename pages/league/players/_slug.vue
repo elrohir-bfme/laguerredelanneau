@@ -82,21 +82,28 @@
                     </div>
                     <div class="flex-grow pl-6">
                         <h2 class="tracking-widest text-xl title-font font-medium text-indigo-500 mb-1">{{replay.map.data ? replay.map.data.attributes.name : "Map inconnu"}}</h2>
-                        <div class="text-lg text-left text-white">
+                        <div v-if="replay && replay.faction_win && replay.faction_win.data && replay.faction_win.data.attributes.name" class="text-lg text-left text-white">
                             {{ $t('league.win') }} : {{replay.player_win.data && replay.player_win.data.attributes.name}}
                             (<span :class="`text-${factionList.find(o => o.name === (replay.faction_win.data && replay.faction_win.data.attributes.name)).color}-500`">
                                 {{replay.faction_win.data && replay.faction_win.data.attributes.name}}
                             </span>)
                         </div>
+                        <div v-else class="text-lg text-left text-white">
+                            undefined
+                        </div>
 
-                        <div class="text-lg text-left text-white">
+                        <div v-if="replay && replay.faction_lose && replay.faction_lose.data && replay.faction_lose.data.attributes.name" class="text-lg text-left text-white">
                             {{ $t('league.lose') }} : {{replay.player_lose.data && replay.player_lose.data.attributes.name}}
                             (<span :class="`text-${factionList.find(o => o.name === (replay.faction_lose.data && replay.faction_lose.data.attributes.name)).color}-500`">
                             {{replay.faction_lose.data && replay.faction_lose.data.attributes.name}}
                             </span>)
                         </div>
+
+                        <div v-else class="text-lg text-left text-white">
+                            undefined
+                        </div>
                         
-                        <div class="text-lg text-left text-white inline-block">
+                        <div v-if="replay && replay.data && replay.data.attributes && replay.data.attributes.url" class="text-lg text-left text-white inline-block">
                             Replay : 
                             <a target="_blank" :href="`https://api.laterredumilieu.fr${replay.replay.data.attributes.url}`" class="bg-orange-900 hover:bg-orange-800 text-white font-bold py-2 px-2 rounded inline-flex items-center">
                             <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
@@ -123,7 +130,7 @@ export default {
     data() {
         return {
             loading: false,
-            sortType: true,
+            sortType: false,
             player: [],
             replaysGame: [],
             newPlayer: null,
@@ -171,6 +178,7 @@ export default {
         let player = await $strapi.findOne('players', params.slug, { populate: '*'})
         let loading = false;
         const query = qs.stringify({
+            sort: ['date:desc'],
             fields: '*',
             populate: {
                 populate: '*',

@@ -442,7 +442,7 @@
           "win": 2,
           "lose": 1,
           "name": "Toinou",
-          "faction": 9,
+          "faction": 2,
           "handicap": 1
         }
       ],
@@ -741,50 +741,11 @@
       "description": "Le Sirannon coulait autrefois d'une source souterraine près du côté ouest de la Moria et longeait la route qui menait autrefois à Ost-in-Edhil. Il a été endigué à une date inconnue dans le dernier millénaire du troisième âge, fermant les portes de Durin aux terres voisines."
     },
     "factions": {
-      "elfe": {
-        "id": 4,
-        "win": 5,
-        "chef": "Lexa",
-        "name": "elfe",
-        "color": "#00ff7e",
-        "loose": 5,
-        "dead": true,
-        "money": 3600,
-        "total": 5200,
-        "capital": "Havres Gris",
-        "tainted_count": 0
-      },
-      "nain": {
-        "id": 5,
-        "win": 2,
-        "chef": "Edvald",
-        "name": "nain",
-        "dead": true,
-        "color": "#fffc00",
-        "loose": 4,
-        "money": 2100,
-        "total": 3300,
-        "capital": "Hall de Thorin",
-        "tainted_count": 0
-      },
-      "angmar": {
-        "id": 9,
-        "win": 9,
-        "chef": "Toinou",
-        "name": "angmar",
-        "color": "#c500ff",
-        "loose": 6,
-        "money": 6050,
-        "total": 10050,
-        "capital": "Carn Dum",
-        "tainted_count": 1
-      },
-      "men": {
-        "id": 2,
+      "homme": {
+        "id": 1,
         "win": 1,
         "chef": "Chabacks",
-        "dead": true,
-        "name": "gondor",
+        "name": "homme",
         "color": "#0089f",
         "loose": 8,
         "money": 800,
@@ -792,8 +753,32 @@
         "capital": "Fornost",
         "tainted_count": 0
       },
+      "elfe": {
+        "id": 2,
+        "win": 5,
+        "chef": "Lexa",
+        "name": "elfe",
+        "color": "#00ff7e",
+        "loose": 5,
+        "money": 3600,
+        "total": 5200,
+        "capital": "Havres Gris",
+        "tainted_count": 0
+      },
+      "nain": {
+        "id": 3,
+        "win": 2,
+        "chef": "Edvald",
+        "name": "nain",
+        "color": "#fffc00",
+        "loose": 4,
+        "money": 2100,
+        "total": 3300,
+        "capital": "Hall de Thorin",
+        "tainted_count": 0
+      },
       "mordor": {
-        "id": 6,
+        "id": 4,
         "win": 8,
         "chef": "Biscuit|_KD",
         "name": "mordor",
@@ -804,8 +789,20 @@
         "capital": "Zagh Kala",
         "tainted_count": 1
       },
+      "isengard": {
+        "id": 5,
+        "win": 7,
+        "chef": "Gimli",
+        "name": "isengard",
+        "color": "#ffffff",
+        "loose": 3,
+        "money": 7325,
+        "total": 11125,
+        "capital": "Isengard",
+        "tainted_count": 1
+      },
       "gobelin": {
-        "id": 8,
+        "id": 6,
         "win": 14,
         "chef": "R8sseauu",
         "name": "gobelin",
@@ -816,16 +813,16 @@
         "capital": "Gobelinville",
         "tainted_count": 1
       },
-      "isengard": {
+      "angmar": {
         "id": 7,
-        "win": 7,
-        "chef": "Gimli",
-        "name": "isengard",
-        "color": "#ffffff",
-        "loose": 3,
-        "money": 7325,
-        "total": 11125,
-        "capital": "Isengard",
+        "win": 9,
+        "chef": "Toinou",
+        "name": "angmar",
+        "color": "#c500ff",
+        "loose": 6,
+        "money": 6050,
+        "total": 10050,
+        "capital": "Carn Dum",
         "tainted_count": 1
       }
     },
@@ -1141,7 +1138,7 @@
           "win": 2,
           "lose": 1,
           "name": "Oknar",
-          "faction": 9,
+          "faction": 2,
           "handicap": 0
         }
       ],
@@ -1909,7 +1906,7 @@
           "win": 3,
           "lose": 0,
           "name": "Loken",
-          "faction": 8,
+          "faction": 4,
           "handicap": 0
         }
       ],
@@ -4704,7 +4701,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -4712,7 +4709,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -4779,7 +4776,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -4787,7 +4784,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -4825,7 +4822,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -4833,7 +4830,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -4871,7 +4868,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -4879,7 +4876,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -4917,7 +4914,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -4925,7 +4922,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -4963,7 +4960,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -4971,7 +4968,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5009,7 +5006,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5017,7 +5014,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5055,7 +5052,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5063,7 +5060,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5101,7 +5098,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5109,7 +5106,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5147,7 +5144,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5155,7 +5152,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5193,7 +5190,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5201,7 +5198,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5239,7 +5236,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5247,7 +5244,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5285,7 +5282,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5293,7 +5290,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5331,7 +5328,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5339,7 +5336,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5377,7 +5374,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5385,7 +5382,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5452,7 +5449,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5460,7 +5457,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5498,7 +5495,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5506,7 +5503,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5544,7 +5541,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5552,7 +5549,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5590,7 +5587,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5598,7 +5595,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5665,7 +5662,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5673,7 +5670,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5711,7 +5708,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5719,7 +5716,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5757,7 +5754,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5765,7 +5762,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5803,7 +5800,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5811,7 +5808,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5849,7 +5846,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5857,7 +5854,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5895,7 +5892,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5903,7 +5900,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5941,7 +5938,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5949,7 +5946,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -5987,7 +5984,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -5995,7 +5992,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],
@@ -6033,7 +6030,7 @@
             "win": 2,
             "lose": 1,
             "name": "Ragzus",
-            "faction": 9,
+            "faction": 2,
             "handicap": 0
           },
           {
@@ -6041,7 +6038,7 @@
             "win": 0,
             "lose": 0,
             "name": "Skyzomyke",
-            "faction": 8,
+            "faction": 4,
             "handicap": 0
           }
         ],

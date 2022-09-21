@@ -28,14 +28,9 @@
 
 
     <div class="flex flex-wrap">
-      <!-- <div class="flex-none w-16 justify-center content-center">
-    <button @click="beforeTour()" class="flex bg-blue-500 rounded-full font-bold text-white px-4 py-4 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">
-        <svg viewBox="0 0 32 32" class="inline w-6 fill-current text-white" aria-hidden="true"><path d="M26.025 14.496l-14.286-.001 6.366-6.366L15.979 6 5.975 16.003 15.971 26l2.129-2.129-6.367-6.366h14.29z"/></svg>
-    </button>
-  </div> -->
       <div class="flex-grow">
         <div id="svg-container" class="map" :style="btnStyles">
-          <ModalGDE class="lg:flex md:flex" v-if="isShowModal && !loading" @close="toggleModal" :map="map"
+          <ModalGDA class="lg:flex md:flex" v-if="isShowModal && !loading" @close="toggleModal" :map="map"
             :region="region" @update-info="updateInfo" />
 
           <div class="absolute top-2 left-2" :class="isShowModal && 'hidden lg:block md:block'">
@@ -710,7 +705,7 @@
                 }
               </style>
             </defs>
-            <image width="5600" height="3908" xlink:href="~assets/gda_v3/map.png" transform="matrix(1 0 0 1 0 0)" />
+            <image width="5600" height="3908" xlink:href="~assets/new_gda/map.png" transform="matrix(1 0 0 1 0 0)" />
             <g id="Calque_2" data-name="Calque 2">
               <g id="Calque_1-2" data-name="Calque 1">
                 <path :id="map.La_Grande_Mer && map.La_Grande_Mer.name"
@@ -9470,19 +9465,19 @@
                 <path class="cls-10"
                   d="M1705.27,1303.66h-.68a.41.41,0,0,0-.41.41v4.5h-3.65v-4.5a.41.41,0,0,0-.41-.41h-3.3a.41.41,0,0,0-.41.41v4.5h-3.65v-4.5a.41.41,0,0,0-.41-.41h-3.3a.41.41,0,0,0-.42.41v11.72a1.88,1.88,0,0,0,1.88,1.88h2.74l-4.61,25.87a1.87,1.87,0,0,0,.41,1.54,1.89,1.89,0,0,0,1.44.67H1722a1.89,1.89,0,0,0,1.44-.67,1.87,1.87,0,0,0,.41-1.54l-4.61-25.87H1722a1.88,1.88,0,0,0,1.88-1.88v-11.72a.41.41,0,0,0-.42-.41h-3.3a.41.41,0,0,0-.41.41v4.5h-3.64v-4.5a.41.41,0,0,0-.42-.41h-3.3a.41.41,0,0,0-.41.41v4.5h-3.65v-4.5a.41.41,0,0,0-.41-.41h-.68m3.5,23.4v8.14h-8.94v-8.14a4.47,4.47,0,1,1,8.94,0Z" />
                 <image width="128" height="127" transform="translate(2183.59 262.94) scale(0.71)"
-                  xlink:href="~assets/gda_v3/factions/angmar.webp" />
+                  xlink:href="~assets/new_gda/factions/angmar.webp" />
                 <image width="600" height="600" transform="translate(2534.11 822.63) scale(0.15)"
-                  xlink:href="~assets/gda_v3/factions/elfe.webp" />
+                  xlink:href="~assets/new_gda/factions/elfe.webp" />
                 <image width="128" height="127" transform="translate(2573.24 1258.62) scale(0.86)"
-                  xlink:href="~assets/gda_v3/factions/gobelin.webp" />
+                  xlink:href="~assets/new_gda/factions/gobelin.webp" />
                 <image width="128" height="127" transform="translate(2375.23 1646.95) scale(0.97)"
-                  xlink:href="~assets/gda_v3/factions/isengard.webp" />
+                  xlink:href="~assets/new_gda/factions/isengard.webp" />
                 <image width="128" height="127" transform="translate(3253.65 2229.71) scale(0.8)"
-                  xlink:href="~assets/gda_v3/factions/homme.webp" />
+                  xlink:href="~assets/new_gda/factions/homme.webp" />
                 <image width="568" height="568" transform="translate(4403.81 1946.67) scale(0.21)"
-                  xlink:href="~assets/gda_v3/factions/mordor.webp" />
+                  xlink:href="~assets/new_gda/factions/mordor.webp" />
                 <image width="128" height="127" transform="translate(929.1 512.62) scale(0.98)"
-                  xlink:href="~assets/gda_v3/factions/nain.webp" />
+                  xlink:href="~assets/new_gda/factions/nain.webp" />
                 <circle class="cls-9" cx="1828.01" cy="650.91" r="24.5" />
                 <path class="cls-10"
                   d="M1827.49,638H1827a.29.29,0,0,0-.28.28v3.06h-2.48v-3.06a.28.28,0,0,0-.28-.28h-2.24a.28.28,0,0,0-.28.28v3.06H1819v-3.06a.28.28,0,0,0-.28-.28h-2.24a.28.28,0,0,0-.28.28v8a1.27,1.27,0,0,0,1.27,1.28h1.87l-3.14,17.58a1.28,1.28,0,0,0,1.26,1.5h21.41a1.3,1.3,0,0,0,1-.46,1.26,1.26,0,0,0,.27-1L1837,647.57h1.86a1.28,1.28,0,0,0,1.28-1.28v-8a.29.29,0,0,0-.28-.28h-2.25a.29.29,0,0,0-.28.28v3.06h-2.47v-3.06a.29.29,0,0,0-.29-.28h-2.24a.29.29,0,0,0-.28.28v3.06h-2.47v-3.06a.29.29,0,0,0-.29-.28h-.46m2.38,15.91v5.53h-6.08V654a3,3,0,1,1,6.08,0Z" />
@@ -9597,9 +9592,9 @@
     </div>
 
 
-    <Hud class="hidden lg:block" v-if="!loading && !displayHUDValue" :map="map" :region="region" />
+    <HudGDA class="hidden lg:block" v-if="!loading && !displayHUDValue" :map="map" :region="region" />
 
-    <Hud2 class="hidden lg:block" v-if="!loading && !displayHUDValue" :map="map" :region="region" />
+    <Hud2GDA class="hidden lg:block" v-if="!loading && !displayHUDValue" :map="map" :region="region" />
 
 
     <br /><br />
@@ -9654,7 +9649,7 @@
           hover:scale-90
         ">
         <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
-          <img :src="require(`~/assets/gda_v3/factions/${faction.faction.name}.webp`)" alt="" class="h-full w-full" />
+          <img :src="require(`~/assets/new_gda/factions/${faction.faction.name}.webp`)" alt="" class="h-full w-full" />
         </div>
 
         <h2 :class="`text-${color(faction.id).color}-300`" class="mt-4 font-bold text-xl">
@@ -9764,7 +9759,7 @@
 
 <script>
 export default {
-  layout: "gde",
+  layout: "gda",
   head() {
     return {
       title: "La Bataille pour la Terre du Milieu",
@@ -9856,7 +9851,7 @@ export default {
       nbTerritoireArnor: 0,
       nbTerritoireRohan: 0,
       nbTerritoireElfe: 0,
-      nbTerritoireGondor: 0,
+      nbTerritoireHomme: 0,
       nbTerritoireNain: 0,
       nbTerritoireMordor: 0,
       nbTerritoireIsengard: 0,
@@ -9865,7 +9860,7 @@ export default {
       nbPlayerArnor: 0,
       nbPlayerRohan: 0,
       nbPlayerElfe: 0,
-      nbPlayerGondor: 0,
+      nbPlayerHomme: 0,
       nbPlayerNain: 0,
       nbPlayerMordor: 0,
       nbPlayerIsengard: 0,
@@ -10042,7 +10037,7 @@ export default {
     getInfo(e) {
       console.log(e.target.id, e.target.getAttribute("aria-valuetext"));
       this.title = e.target.id;
-      this.region = e.target.getAttribute("aria-valuetext");
+      this.region = e.target.getAttribute("aria-valuetext") ? e.target.getAttribute("aria-valuetext") : "";
     },
     toggleModal(e) {
       if (e && e.target.getAttribute("aria-valuetext")) {
@@ -10055,22 +10050,18 @@ export default {
     color(id) {
       switch (id) {
         case 1:
-          return { color: "indigo", code: "600", codeHover: "700", codeHover2: "800"};
-        case 2:
           return { color: "blue", code: "600", codeHover: "700", codeHover2: "800"};
-        case 3:
+        case 2:
           return { color: "green", code: "600", codeHover: "700", codeHover2: "800"};
-        case 4:
-          return { color: "teal", code: "600", codeHover: "700", codeHover2: "800"};
-        case 5:
+        case 3:
           return { color: "yellow", code: "600", codeHover: "700", codeHover2: "800"};
-        case 6:
+        case 4:
           return { color: "red", code: "600", codeHover: "700", codeHover2: "800"};
-        case 7:
+        case 5:
           return { color: "gray", code: "700", codeHover: "800", codeHover2: "900"};
-        case 8:
+        case 6:
           return { color: "orange", code: "600", codeHover: "700", codeHover2: "800"};
-        case 9:
+        case 7:
           return { color: "purple", code: "600", codeHover: "700", codeHover2: "800"};
         default:
           return { color: "black", code: "700", codeHover: "800", codeHover2: "900"};
@@ -10079,46 +10070,38 @@ export default {
     territoires(id) {
       switch (id) {
         case 1:
-          return this.nbTerritoireArnor;
+          return this.nbTerritoireHomme;
         case 2:
-          return this.nbTerritoireGondor;
-        case 3:
-          return this.nbTerritoireRohan;
-        case 4:
           return this.nbTerritoireElfe;
-        case 5:
+        case 3:
           return this.nbTerritoireNain;
-        case 6:
+        case 4:
           return this.nbTerritoireMordor;
-        case 7:
+        case 5:
           return this.nbTerritoireIsengard;
-        case 8:
+        case 6:
           return this.nbTerritoireGobelin;
-        case 9:
+        case 7:
           return this.nbTerritoireAngmar;
         default:
-          return this.nbTerritoireArnor;
+          return this.nbTerritoireHomme;
       }
     },
     joueurs(id) {
       switch (id) {
         case 1:
-          return this.nbPlayerArnor;
+          return this.nbPlayerHomme;
         case 2:
-          return this.nbPlayerGondor;
-        case 3:
-          return this.nbPlayerRohan;
-        case 4:
           return this.nbPlayerElfe;
-        case 5:
+        case 3:
           return this.nbPlayerNain;
-        case 6:
+        case 4:
           return this.nbPlayerMordor;
-        case 7:
+        case 5:
           return this.nbPlayerIsengard;
-        case 8:
+        case 6:
           return this.nbPlayerGobelin;
-        case 9:
+        case 7:
           return this.nbPlayerAngmar;
         default:
           return this.nbPlayerArnor;
@@ -10127,43 +10110,26 @@ export default {
     img(id) {
       switch (id) {
         case 1:
-          return "indigo";
-        case 2:
           return "blue";
-        case 3:
+        case 2:
           return "green";
-        case 4:
-          return "teal";
-        case 5:
+        case 3:
           return "yellow";
-        case 6:
+        case 4:
           return "red";
-        case 7:
+        case 5:
           return "gray";
-        case 8:
+        case 6:
           return "orange";
-        case 9:
+        case 7:
           return "purple";
         default:
           return "black";
       }
     },
     updateMap() {
-      console.log(this.map, "THIS MAP")
-
-      this.scoreBien = 0;
-      this.scoreMal = 0;
-
       let objArray = []
       Object.keys(this.map.factions).forEach(key =>  {
-        console.log(this.map.factions[key].id)
-        if(this.map.factions[key].id == 6 || this.map.factions[key].id == 7 || this.map.factions[key].id == 8 || this.map.factions[key].id == 9)
-        {
-          this.scoreMal += this.map.factions[key].total
-          } else {
-          this.scoreBien += this.map.factions[key].total 
-        }
-
           objArray.push({
           name: key,
           faction: this.map.factions[key],
@@ -10176,19 +10142,15 @@ export default {
 
       this.result = this.map.results;
 
-      this.nbTerritoireArnor= 0;
-      this.nbTerritoireRohan= 0;
+      this.nbTerritoireHomme= 0;
       this.nbTerritoireElfe= 0;
-      this.nbTerritoireGondor= 0;
       this.nbTerritoireNain= 0;
       this.nbTerritoireMordor= 0;
       this.nbTerritoireIsengard= 0;
       this.nbTerritoireGobelin= 0;
       this.nbTerritoireAngmar= 0;
-      this.nbPlayerArnor= 0;
-      this.nbPlayerRohan= 0;
+      this.nbPlayerHomme= 0;
       this.nbPlayerElfe= 0;
-      this.nbPlayerGondor= 0;
       this.nbPlayerNain= 0;
       this.nbPlayerMordor= 0;
       this.nbPlayerIsengard= 0;
@@ -10202,15 +10164,6 @@ export default {
         if (!obj.hasOwnProperty(prop)) continue;
 
         switch (obj[prop]) {
-          case "#ff85ee":
-          case "#FF85EE":
-            this.nbTerritoireArnor += 1;
-            break;
-          case "#0bff00":
-          case "#0BFF00":
-            this.nbTerritoireRohan += 1;
-            break;
-
           case "#00ff7e":
           case "#00FF7E":
             this.nbTerritoireElfe += 1;
@@ -10218,7 +10171,7 @@ export default {
 
           case "#0089f":
           case "#0089F":
-            this.nbTerritoireGondor += 1;
+            this.nbTerritoireHomme += 1;
             break;
 
           case "#fffc00":
@@ -10254,12 +10207,8 @@ export default {
         let obj2 = JSON.parse(JSON.stringify(obj["players"]));
         for (var player in obj2) {
           switch (obj2[player]["faction"]) {
-            case 1:
-              this.nbPlayerArnor += 1;
-              this.nbPlayers += 1;
-              break;
             case 2:
-              this.nbPlayerGondor += 1;
+              this.nbPlayerHomme += 1;
               this.nbPlayers += 1;
               break;
             case 3:
@@ -10316,7 +10265,7 @@ export default {
     //   "https://api.npoint.io/7a210a01331f3c385ed7"
     // );
 
-    let map1 = require(`~/assets/gda_v3/map.json`);
+    let map1 = require(`~/assets/new_gda/map.json`);
 
     // let map2 = await this.$http.$get(
     //   "https://api.npoint.io/900d4d348871ff3c6841"
@@ -10329,18 +10278,25 @@ export default {
     this.map = map1
 
 
-      this.loading = false;
+    this.loading = false;
+
+    console.log(map1, map1.factions, map1["factions"])
+
+    let factions = map1.factions
+
+    console.log(factions)
 
     // let factions = await this.$http.$get(
     //   "https://api.npoint.io/7a210a01331f3c385ed7/factions"
     // ); //API
 
-
+    let time = map1.time
 
     // let time = await this.$http.$get(
     //   "https://api.npoint.io/7a210a01331f3c385ed7/time"
     // ); //API
 
+    this.result = map1.results
     // this.result = await this.$http.$get(
     //   "https://api.npoint.io/7a210a01331f3c385ed7/results"
     // ); //API
@@ -10353,23 +10309,15 @@ export default {
 
     let objArray = []
     Object.keys(factions).forEach(key =>  {
-      console.log(factions[key].id)
-      if(factions[key].id == 6 || factions[key].id == 7 || factions[key].id == 8 || factions[key].id == 9)
-      {
-        this.scoreMal += factions[key].total
-        } else {
-        this.scoreBien += factions[key].total 
-       }
-
+      console.log(key, "key")
         objArray.push({
         name: key,
         faction: factions[key],
         id: factions[key].id
       })
-    
     });
 
-    this.factions = objArray.sort((a, b) => a.id - b.id);
+    this.factions = objArray.sort((a, b) => b.id - a.id);
 
 
     for (var key in this.map) {
@@ -10379,23 +10327,14 @@ export default {
         if (!obj.hasOwnProperty(prop)) continue;
 
         switch (obj[prop]) {
-          case "#ff85ee":
-          case "#FF85EE":
-            this.nbTerritoireArnor += 1;
-            break;
-          case "#0bff00":
-          case "#0BFF00":
-            this.nbTerritoireRohan += 1;
+          case "#0089f":
+          case "#0089F":
+            this.nbTerritoireHomme += 1;
             break;
 
           case "#00ff7e":
           case "#00ff7e":
             this.nbTerritoireElfe += 1;
-            break;
-
-          case "#0089f":
-          case "#0089F":
-            this.nbTerritoireGondor += 1;
             break;
 
           case "#fffc00":
@@ -10432,38 +10371,30 @@ export default {
         for (var player in obj2) {
           switch (obj2[player]["faction"]) {
             case 1:
-              this.nbPlayerArnor += 1;
+              this.nbPlayerHomme += 1;
               this.nbPlayers += 1;
               break;
             case 2:
-              this.nbPlayerGondor += 1;
-              this.nbPlayers += 1;
-              break;
-            case 3:
-              this.nbPlayerRohan += 1;
-              this.nbPlayers += 1;
-              break;
-            case 4:
               this.nbPlayerElfe += 1;
               this.nbPlayers += 1;
               break;
-            case 5:
+            case 3:
               this.nbPlayerNain += 1;
               this.nbPlayers += 1;
               break;
-            case 6:
+            case 4:
               this.nbPlayerMordor += 1;
               this.nbPlayers += 1;
               break;
-            case 7:
+            case 5:
               this.nbPlayerIsengard += 1;
               this.nbPlayers += 1;
               break;
-            case 8:
+            case 6:
               this.nbPlayerGobelin += 1;
               this.nbPlayers += 1;
               break;
-            case 9:
+            case 7:
               this.nbPlayerAngmar += 1;
               this.nbPlayers += 1;
               break;

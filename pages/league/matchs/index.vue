@@ -6,8 +6,12 @@
     </div>
 
     
-    <div class="flex flex-col text-center mb-5">
-      <button @click="sortGames()" class="flex-shrink-0 text-white bg-orange-500 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded text-lg mt-10 sm:mt-0">{{ $t('league.sort') }}</button>
+    <div class="flex space-x-2 justify-center mb-8">
+        <div>
+            <button @click="paginationHandle(-1)" class="flex-shrink-0 text-white bg-orange-600 border-0 py-2 px-8 focus:outline-none hover:bg-orange-700 rounded text-lg mt-10 sm:mt-0">Page d'avant</button>
+            <button @click="sortGames()" class="flex-shrink-0 text-white bg-orange-500 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded text-lg mt-10 sm:mt-0">{{ $t('league.sort') }} page {{page}}</button>
+            <button @click="paginationHandle(1)" class="flex-shrink-0 text-white bg-orange-600 border-0 py-2 px-8 focus:outline-none hover:bg-orange-700 rounded text-lg mt-10 sm:mt-0">Page suivante</button>
+        </div>
     </div>
 
     <div class="flex">
@@ -27,7 +31,7 @@
             <div class="p-3">
                 <div class="overflow-x-auto">
                     <table class="table-auto w-full border-2 border-gray-800 rounded-xl">
-                        <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
+                        <!-- <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
                             <tr>
                                 <th class="p-2 whitespace-nowrap">
                                 </th>
@@ -38,9 +42,9 @@
                                     <div class="font-semibold text-left">{{ $t('league.bo') }}</div>
                                 </th>
                             </tr>
-                        </thead>
+                        </thead> -->
                         <tbody v-for="game in games" v-bind:key="game.id" class="text-sm divide-y divide-orange-500">
-                            <tr>
+                            <!-- <tr>
                                 <td class="p-2 whitespace-nowrap">
                                     <svg class="fill-current text-orange-600 h-12 w-12" @click="showReplays(game.id)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6l1.41-1.41z"/></svg>
                                 </td>
@@ -55,8 +59,8 @@
                                         {{ game.attributes.bo}}
                                     </div>
                                 </td>
-                            </tr>
-                            <tr v-if="ids.length > 0 && ids.includes(game.id)">
+                            </tr> -->
+                            <tr>
                                 <table class="table-auto w-full border-2 border-gray-800 rounded-xl">
                                     <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
                                         <tr>
@@ -70,7 +74,10 @@
                                                 <div class="font-semibold text-left">{{ $t('league.lose') }}</div>
                                             </th>
                                             <th class="p-2 whitespace-nowrap">
-                                                <div class="font-semibold text-left">{{ $t('league.replay') }}</div>
+                                                <div class="font-semibold text-left">{{ $t('league.replay') }} -
+                                                    {{ $moment(game.attributes.date).lang($i18n.locale).format('MMMM Do YYYY, h:mm:ss a') }}
+                                        ({{ $moment(game.attributes.date).lang($i18n.locale).fromNow()}})
+                                                </div>
                                             </th>
                                         </tr>
                                     </thead>
@@ -98,7 +105,7 @@
                                                 </div>
                                             </td>
                                             <td class="p-2 whitespace-nowrap" v-if="replay.replay.data !== null">
-                                                <a target="_blank" :href="`https://api.laterredumilieu.fr${replay.replay.data.attributes.url}`" class="bg-orange-900 hover:bg-orange-800 text-white font-bold py-2 px-4 mx-2 rounded inline-flex items-center">
+                                                <a target="_blank" :href="`https://api.laterredumilieu.fr${replay.replay.data.attributes.url}`" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 mx-2 rounded inline-flex items-center">
                                                     <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
                                                     <span>{{replay.replay.data.attributes.name}}</span>
                                                 </a>
@@ -172,7 +179,7 @@ export default {
     data() {
         return {
             loading: false,
-            sortType: true,
+            sortType: false,
             games: [],
             ids: [],
             factionList: [
@@ -184,11 +191,13 @@ export default {
                 {name: "Goblins", color: "orange"},
                 {name: "Angmar", color: "purple"}
             ],
+            page: 1
         }
     },
     async asyncData({ $axios }) {
         const query = qs.stringify({
             fields: '*',
+            sort: ['date:desc'],
             populate: {
                 populate: '*',
                 replays: {
@@ -210,7 +219,7 @@ export default {
             },
             pagination: {
                 page: 1,
-                pageSize: 500,
+                pageSize: 20,
             },
         }, {
         encodeValuesOnly: true,
@@ -218,13 +227,50 @@ export default {
 
         const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
         let games = data;
-        let sortType = true;
+        let sortType = false;
         return { games, sortType }
     },
-        computed:{
-
-        },
         methods: {  
+            async paginationHandle(p){
+                if(this.page == 1 && p == -1){
+                    return true;
+                } else {
+                    const query = qs.stringify({
+                    fields: '*',
+                    sort: ['date:desc'],
+                    populate: {
+                        populate: '*',
+                        replays: {
+
+                            populate: '*',
+                            faction_win: {
+                                populate: '*'
+                            },
+                            faction_lose: {
+                                populate: '*'
+                            },
+                            map: {
+                                populate: '*'
+                            },
+                            player_win: {
+                                populate: '*'
+                            },
+                        },
+                    },
+                    pagination: {
+                        page: this.page + p,
+                        pageSize: 20,
+                    },
+                }, {
+                encodeValuesOnly: true,
+                }); 
+
+                const { data } = await this.$axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
+                this.games = data;
+                this.page += p;
+                }
+                
+            },
             showReplays(id){
                 console.log(id, this.ids, "showREPLAY")
                 if(!this.ids.includes(id)){          //checking weather array contain the id

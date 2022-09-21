@@ -1301,6 +1301,40 @@
       "adjacents": [
         "Baie_Forochel",
         "Forochel",
+        "Carn_Dum",
+        "Froid_Eternel"
+      ],
+      "description": "Grand désert glacé, le Forodwaith se situe au Septentrion. Il commence au-dessus des Hauts du Nord et se poursuit au-dessus de l'Angmar."
+    },
+    "Froid_Eternel": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126749/La%20Guerre%20de%20l%27Eriador/Forodwaith_erdiwq.jpg",
+      "map": 4,
+      "east": [
+        2,
+        3
+      ],
+      "name": "Le Froid Eternel",
+      "west": [
+        1,
+        4
+      ],
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1QQ94__9psbRHwj3hZFDO3_RQIGHBsi20?usp=sharing",
+      "north": [
+        1,
+        2
+      ],
+      "south": [
+        3,
+        4
+      ],
+      "region": "angmar",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/forodwaith_minimap_f6jmsn.png",
+      "players": [],
+      "adjacents": [
+        "Desert_Nord",
+        "Forodwaith",
         "Carn_Dum"
       ],
       "description": "Grand désert glacé, le Forodwaith se situe au Septentrion. Il commence au-dessus des Hauts du Nord et se poursuit au-dessus de l'Angmar."
@@ -2395,11 +2429,8 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
       "players": [],
       "adjacents": [
-        "Harlindon",
-        "Havres_Gris",
-        "Collines_Tours",
-        "Siragalë",
-        "Egenyar"
+        "Froid_Eternel",
+        "Pics_Gelees"
       ],
       "description": "S'étendant dans l'immensité glacée du nord, terre désolée de neige et de glace, bien peu d'êtres réussissent à survivre dans des conditions aussi extrêmes. Certaines légendes parlent de dragons, tel Scatha y vivant depuis la fin du Beleriand."
     },
@@ -4140,14 +4171,41 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
       "players": [],
       "adjacents": [
+        "Sombre_Cote",
+        "Montagne_Destin",
+        "Barad_Dur",
+        "Khand",
+        "Steppes_Cendrees"
+      ],
+      "description": "Le Lithlad était une région de plaines du Mordor. La position exacte de cette région reste cependant vague."
+    },
+    "Sombre_Cote": {
+      "img": "https://laguerredelanneau.vercel.app/Territories_img/Lithlad.png",
+      "map": 2,
+      "east": [],
+      "name": "Sombre Côte",
+      "west": [],
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "north": [
+        1,
+        2
+      ],
+      "south": [
+        3,
+        4
+      ],
+      "region": "mordor",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "players": [],
+      "adjacents": [
         "Ered_Glamhoth",
         "Nurn",
         "Nurnen",
         "Plateau_Gorgoroth",
         "Montagne_Destin",
-        "Barad_Dur",
-        "Khand",
-        "Steppes_Cendrees"
+        "Lithlad"
       ],
       "description": "Le Lithlad était une région de plaines du Mordor. La position exacte de cette région reste cependant vague."
     },
@@ -4286,7 +4344,7 @@
         "Harondor",
         "Umbar"
       ],
-      "description": "harad"
+      "description": "Harnennor est une zone semi-désertique située au sud de la rivière Harnen et entre les côtes de Southron à l'ouest et Lostladen au nord-est. Il se trouve près du Grand Désert de Near Harad. Contrairement à Harondor au nord, qui est principalement luxuriant avec une légère désertification, Harnennor est une terre sèche et sablonneuse avec quelques parcelles luxuriantes."
     },
     "Lointain_Harad": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Lointain_harad.jpg",
@@ -4668,7 +4726,7 @@
         "description": "A l'origine, le Calenardhon était une simple province du Gondor, mais en récompense de l'aide que les Éothéod lui avaient apporté lors de la Bataille du Champ du Celebrant en l'année 2510 du Troisième Âge, l'Intendant du Gondor Cirion en fit don à Eorl le Jeune, seigneur des Éothéod, et tous deux firent le serment que leurs deux royaumes seraient toujours alliés."
       },
       "Grands_Arpents": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/C_Rohan.png",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1663764099/La%20Guerre%20de%20l%27Eriador/unknown_1_nelhnd.png",
         "map": 2,
         "east": [],
         "name": "Grands-arpents",
@@ -4686,24 +4744,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -4711,7 +4752,7 @@
           "Siragalë",
           "Egenyar"
         ],
-        "description": "Au cœur du Rohan se trouvent les Grand-arpents, une région riche en pâturages, gouvernée par Fríthild, la seule femme Sénéchale. Entrainée à la manière d'une vierge guerrière depuis son enfance, elle a conseillé une jeune Éowyn dans l'art de la guerre. Mais maintenant son Fief est attaqué par les forces d'Isengard. Les chevaucheurs d'ouargues brûlent les champs à l'ouest des Arpents, tandis qu'au nord, les Hommes du Pays de Dun envahissent la région par le Pierreval dans une folle croisade pour revendiquer les terres ancestrales. La Sénéchale Fríthild s'active maintenant à se préparer à l'inévitable siège de Stoke, la capitale des Grand-arpents."
+        "description": "Grands-arpents est au cœur du Rohan, c'est une région riche en pâturages. Ce territoire fût attaqué a la fois par les ouargues de l'Isengard et par les hommes du Pays de Dun pendant la guerre de l'anneau."
       },
       "Hall_Thranduil": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Hall_Thranduil.jpg",
@@ -5374,26 +5415,9 @@
           3,
           4
         ],
-        "region": "rohan",
+        "region": "rhun",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5401,10 +5425,10 @@
           "Siragalë",
           "Egenyar"
         ],
-        "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
+        "description": "Mistrand est une ville de Gathod , située à l'est de la Terre du Milieu dans la région du Rhun ."
       },
       "Ered_Lithui": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1663763569/La%20Guerre%20de%20l%27Eriador/unknown_cldamw.png",
         "map": 2,
         "east": [],
         "name": "Ered Lithui",
@@ -5588,7 +5612,7 @@
         "description": "Agasha Dag est une région située à l'est de la Terre du Milieu , dans la région du Rhun . Il est traversé par de grandes forêts tempérées et des forêts de feuillus."
       },
       "Logathavuld": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1663763666/La%20Guerre%20de%20l%27Eriador/704605786_orig_xu1be5.jpg",
         "map": 2,
         "east": [],
         "name": "Logathavuld",
@@ -5606,24 +5630,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 9,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 8,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5631,7 +5638,7 @@
           "Siragalë",
           "Egenyar"
         ],
-        "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
+        "description": "Le Logathavuld est une zone où règnent les tribus du Logath depuis le milieu du second âge. Ce territoire est principalement constituer de vastes plaines à l'est, et des étendues arides au nord."
       },
       "Valee_Anduin": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",

@@ -148,14 +148,6 @@ export default {
     },
     methods: {  
         sortGames() {
-          console.log("sort")
-
-          // let test = this.games.sort(
-          //     (objA, objB) => objA.attributes.date - objB.attributes.date
-          // );
-
-          console.log(this.sortType, "djeidjei")
-
           let sortyu = this.sortType;
 
           let test = this.replaysGame.sort(function(a,b){
@@ -164,11 +156,8 @@ export default {
               } else {
                   return new Date(a.date) - new Date(b.date);
               }
-          // Turn your strings into dates, and then subtract them
-          // to get a value that is either negative, positive, or zero.
           });
 
-          console.log(test, "hdede")
           this.sortType = !sortyu
           this.replaysGame = test
 
@@ -179,23 +168,60 @@ export default {
         let loading = false;
         const query = qs.stringify({
             sort: ['date:desc'],
-            fields: '*',
+            fields: ['date', 'bo'],
+            filters: {
+                    $or: [
+                      {
+                        replays: {
+                            player_win: {
+                              id: {
+                                $eq: params.slug
+                              },
+                          },
+                        }
+                      },
+                      {
+                        replays: {
+                          player_lose: {
+                            id: {
+                              $eq: params.slug
+                            },
+                          },
+                        }
+                      },
+                    ]
+                  },
             populate: {
-                populate: '*',
                 replays: {
-                    populate: '*'
-                },
-                elo: {
-                    populate: '*'
+                    populate: {
+                      faction_lose: {
+                        fields: ['name'],
+                      },
+                      faction_win: {
+                        fields: ['name'],
+                      },
+                      player_win: {
+                        fields: ['name'],
+                      },
+                      player_lose: {
+                        fields: ['name'],
+                      },
+                      replay: {
+                        fields: ['url'],
+                      },
+                      map: {
+                        fields: ['name']
+                      }
+                    }
                 }
             },
-      pagination: {
-        page: 1,
-        pageSize: 500,
-      },
-    }, {
-      encodeValuesOnly: true, // prettify URL
-    });
+            pagination: {
+              page: 1,
+              pageSize: 500,
+            },
+          }, {
+            encodeValuesOnly: true, // prettify URL
+          });
 
         
 
@@ -217,19 +243,11 @@ export default {
         newPlayer.factions = [];
 
         for (const [index, g] of games.entries()) {
-          console.log(g, "djeidjeij")
-
-
-
-                // newPlayer.lose += 1;
-                // newPlayer.wins += 1;
                 
                 let test = false
 
                 for (const m of g.attributes?.replays){
-                  console.log(m, "????")
                   if(p == m.player_lose?.data?.attributes?.name || p == m.player_win?.data?.attributes?.name) {
-                    console.log(m, "m")
 
                     test = true
 
@@ -265,8 +283,6 @@ export default {
                 }
 
                 test = false;
-                
-                console.log(g.attributes)
         }
 
         
@@ -279,8 +295,6 @@ export default {
         let defaites2 = []
 
         for (const f of allFactions) {
-            console.log(f, "faction")
-
             factions.push(f)
 
             if(newPlayer.statsFactionWin[f] !== undefined){

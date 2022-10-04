@@ -196,26 +196,31 @@ export default {
     },
     async asyncData({ $axios }) {
         const query = qs.stringify({
-            fields: '*',
+            fields: ['date', 'bo'],
             sort: ['date:desc'],
             populate: {
-                populate: '*',
                 replays: {
-
-                    populate: '*',
-                    faction_win: {
-                        populate: '*'
-                    },
-                    faction_lose: {
-                        populate: '*'
-                    },
-                    map: {
-                        populate: '*'
-                    },
-                    player_win: {
-                        populate: '*'
-                    },
-                },
+                    populate: {
+                      faction_lose: {
+                        fields: ['name'],
+                      },
+                      faction_win: {
+                        fields: ['name'],
+                      },
+                      player_win: {
+                        fields: ['name'],
+                      },
+                      player_lose: {
+                        fields: ['name'],
+                      },
+                      replay: {
+                        fields: ['url', 'name'],
+                      },
+                      map: {
+                        fields: ['name']
+                      }
+                    }
+                }
             },
             pagination: {
                 page: 1,
@@ -236,31 +241,36 @@ export default {
                     return true;
                 } else {
                     const query = qs.stringify({
-                    fields: '*',
-                    sort: ['date:desc'],
-                    populate: {
-                        populate: '*',
-                        replays: {
-
-                            populate: '*',
-                            faction_win: {
-                                populate: '*'
-                            },
-                            faction_lose: {
-                                populate: '*'
-                            },
-                            map: {
-                                populate: '*'
-                            },
-                            player_win: {
-                                populate: '*'
-                            },
+                        fields: ['date', 'bo'],
+                        sort: ['date:desc'],
+                        populate: {
+                            replays: {
+                                populate: {
+                                faction_lose: {
+                                    fields: ['name'],
+                                },
+                                faction_win: {
+                                    fields: ['name'],
+                                },
+                                player_win: {
+                                    fields: ['name'],
+                                },
+                                player_lose: {
+                                    fields: ['name'],
+                                },
+                                replay: {
+                                    fields: ['url', 'name'],
+                                },
+                                map: {
+                                    fields: ['name']
+                                }
+                                }
+                            }
                         },
-                    },
-                    pagination: {
-                        page: this.page + p,
-                        pageSize: 20,
-                    },
+                        pagination: {
+                            page: this.page + p,
+                            pageSize: 20,
+                        },
                 }, {
                 encodeValuesOnly: true,
                 }); 
@@ -272,7 +282,6 @@ export default {
                 
             },
             showReplays(id){
-                console.log(id, this.ids, "showREPLAY")
                 if(!this.ids.includes(id)){          //checking weather array contain the id
                     this.ids.push(id);               //adding to array because value doesnt exists
                 }else{
@@ -280,14 +289,6 @@ export default {
                 }
             },
             sortGames() {
-                console.log("sort")
-
-                // let test = this.games.sort(
-                //     (objA, objB) => objA.attributes.date - objB.attributes.date
-                // );
-
-                console.log(this.sortType, "djeidjei")
-
                 let sortyu = this.sortType;
 
                 let test = this.games.sort(function(a,b){
@@ -299,8 +300,6 @@ export default {
                 // Turn your strings into dates, and then subtract them
                 // to get a value that is either negative, positive, or zero.
                 });
-
-                console.log(test, "hdede")
                 this.sortType = !sortyu
                 this.games = test
 

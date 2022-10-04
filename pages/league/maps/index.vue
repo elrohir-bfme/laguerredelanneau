@@ -112,18 +112,14 @@ export default {
         ],
         }
     },
-    async asyncData({ $strapi, $axios }) {
-        let maps = await $strapi.find('maps', { populate: '*'})
-        const query = qs.stringify({
-            fields: '*',
+    async asyncData({ $axios }) {
+        
+        const queryMap = qs.stringify({
+            fields: ['name','description', 'id'],
             populate: {
-                populate: '*',
-                replays: {
-                    populate: '*',
-                    faction_win: {
-                        populate: '*'
-                    }
-                },
+                minimap: {
+                    fields:  ['url']
+                }
             },
             pagination: {
                 page: 1,
@@ -133,15 +129,52 @@ export default {
         encodeValuesOnly: true,
         });
 
-        const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
-        let games = data
+        const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/maps?${queryMap}`); 
+
+        const query = qs.stringify({
+            sort: ['date:desc'],
+            fields: ['date', 'bo'],
+            populate: {
+                replays: {
+                    populate: {
+                      faction_lose: {
+                        fields: ['name'],
+                      },
+                      faction_win: {
+                        fields: ['name'],
+                      },
+                      player_win: {
+                        fields: ['name'],
+                      },
+                      player_lose: {
+                        fields: ['name'],
+                      },
+                      replay: {
+                        fields: ['url'],
+                      },
+                      map: {
+                        fields: ['name']
+                      }
+                    }
+                }
+            },
+            pagination: {
+                page: 1,
+                pageSize: 500,
+            },
+        }, {
+        encodeValuesOnly: true,
+        });
+
+        const parties = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
+        let games = parties.data
+        let maps = data
         return { maps, games }
     },
     computed:{
         sortedMaps() {
             if(this.maps){
-                console.log("DEBUT")
-                let newMaps = this.maps.data.map(f => {
+                let newMaps = this.maps.map(f => {
                     let newObject = {
                         statsFactionWin: {},
                         statsFactionLose: {},
@@ -149,59 +182,28 @@ export default {
                         loses: 0
                     }
 
-                    console.log("deidjiedje")
+                        this.games.map(g => {
+                            if(g.attributes.replays && g.attributes.replays.length > 0){
+                                g.attributes.replays.map(r => {
+                                    if((r.map.data && r.map.data.id) === f.id) {
+                                        let faction = r.faction_win?.data?.attributes?.name;
+                                        typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                                        newObject.statsFactionWin[faction] = 1 : 
+                                        newObject.statsFactionWin[faction]++;
+                                        newObject.wins++;
 
-                    this.games.map(g => {
-                        console.log(g, "dehudheud")
-                        if(g.attributes.replays && g.attributes.replays.length > 0){
-                            g.attributes.replays.map(r => {
-                                console.log(r.map, f, "fff")
-                                if((r.map.data && r.map.data.id) === f.id) {
-                                    console.log(r, "r")
-                                    let faction = r.faction_win?.data?.attributes?.name;
-                                    typeof newObject.statsFactionWin[faction] === 'undefined' ? 
-                                    newObject.statsFactionWin[faction] = 1 : 
-                                    newObject.statsFactionWin[faction]++;
-                                    newObject.wins++;
-
-                                    let faction2 = r.faction_lose?.data?.attributes?.name;
-                                    typeof newObject.statsFactionLose[faction2] === 'undefined' ? 
-                                    newObject.statsFactionLose[faction2] = 1 : 
-                                    newObject.statsFactionLose[faction2]++;
-                                    newObject.loses++;
-                                }
-                            })
-                        }
-                    })
+                                        let faction2 = r.faction_lose?.data?.attributes?.name;
+                                        typeof newObject.statsFactionLose[faction2] === 'undefined' ? 
+                                        newObject.statsFactionLose[faction2] = 1 : 
+                                        newObject.statsFactionLose[faction2]++;
+                                        newObject.loses++;
+                                    }
+                                })
+                            }
+                        })
 
                     return Object.assign(f, newObject)
                 })
-
-
-
-                // let newMaps = this.maps.data.map(f => {
-                //     let newObject = {
-                //         statsFactionWin: {},
-                //         statsFactionLose: {}
-                //     }
-
-
-                //     if(f.attributes.games.data.length > 0){
-                //         f.attributes.games.data.map(m => {
-                //             typeof newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name] === 'undefined' ? 
-                //             newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name] = 1 : 
-                //             newObject.statsFactionWin[this.games.data.find(x => x.id === m.id).attributes.faction_win.data.attributes.name]++;
-
-
-                //             typeof newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name] === 'undefined' ? 
-                //             newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name] = 1 : 
-                //             newObject.statsFactionLose[this.games.data.find(x => x.id === m.id).attributes.faction_lose.data.attributes.name]++;
-                //         })
-                //     }
-
-                //     return Object.assign(f, newObject)
-                // })
-                console.log(newMaps)
                 return newMaps;
             }
         },

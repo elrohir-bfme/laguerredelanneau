@@ -129,19 +129,52 @@ export default {
         }
     },
     async asyncData({ $strapi, $axios }) {
-        let factions = await $strapi.find('factions', { populate: '*'})
+        // let factions = await $strapi.find('factions', { populate: '*'})
+
+        const queryFactions = qs.stringify({
+            fields: ['name'],
+            populate: {
+                img: {
+                    fields:  ['url']
+                }
+            },
+            pagination: {
+                page: 1,
+                pageSize: 500,
+            },
+        }, {
+        encodeValuesOnly: true,
+        });
+
+        const fetchFactions = await $axios.$get(`https://api.laterredumilieu.fr/api/factions?${queryFactions}`); 
+
 
         const query = qs.stringify({
-            fields: '*',
             sort: ['date:desc'],
+            fields: ['date', 'bo'],
             populate: {
-                populate: '*',
                 replays: {
-                    populate: '*',
-                    faction_win: {
-                        populate: '*'
+                    populate: {
+                      faction_lose: {
+                        fields: ['name'],
+                      },
+                      faction_win: {
+                        fields: ['name'],
+                      },
+                      player_win: {
+                        fields: ['name'],
+                      },
+                      player_lose: {
+                        fields: ['name'],
+                      },
+                      replay: {
+                        fields: ['url'],
+                      },
+                      map: {
+                        fields: ['name']
+                      }
                     }
-                },
+                }
             },
             pagination: {
                 page: 1,
@@ -153,13 +186,14 @@ export default {
 
         const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
         let games = data
+        let factions = fetchFactions.data
         return { factions, games }
     },
     computed:{
         sortedFactions() {
             if(this.factions){
 
-                let NewFaction = this.factions.data.map(f => {
+                let NewFaction = this.factions.map(f => {
                     let newObject = {
                         statsFactionWin: {},
                         statsFactionLose: {},

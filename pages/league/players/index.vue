@@ -112,76 +112,7 @@
 
         </div>
     </div>
-
-
     </div>
-
-    <!-- <div v-if="info" class="flex-grow">
-            <div class="flex flex-col justify-top h-full">
-        <div class="w-full max-w-3xl mx-auto bg-gray-900 shadow-lg rounded-sm border border-orange-600">
-                    <header class="px-5 py-4 border-b border-orange-500 flex">
-                <div class="flex-grow">
-                    <h2 class="font-semibold text-white">{{player && player.name}}</h2>
-                </div>
-                <div class="flex-none">
-                    <button @click="close" class="text-red-100 ring-4 ring-red-800 bg-red-700 px-4 py-2 rounded-2xl">Fermer</button>
-                </div>
-            </header>
-
-            <div class="p-3">
-                <div class="overflow-x-auto">
-                    <table class="table-auto w-full border-2 border-gray-800 rounded-xl">
-                        <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
-                            <tr>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.date') }}</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.map') }}</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.win') }}</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.lose') }}</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">{{ $t('league.replay') }}</div>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-sm divide-y divide-orange-500">
-                            <tr v-for="game in sortedMatchPlayer" v-bind:key="game.id">
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left text-gray-100">
-                                        {{ $moment(game.date).lang($i18n.locale).format('MMMM Do YYYY, h:mm:ss a') }}
-                                        ({{ $moment(game.date).lang($i18n.locale).fromNow()}})
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-orange-500">{{game.map.data.attributes.name}}</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{game.player_win.data.attributes.name}}</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-left">{{game.player_lose.data.attributes.name}}</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <a target="_blank" :href="`https://api.laterredumilieu.fr${replay.attributes.url}`" v-for="(replay, index) in game.replay.data" v-bind:key="replay._id"  class="bg-orange-900 hover:bg-orange-800 text-white font-bold py-2 px-4 mx-2 rounded inline-flex items-center">
-                                        <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-                                        <span>{{ $t('league.replay') }} {{index +1}}</span>
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>   
-                    </table>
-                </div>
-            </div> 
-            </div> 
-            </div> 
-    </div> -->
-
     </div>
 
   </div>
@@ -209,19 +140,33 @@ export default {
             ],
         }
     },
-    async asyncData({ $strapi, $axios }) {
-        // let players = await $strapi.find('players', { populate: '*'})
+    async asyncData({ $axios }) {
         const query = qs.stringify({
-            fields: '*',
-            sort: ['elo'],
+            sort: ['date:desc'],
+            fields: ['date', 'bo'],
             populate: {
-                populate: '*',
                 replays: {
-                    populate: '*',
-                    faction_win: {
-                        populate: '*'
+                    populate: {
+                      faction_lose: {
+                        fields: ['name'],
+                      },
+                      faction_win: {
+                        fields: ['name'],
+                      },
+                      player_win: {
+                        fields: ['name'],
+                      },
+                      player_lose: {
+                        fields: ['name'],
+                      },
+                      replay: {
+                        fields: ['url'],
+                      },
+                      map: {
+                        fields: ['name']
+                      }
                     }
-                },
+                }
             },
             pagination: {
                 page: 1,
@@ -235,8 +180,12 @@ export default {
         let games = data
 
         const queryPlayer = qs.stringify({
-            fields: '*',
-            populate: '*',
+            fields: ['name', 'elo'],
+            populate: {
+                img: {
+                    fields:  ['url']
+                }
+            },
             pagination: {
                 page: 1,
                 pageSize: 5000,
@@ -246,16 +195,13 @@ export default {
         });
 
         const dataPlayer = await $axios.$get(`https://api.laterredumilieu.fr/api/players?${queryPlayer}`); 
-        
-        let players = dataPlayer
+        let players = dataPlayer.data
 
         return { players, games }
     },
     methods: {  
         infoPlayer(player){
-            // this.$router.push(`/league/players/${player.id}  `)
             this.$router.push(this.localeLocation(`/league/players/${player.id}`))
-
         },
         close(){
             this.info = false
@@ -265,7 +211,7 @@ export default {
     computed:{
         sortedPlayers() {
             if(this.players){
-                let newPlayers= this.players.data.map(f => {
+                let newPlayers= this.players.map(f => {
                     let newObject = {
                         statsFactionWin: {},
                         statsFactionLose: {},
@@ -276,32 +222,6 @@ export default {
                     this.games.map(g => {
                         if(g.attributes?.replays && g.attributes?.replays?.length > 0){
                             g.attributes?.replays.map(r => {
-
-
-                                // if(r.faction_lose && r.faction_lose.data?.attributes){
-                                //     if((r.player_win.data && r.player_win.data.attributes && r.player_win.data.attributes.name) === f.attributes.name) {
-                                //         let faction = r.faction_lose.data.attributes.name;
-                                //         typeof newObject.statsFactionWin[faction] === 'undefined' ? 
-                                //         newObject.statsFactionWin[faction] = 1 : 
-                                //         newObject.statsFactionWin[faction]++;
-                                //         newObject.wins++;
-                                //     }
-                                // }
-
-                                // if(r.faction_win && r.faction_win.data?.attributes){
-                                //     if((r.player_win.data && r.player_win.data.attributes && r.player_win.data.attributes.name) === f.attributes.name) {
-                                //         if(r.faction_win.data.attributes !== null && r.faction_win.data.attributes.name){
-                                //             let faction = r.faction_lose.data.attributes.name;
-                                //             typeof newObject.statsFactionLose[faction] === 'undefined' ? 
-                                //             newObject.statsFactionLose[faction] = 1 : 
-                                //             newObject.statsFactionLose[faction]++;
-                                //             newObject.loses++;
-                                //         }
-                                //     }
-                                // }
-
-                                // console.log(r.faction_win, f)
-
                                 if(r.player_win?.data?.attributes?.name === f.attributes?.name){
                                     let faction = r.faction_win?.data?.attributes?.name;
                                     typeof newObject.statsFactionWin[faction] === 'undefined' ? 
@@ -325,43 +245,8 @@ export default {
                 })
 
                 return newPlayers.sort((a, b) => { return b.attributes?.elo - a.attributes?.elo; });
-            }
-
-            
+            }  
         },
-        // sortedMatchPlayer() {
-        //     if(this.player){
-        //         console.log(this.player, "SORTED MATCHS PLAYER")
-
-        //         let playerWin = this.player.attributes.games_wins.data.map(m=> {
-        //             let map = this.games.data.find(x => x.id === m.id)
-        //             return Object.assign(m, map)
-        //         })
-
-        //         let playerLose = this.player.attributes.games_loses.data.map(m=> {
-        //             let map = this.games.data.find(x => x.id === m.id)
-        //             return Object.assign(m, map)
-        //         })
-
-        //         // let playerLose = this.player.lose.map(p=> {
-        //         //     console.log(p, "diejdiej")
-        //         //     let object = {
-        //         //         mapUp: this.maps.find(x => x._id === p.map),
-        //         //         playerWinUp: this.players.find(x => x._id === p.playerWin),
-        //         //         playerLoseUp: this.players.find(x => x._id === p.playerLose),
-        //         //         factionWinUp: this.factions.find(x => x._id === p.faction_win),
-        //         //         factionLoseUp: this.factions.find(x => x._id === p.faction_lose),
-        //         //     }
-        //         //     return Object.assign(p, object)
-        //         // })
-
-        //     let Newmatchs = [...playerWin, ...playerLose]
-        //     // return Newmatchs
-        //     console.log(Newmatchs)
-
-        //     return Newmatchs.map(game=>game.attributes).sort((a,b)=> a.updatedAt - b.updatedAt)
-        //     }
-        // },
     },
 }
 </script>

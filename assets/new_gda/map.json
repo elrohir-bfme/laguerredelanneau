@@ -3094,6 +3094,34 @@
       ],
       "description": "Le Khand était une région, probablement aride, située au pied de l'Ephel Dúath, au sud-est du Mordor."
     },
+    "Desolation_Orientale": {
+      "img": "https://laguerredelanneau.vercel.app/Territories_img/Khand.jpg",
+      "map": 2,
+      "east": [],
+      "name": "Désolation Orientale",
+      "west": [],
+      "color": "#3300000",
+      "fight": "true",
+      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "north": [
+        1,
+        2
+      ],
+      "south": [
+        3,
+        4
+      ],
+      "region": "harad",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "players": [],
+      "adjacents": [
+        "Golfe_Harad",
+        "Proche_Harad",
+        "Ered_Glamhoth",
+        "Khand"
+      ],
+      "description": "Le Khand était une région, probablement aride, située au pied de l'Ephel Dúath, au sud-est du Mordor."
+    },
     "Foret_Druadan": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Foret_Druadan.jpg",
       "map": 2,

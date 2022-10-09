@@ -18,7 +18,7 @@
       ],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/14U_9s9YvQ30sU0-X4PUz55hzTlJEpKkg?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/10NUb7sSCFQUMPpHG-ZfM5oClFTghx4Et?usp=sharing",
       "north": [
         1,
         2
@@ -54,7 +54,7 @@
       ],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1bkes8-pSTR682vZgpHKqYYWac6LcWRul?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1-e5CrRsGXsDwVU3whjcBalvTOuaqB99U?usp=sharing",
       "north": [],
       "south": [],
       "region": "cardolan",
@@ -95,7 +95,7 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/moria_minimap_wd23h3.png",
       "players": [],
       "adjacents": [
-        "Zagh_Kala",
+        "Caradhras",
         "Eregion",
         "Azanulbizar"
       ],
@@ -177,7 +177,7 @@
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/13_lwSRh_dS7aS4H39Er05WvIi08sYFC_?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1-TLC6eA0jTkBAHBTqO1HUJaTKwCqjtli?usp=sharing",
       "north": [
         1
       ],
@@ -255,7 +255,7 @@
       "adjacents": [
         "Trouee_Trolls",
         "Glad_Ereg",
-        "Zagh_Kala",
+        "Caradhras",
         "Moria",
         "Sirannon"
       ],
@@ -425,7 +425,7 @@
       ],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/15nHqPccSJtCJjkW36UJGAiTXy1rI_4ni?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1s5JhfTje0OUb8IsUK0vQOoEdmR8kKPNL?usp=sharing",
       "north": [
         2,
         3
@@ -832,7 +832,7 @@
       "name": "Annuminas",
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1tzqR2SeYC1GE0WfDK93VyzOLUNk1F3az?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/18GmSznHQJMZ9SyvxI42mXggS-5r8Obcf?usp=sharing",
       "region": "arthedain",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1642668076/La%20Guerre%20de%20l%27Eriador/annuminas_minimap_pplhsq.png",
       "players": [],
@@ -858,7 +858,7 @@
       ],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1dtD9XYCx5htFD9AWdus5J1p2Ex9QnvwW?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1-Sy4NHsbvZjzvjtyai-C2g3UQmW0jvPZ?usp=sharing",
       "north": [
         1,
         2
@@ -1072,7 +1072,7 @@
       "adjacents": [
         "Trouee_Trolls",
         "Fondcombe",
-        "Zagh_Kala",
+        "Caradhras",
         "Eregion"
       ],
       "description": "Situé dans l'Eregion entre le Rhudhaur au nord ouest et les Monts Brumeux à l'est, est une petite région boisée et montagneuse. Elle fut le témoin de la guerre entre les Elfes et Sauron au 2ème Age lorsque l'Eregion fut ravagée."
@@ -1248,15 +1248,23 @@
       ],
       "description": "Ancienne province elfique du royaume d'Arnor. Il s'étend du Baranduin à l'Aerossîr et au Harered Luin. La Comté est taillée dans la partie nord-est . Elle perd sa population elfique tout au long du Troisième âge, laissant place en 1601 T.A. à la colonisation des Hobbits et à la fondation de la Comté"
     },
-    "Zagh_Kala": {
+    "Caradhras": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127009/La%20Guerre%20de%20l%27Eriador/Zagh_Kala_ko9pta.jpg",
-      "map": 6,
-      "name": "Zagh Kala",
+      "map": 2,
+      "east": [],
+      "west": [],
+      "name": "Caradhras",
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1KUQdXw0lFv4E4A2Z1mGi4QQwQxv0VNlb?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1ik8_tsSfTOJCMazGQgGv58ngL5n0NrOV?usp=sharing",
       "region": "brumeux",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1642668077/La%20Guerre%20de%20l%27Eriador/zahkala_minimap_muldj8.png",
+      "north": [
+        1
+      ],
+      "south": [
+        2
+      ],
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665353737/La%20Guerre%20de%20l%27Eriador/caradhras_jw9l2n.png",
       "outpost": true,
       "players": [],
       "fortress": true,
@@ -1442,7 +1450,7 @@
       ],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1RErswjrO55O7-A8Gw52W_PccLw4rmjjW?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1oKWL_vdznqcfoosTyq2pjCHXYCx-ydPE?usp=sharing",
       "north": [
         1,
         2
@@ -1660,11 +1668,11 @@
       ],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1bOgJRwyxLdMRGZfJWqIKviXRl7PsuILs?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1RcT3krTTZxukRMP42_bULF6fk_-D0wTJ?usp=sharing",
       "north": [],
       "south": [],
       "region": "rohan",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304377/La%20Guerre%20de%20l%27Eriador/trouee_rohan_minimap_bfrq6g.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665353006/La%20Guerre%20de%20l%27Eriador/trou%C3%A9e_du_rohann_uaaqsr.png",
       "players": [],
       "adjacents": [
         "Enedwaith",
@@ -1800,7 +1808,7 @@
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1N1s7ieP3Zy4PpG-P1JDqO1Yv53JWhfJN?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/13MjFXQmrd0140zUJxdngCNqJcJ3Lw2Kg?usp=sharing",
       "north": [
         1,
         2,
@@ -1900,16 +1908,7 @@
       "south": [],
       "region": "lindon",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1642694495/La%20Guerre%20de%20l%27Eriador/lune_minimap_nnvxej.png",
-      "players": [
-        {
-          "img": "https://i.goopics.net/dva68p.png",
-          "win": 3,
-          "lose": 0,
-          "name": "Loken",
-          "faction": 4,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Triste_Plaine",
         "Lindon",
@@ -2350,13 +2349,13 @@
     },
     "Lande_Dessechee": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Lande_Dessechee.jpg",
-      "map": 2,
+      "map": 4,
       "east": [],
       "name": "Les Lande Dessechee",
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1w1QLszpBmTlYLSvcpTBKmnYQljjdgO4E?usp=sharing",
       "north": [
         1,
         2
@@ -2366,7 +2365,7 @@
         4
       ],
       "region": "rhovanion",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665352322/La%20Guerre%20de%20l%27Eriador/landesdesseche_gp7m7b.png",
       "players": [],
       "adjacents": [
         "Monts_Fer",
@@ -2465,17 +2464,15 @@
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1OY3gEMkiqwRUy9i0Np4N3IWkvHDHMNfT?usp=sharing",
       "north": [
-        1,
-        2
+        1
       ],
       "south": [
-        3,
-        4
+        2
       ],
       "region": "gondor",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665350872/La%20Guerre%20de%20l%27Eriador/andrast_nixaej.png",
       "players": [],
       "adjacents": [
         "Druwaith_Iaur",
@@ -2485,23 +2482,25 @@
     },
      "Anfalas": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Anfalas.png",
-      "map": 2,
+      "map": 6,
       "east": [],
       "name": "Anfalas",
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1JBCzM49P-11tT5Dy4skrt2oGhqsYNKOR?usp=sharing",
       "north": [
         1,
-        2
+        2,
+        3
       ],
       "south": [
-        3,
-        4
+        4,
+        5,
+        6
       ],
       "region": "gondor",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665350872/La%20Guerre%20de%20l%27Eriador/anfalas_equhzv.png",
       "players": [],
       "adjacents": [
         "Andrast",
@@ -2844,13 +2843,13 @@
     },
     "Belfalas": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Belfalas.png",
-      "map": 2,
+      "map": 4,
       "east": [],
       "name": "Belfalas",
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1bZyCHMjIzcXVyg3xTiD3eBFhLfesD2r2?usp=sharing",
       "north": [
         1,
         2
@@ -2860,7 +2859,7 @@
         4
       ],
       "region": "gondor",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665352139/La%20Guerre%20de%20l%27Eriador/belfalas_qymwu3.png",
       "players": [],
       "adjacents": [
         "Lebennin",
@@ -3101,7 +3100,7 @@
       "name": "Désolation Orientale",
       "west": [],
       "color": "#3300000",
-      "fight": "true",
+      "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
       "north": [
         1,
@@ -3153,23 +3152,17 @@
     },
     "Anorien": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Anorien.png",
-      "map": 2,
-      "east": [],
+      "map": 4,
+      "west": [1,2],
       "name": "Anorien",
-      "west": [],
+      "east": [3,4],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-      "north": [
-        1,
-        2
-      ],
-      "south": [
-        3,
-        4
-      ],
+      "mapdl": "https://drive.google.com/drive/folders/1mVBgrtubPFq49dWFE3NGmdjLgICRFNBm?usp=sharing",
+      "north": [],
+      "south": [],
       "region": "rohan",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665351170/La%20Guerre%20de%20l%27Eriador/Screenshot_2022-10-09_233241_xeaizb.png",
       "players": [],
       "adjacents": [
         "Foret_Druadan",
@@ -3350,23 +3343,23 @@
     },
     "Avancee_Fangorn": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Avancee_Fangorn.png",
-      "map": 2,
-      "east": [],
-      "name": "Avancee de Fangorn",
-      "west": [],
-      "color": "#3300000",
-      "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-      "north": [
-        1,
-        2
-      ],
-      "south": [
+      "map": 4,
+      "east": [
         3,
         4
       ],
+      "name": "Avancee de Fangorn",
+      "west": [
+        1,
+        2
+      ],
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1MQStsoQWtyRcSlki-MC5WsUF-CDGuhUt?usp=sharing",
+      "north": [],
+      "south": [],
       "region": "rohan",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665351485/La%20Guerre%20de%20l%27Eriador/Screenshot_2022-10-09_233751_hv0ww8.png",
       "players": [],
       "adjacents": [
         "Fangorn",
@@ -3435,28 +3428,28 @@
     "Azanulbizar": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Azanulbizar.jpg",
       "map": 2,
-      "east": [],
-      "name": "Azanulbizar",
-      "west": [],
-      "color": "#3300000",
-      "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-      "north": [
-        1,
-        2
-      ],
-      "south": [
+      "east": [
         3,
         4
       ],
+      "name": "Azanulbizar",
+      "west": [
+        1,
+        2
+      ],
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1SE62cnM10014n6awRH5E6lxMbw5Qs7b2?usp=sharing",
+      "north": [],
+      "south": [],
       "region": "rhovanion",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665351734/La%20Guerre%20de%20l%27Eriador/azanulbizar_bxx2rt.png",
       "players": [],
       "adjacents": [
         "Lorien",
         "Celebrant",
         "Moria",
-        "Zagh_Kala",
+        "Caradhras",
         "Champs_Iris"
       ],
       "description": "Dans la vallée se trouvait le Lac du Miroir et au sud du Lac, de ses sources glacées jaillissait le Cours d'Argent. Les Nains se réjouissaient à la vue de cette vallée, de ce lac et de fleuve si chers à leur cœur."
@@ -3485,7 +3478,7 @@
         "Carrock",
         "Lorien",
         "Azanulbizar",
-        "Zagh_Kala"
+        "Caradhras"
       ],
       "description": "C'est ici qu'eu lieu le massacre des Champs d'Iris qui vit la perte de l'Anneau Unique dans les eaux de l’Anduin ainsi que la mort du grand roi des Hommes : Isildur ainsi que ses fils au début du troisième âge."
     },
@@ -3550,23 +3543,17 @@
     },
     "Argonath": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Argonath.png",
-      "map": 2,
-      "east": [],
+      "map": 6,
+      "west": [1,2,3],
       "name": "Argonath",
-      "west": [],
+      "east": [4,5,6],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-      "north": [
-        1,
-        2
-      ],
-      "south": [
-        3,
-        4
-      ],
+      "mapdl": "https://drive.google.com/drive/folders/17cN-1OLfFyf1oalh2t0xsSd2AjJ8_Ukg?usp=sharing",
+      "north": [],
+      "south": [],
       "region": "rohan",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665351297/La%20Guerre%20de%20l%27Eriador/argonath_h3hgrl.png",
       "players": [],
       "adjacents": [
         "Terres_Brunes",
@@ -3781,23 +3768,17 @@
     },
     "Cair_Andros": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Cair_Andros.png",
-      "map": 2,
-      "east": [],
+      "map": 6,
+      "east": [4,5,6],
       "name": "Cair Andros",
-      "west": [],
+      "west": [1,2,3],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-      "north": [
-        1,
-        2
-      ],
-      "south": [
-        3,
-        4
-      ],
+      "mapdl": "https://drive.google.com/drive/folders/1ovChzHYsYoXma2wq_ys7FXwO1xaaNvO6?usp=sharing",
+      "north": [],
+      "south": [],
       "region": "gondor",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665353356/La%20Guerre%20de%20l%27Eriador/cair_andors_pphh20.png",
       "players": [],
       "adjacents": [
         "Nord_Ithilien",
@@ -4011,11 +3992,11 @@
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Baie_Est.jpg",
       "map": 2,
       "east": [],
-      "name": "Baie de l'est",
+      "name": "Baie de l'est (revoir la carte)",
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1kqumwahSe88r9LgQcN5VjMvGngyGgQme?usp=sharing",
       "north": [
         1,
         2
@@ -4723,24 +4704,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -4798,24 +4762,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -4844,24 +4791,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -4890,24 +4820,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -4936,24 +4849,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -4982,24 +4878,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5028,24 +4907,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5074,24 +4936,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5120,24 +4965,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5155,7 +4983,7 @@
         "west": [],
         "color": "#FF3636",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1jJXFV4dSa8ityp3CoPjBr-g5EuXTshkW?usp=sharing",
         "north": [
           1,
           2
@@ -5166,24 +4994,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5212,24 +5023,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5258,24 +5052,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5304,24 +5081,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5350,24 +5110,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5396,24 +5139,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5471,24 +5197,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5517,24 +5226,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5563,24 +5255,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5609,24 +5284,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5684,24 +5342,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5730,24 +5371,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5776,24 +5400,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5822,24 +5429,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5868,24 +5458,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5914,24 +5487,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -5960,24 +5516,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -6006,24 +5545,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",
@@ -6052,24 +5574,7 @@
         ],
         "region": "rohan",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [
-          {
-            "img": null,
-            "win": 2,
-            "lose": 1,
-            "name": "Ragzus",
-            "faction": 2,
-            "handicap": 0
-          },
-          {
-            "img": null,
-            "win": 0,
-            "lose": 0,
-            "name": "Skyzomyke",
-            "faction": 4,
-            "handicap": 0
-          }
-        ],
+        "players": [],
         "adjacents": [
           "Harlindon",
           "Havres_Gris",

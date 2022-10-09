@@ -1666,13 +1666,13 @@
                   d="M2819.76,904.05c-2.2,9.39-.9,16.38,3.85,22.56,7.13,9.26,7.42,19.92,5.28,30.47-3.49,17.23-2.06,34.09-.42,51.44,2.1,22.4,1.53,45.13.81,67.68-.44,13.75-12.8,23-26.58,19.9-16.92-3.84-33.31-10-44.2-24.82-6.13-8.32-13.23-14.35-23.27-17.7-5.38-1.79-10.13-6.16-14.49-10.11-6.55-6-13.63-10.51-22.3-12.57-3.22-.76-6.66-1.44-9.42-3.12-10-6.06-20-8.77-32.13-6.45-11,2.12-38.32-16.84-40.3-28-2.71-15.3-8-31,.89-46.56,2.35-4.13,2.07-10.28,1.61-15.38-1.16-12.66-1.56-25.21,1.39-37.66,2.17-9.13.92-17.05-7-23.23a32.67,32.67,0,0,1-6.55-7.4,11.82,11.82,0,0,1-.66-13.19c2-3.44,3.74-7.54,6.76-9.75,11-8,18.12-19.3,26.86-29.23,6.16-7,10.36-8,16.94-2,8.17,7.41,16.49,10,27.31,7.69,4.13-.89,9.19,1,13.45,2.56,7.62,2.87,14.3,1.76,20.65-3,2.14-1.58,4.26-3.18,6.45-4.68a17.45,17.45,0,0,1,17.11-1.79c11.12,4.38,22.16,9,33.24,13.46a16.77,16.77,0,0,1,10.46,11.24c.93,3.19,1.92,6.36,2.81,9.56,2.91,10.44,7.72,19.71,15.67,27.32a78.84,78.84,0,0,1,9,10.62C2818.2,889,2822.78,896.41,2819.76,904.05Z" />
 
 
-                <path :id="map.Zagh_Kala && map.Zagh_Kala.name" :title="map.Zagh_Kala && map.Zagh_Kala.name"
-                  aria-valuetext="Zagh_Kala" class="st" :class="[
-                map.Zagh_Kala && map.Zagh_Kala.color !== '#3300000'
+                <path :id="map.Caradhras && map.Caradhras.name" :title="map.Caradhras && map.Caradhras.name"
+                  aria-valuetext="Caradhras" class="st" :class="[
+                map.Caradhras && map.Caradhras.color !== '#3300000'
                   ? 'opacity-25'
                   : 'opacity-0',
                 viewCheckbox.brumeux && 'fill-current text-red-700 opacity-50',
-              ]" :fill="map.Zagh_Kala ? map.Zagh_Kala.color : '#3300000'" @mouseover="getInfo" @click="toggleModal"
+              ]" :fill="map.Caradhras ? map.Caradhras.color : '#3300000'" @mouseover="getInfo" @click="toggleModal"
                   d="M2612.09,1007.23c9.18,3.14,17.07,8,24.71,13,6.37,4.17,12.87,6.87,20.46,6.76,15.12-.22,28.17,7.37,42.19,11.25a20.54,20.54,0,0,1,8.41,5.23c8.17,8,17.13,14.36,28.21,18.13,4.67,1.59,9.21,5.84,12.07,10.06,11.72,17.25,29.58,24,48.22,29.68a6.21,6.21,0,0,0,1.94.45c16-.42,22.14,9.74,24.89,23.36,1,5.2,2.33,10.46,2.44,15.72.34,16,.29,31.95.08,47.92a79.1,79.1,0,0,1-1.89,13.8c-1.55,8.1-4.52,15.31-12.68,19.15a14.85,14.85,0,0,0-9,14.38c.18,11.18-6.85,18.41-13.57,25.76-5.86,6.4-13.41,8.3-21.86,6.55a31.31,31.31,0,0,1-5.76-1.61c-18.23-7.7-37.35-9.09-56.82-8.24-3.32.15-6.66-.16-10,0-10.32.47-17.22-4.27-23.32-12.52-10.66-14.39-22.24-28.13-33.79-41.84-8.79-10.44-20.23-15.26-33.85-12.41-8.83,1.85-17,.61-25.52-1.68-7.64-2.06-15.69-2.59-23.56-3.78-8.31-1.25-10.34-4-8.49-12,3-12.84,5-25.82,10.65-38.09,2.89-6.26,2.76-14.31,2.51-21.5-.29-8.51,1.74-15.65,7.19-22.11,4.29-5.07,8-10.67,12.34-15.66,4.83-5.52,10.1-10.41,10.54-18.64.14-2.77,2.73-6.1,5.15-7.91,6-4.46,7.85-10.41,8.18-17.34C2602.6,1023.66,2604.67,1014.81,2612.09,1007.23Z" />
 
 
@@ -7688,7 +7688,7 @@
                   <path id="Shape-2210" data-name="Shape" class="cls-6"
                     d="M2589.45,1248.57a4.58,4.58,0,0,1-.78.78,3.54,3.54,0,0,1-5,0l-13.28-13.28a3.54,3.54,0,0,1,0-5l.6-.6a.82.82,0,0,1,.61-.26.78.78,0,0,1,.6.26l17,17a.86.86,0,0,1,.26,1.12Z" />
                 </g>
-                <g :class="map.Zagh_Kala ? map.Zagh_Kala.fight : 'hidden'" id="_010---Swords-131" data-name="010---Swords">
+                <g :class="map.Caradhras ? map.Caradhras.fight : 'hidden'" id="_010---Swords-131" data-name="010---Swords">
                   <path id="Shape-2211" data-name="Shape" class="cls-2"
                     d="M2650.59,1080.13a3.52,3.52,0,0,0-2.46-1.14l-15.11-.83a3.39,3.39,0,0,0-3.61,3.62l.82,15.1a3.45,3.45,0,0,0,1.15,2.46l34.31,28.57,9-3.29,1-1.14,2.29-10.35Z" />
                   <path id="Shape-2212" data-name="Shape" class="cls-2"
@@ -9934,7 +9934,7 @@ export default {
           if(this.isEnd){
             try {
                 this.isEnd = false
-                this.map = require(`~/static/gde/before-resources-turn-${this.tour}.json`)
+                this.map = require(`~/static/gda/before-resources-turn-${this.tour}.json`)
                 this.updateMap()
               } 
               catch (e) {
@@ -9944,7 +9944,7 @@ export default {
           } else {
             this.tour--
             this.isEnd = true
-            this.map = require(`~/static/gde/beforemoves-end-turn-${this.tour}.json`)
+            this.map = require(`~/static/gda/beforemoves-end-turn-${this.tour}.json`)
             this.updateMap()
           }
         }
@@ -9959,11 +9959,11 @@ export default {
           if(this.isEnd){
             this.isEnd = false;
             this.tour++;
-            this.map = require(`~/static/gde/before-resources-turn-${this.tour}.json`)
+            this.map = require(`~/static/gda/before-resources-turn-${this.tour}.json`)
             this.updateMap()
           } else {
             this.isEnd = true;
-            this.map = require(`~/static/gde/beforemoves-end-turn-${this.tour}.json`)
+            this.map = require(`~/static/gda/beforemoves-end-turn-${this.tour}.json`)
             this.updateMap()
           }
         }
@@ -10251,52 +10251,49 @@ export default {
   async fetch() {
     this.displayHUDValue = this.$cookies.get('checkHUD');
     this.loading = true;
-
-     // TEST
-
-    // this.map = await this.$http.$get(
-    //   "https://api.npoint.io/900d4d348871ff3c6841"
-    // );
-    // let factions = await this.$http.$get(
-    //   "https://api.npoint.io/900d4d348871ff3c6841/factions"
-    // ); //API
-
-    // this.map = await this.$http.$get(
-    //   "https://api.npoint.io/7a210a01331f3c385ed7"
-    // );
-
     let map1 = require(`~/assets/new_gda/map.json`);
-
-    // let map2 = await this.$http.$get(
-    //   "https://api.npoint.io/900d4d348871ff3c6841"
-    // );
-
-    // let testtt = {...map2, ...map1}
-
-    // console.log(testtt, "dediejdi")
-
-    this.map = map1
-
-
-    this.loading = false;
-
-    console.log(map1, map1.factions, map1["factions"])
-
-    let factions = map1.factions
-
+    
     console.log(factions)
+    
+    let testApi = await this.$http.$get(
+      "https://api.npoint.io/7a210a01331f3c385ed7"
+      ); //API
+      
+    let factions = testApi.factions
+    let time = testApi.time
+    this.result = testApi.results
 
-    // let factions = await this.$http.$get(
-    //   "https://api.npoint.io/7a210a01331f3c385ed7/factions"
-    // ); //API
 
-    let time = map1.time
+    function MergeRecursive(obj1, obj2) {
+      console.log(obj1, obj2, "djeidje")
+      for (var p in obj2) {
+        try {
+          console.log(obj2.p, p, "for")
+          // Property in destination object set; update its value.
+          if (obj2[p].constructor==Object ) {
+            obj1[p] = MergeRecursive(obj1[p], obj2[p]);
 
-    // let time = await this.$http.$get(
-    //   "https://api.npoint.io/7a210a01331f3c385ed7/time"
-    // ); //API
+          } else {
+            obj1[p] = obj2[p];
 
-    this.result = map1.results
+          }
+
+        } catch(e) {
+          // Property in destination object not set; create it and set its value.
+          obj1[p] = obj2[p];
+
+        }
+      }
+
+      return obj1;
+    }
+
+    let o3 = MergeRecursive(map1, testApi);
+
+    
+
+    this.map = o3
+    console.log(o3, "MergeRecursive")
     // this.result = await this.$http.$get(
     //   "https://api.npoint.io/7a210a01331f3c385ed7/results"
     // ); //API
@@ -10305,6 +10302,7 @@ export default {
     this.tour = time.tour;
     this.currentMap = this.map
     this.currentTour = this.tour
+    this.loading = false;
 
 
     let objArray = []

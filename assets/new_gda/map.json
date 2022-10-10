@@ -70,29 +70,25 @@
     },
     "Moria": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127011/La%20Guerre%20de%20l%27Eriador/Moria_ubr4af.png",
-      "map": 4,
+      "map": 6,
       "east": [
+        1,
         2,
         3
       ],
       "name": "Moria",
       "west": [
-        1,
-        4
+        4,
+        5,
+        6
       ],
       "color": "#FF6F00",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1-KC65KNwGBq1BfK4XcRx7lA0xECp7OBx?usp=sharing",
-      "north": [
-        1,
-        2
-      ],
-      "south": [
-        3,
-        4
-      ],
+      "mapdl": "https://drive.google.com/drive/folders/1Fum9jaqKHRgS7VXJ8OPtgVexU3Hhm6xK?usp=sharing",
+      "north": [],
+      "south": [],
       "region": "brumeux",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/moria_minimap_wd23h3.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665436469/La%20Guerre%20de%20l%27Eriador/moria_coeur_acusef.png",
       "players": [],
       "adjacents": [
         "Caradhras",
@@ -489,7 +485,7 @@
       "west": [],
       "color": "#C500FF",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1NEA70z5NKijqrXxTYtNNhixaagh2ye44?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/16_ikn8hfp2W5Jz-2P85corv6QMcrt56U?usp=sharing",
       "north": [],
       "south": [],
       "region": "angmar",
@@ -554,7 +550,7 @@
       ],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1ZV3IjwP0bjz_aQzokTIy8AyaGlzT41gN?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1rOm3MBS7wlGYjBkKhnZqRiQqhuCtjKgR?usp=sharing",
       "north": [
         1,
         2,
@@ -1478,7 +1474,7 @@
       "name": "Dol Tinereb",
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1nQusWYj4zNgJfZXuJ3KFLNM2R7aYkbO1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1ay53bSC64yeHdkX11UW1JWysmauOXxGs?usp=sharing",
       "region": "cardolan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/dol_tinered_minimap_wmkjwm.png",
       "outpost": true,
@@ -1572,7 +1568,7 @@
       ],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1q20zBIN5yyNHhYgeFnq16a3DAFKAGFa-?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1loe29uyVQYiZ_J_JXRnX0ggf526kyAyw?usp=sharing",
       "north": [
         1,
         2
@@ -1691,7 +1687,7 @@
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/10oYEPBh7bSR9w32NbwwdmbA6Rruuqc6m?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1Gnwvmc1fb5-gJzVIYH0odH-ClrvSSOmv?usp=sharing",
       "north": [
         1,
         2
@@ -1841,7 +1837,7 @@
       ],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1M-dk19U28HUmJNYGF0HpG-RpdRd-KnDI?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1zJGfHprIEAwx1jHB6Cx87vbnsJlaJKpF?usp=sharing",
       "north": [
         1
       ],
@@ -2026,7 +2022,7 @@
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/100HA8NmbIhxrNWPRnwmYHn7PN5X0fJ1T?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1KrZjpWLmqMr3o1OXG0N7vWWlVOVyXwLS?usp=sharing",
       "north": [
         1,
         2
@@ -2061,7 +2057,7 @@
       ],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1-KbtRhUwDpKRP1bti6YoQSlCGckoCQlB?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1ZDOBXWEx_oU2E2dSEkrc9_6L5CKNn6Wd?usp=sharing",
       "north": [
         1,
         2
@@ -2129,7 +2125,7 @@
       ],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1B2-_aylKPhqHF8W82R5i773dqIrNJlke?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1ZDOBXWEx_oU2E2dSEkrc9_6L5CKNn6Wd?usp=sharing",
       "north": [
         1,
         2
@@ -2326,17 +2322,15 @@
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/16mYpVuREuAkFUUVEYdjmztX1wbfq1Xj1?usp=sharing",
       "north": [
-        1,
-        2
+        1
       ],
       "south": [
-        3,
-        4
+        2
       ],
       "region": "rhovanion",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665435390/La%20Guerre%20de%20l%27Eriador/carnen_ryfzeu.png",
       "players": [],
       "adjacents": [
         "Monts_Fer",
@@ -2407,22 +2401,16 @@
     "Desert_Nord": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Desert_Nord.jpg",
       "map": 2,
-      "east": [],
+      "east": [3,4],
       "name": "Desert du Nord",
-      "west": [],
+      "west": [1,2],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-      "north": [
-        1,
-        2
-      ],
-      "south": [
-        3,
-        4
-      ],
+      "mapdl": "https://drive.google.com/drive/folders/16TDK4_thvQUzTQa6ELDSWfVveDepdNqw?usp=sharing",
+      "north": [],
+      "south": [],
       "region": "harad",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665437222/La%20Guerre%20de%20l%27Eriador/desert_nord_alwg82.png",
       "players": [],
       "adjacents": [
         "Froid_Eternel",
@@ -2593,23 +2581,17 @@
     },
     "Carrefour": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Carrefour.png",
-      "map": 2,
-      "east": [],
+      "map": 4,
+      "east": [3,4],
       "name": "Carrefour",
-      "west": [],
+      "west": [1,2],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-      "north": [
-        1,
-        2
-      ],
-      "south": [
-        3,
-        4
-      ],
+      "mapdl": "https://drive.google.com/drive/folders/1GUhiGh0nUaNDmhaGOQk-Frt3aYn8UbnR?usp=sharing",
+      "north": [],
+      "south": [],
       "region": "gondor",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665435585/La%20Guerre%20de%20l%27Eriador/carrefour_gpbxjo.png",
       "players": [],
       "adjacents": [
         "Minas_Morgul",
@@ -2649,23 +2631,25 @@
     },
     "Cirith_Ungol": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Cirith_Ungol.jpg",
-      "map": 2,
+      "map": 6,
       "east": [],
       "name": "Cirith Ungol",
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1B60noYxbcexqocT0bVHeQ8FZz9mMsV1D?usp=sharing",
       "north": [
         1,
-        2
+        2,
+        3
       ],
       "south": [
-        3,
-        4
+        4,
+        5,
+        6
       ],
-      "region": "harad",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "region": "mordor",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665436205/La%20Guerre%20de%20l%27Eriador/cirith_ungol_pyusoz.png",
       "players": [],
       "adjacents": [
         "Ephel_Duath",
@@ -2905,17 +2889,19 @@
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1shFoMfRt8qmhJTps7vG8OUa1vLdBkjtS?usp=sharing",
       "north": [
-        1,
-        2
+        4,
+        5,
+        6
       ],
       "south": [
-        3,
-        4
+        1,
+        2,
+        3
       ],
       "region": "gondor",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665437321/La%20Guerre%20de%20l%27Eriador/dol_amroth_icwv3m.png",
       "players": [],
       "adjacents": [
         "Belfalas",
@@ -2981,13 +2967,13 @@
     },
     "Centre_Ithilien": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Centre_Ithilien.png",
-      "map": 2,
+      "map": 4,
       "east": [],
       "name": "Centre Ithilien",
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1jEBkMwmVPwqOPmUrVmsbEk7T4kz_6F9U?usp=sharing",
       "north": [
         1,
         2
@@ -2997,7 +2983,7 @@
         4
       ],
       "region": "gondor",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665436071/La%20Guerre%20de%20l%27Eriador/centre_ithilien_ry2r2f.png",
       "players": [],
       "adjacents": [
         "Carrefour",
@@ -3129,7 +3115,7 @@
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1tkcG_zYxPXOHaQdsYASXnha4GYw6KsPX?usp=sharing",
       "north": [
         1,
         2
@@ -3231,23 +3217,17 @@
     },
     "Edoras": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Edoras.png",
-      "map": 2,
-      "east": [],
+      "map": 6,
+      "east": [1,2,3],
       "name": "Edoras",
-      "west": [],
+      "west": [4,5,6],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-      "north": [
-        1,
-        2
-      ],
-      "south": [
-        3,
-        4
-      ],
+      "mapdl": "https://drive.google.com/drive/folders/1Uh7jmcfuI1wb8tZ2wzdLN-JGT8YI7mIZ?usp=sharing",
+      "north": [],
+      "south": [],
       "region": "rohan",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665439231/La%20Guerre%20de%20l%27Eriador/edoras_r2hg4n.png",
       "players": [],
       "adjacents": [
         "Dimholt",
@@ -3260,22 +3240,20 @@
     "Dunharrow": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Dunharrow.png",
       "map": 2,
-      "east": [],
+      "east": [1],
       "name": "Dunharrow",
-      "west": [],
+      "west": [2],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1aZccrZzfMrlrqTFhluCr31cXqRekPjK5?usp=sharing",
       "north": [
-        1,
         2
       ],
       "south": [
-        3,
-        4
+        1
       ],
       "region": "rohan",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665438787/La%20Guerre%20de%20l%27Eriador/dunharrow_cnqsxd.png",
       "players": [],
       "adjacents": [
         "Edoras",
@@ -3405,17 +3383,19 @@
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1IRfzhKSqhH6thiEtEKL7Tj8BSSkQzo_2?usp=sharing",
       "north": [
         1,
-        2
+        2,
+        3
       ],
       "south": [
-        3,
-        4
+        4,
+        5,
+        6
       ],
       "region": "Celebrant",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665435938/La%20Guerre%20de%20l%27Eriador/celebrant_cpfsxc.png",
       "players": [],
       "adjacents": [
         "Plateau",
@@ -3938,17 +3918,19 @@
       "west": [],
       "color": "#FFFFFF",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1xi-eMCVKtMDFWO3uVWeB9TW0xT22eOkp?usp=sharing",
       "north": [
         1,
-        2
+        2,
+        3
       ],
       "south": [
-        3,
-        4
+        4,
+        5,
+        6
       ],
       "region": "rhovanion",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665437554/La%20Guerre%20de%20l%27Eriador/dol_guldur_nugxlt.png",
       "players": [],
       "adjacents": [
         "Sud_Foret_Noire",
@@ -4019,22 +4001,16 @@
     "Valee_Celduin": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Celduin.jpg",
       "map": 2,
-      "east": [],
+      "east": [3,4],
       "name": "Vallée du Celduin",
-      "west": [],
+      "west": [1,2],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-      "north": [
-        1,
-        2
-      ],
-      "south": [
-        3,
-        4
-      ],
+      "mapdl": "https://drive.google.com/drive/folders/1-BqR0FjgjhoZE3Pe0wwDGgZ624kDMSmE?usp=sharing",
+      "north": [],
+      "south": [],
       "region": "rhovanion",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665435803/La%20Guerre%20de%20l%27Eriador/valee_celduin_kgpv7m.png",
       "players": [],
       "adjacents": [
         "Dagorlad",
@@ -4046,12 +4022,12 @@
     "Dorwinion": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Dorwinion.jpg",
       "map": 2,
-      "east": [],
+      "east": [2,3],
       "name": "Dorwinion",
-      "west": [],
+      "west": [1,4],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1Q4SY0orC5vUTVJkW8-zfD9ATnh1kLgtS?usp=sharing",
       "north": [
         1,
         2
@@ -4061,7 +4037,7 @@
         4
       ],
       "region": "rhovanion",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665437694/La%20Guerre%20de%20l%27Eriador/dorwinion_qsrdix.png",
       "players": [],
       "adjacents": [
         "Carnen",
@@ -4071,23 +4047,25 @@
     },
     "Dagorlad": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Dagorlad.png",
-      "map": 2,
+      "map": 6,
       "east": [],
       "name": "Dagorlad",
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1nXKyspR6UFHuakJyIvvhZUxRuPwRchMg?usp=sharing",
       "north": [
         1,
-        2
+        2,
+        3
       ],
       "south": [
-        3,
-        4
+        4,
+        5,
+        6
       ],
       "region": "rhovanion",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665436774/La%20Guerre%20de%20l%27Eriador/dagorlad_l8ew5n.png",
       "players": [],
       "adjacents": [
         "Ered_Lithui",
@@ -4332,7 +4310,7 @@
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1VZdFV17KB6GINP0QIg-3ZiRKZq-VplUR?usp=sharing",
       "north": [
         1,
         2
@@ -4809,17 +4787,15 @@
         "west": [],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1K5ynXFtZLLolFzDxAKdaMnSIRVleJHQA?usp=sharing",
         "north": [
-          1,
-          2
+          1
         ],
         "south": [
-          3,
-          4
+          2
         ],
         "region": "rohan",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665435702/La%20Guerre%20de%20l%27Eriador/carrock_wzbbum.png",
         "players": [],
         "adjacents": [
           "Harlindon",

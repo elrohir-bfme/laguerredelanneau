@@ -2191,13 +2191,13 @@
 
 
 
-                <path :id="map.Gobelinville && map.Gobelinville.name" :title="map.Gobelinville && map.Gobelinville.name"
-                  aria-valuetext="Gobelinville" class="st" :class="[
-                map.Gobelinville && map.Gobelinville.color !== '#3300000'
+                <path :id="map.Haut_Col && map.Haut_Col.name" :title="map.Haut_Col && map.Haut_Col.name"
+                  aria-valuetext="Haut_Col" class="st" :class="[
+                map.Haut_Col && map.Haut_Col.color !== '#3300000'
                   ? 'opacity-25'
                   : 'opacity-0',
                 viewCheckbox.brumeux && 'fill-current text-red-700 opacity-50',
-              ]" :fill="map.Gobelinville ? map.Gobelinville.color : '#3300000'" @mouseover="getInfo"
+              ]" :fill="map.Haut_Col ? map.Haut_Col.color : '#3300000'" @mouseover="getInfo"
                   @click="toggleModal"
                   d="M2598.37,841c-8.89-8.79-9.07-18.48-11.15-27.34-2.27-9.64-3.7-19.48-5.9-29.15-1.29-5.65-.46-10.49,3.27-14.87,2.15-2.53,4.58-4.89,6.33-7.67,3.14-5,3.56-11-.65-14.8-10.66-9.6-13.4-24.38-23.61-34.18-4.49-4.31-6-10.19-5.31-16.54.34-3.29,1-6.85.15-9.91-4.17-15.11,5.81-22,16.28-28.29,9.06-5.44,18.63-10,27.86-15.19a18.12,18.12,0,0,1,15.36-1.5c20.08,6.79,39.94,14.37,60.3,20.21,14.54,4.18,24,13.5,32.18,25.12,6.48,9.22,12.69,18.64,19.31,27.75,11,15.09,19.22,31.75,28.3,47.93a8.64,8.64,0,0,1,1.41,3.7c.49,13,5.61,24.43,12.11,35.42.95,1.6,1.68,4.13,1.07,5.67-.84,2.14-2.75,4.72-4.73,5.3-2.25.66-5.22-.31-7.65-1.2q-11.22-4.12-22.25-8.79c-7.44-3.15-14.23-2.43-20.58,2.56a60.76,60.76,0,0,1-6.39,4.75c-2.26,1.34-5.18,3.58-7.16,3-13.24-3.63-28.84.72-40.05-7.93-19.71-15.22-28.76-7.23-39,8.2C2620.31,824.81,2610,832.34,2598.37,841Z" />
 
@@ -7724,7 +7724,7 @@
                   <path id="Shape-2227" data-name="Shape" class="cls-6"
                     d="M2678.17,1160.25a9.79,9.79,0,0,1-1.48,1.48,6.75,6.75,0,0,1-9.52,0l-25.28-25.28a6.74,6.74,0,0,1,0-9.53l1.15-1.15a1.58,1.58,0,0,1,2.29,0l32.35,32.35a1.62,1.62,0,0,1,.49,2.13Z" />
                 </g>
-                <g :class="map.Gobelinville ? map.Gobelinville.fight : 'hidden'" id="_010---Swords-132" data-name="010---Swords">
+                <g :class="map.Haut_Col ? map.Haut_Col.fight : 'hidden'" id="_010---Swords-132" data-name="010---Swords">
                   <path id="Shape-2228" data-name="Shape" class="cls-2"
                     d="M2630.94,697.48a3.27,3.27,0,0,0-2.31-1.07l-14.16-.77a3.18,3.18,0,0,0-3.39,3.38l.77,14.16a3.28,3.28,0,0,0,1.08,2.31l32.17,26.79,8.47-3.08.92-1.08,2.16-9.7Z" />
                   <path id="Shape-2229" data-name="Shape" class="cls-2"

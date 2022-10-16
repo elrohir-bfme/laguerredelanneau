@@ -3789,7 +3789,7 @@
       "description": "La frontière Est du Rohan est une région fertile et verdoyante où sont implantés des fermes prospèrent."
     },
     "Vinyalonde": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Est_Rohan.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665911043/La%20Guerre%20de%20l%27Eriador/original_q5nemh.jpg",
       "map": 2,
       "east": [],
       "name": "Vinyalondë",
@@ -3817,23 +3817,25 @@
     },
     "Druwaith_Iaur": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Enedwaith.png",
-      "map": 2,
-      "east": [],
+      "map": 6,
+      "east": [1,2,3],
       "name": "Drúwaith Iaur",
-      "west": [],
+      "west": [4,5,6],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1M9kRHAZzaa7a9ev87fCTGkUD3dfHY0y3?usp=sharing",
       "north": [
         1,
-        2
+        2,
+        3
       ],
       "south": [
-        3,
-        4
+        4,
+        5,
+        6
       ],
-      "region": "rohan",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "region": "isengard",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665911698/La%20Guerre%20de%20l%27Eriador/druwaith_Iaur_pnrcjn.png",
       "players": [],
       "adjacents": [
         "Andrast",
@@ -3844,7 +3846,7 @@
       "description": "Le Drúwaith Iaur était la région comprise entre les fleuves Isen et Lefnui, à l'ouest du Gondor."
     },
     "Dimholt": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Erech.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665910569/La%20Guerre%20de%20l%27Eriador/dimholtimg_le6til.jpg",
       "map": 2,
       "east": [2],
       "name": "Dimholt",
@@ -4782,7 +4784,7 @@
         "description": "Le Morthond prenait sa source au pied du Dwimorberg, non loin de l'issue des Chemins des Morts. À l'époque de la Guerre de l’Anneau, ses rives étaient probablement très peuplés, permettant au seigneur de la Vallée du Morthond, Duinhir, d'amener cinq cents archers au secours de Minas Tirith, ce qui en fait la deuxième compagnie la plus nombreuse après celle d'Imrahil de Dol Amroth."
       },
       "Pinath_Gellin": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Carrock.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665910630/La%20Guerre%20de%20l%27Eriador/Pinath_Gellin_mzvnnm.jpg",
         "map": 6,
         "east": [4,5,6],
         "west": [1,2,3],
@@ -4813,7 +4815,7 @@
         "description": "Le Carroc était un immense rocher, sur l'Anduin, avec un grand escalier qui menait à l'espace plat au sommet et descendait jusqu'au fleuve où un gué permettait de le traverser du côté est."
       },
       "Erech": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Carrock.jpg",
+        "img": "https://laguerredelanneau.vercel.app/Territories_img/Erech.jpg",
         "map": 2,
         "east": [],
         "name": "Erech",

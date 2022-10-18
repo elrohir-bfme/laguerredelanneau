@@ -4228,38 +4228,11 @@
       "description": "La mer de Rhûn était une vaste mer intérieure qui se situait à l'est du Rhovanion, alimentée par les eaux de la rivière Celduin. Au nord-est, ses rives étaient densément boisées ; au sud-ouest se dressaient des collines. Au nord-ouest de la mer se trouvait la région du Dorwinion. À l'époque de l'apogée du Gondor, cette mer formait une partie de la frontière orientale du pays, mais avec le déclin des Dúnedain, les frontières de ce royaume reculèrent vers l'ouest."
     },
     "Golfe_Harad": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Rhun.jpg",
-      "map": 2,
-      "east": [],
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666095858/La%20Guerre%20de%20l%27Eriador/golfe_du_harad_jkequh.png",
+      "map": 4,
+      "east": [2,3],
       "name": "Golfe du Harad",
-      "west": [],
-      "color": "#3300000",
-      "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-      "north": [
-        1,
-        2
-      ],
-      "south": [
-        3,
-        4
-      ],
-      "region": "harad",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-      "players": [],
-      "adjacents": [
-        "Khand",
-        "Proche_Harad",
-        "Hidar"
-      ],
-      "description": "harad"
-    },
-    "Harnedor": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Rhun.jpg",
-      "map": 2,
-      "east": [],
-      "name": "Harnedor",
-      "west": [],
+      "west": [1,4],
       "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1VZdFV17KB6GINP0QIg-3ZiRKZq-VplUR?usp=sharing",
@@ -4272,7 +4245,32 @@
         4
       ],
       "region": "harad",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666090128/La%20Guerre%20de%20l%27Eriador/golfe_harad_iqsh3j.png",
+      "players": [],
+      "adjacents": [
+        "Khand",
+        "Proche_Harad",
+        "Hidar"
+      ],
+      "description": "harad"
+    },
+    "Harnedor": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666089567/La%20Guerre%20de%20l%27Eriador/harnedorimg_yb6vkb.png",
+      "map": 2,
+      "east": [2],
+      "name": "Harnedor",
+      "west": [1],
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1cikiGe6JCkAnGVoM_vMRpxFX-O_2XOZP?usp=sharing",
+      "north": [
+        1
+      ],
+      "south": [
+        2
+      ],
+      "region": "harad",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666089031/La%20Guerre%20de%20l%27Eriador/harnedor_fwvglw.png",
       "players": [],
       "adjacents": [
         "Lointain_Harad",

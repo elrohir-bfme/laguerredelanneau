@@ -2852,22 +2852,20 @@
     "Lamedon": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Lamedon.jpg",
       "map": 2,
-      "east": [],
+      "east": [4,5,6],
       "name": "Lamedon",
-      "west": [],
+      "west": [1,2,3],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/18tdXB6O80hK2_sCm32_-9DxU5-YX2uqp?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1GR91NTxZzpxaO3ZaiPsz5pdQl0mFX2fk?usp=sharing",
       "north": [
-        1,
-        2
+        3,4,5
       ],
       "south": [
-        3,
-        4
+        1,2,6
       ],
       "region": "gondor",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666180941/La%20Guerre%20de%20l%27Eriador/Lamedon_i36tyx.png",
       "players": [],
       "adjacents": [
         "Lossarnach",
@@ -3762,10 +3760,10 @@
     },
     "Est_Rohan": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Est_Rohan.png",
-      "map": 2,
-      "east": [],
+      "map": 4,
+      "east": [3,4],
       "name": "Est du Rohan",
-      "west": [],
+      "west": [1,2],
       "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1czZMrCqtVT8nnFuStXv0CbIMRfAH07Jh?usp=sharing",
@@ -3778,7 +3776,7 @@
         4
       ],
       "region": "rohan",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666180076/La%20Guerre%20de%20l%27Eriador/est_rohan_cpcd5h.png",
       "players": [],
       "adjacents": [
         "Months_Endwash",
@@ -4642,22 +4640,20 @@
       "Grands_Arpents": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1663764099/La%20Guerre%20de%20l%27Eriador/unknown_1_nelhnd.png",
         "map": 2,
-        "east": [],
+        "east": [2],
         "name": "Grands-arpents",
-        "west": [],
+        "west": [1],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1Jr7hn2srva6BqSMVz4SquKTdJQ8WrRKF?usp=sharing",
         "north": [
-          1,
-          2
+          1
         ],
         "south": [
-          3,
-          4
+          2
         ],
         "region": "rohan",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666180281/La%20Guerre%20de%20l%27Eriador/Grands_Arpents_kxgyji.png",
         "players": [],
         "adjacents": [
           "Harlindon",
@@ -4839,23 +4835,21 @@
       },
       "Emyn_Duir": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1662929306/La%20Guerre%20de%20l%27Eriador/unknown_fguaf0.png",
-        "map": 2,
-        "east": [],
+        "map": 6,
+        "east": [4,5,6],
         "name": "Emyn Duir",
-        "west": [],
+        "west": [1,2,3],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1PQd2bpFqMMKwz5vuMuFLj8iVCj1xpXba?usp=sharing",
         "north": [
-          1,
-          2
+          4,5,6
         ],
         "south": [
-          3,
-          4
+          1,2,3
         ],
-        "region": "rohan",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "region": "rhovanion",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666180569/La%20Guerre%20de%20l%27Eriador/Emyn_Duir_pm0lqk.png",
         "players": [],
         "adjacents": [
           "Harlindon",
@@ -5125,7 +5119,7 @@
         "description": "Ered Lithui étaient l'une des deux chaînes de montagnes qui bornaient le Mordor. Celle-ci formait la frontière nord et rejoignait Ephel Dúath à l'ouest, délimitant la Morannon, l'entrée du Mordor, et la région d'Udûn."
       },
       "Kelepar": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666179702/La%20Guerre%20de%20l%27Eriador/tumblr_inline_p4ocnuqZlo1rlgbs6_540_nxmfey.jpg",
         "map": 4,
         "east": [2,3],
         "name": "Kelepar",
@@ -5154,7 +5148,7 @@
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
       },
       "Plaines_Avari": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666179891/La%20Guerre%20de%20l%27Eriador/avari_gztob5.png",
         "map": 4,
         "east": [],
         "name": "Plaines d'Avari",
@@ -5183,7 +5177,7 @@
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
       },
       "Agasha_Dag": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666179621/La%20Guerre%20de%20l%27Eriador/Agasha_Dag_ro473y.jpg",
         "map": 4,
         "east": [],
         "name": "Agasha Dag",
@@ -5265,7 +5259,7 @@
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },
       "Terre_Beornides": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666181761/La%20Guerre%20de%20l%27Eriador/Beorn1_reh7h1.webp",
         "map": 2,
         "east": [],
         "name": "Terre_Beornides",

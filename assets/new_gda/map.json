@@ -4061,12 +4061,12 @@
     "Erebor": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Erebor.jpg",
       "map": 6,
-      "east": [],
+      "east": [4,5,6],
       "name": "Erebor",
-      "west": [],
+      "west": [1,2,3],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1z123t_iwx3Zhfa98G0bFh5FCo09Pea2s?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1s-F2h_2XD7s5FgzgiT4dtalsJkh8y-Ox?usp=sharing",
       "north": [
         1,
         2,
@@ -4078,7 +4078,7 @@
         6
       ],
       "region": "rhovanion",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665515801/La%20Guerre%20de%20l%27Eriador/erebor_kwmzir.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666178198/La%20Guerre%20de%20l%27Eriador/erebor_q0y89f.png",
       "players": [],
       "adjacents": [
         "Terre_Desolee",

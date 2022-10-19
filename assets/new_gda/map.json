@@ -3790,13 +3790,13 @@
     },
     "Vinyalonde": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665911043/La%20Guerre%20de%20l%27Eriador/original_q5nemh.jpg",
-      "map": 2,
-      "east": [],
+      "map": 4,
+      "east": [2,4],
       "name": "Vinyalondë",
-      "west": [],
+      "west": [1,3],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1Wh4as0U3KN3nVQI3KJNelXgdU1wKf4fy?usp=sharing",
       "north": [
         1,
         2
@@ -3806,7 +3806,7 @@
         4
       ],
       "region": "rohan",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666177448/La%20Guerre%20de%20l%27Eriador/Vinyalonde_d35frd.png",
       "players": [],
       "adjacents": [
         "Cairill",
@@ -3817,25 +3817,21 @@
     },
     "Druwaith_Iaur": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666164397/La%20Guerre%20de%20l%27Eriador/Druwaith_Iaur_ypmod5.jpg",
-      "map": 6,
-      "east": [1,2,3],
+      "map": 2,
+      "east": [2],
       "name": "Drúwaith Iaur",
-      "west": [4,5,6],
+      "west": [1],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1M9kRHAZzaa7a9ev87fCTGkUD3dfHY0y3?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1tspnglAxAg5Hk--vfvZ55BG1PnNFhIXN?usp=sharing",
       "north": [
-        1,
-        2,
-        3
+        2
       ],
       "south": [
-        4,
-        5,
-        6
+        1
       ],
       "region": "isengard",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665911698/La%20Guerre%20de%20l%27Eriador/druwaith_Iaur_pnrcjn.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666176717/La%20Guerre%20de%20l%27Eriador/druwaith_Iaur_mjpr6y.png",
       "players": [],
       "adjacents": [
         "Andrast",
@@ -5321,29 +5317,29 @@
       "Greylin": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1662928990/La%20Guerre%20de%20l%27Eriador/Greylin_simoi1.png",
         "map": 2,
-        "east": [],
+        "east": [1,2,3],
         "name": "Greylin",
-        "west": [],
+        "west": [4,5,6],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1M9kRHAZzaa7a9ev87fCTGkUD3dfHY0y3?usp=sharing",
         "north": [
           1,
-          2
+          2,
+          3
         ],
         "south": [
-          3,
-          4
+          4,
+          5,
+          6
         ],
-        "region": "rohan",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "region": "rhovanion",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665911698/La%20Guerre%20de%20l%27Eriador/druwaith_Iaur_pnrcjn.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Eryn_Lasgalen",
+          "Gundabad",
+          "Haut_Anduin"
         ],
         "description": "Le Greylin est une rivière à l'extrême nord-ouest du Rhovanion. Il prend sa source dans les Ered Mithrin et coule vers le sud à travers le Rhovanion.. L'ancienne capitale des Éothéod, Framsburg, a été construite au a proximité de cette rivière."
       },

@@ -2223,23 +2223,25 @@
     },
     "Orocarni": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Orocarni.jpg",
-      "map": 8,
-      "east": [],
+      "map": 6,
+      "east": [1,2,3],
       "name": "Orocarni",
-      "west": [],
+      "west": [4,5,6],
       "color": "#FFFC00",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1QPRSHgwgvZTEHXCNONlRNZD40t7iAMIU?usp=sharing",
       "north": [
         1,
-        2
+        2,
+        3
       ],
       "south": [
-        3,
-        4
+        4,
+        5,
+        6
       ],
-      "region": "harad",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "region": "rhun",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666178071/La%20Guerre%20de%20l%27Eriador/orocarni_tvbssq.png",
       "players": [],
       "adjacents": [
         "Plaines_Avari",

@@ -220,7 +220,7 @@
         "Siragalë",
         "Dol_Tinereb"
       ],
-      "description": "Région d'Arthedain du sud à l'est des Montagnes Bleus du sud, est relativement peu habité. Riche en fer, les nains profitent abondamment de ses gisements pour leur commerce."
+      "description": "Région d'Arthedain du sud à l'est des Montagnes Bleues du sud qui est habité. Riche en fer, les nains profitent abondamment de ses gisements pour leur commerce."
     },
     "Eregion": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127009/La%20Guerre%20de%20l%27Eriador/Eregion_wlam43.jpg",
@@ -302,7 +302,7 @@
         "Bree",
         "Amon_Sul"
       ],
-      "description": "Situés à l'est de la Vieille Forêt et au sud-ouest de Brie, les Coteaux des Tertres étaient parsemés de nombreux tumulus1) où gisaient les ancêtres des Edain, enterrés là avant que ceux-ci n'entrassent en Beleriand."
+      "description": "Situés à l'est de la Vieille Forêt et au sud-ouest de Brie, les Coteaux des Tertres étaient parsemés de nombreux tumulus où gisaient les ancêtres des Edain, enterrés là avant que ceux-ci n'entrassent en Beleriand."
     },
     "Gwathlo": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126749/La%20Guerre%20de%20l%27Eriador/Gwathlo_f068ee.jpg",
@@ -448,7 +448,7 @@
         "Haut_Nord",
         "Nain_Enidh"
       ],
-      "description": "Amon Sûl est le nom d'une colline d'Eriador. Au temps du royaume d'Arnor, la tour abritait un palantír. Les royaumes d'Arthedain, Cardolan et de Rhudaur, issus de l'ancien royaume d'Arnor, se battirent souvent pour la possession de cette tour qui était a la jnction des trois royaumes de plus elle abritait le seul palantír à leur portée. C’est en haut de cette tour que Elendil et Gil-Galad se rencontrèrent pour former la Dernière Alliance des Elfes et des Hommes au second age."
+      "description": "Amon Sûl est le nom d'une colline d'Eriador. Au temps du royaume d'Arnor, la tour abritait un palantír. Les royaumes d'Arthedain, Cardolan et de Rhudaur, issus de l'ancien royaume d'Arnor, se battirent souvent pour la possession de cette tour qui étaient à la jonction des trois royaumes de plus elle abritait le seul palantír à leur portée. C’est en haut de cette tour que Elendil et Gil-Galad se rencontrèrent pour former la Dernière Alliance des Elfes et des Hommes au second âge."
     },
     "Belegaer": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Belegear.jpg",
@@ -1274,7 +1274,7 @@
       "description": "Situé dans les Monts Brumeux sur l'un des passages accessibles aux voyageurs, il devait être un avant-poste nain durant l'ère de Khazad-dûm avant de tomber progressivement en ruine lors de sa chute et de l'abandon des Monts Brumeux par les nains lors du Troisième Age."
     },
     "Forodwaith": {
-      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126749/La%20Guerre%20de%20l%27Eriador/Forodwaith_erdiwq.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665936446/La%20Guerre%20de%20l%27Eriador/forodwaith_h1hupj.webp",
       "map": 4,
       "east": [
         2,
@@ -1458,7 +1458,7 @@
         "Gue_Bruinen",
         "Haut_Col"
       ],
-      "description": "Prise en l’année 162 du TA par les Dùnedain, cette citadelle du Rhudaur sert de siège au roi Broggha des Hommes des Collines. La citadelle comprend une tour et un système de tunnels construits par les Dùnedain d'Arnor dans le flanc de la Colline Tordue. C'est une forteresse quasi imprenable. C'est l'une des rares agglomérations permanentes des Hommes des Collines semi-nomades ; et elle sert de base pour les attaques contre l'Arthedain et le Cardolan."
+      "description": "Prise en l’année 162 du TA par les Dùnedain, cette citadelle du Rhudaur sert de siège au roi Broggha et aux hommes des Collines. La citadelle comprend une tour et un système de tunnels construits par les Dùnedain d'Arnor dans le flanc de la Colline Tordue. C'est une forteresse quasi imprenable. C'est l'une des rares agglomérations permanentes des Hommes des Collines semi-nomades ; et elle sert de base pour les attaques contre l'Arthedain et le Cardolan."
     },
     "Dol_Tinereb": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126754/La%20Guerre%20de%20l%27Eriador/Dol_Tinereb_f9e3ki.jpg",
@@ -1524,7 +1524,7 @@
         "Lindon",
         "Ered_Luin"
       ],
-      "description": "Le palais a été fondé par le père de Thorin, Thráin II, en 2802, après que celui-ci et son peuple quitté le Pays de Dun."
+      "description": "Le palais a été fondé par le père de Thorin, Thráin II, en 2802, après que celui-ci et son peuple ait quitté le Pays de Dun."
     },
     "Havres_Gris": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Havres_Gris.jpg",
@@ -1640,7 +1640,7 @@
         "Carn_Dum",
         "Mont_Gräm"
       ],
-      "description": "Situé dans le sud est de Carn Dum, elles sont le résultats de bien des luttes dans les terres gelées du Nord. Que ce soit entre les orques, les loups, les hommes sauvages, les numénoréens noirs, les trolls, et les interventions d'Arnor, résultant d'un paysage dévasté."
+      "description": "Situées dans le sud est de Carn Dum, elles sont le résultat de bien des luttes dans les terres gelées du Nord. Que ce soit entre les orques, les loups, les hommes sauvages, les numénoréens noirs, les trolls, et les interventions d'Arnor, leurs conflits résultent en un paysage dévasté."
     },
     "Breche_Rohan": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126753/La%20Guerre%20de%20l%27Eriador/Breche_Rohan_u3jvns.jpg",
@@ -1700,7 +1700,7 @@
         "Bree",
         "Galgals"
       ],
-      "description": "En 2747 3A, une horde d'Orques venue du Mont Gram et conduite par Golfimbul attaqua le Comté par le Quartier Nord. Bandobras Touc, dit Fiertaureau, arrêta cette invasion en chargeant les Orques et en décapitant leur chef d'un coup de gourdin, inventant le golf au passage (selon la légende). La Bataille des Champs-Verts fut la première bataille qui se déroula à l'intérieur du Comté et la dernière avant celle de Bataille de Belleau à la fin du Troisième Âge."
+      "description": "En 2747 3A, une horde d'Orques venue du Mont Gram et conduite par Golfimbul attaqua le comté par le Quartier Nord. Bandobras Touc, dit Fiertaureau, arrêta cette invasion en chargeant les Orques et en décapitant leur chef d'un coup de gourdin, inventant le golf au passage (selon la légende). La Bataille des Champs-Verts fut la première bataille qui se déroula à l'intérieur du comté et la dernière avant celle de Bataille de Belleau à la fin du Troisième Âge."
     },
     "Haut_Col": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127010/La%20Guerre%20de%20l%27Eriador/Haut_Col_tcliy2.png",
@@ -1821,7 +1821,7 @@
         "Forochel",
         "Forodwaith"
       ],
-      "description": "Vaste baie glaciale s'étendant à l'extrême nord, limitée au sud par les côtes de l'Eriador, à l'est par le désert du Forodwaith et au nord et à l'ouest par le long cap Forochel. Peuplé uniquement par le peuple Lossoth, c'est sur ces rives que périt Arvedui, le dernier roi d'Arthedain en 1975 du T.A."
+      "description": "Vaste baie glaciale s'étendant à l'extrême nord, limitée au sud par les côtes de l'Eriador, à l'est par le désert du Forodwaith et au nord et à l'ouest par le long cap Forochel. Peuplées uniquement par le peuple Lossoth, c'est sur ces rives que périt Arvedui, le dernier roi d'Arthedain en 1975 du T.A."
     },
     "Collines_Vent": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127011/La%20Guerre%20de%20l%27Eriador/Collines_Vent_ekurkm.jpg",
@@ -1857,7 +1857,7 @@
     "La_Grande_Mer": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Enedwaith.jpg",
       "name": "Belegear",
-      "description": "Belegaer, la Grande Mer, est le nom qui fut donné à l'océan qui séparait la côte est d'Aman de la Terre du Milieu. Au nord, elle était séparée des froides eaux d'Ekkaia par le détroit d'Helcaraxë, le Chaos des Glaces. Lors de la Guerre de la Colère, la Grande Mer gagna du terrain, engloutissant tout le Beleriand."
+      "description": "Nom qui fut donné à l'océan qui séparait la côte est d'Aman de la Terre du Milieu. Au nord, elle était séparée des froides eaux d'Ekkaia par le détroit d'Helcaraxë, le Chaos des Glaces. Lors de la Guerre de la Colère, la Grande Mer gagna du terrain, engloutissant tout le Beleriand."
     },
     "Landes_Angmar": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639126753/La%20Guerre%20de%20l%27Eriador/Angmar_niwmwq.jpg",
@@ -1945,7 +1945,7 @@
         "Rivière_Lune",
         "Evendim_Collines"
       ],
-      "description": "Terres fertiles et boisés, situés au nord ouest d'Arthedain et à l'est du fleuve de la Lune. Peu peuplé à l'origine du royaume d'Arnor, cela s'aggrava au fil des siècles avec la Grande Peste lors du 3ème Age suivit de la chute des 3 royaumes dunedains."
+      "description": "Terres fertiles et boisés, situés au nord ouest d'Arthedain et à l'est du fleuve de la Lune. Région peu peuplée à l'origine du royaume d'Arnor, dont la population diminue au fil des siècles avec la Grande Peste lors du 3ème Age suivit de la chute des 3 royaumes dunedains."
     },
     "Trouee_Trolls": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127011/La%20Guerre%20de%20l%27Eriador/Trouee_Troll_sd9pnc.jpg",
@@ -3100,7 +3100,7 @@
         "Ered_Glamhoth",
         "Khand"
       ],
-      "description": "Le Khand était une région, probablement aride, située au pied de l'Ephel Dúath, au sud-est du Mordor."
+      "description": "Situé à l'est du Mordor, ce territoire désertique est peuplé par différentes tribus d'Hommes luttant pour leurs survie dans ce milieu très hostile"
     },
     "Foret_Druadan": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Foret_Druadan.jpg",
@@ -3816,7 +3816,7 @@
       "description": "Le port de Vinyalondë fut fondé par le futur Tar-Aldarion à l'embouchure du Gwathló au cours de l'une de ses expéditions en Terre du Milieu, peu avant l'an 800 du Deuxième Âge."
     },
     "Druwaith_Iaur": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Enedwaith.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666164397/La%20Guerre%20de%20l%27Eriador/Druwaith_Iaur_ypmod5.jpg",
       "map": 6,
       "east": [1,2,3],
       "name": "Drúwaith Iaur",
@@ -4225,7 +4225,7 @@
         "Proche_Harad",
         "Lointain_Harad"
       ],
-      "description": "La mer de Rhûn était une vaste mer intérieure qui se situait à l'est du Rhovanion, alimentée par les eaux de la rivière Celduin. Au nord-est, ses rives étaient densément boisées ; au sud-ouest se dressaient des collines. Au nord-ouest de la mer se trouvait la région du Dorwinion. À l'époque de l'apogée du Gondor, cette mer formait une partie de la frontière orientale du pays, mais avec le déclin des Dúnedain, les frontières de ce royaume reculèrent vers l'ouest."
+      "description": "Située au coeur de l'immensité des déserts de Harad, la cité s'élève dans un milieu montagneux, idéal pour sa défense. Elle est un passage obligé pour nomades et marchands transitant entre la Terre du Milieu connue et les terres plus au sud"
     },
     "Golfe_Harad": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666095858/La%20Guerre%20de%20l%27Eriador/golfe_du_harad_jkequh.png",
@@ -4252,7 +4252,7 @@
         "Proche_Harad",
         "Hidar"
       ],
-      "description": "harad"
+      "description": "Immensité désertique stérile et aride de sable. Les nomades savent y mieux que quiconque  se frayer un chemin afin de réaliser leur commerce nécessaire à leur subsistance"
     },
     "Harnedor": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666089567/La%20Guerre%20de%20l%27Eriador/harnedorimg_yb6vkb.png",
@@ -4361,7 +4361,7 @@
           "Mer_Umbar",
           "Mer_Dol_Amroth"
         ],
-        "description": "« Regardez ! s’écria-t-il. Des mouettes ! Elles volent loin dans les terres, une merveille à mes yeux et un trouble pour mon cœur. Jamais de ma vie je ne les avais vues avant d’arriver à Pelargir ; et je les entendis là-bas crier dans l’air, tandis que nous allions à cheval vers la bataille des navires. Alors je restai coi, oubliant la guerre en Terre du Milieu, car leurs voix plaintives me parlaient de la Mer."
+        "description": "« Regardez ! s’écria-t-il. Des mouettes ! Elles volent loin dans les terres, une merveille à mes yeux et un trouble pour mon cœur. Jamais de ma vie je ne les avais vues avant d’arriver à Pelargir ; et je les entendis là-bas crier dans l’air, tandis que nous allions à cheval vers la bataille des navires. Alors je restai coi, oubliant la guerre en Terre du Milieu, car leurs voix plaintives me parlaient de la Mer.»"
       },
       "Mer_Umbar": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Umbar.jpg",
@@ -5049,7 +5049,7 @@
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
       },
       "Steppes_Cendrees": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665936130/La%20Guerre%20de%20l%27Eriador/unknown_2_wym12w.png",
         "map": 2,
         "east": [2],
         "name": "Steppes Cendrees",
@@ -5296,7 +5296,7 @@
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },
       "Eryn_Lasgalen": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665936181/La%20Guerre%20de%20l%27Eriador/unknown_3_lzbvsx.png",
         "map": 2,
         "east": [2],
         "name": "Eryn_Lasgalen",
@@ -5348,36 +5348,32 @@
         "description": "Le Greylin est une rivière à l'extrême nord-ouest du Rhovanion. Il prend sa source dans les Ered Mithrin et coule vers le sud à travers le Rhovanion.. L'ancienne capitale des Éothéod, Framsburg, a été construite au a proximité de cette rivière."
       },
       "Haut_Anduin": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665936274/La%20Guerre%20de%20l%27Eriador/unknown_4_fhtp5p.png",
         "map": 2,
-        "east": [],
+        "east": [2],
         "name": "Haut_Anduin",
-        "west": [],
+        "west": [1],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1lmAm_QLXanEkW6JqnVstGoN6UoasHyaK?usp=sharing",
         "north": [
-          1,
-          2
+          1
         ],
         "south": [
-          3,
-          4
+          2
         ],
         "region": "rohan",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666169576/La%20Guerre%20de%20l%27Eriador/haut_anduin_gm4qbb.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Greylin",
+          "Gundabad",
+          "Valee_Anduin"
         ],
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },
       "Pics_Gelees": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665936087/La%20Guerre%20de%20l%27Eriador/unknown_1_yii1bx.png",
         "map": 4  ,
         "east": [3,4],
         "name": "Pics_Gelees",

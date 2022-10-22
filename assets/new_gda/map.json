@@ -4198,13 +4198,13 @@
     },
     "Hidar": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Rhun.jpg",
-      "map": 2,
-      "east": [],
+      "map": 4,
+      "east": [1,3],
       "name": "Hidar",
-      "west": [],
+      "west": [2,4],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1gtQmN52yDz7GWXi1xxxkc5zfOD1nfr9C?usp=sharing",
       "north": [
         1,
         2
@@ -4214,7 +4214,7 @@
         4
       ],
       "region": "harad",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666440844/La%20Guerre%20de%20l%27Eriador/hidar_assjh4.png",
       "players": [],
       "adjacents": [
         "Golfe_Harad",
@@ -4611,22 +4611,20 @@
       "C_Rohan": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/C_Rohan.png",
         "map": 2,
-        "east": [],
+        "east": [2],
         "name": "Centre du Rohan",
-        "west": [],
+        "west": [1],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1upR34XO3fElgRc-yKubmL-KLUEtcl3-Y?usp=sharing",
         "north": [
-          1,
-          2
+          1
         ],
         "south": [
-          3,
-          4
+          2
         ],
         "region": "rohan",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666456702/La%20Guerre%20de%20l%27Eriador/centre_rohan_galvrr.png",
         "players": [],
         "adjacents": [
           "Harlindon",

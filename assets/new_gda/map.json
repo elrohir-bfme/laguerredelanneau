@@ -2365,7 +2365,7 @@
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Montagnes_Grises.jpg",
       "map": 4,
       "east": [],
-      "name": "Ered Mithrin",
+      "name": "Montagnes_Grises",
       "west": [],
       "color": "#3300000",
       "fight": "hidden",
@@ -2387,7 +2387,7 @@
         "Eryn_Lasgalen",
         "Pics_Gelees"
       ],
-      "description": "Le nord de la plus grande forêt d'Arda est traversé par la grande route de l'est, cette dernière partant de l'Eriador pour se rendre a Erebor . Cette forêt serait hantée par des créatures sombres et étranges !"
+      "description": "Aussi appelé Ered Mithrin"
     },
     "Desert_Nord": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Desert_Nord.jpg",
@@ -2543,23 +2543,25 @@
     },
     "Pelennor": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Pelennor.jpg",
-      "map": 2,
-      "east": [],
-      "name": "Les Champs de Pelennor",
-      "west": [],
+      "map": 6,
+      "east": [2,3,4],
+      "name": "Champs de Pelennor",
+      "west": [1,5,6],
       "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1zUn0ipc7hZw1Lsgm755uwsctrjkaRqVG?usp=sharing",
       "north": [
         1,
-        2
+        2,
+        3
       ],
       "south": [
-        3,
-        4
+        4,
+        5,
+        6
       ],
       "region": "gondor",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666538830/La%20Guerre%20de%20l%27Eriador/pelennor_t45mr1.png",
       "players": [],
       "adjacents": [
         "Cair_Andros",
@@ -2712,7 +2714,7 @@
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Montagne_Destin.jpg",
       "map": 4,
       "east": [3,4],
-      "name": "La Montagne du Destin",
+      "name": "Montagne du Destin",
       "west": [1,2],
       "color": "#3300000",
       "fight": "hidden",
@@ -4553,7 +4555,7 @@
         "description": "Considérer comme la plus haute montagne du 1er Age, Tol Fuin survécu à la grande guerre et à la submersion du Beleriand. En effet, cette montagne était tellement haute que sont sommet resta à la surface de l’eau. Hélas, il est totalement impossible de débarquer sur l’île qui n’est rien d’autre qu’un immense rocher immergé."
       },
       "Pierreval": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Tol_Fuin.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666539623/La%20Guerre%20de%20l%27Eriador/pierrevalimg_fzwigz.png",
         "map": 4,
         "east": [3,4],
         "name": "Pierreval",
@@ -4802,7 +4804,7 @@
           "Siragalë",
           "Egenyar"
         ],
-        "description": "Le Carroc était un immense rocher, sur l'Anduin, avec un grand escalier qui menait à l'espace plat au sommet et descendait jusqu'au fleuve où un gué permettait de le traverser du côté est."
+        "description": "Le Pinnath Gelin, ou Collines Vertes, est une chaine de collines au nord de l'Anfalas, dans l'ouest du Gondor, formant un fief du royaume."
       },
       "Erech": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Erech.jpg",
@@ -5367,26 +5369,22 @@
         "map": 4  ,
         "east": [3,4],
         "name": "Pics_Gelees",
-        "west": [1,2],
+        "west": [2,1],
         "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1pCVXzFQ-rLAmnVDa8rdZmNHThryHrtAz?usp=sharing",
         "north": [
-          1,
-          2
+          2,4
         ],
         "south": [
-          2,3
+          1,3
         ],
-        "region": "rohan",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665786756/La%20Guerre%20de%20l%27Eriador/pics_gelees_zclxnd.png",
+        "region": "rhovanion",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666539365/La%20Guerre%20de%20l%27Eriador/Pics_Gelees_yvitm0.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Montagnes_Grises",
+          "Desert_Nord"
         ],
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },

@@ -280,7 +280,7 @@
       "east": [
         2
       ],
-      "name": "Hauts Galgals",
+      "name": "Galgals",
       "west": [
         1
       ],
@@ -1152,7 +1152,7 @@
         2,
         3
       ],
-      "name": "Les Hauts du Nord",
+      "name": "Hauts du Nord",
       "west": [
         1,
         4
@@ -1313,7 +1313,7 @@
       "east": [
         1
       ],
-      "name": "Le Froid Eternel",
+      "name": "Froid Eternel",
       "west": [
         2
       ],
@@ -1534,10 +1534,20 @@
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1fXbRfkRxj92WK6rZjdbHnbO6q64qs-MZ?usp=sharing",
       "region": "lindon",
-      "citadel": "true",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641562196/La%20Guerre%20de%20l%27Eriador/havres_gris_minimap_whcxqu.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666711952/La%20Guerre%20de%20l%27Eriador/havres_gris_dscgib.png",
       "players": [],
-      "fortress": true,
+      "east": [4,5,6],
+      "west": [1,2,3],
+      "north": [
+        1,
+        2,
+        3
+      ],
+      "south": [
+        4,
+        5,
+        6
+      ],
       "adjacents": [
         "Collines_Tours",
         "Lindon",
@@ -3107,22 +3117,20 @@
     "Foret_Druadan": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Foret_Druadan.jpg",
       "map": 2,
-      "east": [],
-      "name": "Foret des Druadan",
-      "west": [],
+      "east": [2],
+      "name": "Forêt de Drúadan",
+      "west": [1],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1tkcG_zYxPXOHaQdsYASXnha4GYw6KsPX?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1T_1QLX5ERd_mqK_6_j78VYcowR1AW0Fp?usp=sharing",
       "north": [
-        1,
-        2
+        1
       ],
       "south": [
-        3,
-        4
+        2
       ],
       "region": "gondor",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666735218/La%20Guerre%20de%20l%27Eriador/druadan_higumn.png",
       "players": [],
       "adjacents": [
         "Pelennor",
@@ -3175,7 +3183,7 @@
         "Ouestemnet",
         "Halifirien"
       ],
-      "description": "L’Estfolde, ou Vaux de l’Est1), était une région du Rohan située entre le Folde à l’ouest2), l’Entévière au nord, la Fenmark à l’est et les Montagnes Blanches au sud."
+      "description": "L’Estfolde, ou Vaux de l’Est, était une région du Rohan située entre le Folde à l’ouest, l’Entévière au nord, la Fenmark à l’est et les Montagnes Blanches au sud."
     },
     "Halifirien": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Halifirien.png",
@@ -3932,22 +3940,20 @@
     "Baie_Est": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Baie_Est.jpg",
       "map": 2,
-      "east": [],
-      "name": "Baie de l'est (revoir la carte)",
-      "west": [],
+      "east": [2],
+      "name": "Baie de l'est (trouver une map)",
+      "west": [1],
       "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1kqumwahSe88r9LgQcN5VjMvGngyGgQme?usp=sharing",
       "north": [
-        1,
         2
       ],
       "south": [
-        3,
-        4
+        1
       ],
       "region": "rhovanion",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666736391/La%20Guerre%20de%20l%27Eriador/baie_est_rxlgrj.png",
       "players": [],
       "adjacents": [
         "Sud_Foret_Noire",
@@ -4695,13 +4701,13 @@
       },
       "Rhosgobel": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1662929337/La%20Guerre%20de%20l%27Eriador/unknown_1_qddoll.png",
-        "map": 2,
-        "east": [],
+        "map": 4,
+        "east": [2,3],
         "name": "Rhosgobel",
-        "west": [],
+        "west": [1,4],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1PECwMnsBTfiem-dx59l_E4pscZSkeFWS?usp=sharing",
         "north": [
           1,
           2
@@ -4710,15 +4716,17 @@
           3,
           4
         ],
-        "region": "rohan",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "region": "rhovanion",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666738619/La%20Guerre%20de%20l%27Eriador/rhogobel_i4pfzt.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Champs_Iris",
+          "Carrock",
+          "Lorien",
+          "Terres_Brunes",
+          "Dol_Guldur",
+          "Sud_Foret_Noire",
+          "Terre_Beornides"
         ],
         "description": "Rhosgobel est le nom de la demeure de l'Istar Radagast, qui se trouvait aux alentours du Carroc, près de l'orée de la Grand’Peur."
       },
@@ -5145,7 +5153,7 @@
           "Plaines_Avari",
           "Agasha_Dag"
         ],
-        "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
+        "description": "Kelepar est une ville située à Agasha Dag, à l'est de la Terre du Milieu dans la région de Rhun."
       },
       "Plaines_Avari": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666179891/La%20Guerre%20de%20l%27Eriador/avari_gztob5.png",
@@ -5261,29 +5269,27 @@
       "Terre_Beornides": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666181761/La%20Guerre%20de%20l%27Eriador/Beorn1_reh7h1.webp",
         "map": 2,
-        "east": [],
+        "east": [2],
         "name": "Terre_Beornides",
-        "west": [],
+        "west": [1],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1JtHvavcoAtlvcYK9QaIg-IcNtFiD-dZz?usp=sharing",
         "north": [
-          1,
-          2
+          1
         ],
         "south": [
-          3,
-          4
+          2
         ],
-        "region": "rohan",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "region": "rhovanion",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666737207/La%20Guerre%20de%20l%27Eriador/beornide_enm9jg.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Rhosgobel",
+          "Sud_Foret_Noire",
+          "Emyn_Duir",
+          "Carrock",
+          "Eryn_Lasgalen"
         ],
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },
@@ -5291,7 +5297,7 @@
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665936181/La%20Guerre%20de%20l%27Eriador/unknown_3_lzbvsx.png",
         "map": 2,
         "east": [2],
-        "name": "Eryn_Lasgalen",
+        "name": "Eryn Lasgalen",
         "west": [1],
         "color": "#3300000",
         "fight": "hidden",
@@ -5343,7 +5349,7 @@
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665936274/La%20Guerre%20de%20l%27Eriador/unknown_4_fhtp5p.png",
         "map": 2,
         "east": [2],
-        "name": "Haut_Anduin",
+        "name": "Haut Anduin",
         "west": [1],
         "color": "#3300000",
         "fight": "hidden",

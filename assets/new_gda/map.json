@@ -2890,25 +2890,21 @@
     },
     "Dol_Amroth": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Dol_Amroth.jpg",
-      "map": 2,
-      "east": [],
+      "map": 4,
+      "east": [3,4],
       "name": "Dol Amroth",
-      "west": [],
+      "west": [1,2],
       "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1shFoMfRt8qmhJTps7vG8OUa1vLdBkjtS?usp=sharing",
       "north": [
-        4,
-        5,
-        6
+        3,4
       ],
       "south": [
-        1,
-        2,
-        3
+        1,2
       ],
       "region": "gondor",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665437321/La%20Guerre%20de%20l%27Eriador/dol_amroth_icwv3m.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666786533/La%20Guerre%20de%20l%27Eriador/dol_amroth_n9i702.png",
       "players": [],
       "adjacents": [
         "Belfalas",

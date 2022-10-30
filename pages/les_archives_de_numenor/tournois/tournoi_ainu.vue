@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <iframe src="https://challonge.com/fr/2a9oong0/module" width="100%" height="600" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+        <iframe src="https://challonge.com/fr/2a9oong0/module?show_final_results=1" width="100%" height="600" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
     </div>
 </div>
 

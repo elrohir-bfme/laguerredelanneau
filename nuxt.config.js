@@ -29,7 +29,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      // { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
       // Twitter
       // Test on: https://cards-dev.twitter.com/validator
       // {
@@ -178,8 +178,8 @@ robots: {
       theme_color: '#3E7A4A'
     },
     manifest: {
-      name: "Events de la Terre du Milieu",
-      description : "Retrouvez les évènements de la Terre du Milieu, sur les jeux la Bataille pour la Terre du Milieu mais pas seulement",
+      // name: "Events de la Terre du Milieu",
+      // description : "Retrouvez les évènements de la Terre du Milieu, sur les jeux la Bataille pour la Terre du Milieu mais pas seulement",
       lang: 'fr',
       useWebmanifestExtension: false,
     }

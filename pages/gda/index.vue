@@ -9916,7 +9916,7 @@ export default {
 
       result: {},
 
-      factions: null,
+      factions: [],
       loading: false,
       regionMobile: "",
 

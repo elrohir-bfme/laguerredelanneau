@@ -41,7 +41,7 @@
                                 Présentation
                             </h5>
                             <p class="mt-2 text-base leading-6 text-gray-300 dark:text-gray-300">
-                                Map : Y aura Rhudaur, Gué de l'Isen, Ouestfold, Plaine du lindon et Jungles of Far harad.<br/>
+                                Map :  Ouestfold, Jungle of Far harad, Plain of Lindon, Gué de l'isen et Rhudaur.<br/>
                                 BO3 puis BO5.
                             </p>
                         </div>
@@ -62,10 +62,11 @@
                                 Règles : 
                             </h5>
                             <p class="mt-2 text-base leading-6 text-gray-300 dark:text-gray-300">
-                                Pas de héros customs/héros de l'anneau
-                                Faction au choix 		(sauf indiqué)
-                                Start 1000 			(sauf indiqué)
-                                Map au choix de l'host 	(sauf indiqué)
+                                Host neutre très vivement conseillé<br/>
+                                1000 de ressources<br/>
+                                x1 de point de commandement<br/>
+                                Libre choix des factions ( aléatoire compris)<br/>
+                                BO 3 puis BO 5 à partir des demis finales<br/>
 
                             </p>
                         </div>

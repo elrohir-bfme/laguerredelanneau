@@ -168,20 +168,20 @@
     "Cairill": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639131229/La%20Guerre%20de%20l%27Eriador/cairil_dqrxli.jpg",
       "map": 2,
-      "east": [],
+      "east": [2],
       "name": "Cairill",
-      "west": [],
+      "west": [1],
       "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1-TLC6eA0jTkBAHBTqO1HUJaTKwCqjtli?usp=sharing",
       "north": [
-        1
-      ],
-      "south": [
         2
       ],
+      "south": [
+        1
+      ],
       "region": "rohan",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/cairil_minimap_nmriis.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1667426901/La%20Guerre%20de%20l%27Eriador/cairil_qdlnaa.png",
       "players": [],
       "adjacents": [
         "Enedwaith",
@@ -2269,13 +2269,13 @@
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1PoXJHwytsvLjr2WTx5tEQTNoxthh0qLx?usp=sharing",
       "north": [
-        1
-      ],
-      "south": [
         2
       ],
-      "region": "harad",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665520263/La%20Guerre%20de%20l%27Eriador/mont_fer_mk0z5j.png",
+      "south": [
+        1
+      ],
+      "region": "rhun",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1667426819/La%20Guerre%20de%20l%27Eriador/mont_du_fer_ywv0wz.png",
       "players": [],
       "adjacents": [
         "Logathavuld",
@@ -3477,23 +3477,25 @@
     },
     "Terres_Brunes": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Terres_Brunes.png",
-      "map": 2,
-      "east": [],
+      "map": 6,
+      "east": [2,5,8],
       "name": "Les Terres Brunes",
-      "west": [],
+      "west": [1,4,7],
       "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1xG_2Qu7OMG2BuX_xrx_SdM9qsOb0ZGBf?usp=sharing",
       "north": [
         1,
-        2
+        2,
+        3
       ],
       "south": [
-        3,
-        4
+        6,
+        7,
+        8
       ],
       "region": "rhovanion",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1667428059/La%20Guerre%20de%20l%27Eriador/terrebrune_lamulz.png",
       "players": [],
       "adjacents": [
         "Dol_Guldur",
@@ -3935,21 +3937,21 @@
     },
     "Baie_Est": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Baie_Est.jpg",
-      "map": 2,
-      "east": [2],
-      "name": "Baie de l'est (trouver une map)",
-      "west": [1],
+      "map": 6,
+      "east": [1,2,3],
+      "name": "Baie de l'est",
+      "west": [4,5,6],
       "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1kqumwahSe88r9LgQcN5VjMvGngyGgQme?usp=sharing",
       "north": [
-        2
+        1,2,3
       ],
       "south": [
-        1
+        4,5,6
       ],
       "region": "rhovanion",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666736391/La%20Guerre%20de%20l%27Eriador/baie_est_rxlgrj.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1667427225/La%20Guerre%20de%20l%27Eriador/baie_est_2_tavxdt.png",
       "players": [],
       "adjacents": [
         "Sud_Foret_Noire",

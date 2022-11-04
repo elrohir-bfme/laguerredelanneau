@@ -2637,12 +2637,12 @@
     "Cirith_Ungol": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Cirith_Ungol.jpg",
       "map": 6,
-      "east": [],
+      "east": [1,2,3],
       "name": "Cirith Ungol",
-      "west": [],
+      "west": [4,5,6],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1B60noYxbcexqocT0bVHeQ8FZz9mMsV1D?usp=sharing",
+      "mapdl": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1667582416/La%20Guerre%20de%20l%27Eriador/cirith_ungol_vzruxv.png",
       "north": [
         1,
         2,
@@ -3255,12 +3255,12 @@
     "Gouffre_Helm": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Gouffre_Helm.png",
       "map": 6,
-      "east": [],
+      "east": [4,5,6],
       "name": "Gouffre de Helm",
-      "west": [],
+      "west": [1,2,3],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/17DQCkfghoxitqCAPrAqPi7JMNuRt3vhF?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/12Z9DLU3t_yPrQxeNE4F_ClUbmwDOqeJQ?usp=share_link",
       "north": [
         1,
         2,
@@ -3272,7 +3272,7 @@
         6
       ],
       "region": "rohan",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665517574/La%20Guerre%20de%20l%27Eriador/gouffre_de_helm_orioic.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1667581124/La%20Guerre%20de%20l%27Eriador/gouffre_de_helm_c3u8o6.png",
       "players": [],
       "adjacents": [
         "Dunharrow",
@@ -4928,10 +4928,10 @@
       },
       "Udun": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1662928918/La%20Guerre%20de%20l%27Eriador/udun_nx3gvl.png",
-        "map": 2,
-        "east": [],
+        "map": 4,
+        "east": [2,3],
         "name": "Udûn",
-        "west": [],
+        "west": [1,4],
         "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
@@ -4943,15 +4943,14 @@
           3,
           4
         ],
-        "region": "rohan",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "region": "mordor",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1667580207/udun_obdxy5.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Barad_Dur",
+          "Montagne_Destin",
+          "Ephel_Duath",
+          "Porte_Noire"
         ],
         "description": "La vallée d'Udûn, très profonde et étroite, se trouvait au nord-ouest du Mordor, gardée au sud par la Gueule-de-Fer et Durthang et au nord par la Morannon. Elle fut probablement nommée ainsi par Sauron en l'honneur de la première forteresse de Morgoth, son ancien maître, Utumno, ou Udûn en sindarin."
       },

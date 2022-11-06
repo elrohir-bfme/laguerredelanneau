@@ -1466,11 +1466,21 @@
       "name": "Dol Tinereb",
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1ay53bSC64yeHdkX11UW1JWysmauOXxGs?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1tq6jsmMu391hBdCsPjimNhqUCRtY0rCC?usp=share_link",
       "region": "cardolan",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/dol_tinered_minimap_wmkjwm.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1667651682/La%20Guerre%20de%20l%27Eriador/dol_tinereb_hbk1ns.png",
       "outpost": true,
       "players": [],
+      "east": [2,3],
+      "west": [1,4],
+      "north": [
+        1,
+        2
+      ],
+      "south": [
+        3,
+        4
+      ],
       "fortress": true,
       "adjacents": [
         "Haut_Sud",
@@ -2654,7 +2664,7 @@
         6
       ],
       "region": "mordor",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665436205/La%20Guerre%20de%20l%27Eriador/cirith_ungol_pyusoz.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1667582416/La%20Guerre%20de%20l%27Eriador/cirith_ungol_vzruxv.png",
       "players": [],
       "adjacents": [
         "Ephel_Duath",

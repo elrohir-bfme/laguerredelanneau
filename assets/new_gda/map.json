@@ -2470,7 +2470,7 @@
       "south": [
         2
       ],
-      "region": "gondor",
+      "region": "dolAmroth",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665350872/La%20Guerre%20de%20l%27Eriador/andrast_nixaej.png",
       "players": [],
       "adjacents": [
@@ -2498,7 +2498,7 @@
         5,
         6
       ],
-      "region": "gondor",
+      "region": "dolAmroth",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665350872/La%20Guerre%20de%20l%27Eriador/anfalas_equhzv.png",
       "players": [],
       "adjacents": [
@@ -2803,7 +2803,7 @@
       "south": [
         2
       ],
-      "region": "gondor",
+      "region": "dolAmroth",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665781844/La%20Guerre%20de%20l%27Eriador/lossarnach_ubjgif.png",
       "players": [],
       "adjacents": [
@@ -2832,7 +2832,7 @@
         5,
         6
       ],
-      "region": "gondor",
+      "region": "dolAmroth",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665522236/La%20Guerre%20de%20l%27Eriador/lebennin_lwuz1z.png",
       "players": [],
       "adjacents": [
@@ -2861,7 +2861,7 @@
         3,
         4
       ],
-      "region": "gondor",
+      "region": "dolAmroth",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665352139/La%20Guerre%20de%20l%27Eriador/belfalas_qymwu3.png",
       "players": [],
       "adjacents": [
@@ -2886,7 +2886,7 @@
       "south": [
         1,2,6
       ],
-      "region": "gondor",
+      "region": "dolAmroth",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666180941/La%20Guerre%20de%20l%27Eriador/Lamedon_i36tyx.png",
       "players": [],
       "adjacents": [
@@ -2913,7 +2913,7 @@
       "south": [
         1,2
       ],
-      "region": "gondor",
+      "region": "dolAmroth",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666786533/La%20Guerre%20de%20l%27Eriador/dol_amroth_n9i702.png",
       "players": [],
       "adjacents": [
@@ -3142,7 +3142,7 @@
         "Pelennor",
         "Minas_Tirith",
         "Cair_Andros",
-        "Months_Endwash",
+        "Entalluve",
         "Anorien"
       ],
       "description": "La Forêt de Drúadan se situait au pied des Montagnes Blanches  et au nord de Minas Tirith. C’est ici que l’un des Feux d’alarme fût installé, ce qui permis aux Gondor d'appeler l’aide de leurs alliés rohirrims. Elle était l'une des dernières demeures des Drúedain, dont l'un des chefs, Ghân-buri-Ghân, fit traverser la forêt à l'armée des Rohirrim, par la Vallée des Fardiers, lors de la Guerre de l’Anneau."
@@ -3163,7 +3163,7 @@
       "players": [],
       "adjacents": [
         "Foret_Druadan",
-        "Months_Endwash",
+        "Entalluve",
         "Est_Rohan",
         "Estfolde"
       ],
@@ -3537,7 +3537,7 @@
         "Emyn_Muil",
         "Estemnet",
         "Est_Rohan",
-        "Months_Endwash"
+        "Entalluve"
       ],
       "description": "Les Argonath étaient constitués de deux statues imposantes d'Isildur et Anárion, premiers rois du Gondor, situées de part et d'autre de l'Anduin, juste avant que celui-ci ne forme le lac de Nen Hithoel. Ces statues furent érigées sous le règne de Rómendacil II, afin d'interdire à tout étranger de descendre l'Anduin en aval d'elles."
     },
@@ -3741,13 +3741,13 @@
       "players": [],
       "adjacents": [
         "Nord_Ithilien",
-        "Months_Endwash",
+        "Entalluve",
         "Foret_Druadan",
         "Pelennor"
       ],
       "description": "Cair Andros était une île gondorienne fortifiée d'une dizaine de miles de long située au milieu de l'Anduin, entre l'Anórien à l'ouest et l'Ithilien à l'est."
     },
-    "Months_Endwash": {
+    "Entalluve": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Months_Endwash.png",
       "map": 4,
       "east": [],
@@ -3797,7 +3797,7 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666180076/La%20Guerre%20de%20l%27Eriador/est_rohan_cpcd5h.png",
       "players": [],
       "adjacents": [
-        "Months_Endwash",
+        "Entalluve",
         "Argonath",
         "Estemnet",
         "Ouestemnet",
@@ -4337,7 +4337,7 @@
           1,
           4
         ],
-        "region": "gondor",
+        "region": "dolAmroth",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665610504/La%20Guerre%20de%20l%27Eriador/tolfalas_qvbcqd.png",
         "players": [],
         "adjacents": [
@@ -4780,7 +4780,7 @@
         "south": [
           2
         ],
-        "region": "gondor",
+        "region": "dolAmroth",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665612086/La%20Guerre%20de%20l%27Eriador/morthond_ekk1gk.png",
         "players": [],
         "adjacents": [
@@ -4809,7 +4809,7 @@
           5,
           6
         ],
-        "region": "gondor",
+        "region": "dolAmroth",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665524176/La%20Guerre%20de%20l%27Eriador/lossarnach_hyaeul.png",
         "name": "Pinath_Gellin",
         "players": [],
@@ -4837,7 +4837,7 @@
         "south": [
           2
         ],
-        "region": "rohan",
+        "region": "dolAmroth",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665515950/La%20Guerre%20de%20l%27Eriador/erech_uqvnvo.png",
         "players": [],
         "adjacents": [
@@ -4847,7 +4847,7 @@
           "Siragalë",
           "Egenyar"
         ],
-        "description": "Le Carroc était un immense rocher, sur l'Anduin, avec un grand escalier qui menait à l'espace plat au sommet et descendait jusqu'au fleuve où un gué permettait de le traverser du côté est."
+        "description": "La pierre noire d'Erech se dressait noire au sommet d'une colline, non loin du lieu où la rivière Morthond prenait sa source."
       },
       "Emyn_Duir": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1662929306/La%20Guerre%20de%20l%27Eriador/unknown_fguaf0.png",
@@ -5321,7 +5321,7 @@
           "Greylin",
           "Montagnes_Grises"
         ],
-        "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
+        "description": "Après la Guerre de l'Anneau, Celeborn et Thranduil commandèrent la destruction de Dol Guldur et l'assainissement de la forêt, qui prit le nom d'Eryn Lasgalen, le Bois aux Vertes Feuilles."
       },
       "Greylin": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1662928990/La%20Guerre%20de%20l%27Eriador/Greylin_simoi1.png",

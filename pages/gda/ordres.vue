@@ -28,54 +28,42 @@
     </div>
 
         <div v-if="selectedFaction === 1">
-            <div v-for="player in playerArnor" v-bind:key="player.name">
+            <div v-for="player in playerHomme" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
         <div v-if="selectedFaction === 2">
-            <div v-for="player in playerGondor" v-bind:key="player.name">
-                <Order :player="player" :regions="regions"/>
-            </div>
-        </div>
-
-        <div v-if="selectedFaction === 3">
-            <div v-for="player in playerRohan" v-bind:key="player.name">
-                <Order :player="player" :regions="regions"/>
-            </div>
-        </div>
-
-        <div v-if="selectedFaction === 4">
             <div v-for="player in playerElfe" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
-        <div v-if="selectedFaction === 5">
+        <div v-if="selectedFaction === 3">
             <div v-for="player in playerNain" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
-        <div v-if="selectedFaction === 6">
+        <div v-if="selectedFaction === 4">
             <div v-for="player in playerMordor" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
-        <div v-if="selectedFaction === 7">
+        <div v-if="selectedFaction === 5">
             <div v-for="player in playerIsengard" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
-        <div v-if="selectedFaction === 8">
+        <div v-if="selectedFaction === 6">
             <div v-for="player in playerGobelin" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
         </div>
 
-        <div v-if="selectedFaction === 9">
+        <div v-if="selectedFaction === 7">
             <div v-for="player in playerAngmar" v-bind:key="player.name">
                 <Order :player="player" :regions="regions"/>
             </div>
@@ -280,10 +268,8 @@ layout: "gde",
         players: null,
         playerList: [],
         regions: [],
-        playerArnor: [],
+        playerHomme: [],
         playerElfe: [],
-        playerRohan: [],
-        playerGondor: [],
         playerNain: [],
         playerMordor: [],
         playerIsengard: [],
@@ -292,15 +278,13 @@ layout: "gde",
         selectedFaction: null,
         factions: [],
         options: [
-            { faction: 'Arnor', 'value': 1 },
-            { faction: 'Gondor', 'value': 2 },
-            { faction: 'Rohan', 'value': 3 },
-            { faction: 'Elfe', 'value': 4 },
-            { faction: 'Nain', 'value': 5 },
-            { faction: 'Mordor', 'value': 6 },
-            { faction: 'Isengard', 'value': 7 },
-            { faction: 'Gobelin', 'value': 8 },
-            { faction: 'Angmar', 'value': 9 }
+            { faction: 'Homme', 'value': 1 },
+            { faction: 'Elfe', 'value': 2 },
+            { faction: 'Nain', 'value': 3 },
+            { faction: 'Mordor', 'value': 4 },
+            { faction: 'Isengard', 'value': 5 },
+            { faction: 'Gobelin', 'value': 6 },
+            { faction: 'Angmar', 'value': 7 }
         ],
         nbPowers: [],
         taintedLandInfo: false,
@@ -363,15 +347,13 @@ layout: "gde",
         }
 
         switch (this.selectedFaction) {
-            case 1 : playerArray = this.playerArnor; faction = "arnor"; break;
-            case 2 : playerArray = this.playerGondor; faction = "gondor"; break;
-            case 3 : playerArray = this.playerRohan; faction = "rohan"; break;
-            case 4 : playerArray = this.playerElfe; faction = "elfe"; break;
-            case 5 : playerArray = this.playerNain; faction = "nain" ;break;
-            case 6 : playerArray = this.playerMordor; faction = "mordor"; break;
-            case 7 : playerArray = this.playerIsengard; faction = "isengard"; break;
-            case 8 : playerArray = this.playerGobelin; faction = "gobelin"; break;
-            case 9 : playerArray = this.playerAngmar; faction = "angmar"; break;
+            case 1 : playerArray = this.playerHomme; faction = "homme"; break;
+            case 2 : playerArray = this.playerElfe; faction = "elfe"; break;
+            case 3 : playerArray = this.playerNain; faction = "nain" ;break;
+            case 4 : playerArray = this.playerMordor; faction = "mordor"; break;
+            case 5 : playerArray = this.playerIsengard; faction = "isengard"; break;
+            case 6 : playerArray = this.playerGobelin; faction = "gobelin"; break;
+            case 7 : playerArray = this.playerAngmar; faction = "angmar"; break;
             default : console.log("No faction selected");
         }
         //Get data
@@ -413,45 +395,37 @@ layout: "gde",
     color(id) {
         switch (id) {
             case 1:
-                return "#ff85ee"
+                return "#0089f"
             case 2:
-                return "#093aff"
+                return "#00ff7e"
             case 3:
-                return "#0bff00"
-            case 4:
-                return "#00e3ff"
-            case 5:
                 return "#fffc00"
-            case 6:
+            case 4:
                 return "#ff3636"
-            case 7:
+            case 5:
                 return "#ffffff"
-            case 8:
-                return "#ff6f00"
-            case 9:
-            return "#c500ff"
+            case 6:
+                return "#FF6F00"
+            case 7:
+                return "#c500ff"
         }
     },
 
     factionsSelected(id) {
         switch (id) {
             case 1:
-                return this.factions.arnor
+                return this.factions.homme
             case 2:
-                return this.factions.gondor
-            case 3:
-                return this.factions.rohan
-            case 4:
                 return this.factions.elfe
-            case 5:
+            case 3:
                 return this.factions.nain
-            case 6:
+            case 4:
                 return this.factions.mordor
-            case 7:
+            case 5:
                 return this.factions.isengard
-            case 8:
+            case 6:
                 return this.factions.gobelin
-            case 9:
+            case 7:
                 return this.factions.angmar
         }
     },
@@ -487,7 +461,8 @@ layout: "gde",
     }
   },
   async fetch() {
-	  this.players = await this.$http.$get(`https://api.npoint.io/2eeb1bea715cd907d7bc`)
+	//   this.players = await this.$http.$get(`https://api.npoint.io/2eeb1bea715cd907d7bc`)
+    this.players = require(`~/assets/new_gda/map.json`);
         for (const key in this.players) {
 
             const obj = this.players[key];
@@ -535,30 +510,24 @@ layout: "gde",
                     this.playerList.push(_player)
                     switch (obj2[player]['faction']) {
                         case 1:
-                            this.playerArnor.push(_player);
+                            this.playerHomme.push(_player);
                             break;
                         case 2:
-                            this.playerGondor.push(_player);
-                            break;
-                        case 3:
-                            this.playerRohan.push(_player);
-                            break;
-                        case 4:
                             this.playerElfe.push(_player);
                             break;
-                        case 5:
+                        case 3:
                             this.playerNain.push(_player);
                             break;
-                        case 6:
+                        case 4:
                             this.playerMordor.push(_player);
                             break;
-                        case 7:
+                        case 5:
                             this.playerIsengard.push(_player);
                             break;
-                        case 8:
+                        case 6:
                             this.playerGobelin.push(_player);
                             break;
-                        case 9:
+                        case 7:
                             this.playerAngmar.push(_player);
                             break;
                         default:

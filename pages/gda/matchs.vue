@@ -1,10 +1,10 @@
 <template>
-<Matchs/>
+<MatchsGDE/>
 </template>
 
 <script>
 export default {
-    layout: "gde"
+    layout: "gda"
 
 }
 </script>

@@ -261,7 +261,7 @@
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127014/La%20Guerre%20de%20l%27Eriador/Fornost_l3l13p.jpg",
       "map": 6,
       "name": "Fornost",
-      "color": "#0089F",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1SGLDVh0fQI322VvTYThDv8U4aedi2XEK?usp=sharing",
       "region": "arthedain",
@@ -371,7 +371,6 @@
         "Pays_Dun",
         "Cairill",
         "Gwathlo",
-        "Metraith",
         "Fontgrise"
       ],
       "description": "L'emplacement de Tharbad était, au Deuxième Âge, occupé par les marécages du Nîn-in-Eilph et représentait le point le plus septentrional atteint par les Númenóréens sur le Gwathló. "
@@ -557,7 +556,6 @@
       "players": [],
       "adjacents": [
         "Fontgrise",
-        "Metraith",
         "Dol_Tinereb",
         "Siragalë",
         "Vieille_Foret",
@@ -652,11 +650,8 @@
       "players": [],
       "adjacents": [
         "Dol_Tinereb",
-        "Haut_Sud",
         "Fontgrise",
-        "Tharbad",
-        "Gwathlo",
-        "Girithlin"
+        "Gwathlo"
       ],
       "description": "Ville du Cardolan, fondée par Tarcil d'Arnor pour servir de résidence d'été, en 514 du Troisième Âge. Elle est encore un point de passage obligé du commerce du Chemin Vert."
     },
@@ -731,9 +726,9 @@
       "homme": {
         "id": 1,
         "win": 0,
-        "chef": "Chabacks",
+        "chef": "",
         "name": "homme",
-        "color": "#0089f",
+        "color": "#09a4ff",
         "loose": 0,
         "money": 0,
         "total": 0,
@@ -1033,8 +1028,8 @@
       "players": [],
       "adjacents": [
         "Dol_Tinereb",
-        "Metraith",
-        "Minhiriath"
+        "Minhiriath",
+        "Harlindon"
       ],
       "structures": [],
       "description": "Autrefois une petite citadelle du royaume de Cardolan dans le Minhiriath, elle fut une résidence royale, jouant le rôle de capitale à certaines époques. C'est une des rares petites villes encore debout lors du Troisième Age."
@@ -2188,7 +2183,7 @@
       "east": [],
       "name": "Umbar",
       "west": [],
-      "color": "#C500FF",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1odaOxSVH-vZNHN4DdLe6C1ZGbJSZibHn?usp=sharing",
       "north": [
@@ -2510,7 +2505,7 @@
       "east": [],
       "name": "Minas Tirith",
       "west": [],
-      "color": "#0089F",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1HeXJWOxaseiucUSLtnSK9maw18GMATPj?usp=sharing",
       "north": [
@@ -3506,13 +3501,27 @@
       "adjacents": [
         "Dol_Guldur",
         "Baie_Est",
-        "Dagorlad",
-        "Marais_Morts",
-        "Emyn_Muil",
-        "Argonath",
+        "Terres_Sauvages",
         "Rhosgobel"
       ],
       "description": "Les Terres Brunes étaient une région désolée sur les rives de l'Anduin, à hauteur des deux grands méandres que dessinait celui-ci à la latitude de la forêt de Fangorn."
+    },
+    "Terres_Sauvages":{
+      "img":"https://laguerredelanneau.vercel.app/Territories_img/Terres_Sauvages.jpg",
+      "map":6,
+      "name":"Terres Sauvages",
+      "color":"#3300000",
+      "fight":"hidden",
+      "mapdl":"https://drive.google.com/drive/folders/1FKej7smbm98mWw8XijeW72fcz6DsueMe?usp=share_link",
+      "players":[],
+      "adjacents":["Baie_Est","Dagorlad","Emyn_Muil","Terres_Brunes","Argonath"],
+      "description":"Les Terres Sauvages subit des invasions des chariots du Rhûn",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1668637412/La%20Guerre%20de%20l%27Eriador/terres_sauvages_bwmxrz.png",
+      "west": [2],
+      "region": "sauvage",
+      "east": [1],
+      "north": [1],
+      "south": [2]
     },
     "Argonath": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Argonath.png",
@@ -3529,7 +3538,7 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665351297/La%20Guerre%20de%20l%27Eriador/argonath_h3hgrl.png",
       "players": [],
       "adjacents": [
-        "Terres_Brunes",
+        "Terres_Sauvages",
         "Emyn_Muil",
         "Estemnet",
         "Est_Rohan",
@@ -3635,7 +3644,7 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665508659/La%20Guerre%20de%20l%27Eriador/emyn_muil_uyduh6.png",
       "players": [],
       "adjacents": [
-        "Terres_Brunes",
+        "Terres_Sauvages",
         "Marais_Morts",
         "Argonath"
       ],
@@ -3666,7 +3675,7 @@
       "adjacents": [
         "Porte_Noire",
         "Dagorlad",
-        "Terres_Brunes",
+        "Terres_Sauvages",
         "Emyn_Muil",
         "Nord_Ithilien"
       ],
@@ -3962,7 +3971,7 @@
       "adjacents": [
         "Sud_Foret_Noire",
         "Dol_Guldur",
-        "Terres_Brunes",
+        "Terres_Sauvages",
         "Valee_Celduin"
       ],
       "description": "La Brèche de l’Est est le nom par lequel était désignée la grande zone dépourvue d’arbres qui s’ouvrait dans la lisière est, au sud de la forêt de Grand’Peur. Cette curieuse dépression à l’orée de la forêt était de cause humaine. En effet, cette zone a été déforesté part des Hommes du Nord, ancêtres des Éothéod, qui, au Deuxième âge et début du Troisième âge, peuplaient les abords de Grand’Peur."
@@ -4040,7 +4049,7 @@
         "Ered_Lithui",
         "Dorwinion",
         "Valee_Celduin",
-        "Terres_Brunes",
+        "Terres_Sauvages",
         "Marais_Morts"
       ],
       "description": "La plaine de Dagorlad s'étendait au nord-est du Mordor, devant la Morannon et à l'est de l'Emyn Muil."

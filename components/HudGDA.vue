@@ -46,7 +46,7 @@ export default {
             let info = "";
             switch(value) {
                 case 1:
-                    info = "gondor"
+                    info = "homme"
                 break;
                 case 2:
                     info = "elfe"
@@ -101,8 +101,8 @@ export default {
         factions(color) {
             let faction = "";
             switch (color) {
-          case "#0089f":
-          case "#0089F":
+          case "#09a4ff":
+          case "#09a4ff":
             faction = "homme";
             break;
 

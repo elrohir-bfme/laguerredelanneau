@@ -2180,12 +2180,12 @@
     "Umbar": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Umbar.jpg",
       "map": 4,
-      "east": [],
+      "east": [2,3],
       "name": "Umbar",
-      "west": [],
+      "west": [1,4],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1odaOxSVH-vZNHN4DdLe6C1ZGbJSZibHn?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1odaOxSVH-vZNHN4DdLe6C1ZGbJSZibHn?usp=share_link",
       "north": [
         1,
         2
@@ -2195,7 +2195,7 @@
         4
       ],
       "region": "harad",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1668719466/La%20Guerre%20de%20l%27Eriador/umbar_bkbgj1.png",
       "players": [],
       "adjacents": [
         "Harnedor",
@@ -2240,7 +2240,7 @@
       "west": [4,5,6],
       "color": "#FFFC00",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1QPRSHgwgvZTEHXCNONlRNZD40t7iAMIU?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1QPRSHgwgvZTEHXCNONlRNZD40t7iAMIU?usp=share_link",
       "north": [
         1,
         2,
@@ -2501,23 +2501,23 @@
     },
     "Minas_Tirith": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Minas_Tirith.jpg",
-      "map": 6,
-      "east": [],
+      "map": 4,
+      "east": [3,4],
       "name": "Minas Tirith",
-      "west": [],
+      "west": [1,2],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1HeXJWOxaseiucUSLtnSK9maw18GMATPj?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1SFVH8rdL5_nnfFC0Ri0a6DZgTgoKqqxz?usp=share_link",
       "north": [
-        1,
-        2
-      ],
-      "south": [
         3,
         4
       ],
+      "south": [
+        1,
+        2
+      ],
       "region": "gondor",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1668722213/La%20Guerre%20de%20l%27Eriador/minas_ecvah2.png",
       "players": [],
       "adjacents": [
         "Foret_Druadan",
@@ -3888,7 +3888,7 @@
         "Dunharrow",
         "Erech"
       ],
-      "description": "La pierre noire d'Erech se dressait noire au sommet d'une colline, non loin du lieu où la rivière Morthond prenait sa source."
+      "description": "Passage du redouté Chemin des Morts dans les Montagnes Blanches. Ceux s'aventurant dans ce passage n'en sont jamais revenus comme Baldor, fils de Brego, roi du Rohan. Lors de la Guerre de l'Anneau, Aragorn, Legolas, Gimli, les fils d'Elrond et la Compagnie Grise franchirent cette route afin de rallier l'Armée des Morts."
     },
     "Dol_Guldur": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Dol_Guldur.jpg",
@@ -5303,7 +5303,7 @@
           "Carrock",
           "Eryn_Lasgalen"
         ],
-        "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
+        "description": "Patrie des changeurs de formes, situé à l'est des Monts Brumeux juste avant l'immensité de la Forêt Noire, les gobelins craignent particulièrement les Beornides dont le plus illustre, Beorn, avait terrassé leur roi, Bolg, lors de la Bataille des Cinq Armées."
       },
       "Eryn_Lasgalen": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665936181/La%20Guerre%20de%20l%27Eriador/unknown_3_lzbvsx.png",

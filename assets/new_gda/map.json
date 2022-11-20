@@ -2396,7 +2396,8 @@
         "Lande_Dessechee",
         "Nord_Foret_Noire",
         "Eryn_Lasgalen",
-        "Pics_Gelees"
+        "Pics_Gelees",
+        "Mont_Gundabad"
       ],
       "description": "Aussi appelé Ered Mithrin"
     },
@@ -2416,17 +2417,18 @@
       "players": [],
       "adjacents": [
         "Froid_Eternel",
-        "Pics_Gelees"
+        "Pics_Gelees",
+        "Mont_Gundabad"
       ],
       "description": "S'étendant dans l'immensité glacée du nord, terre désolée de neige et de glace, bien peu d'êtres réussissent à survivre dans des conditions aussi extrêmes. Certaines légendes parlent de dragons, tel Scatha y vivant depuis la fin du Beleriand."
     },
     "Gundabad": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Gundabad.jpg",
-      "map": 2,
+      "map": 4,
       "east": [],
       "name": "Gundabad",
       "west": [],
-      "color": "#FF3636",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1cph3z2ilu1WRHV-yFNz5hz8KQNw9Fj0W?usp=sharing",
       "north": [
@@ -2442,7 +2444,34 @@
       "players": [],
       "adjacents": [
         "Greylin",
-        "Haut_Anduin"
+        "Haut_Anduin",
+        "Mont_Gundabad"
+      ],
+      "description": "Ce sommet septentrional réalisait la jonction entre les Montagnes d’Angmar à l'ouest, les Montagnes Grises à l'est et enfin les Montagnes de Brume au sud."
+    },
+    "Mont_Gundabad": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1668960636/La%20Guerre%20de%20l%27Eriador/mont_gundabad_msh7gm.jpg",
+      "map": 2,
+      "east": [2],
+      "name": "Mont Gundabad",
+      "west": [1],
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1x_0KBYQ4SStJWLsXEQsxAVWy4KQzbmzQ?usp=share_link",
+      "north": [
+        2
+      ],
+      "south": [
+        1
+      ],
+      "region": "rhovanion",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1668960813/La%20Guerre%20de%20l%27Eriador/mont_gundabad_ebobkj.png",
+      "players": [],
+      "adjacents": [
+        "Desert_Nord",
+        "Montagnes_Grises",
+        "Gundabad",
+        "Greylin"
       ],
       "description": "Ce sommet septentrional réalisait la jonction entre les Montagnes d’Angmar à l'ouest, les Montagnes Grises à l'est et enfin les Montagnes de Brume au sud."
     },
@@ -4019,7 +4048,8 @@
       "players": [],
       "adjacents": [
         "Carnen",
-        "Dagorlad"
+        "Dagorlad",
+        "Mont_Rhun"
       ],
       "description": "Le Dorwinion ou Dor-Winion est une région de la Terre du Milieu située sur les rivages nord-ouest de la Mer de Rhûn, réputé pour son excellent vin très apprécier des elfes de Thranduil."
     },
@@ -4050,7 +4080,8 @@
         "Dorwinion",
         "Valee_Celduin",
         "Terres_Sauvages",
-        "Marais_Morts"
+        "Marais_Morts",
+        "Mont_Rhun"
       ],
       "description": "La plaine de Dagorlad s'étendait au nord-est du Mordor, devant la Morannon et à l'est de l'Emyn Muil."
     },
@@ -5060,6 +5091,32 @@
         ],
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
       },
+      "Mont_Rhun": {
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1668962123/La%20Guerre%20de%20l%27Eriador/1200px-La_Rhune_Neige_xi6lwi.jpg",
+        "map": 2,
+        "east": [2],
+        "name": "Mont Rhûn",
+        "west": [1],
+        "color": "#3300000",
+        "fight": "hidden",
+        "mapdl": "https://drive.google.com/drive/folders/1cVD50mIApaGYtwq_uUi7mXsJX9Ytk9O1?usp=share_link",
+        "north": [
+          1
+        ],
+        "south": [
+          2
+        ],
+        "region": "rhun",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1668962071/La%20Guerre%20de%20l%27Eriador/mont_rhun_pujkmt.png",
+        "players": [],
+        "adjacents": [
+          "Mistrand",
+          "Ered_Lithui",
+          "Dagorlad",
+          "Dorwinion"
+        ],
+        "description": "Le mont perdu au sud du lac de Rhun"
+      },
       "Steppes_Cendrees": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665936130/La%20Guerre%20de%20l%27Eriador/unknown_2_wym12w.png",
         "map": 2,
@@ -5106,11 +5163,10 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Kelepar",
+          "Steppes_Cendrees",
+          "Ered_Lithui",
+          "Mont_Rhun"
         ],
         "description": "Mistrand est une ville de Gathod , située à l'est de la Terre du Milieu dans la région du Rhun ."
       },
@@ -5134,7 +5190,8 @@
         "players": [],
         "adjacents": [
           "Mistrand",
-          "Dagorlad"
+          "Dagorlad",
+          "Mont_Rhun"
         ],
         "description": "Ered Lithui étaient l'une des deux chaînes de montagnes qui bornaient le Mordor. Celle-ci formait la frontière nord et rejoignait Ephel Dúath à l'ouest, délimitant la Morannon, l'entrée du Mordor, et la région d'Udûn."
       },
@@ -5353,7 +5410,8 @@
         "adjacents": [
           "Eryn_Lasgalen",
           "Gundabad",
-          "Haut_Anduin"
+          "Haut_Anduin",
+          "Mont_Gundabad"
         ],
         "description": "Le Greylin est une rivière à l'extrême nord-ouest du Rhovanion. Il prend sa source dans les Ered Mithrin et coule vers le sud à travers le Rhovanion.. L'ancienne capitale des Éothéod, Framsburg, a été construite au a proximité de cette rivière."
       },

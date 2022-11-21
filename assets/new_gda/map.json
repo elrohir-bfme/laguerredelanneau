@@ -442,13 +442,13 @@
     },
     "Belegaer": {
       "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Belegear.jpg",
-      "map": 2,
-      "east": [],
+      "map": 4,
+      "east": [3,4],
       "name": "Belegaer",
-      "west": [],
+      "west": [1,2],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1b2GTejf_mFqlXoYR2Tgjh_t9qS_GlHiR?usp=share_link",
       "north": [
         1,
         2
@@ -458,7 +458,7 @@
         4
       ],
       "region": "mer",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1669067100/La%20Guerre%20de%20l%27Eriador/ocean_2_cukalz.png",
       "players": [],
       "adjacents": [
         "Belegaer",
@@ -4231,7 +4231,7 @@
       "west": [1],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1MnhppJnIMBEbJUuVxhoquxQBy58J8jCU?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1b2GTejf_mFqlXoYR2Tgjh_t9qS_GlHiR?usp=share_link",
       "north": [
         1
       ],
@@ -4385,13 +4385,13 @@
       },
       "Mer_Pelargir": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Pelargir.png",
-        "map": 2,
-        "east": [],
+        "map": 4,
+        "east": [3,4],
         "name": "Mer de Pelargir",
-        "west": [],
+        "west": [1,2],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1b2GTejf_mFqlXoYR2Tgjh_t9qS_GlHiR?usp=share_link",
         "north": [
           1,
           2
@@ -4401,7 +4401,7 @@
           4
         ],
         "region": "mer",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1669067100/La%20Guerre%20de%20l%27Eriador/ocean_2_cukalz.png",
         "players": [],
         "adjacents": [
           "Pelargir",
@@ -4413,13 +4413,13 @@
       },
       "Mer_Umbar": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Umbar.jpg",
-        "map": 2,
-        "east": [],
+        "map": 4,
+        "east": [3,4],
         "name": "Mer d'Umbar",
-        "west": [],
+        "west": [1,2],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1b2GTejf_mFqlXoYR2Tgjh_t9qS_GlHiR?usp=share_link",
         "north": [
           1,
           2
@@ -4429,7 +4429,7 @@
           4
         ],
         "region": "mer",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1669067100/La%20Guerre%20de%20l%27Eriador/ocean_2_cukalz.png",
         "players": [],
         "adjacents": [
           "Umbar",
@@ -4441,13 +4441,13 @@
       },
       "Mer_Dol_Amroth": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Dol_Amroth.jpg",
-        "map": 2,
-        "east": [],
+        "map": 4,
+        "east": [3,4],
         "name": "Mer de Dol Amroth",
-        "west": [],
+        "west": [1,2],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1b2GTejf_mFqlXoYR2Tgjh_t9qS_GlHiR?usp=share_link",
         "north": [
           1,
           2
@@ -4457,7 +4457,7 @@
           4
         ],
         "region": "mer",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1669067100/La%20Guerre%20de%20l%27Eriador/ocean_2_cukalz.png",
         "players": [],
         "adjacents": [
           "Dol_Amroth",
@@ -4470,13 +4470,13 @@
       },
       "Mer_Enedwaith": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Enedwaith.jpg",
-        "map": 2,
-        "east": [],
+        "map": 4,
+        "east": [3,4],
         "name": "Mer d'Enedwaith",
-        "west": [],
+        "west": [1,2],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1b2GTejf_mFqlXoYR2Tgjh_t9qS_GlHiR?usp=share_link",
         "north": [
           1,
           2
@@ -4486,7 +4486,7 @@
           4
         ],
         "region": "mer",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1669067100/La%20Guerre%20de%20l%27Eriador/ocean_2_cukalz.png",
         "players": [],
         "adjacents": [
           "Belegaer",
@@ -4497,13 +4497,13 @@
       },
       "Mer_Havres_Gris": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Havres_Gris.jpg",
-        "map": 2,
-        "east": [],
+        "map": 4,
+        "east": [3,4],
         "name": "Mer des Havres Gris",
-        "west": [],
+        "west": [1,2],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1b2GTejf_mFqlXoYR2Tgjh_t9qS_GlHiR?usp=share_link",
         "north": [
           1,
           2
@@ -4513,7 +4513,7 @@
           4
         ],
         "region": "mer",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1669067100/La%20Guerre%20de%20l%27Eriador/ocean_2_cukalz.png",
         "players": [],
         "adjacents": [
           "Mer_Enedwaith",
@@ -4526,13 +4526,13 @@
       },
       "Mer_Forochel": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Forochel.jpg",
-        "map": 2,
-        "east": [],
+        "map": 4,
+        "east": [3,4],
         "name": "Mer de Forochel",
-        "west": [],
+        "west": [1,2],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1b2GTejf_mFqlXoYR2Tgjh_t9qS_GlHiR?usp=share_link",
         "north": [
           1,
           2
@@ -4542,7 +4542,7 @@
           4
         ],
         "region": "mer",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1669067100/La%20Guerre%20de%20l%27Eriador/ocean_2_cukalz.png",
         "players": [],
         "adjacents": [
           "Baie_Forochel",
@@ -4573,7 +4573,7 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
         "players": [],
         "adjacents": [
-          "Mer_Forochel",
+          "Mer_Havres_Gris",
           "Mer_Forochel"
         ],
         "description": "Cette petite île au large du Forlindon n'était autre que le sommet de la colline d'Himring, où Maedhros avait sa capitale au cours du Premier Âge. Avec Tol Morwen, Tol Fuin et le Lindon, Himling était le dernier vestige émergé du Beleriand."

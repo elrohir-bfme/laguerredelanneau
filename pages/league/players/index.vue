@@ -34,6 +34,9 @@
                                     <div class="font-semibold text-left">{{ $t('league.players') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">{{ $t('league.lastDate') }}</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">{{ $t('league.win') }}</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
@@ -65,6 +68,9 @@
                                         </div>
                                         <div class="font-medium text-white">{{player.attributes.name}}</div>
                                     </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-lg text-center">{{player.date ? $moment(player.date).lang($i18n.locale).fromNow() : "-"}}</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-lg text-center">{{player.wins}}</div>
@@ -216,13 +222,18 @@ export default {
                         statsFactionWin: {},
                         statsFactionLose: {},
                         wins: 0,
-                        loses: 0
+                        loses: 0,
+                        date: null
                     }
 
-                    this.games.map(g => {
+                    this.games.map((g,i) => {
+
                         if(g.attributes?.replays && g.attributes?.replays?.length > 0){
                             g.attributes?.replays.map(r => {
                                 if(r.player_win?.data?.attributes?.name === f.attributes?.name){
+                                    if(!newObject.date){
+                                        newObject.date = g.attributes?.date;
+                                    }
                                     let faction = r.faction_win?.data?.attributes?.name;
                                     typeof newObject.statsFactionWin[faction] === 'undefined' ? 
                                     newObject.statsFactionWin[faction] = 1 : 
@@ -231,6 +242,9 @@ export default {
                                 }
 
                                 if(r.player_lose?.data?.attributes?.name === f.attributes?.name){
+                                    if(!newObject.date){
+                                        newObject.date = g.attributes?.date;
+                                    }
                                     let faction = r.faction_lose?.data?.attributes?.name;
                                     typeof newObject.statsFactionLose[faction] === 'undefined' ? 
                                     newObject.statsFactionLose[faction] = 1 : 

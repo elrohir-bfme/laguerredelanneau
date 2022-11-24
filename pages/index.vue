@@ -6,7 +6,32 @@
         <div class="flex flex-wrap -mx-2">
 
 
-          <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
+        <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
+          <nuxt-link title="La Lutte des Duos"  to="/tournois/lutte_des_duos" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-green-300 border-2 rounded-xl">
+            <NuxtImg
+              src="tournois/lutte_des_duos.png"
+              class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
+              alt="La Guerre des apprentis"
+              loading="lazy"
+            />
+            <div class="text-center relative z-10 w-full">
+              <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-blue-500 inline p-2 rounded">La Lutte des Duos</h2>
+              <br>
+              <br>
+              <p class="text-2xl text-green-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Début 15 novembre 2022</p>
+              <br>
+              <br>
+              <button style="font-family: 'Albertus'" to="/tournois/lutte_des_duos" class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-green-600 rounded-md dark:bg-gray-800 hover:bg-green-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-green-500 dark:focus:bg-gray-700">
+                <svg class="w-5 h-5 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+                <span class="mx-1">Tournoi 2v2 sur BFME2 !</span>
+              </button>
+            </div>
+          </nuxt-link>
+        </div>
+
+        <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
           <nuxt-link title="La Guerre des chevaliers"  to="/tournois/guerre_des_chevaliers" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-blue-300 border-2 rounded-xl">
             <NuxtImg
               src="tournois/guerre_des_chevaliers.png"
@@ -29,7 +54,7 @@
               </button>
             </div>
           </nuxt-link>
-          </div>
+        </div>
 
         <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
           <nuxt-link title="La Guerre des apprentis"  to="/tournois/guerre_des_apprentis" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-blue-300 border-2 rounded-xl">

@@ -475,12 +475,12 @@
       "west": [],
       "color": "#C500FF",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/16_ikn8hfp2W5Jz-2P85corv6QMcrt56U?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/16_ikn8hfp2W5Jz-2P85corv6QMcrt56U?usp=share_link",
       "north": [],
       "south": [],
       "region": "angmar",
       "citadel": "true",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/carn_dum_minimap_jeujzm.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1670659964/La%20Guerre%20de%20l%27Eriador/carndum_lb7g1a.png",
       "players": [],
       "fortress": true,
       "adjacents": [
@@ -927,9 +927,9 @@
       "name": "Fondcombe",
       "color": "#00ff7e",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/14hzG2O6ap9-8k-m6s3JSMJfWLgbFauPC?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/14hzG2O6ap9-8k-m6s3JSMJfWLgbFauPC?usp=share_link",
       "region": "eregion",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/imladris_minimap_qi4jkt.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1670659964/La%20Guerre%20de%20l%27Eriador/imladris_ladqmp.png",
       "nbmatch": 1,
       "players": [{
         "win": 2,
@@ -2150,23 +2150,25 @@
     },
     "Montagnes_Bleues": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127011/La%20Guerre%20de%20l%27Eriador/Montagnes_Bleues_nm2fmh.jpg",
-      "map": 4,
+      "map": 6,
       "east": [],
       "name": "Les Montagnes Bleues",
       "west": [],
       "color": "#FF6F00",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1Z5khP39NtSTRaScES_f9gDUfHMaxfMVm?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1FN8LzCAmB5X_Miv9IkyQa9J_HBdvF8cK?usp=share_link",
       "north": [
         1,
-        2
+        2,
+        3
       ],
       "south": [
-        3,
-        4
+        4,
+        5,
+        6
       ],
       "region": "lindon",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1670659964/La%20Guerre%20de%20l%27Eriador/montagnesblueus_qztayy.png",
       "players": [],
       "adjacents": [
         "Harlindon",
@@ -4116,7 +4118,7 @@
       "west": [1,2,3],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1s-F2h_2XD7s5FgzgiT4dtalsJkh8y-Ox?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1EsDZz-4oAm-5-iU7evYcOBD2RQpTPhCH?usp=share_link",
       "north": [
         1,
         2,
@@ -4128,7 +4130,7 @@
         6
       ],
       "region": "rhovanion",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666178198/La%20Guerre%20de%20l%27Eriador/erebor_q0y89f.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1670659964/La%20Guerre%20de%20l%27Eriador/erebor_saywl4.png",
       "players": [],
       "adjacents": [
         "Terre_Desolee",

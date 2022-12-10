@@ -4562,17 +4562,15 @@
         "west": [],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1gXjYZnEHnOgSOhPVwjUE3kI6cDp28tW0?usp=share_link",
         "north": [
-          1,
-          2
+          1
         ],
         "south": [
-          3,
-          4
+          2
         ],
         "region": "mer",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1670692728/himling_a0jhj6.png",
         "players": [],
         "adjacents": [
           "Mer_Havres_Gris",
@@ -4582,23 +4580,25 @@
       },
       "Tol_Fuin": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Tol_Fuin.jpg",
-        "map": 2,
+        "map": 6,
         "east": [],
         "name": "Tol Fuin",
         "west": [],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1BlOAh6Qnsk0Kzlegr6TbEIRMxUXSvryh?usp=share_link",
         "north": [
           1,
-          2
+          2,
+          3
         ],
         "south": [
-          3,
-          4
+          4,
+          5,
+          6
         ],
         "region": "mer",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1670692728/tol_fuin_fdzngm.png",
         "players": [],
         "adjacents": [
           "Mer_Havres_Gris",

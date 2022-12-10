@@ -4946,7 +4946,7 @@
         "description": "Le nord de la plus grande forêt d'Arda est traversé par la grande route de l'est, cette dernière partant de l'Eriador pour se rendre a Erebor . Cette forêt serait hantée par des créatures sombres et étranges !"
       },
       "Barad_Dur": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Barad_Dur.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1670662870/barad_dur_duujm8.png",
         "map": 2,
         "east": [],
         "name": "Barad Dur",

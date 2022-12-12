@@ -1,18 +1,27 @@
 <template>
     <div class="mt-8 bg-lotr container mx-auto rounded-3xl text-white">
-    <h1 class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Annonce GDA 2023 💙</h1>
-    <!-- <h2 class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Incroyable réalisation d'Eternal !</h2> -->
+      <!-- <h2 class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Incroyable réalisation d'Eternal !</h2> -->
+      
+      <p class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Vidéo pour l'Angmar par Diablo et Gréhelfe</p>
+      <div class="videoWrapper m-8 z-0">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kPqzKQuJTTk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
 
+      <div class="videoWrapper m-8 z-0">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GK7HXx3EeQA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Présentation GDA 2023 💙</p>
+      <div class="videoWrapper m-8 z-0">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/psWjKmhdv9g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+    <p class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Annonce GDA 2023 💙</p>
     <div class="videoWrapper m-8 z-0">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/9sobkQ_17pE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">{{ $t('videos.angmar') }}</h3>
-    <div class="videoWrapper m-8 z-0">
-     <iframe src="https://drive.google.com/file/d/1Rq_INEqVf9sU6QOo22eoStnvmB-h83gW/preview" width="640" height="480" allow="autoplay"></iframe>
-    </div>
-
-        <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Présentation d'une GDA par Elessar</h3>
+    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Présentation d'une GDA par Elessar</h3>
     <div class="videoWrapper m-8 z-0">
      <iframe width="560" height="315" src="https://www.youtube.com/embed/4cx3KqqCtPU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>

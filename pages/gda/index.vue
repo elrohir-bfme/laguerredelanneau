@@ -3012,12 +3012,7 @@
                   d="M1962.46,818.85c0,9.29.18,18.59-.08,27.87a66.9,66.9,0,0,1-1.77,13.74c-1.47,6-7,8.06-12.46,4.53-16.22-10.55-30.45-23.57-43.79-37.42-8.41-8.74-10.95-19.45-4.3-31.05,4.61-8,8.65-16.42,13-24.62,3.16-5.93,8.25-8.38,14.85-7.7a30.58,30.58,0,0,1,5.86,1.09c28.92,8.81,28.86,6.11,28.78,35.64,0,6,0,11.94,0,17.92Z" />
 
 
-                <path :id="map.La_Grande_Mer && map.La_Grande_Mer.name"
-                  :title="map.La_Grande_Mer && map.La_Grande_Mer.name" aria-valuetext="La_Grande_Mer" class="st" :class="
-                map.La_Grande_Mer && map.La_Grande_Mer.color !== '#3300000'
-                  ? 'opacity-25'
-                  : 'opacity-0'
-              " :fill="map.La_Grande_Mer ? map.La_Grande_Mer.color : '#3300000'" @mouseover="getInfo"
+                <path id="rivière" title="rivière" aria-valuetext="riviere" class="eau" @mouseover="getInfo"
                   @click="toggleModal"
                   d="M3038.31,1064.7c.87,1.36,1.64,2.08,1.5,2.42-6.56,15.77-6.43,32.34-6,49,.24,9.4-.65,18.53-5,27.15a27.24,27.24,0,0,0-2.64,9.55,51.32,51.32,0,0,1-13,30.52c-9.3,10.58-9.27,23.25-2.81,35.42,4.44,8.39,7.79,16.68,7.33,26.45s-4.58,16.58-13.81,19.75c-7.81,2.68-15.53,7.49-26.13,2.54,2.83-3.24,4.44-6.13,6.9-7.71,13-8.41,17-19.73,12.17-34.39a66.24,66.24,0,0,1-2.67-11.65c-1.88-13.67-7.2-25.36-17.77-34.68-3.58-3.16-8.61-6.56-5.63-14.64,4.37,2.62,8,5,11.77,7,7.19,3.9,13.71,2.88,17.22-3.68,8.16-15.27,15.62-31,17.3-48.5.54-5.74-1.07-11.78-2.21-17.58-.76-3.87-2.75-7.5-3.61-11.37-1.6-7.22.17-11.85,6.24-15.23C3024.3,1071.26,3031.45,1068.08,3038.31,1064.7Z" />
 
@@ -9407,10 +9402,7 @@
                     </g>
                 </g>
             </g>
-            <el-tooltip content="Info"
-             effect="light"
-             :open-delay="300"
-             placement="top">
+
             <g id="prefix__Calque_2-5" data-name="Calque 2">
                 <g id="prefix__Calque_1-2-5" data-name="Calque 1-2">
                     <g id="prefix__Calque_2-2-5" data-name="Calque 2-2">
@@ -9447,7 +9439,7 @@
                     </g>
                 </g>
             </g>
-          </el-tooltip>
+
             <g id="prefix__Calque_2-6" data-name="Calque 2">
                 <g id="prefix__Calque_1-2-6" data-name="Calque 1-2">
                     <g id="prefix__Calque_2-2-6" data-name="Calque 2-2">
@@ -9783,7 +9775,6 @@
               </g>
             </g>
           </svg>
-          <div id="tooltip" display="none" style="position: absolute; display: none;"></div>
         </div>
       </div>
       <div v-if="combats"

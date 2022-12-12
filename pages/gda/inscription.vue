@@ -11,8 +11,7 @@
         <p class="mb-8 leading-loose text-gray-300">Votre jeu doit fonctionner "voir prérequis" et avec une connexion stable pour jouer en multijoueur.</p>
         <p class="mb-8 leading-relaxed text-gray-200">Avoir discord et être sur le serveur discord de la Terre du Milieu</p>
         <div class="flex justify-center">
-          Disponible le 9 décembre dans la soirée.
-          <!-- <a href="https://forms.gle/4ks9wa8th6zV44yR7" target="_blank" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">{{ $t('inscription.formulaire') }}</a> -->
+          <a href="https://forms.gle/4K7agAcX4Bg2bLKZ6" target="_blank" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">{{ $t('inscription.formulaire') }}</a>
         </div>
       </div>
     </div>

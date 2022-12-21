@@ -260,7 +260,7 @@
 <script>
 
 export default {
-layout: "gde",
+layout: "gda",
   data() {
     return {
         newPlayerName: "",
@@ -461,8 +461,37 @@ layout: "gde",
     }
   },
   async fetch() {
-	//   this.players = await this.$http.$get(`https://api.npoint.io/2eeb1bea715cd907d7bc`)
-    this.players = require(`~/assets/new_gda/map.json`);
+    let testApi = await this.$http.$get(
+    "https://api.npoint.io/7a210a01331f3c385ed7"
+    ); //API
+    let map = require(`~/assets/new_gda/map.json`);
+
+    function MergeRecursive(obj1, obj2) {
+      console.log(obj1, obj2, "djeidje")
+      for (var p in obj2) {
+        try {
+          console.log(obj2.p, p, "for")
+          // Property in destination object set; update its value.
+          if (obj2[p].constructor==Object ) {
+            obj1[p] = MergeRecursive(obj1[p], obj2[p]);
+
+          } else {
+            obj1[p] = obj2[p];
+
+          }
+
+        } catch(e) {
+          // Property in destination object not set; create it and set its value.
+          obj1[p] = obj2[p];
+
+        }
+      }
+
+      return obj1;
+    }
+
+    this.players = await MergeRecursive(map, testApi);
+
         for (const key in this.players) {
 
             const obj = this.players[key];

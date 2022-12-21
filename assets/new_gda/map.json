@@ -931,12 +931,7 @@
       "region": "eregion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1670659964/La%20Guerre%20de%20l%27Eriador/imladris_ladqmp.png",
       "nbmatch": 1,
-      "players": [{
-        "win": 2,
-        "lose": 1,
-        "name": "Elrohir",
-        "faction": 2
-      }],
+      "players": [],
       "fortress": true,
       "adjacents": [
         "Haut_Col",
@@ -1119,16 +1114,7 @@
       ],
       "region": "lindon",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/harlindon_minimap_cj4phi.png",
-      "players": [
-        {
-          "img": null,
-          "win": 2,
-          "lose": 1,
-          "name": "Oknar",
-          "faction": 2,
-          "handicap": 0
-        }
-      ],
+      "players": [],
       "adjacents": [
         "Havres_Gris",
         "Montagnes_Bleues",
@@ -4681,11 +4667,12 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666456702/La%20Guerre%20de%20l%27Eriador/centre_rohan_galvrr.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
+          "Ouestemnet",
+          "Grands_Arpents",
+          "Ouestfolde",
           "Siragalë",
-          "Egenyar"
+          "Edoras",
+          "Halifirien"
         ],
         "description": "A l'origine, le Calenardhon était une simple province du Gondor, mais en récompense de l'aide que les Éothéod lui avaient apporté lors de la Bataille du Champ du Celebrant en l'année 2510 du Troisième Âge, l'Intendant du Gondor Cirion en fit don à Eorl le Jeune, seigneur des Éothéod, et tous deux firent le serment que leurs deux royaumes seraient toujours alliés."
       },
@@ -4708,11 +4695,10 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666180281/La%20Guerre%20de%20l%27Eriador/Grands_Arpents_kxgyji.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Avancee_Fangorn",
+          "Pierreval",
+          "Ouestemnet",
+          "C_Rohan"
         ],
         "description": "Grands-arpents est au cœur du Rohan, c'est une région riche en pâturages. Ce territoire fût attaqué a la fois par les ouargues de l'Isengard et par les hommes du Pays de Dun pendant la guerre de l'anneau."
       },
@@ -4737,11 +4723,10 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665518865/La%20Guerre%20de%20l%27Eriador/hall_trandhuil_etpepa.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Erebor",
+          "Nord_Foret_Noire",
+          "Emyn_Duir",
+          "Esgaroth"
         ],
         "description": "Dans ces halls inspirés de ceux de Menegroth en Doriath règne le grand roi sylvestre Thranduil . Ils sont traversé par une rivière souterraine par laquelle s'échapperont la compagnie de Thorin Écu de chêne ."
       },
@@ -4795,11 +4780,10 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665435702/La%20Guerre%20de%20l%27Eriador/carrock_wzbbum.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Terre_Beornides",
+          "Rhosgobel",
+          "Valee_Anduin",
+          "Champs_Iris"
         ],
         "description": "Le Carroc était un immense rocher, sur l'Anduin, avec un grand escalier qui menait à l'espace plat au sommet et descendait jusqu'au fleuve où un gué permettait de le traverser du côté est."
       },
@@ -4852,11 +4836,9 @@
         "name": "Pinath_Gellin",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Morthond",
+          "Erech",
+          "Anfalas"
         ],
         "description": "Le Pinnath Gelin, ou Collines Vertes, est une chaine de collines au nord de l'Anfalas, dans l'ouest du Gondor, formant un fief du royaume."
       },
@@ -4879,11 +4861,9 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665515950/La%20Guerre%20de%20l%27Eriador/erech_uqvnvo.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Dimholt",
+          "Pinath_Gellin",
+          "Morthond"
         ],
         "description": "La pierre noire d'Erech se dressait noire au sommet d'une colline, non loin du lieu où la rivière Morthond prenait sa source."
       },
@@ -4906,11 +4886,11 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666180569/La%20Guerre%20de%20l%27Eriador/Emyn_Duir_pm0lqk.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Sud_Foret_Noire",
+          "Esgaroth",
+          "Hall_Thranduil",
+          "Eryn_Lasgalen",
+          "Terre_Beornides"
         ],
         "description": "Au sein d'Eryn Galen se dressait une chaîne de collines, orientée ouest-est : l'Emyn Duir. Leur nom, qui signifie « Montagnes sombres », venait des bois très denses qui couvraient leurs versants."
       },
@@ -4937,11 +4917,11 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665571473/La%20Guerre%20de%20l%27Eriador/nord_foret_noire_veppzb.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Lande_Dessechee",
+          "Montagnes_Grises",
+          "Eryn_Lasgalen",
+          "Hall_Thranduil",
+          "Erebor"
         ],
         "description": "Le nord de la plus grande forêt d'Arda est traversé par la grande route de l'est, cette dernière partant de l'Eriador pour se rendre a Erebor . Cette forêt serait hantée par des créatures sombres et étranges !"
       },
@@ -4966,11 +4946,9 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Lithlad",
+          "Montagne_Destin",
+          "Udun"
         ],
         "description": "Vers l'an 1000 du Deuxième Âge, Sauron, soucieux de la puissance croissante de Númenor, se retrancha en Mordor et commença la construction de Barad-dûr, achevée six cents ans plus tard."
       },
@@ -5023,11 +5001,12 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Porte_Noire",
+          "Udun",
+          "Montagne_Destin",
+          "Plateau_Gorgoroth",
+          "Cirith_Ungol",
+          "Minas_Morgul"
         ],
         "description": "Rempart naturel pour le royaume de Sauron, l'Ephel Dúath était parsemé de forteresses jadis construites par les Gondoriens pour surveiller le pays"
       },
@@ -5085,11 +5064,10 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665608535/La%20Guerre%20de%20l%27Eriador/rhun_natyvh.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Desolation_Orientale",
+          "Steppes_Cendrees",
+          "Kelepar",
+          "Plaines_Avari"
         ],
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
       },
@@ -5300,11 +5278,11 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665782250/La%20Guerre%20de%20l%27Eriador/logathavuld_h1eavs.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Orocarni",
+          "Plaines_Avari",
+          "Agasha_Dag",
+          "Carnen",
+          "Monts_Fer"
         ],
         "description": "Le Logathavuld est une zone où règnent les tribus du Logath depuis le milieu du second âge. Ce territoire est principalement constituer de vastes plaines à l'est, et des étendues arides au nord."
       },
@@ -5329,11 +5307,9 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665609270/La%20Guerre%20de%20l%27Eriador/valee_anduin_ntwqhf.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Haut_Anduin",
+          "Carrock",
+          "Haut_Col"
         ],
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },
@@ -5466,62 +5442,10 @@
         ],
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },
-      "Tol_Sulereb": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",
-        "map": 2,
-        "east": [],
-        "name": "Tol Súlereb",
-        "west": [],
-        "color": "#3300000",
-        "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-        "north": [
-          1,
-          2
-        ],
-        "south": [
-          3,
-          4
-        ],
-        "region": "rohan",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [],
-        "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
-        ],
-        "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
-      },
       "Grand_Nord": {
         "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",
-        "map": 2,
-        "east": [],
         "name": "Le Grand Nord",
-        "west": [],
         "color": "#3300000",
-        "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-        "north": [
-          1,
-          2
-        ],
-        "south": [
-          3,
-          4
-        ],
-        "region": "rohan",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [],
-        "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
-        ],
         "description": "Le Nord de la Terre du Milieu"
       },
       "Ouestfolde": {
@@ -5543,11 +5467,10 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665611524/La%20Guerre%20de%20l%27Eriador/ouestfolde_ycwryd.png",
         "players": [],
         "adjacents": [
-          "Harlindon",
-          "Havres_Gris",
-          "Collines_Tours",
-          "Siragalë",
-          "Egenyar"
+          "Pierreval",
+          "C_Rohan",
+          "Dunharrow",
+          "Gue_Isen"
         ],
         "description": "L’Ouestfolde était une région du Rohan, traversée par la Grande Route de l’Ouest, qui s'étirait entre les Gués de l’Isen et le Folde."
       },

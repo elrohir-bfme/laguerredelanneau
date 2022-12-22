@@ -38,7 +38,7 @@
             <label class="flex justify-start items-start">
               <div
                 class="bg-gray-900 border-2 rounded border-orange-400 w-4 h-4 md:w-6 md:h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-orange-500">
-                <input v-model="displayHUDValue" @click="storeCheckHUD(!displayHUDValue)" type="checkbox"
+                <input id="desactiveHUD" v-model="displayHUDValue" @click="storeCheckHUD(!displayHUDValue)" type="checkbox"
                   class="opacity-0 absolute">
                 <svg class="fill-current hidden w-4 h-4 text-orange-500 pointer-events-none" viewBox="0 0 20 20">
                   <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />

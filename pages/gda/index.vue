@@ -472,7 +472,7 @@
                     </g>
                   </svg>
                 </div>
-                <label for="Gondor" class="select-none text-blue-200 text-base md:text-lg">Hyallondië</label>
+                <label for="hyallondië" class="select-none text-blue-200 text-base md:text-lg">Hyallondië</label>
               </div>
 
               <div class="px-2 md:px-4">
@@ -619,44 +619,6 @@
                 <label for="harad" class="select-none text-yellow-400 text-base md:text-lg">Haradwaith</label>
               </div>
 
-              
-
-              <div class="px-2 md:px-4">
-                <input type="checkbox" id="brumeux" v-model="viewCheckbox.brumeux" name="brumeux" value="yes"
-                  class="opacity-0 absolute h-4 w-4 md:h-8 md:w-8" />
-                <div class="
-                bg-gray-900
-                border-2
-                rounded-md
-                border-red-400
-                h-4
-                w-4
-                md:h-8 md:w-8
-                flex flex-shrink-0
-                justify-center
-                items-center
-                mr-24
-                focus-within:border-red-500
-              ">
-                  <svg class="
-                  fill-current
-                  hidden
-                  w-3
-                  h-3
-                  text-red-600
-                  pointer-events-none
-                " version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
-                    <g fill="none" fill-rule="evenodd">
-                      <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
-                        <path
-                          d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-                <label for="brumeux" class="select-none text-red-500 text-base md:text-lg">Monts Brumeux</label>
-              </div>
-
               <div class="px-2 md:px-4">
                 <input type="checkbox" id="sauvage" v-model="viewCheckbox.sauvage" name="sauvage" value="yes"
                   class="opacity-0 absolute h-4 w-4 md:h-8 md:w-8" />
@@ -727,7 +689,7 @@
                     </g>
                   </svg>
                 </div>
-                <label for="brumeux" class="select-none text-blue-500 text-base md:text-lg">Mer</label>
+                <label for="mer" class="select-none text-blue-500 text-base md:text-lg">Mer</label>
               </div>
 
 
@@ -2068,7 +2030,7 @@
                 map.Isengard && map.Isengard.color !== '#3300000'
                   ? 'opacity-25'
                   : 'opacity-0',
-                viewCheckbox.isengard && 'fill-current text-gray-400 opacity-50',
+                viewCheckbox[map.Isengard && map.Isengard.region] && `fill-current ${colorFill(map.Isengard && map.Isengard.region)} opacity-50`,
               ]" :fill="map.Isengard ? map.Isengard.color : '#3300000'" @mouseover="getInfo" @click="toggleModal"
                   d="M2593,1669.06c.86,3.54,1.32,4.28,1.13,4.79-5.16,14.14-1.11,25.61,9.08,36.19a23.74,23.74,0,0,1,6.08,14.17c.62,13.45-3,26.42-9.19,38.27-1.83,3.51-6.9,6.16-11,7.49-9.57,3.06-18.47,6.89-26.8,12.75-5.22,3.68-11.89,5.78-18.23,7.29-15.59,3.71-30.93,7.45-43.33,18.71-6.38,5.78-14.75,6.13-22.71,4.61-13.81-2.64-27.5-2.39-41.51-2.13-12.93.24-26-4.48-38.92-7.22a10.88,10.88,0,0,1-5.07-3c-13-13.2-25.81-26.63-34.07-43.6-4-8.1-4.75-16.71-3.5-25.3,2-13.78,4.81-27.45,7.36-41.14,2.1-11.26,8.29-18.76,19-23.72,11.39-5.27,22.22-11.89,32.76-18.74,7.15-4.65,14.43-6.84,22.6-5.11,8.57,1.81,17,2.49,25.6.29,6.68-1.7,13.12,0,19.44,2.5,7.41,2.92,15,5.47,22.45,8.21,12.58,4.6,25.14,8.44,38.84,4.64a24.92,24.92,0,0,1,11.86.13C2567.62,1662.15,2580.31,1665.72,2593,1669.06Z" />
 
@@ -10067,6 +10029,60 @@ export default {
     },
   },
   methods: {
+    colorFill(value) {
+      let info = "text-gray-400";
+      switch(value) {
+          case "cardolan":
+              info = "gondor"
+          break;
+          case "isengard":
+              info = "elfe"
+          break;
+          case "angmar":
+              info = "nain"
+          break;
+          case "mer":
+              info = "mordor"
+          break;
+          case "rohan":
+              info = "isengard"
+          break;
+          case "arthedain":
+              info = "gobelin"
+          break;
+          case "lindon":
+              info = "angmar"
+          break;
+          case "eregion":
+              info = "text-yellow-400"
+          break;
+          case "rhudaur":
+              info = "text-indigo-600"
+          break;
+          case "rhun":
+              info = "text-orange-400"
+          break;
+          case "harad":
+              info = "text-yellow-400"
+          break;
+          case "rhovanion":
+              info = "text-indigo-900"
+          break;
+          case "hyallondië":
+              info = "text-blue-300"
+          break;
+          case "gondor":
+              info = "text-blue-700"
+          break;
+          case "sauvage":
+              info = "text-pink-900"
+          break;
+          case "erebor":
+              info = "text-blue-400"
+          break;
+      }
+      return info
+    }, 
     beforeTour(){
       if(this.tour > 0){
         try {

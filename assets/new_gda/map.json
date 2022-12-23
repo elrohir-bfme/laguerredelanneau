@@ -605,7 +605,7 @@
       "color": "#FFFFFF",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1EQ0gJaFZflPS08LhnEq12wisw_lKL8NO?usp=sharing",
-      "region": "rohan",
+      "region": "isengard",
       "citadel": "true",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/isengard_minimap_bkk6vj.png",
       "players": [],
@@ -2478,7 +2478,7 @@
       "south": [
         2
       ],
-      "region": "dolAmroth",
+      "region": "hyallondië",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665350872/La%20Guerre%20de%20l%27Eriador/andrast_nixaej.png",
       "players": [],
       "adjacents": [
@@ -2506,7 +2506,7 @@
         5,
         6
       ],
-      "region": "dolAmroth",
+      "region": "hyallondië",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665350872/La%20Guerre%20de%20l%27Eriador/anfalas_equhzv.png",
       "players": [],
       "adjacents": [
@@ -2811,7 +2811,7 @@
       "south": [
         2
       ],
-      "region": "dolAmroth",
+      "region": "hyallondië",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665781844/La%20Guerre%20de%20l%27Eriador/lossarnach_ubjgif.png",
       "players": [],
       "adjacents": [
@@ -2840,7 +2840,7 @@
         5,
         6
       ],
-      "region": "dolAmroth",
+      "region": "hyallondië",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665522236/La%20Guerre%20de%20l%27Eriador/lebennin_lwuz1z.png",
       "players": [],
       "adjacents": [
@@ -2869,7 +2869,7 @@
         3,
         4
       ],
-      "region": "dolAmroth",
+      "region": "hyallondië",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665352139/La%20Guerre%20de%20l%27Eriador/belfalas_qymwu3.png",
       "players": [],
       "adjacents": [
@@ -2894,7 +2894,7 @@
       "south": [
         1,2,6
       ],
-      "region": "dolAmroth",
+      "region": "hyallondië",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666180941/La%20Guerre%20de%20l%27Eriador/Lamedon_i36tyx.png",
       "players": [],
       "adjacents": [
@@ -2921,7 +2921,7 @@
       "south": [
         1,2
       ],
-      "region": "dolAmroth",
+      "region": "hyallondië",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666786533/La%20Guerre%20de%20l%27Eriador/dol_amroth_n9i702.png",
       "players": [],
       "adjacents": [
@@ -4361,7 +4361,7 @@
           1,
           4
         ],
-        "region": "dolAmroth",
+        "region": "hyallondië",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665610504/La%20Guerre%20de%20l%27Eriador/tolfalas_qvbcqd.png",
         "players": [],
         "adjacents": [
@@ -4802,7 +4802,7 @@
         "south": [
           2
         ],
-        "region": "dolAmroth",
+        "region": "hyallondië",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665612086/La%20Guerre%20de%20l%27Eriador/morthond_ekk1gk.png",
         "players": [],
         "adjacents": [
@@ -4831,7 +4831,7 @@
           5,
           6
         ],
-        "region": "dolAmroth",
+        "region": "hyallondië",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665524176/La%20Guerre%20de%20l%27Eriador/lossarnach_hyaeul.png",
         "name": "Pinath_Gellin",
         "players": [],
@@ -4857,7 +4857,7 @@
         "south": [
           2
         ],
-        "region": "dolAmroth",
+        "region": "hyallondië",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665515950/La%20Guerre%20de%20l%27Eriador/erech_uqvnvo.png",
         "players": [],
         "adjacents": [
@@ -4933,7 +4933,7 @@
         "west": [],
         "color": "#FF3636",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1jJXFV4dSa8ityp3CoPjBr-g5EuXTshkW?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1jJXFV4dSa8ityp3CoPjBr-g5EuXTshkW?usp=share_link",
         "north": [
           1,
           2
@@ -4942,8 +4942,8 @@
           3,
           4
         ],
-        "region": "rohan",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "region": "mordor",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1671810372/La%20Guerre%20de%20l%27Eriador/baraddur_quqjmj.png",
         "players": [],
         "adjacents": [
           "Lithlad",

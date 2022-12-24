@@ -87,7 +87,7 @@
       "mapdl": "https://drive.google.com/drive/folders/1Fum9jaqKHRgS7VXJ8OPtgVexU3Hhm6xK?usp=sharing",
       "north": [],
       "south": [],
-      "region": "brumeux",
+      "region": "eregion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665436469/La%20Guerre%20de%20l%27Eriador/moria_coeur_acusef.png",
       "players": [],
       "adjacents": [
@@ -180,7 +180,7 @@
       "south": [
         1
       ],
-      "region": "rohan",
+      "region": "isengard",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1667426901/La%20Guerre%20de%20l%27Eriador/cairil_qdlnaa.png",
       "players": [],
       "adjacents": [
@@ -586,7 +586,7 @@
         3,
         4
       ],
-      "region": "rohan",
+      "region": "isengard",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/isendale_minimap_afrroh.png",
       "players": [],
       "adjacents": [
@@ -678,7 +678,7 @@
         3,
         4
       ],
-      "region": "rohan",
+      "region": "isengard",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304377/La%20Guerre%20de%20l%27Eriador/pays_dun_minimap_cdx73w.png",
       "players": [],
       "adjacents": [
@@ -880,7 +880,7 @@
         5,
         6
       ],
-      "region": "rohan",
+      "region": "isengard",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/enedwaith_minimap_ukmk5h.png",
       "players": [],
       "adjacents": [
@@ -1230,7 +1230,7 @@
       "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1ik8_tsSfTOJCMazGQgGv58ngL5n0NrOV?usp=sharing",
-      "region": "brumeux",
+      "region": "eregion",
       "north": [
         1
       ],
@@ -1362,7 +1362,7 @@
       "south": [
         2
       ],
-      "region": "angmar",
+      "region": "rhudaur",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/mont_gram_minimap_ezffig.png",
       "players": [],
       "adjacents": [
@@ -1708,7 +1708,7 @@
       "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1WOo5gj-0JzN_FcbKnwACGz4y7yPlD3PN?usp=sharing",
-      "region": "brumeux",
+      "region": "eregion",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665519663/La%20Guerre%20de%20l%27Eriador/haut_col_yv5muf.png",
       "north": [
         1
@@ -2263,7 +2263,7 @@
       "south": [
         1
       ],
-      "region": "rhun",
+      "region": "erebor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1667426819/La%20Guerre%20de%20l%27Eriador/mont_du_fer_ywv0wz.png",
       "players": [],
       "adjacents": [
@@ -2291,7 +2291,7 @@
         3,
         4
       ],
-      "region": "rhovanion",
+      "region": "erebor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665609916/La%20Guerre%20de%20l%27Eriador/terre_dechu_s3wvqw.png",
       "players": [],
       "adjacents": [
@@ -2319,7 +2319,7 @@
       "south": [
         2
       ],
-      "region": "rhovanion",
+      "region": "erebor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665435390/La%20Guerre%20de%20l%27Eriador/carnen_ryfzeu.png",
       "players": [],
       "adjacents": [
@@ -2348,7 +2348,7 @@
         3,
         4
       ],
-      "region": "rhovanion",
+      "region": "erebor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665352322/La%20Guerre%20de%20l%27Eriador/landesdesseche_gp7m7b.png",
       "players": [],
       "adjacents": [
@@ -2377,7 +2377,7 @@
         3,
         4
       ],
-      "region": "rhovanion",
+      "region": "erebor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665517879/La%20Guerre%20de%20l%27Eriador/montagnes_grises_xnk1s4.png",
       "players": [],
       "adjacents": [
@@ -2400,7 +2400,7 @@
       "mapdl": "https://drive.google.com/drive/folders/16TDK4_thvQUzTQa6ELDSWfVveDepdNqw?usp=sharing",
       "north": [],
       "south": [],
-      "region": "harad",
+      "region": "angmar",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665437222/La%20Guerre%20de%20l%27Eriador/desert_nord_alwg82.png",
       "players": [],
       "adjacents": [
@@ -2452,7 +2452,7 @@
       "south": [
         1
       ],
-      "region": "rhovanion",
+      "region": "angmar",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1668960813/La%20Guerre%20de%20l%27Eriador/mont_gundabad_ebobkj.png",
       "players": [],
       "adjacents": [
@@ -2948,7 +2948,7 @@
         3,
         4
       ],
-      "region": "gondor",
+      "region": "hyallondië",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665607415/La%20Guerre%20de%20l%27Eriador/pelargir_btyezt.png",
       "players": [],
       "adjacents": [
@@ -3028,7 +3028,7 @@
       "south": [
         2
       ],
-      "region": "gondor",
+      "region": "harad",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665609728/La%20Guerre%20de%20l%27Eriador/sud_ithilien_kq1bqg.png",
       "players": [],
       "adjacents": [
@@ -3166,7 +3166,7 @@
       "mapdl": "https://drive.google.com/drive/folders/1mVBgrtubPFq49dWFE3NGmdjLgICRFNBm?usp=sharing",
       "north": [],
       "south": [],
-      "region": "rohan",
+      "region": "gondor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665351170/La%20Guerre%20de%20l%27Eriador/Screenshot_2022-10-09_233241_xeaizb.png",
       "players": [],
       "adjacents": [
@@ -3343,7 +3343,7 @@
       "mapdl": "https://drive.google.com/drive/folders/1MQStsoQWtyRcSlki-MC5WsUF-CDGuhUt?usp=sharing",
       "north": [],
       "south": [],
-      "region": "rohan",
+      "region": "isengard",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665351485/La%20Guerre%20de%20l%27Eriador/Screenshot_2022-10-09_233751_hv0ww8.png",
       "players": [],
       "adjacents": [
@@ -3365,7 +3365,7 @@
       "mapdl": "https://drive.google.com/drive/folders/1igdSAaCTjf_dl1cUBzCaqNkJFycE5YsS?usp=sharing",
       "north": [2],
       "south": [1],
-      "region": "rohan",
+      "region": "sauvage",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665516736/La%20Guerre%20de%20l%27Eriador/fangorn_ob9zc3.png",
       "players": [],
       "adjacents": [
@@ -3395,7 +3395,7 @@
         5,
         6
       ],
-      "region": "Celebrant",
+      "region": "sauvage",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665435938/La%20Guerre%20de%20l%27Eriador/celebrant_cpfsxc.png",
       "players": [],
       "adjacents": [
@@ -3423,7 +3423,7 @@
       "mapdl": "https://drive.google.com/drive/folders/1SE62cnM10014n6awRH5E6lxMbw5Qs7b2?usp=sharing",
       "north": [],
       "south": [],
-      "region": "rhovanion",
+      "region": "sauvage",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665351734/La%20Guerre%20de%20l%27Eriador/azanulbizar_bxx2rt.png",
       "players": [],
       "adjacents": [
@@ -3482,7 +3482,7 @@
         3,
         4
       ],
-      "region": "rhovanion",
+      "region": "sauvage",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665524017/La%20Guerre%20de%20l%27Eriador/lorien_qjg2tu.png",
       "players": [],
       "adjacents": [
@@ -3512,7 +3512,7 @@
         7,
         8
       ],
-      "region": "rhovanion",
+      "region": "sauvage",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1667428059/La%20Guerre%20de%20l%27Eriador/terrebrune_lamulz.png",
       "players": [],
       "adjacents": [
@@ -3551,7 +3551,7 @@
       "mapdl": "https://drive.google.com/drive/folders/17cN-1OLfFyf1oalh2t0xsSd2AjJ8_Ukg?usp=sharing",
       "north": [],
       "south": [],
-      "region": "rohan",
+      "region": "gondor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665351297/La%20Guerre%20de%20l%27Eriador/argonath_h3hgrl.png",
       "players": [],
       "adjacents": [
@@ -3657,7 +3657,7 @@
         1,
         3
       ],
-      "region": "rohan",
+      "region": "sauvage",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665508659/La%20Guerre%20de%20l%27Eriador/emyn_muil_uyduh6.png",
       "players": [],
       "adjacents": [
@@ -3686,7 +3686,7 @@
         5,
         6
       ],
-      "region": "gondor",
+      "region": "sauvage",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665524682/La%20Guerre%20de%20l%27Eriador/marais_des_morts_occwqn.png",
       "players": [],
       "adjacents": [
@@ -3845,7 +3845,7 @@
         3,
         4
       ],
-      "region": "rohan",
+      "region": "isengard",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666177448/La%20Guerre%20de%20l%27Eriador/Vinyalonde_d35frd.png",
       "players": [],
       "adjacents": [
@@ -3982,7 +3982,7 @@
       "south": [
         4,5,6
       ],
-      "region": "rhovanion",
+      "region": "erebor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1667427225/La%20Guerre%20de%20l%27Eriador/baie_est_2_tavxdt.png",
       "players": [],
       "adjacents": [
@@ -4004,7 +4004,7 @@
       "mapdl": "https://drive.google.com/drive/folders/1-BqR0FjgjhoZE3Pe0wwDGgZ624kDMSmE?usp=sharing",
       "north": [],
       "south": [],
-      "region": "rhovanion",
+      "region": "erebor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665435803/La%20Guerre%20de%20l%27Eriador/valee_celduin_kgpv7m.png",
       "players": [],
       "adjacents": [
@@ -4031,7 +4031,7 @@
         3,
         4
       ],
-      "region": "rhovanion",
+      "region": "rhun",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665437694/La%20Guerre%20de%20l%27Eriador/dorwinion_qsrdix.png",
       "players": [],
       "adjacents": [
@@ -4060,7 +4060,7 @@
         5,
         6
       ],
-      "region": "rhovanion",
+      "region": "sauvage",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665436774/La%20Guerre%20de%20l%27Eriador/dagorlad_l8ew5n.png",
       "players": [],
       "adjacents": [
@@ -4084,7 +4084,7 @@
       "mapdl": "https://drive.google.com/drive/folders/1KFdR_AKefu6c3P7HT6mI2iObFz2LG9p1?usp=sharing",
       "north": [],
       "south": [],
-      "region": "rhovanion",
+      "region": "erebor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665516191/La%20Guerre%20de%20l%27Eriador/esgaroth_u7zgfd.png",
       "players": [],
       "adjacents": [
@@ -4115,7 +4115,7 @@
         5,
         6
       ],
-      "region": "rhovanion",
+      "region": "erebor",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1670659964/La%20Guerre%20de%20l%27Eriador/erebor_saywl4.png",
       "players": [],
       "adjacents": [
@@ -4361,7 +4361,7 @@
           1,
           4
         ],
-        "region": "hyallondië",
+        "region": "mer",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665610504/La%20Guerre%20de%20l%27Eriador/tolfalas_qvbcqd.png",
         "players": [],
         "adjacents": [
@@ -4609,7 +4609,7 @@
           3,
           4
         ],
-        "region": "rohan",
+        "region": "isengard",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665782922/La%20Guerre%20de%20l%27Eriador/pierreval_zf4nzj.png",
         "players": [],
         "adjacents": [
@@ -4719,7 +4719,7 @@
           3,
           4
         ],
-        "region": "rohan",
+        "region": "erebor",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665518865/La%20Guerre%20de%20l%27Eriador/hall_trandhuil_etpepa.png",
         "players": [],
         "adjacents": [
@@ -4776,7 +4776,7 @@
         "south": [
           2
         ],
-        "region": "rohan",
+        "region": "rhovanion",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665435702/La%20Guerre%20de%20l%27Eriador/carrock_wzbbum.png",
         "players": [],
         "adjacents": [
@@ -4913,7 +4913,7 @@
           5,
           6
         ],
-        "region": "rohan",
+        "region": "erebor",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665571473/La%20Guerre%20de%20l%27Eriador/nord_foret_noire_veppzb.png",
         "players": [],
         "adjacents": [
@@ -4997,7 +4997,7 @@
           3,
           4
         ],
-        "region": "rohan",
+        "region": "mordor",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
         "players": [],
         "adjacents": [
@@ -5165,7 +5165,7 @@
         "south": [
           2
         ],
-        "region": "rohan",
+        "region": "rhun",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665782481/La%20Guerre%20de%20l%27Eriador/agasha_dag_oxft87.png",
         "players": [],
         "adjacents": [
@@ -5303,7 +5303,7 @@
           3,
           4
         ],
-        "region": "rohan",
+        "region": "rhovanion",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665609270/La%20Guerre%20de%20l%27Eriador/valee_anduin_ntwqhf.png",
         "players": [],
         "adjacents": [
@@ -5351,7 +5351,7 @@
         "mapdl": "https://drive.google.com/drive/folders/1sZqvoGSBNypqiZfFaOkrFlGYIPeSRdQi?usp=sharing",
         "north": [1],
         "south": [2],
-        "region": "rohan",
+        "region": "rhovanion",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665785187/La%20Guerre%20de%20l%27Eriador/eryn_lasgalen_fawf1n.png",
         "players": [],
         "adjacents": [
@@ -5408,7 +5408,7 @@
         "south": [
           2
         ],
-        "region": "rohan",
+        "region": "rhovanion",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666169576/La%20Guerre%20de%20l%27Eriador/haut_anduin_gm4qbb.png",
         "players": [],
         "adjacents": [
@@ -5433,7 +5433,7 @@
         "south": [
           1,3
         ],
-        "region": "rhovanion",
+        "region": "angmar",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666539365/La%20Guerre%20de%20l%27Eriador/Pics_Gelees_yvitm0.png",
         "players": [],
         "adjacents": [

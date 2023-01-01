@@ -18,7 +18,7 @@
               <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-blue-500 inline p-2 rounded">La Guerre de l'Anneau</h2>
               <br>
               <br>
-              <p class="text-2xl text-orange-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Inscription à partir du 9 décembre 2022</p>
+              <p class="text-2xl text-orange-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Carte de l'évènements</p>
               <br>
               <br>
               <button style="font-family: 'Albertus'" to="/tournois/lutte_des_duos" class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-orange-600 rounded-md dark:bg-gray-800 hover:bg-orange-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-orange-500 dark:focus:bg-gray-700">
@@ -31,7 +31,7 @@
           </nuxt-link>
         </div>
 
-        <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
+        <!-- <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
           <nuxt-link title="La Lutte des Duos"  to="/tournois/lutte_des_duos" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-green-300 border-2 rounded-xl">
             <NuxtImg
               src="tournois/lutte_des_duos.png"
@@ -54,9 +54,9 @@
               </button>
             </div>
           </nuxt-link>
-        </div>
+        </div> -->
 
-        <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
+        <!-- <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
           <nuxt-link title="La Guerre des chevaliers"  to="/tournois/guerre_des_chevaliers" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-blue-300 border-2 rounded-xl">
             <NuxtImg
               src="tournois/guerre_des_chevaliers.png"
@@ -79,9 +79,9 @@
               </button>
             </div>
           </nuxt-link>
-        </div>
+        </div> -->
 
-        <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
+        <!-- <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
           <nuxt-link title="La Guerre des apprentis"  to="/tournois/guerre_des_apprentis" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-blue-300 border-2 rounded-xl">
             <NuxtImg
               src="tournois/guerre_des_apprentis.png"
@@ -104,9 +104,9 @@
               </button>
             </div>
           </nuxt-link>
-          </div>
+          </div> -->
         
-                <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
+                <!-- <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
           <nuxt-link title="La Campagne des Gobelins"  to="/la-campagne-des-gobelins" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-green-300 border-2 rounded-xl">
             <NuxtImg
               src="img/CdG.jpg"
@@ -129,7 +129,7 @@
               </button>
             </div>
           </nuxt-link>
-          </div>
+          </div> -->
 
 
 
@@ -142,7 +142,7 @@
               loading="lazy"
             />
             <div class="text-center relative z-10 w-full">
-              <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-purple-500 inline p-2 rounded">Ligue français de l'Avènement du Roi Sorcier 🐲 (LFA)</h2>
+              <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-purple-500 inline p-2 rounded">Ligue de l'Avènement du Roi Sorcier 🐲</h2>
               <br>
               <br>
               <p class="text-2xl text-purple-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Joue pour être le meilleur de la Ligue !</p>
@@ -152,7 +152,7 @@
                 <svg class="w-5 h-5 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-                <span class="mx-1">Hum hum hum</span>
+                <span class="mx-1">Plus d'informations</span>
               </button>
             </div>
           </nuxt-link>

@@ -10035,7 +10035,6 @@ export default {
           cardolan: true,
           arthedain: true,
           rohan: true,
-          brumeux: true,
           mordor: true,
           harad: true,
           rhun: true,
@@ -10045,7 +10044,8 @@ export default {
           isengard: true,
           erebor: true,
           sauvage: true,
-          regions: true
+          regions: true,
+          mer: true
         }
       } else {
         this.viewCheckbox = {
@@ -10056,7 +10056,6 @@ export default {
           cardolan: false,
           arthedain: false,
           rohan: false,
-          brumeux: false,
           mordor: false,
           harad: false,
           rhun: false,
@@ -10066,7 +10065,8 @@ export default {
           isengard: false,
           erebor: false,
           sauvage: false,
-          regions: false
+          regions: false,
+          mer: false
         }
       }
     },

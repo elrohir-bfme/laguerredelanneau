@@ -10294,7 +10294,7 @@ export default {
   async fetch() {
     this.displayHUDValue = this.$cookies.get('checkHUD');
     this.loading = true;
-    let map1 = require(`~/assets/new_gda/map.json`);
+    let map1 = require(`~/static/gdav3/map.json`);
     
     console.log(factions)
     

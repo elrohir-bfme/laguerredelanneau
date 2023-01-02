@@ -8,9 +8,9 @@
           <!-- <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/gda/matchs')">{{ $t('layout_gde_matchs') }}</nuxt-link> -->
           <!-- <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/gda/presentation')">{{ $t('layout_gde_pres') }}</nuxt-link> -->
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/gda/inscription')">Inscription</nuxt-link>
+          <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/gda/joueurs')">{{ $t('layout_gde_joueur') }}</nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/gda/bande-annonce')">{{ $t('layout_gde_video') }}</nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/gda/regles')">{{ $t('layout_gde_regle') }}</nuxt-link>
-          <!-- <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/gda/joueurs')">{{ $t('layout_gde_joueur') }}</nuxt-link> -->
           <a rel="noopener noreferrer" style="font-family: 'Albertus'" class="p-4 text-gray-600 hover:text-white hover:bg-gray-900" target="_blank" href="https://laterredumilieu.fr/Discord">
             <svg class="h-10 w-10 animate-pulse" width="71" height="55" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">

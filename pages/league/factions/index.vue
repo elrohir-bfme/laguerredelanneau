@@ -150,35 +150,31 @@ export default {
 
 
         const query = qs.stringify({
-            sort: ['date:desc'],
-            fields: ['date', 'bo'],
+            sort: ['date_start:desc'],
+            fields: ['date_start', 'date_end'],
             populate: {
-                replays: {
-                    populate: {
-                      faction_lose: {
-                        fields: ['name'],
-                      },
-                      faction_win: {
-                        fields: ['name'],
-                      },
-                      player_win: {
-                        fields: ['name'],
-                      },
-                      player_lose: {
-                        fields: ['name'],
-                      },
-                      replay: {
-                        fields: ['url'],
-                      },
-                      map: {
-                        fields: ['name']
-                      }
-                    }
+                faction_lose: {
+                    fields: ['name'],
+                },
+                faction_win: {
+                    fields: ['name'],
+                },
+                player_win: {
+                    fields: ['name'],
+                },
+                player_lose: {
+                    fields: ['name'],
+                },
+                replay: {
+                    fields: ['url'],
+                },
+                map: {
+                    fields: ['name']
                 }
             },
             pagination: {
                 page: 1,
-                pageSize: 500,
+                pageSize: 5000
             },
         }, {
         encodeValuesOnly: true,
@@ -192,7 +188,6 @@ export default {
     computed:{
         sortedFactions() {
             if(this.factions){
-
                 let NewFaction = this.factions.map(f => {
                     let newObject = {
                         statsFactionWin: {},
@@ -202,29 +197,48 @@ export default {
                     }
 
                     this.games.map(g => {
-                        if(g.attributes.replays && g.attributes.replays.length > 0){
-                            g.attributes.replays.map(r => {
-                                if((r.faction_win.data && r.faction_win.data.attributes && r.faction_win.data.attributes.name) === f.attributes.name) {
-                                    let faction = r.faction_lose?.data?.attributes?.name;
-                                    typeof newObject.statsFactionWin[faction] === 'undefined' ? 
-                                    newObject.statsFactionWin[faction] = 1 : 
-                                    newObject.statsFactionWin[faction]++;
-                                    newObject.wins++;
-                                }
 
-                                if((r.faction_lose.data && r.faction_lose.data.attributes && r.faction_lose.data.attributes.name) === f.attributes.name) {
-                                    let faction = r.faction_win.data?.attributes?.name;
-                                    typeof newObject.statsFactionLose[faction] === 'undefined' ? 
-                                    newObject.statsFactionLose[faction] = 1 : 
-                                    newObject.statsFactionLose[faction]++;
-                                    newObject.loses++;
-                                }
-                            })
+                        if((g.attributes.faction_win.data && g.attributes.faction_win.data.attributes && g.attributes.faction_win.data.attributes.name) === f.attributes.name) {
+                            let faction = g.attributes.faction_lose?.data?.attributes?.name;
+                            typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                            newObject.statsFactionWin[faction] = 1 : 
+                            newObject.statsFactionWin[faction]++;
+                            newObject.wins++;
                         }
+
+                        if((g.attributes.faction_lose.data && g.attributes.faction_lose.data.attributes && g.attributes.faction_lose.data.attributes.name) === f.attributes.name) {
+                            let faction = g.attributes.faction_win.data?.attributes?.name;
+                            typeof newObject.statsFactionLose[faction] === 'undefined' ? 
+                            newObject.statsFactionLose[faction] = 1 : 
+                            newObject.statsFactionLose[faction]++;
+                            newObject.loses++;
+                        }
+
+                        // if(g.attributes.replays && g.attributes.replays.length > 0){
+                        //     g.attributes.replays.map(r => {
+                        //         if((r.faction_win.data && r.faction_win.data.attributes && r.faction_win.data.attributes.name) === f.attributes.name) {
+                        //             let faction = r.faction_lose?.data?.attributes?.name;
+                        //             typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                        //             newObject.statsFactionWin[faction] = 1 : 
+                        //             newObject.statsFactionWin[faction]++;
+                        //             newObject.wins++;
+                        //         }
+
+                        //         if((r.faction_lose.data && r.faction_lose.data.attributes && r.faction_lose.data.attributes.name) === f.attributes.name) {
+                        //             let faction = r.faction_win.data?.attributes?.name;
+                        //             typeof newObject.statsFactionLose[faction] === 'undefined' ? 
+                        //             newObject.statsFactionLose[faction] = 1 : 
+                        //             newObject.statsFactionLose[faction]++;
+                        //             newObject.loses++;
+                        //         }
+                        //     })
+                        // }
                     })
 
                     return Object.assign(f, newObject)
                 })
+
+                console.log(NewFaction, "newfaction")
 
                 return NewFaction;
             }

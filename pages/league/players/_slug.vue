@@ -167,52 +167,44 @@ export default {
         let player = await $strapi.findOne('players', params.slug, { populate: '*'})
         let loading = false;
         const query = qs.stringify({
-            sort: ['date:desc'],
-            fields: ['date', 'bo'],
+             sort: ['date_start:desc'],
+            fields: ['date_start', 'date_end'],
             filters: {
                     $or: [
                       {
-                        replays: {
-                            player_win: {
-                              id: {
-                                $eq: params.slug
-                              },
+                        player_win: {
+                          id: {
+                            $eq: params.slug
                           },
-                        }
+                        },
                       },
                       {
-                        replays: {
-                          player_lose: {
-                            id: {
-                              $eq: params.slug
-                            },
+                        player_lose: {
+                          id: {
+                            $eq: params.slug
                           },
-                        }
+                        },
                       },
                     ]
                   },
             populate: {
-                replays: {
-                    populate: {
-                      faction_lose: {
-                        fields: ['name'],
-                      },
-                      faction_win: {
-                        fields: ['name'],
-                      },
-                      player_win: {
-                        fields: ['name'],
-                      },
-                      player_lose: {
-                        fields: ['name'],
-                      },
-                      replay: {
-                        fields: ['url'],
-                      },
-                      map: {
-                        fields: ['name']
-                      }
-                    }
+                faction_lose: {
+                    fields: ['name'],
+                },
+                faction_win: {
+                    fields: ['name'],
+                },
+                player_win: {
+                    fields: ['name'],
+                },
+                player_lose: {
+                    fields: ['name'],
+                },
+                replay: {
+                    fields: ['url'],
+                },
+                map: {
+                    fields: ['name']
                 }
             },
             pagination: {
@@ -246,35 +238,32 @@ export default {
                 
                 let test = false
 
-                for (const m of g.attributes?.replays){
-                  if(p == m.player_lose?.data?.attributes?.name || p == m.player_win?.data?.attributes?.name) {
+                if(p == g.attributes.player_lose?.data?.attributes?.name || p == g.attributes.player_win?.data?.attributes?.name) {
 
-                    test = true
+                  test = true
 
-                    let factionWin = m.faction_win?.data?.attributes?.name;
-                    let factionLose = m.faction_lose?.data?.attributes?.name;
+                  let factionWin = g.attributes.faction_win?.data?.attributes?.name;
+                  let factionLose = g.attributes.faction_lose?.data?.attributes?.name;
 
-                    if(m.player_win.data?.attributes?.name == p) {
-                        typeof newPlayer.statsFactionWin[factionWin] === 'undefined' ? 
-                        newPlayer.statsFactionWin[factionWin] = 1 : 
-                        newPlayer.statsFactionWin[factionWin]++;
+                  if(g.attributes.player_win.data?.attributes?.name == p) {
+                      typeof newPlayer.statsFactionWin[factionWin] === 'undefined' ? 
+                      newPlayer.statsFactionWin[factionWin] = 1 : 
+                      newPlayer.statsFactionWin[factionWin]++;
 
-                        typeof newPlayer.statsFactionWin2[factionLose] === 'undefined' ? 
-                        newPlayer.statsFactionWin2[factionLose] = 1 : 
-                        newPlayer.statsFactionWin2[factionLose]++;
+                      typeof newPlayer.statsFactionWin2[factionLose] === 'undefined' ? 
+                      newPlayer.statsFactionWin2[factionLose] = 1 : 
+                      newPlayer.statsFactionWin2[factionLose]++;
 
-                        newPlayer.wins++;
-                    } else {
-                        typeof newPlayer.statsFactionLose[factionLose] === 'undefined' ? 
-                        newPlayer.statsFactionLose[factionLose] = 1 : 
-                        newPlayer.statsFactionLose[factionLose]++;
+                      newPlayer.wins++;
+                  } else {
+                      typeof newPlayer.statsFactionLose[factionLose] === 'undefined' ? 
+                      newPlayer.statsFactionLose[factionLose] = 1 : 
+                      newPlayer.statsFactionLose[factionLose]++;
 
-                        typeof newPlayer.statsFactionLose2[factionWin] === 'undefined' ? 
-                        newPlayer.statsFactionLose2[factionWin] = 1 : 
-                        newPlayer.statsFactionLose2[factionWin]++;
-                        newPlayer.lose++;
-                    }
-                    
+                      typeof newPlayer.statsFactionLose2[factionWin] === 'undefined' ? 
+                      newPlayer.statsFactionLose2[factionWin] = 1 : 
+                      newPlayer.statsFactionLose2[factionWin]++;
+                      newPlayer.lose++;
                   }
                 }
 

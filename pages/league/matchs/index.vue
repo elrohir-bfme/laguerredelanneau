@@ -79,37 +79,49 @@
                                         ({{ $moment(game.attributes.date).lang($i18n.locale).fromNow()}})
                                                 </div>
                                             </th>
+                                            <!-- <th class="p-2 whitespace-nowrap">
+                                                <div class="font-semibold text-left">{{ $t('league.replay') }} -
+                                                    ⌛ Duration of the game
+                                                </div>
+                                            </th> -->
+                                            
                                         </tr>
                                     </thead>
                                     <tbody class="text-sm divide-y divide-orange-500">
-                                        <tr v-for="replay in game.attributes.replays" v-bind:key="replay.id">
+                                        <tr>
                                             <td class="p-2 whitespace-nowrap">
                                                 <div class="text-lg text-left text-white">
-                                                    {{replay.map.data && replay.map.data.attributes.name}}
+                                                    {{game.attributes.map.data && game.attributes.map.data.attributes.name}}
                                                 </div>
                                             </td>
                                             <td class="p-2 whitespace-nowrap">
                                                 <div class="text-lg text-left text-white">
-                                                    {{replay.player_win.data && replay.player_win.data.attributes.name}}
-                                                    (<span :class="`text-${factionList.find(o => o.name === (replay.faction_win.data && replay.faction_win.data.attributes.name)).color}-500`">
-                                                        {{replay.faction_win.data && replay.faction_win.data.attributes.name}}
+                                                    {{game.attributes.player_win.data && game.attributes.player_win.data.attributes.name}}
+                                                    (<span :class="`text-${factionList.find(o => o.name === (game.attributes.faction_win.data && game.attributes.faction_win.data.attributes.name)).color}-500`">
+                                                        {{game.attributes.faction_win.data && game.attributes.faction_win.data.attributes.name}}
                                                     </span>)
                                                 </div>
                                             </td>
                                             <td class="p-2 whitespace-nowrap">
                                                 <div class="text-lg text-left text-white">
-                                                    {{replay.player_lose.data && replay.player_lose.data.attributes.name}}
-                                                    (<span :class="`text-${factionList.find(o => o.name === (replay.faction_lose.data && replay.faction_lose.data.attributes.name)).color}-500`">
-                                                    {{replay.faction_lose.data && replay.faction_lose.data.attributes.name}}
+                                                    {{game.attributes.player_lose.data && game.attributes.player_lose.data.attributes.name}}
+                                                    (<span :class="`text-${factionList.find(o => o.name === (game.attributes.faction_lose.data && game.attributes.faction_lose.data.attributes.name)).color}-500`">
+                                                    {{game.attributes.faction_lose.data && game.attributes.faction_lose.data.attributes.name}}
                                                     </span>)
                                                 </div>
                                             </td>
-                                            <td class="p-2 whitespace-nowrap" v-if="replay.replay.data !== null">
-                                                <a target="_blank" :href="`https://api.laterredumilieu.fr${replay.replay.data.attributes.url}`" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 mx-2 rounded inline-flex items-center">
+                                            <td class="p-2 whitespace-nowrap" v-if="game.attributes.replay.data !== null">
+                                                <a target="_blank" :href="`https://api.laterredumilieu.fr${game.attributes.replay.data.attributes.url}`" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 mx-2 rounded inline-flex items-center">
                                                     <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-                                                    <span>{{replay.replay.data.attributes.name}}</span>
+                                                    <span>{{game.attributes.replay.data.attributes.name}}</span>
                                                 </a>
                                             </td>
+                                            <!-- <td class="p-2 whitespace-nowrap" v-if="game.attributes.date_end !== null && game.attributes.date_start !== null">
+                                                 <div class="text-lg text-left text-white">
+                                                    {{Math.ceil($moment.duration($moment.unix(game.attributes.date_end).diff($moment.unix(game.attributes.date_start))).asMinutes())}} minutes
+                                                 </div>
+                                            </td> -->
+                                            
                                         </tr>
                                     </tbody>
                                 </table>
@@ -196,35 +208,31 @@ export default {
     },
     async asyncData({ $axios }) {
         const query = qs.stringify({
-            fields: ['date', 'bo'],
-            sort: ['date:desc'],
+            sort: ['date_start:desc'],
+            fields: ['date_start', 'date_end'],
             populate: {
-                replays: {
-                    populate: {
-                      faction_lose: {
-                        fields: ['name'],
-                      },
-                      faction_win: {
-                        fields: ['name'],
-                      },
-                      player_win: {
-                        fields: ['name'],
-                      },
-                      player_lose: {
-                        fields: ['name'],
-                      },
-                      replay: {
-                        fields: ['url', 'name'],
-                      },
-                      map: {
-                        fields: ['name']
-                      }
-                    }
+                faction_lose: {
+                    fields: ['name'],
+                },
+                faction_win: {
+                    fields: ['name'],
+                },
+                player_win: {
+                    fields: ['name'],
+                },
+                player_lose: {
+                    fields: ['name'],
+                },
+                replay: {
+                    fields: ['url', 'name'],
+                },
+                map: {
+                    fields: ['name']
                 }
             },
             pagination: {
                 page: 1,
-                pageSize: 20,
+                pageSize: 5000
             },
         }, {
         encodeValuesOnly: true,
@@ -241,30 +249,26 @@ export default {
                     return true;
                 } else {
                     const query = qs.stringify({
-                        fields: ['date', 'bo'],
-                        sort: ['date:desc'],
+                        sort: ['date_start:desc'],
+                        fields: ['date_start', 'date_end'],
                         populate: {
-                            replays: {
-                                populate: {
-                                faction_lose: {
-                                    fields: ['name'],
-                                },
-                                faction_win: {
-                                    fields: ['name'],
-                                },
-                                player_win: {
-                                    fields: ['name'],
-                                },
-                                player_lose: {
-                                    fields: ['name'],
-                                },
-                                replay: {
-                                    fields: ['url', 'name'],
-                                },
-                                map: {
-                                    fields: ['name']
-                                }
-                                }
+                            faction_lose: {
+                                fields: ['name'],
+                            },
+                            faction_win: {
+                                fields: ['name'],
+                            },
+                            player_win: {
+                                fields: ['name'],
+                            },
+                            player_lose: {
+                                fields: ['name'],
+                            },
+                            replay: {
+                                fields: ['url'],
+                            },
+                            map: {
+                                fields: ['name']
                             }
                         },
                         pagination: {

@@ -148,30 +148,26 @@ export default {
     },
     async asyncData({ $axios }) {
         const query = qs.stringify({
-            sort: ['date:desc'],
-            fields: ['date', 'bo'],
+            sort: ['date_start:desc'],
+            fields: ['date_start', 'date_end'],
             populate: {
-                replays: {
-                    populate: {
-                      faction_lose: {
-                        fields: ['name'],
-                      },
-                      faction_win: {
-                        fields: ['name'],
-                      },
-                      player_win: {
-                        fields: ['name'],
-                      },
-                      player_lose: {
-                        fields: ['name'],
-                      },
-                      replay: {
-                        fields: ['url'],
-                      },
-                      map: {
-                        fields: ['name']
-                      }
-                    }
+                faction_lose: {
+                    fields: ['name'],
+                },
+                faction_win: {
+                    fields: ['name'],
+                },
+                player_win: {
+                    fields: ['name'],
+                },
+                player_lose: {
+                    fields: ['name'],
+                },
+                replay: {
+                    fields: ['url'],
+                },
+                map: {
+                    fields: ['name']
                 }
             },
             pagination: {
@@ -183,7 +179,8 @@ export default {
         });
 
         const { data } = await $axios.$get(`https://api.laterredumilieu.fr/api/games?${query}`); 
-        let games = data
+        console.log(data, "data")
+        let games = data 
 
         const queryPlayer = qs.stringify({
             fields: ['name', 'elo'],
@@ -228,31 +225,53 @@ export default {
 
                     this.games.map((g,i) => {
 
-                        if(g.attributes?.replays && g.attributes?.replays?.length > 0){
-                            g.attributes?.replays.map(r => {
-                                if(r.player_win?.data?.attributes?.name === f.attributes?.name){
-                                    if(!newObject.date){
-                                        newObject.date = g.attributes?.date;
-                                    }
-                                    let faction = r.faction_win?.data?.attributes?.name;
-                                    typeof newObject.statsFactionWin[faction] === 'undefined' ? 
-                                    newObject.statsFactionWin[faction] = 1 : 
-                                    newObject.statsFactionWin[faction]++;
-                                    newObject.wins++;
-                                }
-
-                                if(r.player_lose?.data?.attributes?.name === f.attributes?.name){
-                                    if(!newObject.date){
-                                        newObject.date = g.attributes?.date;
-                                    }
-                                    let faction = r.faction_lose?.data?.attributes?.name;
-                                    typeof newObject.statsFactionLose[faction] === 'undefined' ? 
-                                    newObject.statsFactionLose[faction] = 1 : 
-                                    newObject.statsFactionLose[faction]++;
-                                    newObject.loses++;
-                                }
-                            })
+                        if(g.attributes.player_win?.data?.attributes?.name === f.attributes?.name){
+                            if(!newObject.date){
+                                newObject.date = g.attributes?.date;
+                            }
+                            let faction = g.attributes.faction_win?.data?.attributes?.name;
+                            typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                            newObject.statsFactionWin[faction] = 1 : 
+                            newObject.statsFactionWin[faction]++;
+                            newObject.wins++;
                         }
+
+                        if(g.attributes.player_lose?.data?.attributes?.name === f.attributes?.name){
+                            if(!newObject.date){
+                                newObject.date = g.attributes?.date;
+                            }
+                            let faction = g.attributes.faction_lose?.data?.attributes?.name;
+                            typeof newObject.statsFactionLose[faction] === 'undefined' ? 
+                            newObject.statsFactionLose[faction] = 1 : 
+                            newObject.statsFactionLose[faction]++;
+                            newObject.loses++;
+                        }
+
+                        // if(g.attributes?.replays && g.attributes?.replays?.length > 0){
+                        //     g.attributes?.replays.map(r => {
+                        //         if(r.player_win?.data?.attributes?.name === f.attributes?.name){
+                        //             if(!newObject.date){
+                        //                 newObject.date = g.attributes?.date;
+                        //             }
+                        //             let faction = r.faction_win?.data?.attributes?.name;
+                        //             typeof newObject.statsFactionWin[faction] === 'undefined' ? 
+                        //             newObject.statsFactionWin[faction] = 1 : 
+                        //             newObject.statsFactionWin[faction]++;
+                        //             newObject.wins++;
+                        //         }
+
+                        //         if(r.player_lose?.data?.attributes?.name === f.attributes?.name){
+                        //             if(!newObject.date){
+                        //                 newObject.date = g.attributes?.date;
+                        //             }
+                        //             let faction = r.faction_lose?.data?.attributes?.name;
+                        //             typeof newObject.statsFactionLose[faction] === 'undefined' ? 
+                        //             newObject.statsFactionLose[faction] = 1 : 
+                        //             newObject.statsFactionLose[faction]++;
+                        //             newObject.loses++;
+                        //         }
+                        //     })
+                        // }
                     })
 
                     return Object.assign(f, newObject)

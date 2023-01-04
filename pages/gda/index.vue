@@ -10071,14 +10071,11 @@ export default {
       }
     },
     updateInfo(value) {
-      console.log("UPDATE INFO");
-      console.log(value);
       this.title = value;
       this.region = value;
       this.isShowModal = true;
     },
     getInfo(e) {
-      console.log(e.target.id, e.target.getAttribute("aria-valuetext"));
       this.title = e.target.id;
       this.region = e.target.getAttribute("aria-valuetext") ? e.target.getAttribute("aria-valuetext") : "";
     },
@@ -10296,8 +10293,6 @@ export default {
     this.loading = true;
     let map1 = require(`~/static/gdav3/map.json`);
     
-    console.log(factions)
-    
     let testApi = await this.$http.$get(
       "https://api.npoint.io/7a210a01331f3c385ed7"
       ); //API
@@ -10308,10 +10303,8 @@ export default {
 
 
     function MergeRecursive(obj1, obj2) {
-      console.log(obj1, obj2, "djeidje")
       for (var p in obj2) {
         try {
-          console.log(obj2.p, p, "for")
           // Property in destination object set; update its value.
           if (obj2[p].constructor==Object ) {
             obj1[p] = MergeRecursive(obj1[p], obj2[p]);
@@ -10336,10 +10329,6 @@ export default {
     
 
     this.map = o3
-    console.log(o3, "MergeRecursive")
-    // this.result = await this.$http.$get(
-    //   "https://api.npoint.io/7a210a01331f3c385ed7/results"
-    // ); //API
 
 
     this.tour = time.tour;
@@ -10350,7 +10339,6 @@ export default {
 
     let objArray = []
     Object.keys(factions).forEach(key =>  {
-      console.log(key, "key")
         objArray.push({
         name: key,
         faction: factions[key],

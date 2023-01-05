@@ -389,7 +389,8 @@ robots: {
             elo: "Elo",
             noMatch: "No Match",
             informationsPlayerTitle: "Information about the factions played",
-            sort: "Sort"
+            sort: "Sort",
+            lastDate: "Last Game"
           }
         },
         fr: {
@@ -550,7 +551,8 @@ robots: {
             elo: "Elo",
             noMatch: "Aucun Match",
             informationsPlayerTitle: "Informations sur les factions jouées",
-            sort: "Trier"
+            sort: "Trier",
+            lastDate: "Dernière partie"
           }
         }
       }

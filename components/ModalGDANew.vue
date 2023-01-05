@@ -159,7 +159,7 @@
         let info = "";
         switch(value) {
             case 1:
-                info = "gondor"
+                info = "homme"
             break;
             case 2:
                 info = "elfe"

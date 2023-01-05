@@ -110,7 +110,7 @@ export default {
       return {
         selectedPower: null,
         powers: [
-            {name: "taintedland", price: 3000, realName: "Terre souillée"}, 
+            {name: "taintedland", price: 3000, realName: "Ombre"}, 
             // {name: "velocity", price: 400, realName: "Sort de Vélocité"}, 
             {name: "banner", price: 1000, realName: "Porte-Étendard"},
             {name: "heal", price: 400, realName: "Toucher guérisseur"}
@@ -129,24 +129,27 @@ export default {
         },
         color(id) {
             switch (id) {
-                case "#ff85ee":
+                case "#09a4ff":
+                case "#09A4FF":
                     return 1
-                case "#093aff":
+                case "#00ff7e":
+                case "#00ff7e":
                     return 2
-                case "#0bff00":
-                    return 3
-                case "#00e3ff":
-                    return 4
                 case "#fffc00":
-                    return 5
+                case "#FFFC00":
+                    return 3
                 case "#ff3636":
-                    return 6
+                case "#FF3636":
+                    return 4
                 case "#ffffff":
-                    return 7
+                case "#FFFFFF":
+                    return 5
                 case "#ff6f00":
-                    return 8
+                case "#FF6F00":
+                    return 6
                 case "#c500ff":
-                    return 9
+                case "#C500FF":
+                    return 7
             }
         },
     },
@@ -188,7 +191,7 @@ export default {
             let taintedLand = this.$props.regions
                 .filter(region => region.fortress == false)
                 .map(region => ({name: region.name, code: region.code}))
-                .sort((a, b) => a.name.localeCompare(b.name));
+                .sort((a, b) => a.name && a.name.localeCompare(b.name));
             
             if(taintedLand.length > 0 && this.$props.money >= 3000){
                 this.taintedLandInfo = true
@@ -216,9 +219,12 @@ export default {
             return heal
         },
         banner: function () {
+            console.log(this.$props.selectedFaction)
+            this.$props.regions.map(e => console.log(e, e.fortress, e.color, this.color(e.color)))
             let forteresse = this.$props.regions
                 .filter(region => region.fortress == true && this.color(region.color) == this.$props.selectedFaction)
 
+            console.log(this.$props.playerList, this.$props.selectedFaction, forteresse, "jdeijdejjdei")
             let banner = this.$props.playerList
                 .filter(player => player.factionNumber == this.$props.selectedFaction && player.code === forteresse[0].code)
 

@@ -148,11 +148,7 @@
                         >
                             <div class="flex-1 pl-1 mr-16">
                                 <div class="font-medium">
-                                    Coûte 400, permet d’enlever le handicap des joueurs qui se situent dans
-                                    leur forteresse. Un joueur ainsi soigné ne peut seulement se
-                                    déplacer que vers un territoire allié pour ce tour, sans double
-                                    déplacement. Tout boost de déplacement est également impossible
-                                    pour ce joueur et pendant ce tour.
+                                    Coûte 400, permet d’enlever le handicap d’un joueur de la faction qui utilise le sort, à condition qu’il se situe dans une forteresse possédée par cette faction. Un joueur ainsi soigné peut seulement se déplacer vers un territoire allié pour ce tour, sans double déplacement. Tout boost de déplacement est également impossible pour ce joueur et pendant ce tour.
                                 </div>
                             </div>
                             <div
@@ -168,8 +164,7 @@
                         >
                             <div class="flex-1 pl-1 mr-16">
                                 <div class="font-medium">
-                                    Coûte 400, permet un déplacement jusqu’à 3 territoires en partant de la
-                                    forteresse, sur des territoires alliés seulement.
+                                    Coûte 400, permet d’augmenter de un territoire la portée de déplacement pour un joueur de la faction qui utilise le sort, (pouvoir valable uniquement en partant d’une forteresse possédée par cette faction), vers des territoires alliés seulement.
                                 </div>
                             </div>
                             <div
@@ -184,27 +179,45 @@
                             class="select-none rounded-md bg-gray-900 flex flex-1 items-center p-4 transition text-white duration-500 ease-in-out transform hover:-translate-y-2 rounded-2xl border-2 p-6 mt-3 border-orange-400 hover:shadow-2xl"
                         >
                             <div class="flex-1 pl-1 mr-16">
-                                <div class="font-medium">Coûte 3000, permet de bloquer les déplacements de tous les joueurs
-                                    ennemis situés sur un territoire précis, pendant un tour. Ces joueurs
-                                    seront donc bloqués sur le territoire souillé ; leurs déplacements
-                                    sont annulés. Attention que la terre souillée n’affecte pas les
-                                    déplacements vers une forteresse. L’utilisation de la terre souillée
-                                    doit être annoncée en même temps que les ordres de déplacements
-                                    et empêche les déplacements prévus pour ce tour, pour les joueurs
-                                    concernés. Notez qu’une terre souillée ne peut pas affecter un même
-                                    territoire sur deux tours d’affilée. Par ailleurs, chaque utilisation de
-                                    la terre souillée par une faction augmentera le prix de ce sort de 500,
-                                    pour cette faction. Pour illustrer l’utilisation du sort, si 3 joueurs du
-                                    Rohan sont présents sur la Moria et que les gobelins utilisent la terre
-                                    souillée sur la Moria, tout déplacement de ces joueurs du Rohan vers
-                                    Eregion est bloqué. Une attaque sur Zagh Kala ne peut par contre pas
-                                    être bloquée.
+                                <div class="font-medium">
+                                    Coûte 600, permet de donner la possibilité à un joueur de choisir une faction lors d’un tour. Lors d’un déplacement, vous devez donner le nom du joueur et la faction qu’il joue. Si le joueur doit jouer un match il doit prendre la faction attribuée mais si le joueur n’a aucun match, le pouvoir n’aura aucun effet et disparaîtra sans avoir été utilisé. 
+                                </div>
+                            </div>
+                            <div
+                                class="w-1/4 text-wrap text-center text-white text-bold flex flex-col rounded-md bg-orange-500 justify-center items-center mr-10 p-2"
+                            >
+                                Appel du mercenaire
+                            </div>
+                        </div>
+                    </li>
+                    <li class="border-gray-400 flex flex-row mb-2">
+                        <div
+                            class="select-none rounded-md bg-gray-900 flex flex-1 items-center p-4 transition text-white duration-500 ease-in-out transform hover:-translate-y-2 rounded-2xl border-2 p-6 mt-3 border-orange-400 hover:shadow-2xl"
+                        >
+                            <div class="flex-1 pl-1 mr-16">
+                                <div class="font-medium">Coûte 3000, permet de bloquer la vision des joueurs ennemis situés sur un territoire précis, pendant un tour, ce qui bloque (annule) leurs déplacements de ce tour. Attention, l’ombre n’affecte pas les déplacements vers une forteresse. L’utilisation de l’ombre doit être annoncée en même temps que les ordres de déplacements et empêche les déplacements prévus pour ce tour, pour les joueurs concernés. Notez qu’une ombre ne peut pas affecter un même territoire sur deux tours d'affilée. 
+Par ailleurs, chaque utilisation de l’ombre par une faction augmentera le prix de ce sort de 500, pour cette faction.  Pour illustrer l’utilisation du sort, si 3 joueurs du Mordor sont présents sur la Trouée des Trolls et que les elfes utilisent l’ombre sur la Trouée des Trolls, tout déplacement de ces joueurs du Mordor vers : Glad Ereg, Eregion, The Angle, Hollin, Collines du Vent ainsi que Cameth Brin sont bloqués. Une attaque sur Fondcombe ne peut, par contre, pas être bloquée.
                                 </div>
                             </div>
                             <div
                                 class="flex w-1/4 text-wrap text-center flex-col text-white text-bold rounded-md bg-orange-500 justify-center items-center mr-10 p-2"
                             >
-                                Terre souillée
+                                Ombre
+                            </div>
+                        </div>
+                    </li>
+                    <li class="border-gray-400 flex flex-row mb-2">
+                        <div
+                            class="select-none rounded-md bg-gray-900 flex flex-1 items-center p-4 transition text-white duration-500 ease-in-out transform hover:-translate-y-2 rounded-2xl border-2 p-6 mt-3 border-orange-400 hover:shadow-2xl"
+                        >
+                            <div class="flex-1 pl-1 mr-16">
+                                <div class="font-medium">Coûte 200, permet d’immuniser un joueur contre les effets de l'ombre pendant un tour. Le joueur concerné ne sera donc pas impacté si l’ombre est utilisée sur le territoire sur lequel il se trouve. Seul le(s) détenteur(s) de la lumière sont ainsi immunisés, pas leurs coéquipiers. La lumière s’épuise après un tour, qu’elle ait servi ou pas. A chaque achat d’une lumière d’Eärendil sur un joueur, le prix du prochain achat du même objet augmente de 100 pour ce joueur.
+                                </div>
+                            </div>
+                            <div
+                                class="flex w-1/4 text-wrap text-center flex-col text-white text-bold rounded-md bg-orange-500 justify-center items-center mr-10 p-2"
+                            >
+                            Lumière d’Eärendil
                             </div>
                         </div>
                     </li>
@@ -214,34 +227,8 @@
                         >
                             <div class="flex-1 pl-1 mr-16">
                                 <div class="font-medium">
-                                    Coûte 1000, permet d’avoir la supériorité lors d’un croisement d’armées.
-                                    L'objet peut être acquis uniquement dans une forteresse, il est
-                                    ensuite attribué à un joueur. Chaque joueur ne peut être porteur que
-                                    d’un étendard à la fois. Les factions peuvent fabriquer plusieurs
-                                    étendards en un tour si elles ont les ressources nécessaires, mais
-                                    chaque faction ne peut avoir au total en sa possession que 2
-                                    étendards à la fois. L’étendard peut être utilisé même si le joueur le
-                                    portant ne combat pas. Il ne peut être transmis sauf si, lorsqu’il n'est
-                                    pas utilisé, le combat est perdu et qu’il y a repli du surplus de joueur.
-                                    Le joueur ayant porté l’étendard peut alors le transmettre aux
-                                    joueurs de sa faction se repliant sans être morts. Si l’équipe perd
-                                    sans avoir utilisé l’étendard et qu'il n'y a aucun joueur en surplus à
-                                    qui le transmettre, l’étendard est détruit.
-                                    Si l’étendard est utilisé, alors il est mis en jeu : si le joueur utilise son
-                                    étendard et que son équipe perd le combat, alors l’étendard est
-                                    récupéré par un joueur de l’équipe ennemie, et est utilisable dès le
-                                    prochain tour par l’ennemi, à condition qu’ils n’aient pas déjà deux
-                                    étendards en leur possession au total. Si le combat dans lequel
-                                    l’étendard est utilisé est remporté par l’équipe qui l’a utilisé, alors
-                                    l’étendard disparaît. Si chaque équipe utilise autant d’étendards que
-                                    l’autre lors d’un croisement, la règle de croisement normale
-                                    s’applique. Si une équipe a utilisé plus d’étendards que l’autre, alors
-                                    elle a l’avantage. Pour utiliser le porte-étendard il faut le signaler
-                                    avec les ordres de déplacements. Si l’ordre n’est pas donné, il ne
-                                    pourra pas être utilisé. Les portes-étendards ne peuvent être utilisés
-                                    pour sortir ou entrer dans une forteresse, ils ne seront pas
-                                    comptabilisés dans ces croisements, et dans tous les cas la règle de
-                                    croisement impliquant une forteresse s’applique.
+                                    Coûte 1000, permet d’avoir la supériorité lors d’un croisement d’armées. L'objet peut être acquis uniquement dans une forteresse possédée par la faction qui achète le porte-étendard, afin de l’attribuer à un joueur de cette même faction, présent sur le territoire. Chaque joueur ne peut être porteur que d’un étendard à la fois. Les factions peuvent fabriquer plusieurs étendards en un tour si elles ont les ressources nécessaires, mais chaque faction ne peut avoir au total en sa possession que 2 étendards à la fois. L’étendard peut être utilisé même si le joueur le portant ne combat pas. Il ne peut être transmis sauf si, lorsqu’il n'est pas utilisé, le combat est perdu et qu’il y a repli du surplus de joueur. Le joueur ayant porté l’étendard peut alors le transmettre aux joueurs de sa faction se repliant sans être morts. Si l’équipe perd sans avoir utilisé l’étendard et qu'il n'y a aucun joueur en surplus à qui le transmettre, l’étendard est détruit. 
+Si l’étendard est utilisé, alors il est mis en jeu : si le joueur utilise son étendard et que son équipe perd le combat, alors l’étendard est récupéré par un joueur de l’équipe ennemie, et est utilisable dès le prochain tour par l’ennemi, à condition qu’ils n’aient pas déjà deux étendards en leur possession au total. Si le combat dans lequel l’étendard est utilisé est remporté par l’équipe qui l’a utilisé, alors l’étendard disparaît. Si chaque équipe utilise autant d’étendards que l’autre lors d’un croisement, la règle de croisement normale s’applique. Si une équipe a utilisé plus d’étendards que l’autre, alors elle a l’avantage. Pour utiliser le porte-étendard il faut le signaler avec les ordres de déplacements. Si l’ordre n’est pas donné, il ne pourra pas être utilisé. Les portes-étendards ne peuvent être utilisés pour sortir ou entrer dans une forteresse, ils ne seront pas comptabilisés dans ces croisements, et dans tous les cas la règle de croisement impliquant une forteresse s’applique.
                                 </div>
                             </div>
                             <div
@@ -395,7 +382,7 @@ layout: "gda",
     color(id) {
         switch (id) {
             case 1:
-                return "#0089f"
+                return "#09a4ff"
             case 2:
                 return "#00ff7e"
             case 3:
@@ -464,13 +451,13 @@ layout: "gda",
     let testApi = await this.$http.$get(
     "https://api.npoint.io/7a210a01331f3c385ed7"
     ); //API
-    let map = require(`~/assets/new_gda/map.json`);
+    let map = require(`~/static/gdav3/map.json`);
 
     function MergeRecursive(obj1, obj2) {
-      console.log(obj1, obj2, "djeidje")
+    //   console.log(obj1, obj2, "djeidje")
       for (var p in obj2) {
         try {
-          console.log(obj2.p, p, "for")
+        //   console.log(obj2.p, p, "for")
           // Property in destination object set; update its value.
           if (obj2[p].constructor==Object ) {
             obj1[p] = MergeRecursive(obj1[p], obj2[p]);
@@ -492,6 +479,7 @@ layout: "gda",
 
     this.players = await MergeRecursive(map, testApi);
 
+    console.log(this.players, "PLAYERS")
         for (const key in this.players) {
 
             const obj = this.players[key];

@@ -267,7 +267,6 @@
       "region": "arthedain",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/fornost_minimap_yq8nko.png",
       "players": [],
-      "fortress": true,
       "adjacents": [
         "Champs_Fornost",
         "Haut_Nord"
@@ -818,7 +817,6 @@
       "region": "arthedain",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1642668076/La%20Guerre%20de%20l%27Eriador/annuminas_minimap_pplhsq.png",
       "players": [],
-      "fortress": true,
       "adjacents": [
         "Champs_Verts",
         "Evendim_Collines",
@@ -1240,7 +1238,6 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665353737/La%20Guerre%20de%20l%27Eriador/caradhras_jw9l2n.png",
       "outpost": true,
       "players": [],
-      "fortress": true,
       "adjacents": [
         "Eregion",
         "Glad_Ereg",
@@ -1458,7 +1455,6 @@
         3,
         4
       ],
-      "fortress": true,
       "adjacents": [
         "Haut_Sud",
         "Metraith",
@@ -1505,7 +1501,6 @@
       "region": "lindon",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665519065/La%20Guerre%20de%20l%27Eriador/palais_de_thorin_qkttam.png",
       "players": [],
-      "fortress": true,
       "adjacents": [
         "Forlindon",
         "Lindon",
@@ -2140,7 +2135,7 @@
       "east": [],
       "name": "Les Montagnes Bleues",
       "west": [],
-      "color": "#FF6F00",
+      "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1FN8LzCAmB5X_Miv9IkyQa9J_HBdvF8cK?usp=share_link",
       "north": [
@@ -2911,6 +2906,7 @@
       "map": 4,
       "east": [3,4],
       "name": "Dol Amroth",
+      "fortress": true,
       "west": [1,2],
       "color": "#3300000",
       "fight": "hidden",
@@ -4101,6 +4097,7 @@
       "map": 6,
       "east": [4,5,6],
       "name": "Erebor",
+      "fortress": true,
       "west": [1,2,3],
       "color": "#3300000",
       "fight": "hidden",
@@ -4930,6 +4927,7 @@
         "map": 2,
         "east": [],
         "name": "Barad Dur",
+        "fortress": true,
         "west": [],
         "color": "#FF3636",
         "fight": "hidden",

@@ -1,38 +1,45 @@
 <template>
-    <div class="mt-8 bg-lotr container mx-auto rounded-3xl text-white">
-      <!-- <h2 class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Incroyable réalisation d'Eternal !</h2> -->
-      
-      <p class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Vidéo pour l'Angmar par Diablo et Gréhelfe</p>
-      <div class="videoWrapper m-8 z-0">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/kPqzKQuJTTk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
 
-      <div class="videoWrapper m-8 z-0">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GK7HXx3EeQA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <p class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Présentation GDA 2023 💙</p>
-      <div class="videoWrapper m-8 z-0">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/psWjKmhdv9g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      
-    <p class="text-3xl sm:text-4xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Annonce GDA 2023 💙</p>
-    <div class="videoWrapper m-8 z-0">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/9sobkQ_17pE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <h3 class="text-2xl sm:text-3xl  text-white p-8 antialiased sm:subpixel-antialiased md:antialiased text-center">Présentation d'une GDA par Elessar</h3>
-    <div class="videoWrapper m-8 z-0">
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/4cx3KqqCtPU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-        
-
-    </div>
+<div class="flex flex-wrap">
+  <div
+    v-for="(link, i) in videos"
+    :key="i"
+    class="lg:w-1/4 md:w-1/2 p-4 w-full"
+  >
+    <a
+      :href="`https://www.youtube.com/watch?v=${link}`"
+      target="_blank"
+      class="block relative h-48"
+    >
+      <img
+        alt="video"
+        class="object-cover object-center w-full h-full block hover:border-blue-600 border-2 border-blue-200 rounded-2xl"
+        :src="`https://i.ytimg.com/vi/${link}/sddefault.jpg`" 
+      />
+    </a>
+  </div>
+</div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      videos: [
+        "4cx3KqqCtPU",
+        "9sobkQ_17pE",
+        "psWjKmhdv9g",
+        "GK7HXx3EeQA",
+        "kPqzKQuJTTk",
+        "pcjg4mFOado",
+        "OJot_GqhUU0",
+        "xLAW9Zr8kMs",
+        "LtUsinz48Ao",
+        "iz48pzIo41Q",
+        "5rbSZhEc7b8"
+      ]
+    }
+  },
   layout: "gda",
   head() {
     return {

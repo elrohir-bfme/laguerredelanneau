@@ -4,13 +4,13 @@
     <!-- <img class="w-full mb-10 object-cover object-center rounded" alt="hero" src="~assets/gde/fond.webp"> -->
     <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
       <!-- <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">{{ $t('regles.title') }}</h1> -->
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Disponible le 11 janvier en soirée.</h1>
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Règles</h1>
     </div>
       <div class="mt-8 w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
         <!-- Disponible le 9 décembre en soirée. -->
-    	<!-- <div class="videoWrapper">
-        <iframe src="https://drive.google.com/file/d/1AdZ39JycB9-2QxgU9HVxI-1VXYZA8WmAWGIdw6O2OMU/preview"></iframe>
-      </div> -->
+    	<div class="videoWrapper mb-24">
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vSxbzIOXYw5K4Bu4YvbZ0elnpqYEt_JRd6zCAlT-ApLalVKB54Un4sE0DGildVtoa4HsMWHMed0wYl1/pub?embedded=true"></iframe>
+      </div>
     </div>
   </div>
 </section>

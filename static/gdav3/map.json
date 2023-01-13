@@ -3120,7 +3120,8 @@
         "Golfe_Harad",
         "Proche_Harad",
         "Ered_Glamhoth",
-        "Khand"
+        "Khand",
+        "Lithlad"
       ],
       "description": "Situé à l'est du Mordor, ce territoire désertique est peuplé par différentes tribus d'Hommes luttant pour leurs survie dans ce milieu très hostile"
     },
@@ -4147,7 +4148,8 @@
         "Montagne_Destin",
         "Barad_Dur",
         "Khand",
-        "Steppes_Cendrees"
+        "Steppes_Cendrees",
+        "Desolation_Orientale"
       ],
       "description": "Le Lithlad était une région de plaines du Mordor. La position exacte de cette région reste cependant vague."
     },

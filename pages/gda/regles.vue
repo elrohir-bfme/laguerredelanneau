@@ -6,12 +6,11 @@
       <!-- <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">{{ $t('regles.title') }}</h1> -->
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Règles</h1>
     </div>
-      <div class="mt-8 w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
-        <!-- Disponible le 9 décembre en soirée. -->
-    	<div class="videoWrapper mb-24">
-        <iframe src="https://docs.google.com/document/d/e/2PACX-1vSxbzIOXYw5K4Bu4YvbZ0elnpqYEt_JRd6zCAlT-ApLalVKB54Un4sE0DGildVtoa4HsMWHMed0wYl1/pub?embedded=true"></iframe>
-      </div>
-    </div>
+    
+
+    <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 129.4118%;"><iframe src="https://docs.google.com/document/d/1OziEzGWY2Y8U2dd14tyK4cS0CO_cxPDwCBx2sOlzGVY/preview?usp=embed_googleplus" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div>
+
+
   </div>
 </section>
 </template>

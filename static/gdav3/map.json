@@ -485,7 +485,8 @@
       "adjacents": [
         "Forodwaith",
         "Landes_Angmar",
-        "Ruines_Nord"
+        "Ruines_Nord",
+        "Froid_Eternel"
       ],
       "description": "Carn Dûm était le sommet montagneux à l'extrémité nord de l'Hithaeglir, qui portait au nord le nom de Montagnes d’Angmar."
     },
@@ -593,7 +594,8 @@
         "Pays_Dun",
         "Cairill",
         "Enedwaith",
-        "Breche_Rohan"
+        "Breche_Rohan",
+        "Avancee_Fangorn"
       ],
       "description": "Branche du fleuve de l'Isen, prenant sa source en Isengard, s'étirant dans la Trouée du Rohan en traversant le Pays de Dun, marquant une frontière naturelle avec le Rohan."
     },

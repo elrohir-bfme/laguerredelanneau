@@ -1,6 +1,6 @@
 <template>
 <div>
-        <div class="fixed right-0 bottom-0 text-white text-center">
+        <div class="z-10 fixed right-0 bottom-0 text-white text-center">
         <div v-if="map[region]" class="flex flex-col p-4">
             <div v-for="index in 9" :key="index">
                 <div v-if="occurences(map[region].players, index) !== 0" class="m-4">

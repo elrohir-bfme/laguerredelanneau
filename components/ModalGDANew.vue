@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed bottom-0 inset-x-0 px-4 pb-4 sm:inset-0  sm:items-center sm:justify-center">
+  <div class="z-10 fixed bottom-0 inset-x-0 px-4 pb-4 sm:inset-0  sm:items-center sm:justify-center">
     <div class="fixed inset-0 transition-opacity" @click="handleClose">
       <div class="absolute inset-0 bg-gray-500 opacity-25"></div>
     </div>

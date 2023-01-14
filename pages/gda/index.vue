@@ -4720,7 +4720,7 @@
                   <path id="Shape-918" data-name="Shape" class="cls-6"
                     d="M2665.12,209.77a8.68,8.68,0,0,1-1.39,1.39,6.34,6.34,0,0,1-9,0L2631,187.39a6.34,6.34,0,0,1,0-9l1.08-1.08a1.4,1.4,0,0,1,1.08-.46,1.37,1.37,0,0,1,1.08.46l30.42,30.42a1.54,1.54,0,0,1,.47,2Z" />
                 </g>
-                <g :class="map.Forodwaith ? map.Forodwaith.fight : 'hidden'" id="s_Forodwaith" data-name="010---Swords">
+                <g :class="map.Froid_Eternel ? map.Froid_Eternel.fight : 'hidden'" id="s_Froid_Eternel" data-name="010---Swords">
                   <path id="Shape-919" data-name="Shape" class="cls-2"
                     d="M2291,112.05a3.28,3.28,0,0,0-2.32-1.08l-14.2-.77a3.2,3.2,0,0,0-3.4,3.4l.77,14.2a3.32,3.32,0,0,0,1.08,2.32L2305.22,157l8.5-3.08.92-1.09,2.16-9.72Z" />
                   <path id="Shape-920" data-name="Shape" class="cls-2"

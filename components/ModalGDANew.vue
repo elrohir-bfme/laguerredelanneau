@@ -21,13 +21,16 @@
               <img  src="~assets/gde/img/terre.png">
               Terre souillée activée
             </span>
+            
           </div>
         </div>
         <div class="px-6 py-3">
           <div class="flex justify-between font-bold text-xl mb-2">
             <div v-if="map[region]">
               <p @click="copyId()" :class="map[region] && map[region].minimap && 'absolute top-2 left-2'" class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 ml-2 px-4 rounded text-base">
-                {{map[region].name}}
+                {{map[region].name}} <img v-if="map[region] && map[region].port" class="inline-flex mb-1 h-6 w-6"  src="~assets/new_gda/icons/port.png">
+
+                
               </p>
 
               

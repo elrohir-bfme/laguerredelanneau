@@ -460,9 +460,9 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1669067100/La%20Guerre%20de%20l%27Eriador/ocean_2_cukalz.png",
       "players": [],
       "adjacents": [
-        "Belegaer",
-        "Minhiriath",
-        "Mer_Havres_Gris"
+        "Vinyalonde",
+        "Mer_Dol_Amroth",
+        "Mer_Enedwaith"
       ],
       "description": "Belegaer, la Grande Mer, est le nom qui fut donné à l'océan qui séparait la côte est d'Aman de la Terre du Milieu. Au nord, elle était séparée des froides eaux d'Ekkaia par le détroit d'Helcaraxë, le Chaos des Glaces. Lors de la Guerre de la Colère, la Grande Mer gagna du terrain, engloutissant tout le Beleriand."
     },
@@ -1322,6 +1322,7 @@
       ],
       "color": "#3300000",
       "fight": "hidden",
+      "port": true,
       "mapdl": "https://drive.google.com/drive/folders/1kZbU-zvqX3MN4LPTi9uTSVyMNF6o1ihZ?usp=sharing",
       "north": [
         1,
@@ -1337,7 +1338,8 @@
       "players": [],
       "adjacents": [
         "Girithlin",
-        "Gwathlo"
+        "Gwathlo",
+        "Mer_Enedwaith"
       ],
       "structures": [],
       "description": "Le Minhiriath était le nom que donnèrent les Númenóréens à la région située entre le Baranduin et la Gwathló."
@@ -1516,6 +1518,7 @@
       "name": "Les Havres Gris",
       "color": "#3300000",
       "fight": "hidden",
+      "port": true,
       "mapdl": "https://drive.google.com/drive/folders/1fXbRfkRxj92WK6rZjdbHnbO6q64qs-MZ?usp=sharing",
       "region": "lindon",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666711952/La%20Guerre%20de%20l%27Eriador/havres_gris_dscgib.png",
@@ -1536,7 +1539,8 @@
         "Collines_Tours",
         "Lindon",
         "Harlindon",
-        "Montagnes_Bleues"
+        "Montagnes_Bleues",
+        "Mer_Havres_Gris"
       ],
       "description": "Les Havres Gris ont été fondés par Círdan en l'an 1 du Deuxième Âge. Ils étaient situés sur l'estuaire de la Lune, en Lindon, à l'ouest du Comté. Nommés Mithlond en sindarin, les Havres Gris étaient le lieu où se rendaient les Elfes qui voulaient faire voile vers l'Ouest, en Aman."
     },
@@ -1808,6 +1812,7 @@
         6
       ],
       "region": "angmar",
+      "port": true,
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/baie_forochel_minimap_rycqgj.png",
       "players": [],
       "adjacents": [
@@ -2168,6 +2173,7 @@
       "map": 4,
       "east": [2,3],
       "name": "Umbar",
+      "port": true,
       "west": [1,4],
       "color": "#3300000",
       "fight": "hidden",
@@ -2912,6 +2918,7 @@
       "fortress": true,
       "west": [1,2],
       "color": "#3300000",
+      "port": true,
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1shFoMfRt8qmhJTps7vG8OUa1vLdBkjtS?usp=sharing",
       "north": [
@@ -2935,6 +2942,7 @@
       "map": 4,
       "east": [2,3],
       "name": "Pelargir",
+      "port": true,
       "west": [1,4],
       "color": "#3300000",
       "fight": "hidden",
@@ -3833,6 +3841,7 @@
       "map": 4,
       "east": [2,4],
       "name": "Vinyalondë",
+      "port": true,
       "west": [1,3],
       "color": "#3300000",
       "fight": "hidden",
@@ -3851,7 +3860,8 @@
       "adjacents": [
         "Cairill",
         "Enedwaith",
-        "Druwaith_Iaur"
+        "Druwaith_Iaur",
+        "Belegaer"
       ],
       "description": "Le port de Vinyalondë fut fondé par le futur Tar-Aldarion à l'embouchure du Gwathló au cours de l'une de ses expéditions en Terre du Milieu, peu avant l'an 800 du Deuxième Âge."
     },
@@ -4352,6 +4362,7 @@
         "map": 4,
         "east": [3,4],
         "name": "Tolfalas",
+        "port": true,
         "west": [1,2],
         "color": "#3300000",
         "fight": "hidden",
@@ -4548,6 +4559,7 @@
         "east": [],
         "name": "Himling",
         "west": [],
+        "port": true,
         "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1gXjYZnEHnOgSOhPVwjUE3kI6cDp28tW0?usp=share_link",
@@ -4571,6 +4583,7 @@
         "map": 6,
         "east": [],
         "name": "Tol Fuin",
+        "port": true,
         "west": [],
         "color": "#3300000",
         "fight": "hidden",

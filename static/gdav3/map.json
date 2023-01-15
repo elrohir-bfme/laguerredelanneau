@@ -161,8 +161,6 @@
         "Collines_Tours",
         "Havres_Gris"
       ],
-      "foundation": true,
-      "structures": [],
       "description": "Le Lindon était la seule région du Beleriand qui survécut au cataclysme de la fin du Premier Âge. Il formait à l'origine une partie de l'Ossiriand, mais au Deuxième Âge, il devint une région côtière, où s'établit un grand nombre des Elfes qui ne souhaitaient pas encore aller ou retourner à Valinor."
     },
     "Cairill": {
@@ -693,8 +691,6 @@
         "Isendale",
         "Isengard"
       ],
-      "foundation": true,
-      "structures": [],
       "description": "La Dunlande était le pays des Dunlandais, un peuple d'Hommes venu des vallées des Montagnes Blanches."
     },
     "Sirannon": {
@@ -912,7 +908,6 @@
       "south": [],
       "region": "lindon",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/ered_luin_minimap_fpdfpn.png",
-      "outpost": true,
       "players": [],
       "adjacents": [
         "Hall_Thorin",
@@ -932,7 +927,7 @@
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/14hzG2O6ap9-8k-m6s3JSMJfWLgbFauPC?usp=share_link",
       "region": "eregion",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1670659964/La%20Guerre%20de%20l%27Eriador/imladris_ladqmp.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1673819737/La%20Guerre%20de%20l%27Eriador/fondcombe_ess2jz.png",
       "nbmatch": 1,
       "players": [],
       "fortress": true,
@@ -965,7 +960,6 @@
       ],
       "region": "cardolan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304379/La%20Guerre%20de%20l%27Eriador/fontgrise_map_bcsyuy.png",
-      "outpost": true,
       "players": [],
       "adjacents": [
         "Angle",
@@ -1022,14 +1016,12 @@
       ],
       "region": "cardolan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1646820269/La%20Guerre%20de%20l%27Eriador/minimap_girithlin_ynhrlj.png",
-      "outpost": true,
       "players": [],
       "adjacents": [
         "Dol_Tinereb",
         "Minhiriath",
         "Harlindon"
       ],
-      "structures": [],
       "description": "Autrefois une petite citadelle du royaume de Cardolan dans le Minhiriath, elle fut une résidence royale, jouant le rôle de capitale à certaines époques. C'est une des rares petites villes encore debout lors du Troisième Age."
     },
     "Glad_Ereg": {
@@ -1241,7 +1233,6 @@
         2
       ],
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665353737/La%20Guerre%20de%20l%27Eriador/caradhras_jw9l2n.png",
-      "outpost": true,
       "players": [],
       "adjacents": [
         "Eregion",
@@ -1337,14 +1328,12 @@
       ],
       "region": "cardolan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/miniriath_minimap_rba3ft.png",
-      "outpost": true,
       "players": [],
       "adjacents": [
         "Girithlin",
         "Gwathlo",
         "Mer_Enedwaith"
       ],
-      "structures": [],
       "description": "Le Minhiriath était le nom que donnèrent les Númenóréens à la région située entre le Baranduin et la Gwathló."
     },
     "Mont_Gräm": {
@@ -1450,7 +1439,6 @@
       "mapdl": "https://drive.google.com/drive/folders/1tq6jsmMu391hBdCsPjimNhqUCRtY0rCC?usp=share_link",
       "region": "cardolan",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1667651682/La%20Guerre%20de%20l%27Eriador/dol_tinereb_hbk1ns.png",
-      "outpost": true,
       "players": [],
       "east": [2,3],
       "west": [1,4],
@@ -1750,7 +1738,6 @@
       ],
       "region": "rhudaur",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/lande_etten_minimap_epffxp.png",
-      "outpost": true,
       "players": [],
       "adjacents": [
         "Landes_Angmar",
@@ -1969,7 +1956,6 @@
       ],
       "region": "rhudaur",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/trouee_troll_minimap_mhjm7u.png",
-      "outpost": true,
       "players": [],
       "adjacents": [
         "Hollin",
@@ -1981,7 +1967,6 @@
         "Ost_in_Edhil",
         "Fondcombe"
       ],
-      "structures": [],
       "description": "Non ! dit Grands-Pas. Les trolls ne construisent pas. Personne ne vit ici. Des Hommes y ont jadis demeuré ; mais il n'en reste plus aucun aujourd'hui. Ils étaient devenus mauvais, à ce que rapporte la légende, car ils étaient tombés dans l'ombre d'Angmar. Mais ils furent tous détruits dans la guerre qui amena la fin du Royaume du Nord."
     },
     "Vieille_Foret": {

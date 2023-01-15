@@ -275,9 +275,11 @@ layout: "gda",
         ],
         nbPowers: [],
         taintedLandInfo: false,
-        // velocityInfo: false,
+        lightInfo: false,
+        velocityInfo: false,
         bannerInfo: false,
-        healInfo: false
+        healInfo: false,
+        mercenaryInfo: false
     }
   },
   methods : {
@@ -304,13 +306,20 @@ layout: "gda",
                             possible = false
                         }
                         break;
-                    // case "velocity":
-                    //     if(document.getElementById(element + "velocity") && document.getElementById(element + "velocity").value){
-                    //         action = document.getElementById(element + "velocity").value
-                    //     } else {
-                    //         possible = false
-                    //     }
-                    //     break;
+                    case "light":
+                    if(document.getElementById(element + "light") && document.getElementById(element + "light").value){
+                        action = document.getElementById(element + "light").value
+                    } else {
+                        possible = false
+                    }
+                    break;
+                    case "velocity":
+                        if(document.getElementById(element + "velocity") && document.getElementById(element + "velocity").value){
+                            action = document.getElementById(element + "velocity").value
+                        } else {
+                            possible = false
+                        }
+                        break;
                     case "banner":
                         if(document.getElementById(element + "banner") && document.getElementById(element + "banner").value){
                             action = document.getElementById(element + "banner").value
@@ -325,10 +334,21 @@ layout: "gda",
                             possible = false
                         }
                         break;
+                    case "mercenary":
+                        if(document.getElementById(element + "mercenary") && document.getElementById(element + "mercenary").value){
+                            action = document.getElementById(element + "mercenary").value
+                        } else {
+                            possible = false
+                        }
+                        break;
                 }
 
                 if(possible){
-                    power += `${pouvoir} ${action}\n`
+                    if(pouvoir == "mercenary") {
+                        power += `${pouvoir} ${action} ${document.getElementById(element + "mercenaryfaction").value}\n`
+                    } else {
+                        power += `${pouvoir} ${action}\n`
+                    }
                 }
             });
         }

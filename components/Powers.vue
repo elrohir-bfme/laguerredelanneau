@@ -68,7 +68,7 @@
             </div> -->
         </div>
 
-        <!-- <div v-if="power.length > 0 && power[0].name == 'velocity'" class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
+        <div v-if="power.length > 0 && power[0].name == 'velocity'" class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
             <div>
                 <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="index+'velocity'">    
                     <option v-for="player in velocity" :value="player.name" v-bind:key="player.name">{{player.name}}</option>
@@ -77,12 +77,45 @@
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
                 </div>
             </div>
-            <div v-else class="text-center">
+            <!-- <div v-else class="text-center">
                 <span class="h-10 px-5 text-base sm:text-xl text-gray-500 transition-colors duration-150 border border-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-900 hover:text-gray-300">    
                     Impossible supprimez-moi (Aucun joueur dans la forteresse)
                 </span>
+            </div> -->
+        </div>
+
+        <div v-if="power.length > 0 && power[0].name == 'light'" class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
+            <div>
+                <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="index+'light'">    
+                    <option v-for="player in light" :value="player.name" v-bind:key="player.name">{{player.name}}</option>
+                </select>
+                <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                </div>
             </div>
-        </div> -->
+        </div>
+
+        <div v-if="power.length > 0 && power[0].name == 'mercenary'" class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
+            <div>
+                <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="index+'mercenary'">    
+                    <option v-for="player in mercenary" :value="player.name" v-bind:key="player.name">{{player.name}}</option>
+                </select>
+                <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                </div>
+            </div>
+        </div>
+
+        <div v-if="power.length > 0 && power[0].name == 'mercenary'" class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
+            <div>
+                <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="index+'mercenaryfaction'">    
+                    <option v-for="faction in factionsMercenary" :value="faction.id" v-bind:key="faction.name">{{faction.name}}</option>
+                </select>
+                <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                </div>
+            </div>
+        </div>
 
         <div v-if="!selectedPower" class="col-span-2 md:col-span-4">
             <!-- <svg class="fill-current text-orange-500 inline-block h-5 w-5"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2h-7.229l7.014 7h-13.785v6h13.785l-7.014 7h7.229l10-10z"/></svg> -->
@@ -110,17 +143,29 @@ export default {
       return {
         selectedPower: null,
         powers: [
-            {name: "taintedland", price: 3000, realName: "Ombre"}, 
-            // {name: "velocity", price: 400, realName: "Sort de Vélocité"}, 
+            {name: "taintedland", price: 3000, realName: "Ombre"},
+            {name: "light", price: 200, realName: "Lumière d’Eärendil"}, 
+            {name: "velocity", price: 400, realName: "Sort de Vélocité"}, 
             {name: "banner", price: 1000, realName: "Porte-Étendard"},
-            {name: "heal", price: 400, realName: "Toucher guérisseur"}
+            {name: "heal", price: 400, realName: "Toucher guérisseur"},
+            {name: "mercenary", price: 600, realName: "Appel du mercenaire"}
         ],
+        factionsMercenary: [
+            {name: "Homme", id: 1},
+            {name: "Elfe", id: 2},
+            {name: "Nain", id: 3},
+            {name: "Mordor", id: 4},
+            {name: "Isengard", id: 5},
+            {name: "Gobelin", id: 6},
+            {name: "Angmar", id: 7}],
         power: [],
         impossible: false,
         taintedLandInfo: false,
-        // velocityInfo: false,
+        lightInfo: false,
+        velocityInfo: false,
         bannerInfo: false,
-        healInfo: false
+        healInfo: false,
+        mercenaryInfo: false
       }
     },
     methods: {
@@ -237,22 +282,48 @@ export default {
             }
             return banner
         },
-        // velocity: function () {
-        //     let forteresse = this.$props.regions
-        //         .filter(region => region.fortress == true && this.color(region.color) == this.$props.selectedFaction)
+        velocity: function () {
+            let forteresse = this.$props.regions
+                .filter(region => (region.camp == true || region.fortress == true) && this.color(region.color) == this.$props.selectedFaction)
                 
-        //     let velocity = this.$props.playerList
-        //         .filter(player => player.factionNumber == this.$props.selectedFaction && player.code === forteresse[0].code)
+            let velocity = this.$props.playerList
+                .filter(player => player.factionNumber == this.$props.selectedFaction && player.code === forteresse[0].code)
 
-        //     if(velocity.length > 0){
-        //         this.velocityInfo = true
-        //         this.$parent.updatePower("velocityInfo", this.velocityInfo);
-        //     } else {
-        //         this.velocityInfo = false
-        //         this.$parent.updatePower("velocityInfo", this.velocityInfo);
-        //     }
-        //     return velocity
-        // }
+            if(velocity.length > 0){
+                this.velocityInfo = true
+                this.$parent.updatePower("velocityInfo", this.velocityInfo);
+            } else {
+                this.velocityInfo = false
+                this.$parent.updatePower("velocityInfo", this.velocityInfo);
+            }
+            return velocity
+        },
+        light: function () {
+            let light = this.$props.playerList
+                .filter(player => player.factionNumber == this.$props.selectedFaction)
+
+            if(light.length > 0){
+                this.lightInfo = true
+                this.$parent.updatePower("lightInfo", this.lightInfo);
+            } else {
+                this.lightInfo = false
+                this.$parent.updatePower("lightInfo", this.lightInfo);
+            }
+            return light
+        },
+        mercenary: function () {
+            let mercenary = this.$props.playerList
+                .filter(player => player.factionNumber == this.$props.selectedFaction)
+
+            if(mercenary.length > 0){
+                this.mercenaryInfo = true
+                this.$parent.updatePower("mercenaryInfo", this.mercenaryInfo);
+            } else {
+                this.mercenaryInfo = false
+                this.$parent.updatePower("mercenaryInfo", this.mercenaryInfo);
+            }
+            return mercenary
+        }
     }
 }
 </script>

@@ -271,6 +271,7 @@
         "Champs_Fornost",
         "Haut_Nord"
       ],
+      "camp": true,
       "description": "Fornost était la cité la plus importante de l'Arnor. Elle fut construite en 3320 du Deuxième Âge par Elendil et les Númenóréens, lorsqu'ils fondèrent les Royaumes en Exil."
     },
     "Galgals": {
@@ -437,6 +438,7 @@
         "Haut_Nord",
         "Nain_Enidh"
       ],
+      "farm": true,
       "description": "Amon Sûl est le nom d'une colline d'Eriador. Au temps du royaume d'Arnor, la tour abritait un palantír. Les royaumes d'Arthedain, Cardolan et de Rhudaur, issus de l'ancien royaume d'Arnor, se battirent souvent pour la possession de cette tour qui étaient à la jonction des trois royaumes de plus elle abritait le seul palantír à leur portée. C’est en haut de cette tour que Elendil et Gil-Galad se rencontrèrent pour former la Dernière Alliance des Elfes et des Hommes au second âge."
     },
     "Belegaer": {
@@ -654,6 +656,7 @@
         "Fontgrise",
         "Gwathlo"
       ],
+      "camp": true,
       "description": "Ville du Cardolan, fondée par Tarcil d'Arnor pour servir de résidence d'été, en 514 du Troisième Âge. Elle est encore un point de passage obligé du commerce du Chemin Vert."
     },
     "Pays_Dun": {
@@ -918,7 +921,7 @@
         "Triste_Plaine",
         "Arthedain"
       ],
-      "structures": [],
+      "farm": true,
       "description": "Formées après la chute des Lampes des Valar, les Montagnes Bleues étaient une grande chaîne de montagnes qui séparait l'Eriador du Beleriand, puis, après la submersion de celui-ci, le Lindon de l'Eriador. Les cités naines de Nogrod et Belegost y étaient sises, plus précisément sous le Mont Dolmed, mais les Montagnes entières avaient dû être explorées par les Nains : en effet, le roi d'Arthedain Arvedui se réfugia, en 1974 3A, dans des galeries naines à l'extrêmité nord de la chaîne, tandis que les halles de Thorin, où celui-ci vécut jusqu'à l'Expédition d’Erebor, se trouvaient bien plus au sud."
     },
     "Fondcombe": {
@@ -2439,6 +2442,7 @@
         "Haut_Anduin",
         "Mont_Gundabad"
       ],
+      "camp": true,
       "description": "Ce sommet septentrional réalisait la jonction entre les Montagnes d’Angmar à l'ouest, les Montagnes Grises à l'est et enfin les Montagnes de Brume au sud."
     },
     "Mont_Gundabad": {
@@ -2489,6 +2493,7 @@
         "Druwaith_Iaur",
         "Anfalas"
       ],
+      "camp": true,
       "description": "L’Andrast était un long cap montagneux, prolongement occidental des Montagnes Blanches qui délimitait la partie nord-ouest de la Baie de Belfalas."
     },
      "Anfalas": {
@@ -2571,6 +2576,7 @@
         "Carrefour",
         "Pelennor"
       ],
+      "camp": true,
       "description": "Osgiliath était la capitale de l'ancien Gondor, bâtie autour d'un grand pont de pierre traversant l'Anduin."
     },
     "Pelennor": {
@@ -2991,6 +2997,7 @@
         "Carrefour",
         "Pelargir"
       ],
+      "farm": true,
       "description": "Les collines d'Emyn Arnen se dressaient en Ithilien du sud, non loin de Minas Tirith. Après la Guerre de l’Anneau, le roi Elessar donna l'Ithilien en principauté à Faramir, qui s'établit dans ces collines."
     },
     "Centre_Ithilien": {
@@ -3250,6 +3257,7 @@
         "C_Rohan",
         "Dunharrow"
       ],
+      "camp": true,
       "description": "Edoras était situé dans la région du Folde, au nord du Val de Hart. La capitale du Rohan était bâtie sur une colline verte isolée, aux pieds des contreforts septentrionaux des Montagnes Blanches."
     },
     "Dunharrow": {
@@ -3499,6 +3507,7 @@
         "Azanulbizar",
         "Champs_Iris"
       ],
+      "camp": true,
       "description": "Entre l'Anduin et les Montagnes de Brume se trouvait la forêt de Lórien, un des royaumes des Elfes Sylvains."
     },
     "Terres_Brunes": {
@@ -3569,6 +3578,7 @@
         "Est_Rohan",
         "Entalluve"
       ],
+      "farm": true,
       "description": "Les Argonath étaient constitués de deux statues imposantes d'Isildur et Anárion, premiers rois du Gondor, situées de part et d'autre de l'Anduin, juste avant que celui-ci ne forme le lac de Nen Hithoel. Ces statues furent érigées sous le règne de Rómendacil II, afin d'interdire à tout étranger de descendre l'Anduin en aval d'elles."
     },
     "Plateau": {
@@ -4355,6 +4365,7 @@
         "Sud_Ithilien",
         "Harnedor"
       ],
+      "camp": true,
       "description": "Territoire le plus au Sud de la terre du Milieu. Au Nord Est se trouve le port d’Umbar. A l’Est, la mer. A l’Ouest, le Kand. Et au Nord, le Proche Harad et l’Harondor. Se territoire fut si reculé qu’il ne subit pas les guerres, tout en participant à ces dernières. En effet, sa position lui permet de rester à l’abris des invasions toute en envoyant continuellement des Soldats sur les ligne de Front. Cette méthode fut certainement utilisé par Sauron ou les Haradrim. Le Lointain Harad fut vaincu lorsque les Haradrim se soumirent à Elessar."
     },
     "Tolfalas": {
@@ -5111,6 +5122,7 @@
           "Dagorlad",
           "Dorwinion"
         ],
+        "farm": true,
         "description": "Le mont perdu au sud du lac de Rhun"
       },
       "Steppes_Cendrees": {
@@ -5247,6 +5259,7 @@
           "Logathavuld",
           "Orocarni"
         ],
+        "camp": true,
         "description": "Rhûn est une région de la Terre du Milieu, monde imaginé par J. R. R. Tolkien. Il s'agit d'un terme général décrivant toutes les terres situées à l'est du Rhovanion et du Mordor, mal connues des habitants de l'Ouest de la Terre du Milieu."
       },
       "Agasha_Dag": {
@@ -5456,6 +5469,7 @@
           "Montagnes_Grises",
           "Desert_Nord"
         ],
+        "farm": true,
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },
       "Grand_Nord": {

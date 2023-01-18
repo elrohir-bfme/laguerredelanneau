@@ -17,7 +17,7 @@
                 <div v-if="map[region]" class="flex flex-wrap-reverse gap-4">
                     <div v-for="(player, index) in map[region].players" :key="index">
                         <img class="border-2 rounded-full w-14 h-14 object-cover" :class="colors(player.faction)" :src="player.img ? player.img : require(`~/assets/new_gda/icons/${icons(player.faction)}.png`)" :alt="player.name">
-                        <span class="text-sm">{{player.name}}</span>
+                        <span class="text-sm">{{player.name.replace(/_/g, " ")}}</span>
                         <img v-if="player.handicap == 0 && player.extrahandicap > 0" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sangjaune.svg">
                         <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sangorange.svg">
                         <img v-if="player.handicap >= 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sang.svg">

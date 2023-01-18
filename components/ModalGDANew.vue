@@ -111,7 +111,7 @@
                     </div>
                     <div class="flex flex-col">
                         <span class="text-center text-white" >
-                            {{player.name}} <img v-if="player.chef" alt="Chef" class="w-4 h-4 inline-block align-baseline" src="~assets/svg/crown.svg">
+                            {{player.name.replace(/_/g, " ")}} <img v-if="player.chef" alt="Chef" class="w-4 h-4 inline-block align-baseline" src="~assets/svg/crown.svg">
                         </span>
                         <span class="text-xs text-white">
                             {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/svg/trophy.svg">

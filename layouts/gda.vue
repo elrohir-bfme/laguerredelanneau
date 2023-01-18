@@ -8,6 +8,7 @@
           <!-- <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/gda/matchs')">{{ $t('layout_gde_matchs') }}</nuxt-link> -->
           <!-- <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/gda/presentation')">{{ $t('layout_gde_pres') }}</nuxt-link> -->
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gda/inscription">Inscription</nuxt-link>
+          <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gda/factions">Factions</nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gda/joueurs">Joueurs</nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gda/videos">Vidéos</nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gda/regles">Règles</nuxt-link>

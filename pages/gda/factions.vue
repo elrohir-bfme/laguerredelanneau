@@ -1,19 +1,18 @@
 <template>
 <section class="text-gray-100 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="sm:text-5xl text-4xl font-medium title-font mb-4 text-white">{{ $t('joueurs.title') }}</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">{{ $t('joueurs.info') }}</p>
+  <div class="container py-12 mx-auto">
+    <div class="flex flex-col text-center w-full">
+      <h1 class="sm:text-5xl text-4xl font-medium title-font pb-4 text-white">Liste des factions</h1>
     </div>
-    <div v-if="!loading" class="flex flex-wrap -m-2">
-      <div v-for="player in homme" v-bind:key="player.name" class="p-2 lg:w-1/4 md:w-1/2 w-full transform transition duration-500 hover:scale-110 hover:drop-shadow-xl">
-        <div class="h-full flex items-center border-4 p-4 rounded-lg bg-gray-900" :class="`border-${color(player.faction)}-700`">
-          <img :alt="player.name" class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform transition duration-500 hover:scale-110 hover:drop-shadow-xl" :src="player.img ? player.img : require(`~/assets/new_gda/icons/${icons(player.faction)}.png`)">
-          <div class="flex-grow">
-            <h2 class="text-white title-font font-medium text-3xl" :class="!player.img && 'text-center'">{{player.name}}</h2>
-            <p class="text-gray-500" :class="!player.img && 'text-center'">{{ $t('joueurs.victoire') }} : {{player.win}}</p>
-            <p class="text-gray-500" :class="!player.img && 'text-center'">{{ $t('joueurs.defaite') }} : {{player.lose}}</p>
-            <p class="text-gray-500" :class="!player.img && 'text-center'">{{ $t('joueurs.ratio') }} : {{(player.win && player.win) ?(player.win / ((player.win + player.lose)) *100).toFixed(2) + '%' : "Aucune partie joué"}}</p>
+    <div class="mt-4" v-if="!loading" >
+      <div class="flex flex-wrap -m-2 bg-gray-900 mb-10 rounded-2xl pt-4 border-2" v-for="faction in allFactions" v-bind:key="faction.name"  :class="`border-${color(faction.color)}-700`">
+        <h2 class="text-white title-font font-bold text-4xl text-center w-full underline">{{ faction.name }}</h2>
+      <div v-for="player in faction.players" v-bind:key="player.name" class="p-2 xl:1/12 lg:w-1/6 md:w-1/4 w-full transform transition duration-500 hover:scale-110 hover:drop-shadow-xl">
+        <div class="h-full flex flex-col items-center text-center">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-32 h-32 object-cover object-center mb-4 transform transition duration-500 hover:scale-110 hover:drop-shadow-xl" :src="player.img ? player.img : require(`~/assets/new_gda/icons/homme.png`)">
+          <div class="w-full">
+            <p class="text-white title-font font-medium text-3xl">{{ player.name.replace(/_/g, " ") }}</p>
+          </div>
           </div>
         </div>
       </div>
@@ -35,7 +34,8 @@ export default {
             mordor: [],
             isengard: [],
             gobelin: [],
-            angmar: []
+            angmar: [],
+            allFactions: []
         }
     },
     methods: {
@@ -95,39 +95,53 @@ export default {
       "https://api.npoint.io/7a210a01331f3c385ed7"
     );
 
+    console.log(this.map, "jdeijdieji")
+
     for (var key in this.map) {
         var obj = this.map[key];
 
       if (obj.hasOwnProperty("players") && obj.players.length > 0) {
           let obj2 = JSON.parse(JSON.stringify(obj["players"]));
+          console.log(obj2, "jdeijdie")
         for (var player in obj2) {
-          switch(player["faction"]) {
+          console.log(player, "jidejidje")
+          switch(obj2[player]["faction"]) {
                 case 1:
-                  this.homme.push(player)
+                  this.homme.push(obj2[player])
                 break;
                 case 2:
-                  this.elfe.push(player)
+                  this.elfe.push(obj2[player])
                 break;
                 case 3:
-                  this.nain.push(player)
+                  this.nain.push(obj2[player])
                 break;
                 case 4:
-                  this.mordor.push(player)
+                  this.mordor.push(obj2[player])
                 break;
                 case 5:
-                  this.isengard.push(player)
+                  this.isengard.push(obj2[player])
                 break;
                 case 6:
-                  this.gobelin.push(player)
+                  this.gobelin.push(obj2[player])
                 break;
                 case 7:
-                  this.angmar.push(player)
+                  this.angmar.push(obj2[player])
                 break;
             }
         }
       }
     }
+
     this.loading = false;
+    this.allFactions = [
+      {name: "Homme", players: this.homme, color: 1},
+      {name: "Elfe", players: this.elfe, color: 2},
+      {name: "Nain", players: this.nain, color: 3},
+      {name: "Mordor", players: this.mordor, color: 4},
+      {name: "Isengard", players: this.isengard, color: 5},
+      {name: "Gobelin", players: this.gobelin, color: 6},
+      {name: "Angmar", players: this.angmar, color: 7}
+    ]
   },
 
 }

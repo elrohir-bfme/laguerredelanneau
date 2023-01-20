@@ -18,7 +18,7 @@
 
         Info & Rules 🧙<br/> <br/>
 
-        The League will be played on the new beta patch up until its public release, only league players will have access to it in 202-beta-testing 
+        The League will be played on the rotwk 2.02 v9 
         <br/>The League is based on an ELO point system.
         <br/>Players can play against anyone regardless of their ELO placement. However, the larger the point/skill gap between players the more punishing it becomes for higher skilled players who lose, and vice versa.
         <br/>Each Replay must be posted in the dedicated league-replays 
@@ -29,7 +29,7 @@
 
         <br/><br/>If a game is played on a map that is not in the map pool, the replay will not be counted ⚠️ 
 
-        <br/><br/>If any type of disconnection/oos :DC: happens, the game can be replayed if both players agree. If they disagree the replay can be reviewed and see if there was a clear winner, if there is no clear winner the person who dced will get the loss as any other type of ladder in other successful RTSes.
+        <br/><br/>If any type of disconnection/oos happens, the game can be replayed if both players agree. If they disagree the replay can be reviewed and see if there was a clear winner, if there is no clear winner the person who dced will get the loss as any other type of ladder in other successful RTSes.
 
         <br/>"Farming" points is forbidden and will be sanctioned. Do not hesitate to challenge players and discuss in the league-discussion 
 
@@ -66,58 +66,57 @@
       </p>
 
       <img class="mx-auto py-12" src="~assets/league/bfme.png">
-      <img class="mx-auto py-12" src="~assets/league/rules2.png">
-      <img class="mx-auto py-12" src="~assets/league/Maps.png">
+      <img class="mx-auto" src="~assets/league/rules2.png">
+      <img class="mx-auto w-20" src="~assets/league/Maps.png">
       <img class="mx-auto py-12" src="~assets/league/wor_buckland_loadscreen.png"> 
 
 
       <p class="text-white text-lg">
-        <br/>Maps 🗺️
 
         <br/><br/>You can find a list of the maps here: 
-        <br/><nuxt-link to="league/maps">Link</nuxt-link>
+        <br/><nuxt-link class="underline" to="league/maps">Link</nuxt-link>
 
         <br/><br/>The map pool may be expanded upon request 🗺️ 
 
         <br/><br/>League Map pool:
 
-        <br/><br/>- Belfalas Abyss  :Palantir3: 
-        <br/>- Blood Gulch :Palantir3:
-        <br/>- Brandy hills :Palantir3:
-        <br/>- Chetwood :Palantir3:
-        <br/>- Cirdan's Cove :Palantir3:
-        <br/>- Dunland II :Palantir3:
-        <br/>- Eastfold II :Palantir3:
+        <br/><br/>- Belfalas Abyss 
+        <br/>- Blood Gulch
+        <br/>- Brandy hills
+        <br/>- Chetwood
+        <br/>- Cirdan's Cove
+        <br/>- Dunland II
+        <br/>- Eastfold II
         <br/>- Ettenmoors 
-        <br/>- Ettenmoors II :Palantir3: 
-        <br/>- Erech 4th Age :Palantir3:
+        <br/>- Ettenmoors II 
+        <br/>- Erech 4th Age
         <br/>- Eryn Laer
         <br/>- Fangorn
-        <br/>- Firien Dale :Palantir3:
-        <br/>- Fords of Bruinen :Palantir3:
+        <br/>- Firien Dale
+        <br/>- Fords of Bruinen
         <br/>- Fords of Isen
         <br/>- Gap of Rohan 
-        <br/>- Glenford :Palantir3:
+        <br/>- Glenford
         <br/>- Hollin
         <br/>- Jungles of far harad
-        <br/>- Last Bridge  :Palantir3:
-        <br/>- Lossarnach :Palantir3:
-        <br/>- Mering Stream :Palantir3:
-        <br/>- Mirkwood II :Palantir3:
+        <br/>- Last Bridge
+        <br/>- Lossarnach
+        <br/>- Mering Stream
+        <br/>- Mirkwood II
         <br/>- Plains of Lindon
-        <br/>- Rhudaur :Palantir3:
+        <br/>- Rhudaur
         <br/>- Rhun Shore
-        <br/>- Sirannon  :Palantir3:
+        <br/>- Sirannon
         <br/>- Sakura Forest 
-        <br/>- Sorrow Isles  :Palantir3:
-        <br/>- The Iron Hills :Palantir3:
+        <br/>- Sorrow Isles
+        <br/>- The Iron Hills
         <br/>- Tombs of Karna
         <br/>- Tyrn Gorthad
         <br/>- Westfold
 
-        <br/><br/>Listed maps with the :Palantir3:  emoji may be downloaded here or in the pinned messages in league-discussion : 
+        <br/><br/>Listed maps with the  emoji may be downloaded here or in the pinned messages in league-discussion : 
         <br/>
-        <a href="https://drive.google.com/drive/folders/1XCwxHuCvqaoN21vKV_t-lQJ_JGaY59YN?usp=sharing">LINK</a>
+        <a class="underline" href="https://drive.google.com/drive/folders/1XCwxHuCvqaoN21vKV_t-lQJ_JGaY59YN?usp=sharing">LINK</a>
         
 
         <br/><br/>Download the maps pack in the link above and extract the maps in your Maps directory in :
@@ -126,17 +125,6 @@
 
       </p>
 
-      <img class="mx-auto py-12" src="~assets/league/beta.png"/>
-
-      <p class="text-white text-lg text-center">
-        The League is being played on the last patch of version of 2.02, version 9.0.0
-
-        Once the new patch is out the beta will no longer be required ☄️ 
-      </p>
-       
-
-
-      <img class="mx-auto py-12" src="~assets/league/rules2.png"/>
       <img class="mx-auto py-12" src="~assets/league/register.png"/>
 
       <p class="text-white text-lg text-center">

@@ -9,7 +9,7 @@
         <h2 class="text-white title-font font-bold text-4xl text-center w-full underline">{{ faction.name }}</h2>
       <div v-for="player in faction.players" v-bind:key="player.name" class="p-2 xl:1/12 lg:w-1/6 md:w-1/4 w-full transform transition duration-500 hover:scale-110 hover:drop-shadow-xl">
         <div class="h-full flex flex-col items-center text-center">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-32 h-32 object-cover object-center mb-4 transform transition duration-500 hover:scale-110 hover:drop-shadow-xl" :src="player.img ? player.img : require(`~/assets/new_gda/icons/homme.png`)">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-32 h-32 object-cover object-center mb-4 transform transition duration-500 hover:scale-110 hover:drop-shadow-xl" :src="player.img ? player.img : require(`~/assets/new_gda/icons/${icons(player.faction)}.png`)">
           <div class="w-full">
             <p class="text-white title-font font-medium text-3xl">{{ player.name.replace(/_/g, " ") }}</p>
           </div>

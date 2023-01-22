@@ -439,7 +439,7 @@
     }
   },
   "riviere": {
-    "img": "https://laguerredelanneau.vercel.app/Territories_img/riviere.jpg",
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408554/La%20Guerre%20de%20l%27Eriador/riviere_btfnqr.jpg",
     "name": "passage infranchissable",
     "color": "#3300000",
     "description": ""
@@ -503,7 +503,7 @@
     "description": "Amon Sûl est le nom d'une colline d'Eriador. Au temps du royaume d'Arnor, la tour abritait un palantír. Les royaumes d'Arthedain, Cardolan et de Rhudaur, issus de l'ancien royaume d'Arnor, se battirent souvent pour la possession de cette tour qui était a la jnction des trois royaumes de plus elle abritait le seul palantír à leur portée. C’est en haut de cette tour que Elendil et Gil-Galad se rencontrèrent pour former la Dernière Alliance des Elfes et des Hommes au second age."
   },
   "Belegaer": {
-    "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Belegear.jpg",
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408546/La%20Guerre%20de%20l%27Eriador/Mer_Belegear_a0pyas.jpg",
     "name": "Belegaer",
     "description": "Belegaer, la Grande Mer, est le nom qui fut donné à l'océan qui séparait la côte est d'Aman de la Terre du Milieu. Au nord, elle était séparée des froides eaux d'Ekkaia par le détroit d'Helcaraxë, le Chaos des Glaces. Lors de la Guerre de la Colère, la Grande Mer gagna du terrain, engloutissant tout le Beleriand."
   },
@@ -1837,7 +1837,7 @@
     "description": "Le palais a été fondé par le père de Thorin, Thráin II, en 2802, après que celui-ci et son peuple quitté le Pays de Dun."
   },
   "Havres_Gris": {
-    "img": "https://laguerredelanneau.vercel.app/Territories_img/Havres_Gris.jpg",
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408554/La%20Guerre%20de%20l%27Eriador/Havres_Gris_hflj6t.jpg",
     "map": 6,
     "name": "Les Havres Gris",
     "color": "#ff3636",
@@ -2214,7 +2214,7 @@
     "description": "Les Collines du Vent se trouvaient au centre de l'Eriador, à mi-chemin entre Brie et le Dernier Pont."
   },
   "La_Grande_Mer": {
-    "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Enedwaith.jpg",
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1631773365/Mer_Enedwaith_t5zz08.jpg",
     "name": "Belegear",
     "description": "Belegaer, la Grande Mer, est le nom qui fut donné à l'océan qui séparait la côte est d'Aman de la Terre du Milieu. Au nord, elle était séparée des froides eaux d'Ekkaia par le détroit d'Helcaraxë, le Chaos des Glaces. Lors de la Guerre de la Colère, la Grande Mer gagna du terrain, engloutissant tout le Beleriand."
   },
@@ -2457,7 +2457,7 @@
     "description": "Situés à l'est de la Vieille Forêt et au sud-ouest de Brie, les Coteaux des Tertres étaient parsemés de nombreux tumulus1) où gisaient les ancêtres des Edain, enterrés là avant que ceux-ci n'entrassent en Beleriand."
   },
   "Collines_Tours": {
-    "img": "https://laguerredelanneau.vercel.app/Territories_img/Collines_Tours.jpg",
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408550/La%20Guerre%20de%20l%27Eriador/Collines_Tours_wqxetk.jpg",
     "map": 4,
     "east": [
       2,
@@ -2542,7 +2542,7 @@
     "description": "situé au nord d'Amon Sûl, c'est un lieu inhospitalier peuplé de petits campement d'orques sur les collines mais aussi de loups ou encore de wargs. Ils effectuent des raids sur les habitations peu défendues, semant mort et destructions."
   },
   "Evendim_Collines": {
-    "img": "https://laguerredelanneau.vercel.app/Territories_img/Evendim.jpg",
+    "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408550/La%20Guerre%20de%20l%27Eriador/Lac_Evendim_dbgxay.jpg",
     "map": 4,
     "east": [
       2,

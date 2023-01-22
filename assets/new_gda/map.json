@@ -386,7 +386,7 @@
       }
     },
     "riviere": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/riviere.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408554/La%20Guerre%20de%20l%27Eriador/riviere_btfnqr.jpg",
       "name": "passage infranchissable",
       "color": "#3300000",
       "description": ""
@@ -441,7 +441,7 @@
       "description": "Amon Sûl est le nom d'une colline d'Eriador. Au temps du royaume d'Arnor, la tour abritait un palantír. Les royaumes d'Arthedain, Cardolan et de Rhudaur, issus de l'ancien royaume d'Arnor, se battirent souvent pour la possession de cette tour qui étaient à la jonction des trois royaumes de plus elle abritait le seul palantír à leur portée. C’est en haut de cette tour que Elendil et Gil-Galad se rencontrèrent pour former la Dernière Alliance des Elfes et des Hommes au second âge."
     },
     "Belegaer": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Belegear.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408546/La%20Guerre%20de%20l%27Eriador/Mer_Belegear_a0pyas.jpg",
       "map": 4,
       "east": [3,4],
       "name": "Belegaer",
@@ -1514,7 +1514,7 @@
       "description": "Le palais a été fondé par le père de Thorin, Thráin II, en 2802, après que celui-ci et son peuple ait quitté le Pays de Dun."
     },
     "Havres_Gris": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Havres_Gris.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408554/La%20Guerre%20de%20l%27Eriador/Havres_Gris_hflj6t.jpg",
       "map": 6,
       "name": "Les Havres Gris",
       "color": "#3300000",
@@ -1852,7 +1852,7 @@
       "description": "Les Collines du Vent se trouvaient au centre de l'Eriador, à mi-chemin entre Brie et le Dernier Pont."
     },
     "La_Grande_Mer": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Enedwaith.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1631773365/Mer_Enedwaith_t5zz08.jpg",
       "name": "Belegear",
       "description": "Nom qui fut donné à l'océan qui séparait la côte est d'Aman de la Terre du Milieu. Au nord, elle était séparée des froides eaux d'Ekkaia par le détroit d'Helcaraxë, le Chaos des Glaces. Lors de la Guerre de la Colère, la Grande Mer gagna du terrain, engloutissant tout le Beleriand."
     },
@@ -2039,7 +2039,7 @@
       "description": "Situés à l'est de la Vieille Forêt et au sud-ouest de Brie, les Coteaux des Tertres étaient parsemés de nombreux tumulus1) où gisaient les ancêtres des Edain, enterrés là avant que ceux-ci n'entrassent en Beleriand."
     },
     "Collines_Tours": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Collines_Tours.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408550/La%20Guerre%20de%20l%27Eriador/Collines_Tours_wqxetk.jpg",
       "map": 4,
       "east": [
         2,
@@ -2098,7 +2098,7 @@
       "description": "situé au nord d'Amon Sûl, c'est un lieu inhospitalier peuplé de petits campement d'orques sur les collines mais aussi de loups ou encore de wargs. Ils effectuent des raids sur les habitations peu défendues, semant mort et destructions."
     },
     "Evendim_Collines": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Evendim.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408550/La%20Guerre%20de%20l%27Eriador/Lac_Evendim_dbgxay.jpg",
       "map": 4,
       "east": [
         2,
@@ -2166,7 +2166,7 @@
       "description": "Les Montagnes Bleues sont le paisible lieu où habitent les Nains des Montagnes Bleues, cousins des Nains des Monts du fer. Comme les autres peuples des Nains, les nains des Montagnes Bleues aiment grandement les métaux précieux, et une grande partie d'entre eux passent la plupart de leur temps dans de profondes mines."
     },
     "Umbar": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Umbar.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408556/La%20Guerre%20de%20l%27Eriador/Umbar_svgceb.jpg",
       "map": 4,
       "east": [2,3],
       "name": "Umbar",
@@ -2192,7 +2192,7 @@
       "description": "Umbar était un petit royaume du nord de la région du Harad. Peuplé essentiellement par les Suderons et les Númenóréens Noirs, il était le plus proche royaume des Haradrim des frontières méridionales du Gondor lors de son apogée."
     },
     "Harondor": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Harondor.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408550/La%20Guerre%20de%20l%27Eriador/Harondor_za6bvr.jpg",
       "map": 6,
       "east": [4,5,6],
       "name": "Harondor",
@@ -2221,7 +2221,7 @@
       "description": "Le Harondor était une terre pratiquement déserte, intégrée au Gondor en 830 3A par le roi Tarannon Falastur. Mais depuis la chute d'Osgiliath la région  subit les convoitises des haradrims le territoire est donc en conflit permanent."
     },
     "Orocarni": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Orocarni.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408548/La%20Guerre%20de%20l%27Eriador/Orocarni_klpb9o.jpg",
       "map": 6,
       "east": [1,2,3],
       "name": "Orocarni",
@@ -2249,7 +2249,7 @@
       "description": "L'Orocarni (aussi appelées les Montagnes rouges) étaient une chaîne de montagnes à l'extrême nord-est de la Terre du Milieu créé par les Valar après la destruction des Deux Lampes par Melkor."
     },
     "Monts_Fer": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Monts_Fer.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408555/La%20Guerre%20de%20l%27Eriador/Monts_Fer_aqsbje.jpg",
       "map": 2,
       "east": [2],
       "name": "Mont du Fer",
@@ -2275,7 +2275,7 @@
       "description": "Ces montagnes se situent à l'Est du Rhovanion et au Nord de la mer de Rhûn. Elles sont ainsi nommées pour leur abondance en minerais de fer. La rivière Carnen prend sa source dans ces montagnes."
     },
     "Terre_Desolee": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Terre_Desolee.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408552/La%20Guerre%20de%20l%27Eriador/Terre_Desolee_dvpq6z.jpg",
       "map": 4,
       "east": [],
       "name": "Terre Déchu de l'Est",
@@ -2305,7 +2305,7 @@
       "description": "Ces montagnes se situent à l'Est du Rhovanion et au Nord de la mer de Rhûn. Elles sont ainsi nommées pour leur abondance en minerais de fer. La rivière Carnen prend sa source dans ces montagnes."
     },
     "Carnen": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Carnen.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408546/La%20Guerre%20de%20l%27Eriador/Carnen_mpfglz.jpg",
       "map": 2,
       "east": [],
       "name": "Carnen",
@@ -2332,7 +2332,7 @@
       "description": "La Carnen était une rivière qui descendait des Collines de Fer et coulait sur environ 400 kilomètres avant de se jeter dans la Celduin."
     },
     "Lande_Dessechee": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Lande_Dessechee.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408552/La%20Guerre%20de%20l%27Eriador/Lande_Dessechee_q8upxv.jpg",
       "map": 4,
       "east": [],
       "name": "Les Lande Dessechee",
@@ -2361,7 +2361,7 @@
       "description": "La Lande Desséchée était la bande de terre située entre les deux bras orientaux des Montagnes Grises."
     },
     "Montagnes_Grises": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Montagnes_Grises.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/Montagnes_Grises_sxnghw.jpg",
       "map": 4,
       "east": [],
       "name": "Montagnes_Grises",
@@ -2390,7 +2390,7 @@
       "description": "Aussi appelé Ered Mithrin"
     },
     "Desert_Nord": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Desert_Nord.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408557/La%20Guerre%20de%20l%27Eriador/Desert_Nord_ypueuy.jpg",
       "map": 2,
       "east": [3,4],
       "name": "Desert du Nord",
@@ -2411,7 +2411,7 @@
       "description": "S'étendant dans l'immensité glacée du nord, terre désolée de neige et de glace, bien peu d'êtres réussissent à survivre dans des conditions aussi extrêmes. Certaines légendes parlent de dragons, tel Scatha y vivant depuis la fin du Beleriand."
     },
     "Gundabad": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Gundabad.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408552/La%20Guerre%20de%20l%27Eriador/Gundabad_vym3eo.jpg",
       "map": 4,
       "east": [],
       "name": "Gundabad",
@@ -2464,7 +2464,7 @@
       "description": "Ce sommet septentrional réalisait la jonction entre les Montagnes d’Angmar à l'ouest, les Montagnes Grises à l'est et enfin les Montagnes de Brume au sud."
     },
     "Andrast": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Andrast.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/Andrast_wowywt.jpg",
       "map": 2,
       "east": [],
       "name": "Andrast",
@@ -2488,7 +2488,7 @@
       "description": "L’Andrast était un long cap montagneux, prolongement occidental des Montagnes Blanches qui délimitait la partie nord-ouest de la Baie de Belfalas."
     },
      "Anfalas": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Anfalas.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/Anfalas_f8m4aj.jpg",
       "map": 6,
       "east": [],
       "name": "Anfalas",
@@ -2517,7 +2517,7 @@
       "description": "Anfalas était le nom donné à la côte du Gondor entre les embouchures du Lefnui et du Morthond."
     },
     "Minas_Tirith": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Minas_Tirith.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408550/La%20Guerre%20de%20l%27Eriador/Minas_Tirith_och66r.jpg",
       "map": 4,
       "east": [3,4],
       "name": "Minas Tirith",
@@ -2544,7 +2544,7 @@
       "description": "Minas Tirith la cité des rois fut construite par Isildur et sont frère Anarion au second Age elle s'appelait alors Minas Anor et faisait face a Minas Ithil : (tour du soleil et tour de la lune) . Lorsque minas Ithil devient Minas Morgul et que Osgiliath fut abandonné elle fut renommé Minas Tirith (la tour de Garde) et devint capitale du Gondor de plus elle contient un palentir !"
     },
      "Osgiliath": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Osgiliath2.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408546/La%20Guerre%20de%20l%27Eriador/Osgiliath2_tuucga.jpg",
       "map": 4,
       "east": [2,4],
       "name": "Osgiliath",
@@ -2570,7 +2570,7 @@
       "description": "Osgiliath était la capitale de l'ancien Gondor, bâtie autour d'un grand pont de pierre traversant l'Anduin."
     },
     "Pelennor": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Pelennor.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408553/La%20Guerre%20de%20l%27Eriador/Pelennor_ifyhbl.jpg",
       "map": 6,
       "east": [2,3,4],
       "name": "Champs de Pelennor",
@@ -2601,7 +2601,7 @@
       "description": "Le Pelennor est le nom donné aux vastes champs qui entouraient Minas Tirith au nord et à l'est. C'était une région agricole fertile où vivaient de nombreux fermiers et d'où provenait la majeure partie de l'alimentation de la cité."
     },
     "Carrefour": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Carrefour.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/Carrefour_lftzei.jpg",
       "map": 4,
       "east": [3,4],
       "name": "Carrefour",
@@ -2624,7 +2624,7 @@
       "description": "Le Carrefour réunissait les principales routes du Gondor. Ces chemins n'amènent plus que des ennemis aux portes du royaume."
     },
     "Minas_Morgul": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Minas_Morgul.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408546/La%20Guerre%20de%20l%27Eriador/Minas_Morgul_omg66r.jpg",
       "map": 6,
       "east": [1,2,3],
       "name": "Minas Morgul",
@@ -2653,7 +2653,7 @@
       "description": "A la frontière du sombre pays de Mordor, dans la vallée plus tard surnommée Imlad Morgul, face à Minas Anor (la future Minas Tirith) perchée sur les pentes ouest de l'Ephel Dúath se trouvait Minas Morgul, la Tour de la Magie Noire, qui fut autrefois la brillante Tour de la Lune, Minas Ithil."
     },
     "Cirith_Ungol": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Cirith_Ungol.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/Cirith_Ungol_aubjui.jpg",
       "map": 6,
       "east": [1,2,3],
       "name": "Cirith Ungol",
@@ -2682,7 +2682,7 @@
       "description": "Le col de Cirith Ungol était l'une des deux seules failles dans les montagnes entourant le Mordor, avec la Morannon."
     },
     "Nurn": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Nurn.PNG",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408555/La%20Guerre%20de%20l%27Eriador/Nurn_nbqhjx.jpg",
       "map": 6,
       "east": [4,5,6],
       "name": "Nurn",
@@ -2710,7 +2710,7 @@
       "description": "Le Nurn était la plaine qui se tenait au sud du Mordor. C’est là que les esclaves au service de Sauron produisaient de la nourriture pour ses armées d’Hommes et d’Orques. Après la victoire de l’Ouest, le roi Elessar fit don de ces terres aux esclaves qui jusque-là y travaillaient."
     },
     "Nurnen": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Nurnen.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408550/La%20Guerre%20de%20l%27Eriador/Nurnen_tgwux2.jpg",
       "map": 6,
       "east": [4,5,6],
       "name": "Nurnen",
@@ -2739,7 +2739,7 @@
       "description": "La mer intérieure de Núrnen, aussi appelée lac Núrnen, était située dans le Nurn, dans le sud du Mordor. Ses eaux étaient tristes et noires. C'était autour de ce lac que les esclaves de Sauron produisaient de la nourriture pour les Hommes et les Orques au service du Seigneur Sombre. Après la victoire de l'Ouest, le roi Elessar fit don de ces terres aux esclaves qui jusque-là y travaillaient."
     },
     "Montagne_Destin": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Montagne_Destin.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1631773366/Montagne_Destin_dqfnwc.jpg",
       "map": 4,
       "east": [3,4],
       "name": "Montagne du Destin",
@@ -2768,7 +2768,7 @@
       "description": "La Montagne du Destin, également connue sous le nom d'Orodruin est un grand volcan qui domine le Plateau de Gorgoroth. C'est ici, que Sauron forgea en secret L'Anneau Unique."
     },
     "Harlond": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Harlond.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/Harlond_edhifd.jpg",
       "map": 4,
       "east": [3,4],
       "name": "Harlond",
@@ -2797,7 +2797,7 @@
       "description": "Harlond était le port de Minas Tirith, juste à l'extérieur, au sud du Pelennor et du mur du Rammas Echor où il longe la rivière de l'Anduin. Il a probablement été nommé d'après le port elfique de Harlond dans le nord. Aragorn et les navires noirs y accostèrent lors de la bataille des champs du Pelennor, où les hôtes de Sauron pensaient qu'il s'agissait des corsaires nouvellement arrivés d'Umbar."
     },
     "Lossarnach": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Lossarnach.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408554/La%20Guerre%20de%20l%27Eriador/Lossarnach_pyaxyo.jpg",
       "map": 2,
       "east": [2],
       "name": "Lossarnach",
@@ -2822,7 +2822,7 @@
       "description": "Le Lossarnach était une vallée boisée et fertile située sur le versant sud des Montagnes Blanches, au sud-ouest de Minas Tirith."
     },
     "Lebennin": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Lebennin.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408547/La%20Guerre%20de%20l%27Eriador/Lebennin_q1t5te.jpg",
       "map": 6,
       "east": [],
       "name": "Lebennin",
@@ -2853,7 +2853,7 @@
       "description": "Province du sud-ouest du Gondor, le Lebennin était délimité par les Montagnes Blanches au nord, le Gilrain à l'ouest et l'Anduin à l'est."
     },
     "Belfalas": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Belfalas.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408548/La%20Guerre%20de%20l%27Eriador/Belfalas_inribz.jpg",
       "map": 4,
       "east": [],
       "name": "Belfalas",
@@ -2880,7 +2880,7 @@
       "description": "Le Belfalas était une région côtière du Gondor située entre le Morthond à l'ouest, les Montagnes Blanches au nord et le Gilrain à l'est. Son climat était doux, et Dol Amroth était sa principale cité."
     },
     "Lamedon": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Lamedon.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408553/La%20Guerre%20de%20l%27Eriador/Lamedon_coh3ww.jpg",
       "map": 2,
       "east": [4,5,6],
       "name": "Lamedon",
@@ -2907,7 +2907,7 @@
       "description": "Le col de Tarlang était une arête rocheuse, empruntée par la route d'Erech à Pelargir, qui reliait les Montagnes Blanches au massif, composé de trois collines, qui séparait la plaine d'Erech du Lamedon."
     },
     "Dol_Amroth": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Dol_Amroth.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408553/La%20Guerre%20de%20l%27Eriador/Dol_Amroth_gddtft.jpg",
       "map": 4,
       "east": [3,4],
       "name": "Dol Amroth",
@@ -2932,7 +2932,7 @@
       "description": "Deux légendes racontent la fondation de cette citadelle. La première veut que Dol Amroth ait été fondé avant la Submersion de Númenor par une famille de Fidèles parente d'Elendil. Une autre veut que le premier Prince de Dol Amroth ait été le fils d'Imrazôr, un Númenóréen, et de Mithrellas, une Elfe de la suite de Nimrodel. "
     },
      "Pelargir": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Pelargir.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408553/La%20Guerre%20de%20l%27Eriador/Pelargir_iukzqr.jpg",
       "map": 4,
       "east": [2,3],
       "name": "Pelargir",
@@ -2960,7 +2960,7 @@
       "description": "Le port gondorien de Pelargir-sur-Anduin, sis légèrement en amont de l'endroit où le Sirith se jette dans le Grand Fleuve, fut fondé en 2350 2A par les Númenóréens. "
     },
     "Emyn_Arnen": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Emyn_Arnen.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408551/La%20Guerre%20de%20l%27Eriador/Emyn_Arnen_uzxcjx.jpg",
       "map": 4,
       "east": [],
       "name": "Emyn Arnen",
@@ -2987,7 +2987,7 @@
       "description": "Les collines d'Emyn Arnen se dressaient en Ithilien du sud, non loin de Minas Tirith. Après la Guerre de l’Anneau, le roi Elessar donna l'Ithilien en principauté à Faramir, qui s'établit dans ces collines."
     },
     "Centre_Ithilien": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Centre_Ithilien.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408550/La%20Guerre%20de%20l%27Eriador/Centre_Ithilien_h5ds4l.jpg",
       "map": 4,
       "east": [],
       "name": "Centre Ithilien",
@@ -3014,7 +3014,7 @@
       "description": "Les Terres de la Lune qui étaient placées sous le commandement du gouverneur de Minas Ithil, lorsque la cité fut prise la région fut abandonnée par les gondoriens"
     },
     "Sud_Ithilien": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Sud_Ithilien.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408557/La%20Guerre%20de%20l%27Eriador/Sud_Ithilien_aig4m1.jpg",
       "map": 2,
       "east": [2],
       "name": "Sud d'Ithilien",
@@ -3041,7 +3041,7 @@
       "description": "L'Ithilien, bande de terre située entre l'Anduin à l'ouest, l'Ephel Dúath à l'est, le Poros au sud et le Nindalf au nord, était l'une des provinces orientales du Gondor."
     },
     "Proche_Harad": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Proche_harad.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/Proche_harad_d3l6ol.jpg",
       "map": 4,
       "east": [2,3],
       "name": "Proche Harad",
@@ -3071,7 +3071,7 @@
       "description": "Le proche Harad est le royaume des haradrim loyaux à Sauron, c'est une zone chaude et exotique."
     },
     "Khand": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Khand.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408547/La%20Guerre%20de%20l%27Eriador/Khand_eubgqf.jpg",
       "map": 4,
       "east": [],
       "name": "Khand",
@@ -3099,7 +3099,7 @@
       "description": "Le Khand était une région, probablement aride, située au pied de l'Ephel Dúath, au sud-est du Mordor."
     },
     "Desolation_Orientale": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Khand.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408547/La%20Guerre%20de%20l%27Eriador/Khand_eubgqf.jpg",
       "map": 6,
       "east": [],
       "name": "Désolation Orientale",
@@ -3129,7 +3129,7 @@
       "description": "Situé à l'est du Mordor, ce territoire désertique est peuplé par différentes tribus d'Hommes luttant pour leurs survie dans ce milieu très hostile"
     },
     "Foret_Druadan": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Foret_Druadan.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408552/La%20Guerre%20de%20l%27Eriador/Foret_Druadan_mrrngm.jpg",
       "map": 2,
       "east": [2],
       "name": "Forêt de Drúadan",
@@ -3156,7 +3156,7 @@
       "description": "La Forêt de Drúadan se situait au pied des Montagnes Blanches  et au nord de Minas Tirith. C’est ici que l’un des Feux d’alarme fût installé, ce qui permis aux Gondor d'appeler l’aide de leurs alliés rohirrims. Elle était l'une des dernières demeures des Drúedain, dont l'un des chefs, Ghân-buri-Ghân, fit traverser la forêt à l'armée des Rohirrim, par la Vallée des Fardiers, lors de la Guerre de l’Anneau."
     },
     "Anorien": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Anorien.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408548/La%20Guerre%20de%20l%27Eriador/Anorien_r5cviz.jpg",
       "map": 4,
       "west": [1,2],
       "name": "Anorien",
@@ -3178,7 +3178,7 @@
       "description": "L'Anórien était l'une des provinces du Gondor, à l'origine le fief d'Anárion, délimitée à l'ouest par le Glanhír, au nord par l'Entévière, à l'est par l'Anduin, et au sud par les Montagnes Blanches."
     },
      "Estfolde": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Estfolde.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408551/La%20Guerre%20de%20l%27Eriador/Estfolde_hqhd1p.jpg",
       "map": 2,
       "east": [2],
       "name": "Estfolde",
@@ -3200,7 +3200,7 @@
       "description": "L’Estfolde, ou Vaux de l’Est, était une région du Rohan située entre le Folde à l’ouest, l’Entévière au nord, la Fenmark à l’est et les Montagnes Blanches au sud."
     },
     "Halifirien": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Halifirien.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/Halifirien_bpw3og.jpg",
       "map": 4,
       "east": [3,4],
       "name": "Halifirien",
@@ -3223,7 +3223,7 @@
       "description": "La colline appelée Halifirien se dressait au cœur du Bois de Firien, non loin de la source du Glanhír, et était la plus élevée des sept Feux d’alarme du Gondor."
     },
     "Edoras": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Edoras.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408552/La%20Guerre%20de%20l%27Eriador/Edoras_iex9hh.jpg",
       "map": 6,
       "east": [1,2,3],
       "name": "Edoras",
@@ -3245,7 +3245,7 @@
       "description": "Edoras était situé dans la région du Folde, au nord du Val de Hart. La capitale du Rohan était bâtie sur une colline verte isolée, aux pieds des contreforts septentrionaux des Montagnes Blanches."
     },
     "Dunharrow": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Dunharrow.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/Dunharrow_bmnkcv.jpg",
       "map": 2,
       "east": [1],
       "name": "Dunharrow",
@@ -3271,7 +3271,7 @@
       "description": "Dunharrow était une place forte du Rohan située sur le plateau du Firienfeld, dans les Montagnes Blanches au sud d'Edoras."
     },
     "Gouffre_Helm": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Gouffre_Helm.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408556/La%20Guerre%20de%20l%27Eriador/Gouffre_Helm_nwpxlg.jpg",
       "map": 6,
       "east": [4,5,6],
       "name": "Gouffre de Helm",
@@ -3300,7 +3300,7 @@
       "description": "La Gorge de Helm désignait la passe qui s'ouvrait au nord des Montagnes Blanches sous le mont Thrihyrne ; elle était située dans l'Ouestfolde à proximité de la Brèche du Rohan."
     },
     "Gue_Isen": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Gue_Isen.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408548/La%20Guerre%20de%20l%27Eriador/Gue_Isen_yzrlrz.jpg",
       "map": 2,
       "east": [2],
       "name": "Gué de l'Isen",
@@ -3327,7 +3327,7 @@
       "description": "Le fleuve Isen prenait sa source au sud des Montagnes de Brume, au niveau du Methedras."
     },
     "Avancee_Fangorn": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Avancee_Fangorn.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408547/La%20Guerre%20de%20l%27Eriador/Avancee_Fangorn_aw7pd5.jpg",
       "map": 4,
       "east": [
         3,
@@ -3355,7 +3355,7 @@
       "description": "Les avancée de Fangorn est la région la plus proche du Rohan et l'entré de la Forêt de Fangorn"
     },
     "Fangorn": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Fangorn.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408548/La%20Guerre%20de%20l%27Eriador/Fangorn_hzda1w.jpg",
       "map": 2,
       "east": [2],
       "name": "Fangorn",
@@ -3377,7 +3377,7 @@
       "description": "Fangorn était le nom de l'Ent plus communément appelé Barbebois. Il donna son nom à la forêt de Fangorn où il avait fait sa résidence."
     },
     "Celebrant": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Celebrant.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408553/La%20Guerre%20de%20l%27Eriador/Celebrant_ycti2p.jpg",
       "map": 6,
       "east": [],
       "name": "Celebrant",
@@ -3407,7 +3407,7 @@
       "description": "La Celebrant était une rivière très froide qui prenait sa source dans les Montagnes de Brume, elle était l'effluent du Kheled-zâram1)."
     },
     "Azanulbizar": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Azanulbizar.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/Azanulbizar_m7lphn.jpg",
       "map": 2,
       "east": [
         3,
@@ -3436,7 +3436,7 @@
       "description": "Dans la vallée se trouvait le Lac du Miroir et au sud du Lac, de ses sources glacées jaillissait le Cours d'Argent. Les Nains se réjouissaient à la vue de cette vallée, de ce lac et de fleuve si chers à leur cœur."
     },
     "Champs_Iris": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Champs_Iris.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408551/La%20Guerre%20de%20l%27Eriador/Champs_Iris_gyevwb.jpg",
       "map": 6,
       "east": [],
       "name": "Champs aux Iris",
@@ -3466,7 +3466,7 @@
       "description": "C'est ici qu'eu lieu le massacre des Champs d'Iris qui vit la perte de l'Anneau Unique dans les eaux de l’Anduin ainsi que la mort du grand roi des Hommes : Isildur ainsi que ses fils au début du troisième âge."
     },
     "Lorien": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Lorien.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408550/La%20Guerre%20de%20l%27Eriador/Lorien_qmfz5m.jpg",
       "map": 2,
       "east": [],
       "name": "Lorien",
@@ -3494,7 +3494,7 @@
       "description": "Entre l'Anduin et les Montagnes de Brume se trouvait la forêt de Lórien, un des royaumes des Elfes Sylvains."
     },
     "Terres_Brunes": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Terres_Brunes.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408547/La%20Guerre%20de%20l%27Eriador/Terres_Brunes_rw3d7v.jpg",
       "map": 6,
       "east": [2,5,8],
       "name": "Les Terres Brunes",
@@ -3524,7 +3524,7 @@
       "description": "Les Terres Brunes étaient une région désolée sur les rives de l'Anduin, à hauteur des deux grands méandres que dessinait celui-ci à la latitude de la forêt de Fangorn."
     },
     "Terres_Sauvages":{
-      "img":"https://laguerredelanneau.vercel.app/Territories_img/Terres_Sauvages.jpg",
+      "img":"https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408555/La%20Guerre%20de%20l%27Eriador/Terres_Sauvages_qpf6lx.jpg",
       "map":6,
       "name":"Terres Sauvages",
       "color":"#3300000",
@@ -3541,7 +3541,7 @@
       "south": [2]
     },
     "Argonath": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Argonath.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408552/La%20Guerre%20de%20l%27Eriador/Argonath_pek3xk.jpg",
       "map": 6,
       "west": [1,2,3],
       "name": "Argonath",
@@ -3564,7 +3564,7 @@
       "description": "Les Argonath étaient constitués de deux statues imposantes d'Isildur et Anárion, premiers rois du Gondor, situées de part et d'autre de l'Anduin, juste avant que celui-ci ne forme le lac de Nen Hithoel. Ces statues furent érigées sous le règne de Rómendacil II, afin d'interdire à tout étranger de descendre l'Anduin en aval d'elles."
     },
     "Plateau": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Plateau.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408547/La%20Guerre%20de%20l%27Eriador/Plateau_flwjvk.jpg",
       "map": 4,
       "east": [2,3],
       "name": "Le Plateau",
@@ -3592,7 +3592,7 @@
       "description": "The Wold était un plateau du Rohan, qui s'étirait entre la forêt de Fangorn et l’Anduin. Elle était bordée par la Limeclaire au nord et par l’Estemnet au sud."
     },
     "Estemnet": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Estemnet.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408550/La%20Guerre%20de%20l%27Eriador/Estemnet_h7i5dv.jpg",
       "map": 4,
       "east": [3,4],
       "name": "Estemnet",
@@ -3614,7 +3614,7 @@
       "description": "L’Estemnet était la région la plus à l’est du Rohan."
     },
     "Ouestemnet": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Ouestemnet.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408547/La%20Guerre%20de%20l%27Eriador/Ouestemnet_lpyimv.jpg",
       "map": 2,
       "east": [2],
       "name": "Ouestemnet",
@@ -3641,7 +3641,7 @@
       "description": "L’Ouestemnet était la région située au nord-ouest du Rohan. Elle s’étendait entre l’Adorn et l’Isen à l’ouest, les Montagnes de Brume et Fangorn au nord, l’Entévière à l’est, et la Snawburna et l’Ouestfolde au sud."
     },
     "Emyn_Muil": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Emyn_Muil.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408547/La%20Guerre%20de%20l%27Eriador/Emyn_Muil_lxiz28.jpg",
       "map": 2,
       "east": [3,4],
       "name": "Emyn Muil",
@@ -3668,7 +3668,7 @@
       "description": "L'Emyn Muil est une masse montagneuse couvrant un territoire de presque 80 par 120 km, située entre le fleuve Anduin et le Marais des Morts."
     },
     "Marais_Morts": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Marais_Morts.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408556/La%20Guerre%20de%20l%27Eriador/Marais_Morts_yeil9o.jpg",
       "map": 6,
       "east": [],
       "name": "Marais des Morts",
@@ -3699,7 +3699,7 @@
       "description": "Les Marais Morts étaient une vaste région marécageuse située au nord-ouest du Mordor, entre l'Emyn Muil et la Morannon."
     },
     "Porte_Noire": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Porte_Noire.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408552/La%20Guerre%20de%20l%27Eriador/Porte_Noire_lld2xc.jpg",
       "map": 4,
       "east": [3,4],
       "name": "La Porte Noire",
@@ -3722,7 +3722,7 @@
       "description": "Grande muraille sombre probablement construite par les numénoriens pour contrôler l’accès au Mordor. Donnant  sur le plateau de Moranon son autre nom en sindarin, Sauron s'en empara à ses propres fins pour dominier l'accès par le nord du Mordor."
     },
     "Nord_Ithilien": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Nord_Ithilien.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/Nord_Ithilien_rfp5yc.jpg",
       "map": 2,
       "east": [2],
       "name": "Nord de VeqzLétranger",
@@ -3748,7 +3748,7 @@
       "description": "Régions où de perpétuelles affrontements entre gondoriens et haradrims se déroullent. La région fut reprise par Boromir durant un temps avant de sombrer à nouveau dans le chaos ! C'est ici au cœur des bois que se cache le lac interdit : un repaire de rôdeurs mené par Faramir."
     },
     "Cair_Andros": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Cair_Andros.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408547/La%20Guerre%20de%20l%27Eriador/Cair_Andros_ojqfp8.jpg",
       "map": 6,
       "east": [4,5,6],
       "name": "Cair Andros",
@@ -3770,7 +3770,7 @@
       "description": "Cair Andros était une île gondorienne fortifiée d'une dizaine de miles de long située au milieu de l'Anduin, entre l'Anórien à l'ouest et l'Ithilien à l'est."
     },
     "Entalluve": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Months_Endwash.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408548/La%20Guerre%20de%20l%27Eriador/Months_Endwash_ngzce1.jpg",
       "map": 4,
       "east": [],
       "name": "Vallée de l'Entalluve",
@@ -3799,7 +3799,7 @@
       "description": "La vallée de l'Entalluve possède le paysage le plus varié des plaines orientales, de buttes rocheuses dans le nord à des marécages couverts de roseaux dans le sud. Elle est traversée par l'Entalluve, appelée Onodló par les Elfes, qui prenait sa source dans la forêt de Fangorn."
     },
     "Est_Rohan": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Est_Rohan.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/Est_Rohan_x5wbdi.jpg",
       "map": 4,
       "east": [3,4],
       "name": "Est du Rohan",
@@ -3908,7 +3908,7 @@
       "description": "Passage du redouté Chemin des Morts dans les Montagnes Blanches. Ceux s'aventurant dans ce passage n'en sont jamais revenus comme Baldor, fils de Brego, roi du Rohan. Lors de la Guerre de l'Anneau, Aragorn, Legolas, Gimli, les fils d'Elrond et la Compagnie Grise franchirent cette route afin de rallier l'Armée des Morts."
     },
     "Dol_Guldur": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Dol_Guldur.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/Dol_Guldur_vbh6fl.jpg",
       "map": 2,
       "east": [],
       "name": "Dol Guldur",
@@ -3938,7 +3938,7 @@
       "description": "Au sud de Vert-bois-le-Grand, en face de la Lórien, se trouvait la sombre tour du Nécromancien, Dol Guldur, qui fut construite vers 1050 3A sur le site d'Amon Lanc, lieu de l'ancienne capitale du royaume d'Oropher."
     },
     "Sud_Foret_Noire": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Sud_Foret_Noire.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408552/La%20Guerre%20de%20l%27Eriador/Sud_Foret_Noire_fxj8iz.jpg",
       "map": 2,
       "east": [2,3],
       "name": "Sud de la Foret Noire",
@@ -3968,7 +3968,7 @@
       "description": "Morceau mystérieux de la foret de vert bois, de nombreux enchantements et sortilèges protègent ces vieux sentiers, quiconque le quitte ne le retrouvera pas ! depuis le milieu du troisième âge Sauron corromps les bois, des araignées y pullule les elfes toutefois se battent pour protéger leurs terres ancestrales."
     },
     "Baie_Est": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Baie_Est.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408554/La%20Guerre%20de%20l%27Eriador/Baie_Est_b01pqp.jpg",
       "map": 6,
       "east": [1,2,3],
       "name": "Baie de l'est",
@@ -3994,7 +3994,7 @@
       "description": "La Brèche de l’Est est le nom par lequel était désignée la grande zone dépourvue d’arbres qui s’ouvrait dans la lisière est, au sud de la forêt de Grand’Peur. Cette curieuse dépression à l’orée de la forêt était de cause humaine. En effet, cette zone a été déforesté part des Hommes du Nord, ancêtres des Éothéod, qui, au Deuxième âge et début du Troisième âge, peuplaient les abords de Grand’Peur."
     },
     "Valee_Celduin": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Celduin.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1631773362/Valee_Celduin_e1rqri.jpg",
       "map": 2,
       "east": [3,4],
       "name": "Vallée du Celduin",
@@ -4015,7 +4015,7 @@
       "description": "La Celduin était un fleuve qui prenait sa source au pied d'Erebor, traversait le Long Lac et coulait vers le sud, puis vers l'est."
     },
     "Dorwinion": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Dorwinion.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408555/La%20Guerre%20de%20l%27Eriador/Dorwinion_cjzo7a.jpg",
       "map": 2,
       "east": [2,3],
       "name": "Dorwinion",
@@ -4042,7 +4042,7 @@
       "description": "Le Dorwinion ou Dor-Winion est une région de la Terre du Milieu située sur les rivages nord-ouest de la Mer de Rhûn, réputé pour son excellent vin très apprécier des elfes de Thranduil."
     },
     "Dagorlad": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Dagorlad.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408547/La%20Guerre%20de%20l%27Eriador/Dagorlad_bgmnxj.jpg",
       "map": 6,
       "east": [],
       "name": "Dagorlad",
@@ -4074,7 +4074,7 @@
       "description": "La plaine de Dagorlad s'étendait au nord-est du Mordor, devant la Morannon et à l'est de l'Emyn Muil."
     },
     "Esgaroth": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Esgaroth.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408554/La%20Guerre%20de%20l%27Eriador/Esgaroth_htmduz.jpg",
       "map": 4,
       "east": [3,4],
       "name": "Esgaroth",
@@ -4097,7 +4097,7 @@
       "description": "La ville d'Esgaroth était bâtie sur des pilotis au cœur du Long Lac, non loin de l'embouchure de la Rivière de la Forêt."
     },
     "Erebor": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Erebor.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408556/La%20Guerre%20de%20l%27Eriador/Erebor_szjhzc.jpg",
       "map": 6,
       "east": [4,5,6],
       "name": "Erebor",
@@ -4128,7 +4128,7 @@
       "description": "Erebor est le mont situé entre les Montagnes Grises au nord, les Collines de Fer à l'est, le Long Lac au sud et la Grand’Peur à l'ouest."
     },
     "Lithlad": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Lithlad.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408548/La%20Guerre%20de%20l%27Eriador/Lithlad_llvy0o.jpg",
       "map": 2,
       "east": [],
       "name": "Lithlad",
@@ -4155,7 +4155,7 @@
       "description": "Le Lithlad était une région de plaines du Mordor. La position exacte de cette région reste cependant vague."
     },
     "Sombre_Cote": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Lithlad.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408548/La%20Guerre%20de%20l%27Eriador/Lithlad_llvy0o.jpg",
       "map": 4,
       "east": [3,4],
       "name": "Sombre Côte",
@@ -4184,7 +4184,7 @@
       "description": "Territoire oriental de la mer de Nurnen. Bien que sa mer soit aussi noire que la nuit, ses terres sont fertiles pour la production agricole. Elle y abrite des camps d'esclaves humains, travaillant à produire la nourriture nécessaire pour les forces de Sauron en Mordor"
     },
     "Ered_Glamhoth": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Ered_Glamhoth.png",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408548/La%20Guerre%20de%20l%27Eriador/Ered_Glamhoth_m0yvch.jpg",
       "map": 4,
       "east": [],
       "name": "Ered Glamhoth",
@@ -4212,7 +4212,7 @@
       "description": "Ered signifie 'montagnes' en sindarin. Glamhoth était le terme en sindarin pour 'hôtes du mal' (Glam- apparaît dans 'Glamdring', qui signifie 'marteau'), ce qui en fait un lieu où les hommes de l'Est étaient loyaux à Sauron y auraient vécu"
     },
     "Mer_Rhun": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Rhun.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408552/La%20Guerre%20de%20l%27Eriador/Mer_Rhun_x1uaox.jpg",
       "map": 2,
       "east": [2],
       "name": "Mer de Rhun",
@@ -4237,7 +4237,7 @@
       "description": "La mer de Rhûn était une vaste mer intérieure qui se situait à l'est du Rhovanion, alimentée par les eaux de la rivière Celduin. Au nord-est, ses rives étaient densément boisées ; au sud-ouest se dressaient des collines. Au nord-ouest de la mer se trouvait la région du Dorwinion. À l'époque de l'apogée du Gondor, cette mer formait une partie de la frontière orientale du pays, mais avec le déclin des Dúnedain, les frontières de ce royaume reculèrent vers l'ouest."
     },
     "Hidar": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Rhun.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408552/La%20Guerre%20de%20l%27Eriador/Mer_Rhun_x1uaox.jpg",
       "map": 4,
       "east": [1,3],
       "name": "Hidar",
@@ -4317,7 +4317,7 @@
       "description": "Harnennor est une zone semi-désertique située au sud de la rivière Harnen et entre les côtes de Southron à l'ouest et Lostladen au nord-est. Il se trouve près du Grand Désert de Near Harad. Contrairement à Harondor au nord, qui est principalement luxuriant avec une légère désertification, Harnennor est une terre sèche et sablonneuse avec quelques parcelles luxuriantes."
     },
     "Lointain_Harad": {
-      "img": "https://laguerredelanneau.vercel.app/Territories_img/Lointain_harad.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408548/La%20Guerre%20de%20l%27Eriador/Lointain_harad_a9091k.jpg",
       "map": 4,
       "east": [2,4],
       "name": "Lointain Harad",
@@ -4346,7 +4346,7 @@
       "description": "Territoire le plus au Sud de la terre du Milieu. Au Nord Est se trouve le port d’Umbar. A l’Est, la mer. A l’Ouest, le Kand. Et au Nord, le Proche Harad et l’Harondor. Se territoire fut si reculé qu’il ne subit pas les guerres, tout en participant à ces dernières. En effet, sa position lui permet de rester à l’abris des invasions toute en envoyant continuellement des Soldats sur les ligne de Front. Cette méthode fut certainement utilisé par Sauron ou les Haradrim. Le Lointain Harad fut vaincu lorsque les Haradrim se soumirent à Elessar."
     },
     "Tolfalas": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Tolfalas.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408553/La%20Guerre%20de%20l%27Eriador/Tolfalas_ybrdeg.jpg",
         "map": 4,
         "east": [3,4],
         "name": "Tolfalas",
@@ -4372,7 +4372,7 @@
         "description": "Tolfalas était une grande île, qui se trouvait au-delà de l'Ethir Anduin dans la baie de Belfalas."
       },
       "Mer_Pelargir": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Pelargir.png",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408551/La%20Guerre%20de%20l%27Eriador/Mer_Pelargir_akbyny.jpg",
         "map": 4,
         "east": [3,4],
         "name": "Mer de Pelargir",
@@ -4400,7 +4400,7 @@
         "description": "« Regardez ! s’écria-t-il. Des mouettes ! Elles volent loin dans les terres, une merveille à mes yeux et un trouble pour mon cœur. Jamais de ma vie je ne les avais vues avant d’arriver à Pelargir ; et je les entendis là-bas crier dans l’air, tandis que nous allions à cheval vers la bataille des navires. Alors je restai coi, oubliant la guerre en Terre du Milieu, car leurs voix plaintives me parlaient de la Mer.»"
       },
       "Mer_Umbar": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Umbar.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408552/La%20Guerre%20de%20l%27Eriador/Mer_Umbar_frvyvt.jpg",
         "map": 4,
         "east": [3,4],
         "name": "Mer d'Umbar",
@@ -4428,7 +4428,7 @@
         "description": "« Le long cap d’Umbar et sa grande rade étaient une possession númenóréenne de fort longue date ; mais elle servait de place forte aux Hommes du Roi, que l’on nomma plus tard les Númenóréens Noirs, corrompus par Sauron, et qui vouaient la plus grande haine aux suivants d’Elendil. » — Le Seigneur des Anneaux — Appendice A"
       },
       "Mer_Dol_Amroth": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Dol_Amroth.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408553/La%20Guerre%20de%20l%27Eriador/Dol_Amroth_gddtft.jpg",
         "map": 4,
         "east": [3,4],
         "name": "Mer de Dol Amroth",
@@ -4457,7 +4457,7 @@
         "description": "« Et au matin, la bannière de Dol Amroth, nef blanche comme un cygne sur une eau bleue, flottait au sommet de la Tour… » — Le Seigneur des Anneaux — Livre V — Chapitre 8"
       },
       "Mer_Enedwaith": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Enedwaith.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1631773365/Mer_Enedwaith_t5zz08.jpg",
         "map": 4,
         "east": [3,4],
         "name": "Mer d'Enedwaith",
@@ -4484,7 +4484,7 @@
         "description": "Mer à l'Ouest de l'Enedwaith."
       },
       "Mer_Havres_Gris": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Havres_Gris.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408553/La%20Guerre%20de%20l%27Eriador/Mer_Havres_Gris_t9ahzn.jpg",
         "map": 4,
         "east": [3,4],
         "name": "Mer des Havres Gris",
@@ -4513,7 +4513,7 @@
         "description": "Mer qui permettait depuis les Havres Gris de se rendrent vers l'Ouest, en Aman."
       },
       "Mer_Forochel": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Mer_Forochel.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408555/La%20Guerre%20de%20l%27Eriador/Mer_Forochel_jmuf8q.jpg",
         "map": 4,
         "east": [3,4],
         "name": "Mer de Forochel",
@@ -4541,7 +4541,7 @@
         "description": "« Même les marins de Círdan ne purent rien faire, et, à la nuit, la glace défonça la coque et le navire périt. Ainsi finit Arvedui le Dernier, et les palantirí s’abîmèrent avec lui dans la mer. Ce n’est que bien plus tard que l’on apprit des Hommes des Neiges la nouvelle du naufrage de Forochel. » — Seigneur des Anneaux — Appendice A"
       },
       "Himling": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Himling.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408551/La%20Guerre%20de%20l%27Eriador/Himling_fbcl5e.jpg",
         "map": 2,
         "east": [],
         "name": "Himling",
@@ -4565,7 +4565,7 @@
         "description": "Cette petite île au large du Forlindon n'était autre que le sommet de la colline d'Himring, où Maedhros avait sa capitale au cours du Premier Âge. Avec Tol Morwen, Tol Fuin et le Lindon, Himling était le dernier vestige émergé du Beleriand."
       },
       "Tol_Fuin": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Tol_Fuin.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408554/La%20Guerre%20de%20l%27Eriador/Tol_Fuin_pqfwm5.jpg",
         "map": 6,
         "east": [],
         "name": "Tol Fuin",
@@ -4621,7 +4621,7 @@
         "description": "Pierreval est l'endroit où les Rohirrim et les Hommes du Pays de Dun vivent en paix depuis longtemps. La majorité des Hommes du Pays de Dun dans le Rohan a été exilée dans ce qui se trouve aujourd'hui être le Pays de Dun ; mais ceux qui sont restés se sont établis dans le Pierreval."
       },
       "Ouestfold": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Ouestfold.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408555/La%20Guerre%20de%20l%27Eriador/Ouestfold_nyvl5y.jpg",
         "map": 2,
         "east": [],
         "name": "L’Ouestfolde",
@@ -4649,7 +4649,7 @@
         "description": "L’Ouestfolde était une région du Rohan, traversée par la Grande Route de l’Ouest, qui s'étirait entre les Gués de l’Isen et le Folde."
       },
       "C_Rohan": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/C_Rohan.png",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/C_Rohan_btwbjd.jpg.png",
         "map": 2,
         "east": [2],
         "name": "Centre du Rohan",
@@ -4703,7 +4703,7 @@
         "description": "Grands-arpents est au cœur du Rohan, c'est une région riche en pâturages. Ce territoire fût attaqué a la fois par les ouargues de l'Isengard et par les hommes du Pays de Dun pendant la guerre de l'anneau."
       },
       "Hall_Thranduil": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Hall_Thranduil.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408546/La%20Guerre%20de%20l%27Eriador/Hall_Thranduil_gic13x.jpg",
         "map": 4,
         "east": [],
         "name": "Hall de Thranduil",
@@ -4762,7 +4762,7 @@
         "description": "Rhosgobel est le nom de la demeure de l'Istar Radagast, qui se trouvait aux alentours du Carroc, près de l'orée de la Grand’Peur."
       },
       "Carrock": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Carrock.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408555/La%20Guerre%20de%20l%27Eriador/Carrock_gqqq2p.jpg",
         "map": 2,
         "east": [],
         "name": "Carrock",
@@ -4843,7 +4843,7 @@
         "description": "Le Pinnath Gelin, ou Collines Vertes, est une chaine de collines au nord de l'Anfalas, dans l'ouest du Gondor, formant un fief du royaume."
       },
       "Erech": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Erech.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408555/La%20Guerre%20de%20l%27Eriador/Erech_wxyxaz.jpg",
         "map": 2,
         "east": [],
         "name": "Erech",
@@ -4895,7 +4895,7 @@
         "description": "Au sein d'Eryn Galen se dressait une chaîne de collines, orientée ouest-est : l'Emyn Duir. Leur nom, qui signifie « Montagnes sombres », venait des bois très denses qui couvraient leurs versants."
       },
       "Nord_Foret_Noire": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Nord_Foret_Noire.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408553/La%20Guerre%20de%20l%27Eriador/Nord_Foret_Noire_tnxzxc.jpg.jpg",
         "map": 6,
         "east": [4,5,6],
         "name": "Nord de la Foret Noire",
@@ -5042,7 +5042,7 @@
         "description": "Le Plateau de Gorgoroth renfermait le cœur du pouvoir de Sauron. Ce lieu anéanti, couvert de poussières stériles, de cendres et de scories, où l'air était empuanti de vapeurs nauséabondes par l'Amon Amarth tout proche, donnait à l'Ouest sur la vallée de l'Anduin par Cirith Ungol et Imlad Morgul et au nord sur le Rhovanion par l'Udûn et la Morannon."
       },
       "Rhun": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Rhun.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408550/La%20Guerre%20de%20l%27Eriador/Rhun_y98tya.jpg",
         "map": 6,
         "east": [4,5,6],
         "name": "Rhûn",
@@ -5287,7 +5287,7 @@
         "description": "Le Logathavuld est une zone où règnent les tribus du Logath depuis le milieu du second âge. Ce territoire est principalement constituer de vastes plaines à l'est, et des étendues arides au nord."
       },
       "Valee_Anduin": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1631773362/Valee_Anduin_wjhoge.jpg",
         "map": 4,
         "east": [2,3],
         "name": "Valée de l'Anduin",
@@ -5443,13 +5443,13 @@
         "description": "L’Anduin était le plus long fleuve connu de la Terre du Milieu."
       },
       "Grand_Nord": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Valee_Anduin.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1631773362/Valee_Anduin_wjhoge.jpg",
         "name": "Le Grand Nord",
         "color": "#3300000",
         "description": "Le Nord de la Terre du Milieu"
       },
       "Ouestfolde": {
-        "img": "https://laguerredelanneau.vercel.app/Territories_img/Ouestfold.jpg",
+        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408555/La%20Guerre%20de%20l%27Eriador/Ouestfold_nyvl5y.jpg",
         "map": 2,
         "east": [2],
         "name": "L’Ouestfolde",

@@ -111,6 +111,8 @@
             <div v-else>
                 <h4 class="text-2xl text-gray-200 text-left tracking-wide my-5">
                     Malheureseent vous n'avez pas assez d'argent pour prendre un pouvoir (minimum de 300)
+Malheureseent vous n'avez pas assez d'argent pour prendre un pouvoir (minimum de 300)
+Malheureusement vous n'avez pas assez d'argent pour prendre un pouvoir (minimum de 300)
                 </h4>
             </div>
         </div>

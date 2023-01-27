@@ -215,8 +215,7 @@
       "adjacents": [
         "Montagnes_Bleues",
         "Harlindon",
-        "Siragalë",
-        "Dol_Tinereb"
+        "Siragalë"
       ],
       "description": "Région d'Arthedain du sud à l'est des Montagnes Bleues du sud qui est habité. Riche en fer, les nains profitent abondamment de ses gisements pour leur commerce."
     },
@@ -1208,10 +1207,8 @@
         "Egenyar",
         "Montagnes_Bleues",
         "Collines_Tours",
-        "Dol_Tinereb",
         "Pays_Touque",
         "Pays_Bouc",
-        "Vieille_Foret",
         "Haut_Sud"
       ],
       "description": "Ancienne province elfique du royaume d'Arnor. Il s'étend du Baranduin à l'Aerossîr et au Harered Luin. La Comté est taillée dans la partie nord-est . Elle perd sa population elfique tout au long du Troisième âge, laissant place en 1601 T.A. à la colonisation des Hobbits et à la fondation de la Comté"
@@ -1453,9 +1450,7 @@
       "adjacents": [
         "Haut_Sud",
         "Metraith",
-        "Girithlin",
-        "Egenyar",
-        "Siragalë"
+        "Girithlin"
       ],
       "description": "Appelé aussi la Colline de la Tour Solitaire, se situant au nord est du Minhiriath en Cardolan, elle gardait les frontières entre les deux anciens royaumes de Cardolan et d'Arthedain et fut épargné par les armées du roi-sorcier avant de tomber en ruine avec la disparition du royaume."
     },
@@ -1992,7 +1987,6 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304378/La%20Guerre%20de%20l%27Eriador/veille_foret_minimap_dnl2im.png",
       "players": [],
       "adjacents": [
-        "Siragalë",
         "Pays_Bouc",
         "Galgals",
         "Haut_Sud",

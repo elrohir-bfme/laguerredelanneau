@@ -374,7 +374,7 @@ layout: "gda",
             if(option.text.includes("Sort de Vélocité")){
                 power += `velocity ${element.name}\n`;
             }
-            data += `${element.name} ${element.code}  ${option.value}\n`;
+            data += `${element.name} ${element.code} ${option.value}\n`;
         });
 
         

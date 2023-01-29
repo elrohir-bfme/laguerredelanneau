@@ -9918,7 +9918,7 @@ export default {
           if(this.isEnd){
             try {
                 this.isEnd = false
-                this.map = require(`~/static/gda/before-resources-turn-${this.tour}.json`)
+                this.map = require(`~/static/gdav3/before-resources-turn-${this.tour}.json`)
                 this.updateMap()
               } 
               catch (e) {
@@ -9928,7 +9928,7 @@ export default {
           } else {
             this.tour--
             this.isEnd = true
-            this.map = require(`~/static/gda/beforemoves-end-turn-${this.tour}.json`)
+            this.map = require(`~/static/gdav3/beforemoves-end-turn-${this.tour}.json`)
             this.updateMap()
           }
         }
@@ -9943,11 +9943,11 @@ export default {
           if(this.isEnd){
             this.isEnd = false;
             this.tour++;
-            this.map = require(`~/static/gda/before-resources-turn-${this.tour}.json`)
+            this.map = require(`~/static/gdav3/before-resources-turn-${this.tour}.json`)
             this.updateMap()
           } else {
             this.isEnd = true;
-            this.map = require(`~/static/gda/beforemoves-end-turn-${this.tour}.json`)
+            this.map = require(`~/static/gdav3/beforemoves-end-turn-${this.tour}.json`)
             this.updateMap()
           }
         }

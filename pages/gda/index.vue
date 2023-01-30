@@ -13,7 +13,7 @@
             </svg>
           </button>
         </div>
-        <TimerGDE :tour="this.tour" :type="isEnd" />
+        <TimerGDA :tour="this.tour" :type="isEnd" />
         <div>
           <button @click="afterTour()"
             class="border-2 border-gray-900 bg-gray-800 text-white block rounded-sm font-bold py-2 px-4 ml-2 hover:bg-gray-900 hover:border-orange-500 transition duration-500">

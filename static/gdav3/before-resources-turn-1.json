@@ -720,6 +720,10 @@
     "fight": "hidden",
     "players": []
   },
+  "Caradhras": {
+    "fight": "hidden",
+    "players": []
+  },
   "Carrefour": {
     "color": "#3300000",
     "fight": "hidden",
@@ -1819,6 +1823,10 @@
     "fight": "hidden",
     "players": []
   },
+  "Terres_Sauvages": {
+    "fight": "hidden",
+    "players": []
+  },
   "Evendim_Collines": {
     "color": "#3300000",
     "fight": "hidden",
@@ -1879,13 +1887,5 @@
     "fight": "hidden",
     "players": []
   },
-  "unblockable-frontiers": [],
-  "Caradhras": {
-    "players": [],
-    "fight": "hidden"
-  },
-  "Terres_Sauvages": {
-    "players": [],
-    "fight": "hidden"
-  }
+  "unblockable-frontiers": []
 }

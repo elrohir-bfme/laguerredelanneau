@@ -1228,18 +1228,9 @@
     "players": []
   },
   "Ruines_Nord": {
-    "color": "#ff3636",
+    "color": "#3300000",
     "fight": "hidden",
-    "players": [
-      {
-        "img": "https://yt3.ggpht.com/a/AATXAJyeXmXigRQy-HOTIWYHnML29JoFZjdM6qod4Oow=s900-c-k-c0xffffffff-no-rj-mo",
-        "win": 0,
-        "lose": 0,
-        "name": "Manuu76d",
-        "faction": 4,
-        "handicap": 0
-      }
-    ]
+    "players": []
   },
   "Sombre_Cote": {
     "color": "#3300000",
@@ -1366,26 +1357,9 @@
     ]
   },
   "Landes_Angmar": {
-    "color": "#ff3636",
+    "color": "#3300000",
     "fight": "hidden",
-    "players": [
-      {
-        "img": "https://i.ibb.co/LgKqx0q/37861601-837618553100189-7796708455175159808-n.jpg",
-        "win": 0,
-        "lose": 0,
-        "name": "obscurito",
-        "faction": 4,
-        "handicap": 0
-      },
-      {
-        "img": "https://i.ibb.co/bddq3Kq/WITCH-KING-OF-ANGMAR.jpg",
-        "win": 0,
-        "lose": 0,
-        "name": "Err0n",
-        "faction": 4,
-        "handicap": 0
-      }
-    ]
+    "players": []
   },
   "Mer_Enedwaith": {
     "color": "#3300000",

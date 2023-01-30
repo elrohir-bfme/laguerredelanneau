@@ -2896,7 +2896,7 @@
     },
     "Dol_Amroth": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408553/La%20Guerre%20de%20l%27Eriador/Dol_Amroth_gddtft.jpg",
-      "map": 4,
+      "map": 3,
       "east": [3,4],
       "name": "Dol Amroth",
       "fortress": true,

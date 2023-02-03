@@ -262,7 +262,7 @@
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1SGLDVh0fQI322VvTYThDv8U4aedi2XEK?usp=sharing",
       "region": "arthedain",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304380/La%20Guerre%20de%20l%27Eriador/fornost_minimap_yq8nko.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1675431973/La%20Guerre%20de%20l%27Eriador/fornost_rlmfko.png",
       "players": [],
       "adjacents": [
         "Champs_Fornost",
@@ -2896,23 +2896,21 @@
     },
     "Dol_Amroth": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408553/La%20Guerre%20de%20l%27Eriador/Dol_Amroth_gddtft.jpg",
-      "map": 3,
-      "east": [3,4],
+      "map": 6,
       "name": "Dol Amroth",
       "fortress": true,
-      "west": [1,2],
       "color": "#3300000",
       "port": true,
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1shFoMfRt8qmhJTps7vG8OUa1vLdBkjtS?usp=sharing",
       "north": [
-        3,4
+        4,5,6
       ],
       "south": [
-        1,2
+        1,2,3
       ],
       "region": "hyallondië",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666786533/La%20Guerre%20de%20l%27Eriador/dol_amroth_n9i702.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1675432003/La%20Guerre%20de%20l%27Eriador/dol_amroth_pg7wyc.png",
       "players": [],
       "adjacents": [
         "Belfalas",

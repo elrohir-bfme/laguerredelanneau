@@ -2751,7 +2751,8 @@
         "Udun",
         "Ephel_Duath",
         "Plateau_Gorgoroth",
-        "Lithlad"
+        "Lithlad",
+        "Sombre_Cote"
       ],
       "description": "La Montagne du Destin, également connue sous le nom d'Orodruin est un grand volcan qui domine le Plateau de Gorgoroth. C'est ici, que Sauron forgea en secret L'Anneau Unique."
     },
@@ -2944,7 +2945,8 @@
         "Harondor",
         "Harlond",
         "Emyn_Arnen",
-        "Lebennin"
+        "Lebennin",
+        "Mer_Pelargir"
       ],
       "description": "Le port gondorien de Pelargir-sur-Anduin, sis légèrement en amont de l'endroit où le Sirith se jette dans le Grand Fleuve, fut fondé en 2350 2A par les Númenóréens. "
     },
@@ -3084,7 +3086,7 @@
         "Golfe_Harad",
         "Proche_Harad",
         "Ered_Glamhoth",
-        "Khand"
+        "Desolation_Orientale"
       ],
       "description": "Le Khand était une région, probablement aride, située au pied de l'Ephel Dúath, au sud-est du Mordor."
     },
@@ -3111,11 +3113,10 @@
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665521332/La%20Guerre%20de%20l%27Eriador/desolation_oriental_kvyasj.png",
       "players": [],
       "adjacents": [
-        "Golfe_Harad",
-        "Proche_Harad",
-        "Ered_Glamhoth",
         "Khand",
-        "Lithlad"
+        "Lithlad",
+        "Rhun",
+        "Steppes_Cendrees"
       ],
       "description": "Situé à l'est du Mordor, ce territoire désertique est peuplé par différentes tribus d'Hommes luttant pour leurs survie dans ce milieu très hostile"
     },
@@ -4146,7 +4147,6 @@
         "Sombre_Cote",
         "Montagne_Destin",
         "Barad_Dur",
-        "Khand",
         "Steppes_Cendrees",
         "Desolation_Orientale"
       ],
@@ -4204,35 +4204,9 @@
       "adjacents": [
         "Khand",
         "Proche_Harad",
-        "Nurn",
-        "Lithlad"
+        "Nurn"
       ],
       "description": "Ered signifie 'montagnes' en sindarin. Glamhoth était le terme en sindarin pour 'hôtes du mal' (Glam- apparaît dans 'Glamdring', qui signifie 'marteau'), ce qui en fait un lieu où les hommes de l'Est étaient loyaux à Sauron y auraient vécu"
-    },
-    "Mer_Rhun": {
-      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408552/La%20Guerre%20de%20l%27Eriador/Mer_Rhun_x1uaox.jpg",
-      "map": 2,
-      "east": [2],
-      "name": "Mer de Rhun",
-      "west": [1],
-      "color": "#3300000",
-      "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1b2GTejf_mFqlXoYR2Tgjh_t9qS_GlHiR?usp=share_link",
-      "north": [
-        1
-      ],
-      "south": [
-        2
-      ],
-      "region": "harad",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665569432/La%20Guerre%20de%20l%27Eriador/mer_de_rhun_udypni.png",
-      "players": [],
-      "adjacents": [
-        "Lithlad",
-        "Nurn",
-        "Plateau_Gorgoroth"
-      ],
-      "description": "La mer de Rhûn était une vaste mer intérieure qui se situait à l'est du Rhovanion, alimentée par les eaux de la rivière Celduin. Au nord-est, ses rives étaient densément boisées ; au sud-ouest se dressaient des collines. Au nord-ouest de la mer se trouvait la région du Dorwinion. À l'époque de l'apogée du Gondor, cette mer formait une partie de la frontière orientale du pays, mais avec le déclin des Dúnedain, les frontières de ce royaume reculèrent vers l'ouest."
     },
     "Hidar": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408552/La%20Guerre%20de%20l%27Eriador/Mer_Rhun_x1uaox.jpg",
@@ -4284,7 +4258,8 @@
       "adjacents": [
         "Khand",
         "Proche_Harad",
-        "Hidar"
+        "Hidar",
+        "Lointain_Harad"
       ],
       "description": "Immensité désertique stérile et aride de sable. Les nomades savent y mieux que quiconque  se frayer un chemin afin de réaliser leur commerce nécessaire à leur subsistance"
     },
@@ -4622,34 +4597,6 @@
         ],
         "description": "Pierreval est l'endroit où les Rohirrim et les Hommes du Pays de Dun vivent en paix depuis longtemps. La majorité des Hommes du Pays de Dun dans le Rohan a été exilée dans ce qui se trouve aujourd'hui être le Pays de Dun ; mais ceux qui sont restés se sont établis dans le Pierreval."
       },
-      "Ouestfold": {
-        "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408555/La%20Guerre%20de%20l%27Eriador/Ouestfold_nyvl5y.jpg",
-        "map": 2,
-        "east": [],
-        "name": "L’Ouestfolde",
-        "west": [],
-        "color": "#3300000",
-        "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
-        "north": [
-          1,
-          2
-        ],
-        "south": [
-          3,
-          4
-        ],
-        "region": "rohan",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
-        "players": [],
-        "adjacents": [
-          "C_Rohan",
-          "Pierreval",
-          "Gue_Isen",
-          "Dunharrow"
-        ],
-        "description": "L’Ouestfolde était une région du Rohan, traversée par la Grande Route de l’Ouest, qui s'étirait entre les Gués de l’Isen et le Folde."
-      },
       "C_Rohan": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/C_Rohan_btwbjd.jpg.png",
         "map": 2,
@@ -4672,7 +4619,6 @@
           "Ouestemnet",
           "Grands_Arpents",
           "Ouestfolde",
-          "Siragalë",
           "Edoras",
           "Halifirien"
         ],
@@ -4753,7 +4699,6 @@
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1666738619/La%20Guerre%20de%20l%27Eriador/rhogobel_i4pfzt.png",
         "players": [],
         "adjacents": [
-          "Champs_Iris",
           "Carrock",
           "Lorien",
           "Terres_Brunes",
@@ -5040,7 +4985,8 @@
           "Nurnen",
           "Cirith_Ungol",
           "Montagne_Destin",
-          "Sombre_Cote"
+          "Sombre_Cote",
+          "Ephel_Duath"
         ],
         "description": "Le Plateau de Gorgoroth renfermait le cœur du pouvoir de Sauron. Ce lieu anéanti, couvert de poussières stériles, de cendres et de scories, où l'air était empuanti de vapeurs nauséabondes par l'Amon Amarth tout proche, donnait à l'Ouest sur la vallée de l'Anduin par Cirith Ungol et Imlad Morgul et au nord sur le Rhovanion par l'Udûn et la Morannon."
       },

@@ -1,0 +1,1892 @@
+{
+  "Bree": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Nurn": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Rhun": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Udun": {
+    "color": "#c500ff",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": "https://i.ibb.co/cvNy3SC/579147-2.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Orpheus",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "PaulllG06",
+        "faction": 7,
+        "handicap": 0
+      }
+    ]
+  },
+  "time": {
+    "end": "2023-02-05 00:00:00",
+    "tour": 1,
+    "start": "2023-01-30 00:00:00"
+  },
+  "Angle": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Erech": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Hidar": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Khand": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Moria": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Umbar": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Carnen": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Edoras": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Erebor": {
+    "color": "#00ff7e",
+    "fight": "hidden",
+    "players": []
+  },
+  "Hollin": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Lindon": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Lorien": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Nurnen": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Andrast": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Anfalas": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Anorien": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "C_Rohan": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Cairill": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Carrock": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Dimholt": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Egenyar": {
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": "https://i.goopics.net/gaqluz.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Leitdorf",
+        "faction": 6,
+        "handicap": 0
+      }
+    ]
+  },
+  "Eregion": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Fangorn": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Fornost": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Galgals": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Greylin": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Gwathlo": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Harlond": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Himling": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Kelepar": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Lamedon": {
+    "color": "#fffc00",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": "https://i.goopics.net/t9mext.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Thrór",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/ax2bic.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Biscuit|_ED",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "SOLID_|_Aupif",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/l4a55s.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "ConcombreMasque",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Stalinou",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/frz4hNN/ac97093c09673d2fa48996ded7ab4545-2.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Tulkas",
+        "faction": 3,
+        "handicap": 0
+      }
+    ]
+  },
+  "Lithlad": {
+    "color": "#c500ff",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": "https://i.goopics.net/yrv87c.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Lijert",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/TwHwnTD/Capture-d-cran-2022-12-09-23-35-31.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Gopik_la_tactique_du_Fric",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/QJhzKWc/hqdefault.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Oknanar",
+        "faction": 7,
+        "handicap": 0
+      }
+    ]
+  },
+  "Plateau": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Tharbad": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Alliance": [
+    [
+      "elfe",
+      "isengard",
+      "mordor",
+      "angmar"
+    ],
+    [
+      "nain",
+      "homme",
+      "gobelin"
+    ]
+  ],
+  "Amon_Sul": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Argonath": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Baie_Est": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Belegaer": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Belfalas": {
+    "color": "#fffc00",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": "https://cdn.discordapp.com/attachments/804473829593579592/1062848916799885322/1670205299860.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Biscuit|_LB",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/yk4ku6.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Lune",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/rucco8.png",
+        "win": 0,
+        "lose": 0,
+        "name": "iDaazl",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Biscuit|_KD",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "gagzull",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/HDbc3Rf/hoplite-pp.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Hoplite",
+        "faction": 3,
+        "handicap": 0
+      }
+    ]
+  },
+  "Carn_Dum": {
+    "color": "#ff3636",
+    "fight": "hidden",
+    "players": []
+  },
+  "Dagorlad": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Esgaroth": {
+    "color": "#00ff7e",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Morgomir_le_stratège_maudit",
+        "faction": 2,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/M82j9qy/thumb-1920-1187146.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Colleguos_le_bg",
+        "faction": 2,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/ZgcxzKv/elf-crop.png",
+        "win": 0,
+        "lose": 0,
+        "name": "qDR",
+        "faction": 2,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Woopsie",
+        "faction": 2,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Fairy",
+        "faction": 2,
+        "handicap": 0
+      },
+      {
+        "img": "https://cdn.discordapp.com/attachments/937474299785277521/1064182271113953351/image.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Kampi",
+        "faction": 2,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/DG22LLX/a32670357df257e65eca541fe05187b7.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Aran_Ancalima",
+        "faction": 2,
+        "handicap": 0
+      }
+    ]
+  },
+  "Estemnet": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Estfolde": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Forochel": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Gue_Isen": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Gundabad": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Harnedor": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Harondor": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Haut_Col": {
+    "color": "#ffffff",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": "https://i.goopics.net/779qfm.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Werbo45",
+        "faction": 5,
+        "handicap": 0
+      }
+    ]
+  },
+  "Haut_Sud": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Isendale": {
+    "color": "#09a4ff",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Ectelion™",
+        "faction": 1,
+        "handicap": 0
+      }
+    ]
+  },
+  "Isengard": {
+    "color": "#09a4ff",
+    "fight": "hidden",
+    "players": []
+  },
+  "Lebennin": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Mer_Rhun": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Metraith": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Mistrand": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Morthond": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Orocarni": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Pays_Dun": {
+    "color": "#09a4ff",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": "https://i.ibb.co/PcKNpfM/Jean-Yves.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Jean_Yves",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "le_congolais",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Tequitous",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Nitneuq76",
+        "faction": 1,
+        "handicap": 0
+      }
+    ]
+  },
+  "Pelargir": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Pelennor": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Sirannon": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Tol_Fuin": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Tolfalas": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "factions": {
+    "elfe": {
+      "id": 2,
+      "win": 0,
+      "chef": "Malodius",
+      "name": "elfe",
+      "color": "#00ff7e",
+      "loose": 0,
+      "money": 250,
+      "total": 250,
+      "capital": "Erebor",
+      "tainted_count": 0
+    },
+    "nain": {
+      "id": 3,
+      "win": 0,
+      "chef": "Biscuit|_KD",
+      "name": "nain",
+      "color": "#fffc00",
+      "loose": 0,
+      "money": 100,
+      "total": 100,
+      "capital": "Dol Amroth",
+      "tainted_count": 0
+    },
+    "homme": {
+      "id": 1,
+      "win": 0,
+      "chef": "Loken",
+      "name": "homme",
+      "color": "#09a4ff",
+      "loose": 0,
+      "money": 200,
+      "total": 200,
+      "capital": "Isengard",
+      "tainted_count": 0
+    },
+    "angmar": {
+      "id": 7,
+      "win": 0,
+      "chef": "Gréhelfe",
+      "name": "angmar",
+      "color": "#c500ff",
+      "loose": 0,
+      "money": 150,
+      "total": 150,
+      "capital": "Barad Dur",
+      "tainted_count": 1
+    },
+    "mordor": {
+      "id": 4,
+      "win": 0,
+      "chef": "Khal",
+      "name": "mordor",
+      "color": "#ff3636",
+      "loose": 0,
+      "money": 100,
+      "total": 100,
+      "capital": "Carn Dûm",
+      "tainted_count": 1
+    },
+    "gobelin": {
+      "id": 6,
+      "win": 0,
+      "chef": "Gimli",
+      "name": "gobelin",
+      "color": "#ff6f00",
+      "loose": 0,
+      "money": 250,
+      "total": 250,
+      "capital": "Montagnes Bleues",
+      "tainted_count": 1
+    },
+    "isengard": {
+      "id": 5,
+      "win": 0,
+      "chef": "Styg",
+      "name": "isengard",
+      "color": "#ffffff",
+      "loose": 0,
+      "money": 200,
+      "total": 200,
+      "capital": "Fondcombe",
+      "tainted_count": 1
+    }
+  },
+  "Annuminas": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Arthedain": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Barad_Dur": {
+    "color": "#c500ff",
+    "fight": "hidden",
+    "players": []
+  },
+  "Caradhras": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Carrefour": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Celebrant": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Dorwinion": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Dunharrow": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Emyn_Duir": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Emyn_Muil": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Enedwaith": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Entalluve": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Ered_Luin": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Est_Rohan": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Fondcombe": {
+    "color": "#ffffff",
+    "fight": "hidden",
+    "players": []
+  },
+  "Fontgrise": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Forlindon": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Girithlin": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Glad_Ereg": {
+    "color": "#ffffff",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Dregal",
+        "faction": 5,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/dgtyf3.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Solor",
+        "faction": 5,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/xz0Kdzr/PP2.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Potdefleur",
+        "faction": 5,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Walacho",
+        "faction": 5,
+        "handicap": 0
+      }
+    ]
+  },
+  "Grand_Mur": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Harlindon": {
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Kardymilo",
+        "faction": 6,
+        "handicap": 0
+      }
+    ]
+  },
+  "Haut_Nord": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Mer_Umbar": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Mont_Rhun": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Monts_Fer": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Osgiliath": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Ouestfold": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Pays_Bouc": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Pierreval": {
+    "color": "#09a4ff",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": "https://i.ibb.co/5YWVD5J/Md-Vy-r9apc5w-Vgjd-LU1.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Poudouc™",
+        "faction": 1,
+        "handicap": 0
+      }
+    ]
+  },
+  "Rhosgobel": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Siragalë": {
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": "https://i.ibb.co/jkgMyzK/6d3092bb77e23d9e161042b139e21f5f.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Gimli",
+        "faction": 6,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/ai9elx.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Zed",
+        "faction": 6,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/jk7S8P9/flat-750x1000-075-f.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "ErwannWerty",
+        "faction": 6,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/DfChL64/120388853-2737792939797475-404741517933478486-n.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Aragornanus",
+        "faction": 6,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Thorin",
+        "faction": 6,
+        "handicap": 0
+      }
+    ]
+  },
+  "Zagh_Kala": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Agasha_Dag": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Dol_Amroth": {
+    "color": "#fffc00",
+    "fight": "hidden",
+    "players": []
+  },
+  "Dol_Guldur": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Emyn_Arnen": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Forodwaith": {
+    "color": "#ff3636",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Bobofff",
+        "faction": 4,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/Hdbv04P/full-1.png",
+        "win": 0,
+        "lose": 0,
+        "name": "LordDoigbite",
+        "faction": 4,
+        "handicap": 0
+      },
+      {
+        "img": "https://cdn.discordapp.com/attachments/647472368587112448/1064134611095011379/telechargement.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "sirena2",
+        "faction": 4,
+        "handicap": 0
+      },
+      {
+        "img": "https://cdn.discordapp.com/attachments/757354803033538640/1064638309193748552/top-10-des-ratons-laveurs-les-plus-adorables-14dac6bc0fec2294.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Viper123",
+        "faction": 4,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/8lyn58.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Khal",
+        "faction": 4,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/rje3k6.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Loempia",
+        "faction": 4,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Amarrow",
+        "faction": 4,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/z6PBYSV/1118943.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Nuage",
+        "faction": 4,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/jz2SyTn/x2m-A1g1-T-400x400.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Elrohir",
+        "faction": 4,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Viper132",
+        "faction": 4,
+        "handicap": 0
+      }
+    ]
+  },
+  "Grand_Nord": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Halifirien": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Lossarnach": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Minhiriath": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Mont_Gräm": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Nain_Enidh": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Ouestemnet": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Ouestfolde": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Vinyalonde": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Azanulbizar": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Cair_Andros": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Cameth_Brin": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Champs_Iris": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Desert_Nord": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Dol_Tinereb": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Ephel_Duath": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Ered_Lithui": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Golfe_Harad": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Gue_Bruinen": {
+    "color": "#ffffff",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "ObiWanQnoobie",
+        "faction": 5,
+        "handicap": 0
+      }
+    ]
+  },
+  "Hall_Thorin": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Haut_Anduin": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Havres_Gris": {
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": "https://i.ibb.co/FbfH6xG/logoyoutube.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Utharlok",
+        "faction": 6,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/0CRdttX/grand-inquisitor.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Exorcisst",
+        "faction": 6,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/pLnZPDN/pdp-GDA.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Jaque",
+        "faction": 6,
+        "handicap": 0
+      }
+    ]
+  },
+  "Hobbitbourg": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Logathavuld": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Pays_Touque": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Pics_Gelees": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Porte_Noire": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Ruines_Nord": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Sombre_Cote": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Tol_Sulereb": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Breche_Rohan": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Champs_Verts": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Cirith_Ungol": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Gouffre_Helm": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Landes_Etten": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Marais_Morts": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Mer_Forochel": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Mer_Pelargir": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Minas_Morgul": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Minas_Tirith": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Ost_in_Edhil": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Proche_Harad": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Sud_Ithilien": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Valee_Anduin": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Baie_Forochel": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Collines_Vent": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Druwaith_Iaur": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Ered_Glamhoth": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Eryn_Lasgalen": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Foret_Druadan": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Froid_Eternel": {
+    "color": "#ff3636",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Lahkdar",
+        "faction": 4,
+        "handicap": 0
+      }
+    ]
+  },
+  "Landes_Angmar": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Mer_Enedwaith": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Mont_Gundabad": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Nord_Ithilien": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Pinath_Gellin": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Plaines_Avari": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Rivière_Lune": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Terre_Desolee": {
+    "color": "#00ff7e",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Matrugby",
+        "faction": 2,
+        "handicap": 0
+      },
+      {
+        "img": "https://cdn.discordapp.com/attachments/1063600381344620545/1064235310038384720/platane_3.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Platanus",
+        "faction": 2,
+        "handicap": 0
+      }
+    ]
+  },
+  "Terres_Brunes": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Triste_Plaine": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Trouee_Trolls": {
+    "color": "#ffffff",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": "https://i.goopics.net/5sdaor.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Styg",
+        "faction": 5,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/2t6fQB3/9bfc65c1e13e68105d9e352371d88aaf.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Elessar",
+        "faction": 5,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/StD36XJ/photo-profil-2.png",
+        "win": 0,
+        "lose": 0,
+        "name": "WindFox",
+        "faction": 5,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Orgash",
+        "faction": 5,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Avath",
+        "faction": 5,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/1ZP6QgG/16708405954187132722712092555465.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "C4m3leon",
+        "faction": 5,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Cs6tem",
+        "faction": 5,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Go'el",
+        "faction": 5,
+        "handicap": 0
+      }
+    ]
+  },
+  "Valee_Celduin": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Vieille_Foret": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Champs_Fornost": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Collines_Tours": {
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Rui",
+        "faction": 6,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Gammaction",
+        "faction": 6,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/u2oyl6.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Kyagara",
+        "faction": 6,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Illünt",
+        "faction": 6,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/Kh3xTDf/Capture-d-cran-1168.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Pippin",
+        "faction": 6,
+        "handicap": 0
+      }
+    ]
+  },
+  "Grands_Arpents": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Hall_Thranduil": {
+    "color": "#00ff7e",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "iamtheliquor",
+        "faction": 2,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/5hq0Ktj/Sauron.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Malodius",
+        "faction": 2,
+        "handicap": 0
+      }
+    ]
+  },
+  "Lointain_Harad": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Mer_Dol_Amroth": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Tanguy",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "BCOL|_M4r4bou",
+        "faction": 3,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/FXgM59P/Over-Do-Zz-GDABFME2.png",
+        "win": 0,
+        "lose": 0,
+        "name": "OverDoZz",
+        "faction": 3,
+        "handicap": 0
+      }
+    ]
+  },
+  "Avancee_Fangorn": {
+    "color": "#09a4ff",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": "https://i.ibb.co/P9Pg97T/lolicon-01-01.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Chabacks",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Colbern",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Feutscop",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Loken",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Valbalbuster",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Babavoi",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/QQscdZ9/ewxu4d.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Thieuthieu_De_Rune",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": "https://cdn.discordapp.com/attachments/830539346297225216/1064669702955204688/b0ef21f7c33d9cadaa9b68b1284b19e4.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "MrleNUL",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "JLS™",
+        "faction": 1,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/2u7onr.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Remtok™",
+        "faction": 1,
+        "handicap": 0
+      }
+    ]
+  },
+  "Centre_Ithilien": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Lande_Dessechee": {
+    "color": "#00ff7e",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": "https://i.ibb.co/WGkZbBS/Capture-d-e-cran-2019-06-22-a-16-59-11.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Myween",
+        "faction": 2,
+        "handicap": 0
+      }
+    ]
+  },
+  "Landes_Sauvages": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Mer_Havres_Gris": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Montagne_Destin": {
+    "color": "#c500ff",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Ashura",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Nico_-",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/DtvY8fP/Avatar-Valou.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Gréhelfe",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/g1sref.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Diablo",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/um5g88.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Ragzus",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.ibb.co/tbhD4Ts/pinterest-2-1024x1024.gif",
+        "win": 0,
+        "lose": 0,
+        "name": "Lolicorne",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": "https://cdn.discordapp.com/attachments/1040734144721846312/1069713023599652996/image0.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "rtoz_pag",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Dudu_Seigneur_de_Carn_Dum",
+        "faction": 7,
+        "handicap": 0
+      },
+      {
+        "img": null,
+        "win": 0,
+        "lose": 0,
+        "name": "Raugorn",
+        "faction": 7,
+        "handicap": 0
+      }
+    ]
+  },
+  "Sud_Foret_Noire": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Terre_Beornides": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Terres_Sauvages": {
+    "fight": "hidden",
+    "players": []
+  },
+  "Evendim_Collines": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Montagnes_Bleues": {
+    "color": "#ff6f00",
+    "fight": "hidden",
+    "players": []
+  },
+  "Montagnes_Grises": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Nord_Foret_Noire": {
+    "color": "#00ff7e",
+    "fight": "hidden",
+    "players": [
+      {
+        "img": "https://i.ibb.co/fdSrNkL/elfdemon-LOW.png",
+        "win": 0,
+        "lose": 0,
+        "name": "Seoxys",
+        "faction": 2,
+        "handicap": 0
+      },
+      {
+        "img": "https://i.goopics.net/v2vx5s.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Fingolfin",
+        "faction": 2,
+        "handicap": 0
+      },
+      {
+        "img": "https://cdn.discordapp.com/attachments/1062821828646674565/1064652410666094653/Bambou.jpg",
+        "win": 0,
+        "lose": 0,
+        "name": "Bambou",
+        "faction": 2,
+        "handicap": 0
+      }
+    ]
+  },
+  "Steppes_Cendrees": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Plateau_Gorgoroth": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "Desolation_Orientale": {
+    "color": "#3300000",
+    "fight": "hidden",
+    "players": []
+  },
+  "unblockable-frontiers": []
+}

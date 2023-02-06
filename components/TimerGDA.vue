@@ -3,7 +3,7 @@
           rounded text-lg transform transition duration-500 hover:scale-110 border-orange-400">
   <p>{{type ? $t('gde.fin') : $t('gde.debut') }} TOUR {{ tour }} </p>
   <!-- <p v-if="type !== 0">COMBATS</p> -->
-  <p v-if="message.length == 0">Prochain tour dans</p>
+  <p v-if="message.length == 0">Tour {{ tour + 1 }} dans</p>
   <div v-if="message.length == 0" class="text-xs text-center flex w-full items-center justify-center">
     <div class="w-auto mx-1 p-2 text-yellow-500 rounded-lg border-2 border-orange-400 bg-gray-900">
         <div class="font-mono leading-none" x-text="days"><span class="text-base">{{days}}</span> jours</div>

@@ -3,6 +3,42 @@
 
     <div class="flex flex-wrap text-center justify-evenly  items-center gap-2 pb-4">
 
+      <div class="text-pink-400 bg-gray-900 border-2 py-2 px-8 focus:outline-none hover:bg-gray-800
+          rounded text-lg transform transition duration-500 hover:scale-110 border-pink-400">
+            <p class="underline">Alliance des Flamant rose 🦩 </p>
+            <div class="flex">
+              <img
+                src="~/assets/new_gda/factions/gobelin.webp"
+                alt=""
+                class="h-12 w-12 mx-auto my-2"
+              />
+              <img
+                src="~/assets/new_gda/factions/homme.webp"
+                alt=""
+                class="h-12 w-12 mx-auto my-2"
+              />
+              <img
+                src="~/assets/new_gda/factions/nain.webp"
+                alt=""
+                class="h-12 w-12 mx-auto my-2"
+              />
+            </div>
+            <div  class="text-xs text-center flex w-full items-center justify-center">
+              <div class="w-auto mx-1 p-2 text-pink-500 rounded-lg border-2 border-pink-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{nbPlayerHomme + nbPlayerGobelin + nbPlayerNain}}</span> {{ $t('layout_gde_joueur') }}</div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-pink-500 rounded-lg border-2 border-pink-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{nbTerritoireHomme + nbTerritoireGobelin + nbTerritoireNain}}</span> {{ $t('gde.territoires') }}</div>
+              </div>
+              <!-- <div class="w-auto mx-1 p-2 text-pink-500 rounded-lg border-2 border-pink-400 bg-gray-900">
+                  <div class="font-mono leading-none">{{ $t('gde.score') }} : <span class="text-base">{{scoreBien}}</span></div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-pink-500 rounded-lg border-2 border-pink-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{result && result.bien && result.bien.wins}}</span>v / <span class="text-base">{{result && result.bien && result.bien.losses}}</span>d</div>
+              </div> -->
+            </div>
+          </div>
+
       <div class="flex items-center">
         <div>
           <button @click="beforeTour()"
@@ -24,6 +60,49 @@
           </button>
         </div>
       </div>
+
+       <div class="text-indigo-400 bg-gray-900 border-2 py-2 px-8 focus:outline-none hover:bg-gray-800
+          rounded text-lg transform transition duration-500 hover:scale-110 border-indigo-400">
+            <p class="underline">Equipe des Dauphins 🐬 </p>
+            <div class="flex">
+              <img
+                src="~/assets/new_gda/factions/mordor.webp"
+                alt=""
+                class="h-12 w-12 mx-auto my-2"
+              />
+              <img
+                src="~/assets/new_gda/factions/isengard.webp"
+                alt=""
+                class="h-12 w-12 mx-auto my-2"
+              />
+              <img
+                src="~/assets/new_gda/factions/elfe.webp"
+                alt=""
+                class="h-12 w-12 mx-auto my-2"
+              />
+              <img
+                src="~/assets/new_gda/factions/angmar.webp"
+                alt=""
+                class="h-12 w-12 mx-auto my-2"
+              />
+            </div>
+            <div  class="text-xs text-center flex w-full items-center justify-center">
+              <div class="w-auto mx-1 p-2 text-indigo-500 rounded-lg border-2 border-indigo-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{nbPlayerMordor + nbPlayerIsengard + nbPlayerElfe + nbPlayerAngmar}}</span> {{ $t('layout_gde_joueur') }}</div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-indigo-500 rounded-lg border-2 border-indigo-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{nbTerritoireMordor + nbTerritoireIsengard + nbTerritoireElfe + nbTerritoireAngmar}}</span> {{ $t('gde.territoires') }}</div>
+              </div>
+              <!-- <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
+                  <div class="font-mono leading-none">{{ $t('gde.score') }} : <span class="text-base">{{scoreMal}}</span></div>
+              </div>
+              <div class="w-auto mx-1 p-2 text-red-500 rounded-lg border-2 border-red-400 bg-gray-900">
+                  <div class="font-mono leading-none"><span class="text-base">{{result && result.mal && result.mal.wins}}</span>v / <span class="text-base">{{result && result.mal && result.mal.losses}}</span>d</div>
+              </div> -->
+            </div>
+          </div>
+
+
     </div>
 
 
@@ -9883,6 +9962,7 @@ export default {
   },
   data() {
     return {
+      mapsettings: [],
       tour: 0,
       isEnd: false,
       npoint: "",
@@ -9934,6 +10014,9 @@ export default {
       loseGobelin: 0,
       loseAngmar: 0,
       nbPlayers: 0,
+
+      currentMap: [],
+      currentTour: [],
 
       scoreBien: 0,
       scoreMal: 0,
@@ -10034,12 +10117,36 @@ export default {
       return info
     }, 
     beforeTour(){
+
+      function MergeRecursive(obj1, obj2) {
+        for (var p in obj2) {
+          try {
+            // Property in destination object set; update its value.
+            if (obj2[p].constructor==Object ) {
+              obj1[p] = MergeRecursive(obj1[p], obj2[p]);
+
+            } else {
+              obj1[p] = obj2[p];
+
+            }
+
+          } catch(e) {
+            // Property in destination object not set; create it and set its value.
+            obj1[p] = obj2[p];
+
+          }
+        }
+
+        return obj1;
+      }
+
+
       if(this.tour > 0){
         try {
           if(this.isEnd){
             try {
                 this.isEnd = false
-                this.map = require(`~/static/gdav3/before-resources-turn-${this.tour}.json`)
+                this.map = MergeRecursive(this.mapsettings, require(`~/static/gdav3/before-resources-turn-${this.tour}.json`));
                 this.updateMap()
               } 
               catch (e) {
@@ -10049,7 +10156,7 @@ export default {
           } else {
             this.tour--
             this.isEnd = true
-            this.map = require(`~/static/gdav3/beforemoves-end-turn-${this.tour}.json`)
+            this.map = MergeRecursive(this.mapsettings, require(`~/static/gdav3/beforemoves-end-turn-${this.tour}.json`));
             this.updateMap()
           }
         }
@@ -10060,15 +10167,40 @@ export default {
       }
     },
     afterTour(){
+
+      function MergeRecursive(obj1, obj2) {
+        for (var p in obj2) {
+          try {
+            // Property in destination object set; update its value.
+            if (obj2[p].constructor==Object ) {
+              obj1[p] = MergeRecursive(obj1[p], obj2[p]);
+
+            } else {
+              obj1[p] = obj2[p];
+
+            }
+
+          } catch(e) {
+            // Property in destination object not set; create it and set its value.
+            obj1[p] = obj2[p];
+
+          }
+        }
+
+        return obj1;
+      }
+
+
+      console.log("afterTour", this.isEnd, this.tour)
         try {
           if(this.isEnd){
             this.isEnd = false;
             this.tour++;
-            this.map = require(`~/static/gdav3/before-resources-turn-${this.tour}.json`)
+            this.map = MergeRecursive(this.mapsettings, require(`~/static/gdav3/before-resources-turn-${this.tour}.json`));
             this.updateMap()
           } else {
             this.isEnd = true;
-            this.map = require(`~/static/gdav3/beforemoves-end-turn-${this.tour}.json`)
+            this.map = MergeRecursive(this.mapsettings, require(`~/static/gdav3/beforemoves-end-turn-${this.tour}.json`));
             this.updateMap()
           }
         }
@@ -10079,7 +10211,8 @@ export default {
             this.isEnd = false;
             console.log('oh no big error')
             console.log(e)
-            this.map = this.currentMap
+            // console.log(this.currentMap)
+            this.map = MergeRecursive(this.mapsettings, this.currentMap);
             this.tour = this.currentTour
             this.updateMap()
           }
@@ -10236,6 +10369,9 @@ export default {
       }
     },
     updateMap() {
+
+      
+
       let objArray = []
       Object.keys(this.map.factions).forEach(key =>  {
           objArray.push({
@@ -10360,6 +10496,8 @@ export default {
     this.displayHUDValue = this.$cookies.get('checkHUD');
     this.loading = true;
     let map1 = require(`~/static/gdav3/map.json`);
+    this.mapsettings = map1
+    console.log(this.mapsettings, "dkeodk, ,,")
     
     let testApi = await this.$http.$get(
       "https://api.npoint.io/7a210a01331f3c385ed7"
@@ -10397,10 +10535,8 @@ export default {
     
 
     this.map = o3
-
-
+    this.currentMap = testApi
     this.tour = time.tour;
-    this.currentMap = this.map
     this.currentTour = this.tour
     this.loading = false;
 

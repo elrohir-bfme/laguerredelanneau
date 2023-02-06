@@ -722,7 +722,8 @@
   },
   "Caradhras": {
     "fight": "hidden",
-    "players": []
+    "players": [],
+    "color": "#3300000"
   },
   "Carrefour": {
     "color": "#3300000",

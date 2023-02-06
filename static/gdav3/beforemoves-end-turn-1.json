@@ -1825,6 +1825,7 @@
     "players": []
   },
   "Terres_Sauvages": {
+    "color": "#3300000",
     "fight": "hidden",
     "players": []
   },

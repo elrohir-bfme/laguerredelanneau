@@ -10208,7 +10208,7 @@ export default {
           if(!this.isEnd){
             this.afterTour()
           } else {
-            this.isEnd = false;
+            this.isEnd = true;
             console.log('oh no big error')
             console.log(e)
             // console.log(this.currentMap)

@@ -3637,7 +3637,7 @@
     },
     "Emyn_Muil": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408547/La%20Guerre%20de%20l%27Eriador/Emyn_Muil_lxiz28.jpg",
-      "map": 2,
+      "map": 4,
       "east": [3,4],
       "name": "Emyn Muil",
       "west": [1,2],
@@ -3906,7 +3906,7 @@
     },
     "Dol_Guldur": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408549/La%20Guerre%20de%20l%27Eriador/Dol_Guldur_vbh6fl.jpg",
-      "map": 2,
+      "map": 6,
       "east": [],
       "name": "Dol Guldur",
       "west": [],
@@ -4874,7 +4874,7 @@
       },
       "Barad_Dur": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1670662870/barad_dur_duujm8.png",
-        "map": 2,
+        "map": 6,
         "east": [],
         "name": "Barad Dur",
         "fortress": true,
@@ -4884,11 +4884,13 @@
         "mapdl": "https://drive.google.com/drive/folders/1jJXFV4dSa8ityp3CoPjBr-g5EuXTshkW?usp=share_link",
         "north": [
           1,
-          2
+          2,
+          3
         ],
         "south": [
-          3,
-          4
+          4,
+          5,
+          6
         ],
         "region": "mordor",
         "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1671810372/La%20Guerre%20de%20l%27Eriador/baraddur_quqjmj.png",
@@ -4936,7 +4938,7 @@
         "west": [],
         "color": "#3300000",
         "fight": "hidden",
-        "mapdl": "https://drive.google.com/drive/folders/1fYopI0y4ADu6x8ulfaR4Fi-1Ja5QO8C1?usp=sharing",
+        "mapdl": "https://drive.google.com/drive/folders/1oHSQyMH4EyU8w4gQ8PsD0a5jfIa1160z?usp=share_link",
         "north": [
           1,
           2

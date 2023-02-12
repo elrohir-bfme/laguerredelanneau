@@ -3519,7 +3519,7 @@
     },
     "Terres_Sauvages":{
       "img":"https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408555/La%20Guerre%20de%20l%27Eriador/Terres_Sauvages_qpf6lx.jpg",
-      "map":6,
+      "map":2,
       "name":"Terres Sauvages",
       "color":"#3300000",
       "fight":"hidden",

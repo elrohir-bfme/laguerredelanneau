@@ -5,7 +5,7 @@
         <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-2xl justify-center bg-gray border-orange-500 border-2 border-opacity-75 hover:border-orange-600">
            <nuxt-link to="/"><img alt="La Guerre de l'Anneau" title="La Guerre de l'Anneau" class="w-16 m-4" src="~assets/new_gda/icon.png"></nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gda">La Guerre de l'Anneau</nuxt-link>
-          <!-- <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/gda/matchs')">{{ $t('layout_gde_matchs') }}</nuxt-link> -->
+          <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/gda/matchs')">{{ $t('layout_gde_matchs') }}</nuxt-link>
           <!-- <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" :to="localePath('/gda/presentation')">{{ $t('layout_gde_pres') }}</nuxt-link> -->
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gda/inscription">Inscription</nuxt-link>
           <nuxt-link class="p-4 text-orange-500 hover:text-white hover:bg-gray-900" to="/gda/factions">Factions</nuxt-link>

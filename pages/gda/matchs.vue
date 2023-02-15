@@ -1,5 +1,5 @@
 <template>
-<MatchsGDE/>
+<Matchs/>
 </template>
 
 <script>

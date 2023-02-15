@@ -14,7 +14,7 @@
 
                   <div class="flex flex-col flex-1 self-start">
                     <div class="flex flex-row justify-center">
-                      <img v-for="(team1, index) in game.team1" :key="index" :alt="team1" class="w-10 h-10 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2"  :src="require(`~/assets/gde/factions/${team1}.webp`)">
+                      <img v-for="(team1, index) in game.team1" :key="index" :alt="team1" class="w-10 h-10 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2"  :src="require(`~/assets/new_gda/factions/${team1}.webp`)">
                     </div>
                     <div class="flex justify-center my-4">
                       <p>Slots:&nbsp</p><p v-for="(slots1, index) in game.slots1" :key="index">{{slots1}}<span v-if="(game.slots1.length-1) !== index">,&nbsp</span></p>
@@ -33,9 +33,9 @@
                         <tr v-for="(players1, index) in game.players1" :key="index"  >
                           <td class="p-2 whitespace-nowrap" :class="players1 && players1.won ? 'bg-green-600' : (players1 && players1.died) && 'bg-red-500'">
                               <div class="flex items-center">
-                                  <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" :src="require(`~/assets/gde/factions/${players1.faction}.webp`)" width="40" height="40" :alt="players1.faction"></div>
+                                  <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" :src="require(`~/assets/new_gda/factions/${players1.faction}.webp`)" width="40" height="40" :alt="players1.faction"></div>
                                   <div class="font-medium text-gray-200">{{players1.name}}</div>
-                                  <div class="w-10 h-10 flex-shrink-0 ml-2 sm:ml-3"><img class="rounded-full w-10 h-10 object-cover" :src="players1.img ? players1.img : require(`~/assets/gde/icons/${players1.faction}.png`)" width="40" height="40" :alt="players1.name"></div>
+                                  <div class="w-10 h-10 flex-shrink-0 ml-2 sm:ml-3"><img class="rounded-full w-10 h-10 object-cover" :src="players1.img ? players1.img : require(`~/assets/new_gda/icons/${players1.faction}.png`)" width="40" height="40" :alt="players1.name"></div>
                                   <!-- <div 
                                     v-if="(players1 && players1.won) || (players1 && players1.died)" 
                                     class="font-medium ml-2" 
@@ -68,7 +68,7 @@
 
                   <div class="flex flex-col flex-1 self-start">
                     <div class="flex flex-row justify-center">
-                      <img v-for="(team2, index) in game.team2" :key="index" :alt="team2" class="w-10 h-10 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2"  :src="require(`~/assets/gde/factions/${team2}.webp`)">
+                      <img v-for="(team2, index) in game.team2" :key="index" :alt="team2" class="w-10 h-10 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2"  :src="require(`~/assets/new_gda/factions/${team2}.webp`)">
                     </div>
 
                     <div class="flex justify-center my-4">
@@ -88,9 +88,9 @@
                         <tr v-for="(players2, index) in game.players2" :key="index"  >
                           <td class="p-2 whitespace-nowrap" :class="players2 && players2.won ? 'bg-green-600' : (players2 && players2.died) && 'bg-red-500'">
                               <div class="flex items-center">
-                                  <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" :src="require(`~/assets/gde/factions/${players2.faction}.webp`)" width="40" height="40" :alt="players2.faction"></div>
+                                  <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" :src="require(`~/assets/new_gda/factions/${players2.faction}.webp`)" width="40" height="40" :alt="players2.faction"></div>
                                   <div class="font-medium text-base text-gray-200">{{players2.name}}</div>
-                                  <div class="w-10 h-10 flex-shrink-0 ml-2 sm:ml-3"><img class="rounded-full w-10 h-10 object-cover" :src="players2.img ? players2.img : require(`~/assets/gde/icons/${players2.faction}.png`)" width="40" height="40" :alt="players2.name"></div>
+                                  <div class="w-10 h-10 flex-shrink-0 ml-2 sm:ml-3"><img class="rounded-full w-10 h-10 object-cover" :src="players2.img ? players2.img : require(`~/assets/new_gda/icons/${players2.faction}.png`)" width="40" height="40" :alt="players2.name"></div>
                                   <!-- <div 
                                     v-if="(players2 && players2.won) || (players2 && players2.died)" 
                                     class="font-medium ml-2" 

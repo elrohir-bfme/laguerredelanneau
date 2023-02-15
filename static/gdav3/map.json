@@ -262,8 +262,18 @@
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1SGLDVh0fQI322VvTYThDv8U4aedi2XEK?usp=sharing",
       "region": "arthedain",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1675431973/La%20Guerre%20de%20l%27Eriador/fornost_rlmfko.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1676454420/La%20Guerre%20de%20l%27Eriador/fornost_map_lbfbyv.png",
       "players": [],
+      "north": [
+        1,
+        2,
+        3
+      ],
+      "south": [
+        4,
+        5,
+        6
+      ],
       "adjacents": [
         "Champs_Fornost",
         "Haut_Nord"
@@ -810,18 +820,34 @@
     },
     "Annuminas": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1639127016/La%20Guerre%20de%20l%27Eriador/Annuminas_pqg5ou.jpg",
-      "map": 6,
+      "map": 4,
       "name": "Annuminas",
       "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/18GmSznHQJMZ9SyvxI42mXggS-5r8Obcf?usp=sharing",
       "region": "arthedain",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1642668076/La%20Guerre%20de%20l%27Eriador/annuminas_minimap_pplhsq.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1676454421/La%20Guerre%20de%20l%27Eriador/annuminas_jsojdq.png",
       "players": [],
       "adjacents": [
         "Champs_Verts",
         "Evendim_Collines",
         "Champs_Fornost"
+      ],
+      "east": [
+        3,
+        4
+      ],
+      "west": [
+        1,
+        2
+      ],
+      "north": [
+        3,
+        4
+      ],
+      "south": [
+        1,
+        2
       ],
       "description": "Les Collines du Crépuscule se trouvaient au nord de l'Eriador et bordaient le Lac du Crépuscule, formant un L partant du nord-ouest jusqu'au sud du lac."
     },
@@ -3216,17 +3242,17 @@
     },
     "Edoras": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408552/La%20Guerre%20de%20l%27Eriador/Edoras_iex9hh.jpg",
-      "map": 6,
-      "east": [1,2,3],
+      "map": 4,
+      "east": [2,3],
       "name": "Edoras",
-      "west": [4,5,6],
+      "west": [1,4],
       "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1Uh7jmcfuI1wb8tZ2wzdLN-JGT8YI7mIZ?usp=sharing",
-      "north": [],
-      "south": [],
+      "north": [1,2],
+      "south": [3,4],
       "region": "rohan",
-      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665439231/La%20Guerre%20de%20l%27Eriador/edoras_r2hg4n.png",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1676454421/La%20Guerre%20de%20l%27Eriador/edoras_quo3ac.png",
       "players": [],
       "adjacents": [
         "Dimholt",
@@ -4893,7 +4919,7 @@
           6
         ],
         "region": "mordor",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1671810372/La%20Guerre%20de%20l%27Eriador/baraddur_quqjmj.png",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1676454407/La%20Guerre%20de%20l%27Eriador/baradduurr_wy4gtq.png",
         "players": [],
         "adjacents": [
           "Lithlad",
@@ -4933,22 +4959,16 @@
       "Ephel_Duath": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1662928865/La%20Guerre%20de%20l%27Eriador/Ephel_Duath_lv08ac.webp",
         "map": 2,
-        "east": [],
+        "east": [2],
         "name": "Ephel Dúath",
-        "west": [],
+        "west": [1],
         "color": "#3300000",
         "fight": "hidden",
         "mapdl": "https://drive.google.com/drive/folders/1oHSQyMH4EyU8w4gQ8PsD0a5jfIa1160z?usp=share_link",
-        "north": [
-          1,
-          2
-        ],
-        "south": [
-          3,
-          4
-        ],
+        "north": [2],
+        "south": [1],
         "region": "mordor",
-        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1641304376/La%20Guerre%20de%20l%27Eriador/montagnes_bleu_minimap_w9u4e1.png",
+        "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1676455372/La%20Guerre%20de%20l%27Eriador/ephalduath_hpochg.png",
         "players": [],
         "adjacents": [
           "Porte_Noire",

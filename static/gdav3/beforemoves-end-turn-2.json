@@ -1365,11 +1365,6 @@
       }
     ]
   },
-  "Tol_Sulereb": {
-    "color": "#3300000",
-    "fight": "hidden",
-    "players": []
-  },
   "Breche_Rohan": {
     "color": "#3300000",
     "fight": "hidden",

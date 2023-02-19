@@ -1001,11 +1001,6 @@
       }
     ]
   },
-  "Zagh_Kala": {
-    "color": "#3300000",
-    "fight": "hidden",
-    "players": []
-  },
   "Agasha_Dag": {
     "color": "#3300000",
     "fight": "hidden",

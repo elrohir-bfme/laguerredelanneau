@@ -509,7 +509,7 @@ robots: {
             tour: "TOUR",
             matchs: "matchs",
             joueurs: "Joueurs",
-            resulat: "Résulat",
+            resulat: "Résultat",
             aucun: "Aucun Combat pour le moment !",
             participer: "Si vous voulez participer à l'évènement suffit de rejoindre le Discord et de prendre une faction. Pour plus d'informations aller voir les règles.",
           },

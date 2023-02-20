@@ -3494,12 +3494,10 @@
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1WRgdEROJ3Zf7WCzfdltTFKIzh6_6xR_T?usp=sharing",
       "north": [
-        1,
         2
       ],
       "south": [
-        3,
-        4
+        1
       ],
       "region": "sauvage",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1665524017/La%20Guerre%20de%20l%27Eriador/lorien_qjg2tu.png",

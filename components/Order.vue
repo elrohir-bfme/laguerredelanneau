@@ -33,16 +33,14 @@ export default {
         return {
             alliances: [
             [
-                "#ff85ee",
-                "#093aff",
-                "#0bff00",
-                "#00e3ff",
-                "#fffc00"
+                "#09a4ff",
+                "#fffc00",
+                "#FF6F00"
             ],
             [
+                "#00ff7e",
                 "#ff3636",
                 "#ffffff",
-                "#ff6f00",
                 "#c500ff"
             ]
         ]
@@ -67,6 +65,7 @@ export default {
                     res = true
                 }
             });
+            // console.log(res, "alliances ?", factionA, factionB)
             return res
         }
     },
@@ -85,8 +84,7 @@ export default {
             let regionsAdjacents = [];
 
             if(!this.player.withdrew) {
-                const adj = this.player
-                    .adjacents
+                const adj = this.player.adjacents
                     .map(region => this.findRegion(region));
 
                 const adj2 = adj
@@ -96,11 +94,6 @@ export default {
                     .map(region => this.findRegion(region))
                     .filter(region => this.areAllied(this.player.faction, region.color))
 
-
-                // if()
-
-                console.log(this.player, "PLAYER")
-
                 if(this.player.fortress) {
                     const adj3 = adj2
                         .filter(region => this.areAllied(this.player.faction, region.color))
@@ -109,8 +102,6 @@ export default {
                         .map(region => this.findRegion(region))
                         .filter(region => this.areAllied(this.player.faction, region.color))
                         .map(region => ({ ...region, velocity: true}))
-
-                    console.log(adj3, "ADJ3")
 
                     let array = [... [this.findRegion(this.player.code)], ... adj, ... adj2];
 
@@ -122,10 +113,7 @@ export default {
                         });
                     });
                     }
-
-                    console.log(array, adj3)
-
-                    console.log(getDifference(adj3, array), "GET DIFFERENCE");
+                    
                     regionsAdjacents = [... [this.findRegion(this.player.code)], ... adj, ... adj2, ... adj3];
                 } else {
                     regionsAdjacents = [... [this.findRegion(this.player.code)], ... adj, ... adj2];

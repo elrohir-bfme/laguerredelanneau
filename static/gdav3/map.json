@@ -3549,7 +3549,7 @@
       "fight":"hidden",
       "mapdl":"https://drive.google.com/drive/folders/1FKej7smbm98mWw8XijeW72fcz6DsueMe?usp=share_link",
       "players":[],
-      "adjacents":["Baie_Est","Dagorlad","Emyn_Muil","Terres_Brunes","Argonath"],
+      "adjacents":["Baie_Est","Dagorlad","Emyn_Muil","Terres_Brunes","Argonath", "Marais_Morts"],
       "description":"Les Terres Sauvages subit des invasions des chariots du Rhûn",
       "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1668637412/La%20Guerre%20de%20l%27Eriador/terres_sauvages_bwmxrz.png",
       "west": [2],

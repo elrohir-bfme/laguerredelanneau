@@ -510,28 +510,23 @@ layout: "gda",
                 this.factions = obj;
             }
         
-            if (true
-            && key!== "riviere"
-            && key!== "time"
-            && key!== "factions"
-            && key!== "La_Grande_Mer"
-            && key!== "Rhovanion"
-            && key!== "results"
-            && key!== "Alliance") {
+            if (obj && obj?.adjacents) {
             
+                console.log(key, "KEY", obj)
                 let newRegion = {
                     "name": obj.name,
-                    "code": key,
+                    "code": String(key),
                     "adjacents": obj.adjacents,
                     "fortress" : obj.hasOwnProperty("fortress"),
                     "color": obj.color
                 }
+                console.log(newRegion.code, "KEY", key)
                 this.regions.push(newRegion);
             }
 
         
 
-            if(obj.hasOwnProperty("players") && obj.players.length > 0) {
+            if(obj.hasOwnProperty("players") && obj.players.length > 0 && obj.hasOwnProperty("adjacents")) {
                 let obj2 = JSON.parse(JSON.stringify(obj['players']))
 
                 for (let player in obj2) {

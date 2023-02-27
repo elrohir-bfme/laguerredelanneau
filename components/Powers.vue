@@ -20,10 +20,10 @@
             <svg class="fill-current text-orange-500 inline-block h-5 w-5"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2h-7.229l7.014 7h-13.785v6h13.785l-7.014 7h7.229l10-10z"/></svg>
         </div>
 
-        <div v-if="power.length > 0 && power[0].name == 'taintedland'" class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
+        <div v-if="power.length > 0 && power[0].name == 'darkness'" class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
             <div>
-            <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="index+'taintedland'">    
-                <option v-for="region in taintedLand" :value="region.code" v-bind:key="region.name">{{region.name}}</option>
+            <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="index+'darkness'">    
+                <option v-for="region in darkness" :value="region.code" v-bind:key="region.name">{{region.name}}</option>
             </select>
             <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -82,7 +82,7 @@
         <div v-if="power.length > 0 && power[0].name == 'velocity'" class="relative inline-block w-full text-gray-700 col-span-2 md:col-span-4">
             <div>
                 <select  class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline" placeholder="Regular input" :id="index+'velocityregion'">    
-                <option v-for="region in taintedLand" :value="region.code" v-bind:key="region.name">{{region.name}}</option>
+                <option v-for="region in darkness" :value="region.code" v-bind:key="region.name">{{region.name}}</option>
                 </select>
                 <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
@@ -149,7 +149,7 @@ export default {
       return {
         selectedPower: null,
         powers: [
-            {name: "taintedland", price: 3000, realName: "Ombre"},
+            {name: "darkness", price: 3000, realName: "Ombre"},
             {name: "light", price: 200, realName: "Lumière d’Eärendil"}, 
             {name: "velocity", price: 400, realName: "Sort de Vélocité"}, 
             {name: "banner", price: 1000, realName: "Porte-Étendard"},
@@ -166,7 +166,7 @@ export default {
             {name: "Angmar", id: 7}],
         power: [],
         impossible: false,
-        taintedLandInfo: false,
+        darknessInfo: false,
         lightInfo: false,
         velocityInfo: false,
         bannerInfo: false,
@@ -238,27 +238,27 @@ export default {
             return this.powers
                 .filter(power => power.price <= this.$props.money)
         },
-        taintedLand: function () {
-            let taintedLand = this.$props.regions
+        darkness: function () {
+            let darkness = this.$props.regions
                 .filter(region => region.fortress == false)
                 .map(region => ({name: region.name, code: region.code}))
                 .sort((a, b) => a.name && a.name.localeCompare(b.name));
             
-            if(taintedLand.length > 0 && this.$props.money >= 3000){
-                this.taintedLandInfo = true
-                this.$parent.updatePower("taintedLandInfo", this.taintedLandInfo);
+            if(darkness.length > 0 && this.$props.money >= 3000){
+                this.darknessInfo = true
+                this.$parent.updatePower("darknessInfo", this.darknessInfo);
             } else {
-                this.taintedLandInfo = false
-                this.$parent.updatePower("taintedLandInfo", this.taintedLandInfo);
+                this.darknessInfo = false
+                this.$parent.updatePower("darknessInfo", this.darknessInfo);
             }
-            return taintedLand
+            return darkness
         },
         heal: function () {
             let forteresse = this.$props.regions
-                .filter(region => region.fortress == true && this.color(region.color) == this.$props.selectedFaction)
+                .filter(region => (region.fortress == true || region.camp == true) && this.color(region.color) == this.$props.selectedFaction)
 
             let heal = this.$props.playerList
-                .filter(player => player.factionNumber == this.$props.selectedFaction && player.handicap > 0 && player.code === forteresse[0].code)
+                .filter(player => player.factionNumber == this.$props.selectedFaction && player.handicap > 0 && forteresse.some(f => f.code === player.code))
 
             if(heal.length > 0){
                 this.healInfo = true
@@ -270,14 +270,12 @@ export default {
             return heal
         },
         banner: function () {
-            console.log(this.$props.selectedFaction)
-            this.$props.regions.map(e => console.log(e, e.fortress, e.color, this.color(e.color)))
             let forteresse = this.$props.regions
-                .filter(region => region.fortress == true && this.color(region.color) == this.$props.selectedFaction)
+                .filter(region => (region.fortress == true || region.camp == true) && this.color(region.color) == this.$props.selectedFaction)
 
-            console.log(this.$props.playerList, this.$props.selectedFaction, forteresse, "jdeijdejjdei")
+            
             let banner = this.$props.playerList
-                .filter(player => player.factionNumber == this.$props.selectedFaction && player.code === forteresse[0].code)
+                .filter(player => player.factionNumber == this.$props.selectedFaction && forteresse.some(f => f.code === player.code))
 
             if(banner.length > 0){
                 this.bannerInfo = true

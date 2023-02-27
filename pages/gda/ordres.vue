@@ -75,7 +75,7 @@
                 Les Pouvoirs - Vous avez ({{factionsSelected(selectedFaction).money}} de ressources)
             </h3>
 
-            <div v-if="factionsSelected(selectedFaction).money >= 300 || (taintedLandInfo && bannerInfo && healInfo)">
+            <div v-if="factionsSelected(selectedFaction).money >= 200 || (darknessInfo && bannerInfo && healInfo)">
 
 
                 <button @click="addPower" class="inline-flex text-xl items-center border-2 border-orange-400 h-10 px-40 text-orange-400 transition-colors duration-150 bg-gray-800 rounded-lg focus:outline-none  focus:shadow-outline hover:bg-gray-900 " id="btncreateFile" v-if="selectedFaction != null">
@@ -276,7 +276,7 @@ layout: "gda",
             { faction: 'Angmar', 'value': 7 }
         ],
         nbPowers: [],
-        taintedLandInfo: false,
+        darknessInfo: false,
         lightInfo: false,
         velocityInfo: false,
         bannerInfo: false,
@@ -301,9 +301,9 @@ layout: "gda",
                 let possible = true;
 
                 switch (pouvoir) {
-                    case "taintedland":
-                        if(document.getElementById(element + "taintedland") && document.getElementById(element + "taintedland").value){
-                            action = document.getElementById(element + "taintedland").value
+                    case "darkness":
+                        if(document.getElementById(element + "darkness") && document.getElementById(element + "darkness").value){
+                            action = document.getElementById(element + "darkness").value
                         } else {
                             possible = false
                         }
@@ -518,6 +518,7 @@ layout: "gda",
                     "code": String(key),
                     "adjacents": obj.adjacents,
                     "fortress" : obj.hasOwnProperty("fortress"),
+                    "camp": obj.hasOwnProperty("camp"),
                     "color": obj.color
                 }
                 console.log(newRegion.code, "KEY", key)
@@ -534,6 +535,7 @@ layout: "gda",
                         "name": obj2[player]['name'],
                         "region": obj.name,
                         "fortress": obj.fortress,
+                        "camp": obj.camp,
                         "code": key,
                         "adjacents":obj.adjacents,
                         "factionNumber": obj2[player]['faction'],

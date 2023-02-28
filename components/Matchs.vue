@@ -29,7 +29,7 @@
                       <img v-for="(team1, index) in game.team1" :key="index" :alt="team1" class="w-10 h-10 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2"  :src="require(`~/assets/new_gda/factions/${team1}.webp`)">
                     </div>
                     <div class="flex justify-center my-4">
-                      <p>Slots: </p><p v-for="(slots1, index) in game.slots1" :key="index">{{slots1}}<span v-if="(game.slots1.length-1) !== index">,&nbsp</span></p>
+                      <p>Slots:&nbsp</p><p v-for="(slots1, index) in game.slots1" :key="index">{{slots1}}<span v-if="(game.slots1.length-1) !== index">,&nbsp</span></p>
                     </div>
 
                     <div class="flex justify-center mt-2">
@@ -84,7 +84,7 @@
                     </div>
 
                     <div class="flex justify-center my-4">
-                      <p>Slots: </p><p v-for="(slots2, index) in game.slots2" :key="index">{{slots2}}<span v-if="(game.slots2.length-1) !== index">,&nbsp</span></p>
+                      <p>Slots:&nbsp</p><p v-for="(slots2, index) in game.slots2" :key="index">{{slots2}}<span v-if="(game.slots2.length-1) !== index">,&nbsp</span></p>
                     </div>
 
                      <div class="flex justify-center mt-2">

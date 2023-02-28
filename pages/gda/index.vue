@@ -5,7 +5,7 @@
 
       <div class="text-pink-400 bg-gray-900 border-2 py-2 px-8 focus:outline-none hover:bg-gray-800
           rounded text-lg transform transition duration-500 hover:scale-110 border-pink-400">
-            <p class="underline">Alliance des Flamant rose 🦩 </p>
+            <p class="underline">Alliance des Flamants roses 🦩 </p>
             <div class="flex">
               <img
                 src="~/assets/new_gda/factions/gobelin.webp"

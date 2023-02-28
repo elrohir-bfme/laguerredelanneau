@@ -4317,9 +4317,9 @@
     "Lointain_Harad": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1674408548/La%20Guerre%20de%20l%27Eriador/Lointain_harad_a9091k.jpg",
       "map": 4,
-      "east": [2,4],
+      "east": [1,2],
       "name": "Lointain Harad",
-      "west": [1,4],
+      "west": [3,4],
       "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1BOLL2jsK9MQKtJhD-LihBvypsK5rI2ti?usp=sharing",

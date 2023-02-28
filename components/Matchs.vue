@@ -1,8 +1,20 @@
 <template>
 <section class="text-gray-500 container mx-auto bg-lotr rounded-lg body-font overflow-hidden border-2 border-red-500">
   <div class="container px-5 py-24 mx-auto">
+
+
+    <div v-if="tour ? false : true" class="mb-20 align-middle text-center items-center text-white">
+    <label class="block text-white-500 font-bold">
+      <input v-model="combats" class="mr-2 leading-tight" type="checkbox">
+      <span class="text-2xl">
+        Afficher les combats du tour
+      </span>
+    </label>
+    </div>
+
+
     <div v-for="(match, index) in matchs" :key="index" class="-my-8">
-      <div v-if="tour ? Boolean(match.turn === tour) : true" class="p-8 flex flex-wrap md:flex-no-wrap border-b-2 border-gray-800  hover:bg-gray-900">
+      <div v-if="combats ? Boolean(match.turn === matchs.length-1) : false || tour ? Boolean(match.turn === tour) : true" class="p-8 flex flex-wrap md:flex-no-wrap border-b-2 border-gray-800  hover:bg-gray-900">
         <div class="md:w-32 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
           <span class="tracking-widest font-medium title-font text-white">{{ $t('matchs.tour') }} {{match.turn}}</span>
           <span class="mt-1 text-gray-600 text-sm">{{match.date}}</span>
@@ -17,7 +29,7 @@
                       <img v-for="(team1, index) in game.team1" :key="index" :alt="team1" class="w-10 h-10 object-cover object-center flex-shrink-0 rounded-full mr-4 ml-2"  :src="require(`~/assets/new_gda/factions/${team1}.webp`)">
                     </div>
                     <div class="flex justify-center my-4">
-                      <p>Slots:&nbsp</p><p v-for="(slots1, index) in game.slots1" :key="index">{{slots1}}<span v-if="(game.slots1.length-1) !== index">,&nbsp</span></p>
+                      <p>Slots: </p><p v-for="(slots1, index) in game.slots1" :key="index">{{slots1}}<span v-if="(game.slots1.length-1) !== index">,&nbsp</span></p>
                     </div>
 
                     <div class="flex justify-center mt-2">
@@ -60,8 +72,8 @@
                     </div>
                     <p class="text-white title-font font-medium text-center mt-*">{{ $t('matchs.resulat') }}</p>
                     <div class="justify-center flex">
-                        <img v-if="game.team1Won" alt="bien" class="w-auto mr-4 ml-2"  src="~/assets/gde/bien.png">
-                        <img v-if="game.team2Won" alt="mal" class="w-auto mr-4 ml-2"  src="~/assets/gde/mal.png">
+                      <span class="text-center" v-if="game.team1Won">Equipe des <br>Dauphins 🐬</span>
+                      <span class="text-center" v-if="game.team2Won">Alliance des <br>Flamants roses 🦩</span>
                     </div>
                     
                   </div>
@@ -72,7 +84,7 @@
                     </div>
 
                     <div class="flex justify-center my-4">
-                      <p>Slots:&nbsp</p><p v-for="(slots2, index) in game.slots2" :key="index">{{slots2}}<span v-if="(game.slots2.length-1) !== index">,&nbsp</span></p>
+                      <p>Slots: </p><p v-for="(slots2, index) in game.slots2" :key="index">{{slots2}}<span v-if="(game.slots2.length-1) !== index">,&nbsp</span></p>
                     </div>
 
                      <div class="flex justify-center mt-2">
@@ -128,7 +140,8 @@
 export default {
     data() {
     return {
-      matchs: []
+      matchs: [],
+      combats: true,
     }
   },
   props: {

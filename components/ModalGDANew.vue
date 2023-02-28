@@ -17,9 +17,9 @@
                 <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
               <span>Télécharger</span>
             </a>
-            <span  v-if="map[region] && map[region].land" class="absolute bottom-2 left-2 text-white text-xl shadow-md underline inline-flex items-center">
-              <img  src="~assets/gde/img/terre.png">
-              Terre souillée activée
+            <span  v-if="map[region] && map[region].darkness" class="absolute bottom-2 left-2 text-white text-xl shadow-md underline inline-flex items-center">
+              <img  src="~assets/gde/img/darkness.png">
+              Ombre
             </span>
             
           </div>
@@ -111,21 +111,22 @@
                     </div>
                     <div class="flex flex-col">
                         <span class="text-center text-white" >
-                            {{player.name.replace(/_/g, " ")}} <img v-if="player.chef" alt="Chef" class="w-4 h-4 inline-block align-baseline" src="~assets/svg/crown.svg">
+                            {{player.name.replace(/_/g, " ")}} <img v-if="player.chef" alt="Chef" class="w-4 h-4 inline-block align-baseline" src="~assets/svg/crown.svg"> <img v-if="player.flag" alt="Etendard" class="w-4 h-4 inline-block align-baseline" src="~assets/svg/flag.svg">
                         </span>
                         <span class="text-xs text-white">
                             {{player.win}} <img alt="Victoire" class="w-4 h-4 inline-block" src="~assets/svg/trophy.svg">
                             {{player.lose}} <img alt="Défaite" class="w-4 h-4 inline-block" src="~assets/svg/skull.svg">
                             <img v-if="player.withdrew" alt="Repli" class="w-6 h-6 inline-block" src="~assets/new_gda/icons/stop.png">
-                            
                             <span v-if="player.handicap > 0 || player.extrahandicap > 0">{{(player.handicap >= 2 ? 30 : player.handicap * 15) + (player.extrahandicap || 0)}} %
                               <img v-if="player.handicap == 0 && player.extrahandicap > 0" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sangjaune.svg">
                               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sangorange.svg">
                               <img v-if="player.handicap >= 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sang.svg">
-                              
                             </span>
                         </span>
-                        
+                    </div>
+                    <div v-if="player.mercenary" class="flex-shrink-0">
+                      <img :src="require(`~/assets/new_gda/factions/${icons(player.mercenary)}.webp`)"
+                      class="mx-auto object-cover rounded-full h-7 w-7"/>
                     </div>
                 </div>
             </div>

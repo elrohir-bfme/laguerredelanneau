@@ -6,10 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt generate",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "gda": "node gda.js",
-    "compile": "npx tsc && node mouvements/out/UpdateMap.js",
-    "runMoves": "node mouvements/out/mouvements.js"
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxt/http": "^0.6.4",

@@ -128,6 +128,9 @@
                       <img :src="require(`~/assets/new_gda/factions/${icons(player.mercenary)}.webp`)"
                       class="mx-auto object-cover rounded-full h-7 w-7"/>
                     </div>
+                    <div v-if="player.light" class="flex-shrink-0">
+                      <img src="~/assets/gde/img/cloudbrake.png" class="mx-auto object-cover rounded-full h-7 w-7"/>
+                    </div>
                 </div>
             </div>
           </div>

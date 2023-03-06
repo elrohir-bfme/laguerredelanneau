@@ -7951,8 +7951,8 @@
                   <path id="Shape-2516" data-name="Shape" class="cls-6"
                     d="M2087.45,868.3a7,7,0,0,1-1.32,1.33,6,6,0,0,1-8.55,0l-22.7-22.7a6,6,0,0,1,0-8.54l1-1a1.42,1.42,0,0,1,2.07,0l29,29a1.45,1.45,0,0,1,.44,1.91Z" />
                 </g>
-                <g :class="map.Mer_Havres_Gris ? map.Mer_Havres_Gris.fight : 'hidden'" id="s_Mer_Havres_Gris" data-name="010---Swords">
-                </g> 
+                <!-- <g :class="map.Mer_Havres_Gris ? map.Mer_Havres_Gris.fight : 'hidden'" id="s_Mer_Havres_Gris" data-name="010---Swords">
+                </g>  -->
                 <g :class="map.Nain_Enidh ? map.Nain_Enidh.fight : 'hidden'" id="s_Nain_Enidh" data-name="010---Swords">
                   <path id="Shape-2500" data-name="Shape" class="cls-2"
                     d="M2062.69,796.39a3.13,3.13,0,0,0-2.21-1l-13.56-.73a3,3,0,0,0-3.24,3.24l.74,13.56a3.14,3.14,0,0,0,1,2.21l30.8,25.64,8.11-2.95.88-1,2.07-9.28Z" />

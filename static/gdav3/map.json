@@ -2150,6 +2150,7 @@
       "east": [],
       "name": "Les Montagnes Bleues",
       "west": [],
+      "fortress": true,
       "color": "#3300000",
       "fight": "hidden",
       "mapdl": "https://drive.google.com/drive/folders/1FN8LzCAmB5X_Miv9IkyQa9J_HBdvF8cK?usp=share_link",

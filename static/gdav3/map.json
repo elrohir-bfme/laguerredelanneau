@@ -3961,7 +3961,7 @@
     },
     "Sud_Foret_Noire": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1674408552/La%20Guerre%20de%20l%27Eriador/Sud_Foret_Noire_fxj8iz.jpg",
-      "map": 2,
+      "map": 4,
       "east": [2,3],
       "name": "Sud de la Foret Noire",
       "west": [1,4],
@@ -4017,7 +4017,7 @@
     },
     "Valee_Celduin": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1631773362/Valee_Celduin_e1rqri.jpg",
-      "map": 2,
+      "map": 4,
       "east": [3,4],
       "name": "Vallée du Celduin",
       "west": [1,2],
@@ -4038,7 +4038,7 @@
     },
     "Dorwinion": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1674408555/La%20Guerre%20de%20l%27Eriador/Dorwinion_cjzo7a.jpg",
-      "map": 2,
+      "map": 4,
       "east": [2,3],
       "name": "Dorwinion",
       "west": [1,4],

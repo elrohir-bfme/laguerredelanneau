@@ -35,7 +35,7 @@ export default {
             [
                 "#09a4ff",
                 "#fffc00",
-                "#FF6F00"
+                "#ff6f00"
             ],
             [
                 "#00ff7e",
@@ -58,16 +58,16 @@ export default {
                 }
             }
         },
-        areAllied(factionA, factionB){
-            let res = false;
-            this.alliances.forEach(e => {
-                if(e.includes(factionA) && e.includes(factionB)) {
-                    res = true
+        areAllied(playerColor, regionColor, alliances) {
+            for (const alliance of alliances) {
+                // console.log(playerColor, regionColor, alliance.includes(playerColor.toLowerCase()), alliance.includes(regionColor.toLowerCase()), "jddijedie")
+                if (alliance.includes(playerColor.toLowerCase()) && alliance.includes(regionColor.toLowerCase())) {
+                    // console.log("jdiejide TRUE")
+                    return true;
                 }
-            });
-            // console.log(res, "alliances ?", factionA, factionB)
-            return res
-        }
+            }
+            return false;
+        },
     },
     props: {
         player: {
@@ -87,20 +87,23 @@ export default {
                 const adj = this.player.adjacents
                     .map(region => this.findRegion(region));
 
-                const adj2 = adj
-                    .filter(region => this.areAllied(this.player.faction, region.color))
+                    const adj2 = adj
+                    .filter(region => this.areAllied(this.player.faction, region.color, this.alliances))
                     .map(region => region.adjacents)
                     .flat(Infinity)
                     .map(region => this.findRegion(region))
-                    .filter(region => this.areAllied(this.player.faction, region.color))
+                    .filter(region => this.areAllied(this.player.faction, region.color, this.alliances));
 
+                // if(this.player && this.player.name == "Aragornanus"){
+                //     console.log(adj, adj2, "jdizjdie", this.player)
+                // }
                 if(this.player.fortress) {
                     const adj3 = adj2
-                        .filter(region => this.areAllied(this.player.faction, region.color))
+                        .filter(region => this.areAllied(this.player.faction, region.color, this.alliances))
                         .map(region => region.adjacents)
                         .flat(Infinity)
                         .map(region => this.findRegion(region))
-                        .filter(region => this.areAllied(this.player.faction, region.color))
+                        .filter(region => this.areAllied(this.player.faction, region.color, this.alliances))
                         .map(region => ({ ...region, velocity: true}))
 
                     let array = [... [this.findRegion(this.player.code)], ... adj, ... adj2];
@@ -123,6 +126,10 @@ export default {
             } else {
                 regionsAdjacents = [this.findRegion(this.player.code)]
             }
+
+            // if(this.player && this.player.name == "Aragornanus"){
+            //         console.log(regionsAdjacents, "deidijeijdeijeid")
+            //     }
 
             return regionsAdjacents
                 .filter((region, i, a) => i === a.findIndex(f => f.code === region.code))

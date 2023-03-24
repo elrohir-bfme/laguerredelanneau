@@ -9803,30 +9803,14 @@
               </svg>
             </span>
           </li>
-          <!-- <li>
-            <span
-              :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
-              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center"
-              >{{ faction.faction.money }}
-              <svg
-                :class="`text-${color(faction.id).color}-400`"
-                class="ml-2 stroke-current h-5 w-5"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+          <li>
+            <span :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
+              class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center">
+              {{ $t('gde.argent') }} : {{ faction.faction.money }}
             </span>
-          </li> -->
+          </li>
         </ul>
-        <ul class="flex flex-row mt-4 space-x-1 font-sans">
+        <!-- <ul class="flex flex-row mt-4 space-x-1 font-sans">
           <li>
             <span :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
               class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center">
@@ -9839,7 +9823,7 @@
               {{ $t('gde.score') }} : {{ faction.faction.total }}
             </span>
           </li>
-        </ul>
+        </ul> -->
         <ul class="flex flex-row mt-4 space-x-1 font-sans">
           <li>
             <span :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"

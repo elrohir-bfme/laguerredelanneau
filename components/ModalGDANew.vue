@@ -122,6 +122,7 @@
                               <img v-if="player.handicap == 1" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sangorange.svg">
                               <img v-if="player.handicap >= 2" alt="Handicap" class="w-4 h-4 inline-block" src="~assets/svg/sang.svg">
                             </span>
+                            <img v-if="player.banner" alt="Banner" class="w-6 h-6 inline-block" src="~assets/svg/flag.svg">
                         </span>
                     </div>
                     <div v-if="player.mercenary" class="flex-shrink-0">

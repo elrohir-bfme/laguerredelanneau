@@ -61,41 +61,40 @@
                                 </td>
                             </tr> -->
                             <tr>
-                                <table class="table-auto w-full border-2 border-gray-800 rounded-xl">
+                                <table class="table-auto md:table-fixed w-full border-2 border-gray-800 rounded-xl">
                                     <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-800">
                                         <tr>
                                             <th class="p-2 whitespace-nowrap">
-                                                <div class="font-semibold text-left">{{ $t('league.map') }}</div>
+                                                <div class="font-semibold text-justify">{{ $t('league.map') }}</div>
                                             </th>
                                             <th class="p-2 whitespace-nowrap">
-                                                <div class="font-semibold text-left">{{ $t('league.win') }}</div>
+                                                <div class="font-semibold text-justify">{{ $t('league.win') }}</div>
                                             </th>
                                             <th class="p-2 whitespace-nowrap">
-                                                <div class="font-semibold text-left">{{ $t('league.lose') }}</div>
+                                                <div class="font-semibold text-justify">{{ $t('league.lose') }}</div>
                                             </th>
                                             <th class="p-2 whitespace-nowrap">
-                                                <div class="font-semibold text-left">{{ $t('league.replay') }} -
-                                                    {{ $moment(game.attributes.date).lang($i18n.locale).format('MMMM Do YYYY, h:mm:ss a') }}
-                                        ({{ $moment(game.attributes.date).lang($i18n.locale).fromNow()}})
+                                                <div class="font-semibold text-justify">{{ $t('league.replay') }} -
+                                                    {{ $moment(game.attributes.createdAt).lang($i18n.locale).format('MMMM Do YYYY, h:mm:ss a') }}
+                                                    ({{ $moment(game.attributes.createdAt).lang($i18n.locale).fromNow()}})
                                                 </div>
                                             </th>
-                                            <!-- <th class="p-2 whitespace-nowrap">
-                                                <div class="font-semibold text-left">{{ $t('league.replay') }} -
+                                            <th class="p-2 whitespace-nowrap">
+                                                <div class="font-semibold text-right">
                                                     ⌛ Duration of the game
                                                 </div>
-                                            </th> -->
-                                            
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody class="text-sm divide-y divide-orange-500">
                                         <tr>
                                             <td class="p-2 whitespace-nowrap">
-                                                <div class="text-lg text-left text-white">
+                                                <div class="text-lg text-justify text-white">
                                                     {{game.attributes.map.data && game.attributes.map.data.attributes.name}}
                                                 </div>
                                             </td>
                                             <td class="p-2 whitespace-nowrap">
-                                                <div class="text-lg text-left text-white">
+                                                <div class="text-lg text-justify text-white">
                                                     {{game.attributes.player_win.data && game.attributes.player_win.data.attributes.name}}
                                                     (<span :class="`text-${factionList.find(o => o.name === (game.attributes.faction_win.data && game.attributes.faction_win.data.attributes.name)).color}-500`">
                                                         {{game.attributes.faction_win.data && game.attributes.faction_win.data.attributes.name}}
@@ -103,7 +102,7 @@
                                                 </div>
                                             </td>
                                             <td class="p-2 whitespace-nowrap">
-                                                <div class="text-lg text-left text-white">
+                                                <div class="text-lg text-justify text-white">
                                                     {{game.attributes.player_lose.data && game.attributes.player_lose.data.attributes.name}}
                                                     (<span :class="`text-${factionList.find(o => o.name === (game.attributes.faction_lose.data && game.attributes.faction_lose.data.attributes.name)).color}-500`">
                                                     {{game.attributes.faction_lose.data && game.attributes.faction_lose.data.attributes.name}}
@@ -111,17 +110,28 @@
                                                 </div>
                                             </td>
                                             <td class="p-2 whitespace-nowrap" v-if="game.attributes.replay.data !== null">
-                                                <a target="_blank" :href="`https://api.laterredumilieu.fr${game.attributes.replay.data.attributes.url}`" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 mx-2 rounded inline-flex items-center">
-                                                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-                                                    <span>{{game.attributes.replay.data.attributes.name}}</span>
-                                                </a>
+                                                <div class="text-justify text-white">
+                                                    <a target="_blank" :href="`https://api.laterredumilieu.fr${game.attributes.replay.data.attributes.url}`" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 mx-2 rounded inline-flex items-center">
+                                                        <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                                                        <span>{{game.attributes.replay.data.attributes.name}}</span>
+                                                    </a>
+                                                </div>
                                             </td>
-                                            <!-- <td class="p-2 whitespace-nowrap" v-if="game.attributes.date_end !== null && game.attributes.date_start !== null">
-                                                 <div class="text-lg text-left text-white">
-                                                    {{Math.ceil($moment.duration($moment.unix(game.attributes.date_end).diff($moment.unix(game.attributes.date_start))).asMinutes())}} minutes
+                                            <td class="p-2 whitespace-nowrap" v-else>
+                                                <div class="text-lg text-justify text-white">
+                                                    -
+                                                </div>
+                                            </td>
+                                            <td class="p-2 whitespace-nowrap" v-if="game.attributes.date_end !== null && game.attributes.date_start !== null">
+                                                 <div class="text-lg text-right text-white">
+                                                    {{ Math.ceil($moment.duration($moment(game.attributes.date_end).diff($moment(game.attributes.date_start))).asMinutes()) }} Minutes
                                                  </div>
-                                            </td> -->
-                                            
+                                            </td>
+                                            <td class="p-2 whitespace-nowrap" v-else>
+                                                <div class="text-lg text-right text-white">
+                                                    -
+                                                </div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -133,53 +143,8 @@
 
         </div>
     </div>
-
-
     </div>
-
-
     </div>
-
-
-
-
-    <!-- <div v-for="(game, index) in games" v-bind:key="index" class="flex relative pb-20 sm:items-center md:w-2/4 mx-auto bg-gray-900 p-4" :class="index == 0 && 'mt-10'">
-      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-        <div class="h-full w-1 bg-gray-900 rounded-sm pointer-events-none"></div>
-      </div>
-      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-orange-600 text-white relative z-10 title-font font-medium text-sm">{{index+1}}</div>
-      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h2 class="font-medium title-font text-white mb-1 text-xl">
-            {{ $moment(game.attributes.date).lang($i18n.locale).format('MMMM Do YYYY, h:mm:ss a') }} ({{ $moment(game.attributes.date).lang($i18n.locale).fromNow()}}) - BO{{game.attributes.bo}}
-          </h2>
-          <div v-for="(replay, index) in game.attributes.replays" v-bind:key="index" class="leading-relaxed">
-            Match {{index+1}}
-            {{replay.player_win.data && replay.player_win.data.attributes.name}}
-            {{game.attributes.elo[index] && game.attributes.elo[index].player_win && game.attributes.elo[index].player_win.gain ? `[+${game.attributes.elo[index].player_win.gain}]` : "" }}
-
-            (<span :class="`text-${factionList.find(o => o.name === (replay.faction_win.data && replay.faction_win.data.attributes.name)).color}-500`">
-                {{replay.faction_win.data && replay.faction_win.data.attributes.name}}
-            </span>) 
-            VS 
-            (<span :class="`text-${factionList.find(o => o.name === (replay.faction_lose.data && replay.faction_lose.data.attributes.name)).color}-500`">
-                {{replay.faction_lose.data && replay.faction_lose.data.attributes.name}}
-            </span>)
-            {{game.attributes.elo[index] && game.attributes.elo[index].player_lose && game.attributes.elo[index].player_lose.loss ? `[${game.attributes.elo[index].player_lose.loss}]` : "" }} 
-            {{replay.player_lose.data.attributes.name}}
-
-            <div class="p-2 inline-flex" v-if="replay.replay.data !== null">
-                <a target="_blank" :href="`https://api.laterredumilieu.fr${replay.replay.data.attributes.url}`" class="bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 mx-2 rounded inline-flex items-center">
-                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-                    <span>{{replay.map.data && replay.map.data.attributes.name}}</span>
-                </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div> -->
-
   </div>
 </section>
 </template>
@@ -208,8 +173,8 @@ export default {
     },
     async asyncData({ $axios }) {
         const query = qs.stringify({
-            sort: ['date_start:desc'],
-            fields: ['date_start', 'date_end'],
+            sort: ['createdAt:desc'],
+            fields: ['date_start', 'date_end', 'createdAt'],
             populate: {
                 faction_lose: {
                     fields: ['name'],
@@ -249,8 +214,8 @@ export default {
                     return true;
                 } else {
                     const query = qs.stringify({
-                        sort: ['date_start:desc'],
-                        fields: ['date_start', 'date_end'],
+                        sort: ['createdAt:desc'],
+                        fields: ['date_start', 'date_end', 'createdAt'],
                         populate: {
                             faction_lose: {
                                 fields: ['name'],
@@ -297,9 +262,9 @@ export default {
 
                 let test = this.games.sort(function(a,b){
                     if(sortyu){
-                        return new Date(b.attributes.date) - new Date(a.attributes.date);
+                        return new Date(b.attributes.createdAt) - new Date(a.attributes.createdAt);
                     } else {
-                        return new Date(a.attributes.date) - new Date(b.attributes.date);
+                        return new Date(a.attributes.createdAt) - new Date(b.attributes.createdAt);
                     }
                 // Turn your strings into dates, and then subtract them
                 // to get a value that is either negative, positive, or zero.

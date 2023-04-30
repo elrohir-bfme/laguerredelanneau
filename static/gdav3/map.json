@@ -2403,7 +2403,7 @@
     },
     "Desert_Nord": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1674408557/La%20Guerre%20de%20l%27Eriador/Desert_Nord_ypueuy.jpg",
-      "map": 2,
+      "map": 4,
       "east": [3,4],
       "name": "Desert du Nord",
       "west": [1,2],

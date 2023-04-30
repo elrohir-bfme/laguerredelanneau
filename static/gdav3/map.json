@@ -5339,7 +5339,7 @@
       },
       "Greylin": {
         "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1662928990/La%20Guerre%20de%20l%27Eriador/Greylin_simoi1.png",
-        "map": 2,
+        "map": 6,
         "east": [1,2,3],
         "name": "Greylin",
         "west": [4,5,6],

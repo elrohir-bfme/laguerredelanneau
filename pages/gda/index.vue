@@ -10435,35 +10435,31 @@ export default {
         let obj2 = JSON.parse(JSON.stringify(obj["players"]));
         for (var player in obj2) {
           switch (obj2[player]["faction"]) {
-            case 2:
+            case 1:
               this.nbPlayerHomme += 1;
               this.nbPlayers += 1;
               break;
-            case 3:
-              this.nbPlayerRohan += 1;
-              this.nbPlayers += 1;
-              break;
-            case 4:
+            case 2:
               this.nbPlayerElfe += 1;
               this.nbPlayers += 1;
               break;
-            case 5:
+            case 3:
               this.nbPlayerNain += 1;
               this.nbPlayers += 1;
               break;
-            case 6:
+            case 4:
               this.nbPlayerMordor += 1;
               this.nbPlayers += 1;
               break;
-            case 7:
+            case 5:
               this.nbPlayerIsengard += 1;
               this.nbPlayers += 1;
               break;
-            case 8:
+            case 6:
               this.nbPlayerGobelin += 1;
               this.nbPlayers += 1;
               break;
-            case 9:
+            case 7:
               this.nbPlayerAngmar += 1;
               this.nbPlayers += 1;
               break;

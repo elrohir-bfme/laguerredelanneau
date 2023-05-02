@@ -9791,7 +9791,7 @@
         </h3>
         <h6 class="mt-2 text-xl font-bold underline">{{ faction.faction.chef }}</h6>
 
-        <ul class="flex flex-row mt-4 space-x-1 font-sans">
+        <ul class="flex flex-row mt-4 space-x-1 font-sans text-white">
           <li>
             <span :class="`bg-${color(faction.id).color}-${color(faction.id).codeHover2}`"
               class="flex rounded-full uppercase px-2 py-1 text-xs mr-1 items-center">

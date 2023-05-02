@@ -10241,7 +10241,7 @@ export default {
     let map1 = require(`~/static/gdav3/map.json`);
     
     let testApi = await this.$http.$get(
-      "https://api.npoint.io/7988a2fbb6a12d677fea"
+      "https://api.npoint.io/185c3793f7c3cac5c1c0"
       ); //API
       
     let factions = testApi.factions

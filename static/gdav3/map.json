@@ -1419,7 +1419,7 @@
       "description": "Les Collines des Tours, ou Emyn Beraid en sindarin, sont trois collines vertes situées dans l'ouest de l'Eriador, entre les Coteaux du Lointain et les Havres Gris. Elles doivent leur nom aux Tours Blanches qui les surmontaient, construites à la fin du Deuxième âge par Gil-Galad pour le roi d'Arnor : Elendil."
     },
     "Cameth_Brin": {
-      "img": "https://cdn.discordapp.com/attachments/877150946562551808/878991075799347230/cameth_brin-alex.jpg",
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1631773368/Rhudaur_ucffv9.jpg",
       "map": 4,
       "east": [
         2,
@@ -2791,7 +2791,7 @@
       "west": [1,2],
       "color": "#3300000",
       "fight": "hidden",
-      "mapdl": "https://drive.google.com/drive/folders/1EzQgPaffUmiFzb0qluSarAc7n3uETQp0?usp=sharing",
+      "mapdl": "https://drive.google.com/drive/folders/1EzQgPaffUmiFzb0qluSarAc7n3uETQp0?usp=share_link",
       "north": [
         1,
         2

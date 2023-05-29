@@ -92,7 +92,7 @@ export default {
     this.loading = true;
 
     this.map = await this.$http.$get(
-      "https://www.npoint.io/docs/3161305ced8bd4e9d70c"
+      "https://api.npoint.io/3161305ced8bd4e9d70c"
     );
 
     console.log(this.map, "jdeijdieji")

@@ -37,7 +37,7 @@ export default {
   },
   async fetch() {
     let time = await this.$http.$get(
-        "https://www.npoint.io/docs/3161305ced8bd4e9d70c/time"
+        "https://api.npoint.io/3161305ced8bd4e9d70c/time"
     ); //API
 
     this.start = new Date().getTime();

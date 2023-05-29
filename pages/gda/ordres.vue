@@ -471,7 +471,7 @@ layout: "gda",
   },
   async fetch() {
     let testApi = await this.$http.$get(
-    "https://api.npoint.io/7a210a01331f3c385ed7"
+    "https://www.npoint.io/docs/3161305ced8bd4e9d70c"
     ); //API
     let map = require(`~/static/gdav3/map.json`);
 

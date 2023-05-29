@@ -10480,7 +10480,7 @@ export default {
     console.log(this.mapsettings, "dkeodk, ,,")
     
     let testApi = await this.$http.$get(
-      "https://api.npoint.io/7a210a01331f3c385ed7"
+      "https://www.npoint.io/docs/3161305ced8bd4e9d70c"
       ); //API
       
     let factions = testApi.factions

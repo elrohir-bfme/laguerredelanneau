@@ -85,10 +85,10 @@ export default {
     this.loading = true;
 
     this.map = await this.$http.$get(
-      "https://api.npoint.io/7a210a01331f3c385ed7"
+      "https://www.npoint.io/docs/3161305ced8bd4e9d70c"
     );
     this.factions = await this.$http.$get(
-      "https://api.npoint.io/7a210a01331f3c385ed7/factions"
+      "https://www.npoint.io/docs/3161305ced8bd4e9d70c/factions"
     ); //API
 
 

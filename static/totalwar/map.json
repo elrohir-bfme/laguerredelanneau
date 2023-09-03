@@ -1,0 +1,1048 @@
+{
+    "time": {
+      "end": "2022-02-14 00:00:00",
+      "tour": 0,
+      "start": "2022-02-09 13:56:00"
+    },
+    "Port_Lothern": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127013/La%20Guerre%20de%20l%27Eriador/Bree_woawi7.jpg",
+      "map": 4,
+      "name": "Port de Lothern",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "eataine",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1644061769/La%20Guerre%20de%20l%27Eriador/bree_minimap_gx95hy.png",
+      "players": [],
+      "adjacents": [
+        "Lac_Eataine",
+        "Mer_Eataine",
+        "Angerrial",
+        "Caim_Thel",
+        "Tour_Lysean",
+        "Plaine_Caledor"
+      ],
+      "description": "..."
+    },
+    "Tour_Lysean": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639131229/La%20Guerre%20de%20l%27Eriador/angle_gdf237.jpg",
+      "map": 6,
+      "name": "The Angle",
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1-e5CrRsGXsDwVU3whjcBalvTOuaqB99U?usp=sharing",
+      "region": "eataine",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304378/La%20Guerre%20de%20l%27Eriador/angle_minimap_khvo3p.png",
+      "players": [],
+      "adjacents": [
+        "Port_Lothern",
+        "Tol_Elyr"
+      ],
+      "description": "..."
+    },
+    "Plaine_Caledor": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127011/La%20Guerre%20de%20l%27Eriador/Moria_ubr4af.png",
+      "map": 6,
+      "name": "Plaine de Caledor",
+      "color": "#FF6F00",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1Fum9jaqKHRgS7VXJ8OPtgVexU3Hhm6xK?usp=sharing",
+      "region": "caledor",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1665436469/La%20Guerre%20de%20l%27Eriador/moria_coeur_acusef.png",
+      "players": [],
+      "adjacents": [
+        "Enclume_Vaul",
+        "Port_Lothern"
+      ],
+      "description": "..."
+    },
+    "Enclume_Vaul": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639131229/La%20Guerre%20de%20l%27Eriador/hollin_ldqhox.jpg",
+      "map": 2,
+      "name": "L'enclume de Vaul",
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/13dKTq-dEsJYwayxaKUPtoI5YbP6guQGt?usp=sharing",
+      "region": "caledor",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304376/La%20Guerre%20de%20l%27Eriador/hollin_minimap_tjdkbk.png",
+      "players": [],
+      "adjacents": [
+        "Tor_Sethai",
+        "Plaine_Caledor"
+      ],
+      "description": "..."
+    },
+    "Tor_Sethai": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126751/La%20Guerre%20de%20l%27Eriador/Lindon_vbdowi.jpg",
+      "map": 2,
+      "name": "Tor Sethai",
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1vH_h9xlq_K3102On458vVqGpjBSgK9hg?usp=sharing",
+      "region": "caledor",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304377/La%20Guerre%20de%20l%27Eriador/plaine_lindon_miniamp_txu0pe.png",
+      "players": [],
+      "adjacents": [
+        "Avethir",
+        "Enclume_Vaul"
+      ],
+      "description": "..."
+    },
+    "Avethir": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639131229/La%20Guerre%20de%20l%27Eriador/cairil_dqrxli.jpg",
+      "map": 2,
+      "name": "Avethir",
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1-TLC6eA0jTkBAHBTqO1HUJaTKwCqjtli?usp=sharing",
+      "region": "nagarythe",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1667426901/La%20Guerre%20de%20l%27Eriador/cairil_qdlnaa.png",
+      "players": [],
+      "adjacents": [
+        "Tor_Sethai",
+        "Tiranoc",
+        "Mer_Caledor"
+      ],
+      "description": "..."
+    },
+    "Tiranoc": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126754/La%20Guerre%20de%20l%27Eriador/Egenyar_d7me5q.jpg",
+      "map": 2,
+      "name": "Tiranoc",
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1d0nxV6mMQ8fjj9rnNAvgbZf3qPmIByvH?usp=sharing",
+      "region": "tiranoc",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304379/La%20Guerre%20de%20l%27Eriador/egenyar_minimap_hf7vy5.png",
+      "players": [],
+      "adjacents": [
+        "Avethir",
+        "Pic_Blanc"
+      ],
+      "description": "..."
+    },
+    "Pic_Blanc": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127009/La%20Guerre%20de%20l%27Eriador/Eregion_wlam43.jpg",
+      "map": 4,
+      "name": "Pic Blanc",
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1q_BizBJAvy9_E8TX8_As5S_XSQRKxIBE?usp=sharing",
+      "region": "tiranoc",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304379/La%20Guerre%20de%20l%27Eriador/eregion_minimap_kutzqq.png",
+      "players": [],
+      "adjacents": [
+        "Porte_Aigle",
+        "Tiranoc"
+      ],
+      "description": "..."
+    },
+    "Porte_Aigle": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127014/La%20Guerre%20de%20l%27Eriador/Fornost_l3l13p.jpg",
+      "map": 6,
+      "name": "Porte de l'aigle",
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1SGLDVh0fQI322VvTYThDv8U4aedi2XEK?usp=sharing",
+      "region": "tiranoc",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1676454420/La%20Guerre%20de%20l%27Eriador/fornost_map_lbfbyv.png",
+      "players": [],
+      "adjacents": [
+        "Pic_Blanc",
+        "Tor_Anroc",
+        "Route_Aigle"
+      ],
+      "description": "..."
+    },
+    "Route_Aigle": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127012/La%20Guerre%20de%20l%27Eriador/Galgals_bbhgop.jpg",
+      "map": 2,
+      "name": "Route de l'aigle",
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1tNNk4U3mmjGTSy6bv4EgDU8E5vwZUHsW?usp=sharing",
+      "region": "ellyrion",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304380/La%20Guerre%20de%20l%27Eriador/galgalg_minimap_swszey.png",
+      "players": [],
+      "adjacents": [
+        "Tor_Blanc_Fanal",
+        "Eataine",
+        "Porte_Aigle"
+      ],
+      "description": "..."
+    },
+    "Eataine": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126749/La%20Guerre%20de%20l%27Eriador/Gwathlo_f068ee.jpg",
+      "map": 4,
+      "name": "Eataine",
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1_k29F-bICs_pP7d1Fu6MksuJ3rgOXwEw?usp=sharing",
+      "region": "ellyrion",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304380/La%20Guerre%20de%20l%27Eriador/gwathlo_minimap_pp0cql.png",
+      "players": [],
+      "adjacents": [
+        "Route_Aigle",
+        "Tor_Elyr"
+      ],
+      "description": "..."
+    },
+    "Tor_Elyr": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641562357/La%20Guerre%20de%20l%27Eriador/tharbad_ycy2ge.png",
+      "map": 6,
+      "name": "Tor Elyr",
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1T5Cqkp3NPFuHFoJlFVjbI84143f9yYwH?usp=sharing",
+      "region": "ellyrion",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641562196/La%20Guerre%20de%20l%27Eriador/tharbad_minimap_keqldm.png",
+      "players": [],
+      "adjacents": [
+        "Eataine",
+        "Tour_Lysean"
+      ],
+      "description": "..."
+    },
+    "Alliance": [
+      [
+        "elfe",
+        "gondor",
+        "nain",
+        "rohan",
+        "arnor"
+      ],
+      [
+        "angmar",
+        "isengard",
+        "gobelin",
+        "mordor"
+      ]
+    ],
+    "Tor_Anroc": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1644061762/La%20Guerre%20de%20l%27Eriador/amonsul_oirhzq.jpg",
+      "map": 4,
+      "name": "Tor Anroc",
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1s5JhfTje0OUb8IsUK0vQOoEdmR8kKPNL?usp=sharing",
+      "region": "ellyrion",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1644061772/La%20Guerre%20de%20l%27Eriador/amon_sul_minimap_mvwv2p.png",
+      "players": [],
+      "adjacents": [
+        "Porte_Aigle",
+        "Porte_Griffon",
+        "Mer_Desole"
+      ],
+      "description": "..."
+    },
+    "Porte_Griffon": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1674408546/La%20Guerre%20de%20l%27Eriador/Mer_Belegear_a0pyas.jpg",
+      "map": 4,
+      "name": "Porte du Griffon",
+      "color": "#3300000",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/1b2GTejf_mFqlXoYR2Tgjh_t9qS_GlHiR?usp=share_link",
+      "region": "nagarythe",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1669067100/La%20Guerre%20de%20l%27Eriador/ocean_2_cukalz.png",
+      "players": [],
+      "adjacents": [
+        "Tor_Anroc",
+        "Route_Griffon",
+        "Tor_Dranil"
+      ],
+      "description": "..."
+    },
+    "Tor_Blanc_Fanal": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126753/La%20Guerre%20de%20l%27Eriador/Carn_Dum_prqw1o.jpg",
+      "map": 6,
+      "name": "Tor Blanc Fanal",
+      "color": "#C500FF",
+      "fight": "hidden",
+      "region": "ellyrion",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1670659964/La%20Guerre%20de%20l%27Eriador/carndum_lb7g1a.png",
+      "players": [],
+      "adjacents": [
+        "Route_Griffon",
+        "Route_Aigle",
+        "Lac_Avelorn"
+      ],
+      "description": "..."
+    },
+    "Route_Griffon": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126753/La%20Guerre%20de%20l%27Eriador/Carn_Dum_prqw1o.jpg",
+      "map": 6,
+      "name": "Route du Griffon",
+      "color": "#C500FF",
+      "fight": "hidden",
+      "mapdl": "https://drive.google.com/drive/folders/16_ikn8hfp2W5Jz-2P85corv6QMcrt56U?usp=share_link",
+      "region": "phenix",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1670659964/La%20Guerre%20de%20l%27Eriador/carndum_lb7g1a.png",
+      "players": [],
+      "adjacents": [
+        "Porte_Griffon",
+        "Ellyrion",
+        "Tor_Blanc_Fanal"
+      ],
+      "description": "..."
+    },
+    "Tor_Dranil": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126755/La%20Guerre%20de%20l%27Eriador/Forochel_iw0v63.jpg",
+      "map": 4,
+      "name": "Tor Dranil",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "nagarythe",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304380/La%20Guerre%20de%20l%27Eriador/forochel_minimap_gqqzjm.png",
+      "players": [],
+      "adjacents": [
+        "Porte_Licorne",
+        "Porte_Griffon"
+      ],
+      "description": "..."
+    },
+    "Porte_Licorne": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639131229/La%20Guerre%20de%20l%27Eriador/cotaux_sud_kcb02f.jpg",
+      "map": 6,
+      "name": "Porte de la Licorne",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "nagarythe",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304379/La%20Guerre%20de%20l%27Eriador/cotaux_sud_minimap_txup9y.png",
+      "players": [],
+      "adjacents": [
+        "Tor_Dranil",
+        "Tor_Anlec",
+        "Siragalë",
+        "Route_Avelorn"
+      ],
+      "description": "..."
+    },
+    "Route_Avelorn": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126749/La%20Guerre%20de%20l%27Eriador/Isendale_nljzhx.jpg",
+      "map": 4,
+      "name": "Route d'Avélorn",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "phenix",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304376/La%20Guerre%20de%20l%27Eriador/isendale_minimap_afrroh.png",
+      "players": [],
+      "adjacents": [
+        "Avelorn",
+        "Porte_Licorne",
+        "Ellyrion"
+      ],
+      "description": "..."
+    },
+    "Ellyrion": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126750/La%20Guerre%20de%20l%27Eriador/Isengard_ewpimj.jpg",
+      "map": 6,
+      "name": "Ellyrion",
+      "color": "#FFFFFF",
+      "fight": "hidden",
+      "region": "phenix",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304376/La%20Guerre%20de%20l%27Eriador/isengard_minimap_bkk6vj.png",
+      "players": [],
+      "adjacents": [
+        "Route_Avelorn",
+        "Adobe_Eternelle",
+        "Route_Griffon"
+      ],
+      "description": "..."
+    },
+    "Adobe_Eternelle": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126751/La%20Guerre%20de%20l%27Eriador/Metraith_scfuey.jpg",
+      "map": 6,
+      "name": "L'adobe Eternelle",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "phenix",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304376/La%20Guerre%20de%20l%27Eriador/metraith_minimap_rorqb5.png",
+      "players": [],
+      "adjacents": [
+        "Ellyrion"
+      ],
+      "description": "..."
+    },
+    "Avelorn": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126752/La%20Guerre%20de%20l%27Eriador/Pays_de_Dun_cka36f.jpg",
+      "map": 4,
+      "name": "Avélorn",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "phenix",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304377/La%20Guerre%20de%20l%27Eriador/pays_dun_minimap_cdx73w.png",
+      "players": [],
+      "adjacents": [
+        "Tor_Saroir",
+        "Porte_Phenix",
+        "Route_Avelorn",
+        "Lac_Avelorn"
+      ],
+      "description": "..."
+    },
+    "Porte_Phenix": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639131230/La%20Guerre%20de%20l%27Eriador/sirannon_uys2xr.jpg",
+      "map": 2,
+      "name": "Porte du Phénix",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "khaine",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304377/La%20Guerre%20de%20l%27Eriador/sirannon_minimap_vlgmhr.png",
+      "players": [],
+      "adjacents": [
+        "Avelorn",
+        "Autel_Kaine",
+        "Tor_Anlec"
+      ],
+      "description": "..."
+    },
+    "factions": {
+      "homme": {
+        "id": 1,
+        "win": 0,
+        "chef": "",
+        "name": "homme",
+        "color": "#09a4ff",
+        "loose": 0,
+        "money": 0,
+        "total": 0,
+        "capital": "?",
+        "tainted_count": 0
+      },
+      "elfe": {
+        "id": 2,
+        "win": 0,
+        "chef": "",
+        "name": "elfe",
+        "color": "#00ff7e",
+        "loose": 0,
+        "money": 0,
+        "total": 0,
+        "capital": "?",
+        "tainted_count": 0
+      },
+      "nain": {
+        "id": 3,
+        "win": 0,
+        "chef": "",
+        "name": "nain",
+        "color": "#fffc00",
+        "loose": 0,
+        "money": 0,
+        "total": 0,
+        "capital": "?",
+        "tainted_count": 0
+      },
+      "mordor": {
+        "id": 4,
+        "win": 0,
+        "chef": "",
+        "name": "mordor",
+        "color": "#ff3636",
+        "loose": 0,
+        "money": 0,
+        "total": 0,
+        "capital": "",
+        "tainted_count": 1
+      },
+      "isengard": {
+        "id": 5,
+        "win": 0,
+        "chef": "",
+        "name": "isengard",
+        "color": "#ffffff",
+        "loose": 0,
+        "money": 0,
+        "total": 0,
+        "capital": "",
+        "tainted_count": 1
+      },
+      "gobelin": {
+        "id": 6,
+        "win": 0,
+        "chef": "",
+        "name": "gobelin",
+        "color": "#3300000",
+        "loose": 0,
+        "money": 0,
+        "total": 0,
+        "capital": "?",
+        "tainted_count": 1
+      },
+      "angmar": {
+        "id": 7,
+        "win": 0,
+        "chef": "",
+        "name": "angmar",
+        "color": "#c500ff",
+        "loose": 0,
+        "money": 0,
+        "total": 0,
+        "capital": "?",
+        "tainted_count": 1
+      }
+    },
+    "Tor_Anlec": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127016/La%20Guerre%20de%20l%27Eriador/Annuminas_pqg5ou.jpg",
+      "map": 4,
+      "name": "Tor Anlec",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "phenix",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1676454421/La%20Guerre%20de%20l%27Eriador/annuminas_jsojdq.png",
+      "players": [],
+      "adjacents": [
+        "Porte_Phenix",
+        "Porte_Licorne",
+        "Mer_Khaine"
+      ],
+      "description": "..."
+    },
+    "Autel_Kaine": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126753/La%20Guerre%20de%20l%27Eriador/Arthedain_hyccyg.jpg",
+      "map": 4,
+      "name": "Autel de Kaine",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "khaine",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304378/La%20Guerre%20de%20l%27Eriador/arthedain_tedgze.png",
+      "players": [],
+      "adjacents": [
+        "Temple_Curnous",
+        "Porte_Phenix"
+      ],
+      "description": "..."
+    },
+    "Temple_Curnous": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126755/La%20Guerre%20de%20l%27Eriador/enedwaith_d89a7v.jpg",
+      "map": 6,
+      "name": "Temple de Curnous",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "khaine",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304379/La%20Guerre%20de%20l%27Eriador/enedwaith_minimap_ukmk5h.png",
+      "players": [],
+      "adjacents": [
+        "Chrace",
+        "Autel_Kaine"
+      ],
+      "description": "..."
+    },
+    "Chrace": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126754/La%20Guerre%20de%20l%27Eriador/Ered_Luin_w48jpu.jpg",
+      "map": 2,
+      "name": "Chrace",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "yvresse",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304379/La%20Guerre%20de%20l%27Eriador/ered_luin_minimap_fpdfpn.png",
+      "players": [],
+      "adjacents": [
+        "Elisia",
+        "Temple_Curnous",
+        "Mer_Mistnar"
+      ],
+      "description": "..."
+    },
+    "Elisia": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639131228/La%20Guerre%20de%20l%27Eriador/imladris_ir0fo7.jpg",
+      "map": 6,
+      "name": "Elisia",
+      "color": "#00ff7e",
+      "fight": "hidden",
+      "region": "chrace",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1673819737/La%20Guerre%20de%20l%27Eriador/fondcombe_ess2jz.png",
+      "players": [],
+      "adjacents": [
+        "Tor_Achare",
+        "Mont_Chrace",
+        "Chrace"
+      ],
+      "description": "..."
+    },
+    "Mont_Chrace": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639131229/La%20Guerre%20de%20l%27Eriador/fontgrise_xx3xb5.jpg",
+      "map": 2,
+      "name": "Mont Chrace",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "avelorn",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304379/La%20Guerre%20de%20l%27Eriador/fontgrise_map_bcsyuy.png",
+      "players": [],
+      "adjacents": [
+        "Elisia",
+        "Tor_Saroir"
+      ],
+      "description": "..."
+    },
+    "Tor_Saroir": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126754/La%20Guerre%20de%20l%27Eriador/Forlindon_etsh6d.jpg",
+      "map": 4,
+      "name": "Tor_Saroir",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "avelorn",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304380/La%20Guerre%20de%20l%27Eriador/forlindon_minimap_kyxevp.png",
+      "players": [],
+      "adjacents": [
+        "Mont_Chrace",
+        "Tor_Finu",
+        "Avelorn",
+        "Val_Gaean"
+      ],
+      "description": "..."
+    },
+    "Val_Gaean": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126749/La%20Guerre%20de%20l%27Eriador/Girithlin_jzqqnu.jpg",
+      "map": 4,
+      "name": "Val de Gaean",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "avelorn",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1646820269/La%20Guerre%20de%20l%27Eriador/minimap_girithlin_ynhrlj.png",
+      "players": [],
+      "adjacents": [
+        "Tor_Saroir"
+      ],
+      "description": "..."
+    },
+    "Tor_Finu": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127009/La%20Guerre%20de%20l%27Eriador/Glad_Ereg_swcmcp.jpg",
+      "map": 6,
+      "name": "Tor Finu",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "avelorn",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304380/La%20Guerre%20de%20l%27Eriador/glad_ereg_minimap_okyqus.png",
+      "players": [],
+      "adjacents": [
+        "Lac_Hoet",
+        "Tor_Saroir",
+        "Saphery"
+      ],
+      "description": "..."
+    },
+    "Saphery": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126752/La%20Guerre%20de%20l%27Eriador/mur_nord_walv9s.jpg",
+      "map": 4,
+      "name": "Saphery",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "saphery",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304376/La%20Guerre%20de%20l%27Eriador/mur_minimap_xk57lr.png",
+      "players": [],
+      "adjacents": [
+        "Mont_Yvresse",
+        "Tor_Finu",
+        "Tour_Blanche_Hoeth"
+      ],
+      "description": "..."
+    },
+    "Mont_Yvresse": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126749/La%20Guerre%20de%20l%27Eriador/Harlindon_dswg2y.jpg",
+      "map": 2,
+      "name": "Mont Yvresse",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "saphery",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304380/La%20Guerre%20de%20l%27Eriador/harlindon_minimap_cj4phi.png",
+      "players": [],
+      "adjacents": [
+        "Saphery",
+        "Yvresse_Nord"
+      ],
+      "description": "..."
+    },
+    "Yvresse_Nord": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641144385/La%20Guerre%20de%20l%27Eriador/hauts_du_nord_ay6zce.png",
+      "map": 4,
+      "name": "Yvresse Nord",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "yvresse",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304380/La%20Guerre%20de%20l%27Eriador/hauts_nord_minimap_hcz4kz.png",
+      "players": [],
+      "adjacents": [
+        "Tor_Koruali",
+        "Tor_Yvresse",
+        "Mont_Yvresse"
+      ],
+      "description": "..."
+    },
+    "Tor_Koruali": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127012/La%20Guerre%20de%20l%27Eriador/Pays_Bouc_fkltgh.jpg",
+      "map": 6,
+      "name": "Tor Koruali",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "saphery",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304377/La%20Guerre%20de%20l%27Eriador/pays_bouc_minimap_cwqksy.png",
+      "players": [],
+      "adjacents": [
+        "Yvresse_Nord",
+        "Mistnar",
+        "Mer_Mouvante"
+      ],
+      "description": "..."
+    },
+    "Mistnar": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127011/La%20Guerre%20de%20l%27Eriador/Siragale_b1xeuz.jpg",
+      "map": 4,
+      "name": "Mistnar",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "chrace",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304377/La%20Guerre%20de%20l%27Eriador/siragale_minimap_qqf1dn.png",
+      "players": [],
+      "adjacents": [
+        "Tor_Koruali",
+        "Tor_Achare"
+      ],
+      "description": "..."
+    },
+    "Tor_Achare": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127009/La%20Guerre%20de%20l%27Eriador/Zagh_Kala_ko9pta.jpg",
+      "map": 2,
+      "name": "Tor Achare",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "chrace",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1665353737/La%20Guerre%20de%20l%27Eriador/caradhras_jw9l2n.png",
+      "players": [],
+      "adjacents": [
+        "Mistnar",
+        "Elisia"
+      ],
+      "description": "..."
+    },
+    "Tor_Yvresse": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1665936446/La%20Guerre%20de%20l%27Eriador/forodwaith_h1hupj.webp",
+      "map": 4,
+      "name": "Tor Yvresse",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "yvresse",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304380/La%20Guerre%20de%20l%27Eriador/forodwaith_minimap_f6jmsn.png",
+      "players": [],
+      "adjacents": [
+        "Yvresse_Nord",
+        "Tralinia"
+      ],
+      "description": "..."
+    },
+    "Tralinia": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126749/La%20Guerre%20de%20l%27Eriador/Forodwaith_erdiwq.jpg",
+      "map": 2,
+      "name": "Tralinia",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "yvresse",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1665786463/La%20Guerre%20de%20l%27Eriador/froid_eternel_zn337v.png",
+      "players": [],
+      "adjacents": [
+        "Tor_Yvresse",
+        "Elessaeli"
+      ],
+      "description": "Grand désert glacé, le Forodwaith se situe au Septentrion. Il commence au-dessus des Hauts du Nord et se poursuit au-dessus de l'Angmar."
+    },
+    "Elessaeli": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126750/La%20Guerre%20de%20l%27Eriador/Minhiriath_xnj6na.jpg",
+      "map": 4,
+      "name": "Elessaeli",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "saphery",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304376/La%20Guerre%20de%20l%27Eriador/miniriath_minimap_rba3ft.png",
+      "players": [],
+      "adjacents": [
+        "Yvresse_Sud",
+        "Tralinia",
+        "Mer_Yvresse"
+      ],
+      "description": "..."
+    },
+    "Yvresse_Sud": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639131230/La%20Guerre%20de%20l%27Eriador/gram_pob25g.jpg",
+      "map": 2,
+      "name": "Yvresse Sud",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "loec",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304376/La%20Guerre%20de%20l%27Eriador/mont_gram_minimap_ezffig.png",
+      "players": [],
+      "adjacents": [
+        "Elessaeli",
+        "Mont_Hoet",
+        "Temple_Loec"
+      ],
+      "description": "..."
+    },
+    "Temple_Loec": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127011/La%20Guerre%20de%20l%27Eriador/Nain_Enidh_cmttcu.jpg",
+      "map": 6,
+      "name": "Temple de Loec",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "loec",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304376/La%20Guerre%20de%20l%27Eriador/nain_enidth_minimap_fq76io.png",
+      "players": [],
+      "adjacents": [
+        "Yvresse_Sud",
+        "Caim_Thel"
+      ],
+      "description": "..."
+    },
+    "Caim_Thel": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1631773368/Rhudaur_ucffv9.jpg",
+      "map": 4,
+      "name": "Caim Thel",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "loec",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304378/La%20Guerre%20de%20l%27Eriador/cameth_brin_minimap_zfljsv.png",
+      "players": [],
+      "adjacents": [
+        "Temple_Loec",
+        "Port_Lothern"
+      ],
+      "description": "..."
+    },
+    "Angerrial": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126754/La%20Guerre%20de%20l%27Eriador/Dol_Tinereb_f9e3ki.jpg",
+      "map": 4,
+      "name": "Angerrial",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "eataine",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1667651682/La%20Guerre%20de%20l%27Eriador/dol_tinereb_hbk1ns.png",
+      "players": [],
+      "adjacents": [
+        "Elistor",
+        "Lothern",
+        "Port_Lothern"
+      ],
+      "description": "..."
+    },
+    "Lothern": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127010/La%20Guerre%20de%20l%27Eriador/Gue_Bruinen_yzesql.jpg",
+      "map": 4,
+      "name": "Lothern",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "eataine",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304380/La%20Guerre%20de%20l%27Eriador/gue_bruinen_minimap_kueugl.png",
+      "players": [],
+      "adjacents": [
+        "Angerrial"
+      ],
+      "description": "..."
+    },
+    "Elistor": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126749/La%20Guerre%20de%20l%27Eriador/Hall_Thorin_smefwt.jpg",
+      "map": 6,
+      "name": "Elistor",
+      "color": "#FFFC00",
+      "fight": "hidden",
+      "region": "saphery",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1665519065/La%20Guerre%20de%20l%27Eriador/palais_de_thorin_qkttam.png",
+      "players": [],
+      "adjacents": [
+        "Tour_Blanche_Hoeth",
+        "Mont_Hoet",
+        "Angerrial"
+      ],
+      "description": "..."
+    },
+    "Mont_Hoet": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1674408554/La%20Guerre%20de%20l%27Eriador/Havres_Gris_hflj6t.jpg",
+      "map": 6,
+      "name": "Mont Hoet",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "saphery",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1666711952/La%20Guerre%20de%20l%27Eriador/havres_gris_dscgib.png",
+      "players": [],
+      "adjacents": [
+        "Yvresse_Sud",
+        "Elistor"
+      ],
+      "description": "..."
+    },
+    "Tour_Blanche_Hoeth": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127012/La%20Guerre%20de%20l%27Eriador/Hobbitbourg_ortukv.jpg",
+      "map": 4,
+      "name": "Tour Blanche de Hoeth",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "saphery",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304376/La%20Guerre%20de%20l%27Eriador/hobbitbourg_minimap_wpzmnz.png",
+      "players": [],
+      "adjacents": [
+        "Saphery",
+        "Elistor"
+      ],
+      "description": "..."
+    },
+    "Mer_Eataine": {
+      "img": "https://cdn.discordapp.com/attachments/877150946562551808/885968817505833060/EMRAH_ELMASLI.jpg",
+      "map": 4,
+      "name": "Mer d'Eataine",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "mer",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304377/La%20Guerre%20de%20l%27Eriador/pays_touc_minimap_bosdbc.png",
+      "players": [],
+      "adjacents": [
+        "Port_Lothern",
+        "Mer_Caledor",
+        "Mer_Yvresse"
+      ],
+      "description": "..."
+    },
+    "Mer_Caledor": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126753/La%20Guerre%20de%20l%27Eriador/Ruines_Nord_cc7ged.jpg",
+      "map": 4,
+      "name": "Mer de Caledor",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "mer",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304377/La%20Guerre%20de%20l%27Eriador/ruines_nord_minimap_hgauxb.png",
+      "players": [],
+      "adjacents": [
+        "Mer_Eataine",
+        "Mer_Desole",
+        "Avethir"
+      ],
+      "description": "..."
+    },
+    "Mer_Desole": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126753/La%20Guerre%20de%20l%27Eriador/Breche_Rohan_u3jvns.jpg",
+      "map": 4,
+      "name": "Mer Desolée",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "mer",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1665353006/La%20Guerre%20de%20l%27Eriador/trou%C3%A9e_du_rohann_uaaqsr.png",
+      "players": [],
+      "adjacents": [
+        "Mer_Caledor",
+        "Mer_Khaine",
+        "Tor_Anroc"
+      ],
+      "description": "..."
+    },
+    "Mer_Khaine": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641162930/800px-Lopin_Du_Taureau_Mugissant_ii6cxp.jpg",
+      "map": 4,
+      "east": [],
+      "name": "Mer de Khaine",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "mer",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304379/La%20Guerre%20de%20l%27Eriador/champs_verts_minimap_il90cc.png",
+      "players": [],
+      "adjacents": [
+        "Mer_Mistnar",
+        "Mer_Desole",
+        "Tor_Anlec"
+      ],
+      "description": "..."
+    },
+    "Mer_Mistnar": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127010/La%20Guerre%20de%20l%27Eriador/Haut_Col_tcliy2.png",
+      "map": 2,
+      "name": "Mer de Mistnar",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "mer",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1665519663/La%20Guerre%20de%20l%27Eriador/haut_col_yv5muf.png",
+      "players": [],
+      "adjacents": [
+        "Mer_Khaine",
+        "Mer_Mouvante",
+        "Chrace"
+      ],
+      "description": "..."
+    },
+    "Mer_Mouvante": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126758/La%20Guerre%20de%20l%27Eriador/Landes_Etten_ka38l7.png",
+      "map": 2,
+      "name": "Mer Mouvante",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "mer",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304376/La%20Guerre%20de%20l%27Eriador/lande_etten_minimap_epffxp.png",
+      "players": [],
+      "adjacents": [
+        "Mer_Yvresse",
+        "Mer_Mistnar",
+        "Tor_Koruali"
+      ],
+      "description": "..."
+    },
+    "Mer_Yvresse": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127015/La%20Guerre%20de%20l%27Eriador/Ost_Edhil_od9j1n.jpg",
+      "map": 4,
+      "name": "Mer d'Yvresse",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "mer",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304376/La%20Guerre%20de%20l%27Eriador/ost_in_minimap_va30of.png",
+      "players": [],
+      "adjacents": [
+        "Mer_Mouvante",
+        "Mer_Eataine",
+        "Elessaeli"
+      ],
+      "description": "..."
+    },
+    "Lac_Hoet": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126753/La%20Guerre%20de%20l%27Eriador/Baie_Forochel_elo6xt.jpg",
+      "map": 6,
+      "name": "Lac de Hoet",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "lac",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304378/La%20Guerre%20de%20l%27Eriador/baie_forochel_minimap_rycqgj.png",
+      "players": [],
+      "adjacents": [
+        "Lac_Eataine",
+        "Lac_Avelorn",
+        "Tor_Finu"
+      ],
+      "description": "..."
+    },
+    "Lac_Avelorn": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127011/La%20Guerre%20de%20l%27Eriador/Collines_Vent_ekurkm.jpg",
+      "map": 2,
+      "name": "Lac d'Avélorn",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "lac",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304379/La%20Guerre%20de%20l%27Eriador/collines_vents_minimap_ogv0ip.png",
+      "players": [],
+      "adjacents": [
+        "Lac_Hoet",
+        "Lac_Eataine",
+        "Tor_Blanc_Fanal",
+        "Avelorn"
+      ],
+      "description": "..."
+    },
+    "Lac_Eataine": {
+      "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127011/La%20Guerre%20de%20l%27Eriador/Collines_Vent_ekurkm.jpg",
+      "map": 2,
+      "name": "Lac d'Eataine",
+      "color": "#3300000",
+      "fight": "hidden",
+      "region": "lac",
+      "minimap": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1641304379/La%20Guerre%20de%20l%27Eriador/collines_vents_minimap_ogv0ip.png",
+      "players": [],
+      "adjacents": [
+        "Lac_Hoet",
+        "Lac_Avelorn",
+        "Port_Lothern"
+      ],
+      "description": "..."
+    },
+    "unblockable-frontiers": []
+  }

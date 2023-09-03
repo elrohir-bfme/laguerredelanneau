@@ -484,7 +484,7 @@
           </div>
 
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2514 2052" id="svg">
-            <image width="2514" height="2052" xlink:href="~assets/totalwar/map.png" transform="matrix(1 0 0 1 0 0)" />
+            <image width="2514" height="2052" xlink:href="~assets/totalwar/map.webp" transform="matrix(1 0 0 1 0 0)" />
             <g id="Calque_2" data-name="Calque 2">
               <g id="Calque_1-2" data-name="Calque 1">
               <path :id="map.Mer_Yvresse && map.Mer_Yvresse.name" :title="map.Mer_Yvresse && map.Mer_Yvresse.name"

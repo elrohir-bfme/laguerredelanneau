@@ -13,7 +13,7 @@
       <div class="flex-grow">
         <div id="svg-container" class="map" :style="btnStyles">
           <ModalGDANew class="lg:flex md:flex" v-if="isShowModal && !loading" @close="toggleModal" :map="map"
-            :region="region" @update-info="updateInfo" />
+            :region="region" @update-info="updateInfo" :totalwar="true" />
 
           <div class="absolute top-2 left-2" :class="isShowModal && 'hidden lg:block md:block'">
 

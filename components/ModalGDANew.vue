@@ -223,6 +223,11 @@
       region: {
           type: String,
           required: true
+      },
+      totalwar: {
+          type: Bool,
+          required: false,
+          default: false
       }
     }
   }

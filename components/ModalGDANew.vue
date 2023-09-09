@@ -225,7 +225,7 @@
           required: true
       },
       totalwar: {
-          type: Bool,
+          type: Boolean,
           required: false,
           default: false
       }

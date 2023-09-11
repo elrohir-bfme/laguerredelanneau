@@ -136,7 +136,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: 'https://laguerredelanneau.vercel.app/tournois/tournoi-aotr-reveil-heros',
+          content: 'https://laguerredelanneau.vercel.app/tournois/tournoi-pmr',
         },
         {
           hid: 'og:image',

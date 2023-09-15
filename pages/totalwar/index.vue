@@ -12,7 +12,7 @@
     <div class="flex flex-wrap">
       <div class="flex-grow">
         <div id="svg-container" class="map" :style="btnStyles">
-          <ModalGDANew class="lg:flex md:flex" v-if="isShowModal && !loading" @close="toggleModal" :map="map"
+          <ModalGDU class="lg:flex md:flex" v-if="isShowModal && !loading" @close="toggleModal" :map="map"
             :region="region" @update-info="updateInfo" :totalwar="true" />
 
           <div class="absolute top-2 left-2" :class="isShowModal && 'hidden lg:block md:block'">
@@ -2483,9 +2483,9 @@
     </div>
 
 
-    <HudGDA class="hidden lg:block" v-if="!loading && !displayHUDValue" :map="map" :region="region" />
+    <HudGDU class="hidden lg:block" v-if="!loading && !displayHUDValue" :map="map" :region="region" />
 
-    <Hud2GDA class="hidden lg:block" v-if="!loading && !displayHUDValue" :map="map" :region="region" />
+    <Hud2GDU class="hidden lg:block" v-if="!loading && !displayHUDValue" :map="map" :region="region" />
 
 
     <br /><br />
@@ -2871,86 +2871,6 @@ export default {
         this.isShowModal = !this.isShowModal;
       }
     },
-    color(id) {
-      switch (id) {
-        case 1:
-          return { color: "blue", code: "600", codeHover: "700", codeHover2: "800"};
-        case 2:
-          return { color: "green", code: "600", codeHover: "700", codeHover2: "800"};
-        case 3:
-          return { color: "yellow", code: "600", codeHover: "700", codeHover2: "800"};
-        case 4:
-          return { color: "red", code: "600", codeHover: "700", codeHover2: "800"};
-        case 5:
-          return { color: "gray", code: "700", codeHover: "800", codeHover2: "900"};
-        case 6:
-          return { color: "orange", code: "600", codeHover: "700", codeHover2: "800"};
-        case 7:
-          return { color: "purple", code: "600", codeHover: "700", codeHover2: "800"};
-        default:
-          return { color: "black", code: "700", codeHover: "800", codeHover2: "900"};
-      }
-    },
-    territoires(id) {
-      switch (id) {
-        case 1:
-          return this.nbTerritoireHomme;
-        case 2:
-          return this.nbTerritoireElfe;
-        case 3:
-          return this.nbTerritoireNain;
-        case 4:
-          return this.nbTerritoireMordor;
-        case 5:
-          return this.nbTerritoireIsengard;
-        case 6:
-          return this.nbTerritoireGobelin;
-        case 7:
-          return this.nbTerritoireAngmar;
-        default:
-          return this.nbTerritoireHomme;
-      }
-    },
-    joueurs(id) {
-      switch (id) {
-        case 1:
-          return this.nbPlayerHomme;
-        case 2:
-          return this.nbPlayerElfe;
-        case 3:
-          return this.nbPlayerNain;
-        case 4:
-          return this.nbPlayerMordor;
-        case 5:
-          return this.nbPlayerIsengard;
-        case 6:
-          return this.nbPlayerGobelin;
-        case 7:
-          return this.nbPlayerAngmar;
-        default:
-          return this.nbPlayerArnor;
-      }
-    },
-    img(id) {
-      switch (id) {
-        case 1:
-          return "blue";
-        case 2:
-          return "green";
-        case 3:
-          return "yellow";
-        case 4:
-          return "red";
-        case 5:
-          return "gray";
-        case 6:
-          return "orange";
-        case 7:
-          return "purple";
-        default:
-          return "black";
-      }
-    },
   },
   async fetch() {
     this.displayHUDValue = this.$cookies.get('checkHUD');
@@ -2999,104 +2919,7 @@ export default {
     this.tour = time.tour;
     this.currentTour = this.tour
     this.loading = false;
-
-
-    let objArray = []
-    Object.keys(factions).forEach(key =>  {
-        objArray.push({
-        name: key,
-        faction: factions[key],
-        id: factions[key].id
-      })
-    });
-
-    this.factions = objArray.sort((a, b) => b.id - a.id);
-
-
-    for (var key in this.map) {
-      var obj = this.map[key];
-
-      for (let prop in obj) {
-        if (!obj.hasOwnProperty(prop)) continue;
-
-        switch (obj[prop]) {
-          case "#09a4ff":
-          case "#09A4FF":
-            this.nbTerritoireHomme += 1;
-            break;
-
-          case "#00ff7e":
-          case "#00ff7e":
-            this.nbTerritoireElfe += 1;
-            break;
-
-          case "#fffc00":
-          case "#FFFC00":
-            this.nbTerritoireNain += 1;
-            break;
-
-          case "#ff3636":
-          case "#FF3636":
-            this.nbTerritoireMordor += 1;
-            break;
-
-          case "#ffffff":
-          case "#FFFFFF":
-            this.nbTerritoireIsengard += 1;
-            break;
-
-          case "#ff6f00":
-          case "#FF6F00":
-            this.nbTerritoireGobelin += 1;
-            break;
-
-          case "#c500ff":
-          case "#C500FF":
-            this.nbTerritoireAngmar += 1;
-            break;
-          default:
-            break;
-        }
-      }
-
-      if (obj.hasOwnProperty("players") && obj.players.length > 0) {
-        let obj2 = JSON.parse(JSON.stringify(obj["players"]));
-        for (var player in obj2) {
-          switch (obj2[player]["faction"]) {
-            case 1:
-              this.nbPlayerHomme += 1;
-              this.nbPlayers += 1;
-              break;
-            case 2:
-              this.nbPlayerElfe += 1;
-              this.nbPlayers += 1;
-              break;
-            case 3:
-              this.nbPlayerNain += 1;
-              this.nbPlayers += 1;
-              break;
-            case 4:
-              this.nbPlayerMordor += 1;
-              this.nbPlayers += 1;
-              break;
-            case 5:
-              this.nbPlayerIsengard += 1;
-              this.nbPlayers += 1;
-              break;
-            case 6:
-              this.nbPlayerGobelin += 1;
-              this.nbPlayers += 1;
-              break;
-            case 7:
-              this.nbPlayerAngmar += 1;
-              this.nbPlayers += 1;
-              break;
-            default:
-              break;
-          }
-        }
-      }
-    }
+    
   },
 };
 </script>

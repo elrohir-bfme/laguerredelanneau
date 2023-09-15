@@ -47,25 +47,25 @@ export default {
             let info = "";
             switch(value) {
                 case 1:
-                    info = "bg-blue-600"
+                    info = "border-purple-700"
                 break;
                 case 2:
-                    info = "bg-green-600"
+                    info = "border-green-800"
                 break;
                 case 3:
-                    info = "bg-yellow-600"
+                    info = "border-red-600"
                 break;
                 case 4:
-                    info = "bg-red-600"
+                    info = "border-gray-700"
                 break;
                 case 5:
-                    info = "bg-gray-700"
+                    info = "border-blue-500"
                 break;
                 case 6:
-                    info = "bg-orange-600"
+                    info = "border-yellow-500"
                 break;
                 case 7:
-                    info = "bg-purple-600"
+                    info = "border-orange-800"
                 break;
             }
             return info

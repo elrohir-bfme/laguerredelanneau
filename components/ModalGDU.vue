@@ -166,6 +166,9 @@
             case 7:
                 info = "skavens"
             break;
+            case 8:
+                info = "modo"
+            break
         }
         return info
       },
@@ -185,6 +188,8 @@
             return { color: "yellow", code: "500", codeHover: "600"};
           case 7:
             return { color: "orange", code: "800", codeHover: "900"};
+          case 8:
+          return { color: "teal", code: "500", codeHover: "600"};
           default:
             return { color: "black", code: "700", codeHover: "800"};
         }

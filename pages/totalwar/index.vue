@@ -2890,6 +2890,7 @@ export default {
       "https://api.npoint.io/e2fd8ae0b04e7c27244b"
       ); //API
       
+    console.log(testApi.factions)
     let factions = testApi.factions
     let time = testApi.time
     this.result = testApi.results

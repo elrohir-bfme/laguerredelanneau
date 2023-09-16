@@ -66,6 +66,9 @@ export default {
                 case 7:
                     info = "skavens"
                 break;
+                case 8:
+                    info = "modo"
+                break;
                 default:
                     info = "stop"
             }
@@ -94,6 +97,9 @@ export default {
                 break;
                 case 7:
                     info = "border-orange-800"
+                break
+                case 8:
+                    info = "border-teal-500"
                 break;
             }
             return info
@@ -135,6 +141,11 @@ export default {
           case "#ff6f00":
             faction = "skavens";
             break;
+          case "#00FFE2":
+          case "#00ffe2":
+            faction = "modo";
+            break;
+            
           default:
             break;
           }

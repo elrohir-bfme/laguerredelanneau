@@ -7,7 +7,7 @@
       aria-modal="true" aria-labelledby="modal-headline">
       <div class="max-w-2xl rounded overflow-hidden shadow-lg">
         <div class="relative flex">
-          <img v-if="map[region]" :class="map[region].minimap ? 'w-2/3' : 'w-full'" :src="map[region].img">
+          <img v-if="map[region]" class="object-cover h-48 min-h-full w-full" :src="map[region].img">
           <div v-if="map[region] && map[region].minimap" class="w-1/3 flex flex-col">
             <img v-if="map[region]" class="object-contain" :src="map[region].minimap && map[region].minimap">
             

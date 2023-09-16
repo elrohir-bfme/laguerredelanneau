@@ -63,7 +63,7 @@
         "Tor_Sethai",
         "Plaine_Caledor"
       ],
-      "description": "..."
+      "description": "Carte Val de Gaean"
     },
     "Tor_Sethai": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126751/La%20Guerre%20de%20l%27Eriador/Lindon_vbdowi.jpg",
@@ -121,7 +121,7 @@
         "Porte_Aigle",
         "Tiranoc"
       ],
-      "description": "..."
+      "description": "Carye de Malefosse"
     },
     "Porte_Aigle": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639127014/La%20Guerre%20de%20l%27Eriador/Fornost_l3l13p.jpg",
@@ -270,7 +270,7 @@
         "Porte_Licorne",
         "Porte_Griffon"
       ],
-      "description": "..."
+      "description": "Carte Lothern"
     },
     "Porte_Licorne": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639131229/La%20Guerre%20de%20l%27Eriador/cotaux_sud_kcb02f.jpg",
@@ -477,7 +477,7 @@
         "Temple_Curnous",
         "Porte_Phenix"
       ],
-      "description": "..."
+      "description": "Carte Khemri"
     },
     "Temple_Curnous": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/v1693938907/TOTAL%20WAR/Temple_de_Kurnous_t2arhw.jpg",
@@ -669,7 +669,7 @@
         "Mistnar",
         "Elisia"
       ],
-      "description": "Carte du Château Drakenhof"
+      "description": "Carte Altdorf"
     },
     "Tor_Yvresse": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1665936446/La%20Guerre%20de%20l%27Eriador/forodwaith_h1hupj.webp",
@@ -683,7 +683,7 @@
         "Yvresse_Nord",
         "Tralinia"
       ],
-      "description": "..."
+      "description": "Forteresse Tortueuse"
     },
     "Tralinia": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1639126749/La%20Guerre%20de%20l%27Eriador/Forodwaith_erdiwq.jpg",
@@ -742,7 +742,7 @@
         "Yvresse_Sud",
         "Caim_Thel"
       ],
-      "description": "..."
+      "description": "Carte Shang-Yang"
     },
     "Caim_Thel": {
       "img": "https://res.cloudinary.com/laterredumilieu-fr/image/upload/w_600/q_auto/v1631773368/Rhudaur_ucffv9.jpg",

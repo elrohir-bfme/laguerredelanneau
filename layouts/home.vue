@@ -7,7 +7,7 @@
           <nuxt-link style="font-family: 'Albertus'" class="p-4 text-orange-600 hover:text-white hover:bg-gray-900" to="/totalwar">La Guerre d'Ulthuan</nuxt-link>
           <!-- <nuxt-link style="font-family: 'Albertus'" class="p-4 text-indigo-400 hover:text-white hover:bg-gray-900" to="/tournois/guerre_des_chevaliers">Guerre des Chevaliers</nuxt-link> -->
           <nuxt-link style="font-family: 'Albertus'" class="p-4 text-green-400 hover:text-white hover:bg-gray-900" to="/tournois/tournoi-pmr">Tournoi PMR</nuxt-link>
-          <nuxt-link style="font-family: 'Albertus'" class="p-4 text-red-400 hover:text-white hover:bg-gray-900" to="/tournois/tournoi-weekend">Tournoi Weekend</nuxt-link>
+          <nuxt-link style="font-family: 'Albertus'" class="p-4 text-red-400 hover:text-white hover:bg-gray-900" to="/tournois/mini-tournoi">Mini Tournoi</nuxt-link>
           <!-- <nuxt-link style="font-family: 'Albertus'" class="p-4 text-green-400 hover:text-white hover:bg-gray-900" to="/la-campagne-des-gobelins">Campagne des Gobelins</nuxt-link> -->
           <!-- <nuxt-link style="font-family: 'Albertus'" class="p-4 text-blue-400 hover:text-white hover:bg-gray-900" to="/tournois/tournoi_mystere_rotwk_2_02">Tournoi Mystère</nuxt-link> -->
           <!-- <nuxt-link style="font-family: 'Albertus'" class="p-4 text-red-600 hover:text-white hover:bg-gray-900" to="/league">Ligue ROTWK</nuxt-link> -->

@@ -57,7 +57,7 @@
         </div>
 
         <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
-          <nuxt-link title="Tournoi Weekend"  to="/tournois/tournoi-weekend" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-red-300 border-2 rounded-xl">
+          <nuxt-link title="Mini Tournoi"  to="/tournois/mini-tournoi" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-red-300 border-2 rounded-xl">
             <NuxtImg
               src="tournois/weekend/tournoi.jpg"
               class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
@@ -65,7 +65,7 @@
               loading="lazy"
             />  
             <div class="text-center relative z-10 w-full">
-              <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-orange-500 inline p-2 rounded">Tournoi Weekend</h2>
+              <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-orange-500 inline p-2 rounded">Mini Tournoi</h2>
               <br>
               <br>
               <p class="text-2xl text-orange-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Liste des résultats</p>

@@ -32,7 +32,7 @@
         </div>
 
         <div class="w-full lg:mt-0 px-2 lg:w-1/2 mb-4">
-          <nuxt-link title="Tournoi PMR au bord de la plage"  to="/tournois/tournoi-pmr" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-green-300 border-2 rounded-xl">
+          <nuxt-link title="Tournoi PMR au bord de la plage"  to="/les_archives_de_numenor/tournois/tournoi-pmr" class="group flex flex-wrap w-full bg-gray-800 sm:py-48 py-32 sm:px-10 px-6 relative border-green-300 border-2 rounded-xl">
             <NuxtImg
               src="tournois/tournoi_pmr.jpeg"
               class="w-full object-cover h-full object-center block opacity-50 group-hover:opacity-100 absolute inset-0 rounded-xl"
@@ -43,7 +43,7 @@
               <h2 class="text-3xl text-white font-medium title-font mb-2  group-hover:bg-blue-500 inline p-2 rounded">Tournoi PMR au bord de la plage</h2>
               <br>
               <br>
-              <p class="text-2xl text-green-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Début 23 septembre 2023</p>
+              <p class="text-2xl text-green-300 leading-relaxed group-hover:text-white group-hover:bg-black inline p-2 rounded">Terminé</p>
               <br>
               <br>
               <button style="font-family: 'Albertus'" to="/tournois/lutte_des_duos" class="inline-flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-green-600 rounded-md dark:bg-gray-800 hover:bg-green-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-green-500 dark:focus:bg-gray-700">

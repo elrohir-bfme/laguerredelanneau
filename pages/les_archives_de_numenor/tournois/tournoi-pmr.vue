@@ -12,12 +12,48 @@
         </h2>
         <div class="lg:mt-0 lg:flex-shrink-0 mb-4">
             <div class="mt-12 inline-flex rounded-md shadow">
-                <a href="https://laterredumilieu.fr/Discord" type="button" class="py-4 px-6  bg-orange-600 hover:bg-orange-700 focus:ring-orange-500 focus:ring-offset-orange-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                    Inscription sur le Discord
+                <a target="_blank" href="https://laterredumilieu.fr/Discord" type="button" class="py-4 px-6  bg-orange-600 hover:bg-orange-700 focus:ring-orange-500 focus:ring-offset-orange-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                    Lien du Discord
                 </a>
             </div>
         </div>
 
+        <div class="lg:mt-0 lg:flex-shrink-0 mb-4">
+            <div class="mt-12 inline-flex rounded-md shadow">
+                <a target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTO0iUg9D7VfDyAFsNL4QDio5T8SNDKmwcfSzczPMBdoRdgu6jquKZdBdPC2pJT_KpC6jZmCEwkgDrT/pubhtml" type="button" class="py-4 px-6  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                  Récapitulatif  du tournoi 
+                </a>
+            </div>
+        </div>
+
+        <div class="lg:mt-0 lg:flex-shrink-0 mb-4">
+            <div class="mt-12 inline-flex rounded-md shadow">
+                <a target="_blank" href="https://pickerwheel.com/?id=225YP" type="button" class="py-4 px-6  bg-green-600 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                    Lien de tirage des cartes
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <div class="w-full h-full bg-orange-600 p-2 rounded-lg shadow-lg mt-4 mb-10">
+        <iframe
+          title="Playlist"
+          class="w-full aspect-video"
+          src="https://www.youtube.com/embed?listType=playlist&list=PLwTBeZ6vfNc8C76b2I1CSio9oNzo9rCFg&index=1"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+
+      </div>
+
+      <h3 class="text-3xl font-extrabold text-gray-200 dark:text-white sm:text-4xl">
+          🍸 🍹 Victoire d'Orpheus et unky, bravo à eux ! 🍸 🍹 
+        </h3>
+
+        
         <!-- <iframe src="https://challonge.com/fr/hc44n5v5/module" width="100%" height="600" frameborder="0" scrolling="auto" allowtransparency="true"></iframe> -->
     </div>
 </div>
@@ -155,3 +191,11 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+
+.aspect-video {
+    aspect-ratio: 16 / 9;
+}
+
+</style>

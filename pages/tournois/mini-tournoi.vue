@@ -20,6 +20,20 @@
 
 
     <div class="lg:w-4/5 mx-auto flex flex-wrap border-2 border-orange-500 mb-4 bg-gray-900">
+      <div class="lg:w-1/4 w-full lg:pl-10 lg:py-6 lg:px-4 mt-6 lg:mt-0 text-center items-center self-center">
+        <p class="text-sm title-font text-white tracking-widest">📅  11 septembre au 21 octobre 2023</p>
+        <p class="text-gray-200 text-3xl title-font font-medium mb-1">12ème édition - Tournoi semaine</p>
+        <p class="leading-relaxed text-orange-500">🏆 remporté par Erwan</p>
+      </div>
+      <NuxtImg
+        src="tournois/weekend/10.png"
+        class="lg:w-3/4 w-full lg:h-auto h-64 object-cover object-center rounded p-4"
+        alt="Tournoi weekend"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="lg:w-4/5 mx-auto flex flex-wrap border-2 border-orange-500 mb-4 bg-gray-900">
       <img
         src="https://cdn.discordapp.com/attachments/1150777936635506718/1159100351224496229/image.png?ex=652fcb52&is=651d5652&hm=b7aa3827ea0600bd790f3c48a40e8692fd8e54214eb9ba2a54b273b369c4c90a&"
         class="lg:w-3/4 w-full lg:h-auto h-64 object-cover object-center rounded p-4"
@@ -29,7 +43,7 @@
       <div class="lg:w-1/4 w-full lg:pl-10 lg:py-6 lg:px-4 mt-6 lg:mt-0 text-center items-center self-center">
         <p class="text-sm title-font text-white tracking-widest">📅  début 04 octobre 2023</p>
         <p class="text-gray-200 text-3xl title-font font-medium mb-1">11ème édition - Tournoi semaine</p>
-        <p class="leading-relaxed text-orange-500">En cours</p>
+        <p class="leading-relaxed text-orange-500">🏆 remporté par Gimli</p>
       </div>
     </div>
 

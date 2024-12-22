@@ -10479,13 +10479,13 @@ export default {
     this.mapsettings = map1
     console.log(this.mapsettings, "dkeodk, ,,")
     
-    let testApi = await this.$http.$get(
-      "https://api.npoint.io/3161305ced8bd4e9d70c"
-      ); //API
+    // let testApi = await this.$http.$get(
+    //   "https://api.npoint.io/3161305ced8bd4e9d70c"
+    //   ); //API
       
-    let factions = testApi.factions
-    let time = testApi.time
-    this.result = testApi.results
+    let factions = map1.factions
+    let time = map1.time
+    this.result = map1.results
 
 
     function MergeRecursive(obj1, obj2) {
